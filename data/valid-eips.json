@@ -5464,12 +5464,17 @@
     "prNo": 674,
     "markdownPath": "https://raw.githubusercontent.com/0xneves/ERCs/master/ERCS/erc-7787.md"
   },
-  "7790": {
-    "title": "7790",
+  "7788": {
+    "title": "Dynamic target blob count",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 584,
-    "markdownPath": "https://raw.githubusercontent.com/chen4903/ERCs/master/ERCS/erc-7790.md"
+    "prNo": 8972,
+    "markdownPath": "https://raw.githubusercontent.com/Marchhill/EIPs/dynamic-target-base-fee/EIPS/eip-7788.md"
+  },
+  "7790": {
+    "title": "Parameter Recommendations for Controlled Gas Limit Increase Strategy",
+    "status": "Draft",
+    "prNo": 8974,
+    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7790.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
