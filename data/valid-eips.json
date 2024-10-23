@@ -4459,6 +4459,12 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7569.md"
   },
+  "7570": {
+    "title": "BLOB Data and Rollup Operator Rewards",
+    "status": "Draft",
+    "prNo": 8993,
+    "markdownPath": "https://raw.githubusercontent.com/khajievN/EIPs/eip-blob-data/EIPS/eip-7570.md"
+  },
   "7572": {
     "title": "Contract-level metadata via `contractURI()`",
     "status": "Draft",
@@ -5382,8 +5388,8 @@
   "7775": {
     "title": "BURN opcode",
     "status": "Draft",
-    "prNo": 8914,
-    "markdownPath": "https://raw.githubusercontent.com/itsdevbear/EIPs/burn-opcode/EIPS/eip-7775.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7775.md"
   },
   "7776": {
     "title": "Transparent Financial Statements",
@@ -5440,8 +5446,8 @@
   "7784": {
     "title": "GETCONTRACT opcode",
     "status": "Draft",
-    "prNo": 8935,
-    "markdownPath": "https://raw.githubusercontent.com/peersky/EIPs/code-index/EIPS/eip-7784.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7784.md"
   },
   "7785": {
     "title": "Onchain registration of chain identifiers",
@@ -5467,14 +5473,26 @@
   "7788": {
     "title": "Dynamic target blob count",
     "status": "Draft",
-    "prNo": 8972,
-    "markdownPath": "https://raw.githubusercontent.com/Marchhill/EIPs/dynamic-target-base-fee/EIPS/eip-7788.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7788.md"
   },
   "7790": {
-    "title": "Parameter Recommendations for Controlled Gas Limit Increase Strategy",
+    "title": "Controlled Gas Limit Increase Guidelines",
     "status": "Draft",
     "prNo": 8974,
     "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7790.md"
+  },
+  "7791": {
+    "title": "GAS2ETH opcode",
+    "status": "Draft",
+    "prNo": 8980,
+    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/gas_to_eth/EIPS/eip-7791.md"
+  },
+  "7792": {
+    "title": "Verifiable logs",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7792.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
