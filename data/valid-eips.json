@@ -5479,8 +5479,8 @@
   "7790": {
     "title": "Controlled Gas Limit Increase Guidelines",
     "status": "Draft",
-    "prNo": 8974,
-    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7790.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7790.md"
   },
   "7791": {
     "title": "GAS2ETH opcode",
@@ -5493,6 +5493,19 @@
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7792.md"
+  },
+  "7795": {
+    "title": "Wallet Transaction Intents",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 681,
+    "markdownPath": "https://raw.githubusercontent.com/ScreamingHawk/ERCs/tx-intents/ERCS/erc-7795.md"
+  },
+  "7797": {
+    "title": "Double speed for hash_tree_root",
+    "status": "Draft",
+    "prNo": 8995,
+    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/sz-htr2x/EIPS/eip-7797.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
