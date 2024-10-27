@@ -5494,6 +5494,13 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7792.md"
   },
+  "7794": {
+    "title": "Grant Registry",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 680,
+    "markdownPath": "https://raw.githubusercontent.com/0xneves/ERCs/feat/grant-registry/ERCS/erc-7794.md"
+  },
   "7795": {
     "title": "Wallet Transaction Intents",
     "status": "Draft",
