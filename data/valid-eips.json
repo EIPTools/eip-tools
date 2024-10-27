@@ -5508,6 +5508,13 @@
     "prNo": 681,
     "markdownPath": "https://raw.githubusercontent.com/ScreamingHawk/ERCs/tx-intents/ERCS/erc-7795.md"
   },
+  "7796": {
+    "title": "Conditional send transaction RPC",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 682,
+    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-456-send-transaction-conditional-eip7702/ERCS/erc-7796.md"
+  },
   "7797": {
     "title": "Double speed for hash_tree_root",
     "status": "Draft",
