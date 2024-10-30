@@ -4149,7 +4149,7 @@
   },
   "7417": {
     "title": "Token Converter",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7417.md"
   },
@@ -4971,11 +4971,10 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7698.md"
   },
   "7699": {
-    "title": "Soul Resonance Token",
+    "title": "ERC-20 Transfer Reference Extension",
     "status": "Draft",
     "isERC": true,
-    "prNo": 551,
-    "markdownPath": "https://raw.githubusercontent.com/mike0x1024/ERCs/master/ERCS/erc-7699.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7699.md"
   },
   "7700": {
     "title": "Cross-chain Storage Router Protocol",
@@ -5335,8 +5334,7 @@
     "title": "Signature Aggregation for ERC-4337",
     "status": "Draft",
     "isERC": true,
-    "prNo": 626,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-427-extract-aggregation-create-new/ERCS/erc-7766.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7766.md"
   },
   "7768": {
     "title": "No-Ether transactions with free-for-all tips",
@@ -5348,8 +5346,7 @@
     "title": "JSON-RPC API for ERC-4337",
     "status": "Draft",
     "isERC": true,
-    "prNo": 628,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-428-extract-rpc-create-new/ERCS/erc-7769.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7769.md"
   },
   "7770": {
     "title": "Fractional Reserve Token",
@@ -5393,17 +5390,15 @@
   },
   "7776": {
     "title": "Transparent Financial Statements",
-    "status": "Review",
+    "status": "Draft",
     "isERC": true,
-    "prNo": 659,
-    "markdownPath": "https://raw.githubusercontent.com/Nachoxt17/ERC-Transparent-Financial-Statements-Standard/master/ERCS/erc-7776.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7776.md"
   },
   "7777": {
     "title": "Governance for Human Robot Societies",
     "status": "Draft",
     "isERC": true,
-    "prNo": 660,
-    "markdownPath": "https://raw.githubusercontent.com/OpenmindAGI/ERCs/openmind-erc/ERCS/erc-7777.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7777.md"
   },
   "7778": {
     "title": "Prevent Block Gas Smuggling",
@@ -5498,8 +5493,7 @@
     "title": "Grant Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 680,
-    "markdownPath": "https://raw.githubusercontent.com/0xneves/ERCs/feat/grant-registry/ERCS/erc-7794.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7794.md"
   },
   "7795": {
     "title": "Wallet Transaction Intents",
@@ -5512,14 +5506,26 @@
     "title": "Conditional send transaction RPC",
     "status": "Draft",
     "isERC": true,
-    "prNo": 682,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-456-send-transaction-conditional-eip7702/ERCS/erc-7796.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7796.md"
   },
   "7797": {
     "title": "Double speed for hash_tree_root",
     "status": "Draft",
     "prNo": 8995,
     "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/sz-htr2x/EIPS/eip-7797.md"
+  },
+  "7798": {
+    "title": "Tap to Pay",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 686,
+    "markdownPath": "https://raw.githubusercontent.com/amhed/ERCs/erc-taptopay/ERCS/erc-7798.md"
+  },
+  "7799": {
+    "title": "System logs",
+    "status": "Draft",
+    "prNo": 9002,
+    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/fl-syslogs/EIPS/eip-7799.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
