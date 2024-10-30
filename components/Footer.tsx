@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Container,
@@ -6,9 +8,20 @@ import {
   Center,
   Heading,
   Link,
+  Text,
 } from "@chakra-ui/react";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
+
+const Social = ({ icon, link }: { icon: IconProp; link: string }) => {
+  return (
+    <Link href={link} isExternal>
+      <FontAwesomeIcon icon={icon} size="lg" />
+    </Link>
+  );
+};
 
 export const Footer = () => {
   return (
@@ -36,12 +49,12 @@ export const Footer = () => {
           </Center>
           <Center flexDir={"column"}>
             <Heading size="md">
-              <Link
-                color={"custom.greenDark"}
-                href="https://warpcast.com/apoorvlathey"
-                isExternal
-              >
-                ⛩ [@apoorvlathey]
+              <Social icon={faTwitter} link="https://x.com/apoorveth" />
+              <Link href="https://x.com/apoorveth" isExternal>
+                <Text decoration="underline" display="inline">
+                  @apoorveth
+                </Text>{" "}
+                <ExternalLinkIcon />
               </Link>
             </Heading>
           </Center>
