@@ -27,6 +27,7 @@ import { Searchbox } from "@/components/Searchbox";
 import { EIPType } from "@/types";
 import { EIPStatus } from "@/utils";
 import { useLocalStorage } from "usehooks-ts";
+import { NotificationBar } from "./NotificationBar";
 
 export const Navbar = () => {
   const router = useTopLoaderRouter();
@@ -76,6 +77,7 @@ export const Navbar = () => {
           </HStack>
         </Button>
       </Flex>
+      <NotificationBar />
       <Center mt={2}>
         <Searchbox />
       </Center>
