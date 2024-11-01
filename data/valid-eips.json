@@ -5489,6 +5489,12 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7792.md"
   },
+  "7793": {
+    "title": "TXINDEX opcode",
+    "status": "Draft",
+    "prNo": 8981,
+    "markdownPath": "https://raw.githubusercontent.com/Marchhill/EIPs/txindex-opcode/EIPS/eip-7793.md"
+  },
   "7794": {
     "title": "Grant Registry",
     "status": "Draft",
@@ -5524,8 +5530,34 @@
   "7799": {
     "title": "System logs",
     "status": "Draft",
-    "prNo": 9002,
-    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/fl-syslogs/EIPS/eip-7799.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7799.md"
+  },
+  "7801": {
+    "title": "eth/70 - Sharded Blocks Protocol",
+    "status": "Draft",
+    "prNo": 9004,
+    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7801.md"
+  },
+  "7802": {
+    "title": "Crosschain Token Interface",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 692,
+    "markdownPath": "https://raw.githubusercontent.com/defi-wonderland/ERCs/erc/crosschain-token-interface/ERCS/erc-7802.md"
+  },
+  "7803": {
+    "title": "EIP-712 Extensions for Account Abstraction",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 693,
+    "markdownPath": "https://raw.githubusercontent.com/frangio/ERCs/712-aa/ERCS/erc-7803.md"
+  },
+  "7804": {
+    "title": "Withdrawal Credential Update Request",
+    "status": "Draft",
+    "prNo": 9005,
+    "markdownPath": "https://raw.githubusercontent.com/lucassaldanha/EIPs/eip-7800/EIPS/eip-7804.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
