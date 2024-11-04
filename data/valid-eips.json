@@ -2306,7 +2306,7 @@
   },
   "3670": {
     "title": "EOF - Code Validation",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3670.md"
   },
@@ -3681,7 +3681,7 @@
   },
   "6690": {
     "title": "EVM Modular Arithmetic Extensions (EVMMAX)",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6690.md"
   },
@@ -4089,7 +4089,7 @@
   },
   "7377": {
     "title": "Migration Transaction",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7377.md"
   },
@@ -4749,7 +4749,7 @@
   },
   "7645": {
     "title": "Alias ORIGIN to SENDER",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7645.md"
   },
@@ -4761,7 +4761,7 @@
   },
   "7650": {
     "title": "Programmable access lists",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7650.md"
   },
@@ -4809,7 +4809,7 @@
   },
   "7666": {
     "title": "EVM-ify the identity precompile",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7666.md"
   },
@@ -4821,7 +4821,7 @@
   },
   "7668": {
     "title": "Remove bloom filters",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7668.md"
   },
@@ -5517,8 +5517,8 @@
   "7797": {
     "title": "Double speed for hash_tree_root",
     "status": "Draft",
-    "prNo": 8995,
-    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/sz-htr2x/EIPS/eip-7797.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7797.md"
   },
   "7798": {
     "title": "Tap to Pay",
@@ -5558,6 +5558,19 @@
     "status": "Draft",
     "prNo": 9005,
     "markdownPath": "https://raw.githubusercontent.com/lucassaldanha/EIPs/eip-7800/EIPS/eip-7804.md"
+  },
+  "7805": {
+    "title": "Committee-based, Fork-choice enforced Inclusion Lists (FOCIL)",
+    "status": "Draft",
+    "prNo": 9010,
+    "markdownPath": "https://raw.githubusercontent.com/soispoke/EIPs/master/EIPS/eip-7805.md"
+  },
+  "7806": {
+    "title": "Minimal intent-centric EOA smart account",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 696,
+    "markdownPath": "https://raw.githubusercontent.com/hellohanchen/ERCs/erc-intent-7702/ERCS/erc-7806.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
