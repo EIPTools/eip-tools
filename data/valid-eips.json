@@ -4611,7 +4611,7 @@
   },
   "7610": {
     "title": "Revert creation in case of non-empty storage",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7610.md"
   },
@@ -5560,7 +5560,7 @@
     "markdownPath": "https://raw.githubusercontent.com/lucassaldanha/EIPs/eip-7800/EIPS/eip-7804.md"
   },
   "7805": {
-    "title": "Committee-based, Fork-choice enforced Inclusion Lists (FOCIL)",
+    "title": "Fork-choice enforced Inclusion Lists (FOCIL)",
     "status": "Draft",
     "prNo": 9010,
     "markdownPath": "https://raw.githubusercontent.com/soispoke/EIPs/master/EIPS/eip-7805.md"
@@ -5571,6 +5571,18 @@
     "isERC": true,
     "prNo": 696,
     "markdownPath": "https://raw.githubusercontent.com/hellohanchen/ERCs/erc-intent-7702/ERCS/erc-7806.md"
+  },
+  "7807": {
+    "title": "SSZ execution blocks",
+    "status": "Draft",
+    "prNo": 9017,
+    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/fl-blockhash/EIPS/eip-7807.md"
+  },
+  "7808": {
+    "title": "Reserve Tx-Type Range for RIPs",
+    "status": "Draft",
+    "prNo": 9020,
+    "markdownPath": "https://raw.githubusercontent.com/CarlBeek/EIPs/reserve_tx_range/EIPS/eip-7808.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
