@@ -5490,7 +5490,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7792.md"
   },
   "7793": {
-    "title": "TXINDEX opcode",
+    "title": "TXINDEX precompile",
     "status": "Draft",
     "prNo": 8981,
     "markdownPath": "https://raw.githubusercontent.com/Marchhill/EIPs/txindex-opcode/EIPS/eip-7793.md"
@@ -5562,8 +5562,8 @@
   "7805": {
     "title": "Fork-choice enforced Inclusion Lists (FOCIL)",
     "status": "Draft",
-    "prNo": 9010,
-    "markdownPath": "https://raw.githubusercontent.com/soispoke/EIPs/master/EIPS/eip-7805.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7805.md"
   },
   "7806": {
     "title": "Minimal intent-centric EOA smart account",
