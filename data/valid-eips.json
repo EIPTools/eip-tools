@@ -5590,6 +5590,34 @@
     "prNo": 9026,
     "markdownPath": "https://raw.githubusercontent.com/sablier-labs/EIPs/mnt-eip/EIPS/eip-7809.md"
   },
+  "7811": {
+    "title": "Wallet Asset Discovery",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 709,
+    "markdownPath": "https://raw.githubusercontent.com/lukaisailovic/ERCs/wallet-asset-discovery/ERCS/erc-7811.md"
+  },
+  "7812": {
+    "title": "ZK Identity Registry",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 710,
+    "markdownPath": "https://raw.githubusercontent.com/Arvolear/ERCs/master/ERCS/erc-7812.md"
+  },
+  "7815": {
+    "title": "Swap Order Routing Interface",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 712,
+    "markdownPath": "https://raw.githubusercontent.com/Haikane/ERCs/erc-routing-interface-standard/ERCS/erc-7815.md"
+  },
+  "7816": {
+    "title": "A Schnorr Signature Scheme for EVM Applications",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 713,
+    "markdownPath": "https://raw.githubusercontent.com/verklegarden/ERCs/master/ERCS/erc-7816.md"
+  },
   "8900": {
     "title": "Transparent Financial Statements",
     "status": "Review",
