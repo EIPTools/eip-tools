@@ -3578,7 +3578,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6384.md"
   },
   "6404": {
-    "title": "SSZ Transactions",
+    "title": "SSZ transactions",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6404.md"
@@ -3596,13 +3596,13 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6464.md"
   },
   "6465": {
-    "title": "SSZ Withdrawals Root",
+    "title": "SSZ withdrawals root",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6465.md"
   },
   "6466": {
-    "title": "SSZ Receipts",
+    "title": "SSZ receipts",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6466.md"
@@ -3620,7 +3620,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6492.md"
   },
   "6493": {
-    "title": "SSZ Transaction Signature Scheme",
+    "title": "SSZ transaction signature scheme",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6493.md"
@@ -4527,7 +4527,7 @@
   },
   "7587": {
     "title": "Reserve Precompile Address Range for RIPs",
-    "status": "Last Call",
+    "status": "Final",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7587.md"
   },
@@ -5536,8 +5536,8 @@
   "7801": {
     "title": "eth/70 - Sharded Blocks Protocol",
     "status": "Draft",
-    "prNo": 9004,
-    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7801.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7801.md"
   },
   "7802": {
     "title": "Crosschain Token Interface",
@@ -5575,14 +5575,14 @@
   "7807": {
     "title": "SSZ execution blocks",
     "status": "Draft",
-    "prNo": 9017,
-    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/fl-blockhash/EIPS/eip-7807.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7807.md"
   },
   "7808": {
     "title": "Reserve Tx-Type Range for RIPs",
     "status": "Draft",
-    "prNo": 9020,
-    "markdownPath": "https://raw.githubusercontent.com/CarlBeek/EIPs/reserve_tx_range/EIPS/eip-7808.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7808.md"
   },
   "7809": {
     "title": "Native Tokens",
