@@ -4016,7 +4016,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7204.md"
   },
   "7208": {
-    "title": "On-Chain Data Container",
+    "title": "On-Chain Data Containers",
     "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7208.md"
@@ -5604,6 +5604,13 @@
     "prNo": 710,
     "markdownPath": "https://raw.githubusercontent.com/Arvolear/ERCs/master/ERCS/erc-7812.md"
   },
+  "7813": {
+    "title": "Store, Table-Based Introspectable Storage",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 711,
+    "markdownPath": "https://raw.githubusercontent.com/latticexyz/ERCs/store/ERCS/erc-7813.md"
+  },
   "7815": {
     "title": "Swap Order Routing Interface",
     "status": "Draft",
@@ -5624,6 +5631,26 @@
     "isERC": true,
     "prNo": 718,
     "markdownPath": "https://raw.githubusercontent.com/MASDXI/ERCs/master/ERCS/erc-7818.md"
+  },
+  "7819": {
+    "title": "Create delegate",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7819.md"
+  },
+  "7820": {
+    "title": "Access Control Registry",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 723,
+    "markdownPath": "https://raw.githubusercontent.com/shubh-ta/ERCs/create/erc-access-control-registry/ERCS/erc-7820.md"
+  },
+  "7821": {
+    "title": "Minimal Batch Executor Interface",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 726,
+    "markdownPath": "https://raw.githubusercontent.com/Vectorized/ERCs/minimal-batch-executor-erc/ERCS/erc-7821.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
