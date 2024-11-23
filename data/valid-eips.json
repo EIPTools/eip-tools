@@ -4039,6 +4039,13 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7246.md"
   },
+  "7250": {
+    "title": "Nitro Protocol for State Channels with Account Abstraction",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 728,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/ERCs/master/ERCS/erc-7250.md"
+  },
   "7251": {
     "title": "Increase the MAX_EFFECTIVE_BALANCE",
     "status": "Review",
@@ -5651,6 +5658,12 @@
     "isERC": true,
     "prNo": 726,
     "markdownPath": "https://raw.githubusercontent.com/Vectorized/ERCs/minimal-batch-executor-erc/ERCS/erc-7821.md"
+  },
+  "7823": {
+    "title": "Set upper bounds for MODEXP",
+    "status": "Draft",
+    "prNo": 9046,
+    "markdownPath": "https://raw.githubusercontent.com/axic/EIPs/modexp-limit/EIPS/eip-7823.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
