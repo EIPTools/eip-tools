@@ -5509,7 +5509,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7794.md"
   },
   "7795": {
-    "title": "Wallet Transaction Intents",
+    "title": "Wallet Call Token Capabilities",
     "status": "Draft",
     "isERC": true,
     "prNo": 681,
@@ -5664,6 +5664,10 @@
     "status": "Draft",
     "prNo": 9046,
     "markdownPath": "https://raw.githubusercontent.com/axic/EIPs/modexp-limit/EIPS/eip-7823.md"
+  },
+  "7825": {
+    "prNo": 9049,
+    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7825.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
