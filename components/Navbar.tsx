@@ -255,30 +255,36 @@ export const Navbar = () => {
           <ModalCloseButton />
           <ModalBody>
             <VStack pb="4" spacing={4}>
-              <Input
-                value={generateShareableLink()}
-                isReadOnly
-                variant="filled"
-                size="sm"
-                overflow="auto"
-                whiteSpace="nowrap"
-                css={{
-                  "::-webkit-scrollbar": {
-                    height: "6px",
-                  },
-                  "::-webkit-scrollbar-thumb": {
-                    background: "#888",
-                    borderRadius: "4px",
-                  },
-                  "::-webkit-scrollbar-thumb:hover": {
-                    background: "#555",
-                  },
-                }}
-              />
+              <Link href={generateShareableLink()} w="full" cursor={"pointer"}>
+                <Input
+                  value={generateShareableLink()}
+                  isReadOnly
+                  variant="filled"
+                  color="blue.100"
+                  size="sm"
+                  overflow="auto"
+                  whiteSpace="nowrap"
+                  cursor={"pointer"}
+                  sx={{
+                    "::-webkit-scrollbar": {
+                      height: "6px",
+                    },
+                    "::-webkit-scrollbar-thumb": {
+                      background: "#888",
+                      borderRadius: "4px",
+                    },
+                    "::-webkit-scrollbar-thumb:hover": {
+                      background: "#555",
+                    },
+                  }}
+                  rounded="lg"
+                />
+              </Link>
               <Button
                 leftIcon={<FaCopy />}
                 onClick={handleCopy}
                 isDisabled={isCopied}
+                size={"sm"}
               >
                 {isCopied ? "Copied!" : "Copy Link"}
               </Button>
