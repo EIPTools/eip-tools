@@ -32,7 +32,7 @@ import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { FaBook, FaTrashAlt, FaShareAlt, FaCopy } from "react-icons/fa";
 import { Searchbox } from "@/components/Searchbox";
 import { EIPType } from "@/types";
-import { EIPStatus } from "@/utils";
+import { EIPStatus, getBaseUrl } from "@/utils";
 import { useLocalStorage } from "usehooks-ts";
 import { NotificationBar } from "./NotificationBar";
 
@@ -68,9 +68,9 @@ export const Navbar = () => {
   };
 
   const generateShareableLink = () => {
-    try {
-      const baseUrl = `${window.location.origin}/shared`;
+    const baseUrl = getBaseUrl();
 
+    try {
       if (!bookmarks || bookmarks.length === 0) {
         console.warn("No bookmarks available to generate a link.");
         return baseUrl;
@@ -106,7 +106,7 @@ export const Navbar = () => {
       return `${baseUrl}?${queryString}`;
     } catch (error) {
       console.error("Error generating shareable link:", error);
-      return `${window.location.origin}/shared`;
+      return `${baseUrl}/shared`;
     }
   };
 

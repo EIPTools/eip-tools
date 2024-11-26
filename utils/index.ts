@@ -123,3 +123,13 @@ export const getMetadata = (_metadata: {
 
   return metadata;
 };
+
+export const getBaseUrl = () => {
+  const vercelUrl = process.env.NEXT_PUBLIC_VERCEL_URL || "eip.tools";
+
+  if (vercelUrl.includes("localhost")) {
+    return `http://${vercelUrl}`;
+  } else {
+    return `https://${vercelUrl}`;
+  }
+};
