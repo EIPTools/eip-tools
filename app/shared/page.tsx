@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useLocalStorage } from "usehooks-ts";
 import { EIPType } from "@/types";
-import React, { useMemo } from "react";
+import React, { useMemo, Suspense } from "react";
 import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
 import { validCAIPs } from "@/data/validCAIPs";
@@ -30,6 +30,14 @@ interface Bookmark {
 }
 
 const SharedList = () => {
+  return (
+    <Suspense fallback={<Text>Loading...</Text>}>
+      <SharedListContent />
+    </Suspense>
+  );
+};
+
+const SharedListContent = () => {
   const searchParams = useSearchParams();
   const toast = useToast();
 
