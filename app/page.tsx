@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   const metadata = getMetadata({
     title: "EIP.tools",
-    description: "Explore all EIPs & ERCs easily!",
+    description: "Explore all EIPs, ERCs, RIPs and CAIPs easily!",
     images: imageUrl,
   });
 
