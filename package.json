@@ -11,6 +11,7 @@
     "update": "tsx ./scripts/getWIPEIPsFromPRs.ts && git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts"
   },
   "dependencies": {
+    "@chakra-ui/cli": "^3.2.0",
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/next-js": "^2.2.0",
     "@chakra-ui/react": "^2.8.2",
@@ -38,6 +39,7 @@
     "react-markdown": "^9.0.1",
     "react-syntax-highlighter": "^15.5.0",
     "remark-gfm": "^4.0.0",
+    "toaster": "^0.1.2",
     "typewriter-effect": "^2.21.0",
     "usehooks-ts": "^3.1.0",
     "zod": "^3.23.8"

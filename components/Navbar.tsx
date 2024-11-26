@@ -67,53 +67,47 @@ export const Navbar = () => {
     setBookmarks(updatedBookmarks);
   };
 
-  // const generateShareableLink = () => {
-  //   const baseUrl = `${window.location.origin}/shared`;
-
-  //   if (!bookmarks || bookmarks.length === 0) {
-  //     console.warn("No bookmarks available to generate a link.");
-  //     return baseUrl;
-  //   }
-
-  //   try {
-  //     const groupedBookmarks = bookmarks.reduce<Record<string, number[]>>(
-  //       (acc, bookmark) => {
-  //         if (!bookmark.type || !bookmark.eipNo) {
-  //           console.warn("Invalid bookmark entry:", bookmark);
-  //           return acc;
-  //         }
-
-  //         const type = bookmark.type.toLowerCase();
-  //         if (!acc[type]) {
-  //           acc[type] = [];
-  //         }
-  //         acc[type].push(bookmark.eipNo);
-  //         return acc;
-  //       },
-  //       {}
-  //     );
-
-  //     const queryString = Object.entries(groupedBookmarks)
-  //       .map(([type, eipNos]) => `${type}=${eipNos.join(",")}`)
-  //       .join(",");
-
-  //     return `${baseUrl}?${queryString}`;
-  //   } catch (error) {
-  //     console.error("Error generating shareable link:", error);
-  //     return baseUrl;
-  //   }
-  // };
-
   const generateShareableLink = () => {
-    const baseUrl = window.location.origin + "/shared";
-    const eip = bookmarks
-      .map((bookmark) =>
-        bookmark.type
-          ? `${bookmark.type.toLowerCase()}=${bookmark.eipNo}`
-          : `${bookmark.eipNo}`
-      )
-      .join(",");
-    return `${baseUrl}?${eip}`;
+    try {
+      const baseUrl = `${window.location.origin}/shared`;
+
+      if (!bookmarks || bookmarks.length === 0) {
+        console.warn("No bookmarks available to generate a link.");
+        return baseUrl;
+      }
+
+      const groupedBookmarks = bookmarks.reduce<Record<string, number[]>>(
+        (acc, bookmark) => {
+          if (!bookmark.eipNo) {
+            console.warn("Bookmark missing eipNo:", bookmark);
+            return acc;
+          }
+
+          const type = bookmark.type ? bookmark.type.toLowerCase() : "eip";
+
+          if (!acc[type]) {
+            acc[type] = [];
+          }
+
+          acc[type].push(bookmark.eipNo);
+          return acc;
+        },
+        {}
+      );
+
+      console.debug("Grouped Bookmarks:", groupedBookmarks);
+
+      const queryString = Object.entries(groupedBookmarks)
+        .map(([type, eipNos]) => `${type}=${eipNos.join(",")}`)
+        .join(",");
+
+      console.debug("Generated Query String:", queryString);
+
+      return `${baseUrl}?${queryString}`;
+    } catch (error) {
+      console.error("Error generating shareable link:", error);
+      return `${window.location.origin}/shared`;
+    }
   };
 
   const handleCopy = () => {
@@ -172,8 +166,8 @@ export const Navbar = () => {
                     ? bookmark.type === "RIP"
                       ? "RIP"
                       : bookmark.type === "CAIP"
-                      ? "CAIP"
-                      : "EIP"
+                        ? "CAIP"
+                        : "EIP"
                     : "EIP";
 
                   return (
@@ -200,8 +194,8 @@ export const Navbar = () => {
                             bookmark.type === "RIP"
                               ? "rip"
                               : bookmark.type === "CAIP"
-                              ? "caip"
-                              : "eip"
+                                ? "caip"
+                                : "eip"
                           }/${bookmark.eipNo}`
                         );
                       }}

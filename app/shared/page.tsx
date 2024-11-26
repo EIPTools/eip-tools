@@ -8,6 +8,8 @@ import {
   Text,
   Container,
   Center,
+  VStack,
+  useToast,
 } from "@chakra-ui/react";
 import { useLocalStorage } from "usehooks-ts";
 import { EIPType } from "@/types";
@@ -26,27 +28,32 @@ interface Bookmark {
 
 const SharedList = () => {
   const searchParams = useSearchParams();
-  const eip = searchParams.get("eip");
+  const toast = useToast();
+
+  const queryKeys = ["eip", "erc", "caip", "rip"];
   const [bookmarks, setBookmarks] = useLocalStorage<Bookmark[]>(
     "eip-bookmarks",
     []
   );
 
+  const paramKey = queryKeys.find((key) => searchParams.has(key));
+  const paramValue = paramKey ? searchParams.get(paramKey) : null;
+
   const parsedItems = useMemo(() => {
-    if (!eip) return [];
+    if (!paramValue || !paramKey) return [];
 
     try {
-      return eip
+      return paramValue
         .toString()
         .split(",")
         .map((item) => {
           const [type, eipNo] = item.includes("=")
             ? item.split("=")
-            : ["eip", item];
+            : [paramKey, item];
           const parsedEipNo = parseInt(eipNo, 10);
 
           if (isNaN(parsedEipNo)) {
-            throw new Error(`Invalid EIP number: ${eipNo}`);
+            throw new Error(`Invalid ${type.toUpperCase()} number: ${eipNo}`);
           }
 
           return {
@@ -56,13 +63,13 @@ const SharedList = () => {
         });
     } catch (error) {
       if (error instanceof Error) {
-        console.error("Error parsing eips:", error.message);
+        console.error("Error parsing items:", error.message);
       } else {
-        console.error("Error parsing eips:", error);
+        console.error("Error parsing items:", error);
       }
       return [];
     }
-  }, [eip]);
+  }, [paramValue, paramKey]);
 
   const addToReadingList = () => {
     const newBookmarks = parsedItems
@@ -99,22 +106,31 @@ const SharedList = () => {
       });
 
     setBookmarks([...bookmarks, ...newBookmarks]);
-    alert("Added new items to your reading list!");
+
+    toast({
+      title: "Action Successful.",
+      description: "Added new items to your reading list!",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    });
   };
 
   return (
     <Container>
-      <Center>
-        <Heading size="lg">Shared Reading List</Heading>
-        <Button onClick={addToReadingList} ml={4}>
-          Add to Reading List
+      <VStack>
+        <Heading size="lg" mt="10" mb="3">
+          Shared Reading List
+        </Heading>
+        <Button onClick={addToReadingList} mb="5">
+          Add all to Reading List
         </Button>
-      </Center>
+      </VStack>
       {parsedItems.length > 0 ? (
         <>
           {parsedItems.map((item, index) => (
-            <Box w="100%">
-              <EIPGridItem key={index} eipNo={item.eipNo} type={item.type} />
+            <Box w="100%" key={index} p="1" m="2">
+              <EIPGridItem eipNo={item.eipNo} type={item.type} />
             </Box>
           ))}
         </>
