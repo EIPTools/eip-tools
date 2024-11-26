@@ -3800,8 +3800,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6873.md"
   },
   "6888": {
-    "title": "Math checking in EVM",
-    "status": "Stagnant",
+    "title": "Arithmetic verification at EVM level",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6888.md"
   },
@@ -5207,8 +5207,7 @@
     "title": "Multi-Owner Non-Fungible Tokens (MO-NFT)",
     "status": "Draft",
     "isERC": true,
-    "prNo": 539,
-    "markdownPath": "https://raw.githubusercontent.com/jamesavechives/ERCs/MO-NFT/ERCS/erc-7743.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7743.md"
   },
   "7744": {
     "title": "Code Index",
@@ -5662,12 +5661,26 @@
   "7823": {
     "title": "Set upper bounds for MODEXP",
     "status": "Draft",
-    "prNo": 9046,
-    "markdownPath": "https://raw.githubusercontent.com/axic/EIPs/modexp-limit/EIPS/eip-7823.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7823.md"
   },
   "7825": {
+    "title": "Transaction Gas Limit Cap",
+    "status": "Draft",
     "prNo": 9049,
     "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7825.md"
+  },
+  "7826": {
+    "title": "Quantum Supremacy Bounty",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 731,
+    "markdownPath": "https://raw.githubusercontent.com/nikojpapa/ERCs/quanutm-bounty/ERCS/erc-7826.md"
+  },
+  "7827": {
+    "isERC": true,
+    "prNo": 734,
+    "markdownPath": "https://raw.githubusercontent.com/lex-clinic/ERCs/master/ERCS/erc-7827.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
