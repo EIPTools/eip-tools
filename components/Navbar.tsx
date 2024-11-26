@@ -103,7 +103,7 @@ export const Navbar = () => {
 
       console.debug("Generated Query String:", queryString);
 
-      return `${baseUrl}?${queryString}`;
+      return `${baseUrl}/shared?${queryString}`;
     } catch (error) {
       console.error("Error generating shareable link:", error);
       return `${baseUrl}/shared`;
