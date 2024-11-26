@@ -10,6 +10,8 @@ import {
   Center,
   VStack,
   useToast,
+  HStack,
+  Spacer,
 } from "@chakra-ui/react";
 import { useLocalStorage } from "usehooks-ts";
 import { EIPType } from "@/types";
@@ -18,6 +20,7 @@ import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
 import { validCAIPs } from "@/data/validCAIPs";
 import { EIPGridItem } from "@/components/TrendingEIPs";
+import { FaRegBookmark } from "react-icons/fa";
 
 interface Bookmark {
   eipNo: number;
@@ -72,12 +75,17 @@ const SharedList = () => {
   }, [paramValue, paramKey]);
 
   const addToReadingList = () => {
+    console.log({
+      bookmarks,
+      parsedItems,
+    });
+
     const newBookmarks = parsedItems
       .filter((item) => {
         return !bookmarks.some(
           (bookmark) =>
             bookmark.eipNo === item.eipNo &&
-            bookmark.type === item.type.toUpperCase()
+            (bookmark.type ? bookmark.type === item.type.toUpperCase() : true)
         );
       })
       .map((item) => {
@@ -118,14 +126,13 @@ const SharedList = () => {
 
   return (
     <Container>
-      <VStack>
-        <Heading size="lg" mt="10" mb="3">
-          Shared Reading List
-        </Heading>
-        <Button onClick={addToReadingList} mb="5">
-          Add all to Reading List
+      <HStack mt="10" mb="3">
+        <Heading size="lg">Shared Reading List</Heading>
+        <Spacer />
+        <Button onClick={addToReadingList} leftIcon={<FaRegBookmark />}>
+          Bookmark all
         </Button>
-      </VStack>
+      </HStack>
       {parsedItems.length > 0 ? (
         <>
           {parsedItems.map((item, index) => (
