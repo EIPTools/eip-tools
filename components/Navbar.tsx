@@ -250,11 +250,11 @@ export const Navbar = () => {
       </Drawer>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent bg="bg.900">
           <ModalHeader>Share Reading List</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <VStack spacing={4}>
+            <VStack pb="4" spacing={4}>
               <Input
                 value={generateShareableLink()}
                 isReadOnly
@@ -277,7 +277,6 @@ export const Navbar = () => {
               />
               <Button
                 leftIcon={<FaCopy />}
-                colorScheme="blue"
                 onClick={handleCopy}
                 isDisabled={isCopied}
               >
