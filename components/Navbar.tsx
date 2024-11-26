@@ -152,9 +152,11 @@ export const Navbar = () => {
           <DrawerCloseButton />
           <DrawerHeader>
             <HStack>
-              <Button onClick={openModal} size="sm">
-                <FaShareAlt />
-              </Button>
+              {bookmarks.length > 0 && (
+                <Button onClick={openModal} size="sm">
+                  <FaShareAlt />
+                </Button>
+              )}
               <Box>Reading List</Box>
             </HStack>
           </DrawerHeader>
@@ -166,8 +168,8 @@ export const Navbar = () => {
                     ? bookmark.type === "RIP"
                       ? "RIP"
                       : bookmark.type === "CAIP"
-                        ? "CAIP"
-                        : "EIP"
+                      ? "CAIP"
+                      : "EIP"
                     : "EIP";
 
                   return (
@@ -194,8 +196,8 @@ export const Navbar = () => {
                             bookmark.type === "RIP"
                               ? "rip"
                               : bookmark.type === "CAIP"
-                                ? "caip"
-                                : "eip"
+                              ? "caip"
+                              : "eip"
                           }/${bookmark.eipNo}`
                         );
                       }}
