@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   VStack,
   Flex,
@@ -10,6 +10,7 @@ import {
   Link,
   HStack,
   Image,
+  Input,
   Text,
   Button,
   Drawer,
@@ -20,9 +21,15 @@ import {
   DrawerOverlay,
   useDisclosure,
   IconButton,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
 } from "@chakra-ui/react";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
-import { FaBook, FaTrashAlt } from "react-icons/fa";
+import { FaBook, FaTrashAlt, FaShareAlt, FaCopy } from "react-icons/fa";
 import { Searchbox } from "@/components/Searchbox";
 import { EIPType } from "@/types";
 import { EIPStatus } from "@/utils";
@@ -30,31 +37,94 @@ import { useLocalStorage } from "usehooks-ts";
 import { NotificationBar } from "./NotificationBar";
 
 export const Navbar = () => {
-  const router = useTopLoaderRouter();
-
-  const {
-    isOpen: isDrawerOpen,
-    onOpen: openDrawer,
-    onClose: closeDrawer,
-  } = useDisclosure();
-
   interface Bookmark {
     eipNo: number;
     type?: EIPType;
     title: string;
     status?: string;
   }
-
+  const router = useTopLoaderRouter();
+  const {
+    isOpen: isModalOpen,
+    onOpen: openModal,
+    onClose: closeModal,
+  } = useDisclosure();
+  const {
+    isOpen: isDrawerOpen,
+    onOpen: openDrawer,
+    onClose: closeDrawer,
+  } = useDisclosure();
   const [bookmarks, setBookmarks] = useLocalStorage<Bookmark[]>(
     "eip-bookmarks",
     []
   );
+  const [isCopied, setIsCopied] = useState(false);
 
   const removeBookmark = (eipNo: number, type?: EIPType) => {
     const updatedBookmarks = bookmarks.filter(
       (item) => item.eipNo !== eipNo || item.type !== type
     );
     setBookmarks(updatedBookmarks);
+  };
+
+  // const generateShareableLink = () => {
+  //   const baseUrl = `${window.location.origin}/shared`;
+
+  //   if (!bookmarks || bookmarks.length === 0) {
+  //     console.warn("No bookmarks available to generate a link.");
+  //     return baseUrl;
+  //   }
+
+  //   try {
+  //     const groupedBookmarks = bookmarks.reduce<Record<string, number[]>>(
+  //       (acc, bookmark) => {
+  //         if (!bookmark.type || !bookmark.eipNo) {
+  //           console.warn("Invalid bookmark entry:", bookmark);
+  //           return acc;
+  //         }
+
+  //         const type = bookmark.type.toLowerCase();
+  //         if (!acc[type]) {
+  //           acc[type] = [];
+  //         }
+  //         acc[type].push(bookmark.eipNo);
+  //         return acc;
+  //       },
+  //       {}
+  //     );
+
+  //     const queryString = Object.entries(groupedBookmarks)
+  //       .map(([type, eipNos]) => `${type}=${eipNos.join(",")}`)
+  //       .join(",");
+
+  //     return `${baseUrl}?${queryString}`;
+  //   } catch (error) {
+  //     console.error("Error generating shareable link:", error);
+  //     return baseUrl;
+  //   }
+  // };
+
+  const generateShareableLink = () => {
+    const baseUrl = window.location.origin + "/shared";
+    const eip = bookmarks
+      .map((bookmark) =>
+        bookmark.type
+          ? `${bookmark.type.toLowerCase()}=${bookmark.eipNo}`
+          : `${bookmark.eipNo}`
+      )
+      .join(",");
+    return `${baseUrl}?${eip}`;
+  };
+
+  const handleCopy = () => {
+    const shareableLink = generateShareableLink();
+    navigator.clipboard
+      .writeText(shareableLink)
+      .then(() => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 2000);
+      })
+      .catch((error) => console.error("Failed to copy link:", error));
   };
 
   return (
@@ -86,93 +156,141 @@ export const Navbar = () => {
         <DrawerOverlay />
         <DrawerContent bg="bg.900">
           <DrawerCloseButton />
-          <DrawerHeader>Reading List</DrawerHeader>
+          <DrawerHeader>
+            <HStack>
+              <Button onClick={openModal} size="sm">
+                <FaShareAlt />
+              </Button>
+              <Box>Reading List</Box>
+            </HStack>
+          </DrawerHeader>
           <DrawerBody>
             {bookmarks.length > 0 ? (
-              bookmarks.map((bookmark) => {
-                const eipTypeLabel = bookmark.type
-                  ? bookmark.type === "RIP"
-                    ? "RIP"
-                    : bookmark.type === "CAIP"
-                    ? "CAIP"
-                    : "EIP"
-                  : "EIP";
+              <>
+                {bookmarks.map((bookmark) => {
+                  const eipTypeLabel = bookmark.type
+                    ? bookmark.type === "RIP"
+                      ? "RIP"
+                      : bookmark.type === "CAIP"
+                      ? "CAIP"
+                      : "EIP"
+                    : "EIP";
 
-                return (
-                  <Box
-                    key={`${bookmark.type}-${bookmark.eipNo}`}
-                    p="3"
-                    mb={2}
-                    border="1px solid"
-                    borderColor="gray.500"
-                    bg="white"
-                    color="black"
-                    fontSize="sm"
-                    cursor="pointer"
-                    position="relative"
-                    transition="all 0.1s ease-in-out"
-                    _hover={{
-                      bg: "gray.600",
-                      color: "white",
-                      borderColor: "blue.300",
-                    }}
-                    onClick={() => {
-                      router.push(
-                        `/${
-                          bookmark.type === "RIP"
-                            ? "rip"
-                            : bookmark.type === "CAIP"
-                            ? "caip"
-                            : "eip"
-                        }/${bookmark.eipNo}`
-                      );
-                    }}
-                    rounded="md"
-                  >
-                    <IconButton
-                      icon={<FaTrashAlt />}
-                      aria-label="Remove Bookmark"
-                      position="absolute"
-                      top="2"
-                      right="2"
-                      size="sm"
-                      color="red.500"
-                      _hover={{ color: "red.300" }}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        removeBookmark(bookmark.eipNo, bookmark.type);
+                  return (
+                    <Box
+                      key={`${bookmark.type}-${bookmark.eipNo}`}
+                      p="3"
+                      mb={2}
+                      border="1px solid"
+                      borderColor="gray.500"
+                      bg="white"
+                      color="black"
+                      fontSize="sm"
+                      cursor="pointer"
+                      position="relative"
+                      transition="all 0.1s ease-in-out"
+                      _hover={{
+                        bg: "gray.600",
+                        color: "white",
+                        borderColor: "blue.300",
                       }}
-                    />
-                    <Badge
-                      p={1}
-                      bg={
-                        bookmark.status
-                          ? EIPStatus[bookmark.status]?.bg
-                          : "cyan.500"
-                      }
-                      fontWeight={600}
+                      onClick={() => {
+                        router.push(
+                          `/${
+                            bookmark.type === "RIP"
+                              ? "rip"
+                              : bookmark.type === "CAIP"
+                              ? "caip"
+                              : "eip"
+                          }/${bookmark.eipNo}`
+                        );
+                      }}
                       rounded="md"
-                      fontSize="xs"
                     >
-                      {bookmark.status
-                        ? `${EIPStatus[bookmark.status]?.prefix} ${
-                            bookmark.status
-                          }`
-                        : "Unknown Status"}
-                    </Badge>
-                    <Heading mt={1} fontSize="md">
-                      {eipTypeLabel}-{bookmark.eipNo}
-                    </Heading>
-                    <Text fontSize="sm">{bookmark.title}</Text>
-                  </Box>
-                );
-              })
+                      <IconButton
+                        icon={<FaTrashAlt />}
+                        aria-label="Remove Bookmark"
+                        position="absolute"
+                        top="2"
+                        right="2"
+                        size="sm"
+                        color="red.500"
+                        _hover={{ color: "red.300" }}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          removeBookmark(bookmark.eipNo, bookmark.type);
+                        }}
+                      />
+                      <Badge
+                        p={1}
+                        bg={
+                          bookmark.status
+                            ? EIPStatus[bookmark.status]?.bg
+                            : "cyan.500"
+                        }
+                        fontWeight={600}
+                        rounded="md"
+                        fontSize="xs"
+                      >
+                        {bookmark.status
+                          ? `${EIPStatus[bookmark.status]?.prefix} ${
+                              bookmark.status
+                            }`
+                          : "Unknown Status"}
+                      </Badge>
+                      <Heading mt={1} fontSize="md">
+                        {eipTypeLabel}-{bookmark.eipNo}
+                      </Heading>
+                      <Text fontSize="sm">{bookmark.title}</Text>
+                    </Box>
+                  );
+                })}
+              </>
             ) : (
               <Text>No bookmarks yet.</Text>
             )}
           </DrawerBody>
         </DrawerContent>
       </Drawer>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Share Reading List</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <VStack spacing={4}>
+              <Input
+                value={generateShareableLink()}
+                isReadOnly
+                variant="filled"
+                size="sm"
+                overflow="auto"
+                whiteSpace="nowrap"
+                css={{
+                  "::-webkit-scrollbar": {
+                    height: "6px",
+                  },
+                  "::-webkit-scrollbar-thumb": {
+                    background: "#888",
+                    borderRadius: "4px",
+                  },
+                  "::-webkit-scrollbar-thumb:hover": {
+                    background: "#555",
+                  },
+                }}
+              />
+              <Button
+                leftIcon={<FaCopy />}
+                colorScheme="blue"
+                onClick={handleCopy}
+                isDisabled={isCopied}
+              >
+                {isCopied ? "Copied!" : "Copy Link"}
+              </Button>
+            </VStack>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </VStack>
   );
 };
