@@ -5617,6 +5617,12 @@
     "prNo": 711,
     "markdownPath": "https://raw.githubusercontent.com/latticexyz/ERCs/store/ERCS/erc-7813.md"
   },
+  "7814": {
+    "title": "Introspection precompiles",
+    "status": "Draft",
+    "prNo": 9028,
+    "markdownPath": "https://raw.githubusercontent.com/Brechtpd/EIPs/introspection-eip/EIPS/eip-7814.md"
+  },
   "7815": {
     "title": "Swap Order Routing Interface",
     "status": "Draft",
@@ -5678,8 +5684,6 @@
     "markdownPath": "https://raw.githubusercontent.com/nikojpapa/ERCs/quanutm-bounty/ERCS/erc-7826.md"
   },
   "7827": {
-    "title": "Quantum Supremacy Bounty",
-    "status": "Draft",
     "isERC": true,
     "prNo": 734,
     "markdownPath": "https://raw.githubusercontent.com/lex-clinic/ERCs/master/ERCS/erc-7827.md"
