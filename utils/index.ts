@@ -13,7 +13,7 @@ export const extractEipNumber = (eipOrNo: string, prefix: string): string => {
 };
 
 export const extractMetadata = (text: string) => {
-  const regex = /(--|---)\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)/;
+  const regex = /(--|---)\r?\n([\s\S]*?)\r?\n---\s*\r?\n([\s\S]*)/;
   const match = text.match(regex);
 
   if (match) {
