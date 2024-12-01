@@ -1988,7 +1988,7 @@
   },
   "3074": {
     "title": "AUTH and AUTHCALL opcodes",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3074.md"
   },
@@ -2589,7 +2589,7 @@
   },
   "4803": {
     "title": "Limit transaction gas to a maximum of 2^63-1",
-    "status": "Stagnant",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4803.md"
   },
@@ -4378,7 +4378,7 @@
   },
   "7542": {
     "title": "eth/70 - available-blocks-extended protocol",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7542.md"
   },
@@ -4798,7 +4798,7 @@
   },
   "7658": {
     "title": "Light client data backfill",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7658.md"
   },
@@ -4896,7 +4896,7 @@
   },
   "7684": {
     "title": "Return deposits for distinct credentials",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7684.md"
   },
@@ -4908,7 +4908,7 @@
   },
   "7686": {
     "title": "Linear EVM memory limits",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7686.md"
   },
@@ -4955,8 +4955,7 @@
     "title": "Solana Storage Router",
     "status": "Draft",
     "isERC": true,
-    "prNo": 390,
-    "markdownPath": "https://raw.githubusercontent.com/namesys-eth/ERCs/solanaHandler/ERCS/erc-7694.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7694.md"
   },
   "7695": {
     "title": "Ownership Delegation and Context for ERC-721",
@@ -5671,10 +5670,11 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7823.md"
   },
   "7825": {
-    "title": "Transaction Gas Limit Cap",
+    "title": "State Channel Standard data types and interfaces",
     "status": "Draft",
-    "prNo": 9049,
-    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/eip-gaslimit1/EIPS/eip-7825.md"
+    "isERC": true,
+    "prNo": 728,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/ERCs/master/ERCS/erc-7825.md"
   },
   "7826": {
     "title": "Quantum Supremacy Bounty",
@@ -5684,9 +5684,18 @@
     "markdownPath": "https://raw.githubusercontent.com/nikojpapa/ERCs/quanutm-bounty/ERCS/erc-7826.md"
   },
   "7827": {
+    "title": "JSON Smart Contract with Value Version Control",
+    "status": "Draft",
     "isERC": true,
     "prNo": 734,
     "markdownPath": "https://raw.githubusercontent.com/lex-clinic/ERCs/master/ERCS/erc-7827.md"
+  },
+  "7921": {
+    "title": "Data Asset NFT",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 744,
+    "markdownPath": "https://raw.githubusercontent.com/memoio/ERCs/data-asset-nft/ERCS/erc-7921.md"
   },
   "8900": {
     "title": "Transparent Financial Statements",
