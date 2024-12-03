@@ -1415,6 +1415,13 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2228.md"
   },
+  "2233": {
+    "title": "web2 platform eth/token docking solution",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 586,
+    "markdownPath": "https://raw.githubusercontent.com/ZWJKFLC/ERCs/master/ERCS/erc-2233.md"
+  },
   "2242": {
     "title": "Transaction Postdata",
     "status": "Stagnant",
@@ -2386,6 +2393,13 @@
     "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4200.md"
+  },
+  "4242": {
+    "title": "NFT Recursive Synthesis Asset Standard",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 296,
+    "markdownPath": "https://raw.githubusercontent.com/muadao/ERCs/ERC4242/ERCS/erc-4242.md"
   },
   "4337": {
     "title": "Account Abstraction Using Alt Mempool",
@@ -4049,6 +4063,13 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7280.md"
   },
+  "7281": {
+    "title": "Sovereign Bridged Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/ERC-7281/ERCS/erc-7281.md"
+  },
   "7291": {
     "title": "Purpose bound money",
     "status": "Draft",
@@ -4337,6 +4358,13 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7535.md"
   },
+  "7536": {
+    "title": "Multi-edition NFT Distribution",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 221,
+    "markdownPath": "https://raw.githubusercontent.com/didhubdev/ERCs/Distributor/ERCS/erc-7536.md"
+  },
   "7538": {
     "title": "Multiplicative Tokens",
     "status": "Draft",
@@ -4607,6 +4635,13 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7615.md"
   },
+  "7616": {
+    "title": "Hybrid Fungible Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 244,
+    "markdownPath": "https://raw.githubusercontent.com/fomo-protocol/ERCs/master/ERCS/erc-7616.md"
+  },
   "7617": {
     "title": "Chunk support for ERC-5219 mode in Web3 URL",
     "status": "Draft",
@@ -4636,6 +4671,13 @@
     "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7623.md"
+  },
+  "7625": {
+    "title": "Smart Contract Identifiers and Metadata Extension",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 265,
+    "markdownPath": "https://raw.githubusercontent.com/SaulBuilds/ERCs/master/ERCS/erc-7625.md"
   },
   "7627": {
     "title": "Secure Messaging Protocol",
@@ -4672,6 +4714,13 @@
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7634.md"
+  },
+  "7635": {
+    "title": "Multi-Fungible Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 277,
+    "markdownPath": "https://raw.githubusercontent.com/memelabs-dev/ERCs/add-erc-8000/ERCS/erc-7635.md"
   },
   "7636": {
     "title": "Extension of EIP-778 for \"client\" ENR Entry",
@@ -4727,6 +4776,13 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7645.md"
   },
+  "7646": {
+    "title": "Metadata Management for NFTs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 293,
+    "markdownPath": "https://raw.githubusercontent.com/Kureev/ERCs/kureev/erc_draft_metadata_management_for_nfts/ERCS/erc-7646.md"
+  },
   "7649": {
     "title": "Bonding curve-embedded liquidity for NFTs",
     "status": "Draft",
@@ -4745,11 +4801,32 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7651.md"
   },
+  "7652": {
+    "title": "ERC-721 Guarantee Extension",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 349,
+    "markdownPath": "https://raw.githubusercontent.com/iunknow588/EthCDao/master/ERCS/erc-7652.md"
+  },
+  "7653": {
+    "title": "Named NFT",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 320,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/xinbenlv-patch-1/ERCS/erc-7653.md"
+  },
   "7654": {
     "title": "Request Method Types",
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7654.md"
+  },
+  "7655": {
+    "title": "ERC-5189 Operation Receipts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 318,
+    "markdownPath": "https://raw.githubusercontent.com/attente/ERCs/erc-5189-receipts/ERCS/erc-7655.md"
   },
   "7656": {
     "title": "Generalized Token-Linked Services",
@@ -4768,6 +4845,20 @@
     "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7658.md"
+  },
+  "7660": {
+    "title": "Release tokens on predefined periods",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 347,
+    "markdownPath": "https://raw.githubusercontent.com/erc4377/ERCs/master/ERCS/erc-7660.md"
+  },
+  "7661": {
+    "title": "Extended Multiphase Fractional NFTs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 344,
+    "markdownPath": "https://raw.githubusercontent.com/JEflyer/ERCs/patch-3/ERCS/erc-7661.md"
   },
   "7662": {
     "title": "AI Agent NFTs",
@@ -4799,11 +4890,25 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7668.md"
   },
+  "7672": {
+    "title": "Event-Driven NFT Utilities",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 353,
+    "markdownPath": "https://raw.githubusercontent.com/williamh-zx/ERCs/erc-draft-event-driven/ERCS/erc-7672.md"
+  },
   "7673": {
     "title": "Distinguishable base256emoji Addresses",
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7673.md"
+  },
+  "7674": {
+    "title": "Temporary Approval Extension for ERC-20",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 358,
+    "markdownPath": "https://raw.githubusercontent.com/byshape/ERCs/transient-approve/ERCS/erc-7674.md"
   },
   "7675": {
     "title": "Retroactively Included EIPs",
@@ -4828,6 +4933,13 @@
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7679.md"
+  },
+  "7680": {
+    "title": "Valued Tokens with Layered Liquidity",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 368,
+    "markdownPath": "https://raw.githubusercontent.com/catiga/ERCs/master/ERCS/erc-7680.md"
   },
   "7681": {
     "title": "Dual Nature Multi Token Protocol",
@@ -4871,6 +4983,20 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7688.md"
   },
+  "7689": {
+    "title": "Smart Blobs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 380,
+    "markdownPath": "https://raw.githubusercontent.com/charmful0x/ERCs/master/ERCS/erc-7689.md"
+  },
+  "7690": {
+    "title": "Union Lock",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 382,
+    "markdownPath": "https://raw.githubusercontent.com/1999321/ERCs/union-lock/ERCS/erc-7690.md"
+  },
   "7691": {
     "title": "Blob throughput increase",
     "status": "Draft",
@@ -4894,6 +5020,12 @@
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7695.md"
+  },
+  "7697": {
+    "title": "AUTHCREATE opcode",
+    "status": "Draft",
+    "prNo": 8493,
+    "markdownPath": "https://raw.githubusercontent.com/txgyy/EIPs/AuthCreate/EIPS/eip-7697.md"
   },
   "7698": {
     "title": "EOF - Creation transaction",
@@ -4931,6 +5063,13 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7703.md"
   },
+  "7704": {
+    "title": "Soul Resonance Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 551,
+    "markdownPath": "https://raw.githubusercontent.com/mike0x1024/ERCs/master/ERCS/erc-7704.md"
+  },
   "7705": {
     "title": "NONREENTRANT and REENTRANT opcodes",
     "status": "Draft",
@@ -4961,17 +5100,57 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7709.md"
   },
+  "7710": {
+    "title": "Smart Contract Delegation Interfaces",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 433,
+    "markdownPath": "https://raw.githubusercontent.com/rojotek/ERCs/delegation-framework/ERCS/erc-7710.md"
+  },
   "7713": {
     "title": "Box type for EIP-712 messages",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7713.md"
   },
+  "7714": {
+    "title": "Simple Permissions Checks",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 435,
+    "markdownPath": "https://raw.githubusercontent.com/hieronx/ERCs/permissions/ERCS/erc-7714.md"
+  },
+  "7715": {
+    "title": "Grant Permissions from Wallets",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 436,
+    "markdownPath": "https://raw.githubusercontent.com/pedrouid/ERCs/patch-3/ERCS/erc-7715.md"
+  },
   "7716": {
     "title": "Anti-correlation attestation penalties",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7716.md"
+  },
+  "7717": {
+    "title": "Deterministic AA wallet",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 453,
+    "markdownPath": "https://raw.githubusercontent.com/jaehunkim/ERCs/deterministic_aa/ERCS/erc-7717.md"
+  },
+  "7718": {
+    "title": "Portal Wire Protocol a framework for discv5",
+    "status": "Draft",
+    "prNo": 8629,
+    "markdownPath": "https://raw.githubusercontent.com/KolbyML/EIPs/portal-wire-spec/EIPS/eip-7718.md"
+  },
+  "7719": {
+    "title": "P2P History Network",
+    "status": "Draft",
+    "prNo": 8630,
+    "markdownPath": "https://raw.githubusercontent.com/KolbyML/EIPs/portal-history/EIPS/eip-7719.md"
   },
   "7720": {
     "title": "Deferred Token Transfer",
@@ -5015,11 +5194,32 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7729.md"
   },
+  "7730": {
+    "title": "Structured Data Clear Signing Format",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 509,
+    "markdownPath": "https://raw.githubusercontent.com/lcastillo-ledger/ERCs/master/ERCS/erc-7730.md"
+  },
+  "7731": {
+    "title": "Vulnerability and Exposure Identifier",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 513,
+    "markdownPath": "https://raw.githubusercontent.com/SecurFi/ERCs/master/ERCS/erc-7731.md"
+  },
   "7732": {
     "title": "Enshrined Proposer-Builder Separation",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7732.md"
+  },
+  "7734": {
+    "title": "Decentralized Identity Verification (DID)",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 517,
+    "markdownPath": "https://raw.githubusercontent.com/64anushka/ERCs/patch-1/ERCS/erc-7734.md"
   },
   "7736": {
     "title": "Leaf-level state expiry in verkle trees",
@@ -5087,11 +5287,32 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7749.md"
   },
+  "7750": {
+    "title": "Decentralized Employment System",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 573,
+    "markdownPath": "https://raw.githubusercontent.com/jamesavechives/ERCs/DES/ERCS/erc-7750.md"
+  },
   "7751": {
     "title": "Wrapping of bubbled up reverts",
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
+  },
+  "7752": {
+    "title": "Private Equity Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 579,
+    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/eip-equity-token/ERCS/erc-7752.md"
+  },
+  "7753": {
+    "title": "Algorithmically generated NFT",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 584,
+    "markdownPath": "https://raw.githubusercontent.com/chen4903/ERCs/master/ERCS/erc-7753.md"
   },
   "7754": {
     "title": "Tamperproof Web Immutable Transaction (TWIT)",
@@ -5104,6 +5325,13 @@
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7756.md"
+  },
+  "7757": {
+    "title": "Instinct-Based Automatic Transactions",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 596,
+    "markdownPath": "https://raw.githubusercontent.com/jamesavechives/ERCs/AI/ERCS/erc-7757.md"
   },
   "7758": {
     "title": "Transfer With Authorization",
@@ -5129,11 +5357,38 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7762.md"
   },
+  "7763": {
+    "title": "App Keys for Fully Embedded Accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 615,
+    "markdownPath": "https://raw.githubusercontent.com/danfinlay/ERCs/wallet_getExposedAppKey/ERCS/erc-7763.md"
+  },
+  "7764": {
+    "title": "Buyer-Seller Negotiable Pricing",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 618,
+    "markdownPath": "https://raw.githubusercontent.com/admi-n/ERCs/master/ERCS/erc-7764.md"
+  },
+  "7765": {
+    "title": "Privileged Non-Fungible Tokens Tied To RWA",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 624,
+    "markdownPath": "https://raw.githubusercontent.com/Mint-Blockchain/ERCs/master/ERCS/erc-7765.md"
+  },
   "7766": {
     "title": "Signature Aggregation for ERC-4337",
     "status": "Draft",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7766.md"
+  },
+  "7768": {
+    "title": "No-Ether transactions with free-for-all tips",
+    "status": "Draft",
+    "prNo": 8888,
+    "markdownPath": "https://raw.githubusercontent.com/fulldecent/EIPs/patch-696834/EIPS/eip-7768.md"
   },
   "7769": {
     "title": "JSON-RPC API for ERC-4337",
@@ -5141,11 +5396,39 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7769.md"
   },
+  "7770": {
+    "title": "Fractional Reserve Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 644,
+    "markdownPath": "https://raw.githubusercontent.com/yaronvel/ERCs/master/ERCS/erc-7770.md"
+  },
+  "7771": {
+    "title": "Router Proxy",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 647,
+    "markdownPath": "https://raw.githubusercontent.com/eternauta1337/ERCs/master/ERCS/erc-7771.md"
+  },
+  "7772": {
+    "title": "Partial Gas Sponsorship",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 649,
+    "markdownPath": "https://raw.githubusercontent.com/limyeechern/ERCs/erc/igassponsor/ERCS/erc-7772.md"
+  },
   "7773": {
     "title": "Hardfork Meta - Amsterdam",
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7773.md"
+  },
+  "7774": {
+    "title": "Cache invalidation in ERC-5219 mode Web3 URL",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 652,
+    "markdownPath": "https://raw.githubusercontent.com/nand2/ERCs/patch-9/ERCS/erc-7774.md"
   },
   "7775": {
     "title": "BURN opcode",
@@ -5171,6 +5454,20 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7778.md"
   },
+  "7779": {
+    "title": "Interoperable Delegated Accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 663,
+    "markdownPath": "https://raw.githubusercontent.com/PowerStream3604/ERCs/add-erc-interoperable-delegated-account/ERCS/erc-7779.md"
+  },
+  "7780": {
+    "title": "Validation Module Extension for ERC-7579",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 666,
+    "markdownPath": "https://raw.githubusercontent.com/erc7579/ERCs/feat/module-types-extension/ERCS/erc-7780.md"
+  },
   "7782": {
     "title": "Reduce Slot Time for Lower Peak Bandwidth",
     "status": "Draft",
@@ -5188,6 +5485,20 @@
     "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7784.md"
+  },
+  "7785": {
+    "title": "Onchain registration of chain identifiers",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 669,
+    "markdownPath": "https://raw.githubusercontent.com/yuliyaalexiev/ERCs/master/ERCS/erc-7785.md"
+  },
+  "7786": {
+    "title": "Cross-Chain Messaging Gateway",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 673,
+    "markdownPath": "https://raw.githubusercontent.com/Amxx/ERCs/new-erc/crosschain-gateway-interface/ERCS/erc-7786.md"
   },
   "7787": {
     "title": "Soulbound Degradable Governance",

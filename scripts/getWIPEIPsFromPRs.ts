@@ -44,12 +44,34 @@ async function getOpenPRNumbers(
   repo: string
 ): Promise<Array<number>> {
   console.log(`Fetching open PRs for ${orgName}/${repo}...`);
-  try {
-    const apiUrl = `https://api.github.com/repos/${orgName}/${repo}/pulls?state=open`;
-    const response = await fetchWithRetry(apiUrl, { headers });
-    const openPRs = response.data;
+  const allPRs: Array<any> = [];
+  let page = 1;
+  const perPage = 100; // Maximum items per page allowed by GitHub API
 
-    const prNumbers = openPRs.map((pr: { number: number }) => pr.number);
+  try {
+    while (true) {
+      const apiUrl = `https://api.github.com/repos/${orgName}/${repo}/pulls?state=open&per_page=${perPage}&page=${page}`;
+      const response = await fetchWithRetry(apiUrl, { headers });
+      const openPRs = response.data;
+
+      if (openPRs.length === 0) {
+        break; // No more pages to fetch
+      }
+
+      allPRs.push(...openPRs);
+
+      // Check if there are more pages
+      const linkHeader = response.headers.link;
+      if (!linkHeader || !linkHeader.includes('rel="next"')) {
+        break; // No more pages
+      }
+
+      page++;
+      console.log(`Fetched page ${page - 1}, found ${openPRs.length} PRs...`);
+    }
+
+    console.log(`Total PRs found: ${allPRs.length}`);
+    const prNumbers = allPRs.map((pr: { number: number }) => pr.number);
     return prNumbers;
   } catch (error) {
     console.error(`Failed to fetch open PRs: ${error}`);
