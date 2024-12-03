@@ -2299,7 +2299,7 @@
   },
   "3670": {
     "title": "EOF - Code Validation",
-    "status": "Stagnant",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3670.md"
   },
@@ -3666,8 +3666,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6682.md"
   },
   "6690": {
-    "title": "EVM Modular Arithmetic Extensions (EVMMAX)",
-    "status": "Stagnant",
+    "title": "EVM Modular Arithmetic Extensions",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6690.md"
   },
@@ -5287,8 +5287,8 @@
   "7804": {
     "title": "Withdrawal Credential Update Request",
     "status": "Draft",
-    "prNo": 9005,
-    "markdownPath": "https://raw.githubusercontent.com/lucassaldanha/EIPs/eip-7800/EIPS/eip-7804.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7804.md"
   },
   "7805": {
     "title": "Fork-choice enforced Inclusion Lists (FOCIL)",
@@ -5396,11 +5396,10 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7823.md"
   },
   "7825": {
-    "title": "State Channel Standard data types and interfaces",
+    "title": "Transaction Gas Limit Cap",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 728,
-    "markdownPath": "https://raw.githubusercontent.com/layer-3/ERCs/master/ERCS/erc-7825.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7825.md"
   },
   "7826": {
     "title": "Quantum Supremacy Bounty",
@@ -5416,12 +5415,25 @@
     "prNo": 734,
     "markdownPath": "https://raw.githubusercontent.com/lex-clinic/ERCs/master/ERCS/erc-7827.md"
   },
+  "7828": {
+    "title": "Chain-specific addresses using ENS",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 735,
+    "markdownPath": "https://raw.githubusercontent.com/jrudolf/ERCs/master/ERCS/erc-7828.md"
+  },
+  "7829": {
+    "title": "Data Asset NFT",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 744,
+    "markdownPath": "https://raw.githubusercontent.com/memoio/ERCs/data-asset-nft/ERCS/erc-7829.md"
+  },
   "7830": {
     "title": "Contract size limit increase for EOF",
     "status": "Draft",
     "isERC": false,
-    "prNo": 9074,
-    "markdownPath": "https://raw.githubusercontent.com/EIPTools/eip-tools/refs/heads/master/temp/eip-7830.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7830.md"
   },
   "7921": {
     "title": "Data Asset NFT",
