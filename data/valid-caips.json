@@ -268,5 +268,11 @@
     "status": "Draft",
     "prNo": 322,
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/caip317/uri-scheme-caip/CAIPs/caip-322.md"
+  },
+  "341": {
+    "title": "Extension ID Target Type Specification",
+    "status": "Draft",
+    "prNo": 341,
+    "markdownPath": "https://raw.githubusercontent.com/ffmcgee725/CAIPs/feat/define-extension-id-as-a-valid-target-type/CAIPs/caip-341.md"
   }
 }
