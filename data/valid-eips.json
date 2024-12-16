@@ -5300,7 +5300,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
   },
   "7752": {
-    "title": "Private Equity Token",
+    "title": "Restricted Security Token",
     "status": "Draft",
     "isERC": true,
     "prNo": 579,
@@ -5796,6 +5796,12 @@
     "status": "Draft",
     "prNo": 9128,
     "markdownPath": "https://raw.githubusercontent.com/barnabasbusa/EIPs/bbusa/el-config-from-cl/EIPS/eip-7839.md"
+  },
+  "7840": {
+    "title": "Add blob schedule to EL config files",
+    "status": "Draft",
+    "prNo": 9129,
+    "markdownPath": "https://raw.githubusercontent.com/lightclient/EIPs/blob-config/EIPS/eip-7840.md"
   },
   "7841": {
     "title": "Cross-chain Message Format and Mailbox",
