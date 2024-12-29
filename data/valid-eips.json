@@ -4216,7 +4216,7 @@
   },
   "7503": {
     "title": "Zero-Knowledge Wormholes",
-    "status": "Stagnant",
+    "status": "Draft",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7503.md"
   },
@@ -4385,7 +4385,7 @@
   },
   "7543": {
     "title": "EVM arbitrary precision decimal math",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7543.md"
   },
@@ -4487,7 +4487,7 @@
   },
   "7577": {
     "title": "Versioning Scheme for EIPs",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7577.md"
   },
@@ -4754,13 +4754,13 @@
   },
   "7642": {
     "title": "eth/69 - Drop pre-merge fields",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7642.md"
   },
   "7643": {
     "title": "History accumulator for pre-PoS data",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7643.md"
   },
@@ -4918,7 +4918,7 @@
   },
   "7676": {
     "title": "EOF - Prepare for Address Space Extension",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7676.md"
   },
@@ -4999,7 +4999,7 @@
   },
   "7691": {
     "title": "Blob throughput increase",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7691.md"
   },
@@ -5072,13 +5072,13 @@
   },
   "7705": {
     "title": "NONREENTRANT and REENTRANT opcodes",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7705.md"
   },
   "7706": {
     "title": "Separate gas type for calldata",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7706.md"
   },
@@ -5215,7 +5215,7 @@
   },
   "7734": {
     "title": "Decentralized Identity Verification (DID)",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7734.md"
   },
@@ -5269,7 +5269,7 @@
   },
   "7746": {
     "title": "Composable Security Middleware Hooks",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7746.md"
   },
@@ -5385,8 +5385,8 @@
   "7768": {
     "title": "No-Ether transactions with free-for-all tips",
     "status": "Draft",
-    "prNo": 8888,
-    "markdownPath": "https://raw.githubusercontent.com/fulldecent/EIPs/patch-696834/EIPS/eip-7768.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7768.md"
   },
   "7769": {
     "title": "JSON-RPC API for ERC-4337",
@@ -5528,8 +5528,8 @@
   "7793": {
     "title": "TXINDEX precompile",
     "status": "Draft",
-    "prNo": 8981,
-    "markdownPath": "https://raw.githubusercontent.com/Marchhill/EIPs/txindex-opcode/EIPS/eip-7793.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7793.md"
   },
   "7794": {
     "title": "Grant Registry",
@@ -5615,7 +5615,7 @@
   },
   "7808": {
     "title": "Reserve Tx-Type Range for RIPs",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7808.md"
   },
@@ -5687,7 +5687,7 @@
   },
   "7820": {
     "title": "Access Control Registry",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7820.md"
   },
@@ -5812,8 +5812,8 @@
   "7843": {
     "title": "SLOT precompile",
     "status": "Draft",
-    "prNo": 9141,
-    "markdownPath": "https://raw.githubusercontent.com/Marchhill/EIPs/slot-precompile/EIPS/eip-7843.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7843.md"
   },
   "7844": {
     "title": "Consolidated Dynamic Storage (CDS)",
@@ -5833,6 +5833,38 @@
     "isERC": true,
     "prNo": 779,
     "markdownPath": "https://raw.githubusercontent.com/ilikesymmetry/ERCs/wallet-connection-api/ERCS/erc-7846.md"
+  },
+  "7847": {
+    "title": "Social Media NFTs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 782,
+    "markdownPath": "https://raw.githubusercontent.com/nickjuntilla/ERCs/nft-social-media-standard/ERCS/erc-7847.md"
+  },
+  "7848": {
+    "title": "On-chain upgrade signaling",
+    "status": "Draft",
+    "prNo": 9174,
+    "markdownPath": "https://raw.githubusercontent.com/fulldecent/EIPs/patch-135720/EIPS/eip-7848.md"
+  },
+  "7851": {
+    "title": "EOA private key deactivation/reactivation",
+    "status": "Draft",
+    "prNo": 9193,
+    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/EOA-deactivation/EIPS/eip-7851.md"
+  },
+  "7852": {
+    "title": "Opcodes Per Second",
+    "status": "Draft",
+    "prNo": 9203,
+    "markdownPath": "https://raw.githubusercontent.com/MASDXI/EIPs/master/EIPS/eip-7852.md"
+  },
+  "7853": {
+    "title": "Social SBT",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 808,
+    "markdownPath": "https://raw.githubusercontent.com/alibertay/ERCs/patch-1/ERCS/erc-7853.md"
   },
   "7921": {
     "title": "Data Asset NFT",
