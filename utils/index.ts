@@ -55,6 +55,15 @@ export const convertMetadataToJson = (
   return jsonObject as EipMetadataJson;
 };
 
+export const STATUS_COLORS = {
+  Draft: "#D69E2E", // yellow.500 (using # values so it works for the metaimg generation)
+  Review: "#F1C40F", // yellow.500
+  "Last Call": "#38A169", // green.500
+  Final: "#2ECC71", // green.500
+  Stagnant: "#E53E3E", // red.500
+  Withdrawn: "#95A5A6", // gray.500
+};
+
 export const EIPStatus: {
   [status: string]: {
     bg: string;
@@ -63,36 +72,36 @@ export const EIPStatus: {
   };
 } = {
   Draft: {
-    bg: "#D69E2E", // yellow.500 (using # values so it works for the metaimg generation)
+    bg: STATUS_COLORS.Draft,
     prefix: "⚠️",
     description:
       "This EIP is not yet recommended for general use or implementation, as it is subject to normative (breaking) changes.",
   },
   Review: {
-    bg: "#D69E2E", // yellow.500
+    bg: STATUS_COLORS.Review,
     prefix: "⚠️",
     description:
       "This EIP is not yet recommended for general use or implementation, as it is subject to normative (breaking) changes.",
   },
   "Last Call": {
-    bg: "#38A169", // green.500
+    bg: STATUS_COLORS["Last Call"],
     prefix: "📢",
     description:
       "This EIP is in the last call for review stage. The authors wish to finalize the EIP and ask you to provide feedback.",
   },
   Final: {
-    bg: "#38A169", // green.500
+    bg: STATUS_COLORS.Final,
     prefix: "🎉",
     description: "This EIP has been accepted and implemented.",
   },
   Stagnant: {
-    bg: "#E53E3E", // red.500
+    bg: STATUS_COLORS.Stagnant,
     prefix: "🚧",
     description:
       "This EIP had no activity for at least 6 months. This EIP should not be used.",
   },
   Withdrawn: {
-    bg: "#E53E3E", // red.500
+    bg: STATUS_COLORS.Withdrawn,
     prefix: "🛑",
     description: "This EIP has been withdrawn, and should not be used.",
   },

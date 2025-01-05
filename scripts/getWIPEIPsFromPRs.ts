@@ -172,7 +172,7 @@ const fetchDataFromOpenPRs = async ({
         const eipMarkdownRes: string = (await fetchWithRetry(markdownPath, {}))
           .data;
         const { metadata } = extractMetadata(eipMarkdownRes);
-        const { title, status } = convertMetadataToJson(metadata);
+        const { title, status, requires } = convertMetadataToJson(metadata);
 
         console.log(`Found WIP ${filePrefix}: ${eipNo}: ${title}`);
 
@@ -182,6 +182,7 @@ const fetchDataFromOpenPRs = async ({
           isERC,
           prNo,
           markdownPath,
+          requires,
         };
       }
     })

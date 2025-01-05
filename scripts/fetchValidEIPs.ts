@@ -33,16 +33,18 @@ const getEIPMetadata = (
 ): {
   title: string;
   status: string;
+  requires: number[];
 } => {
   const filePath = path.join(dir, `${prefix}-${number}.md`);
   const content = fs.readFileSync(filePath, "utf-8");
 
   const { metadata } = extractMetadata(content);
-  const { title, status } = convertMetadataToJson(metadata);
+  const { title, status, requires } = convertMetadataToJson(metadata);
 
   return {
     title,
     status,
+    requires,
   };
 };
 

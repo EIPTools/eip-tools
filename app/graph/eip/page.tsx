@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useCallback } from "react";
-import { ForceGraph2D } from "react-force-graph";
+import ForceGraph2D from "react-force-graph-2d";
 import {
   Box,
   VStack,
@@ -9,12 +9,12 @@ import {
   Heading,
   Flex,
   Circle,
-  useColorModeValue,
   Card,
   CardBody,
 } from "@chakra-ui/react";
-import { GraphData, GraphNode } from "@/types";
+import { GraphNode } from "@/types";
 import { eipGraphData } from "@/data/eipGraphData";
+import { STATUS_COLORS } from "@/utils";
 
 const EIPGraph = () => {
   const graphData = eipGraphData;
@@ -23,10 +23,9 @@ const EIPGraph = () => {
   const [highlightLinks, setHighlightLinks] = useState(new Set());
   const [hoverNode, setHoverNode] = useState<GraphNode | null>(null);
 
-  const bg = useColorModeValue("white", "gray.800");
-  const tooltipBg = useColorModeValue("white", "gray.700");
-  const textColor = useColorModeValue("gray.600", "gray.300");
-  const subTextColor = useColorModeValue("gray.500", "gray.400");
+  const tooltipBg = "bg.800";
+  const textColor = "gray.300";
+  const subTextColor = "gray.400";
 
   const handleNodeClick = useCallback((node: GraphNode) => {
     window.open(`https://eip.tools/eip/${node.eipNo}`, "_blank");
@@ -55,35 +54,35 @@ const EIPGraph = () => {
 
       switch (node.status.toLowerCase()) {
         case "final":
-          return "#2ecc71";
+          return STATUS_COLORS.Final;
         case "draft":
-          return "#3498db";
+          return STATUS_COLORS.Draft;
         case "review":
-          return "#f1c40f";
+          return STATUS_COLORS.Review;
         case "last call":
-          return "#e67e22";
+          return STATUS_COLORS["Last Call"];
         case "withdrawn":
-          return "#95a5a6";
+          return STATUS_COLORS.Withdrawn;
         case "stagnant":
-          return "#7f8c8d";
+          return STATUS_COLORS.Stagnant;
         default:
-          return "#4a90e2";
+          return STATUS_COLORS.Draft;
       }
     },
     [highlightNodes]
   );
 
   const statusColors = {
-    Final: "#2ecc71",
-    Draft: "#3498db",
-    Review: "#f1c40f",
-    "Last Call": "#e67e22",
-    Withdrawn: "#95a5a6",
-    Stagnant: "#7f8c8d",
+    Final: STATUS_COLORS.Final,
+    Draft: STATUS_COLORS.Draft,
+    Review: STATUS_COLORS.Review,
+    "Last Call": STATUS_COLORS["Last Call"],
+    Withdrawn: STATUS_COLORS.Withdrawn,
+    Stagnant: STATUS_COLORS.Stagnant,
   };
 
   return (
-    <Box position="relative" h="100vh" bg={bg}>
+    <Box position="relative" h="100vh">
       {/* Status Legend */}
       <Card
         position="absolute"
@@ -121,7 +120,9 @@ const EIPGraph = () => {
           boxShadow="md"
         >
           <CardBody>
-            <Heading size="md">EIP-{hoverNode.eipNo}</Heading>
+            <Heading size="md">
+              {hoverNode.isERC ? "ERC" : "EIP"}-{hoverNode.eipNo}
+            </Heading>
             <Text color={textColor} fontSize="sm" mt={1}>
               {hoverNode.title}
             </Text>
@@ -148,13 +149,13 @@ const EIPGraph = () => {
         nodeCanvasObject={(node, ctx, globalScale) => {
           const label = `${node.eipNo}`;
           const fontSize = 12 / globalScale;
-          ctx.font = `${fontSize}px Sans-Serif`;
+          ctx.font = `bold ${fontSize}px Sans-Serif`;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
 
           // Node circle
           ctx.beginPath();
-          ctx.arc(node.x ?? 0, node.y ?? 0, 6, 0, 2 * Math.PI);
+          ctx.arc(node.x ?? 0, node.y ?? 0, 10 / globalScale, 0, 2 * Math.PI);
           ctx.fillStyle = getNodeColor(node);
           ctx.fill();
 

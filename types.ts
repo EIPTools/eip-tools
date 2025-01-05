@@ -5,6 +5,7 @@ export interface ValidEIPs {
     isERC?: boolean;
     prNo?: number;
     markdownPath: string;
+    requires?: number[];
   };
 }
 
