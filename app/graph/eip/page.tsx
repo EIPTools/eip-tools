@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback, useRef } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import {
   Box,
@@ -13,11 +13,19 @@ import {
   CardBody,
   IconButton,
   HStack,
+  InputGroup,
+  Input,
+  InputRightElement,
+  Button,
+  List,
+  ListItem,
+  Spacer,
+  Badge,
 } from "@chakra-ui/react";
 import { GraphNode } from "@/types";
 import { eipGraphData } from "@/data/eipGraphData";
-import { STATUS_COLORS } from "@/utils";
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+import { EIPStatus, STATUS_COLORS } from "@/utils";
+import { AddIcon, MinusIcon, SearchIcon } from "@chakra-ui/icons";
 import { ForceGraphMethods } from "react-force-graph-3d";
 import SpriteText from "three-spritetext";
 import * as THREE from "three";
@@ -32,6 +40,14 @@ const EIPGraph = () => {
   const [highlightLinks, setHighlightLinks] = useState(new Set());
   const [hoverNode, setHoverNode] = useState<GraphNode | null>(null);
   const graphRef = useRef<ForceGraphMethods<GraphNode, any>>();
+  const [searchInput, setSearchInput] = useState("");
+  const [searchSuggestions, setSearchSuggestions] = useState<Array<GraphNode>>(
+    []
+  );
+  const [hideSuggestions, setHideSuggestions] = useState(false);
+  const [searchSelectedIndex, setSearchSelectedIndex] = useState(-1);
+  const searchRef = useRef<HTMLDivElement>(null);
+  const searchSuggestionsListRef = useRef<HTMLUListElement>(null);
 
   const tooltipBg = "bg.800";
   const textColor = "gray.300";
@@ -92,14 +108,6 @@ const EIPGraph = () => {
     Withdrawn: STATUS_COLORS.Withdrawn,
     Stagnant: STATUS_COLORS.Stagnant,
   };
-
-  const getNodeRadius = useCallback((globalScale: number) => {
-    const minRadius = 6;
-    const maxRadius = 30;
-    const baseRadius = 12;
-    const scaleFactor = 1 / globalScale;
-    return Math.min(maxRadius, Math.max(minRadius, baseRadius * scaleFactor));
-  }, []);
 
   const handleZoomIn = useCallback(() => {
     if (graphRef.current) {
@@ -197,6 +205,79 @@ const EIPGraph = () => {
     [getNodeColor, getNodeTextSize]
   );
 
+  const filterSuggestions = (query: string): GraphNode[] => {
+    if (!query) return [];
+
+    const lowerQuery = query.toLowerCase();
+    let results = graphData.nodes.filter(
+      (node) =>
+        node.eipNo.toString().includes(lowerQuery) ||
+        node.title.toLowerCase().includes(lowerQuery)
+    );
+
+    // Prioritize exact number matches
+    results.sort((a, b) => {
+      if (a.eipNo.toString() === query) return -1;
+      if (b.eipNo.toString() === query) return 1;
+      return 0;
+    });
+
+    return results.slice(0, 10); // Limit to 10 suggestions
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "ArrowDown") {
+      setSearchSelectedIndex((prevIndex) => {
+        const newIndex = (prevIndex + 1) % searchSuggestions.length;
+        scrollToItem(newIndex);
+        return newIndex;
+      });
+    } else if (e.key === "ArrowUp") {
+      setSearchSelectedIndex((prevIndex) => {
+        const newIndex =
+          prevIndex === 0 ? searchSuggestions.length - 1 : prevIndex - 1;
+        scrollToItem(newIndex);
+        return newIndex;
+      });
+    } else if (e.key === "Enter") {
+      if (
+        searchSelectedIndex >= 0 &&
+        searchSelectedIndex < searchSuggestions.length
+      ) {
+        focusNode(searchSuggestions[searchSelectedIndex]);
+        setSearchInput("");
+        setSearchSuggestions([]);
+        setHideSuggestions(true);
+      }
+    }
+  };
+
+  const scrollToItem = (index: number) => {
+    if (searchSuggestionsListRef.current) {
+      const item = searchSuggestionsListRef.current.children[
+        index
+      ] as HTMLElement;
+      if (item) {
+        item.scrollIntoView({ block: "nearest", behavior: "instant" });
+      }
+    }
+  };
+
+  const focusNode = useCallback((node: GraphNode) => {
+    if (!graphRef.current) return;
+
+    const distance = 200;
+    graphRef.current.cameraPosition(
+      { x: 0, y: 0, z: distance }, // Camera position
+      { x: 0, y: 0, z: 0 }, // Look-at position
+      2000 // Animation duration
+    );
+  }, []);
+
+  useEffect(() => {
+    setSearchSelectedIndex(-1); // Reset selected index when search suggestions change
+  }, [searchSuggestions]);
+
   return (
     <Box position="relative" h="100vh">
       {/* Status Legend */}
@@ -225,6 +306,93 @@ const EIPGraph = () => {
           </VStack>
         </CardBody>
       </Card>
+
+      {/* Search Box */}
+      <Box position="absolute" top={4} left={4} zIndex={10} ref={searchRef}>
+        <InputGroup w={{ base: "18rem", md: "24rem" }}>
+          <Input
+            placeholder="Search EIP/ERC number or title"
+            bg="bg.900"
+            value={searchInput}
+            onChange={(e) => {
+              setSearchInput(e.target.value);
+              setSearchSuggestions(filterSuggestions(e.target.value));
+              setHideSuggestions(false);
+            }}
+            onKeyDown={handleKeyDown}
+            onFocus={() => setHideSuggestions(false)}
+          />
+          <InputRightElement w="4rem">
+            <Button size="sm" colorScheme="blue">
+              <SearchIcon />
+            </Button>
+          </InputRightElement>
+        </InputGroup>
+
+        {searchSuggestions.length > 0 && !hideSuggestions && (
+          <List
+            mt={2}
+            border="1px"
+            borderColor="gray.200"
+            borderRadius="md"
+            bg="white"
+            zIndex={9999}
+            position="absolute"
+            width="100%"
+            maxHeight="20rem"
+            overflowY="auto"
+            sx={{
+              "::-webkit-scrollbar": {
+                h: "12px",
+              },
+              "::-webkit-scrollbar-track ": {
+                bg: "gray.400",
+                rounded: "md",
+              },
+              "::-webkit-scrollbar-thumb": {
+                bg: "gray.500",
+                rounded: "md",
+              },
+            }}
+            display={hideSuggestions ? "none" : "block"}
+          >
+            {searchSuggestions.map((node, index) => (
+              <ListItem
+                key={index}
+                px={4}
+                py={2}
+                _hover={{ bg: "bg.800" }}
+                bg={searchSelectedIndex === index ? "bg.800" : "bg.900"}
+                cursor="pointer"
+                onClick={() => {
+                  focusNode(node);
+                  setSearchInput("");
+                  setSearchSuggestions([]);
+                  setHideSuggestions(true);
+                }}
+              >
+                <HStack>
+                  <Text>
+                    {node.isERC ? "ERC" : "EIP"}-{node.eipNo}: {node.title}
+                  </Text>
+                  <Spacer />
+                  {node.status && (
+                    <Badge
+                      p={1}
+                      bg={EIPStatus[node.status]?.bg ?? "cyan.500"}
+                      color="white"
+                      fontWeight={700}
+                      rounded="md"
+                    >
+                      {EIPStatus[node.status]?.prefix} {node.status}
+                    </Badge>
+                  )}
+                </HStack>
+              </ListItem>
+            ))}
+          </List>
+        )}
+      </Box>
 
       {/* Hover Tooltip */}
       {hoverNode && (

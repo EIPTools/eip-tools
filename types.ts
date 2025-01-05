@@ -59,7 +59,7 @@ export interface SearchSuggestion {
 export interface GraphNode {
   id: string;
   isERC?: boolean;
-  eipNo?: number | null;
+  eipNo: number;
   title: string;
   status: string;
   type?: string;
