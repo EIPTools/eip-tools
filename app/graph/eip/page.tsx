@@ -22,14 +22,14 @@ import {
   Spacer,
   Badge,
 } from "@chakra-ui/react";
-import { GraphNode } from "@/types";
-import { eipGraphData } from "@/data/eipGraphData";
-import { EIPStatus, STATUS_COLORS } from "@/utils";
-import { AddIcon, MinusIcon, SearchIcon } from "@chakra-ui/icons";
+import { AddIcon, MinusIcon, SearchIcon, RepeatIcon } from "@chakra-ui/icons";
 import { ForceGraphMethods } from "react-force-graph-3d";
 import SpriteText from "three-spritetext";
 import * as THREE from "three";
 import { Poppins } from "next/font/google";
+import { GraphNode } from "@/types";
+import { eipGraphData } from "@/data/eipGraphData";
+import { EIPStatus, STATUS_COLORS } from "@/utils";
 
 const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -49,6 +49,8 @@ const EIPGraph = () => {
   const searchRef = useRef<HTMLDivElement>(null);
   const searchSuggestionsListRef = useRef<HTMLUListElement>(null);
 
+  const [showResetZoom, setShowResetZoom] = useState(false);
+
   const tooltipBg = "bg.800";
   const textColor = "gray.300";
   const subTextColor = "gray.400";
@@ -57,24 +59,24 @@ const EIPGraph = () => {
     window.open(`https://eip.tools/eip/${node.eipNo}`, "_blank");
   }, []);
 
-  const handleNodeHover = useCallback(
-    (node: GraphNode | null) => {
-      // setHighlightNodes(new Set(node ? [node] : []));
-      // setHighlightLinks(
-      //   new Set(
-      //     node
-      //       ? graphData.links.filter(
-      //           (link) => link.source === node.id || link.target === node.id
-      //         )
-      //       : []
-      //   )
-      // );
-      setHoverNode(node);
-    },
-    [
-      // graphData.links
-    ]
-  );
+  // const handleNodeHover = useCallback(
+  //   (node: GraphNode | null) => {
+  //     // setHighlightNodes(new Set(node ? [node] : []));
+  //     // setHighlightLinks(
+  //     //   new Set(
+  //     //     node
+  //     //       ? graphData.links.filter(
+  //     //           (link) => link.source === node.id || link.target === node.id
+  //     //         )
+  //     //       : []
+  //     //   )
+  //     // );
+  //     setHoverNode(node);
+  //   },
+  //   [
+  //     // graphData.links
+  //   ]
+  // );
 
   const getNodeColor = useCallback(
     (node: GraphNode) => {
@@ -112,7 +114,7 @@ const EIPGraph = () => {
   const handleZoomIn = useCallback(() => {
     if (graphRef.current) {
       const camera = graphRef.current.camera();
-      const distance = 0.8; // zoom in by scaling to 80% of current distance
+      const distance = 0.5; // zoom in by scaling to 50% of current distance
 
       // Get current position vector
       const currentPos = new THREE.Vector3(
@@ -135,7 +137,7 @@ const EIPGraph = () => {
   const handleZoomOut = useCallback(() => {
     if (graphRef.current) {
       const camera = graphRef.current.camera();
-      const distance = 1.2; // zoom out by scaling to 120% of current distance
+      const distance = 2; // zoom out by scaling to 200% of current distance
 
       // Get current position vector
       const currentPos = new THREE.Vector3(
@@ -266,11 +268,23 @@ const EIPGraph = () => {
   const focusNode = useCallback((node: GraphNode) => {
     if (!graphRef.current) return;
 
+    const _node = node as unknown as { x: number; y: number; z: number };
+
     const distance = 200;
+
+    setShowResetZoom(true);
     graphRef.current.cameraPosition(
-      { x: 0, y: 0, z: distance }, // Camera position
-      { x: 0, y: 0, z: 0 }, // Look-at position
-      2000 // Animation duration
+      {
+        x: _node.x * 1.5,
+        y: _node.y * 1.5,
+        z: _node.z + distance,
+      },
+      {
+        x: _node.x,
+        y: _node.y,
+        z: _node.z,
+      },
+      2000
     );
   }, []);
 
@@ -423,20 +437,46 @@ const EIPGraph = () => {
 
       {/* Zoom Controls */}
       <VStack position="absolute" bottom={4} right={4} zIndex={10} spacing={2}>
-        <IconButton
-          aria-label="Zoom in"
-          icon={<AddIcon />}
-          onClick={handleZoomIn}
-          size="sm"
-          colorScheme="gray"
-        />
-        <IconButton
-          aria-label="Zoom out"
-          icon={<MinusIcon />}
-          onClick={handleZoomOut}
-          size="sm"
-          colorScheme="gray"
-        />
+        {showResetZoom ? (
+          <Button
+            leftIcon={<RepeatIcon />}
+            onClick={() => {
+              setShowResetZoom(false);
+              graphRef.current?.zoomToFit(1000);
+            }}
+            size="sm"
+            colorScheme="gray"
+          >
+            Reset
+          </Button>
+        ) : (
+          <>
+            <IconButton
+              aria-label="Zoom in"
+              icon={<AddIcon />}
+              onClick={handleZoomIn}
+              size="sm"
+              colorScheme="gray"
+            />
+            <IconButton
+              aria-label="Zoom out"
+              icon={<MinusIcon />}
+              onClick={handleZoomOut}
+              size="sm"
+              colorScheme="gray"
+            />
+            <Button
+              leftIcon={<RepeatIcon />}
+              onClick={() => {
+                graphRef.current?.zoomToFit(1000);
+              }}
+              size="xs"
+              colorScheme="gray"
+            >
+              Reset
+            </Button>
+          </>
+        )}
       </VStack>
 
       <ForceGraph3D
@@ -451,7 +491,6 @@ const EIPGraph = () => {
         linkColor={(link) => (highlightLinks.has(link) ? "#ff6b6b" : "#d3d3d3")}
         linkWidth={(link) => (highlightLinks.has(link) ? 3 : 1)}
         onNodeClick={handleNodeClick}
-        // onNodeHover={handleNodeHover} // commenting out due to performance issues
         linkDirectionalParticles={2}
         linkDirectionalParticleWidth={2}
         // Use d3 force simulation engine
