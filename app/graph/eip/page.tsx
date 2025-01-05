@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useRef } from "react";
 import ForceGraph2D from "react-force-graph-2d";
 import {
   Box,
@@ -11,10 +11,14 @@ import {
   Circle,
   Card,
   CardBody,
+  IconButton,
+  HStack,
 } from "@chakra-ui/react";
 import { GraphNode } from "@/types";
 import { eipGraphData } from "@/data/eipGraphData";
 import { STATUS_COLORS } from "@/utils";
+import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+import { ForceGraphMethods } from "react-force-graph-2d";
 
 const EIPGraph = () => {
   const graphData = eipGraphData;
@@ -22,6 +26,7 @@ const EIPGraph = () => {
   const [highlightNodes, setHighlightNodes] = useState(new Set());
   const [highlightLinks, setHighlightLinks] = useState(new Set());
   const [hoverNode, setHoverNode] = useState<GraphNode | null>(null);
+  const graphRef = useRef<ForceGraphMethods<GraphNode, any>>();
 
   const tooltipBg = "bg.800";
   const textColor = "gray.300";
@@ -81,6 +86,28 @@ const EIPGraph = () => {
     Stagnant: STATUS_COLORS.Stagnant,
   };
 
+  const handleZoomIn = useCallback(() => {
+    if (graphRef.current) {
+      const currentZoom = graphRef.current.zoom();
+      graphRef.current.zoom(currentZoom * 1.5, 400);
+    }
+  }, []);
+
+  const handleZoomOut = useCallback(() => {
+    if (graphRef.current) {
+      const currentZoom = graphRef.current.zoom();
+      graphRef.current.zoom(currentZoom / 1.5, 400);
+    }
+  }, []);
+
+  const getNodeRadius = useCallback((globalScale: number) => {
+    const minRadius = 6;
+    const maxRadius = 30;
+    const baseRadius = 12;
+    const scaleFactor = 1 / globalScale;
+    return Math.min(maxRadius, Math.max(minRadius, baseRadius * scaleFactor));
+  }, []);
+
   return (
     <Box position="relative" h="100vh">
       {/* Status Legend */}
@@ -135,7 +162,26 @@ const EIPGraph = () => {
         </Card>
       )}
 
+      {/* Zoom Controls */}
+      <VStack position="absolute" bottom={4} right={4} zIndex={10} spacing={2}>
+        <IconButton
+          aria-label="Zoom in"
+          icon={<AddIcon />}
+          onClick={handleZoomIn}
+          size="sm"
+          colorScheme="gray"
+        />
+        <IconButton
+          aria-label="Zoom out"
+          icon={<MinusIcon />}
+          onClick={handleZoomOut}
+          size="sm"
+          colorScheme="gray"
+        />
+      </VStack>
+
       <ForceGraph2D
+        ref={graphRef}
         graphData={graphData}
         nodeId="id"
         nodeLabel={(node) =>
@@ -149,13 +195,15 @@ const EIPGraph = () => {
         nodeCanvasObject={(node, ctx, globalScale) => {
           const label = `${node.eipNo}`;
           const fontSize = 12 / globalScale;
+          const radius = getNodeRadius(globalScale);
+
           ctx.font = `bold ${fontSize}px Sans-Serif`;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
 
-          // Node circle
+          // Node circle with dynamic radius
           ctx.beginPath();
-          ctx.arc(node.x ?? 0, node.y ?? 0, 10 / globalScale, 0, 2 * Math.PI);
+          ctx.arc(node.x ?? 0, node.y ?? 0, radius, 0, 2 * Math.PI);
           ctx.fillStyle = getNodeColor(node);
           ctx.fill();
 
