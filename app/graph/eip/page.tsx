@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
-import { ForceGraph2D } from "react-force-graph";
+import React, { useState, useCallback, useRef, useMemo } from "react";
+import ForceGraph2D from "react-force-graph-2d";
 import {
   Box,
   VStack,
@@ -12,9 +12,15 @@ import {
   useColorModeValue,
   Card,
   CardBody,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  IconButton,
 } from "@chakra-ui/react";
 import { GraphData, GraphNode } from "@/types";
 import { eipGraphData } from "@/data/eipGraphData";
+import { Search2Icon } from "@chakra-ui/icons";
+import * as d3 from "d3-force";
 
 const EIPGraph = () => {
   const graphData = eipGraphData;
@@ -22,6 +28,8 @@ const EIPGraph = () => {
   const [highlightNodes, setHighlightNodes] = useState(new Set());
   const [highlightLinks, setHighlightLinks] = useState(new Set());
   const [hoverNode, setHoverNode] = useState<GraphNode | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const fgRef = useRef<any>();
 
   const bg = useColorModeValue("white", "gray.800");
   const tooltipBg = useColorModeValue("white", "gray.700");
@@ -82,8 +90,75 @@ const EIPGraph = () => {
     Stagnant: "#7f8c8d",
   };
 
+  const handleFitView = () => {
+    fgRef.current?.zoomToFit(400, 50);
+  };
+
+  const filteredGraphData = useMemo(() => {
+    if (!searchQuery) return graphData;
+
+    const filteredNodes = graphData.nodes.filter(
+      (node) =>
+        node.eipNo?.toString().includes(searchQuery) ||
+        node.title?.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    const nodeIds = new Set(filteredNodes.map((node) => node.id));
+    const filteredLinks = graphData.links.filter(
+      (link) => nodeIds.has(link.source) && nodeIds.has(link.target)
+    );
+
+    return { nodes: filteredNodes, links: filteredLinks };
+  }, [graphData, searchQuery]);
+
+  const paintNode = useCallback(
+    (node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
+      // Node circle
+      ctx.beginPath();
+      ctx.arc(node.x ?? 0, node.y ?? 0, 8, 0, 2 * Math.PI);
+      ctx.fillStyle = getNodeColor(node);
+      ctx.fill();
+
+      // Node label
+      const label = `${node.eipNo}`;
+      ctx.fillStyle = "white";
+      ctx.font = `${18 + 1 / globalScale}px Sans-Serif`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(label, node.x, node.y);
+    },
+    [getNodeColor]
+  );
+
   return (
     <Box position="relative" h="100vh" bg={bg}>
+      {/* Add Search and Zoom Controls */}
+      <Flex
+        position="absolute"
+        top={4}
+        left="50%"
+        transform="translateX(-50%)"
+        zIndex={10}
+        gap={2}
+      >
+        <InputGroup w="20rem">
+          <InputLeftElement>
+            <Search2Icon color="gray.500" />
+          </InputLeftElement>
+          <Input
+            placeholder="Search EIP number or title..."
+            bg={tooltipBg}
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </InputGroup>
+        <IconButton
+          aria-label="Fit view"
+          icon={<Search2Icon />}
+          onClick={handleFitView}
+        />
+      </Flex>
+
       {/* Status Legend */}
       <Card
         position="absolute"
@@ -135,36 +210,36 @@ const EIPGraph = () => {
       )}
 
       <ForceGraph2D
-        graphData={graphData}
+        ref={fgRef}
+        graphData={filteredGraphData}
         nodeId="id"
-        nodeLabel={(node) =>
-          `${node.isERC ? "ERC" : "EIP"}-${node.eipNo}: ${node.title}`
+        nodeLabel={(node: any) =>
+          `${(node as GraphNode).isERC ? "ERC" : "EIP"}-${(node as GraphNode).eipNo}: ${(node as GraphNode).title}`
         }
-        nodeColor={getNodeColor}
+        nodeCanvasObject={paintNode}
+        nodePointerAreaPaint={(node, color, ctx) => {
+          ctx.beginPath();
+          ctx.arc(node.x ?? 0, node.y ?? 0, 8, 0, 2 * Math.PI);
+          ctx.fillStyle = color;
+          ctx.fill();
+        }}
         linkColor={(link) => (highlightLinks.has(link) ? "#ff6b6b" : "#d3d3d3")}
         linkWidth={(link) => (highlightLinks.has(link) ? 2 : 1)}
         onNodeClick={handleNodeClick}
         onNodeHover={handleNodeHover}
-        nodeCanvasObject={(node, ctx, globalScale) => {
-          const label = `${node.eipNo}`;
-          const fontSize = 12 / globalScale;
-          ctx.font = `${fontSize}px Sans-Serif`;
-          ctx.textAlign = "center";
-          ctx.textBaseline = "middle";
-
-          // Node circle
-          ctx.beginPath();
-          ctx.arc(node.x ?? 0, node.y ?? 0, 6, 0, 2 * Math.PI);
-          ctx.fillStyle = getNodeColor(node);
-          ctx.fill();
-
-          // Label
-          ctx.fillStyle = "white";
-          ctx.fillText(label, node.x ?? 0, node.y ?? 0);
+        nodeRelSize={8}
+        nodeVal={(node) => {
+          const links = graphData.links.filter(
+            (link) => link.source === node.id || link.target === node.id
+          );
+          return Math.sqrt(links.length + 1) * 2;
         }}
-        cooldownTicks={100}
-        linkDirectionalParticles={2}
-        linkDirectionalParticleWidth={2}
+        d3VelocityDecay={0.1}
+        cooldownTicks={1000}
+        cooldownTime={15000}
+        onEngineStop={() => {
+          handleFitView();
+        }}
       />
     </Box>
   );
