@@ -2,7 +2,7 @@
 
 import { Box, Heading, Link, HStack, Text } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { EIPGraph } from "@/components/EIPGraph";
+import { EIPGraphWrapper } from "./EIPGraphWrapper";
 
 export const EIPGraphSection = () => {
   return (
@@ -15,7 +15,7 @@ export const EIPGraphSection = () => {
           </HStack>
         </Heading>
       </Link>
-      <EIPGraph isEmbedded={true} height={600} />
+      <EIPGraphWrapper isEmbedded={true} height={600} />
     </Box>
   );
 };

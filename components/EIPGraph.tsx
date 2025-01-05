@@ -33,7 +33,7 @@ import { EIPStatus, STATUS_COLORS } from "@/utils";
 
 const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
-export const EIPGraph = ({
+const EIPGraph = ({
   isEmbedded = false,
   height,
   width,
@@ -64,7 +64,15 @@ export const EIPGraph = ({
   const subTextColor = "gray.400";
 
   const handleNodeClick = useCallback((node: GraphNode) => {
-    window.open(`https://eip.tools/eip/${node.eipNo}`, "_blank");
+    // Using dynamic imports to ensure this only runs on client side
+    const openLink = () => {
+      window.open(`https://eip.tools/eip/${node.eipNo}`, "_blank");
+    };
+
+    // Only execute if we're in the browser
+    if (typeof window !== "undefined") {
+      openLink();
+    }
   }, []);
 
   // const handleNodeHover = useCallback(
@@ -548,3 +556,5 @@ export const EIPGraph = ({
     </Box>
   );
 };
+
+export default EIPGraph;
