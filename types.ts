@@ -54,3 +54,23 @@ export interface SearchSuggestion {
   label: string;
   data: FilteredSuggestion;
 }
+
+export interface GraphNode {
+  id: string;
+  isERC?: boolean;
+  eipNo?: number | null;
+  title: string;
+  status: string;
+  type?: string;
+  category?: string;
+}
+
+export interface GraphLink {
+  source: string;
+  target: string;
+}
+
+export interface GraphData {
+  nodes: GraphNode[];
+  links: GraphLink[];
+}

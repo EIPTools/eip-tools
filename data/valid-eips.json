@@ -3321,7 +3321,7 @@
   },
   "5806": {
     "title": "Delegate transaction",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5806.md"
   },
@@ -4017,7 +4017,7 @@
   },
   "7208": {
     "title": "On-Chain Data Containers",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7208.md"
   },
@@ -4493,7 +4493,7 @@
   },
   "7578": {
     "title": "Physical Asset Redemption",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7578.md"
   },
@@ -4553,7 +4553,7 @@
   },
   "7591": {
     "title": "BLS signed transactions",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7591.md"
   },
@@ -5289,8 +5289,7 @@
     "title": "Decentralized Employment System",
     "status": "Draft",
     "isERC": true,
-    "prNo": 573,
-    "markdownPath": "https://raw.githubusercontent.com/jamesavechives/ERCs/DES/ERCS/erc-7750.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7750.md"
   },
   "7751": {
     "title": "Wrapping of bubbled up reverts",
@@ -5461,8 +5460,7 @@
     "title": "Validation Module Extension for ERC-7579",
     "status": "Draft",
     "isERC": true,
-    "prNo": 666,
-    "markdownPath": "https://raw.githubusercontent.com/erc7579/ERCs/feat/module-types-extension/ERCS/erc-7780.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7780.md"
   },
   "7782": {
     "title": "Reduce Slot Time for Lower Peak Bandwidth",
@@ -5830,6 +5828,8 @@
     "markdownPath": "https://raw.githubusercontent.com/IAmKio/ERCs-minimal-orchestrator-rpc/master/ERCS/erc-7845.md"
   },
   "7846": {
+    "title": "Wallet Connection API",
+    "status": "Draft",
     "isERC": true,
     "prNo": 779,
     "markdownPath": "https://raw.githubusercontent.com/ilikesymmetry/ERCs/wallet-connection-api/ERCS/erc-7846.md"
@@ -5865,6 +5865,27 @@
     "isERC": true,
     "prNo": 808,
     "markdownPath": "https://raw.githubusercontent.com/alibertay/ERCs/patch-1/ERCS/erc-7853.md"
+  },
+  "7854": {
+    "title": "Verification-independent Cross-Chain Messaging",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 817,
+    "markdownPath": "https://raw.githubusercontent.com/hyperlane-xyz/ERCs/nambrot/cross-chain-messaging-erc/ERCS/erc-7854.md"
+  },
+  "7855": {
+    "title": "Fungible Token with gas rebates",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 822,
+    "markdownPath": "https://raw.githubusercontent.com/blockchainDevAmitesh/ERC7849/erc7849/ERCS/erc-7855.md"
+  },
+  "7856": {
+    "title": "Chain-Specific Payment Requests",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 823,
+    "markdownPath": "https://raw.githubusercontent.com/jackchuma/ERCs/jack/payment-requests/ERCS/erc-7856.md"
   },
   "7921": {
     "title": "Data Asset NFT",
