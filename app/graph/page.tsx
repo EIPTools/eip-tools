@@ -33,7 +33,15 @@ import { EIPStatus, STATUS_COLORS } from "@/utils";
 
 const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
 
-const EIPGraph = () => {
+const EIPGraph = ({
+  isEmbedded = false,
+  height,
+  width,
+}: {
+  isEmbedded?: boolean;
+  height?: number;
+  width?: number;
+}) => {
   const graphData = eipGraphData;
 
   const [highlightNodes, setHighlightNodes] = useState(new Set());
@@ -179,8 +187,11 @@ const EIPGraph = () => {
     (node: GraphNode) => {
       const group = new THREE.Group();
 
-      // Create sphere
-      const geometry = new THREE.SphereGeometry(8);
+      // Adjust sizes for embedded view
+      const scale = isEmbedded ? 0.5 : 1; // Scale down nodes when embedded
+
+      // Create sphere with adjusted size
+      const geometry = new THREE.SphereGeometry(8 * scale);
       const material = new THREE.MeshLambertMaterial({
         color: getNodeColor(node),
         transparent: true,
@@ -189,10 +200,10 @@ const EIPGraph = () => {
       const sphere = new THREE.Mesh(geometry, material);
       group.add(sphere);
 
-      // Create text sprite with dynamic size
+      // Create text sprite with adjusted size
       const sprite = new SpriteText(`${node.eipNo}`);
       sprite.color = "white";
-      const textSize = getNodeTextSize(node);
+      const textSize = getNodeTextSize(node) * (isEmbedded ? 0.5 : 1);
       sprite.textHeight = textSize;
       sprite.fontWeight = "bold";
       sprite.fontFace = poppins.style.fontFamily;
@@ -204,7 +215,7 @@ const EIPGraph = () => {
 
       return group;
     },
-    [getNodeColor, getNodeTextSize]
+    [getNodeColor, getNodeTextSize, isEmbedded]
   );
 
   const filterSuggestions = (query: string): GraphNode[] => {
@@ -293,7 +304,10 @@ const EIPGraph = () => {
   }, [searchSuggestions]);
 
   return (
-    <Box position="relative" h="100vh">
+    <Box
+      position={isEmbedded ? "relative" : "relative"}
+      h={isEmbedded ? "100%" : "100vh"}
+    >
       {/* Status Legend */}
       <Card
         position="absolute"
@@ -303,6 +317,7 @@ const EIPGraph = () => {
         size="sm"
         bg={tooltipBg}
         boxShadow="md"
+        display={isEmbedded ? "none" : "block"}
       >
         <CardBody>
           <Text fontWeight="semibold" mb={2} fontSize="sm">
@@ -493,6 +508,8 @@ const EIPGraph = () => {
         onNodeClick={handleNodeClick}
         linkDirectionalParticles={2}
         linkDirectionalParticleWidth={2}
+        height={isEmbedded ? height : undefined}
+        width={isEmbedded ? width : undefined}
         // Use d3 force simulation engine
         forceEngine="d3"
         // Controls how quickly node velocities decay (0-1)

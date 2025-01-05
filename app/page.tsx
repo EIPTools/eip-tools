@@ -4,6 +4,7 @@ import { EIPOfTheDay } from "@/components/EIPOfTheDay";
 import { Layout } from "@/components/Layout";
 import { TrendingEIPs } from "@/components/TrendingEIPs";
 import { PectraEIPs } from "@/components/PectraEIPs";
+import { EIPGraph } from "@/components/EIPGraph";
 
 export async function generateMetadata(): Promise<Metadata> {
   const imageUrl = `${process.env["HOST"]}/og/index.png?date=${Date.now()}`;
@@ -38,6 +39,7 @@ export default function Home() {
     <Layout>
       <TrendingEIPs />
       <PectraEIPs />
+      <EIPGraph />
       <EIPOfTheDay />
     </Layout>
   );
