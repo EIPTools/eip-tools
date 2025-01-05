@@ -13,13 +13,13 @@ export const extractEipNumber = (eipOrNo: string, prefix: string): string => {
 };
 
 export const extractMetadata = (text: string) => {
-  const regex = /(--|---)\r?\n([\s\S]*?)\r?\n---\s*\r?\n([\s\S]*)/;
+  const regex = /^[- ]*---[ -]*\r?\n([\s\S]*?)\r?\n[ -]*---[ -]*\r?\n([\s\S]*)/;
   const match = text.match(regex);
 
   if (match) {
     return {
-      metadata: match[2],
-      markdown: match[3],
+      metadata: match[1],
+      markdown: match[2],
     };
   } else {
     return {
@@ -41,7 +41,14 @@ export const convertMetadataToJson = (
       if (key.trim() === "eip") {
         jsonObject[key.trim()] = parseInt(value.trim());
       } else if (key.trim() === "requires") {
-        jsonObject[key.trim()] = value.split(",").map((v) => parseInt(v));
+        const numbers = value
+          .split(",")
+          .map((v) => {
+            const parsed = parseInt(v.trim());
+            return isNaN(parsed) ? null : parsed;
+          })
+          .filter((n): n is number => n !== null);
+        jsonObject[key.trim()] = numbers;
       } else if (key.trim() === "author") {
         jsonObject[key.trim()] = value
           .split(",")
