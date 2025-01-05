@@ -6,9 +6,21 @@ import { EIPGraphWrapper } from "./EIPGraphWrapper";
 
 export const EIPGraphSection = () => {
   return (
-    <Box mt={10} px={10}>
+    <Box
+      mt={10}
+      px={{
+        base: 0,
+        md: 10,
+      }}
+    >
       <Link href="/graph">
-        <Heading pb={4}>
+        <Heading
+          pb={4}
+          px={{
+            base: 4,
+            md: 0,
+          }}
+        >
           <HStack>
             <Text>🕸️ EIPs dependency graph</Text>
             <ExternalLinkIcon fontSize={"md"} />
