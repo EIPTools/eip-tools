@@ -6059,7 +6059,7 @@
       "id": "eip-7734",
       "eipNo": 7734,
       "title": "Decentralized Identity Verification (DID)",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6150,7 +6150,7 @@
       "id": "eip-7751",
       "eipNo": 7751,
       "title": "Wrapping of bubbled up reverts",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6311,7 +6311,7 @@
       "id": "eip-7777",
       "eipNo": 7777,
       "title": "Governance for Human Robot Societies",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6570,7 +6570,7 @@
       "id": "eip-7818",
       "eipNo": 7818,
       "title": "Expirable ERC-20",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6584,7 +6584,7 @@
       "id": "eip-7820",
       "eipNo": 7820,
       "title": "Access Control Registry",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6758,7 +6758,7 @@
     {
       "id": "eip-7851",
       "eipNo": 7851,
-      "title": "EOA private key deactivation/reactivation",
+      "title": "Deactivate/Reactivate a Delegated EOA's Key",
       "status": "Draft",
       "isERC": false
     },
@@ -6794,6 +6794,13 @@
       "id": "eip-7856",
       "eipNo": 7856,
       "title": "Chain-Specific Payment Requests",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7857",
+      "eipNo": 7857,
+      "title": "NFT Interface for AI Agents",
       "status": "Draft",
       "isERC": true
     },

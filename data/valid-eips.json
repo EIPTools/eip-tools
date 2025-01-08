@@ -7297,7 +7297,7 @@
   },
   "7734": {
     "title": "Decentralized Identity Verification (DID)",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7734.md"
   },
@@ -7401,7 +7401,7 @@
   },
   "7751": {
     "title": "Wrapping of bubbled up reverts",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
   },
@@ -7605,7 +7605,7 @@
   },
   "7777": {
     "title": "Governance for Human Robot Societies",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7777.md"
   },
@@ -7908,7 +7908,7 @@
   },
   "7818": {
     "title": "Expirable ERC-20",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       20
     ],
@@ -7927,7 +7927,7 @@
   },
   "7820": {
     "title": "Access Control Registry",
-    "status": "Review",
+    "status": "Last Call",
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7820.md"
   },
@@ -8127,13 +8127,13 @@
     "markdownPath": "https://raw.githubusercontent.com/fulldecent/EIPs/patch-135720/EIPS/eip-7848.md"
   },
   "7851": {
-    "title": "EOA private key deactivation/reactivation",
+    "title": "Deactivate/Reactivate a Delegated EOA's Key",
     "status": "Draft",
-    "prNo": 9193,
-    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/EOA-deactivation/EIPS/eip-7851.md",
     "requires": [
       7702
-    ]
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7851.md"
   },
   "7852": {
     "title": "Opcodes Per Second",
@@ -8168,6 +8168,13 @@
     "isERC": true,
     "prNo": 823,
     "markdownPath": "https://raw.githubusercontent.com/jackchuma/ERCs/jack/payment-requests/ERCS/erc-7856.md"
+  },
+  "7857": {
+    "title": "NFT Interface for AI Agents",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 824,
+    "markdownPath": "https://raw.githubusercontent.com/0glabs/ERCs/master/ERCS/erc-7857.md"
   },
   "7921": {
     "title": "Data Asset NFT",
