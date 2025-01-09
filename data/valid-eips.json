@@ -8053,6 +8053,17 @@
     "prNo": 755,
     "markdownPath": "https://raw.githubusercontent.com/ZeroKPunk/ERCs/master/ERCS/erc-7835.md"
   },
+  "7836": {
+    "title": "Wallet Call Preparation API",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 758,
+    "markdownPath": "https://raw.githubusercontent.com/lukasrosario/ERCs/wallet-call-preparation-api/ERCS/erc-7836.md",
+    "requires": [
+      1193,
+      5792
+    ]
+  },
   "7837": {
     "title": "Diffusive Tokens",
     "status": "Draft",
@@ -8076,8 +8087,8 @@
   "7840": {
     "title": "Add blob schedule to EL config files",
     "status": "Draft",
-    "prNo": 9129,
-    "markdownPath": "https://raw.githubusercontent.com/lightclient/EIPs/blob-config/EIPS/eip-7840.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7840.md"
   },
   "7841": {
     "title": "Cross-chain Message Format and Mailbox",

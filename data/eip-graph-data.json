@@ -6679,6 +6679,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7836",
+      "eipNo": 7836,
+      "title": "Wallet Call Preparation API",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7837",
       "eipNo": 7837,
       "title": "Diffusive Tokens",
@@ -11384,6 +11391,14 @@
     {
       "source": "eip-7834",
       "target": "eip-3540"
+    },
+    {
+      "source": "eip-7836",
+      "target": "eip-1193"
+    },
+    {
+      "source": "eip-7836",
+      "target": "eip-5792"
     },
     {
       "source": "eip-7851",
