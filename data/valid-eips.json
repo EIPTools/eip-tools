@@ -6101,7 +6101,7 @@
   },
   "7547": {
     "title": "Inclusion lists",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7547.md"
   },
@@ -6117,7 +6117,7 @@
   },
   "7549": {
     "title": "Move committee index outside Attestation",
-    "status": "Review",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7549.md"
   },
@@ -6333,7 +6333,7 @@
   },
   "7594": {
     "title": "PeerDAS - Peer Data Availability Sampling",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       4844
     ],
@@ -6984,7 +6984,7 @@
   },
   "7692": {
     "title": "EVM Object Format (EOFv1) Meta",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       663,
       3540,
@@ -7184,7 +7184,7 @@
   },
   "7716": {
     "title": "Anti-correlation attestation penalties",
-    "status": "Draft",
+    "status": "Stagnant",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7716.md"
   },
@@ -8181,11 +8181,32 @@
     "markdownPath": "https://raw.githubusercontent.com/jackchuma/ERCs/jack/payment-requests/ERCS/erc-7856.md"
   },
   "7857": {
-    "title": "NFT Interface for AI Agents",
+    "title": "AI Agents NFT with Private Metadata",
     "status": "Draft",
     "isERC": true,
     "prNo": 824,
     "markdownPath": "https://raw.githubusercontent.com/0glabs/ERCs/master/ERCS/erc-7857.md"
+  },
+  "7858": {
+    "title": "Expirable NFTs and SBTs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 841,
+    "markdownPath": "https://raw.githubusercontent.com/parametprame/ERCs/master/ERCS/erc-7858.md",
+    "requires": [
+      165
+    ]
+  },
+  "7859": {
+    "title": "AgentNFT Extension for ERC721",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 844,
+    "markdownPath": "https://raw.githubusercontent.com/agentball/ERCs/master/ERCS/erc-7859.md",
+    "requires": [
+      165,
+      721
+    ]
   },
   "7921": {
     "title": "Data Asset NFT",
