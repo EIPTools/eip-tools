@@ -21,8 +21,7 @@
   "7614": {
     "title": "Expose call stack to contracts",
     "status": "Draft",
-    "prNo": 10,
-    "markdownPath": "https://raw.githubusercontent.com/canercidam/RIPs/call-stack-precompile/RIPS/rip-7614.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7614.md"
   },
   "7696": {
     "title": "Precompile for generic DSM (double scalar multiplication)",
@@ -30,7 +29,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7696.md"
   },
   "7711": {
-    "title": "An RIP-7560 transactions bundle transaction type",
+    "title": "Validation-Execution Separation in Native Account Abstraction",
     "status": "Draft",
     "requires": [
       7560

@@ -8097,6 +8097,17 @@
     "prNo": 766,
     "markdownPath": "https://raw.githubusercontent.com/elliedavidson/ERCs/master/ERCS/erc-7841.md"
   },
+  "7842": {
+    "title": "State Channel Data Types & Interfaces",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 728,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/ERCs/master/ERCS/erc-7842.md",
+    "requires": [
+      4337,
+      7824
+    ]
+  },
   "7843": {
     "title": "SLOT precompile",
     "status": "Draft",

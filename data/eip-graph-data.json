@@ -6721,6 +6721,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7842",
+      "eipNo": 7842,
+      "title": "State Channel Data Types & Interfaces",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7843",
       "eipNo": 7843,
       "title": "SLOT precompile",
@@ -11413,6 +11420,10 @@
     {
       "source": "eip-7836",
       "target": "eip-5792"
+    },
+    {
+      "source": "eip-7842",
+      "target": "eip-4337"
     },
     {
       "source": "eip-7851",
