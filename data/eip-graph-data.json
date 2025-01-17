@@ -5051,7 +5051,7 @@
       "id": "eip-7519",
       "eipNo": 7519,
       "title": "Atomic Storage Operations SCREDIT and SDEBIT",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -5198,7 +5198,7 @@
       "id": "eip-7549",
       "eipNo": 7549,
       "title": "Move committee index outside Attestation",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -5835,7 +5835,7 @@
       "id": "eip-7692",
       "eipNo": 7692,
       "title": "EVM Object Format (EOFv1) Meta",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -6710,7 +6710,7 @@
       "id": "eip-7840",
       "eipNo": 7840,
       "title": "Add blob schedule to EL config files",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -6833,11 +6833,39 @@
       "isERC": true
     },
     {
+      "id": "eip-7860",
+      "eipNo": 7860,
+      "title": "AgentNFT Extension for ERC-721",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7861",
+      "eipNo": 7861,
+      "title": "ERC-721 Verifiable Credential Extension",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7862",
+      "eipNo": 7862,
+      "title": "Delayed Execution Layer State Root",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7921",
       "eipNo": 7921,
       "title": "Data Asset NFT",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-9999",
+      "eipNo": 9999,
+      "title": "Block-level warming",
+      "status": "Draft",
+      "isERC": false
     }
   ],
   "links": [
@@ -11326,6 +11354,22 @@
       "target": "eip-2930"
     },
     {
+      "source": "eip-7811",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-7811",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-7811",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-7811",
+      "target": "eip-5792"
+    },
+    {
       "source": "eip-7818",
       "target": "eip-20"
     },
@@ -11439,6 +11483,18 @@
     },
     {
       "source": "eip-7859",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-7860",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-7860",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-7861",
       "target": "eip-721"
     }
   ]

@@ -5942,7 +5942,7 @@
   },
   "7519": {
     "title": "Atomic Storage Operations SCREDIT and SDEBIT",
-    "status": "Stagnant",
+    "status": "Draft",
     "requires": [
       2200,
       2929
@@ -6117,7 +6117,7 @@
   },
   "7549": {
     "title": "Move committee index outside Attestation",
-    "status": "Stagnant",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7549.md"
   },
@@ -6984,7 +6984,7 @@
   },
   "7692": {
     "title": "EVM Object Format (EOFv1) Meta",
-    "status": "Stagnant",
+    "status": "Review",
     "requires": [
       663,
       3540,
@@ -7863,7 +7863,13 @@
     "status": "Draft",
     "isERC": true,
     "prNo": 709,
-    "markdownPath": "https://raw.githubusercontent.com/lukaisailovic/ERCs/wallet-asset-discovery/ERCS/erc-7811.md"
+    "markdownPath": "https://raw.githubusercontent.com/lukaisailovic/ERCs/wallet-asset-discovery/ERCS/erc-7811.md",
+    "requires": [
+      20,
+      155,
+      721,
+      5792
+    ]
   },
   "7812": {
     "title": "ZK Identity Registry",
@@ -8086,7 +8092,7 @@
   },
   "7840": {
     "title": "Add blob schedule to EL config files",
-    "status": "Draft",
+    "status": "Review",
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7840.md"
   },
@@ -8219,11 +8225,44 @@
       721
     ]
   },
+  "7860": {
+    "title": "AgentNFT Extension for ERC-721",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 844,
+    "markdownPath": "https://raw.githubusercontent.com/agentball/ERCs/master/ERCS/erc-7860.md",
+    "requires": [
+      165,
+      721
+    ]
+  },
+  "7861": {
+    "title": "ERC-721 Verifiable Credential Extension",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 851,
+    "markdownPath": "https://raw.githubusercontent.com/vmc-crossmint/ERCs/vmc/vc_erc/ERCS/erc-7861.md",
+    "requires": [
+      721
+    ]
+  },
+  "7862": {
+    "title": "Delayed Execution Layer State Root",
+    "status": "Draft",
+    "prNo": 9241,
+    "markdownPath": "https://raw.githubusercontent.com/charlie-paradigm/EIPs/delayed-root/EIPS/eip-7862.md"
+  },
   "7921": {
     "title": "Data Asset NFT",
     "status": "Draft",
     "isERC": true,
     "prNo": 744,
     "markdownPath": "https://raw.githubusercontent.com/memoio/ERCs/data-asset-nft/ERCS/erc-7921.md"
+  },
+  "9999": {
+    "title": "Block-level warming",
+    "status": "Draft",
+    "prNo": 9246,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/master/EIPS/eip-9999.md"
   }
 }

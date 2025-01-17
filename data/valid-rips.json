@@ -58,8 +58,7 @@
   "7740": {
     "title": "Preinstall deterministic deployment factories",
     "status": "Draft",
-    "prNo": 30,
-    "markdownPath": "https://raw.githubusercontent.com/5afe/RIPs/master/RIPS/rip-7740.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7740.md"
   },
   "7755": {
     "title": "Cross-L2-Call",
@@ -92,5 +91,10 @@
     "title": "RIP Purpose and Guidelines",
     "status": "Living",
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7810.md"
+  },
+  "7859": {
+    "title": "Store L1 origin data and historic L2 block hashes in L2 state",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7859.md"
   }
 }
