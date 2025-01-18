@@ -7506,13 +7506,12 @@
   "7765": {
     "title": "Privileged Non-Fungible Tokens Tied To RWA",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 624,
-    "markdownPath": "https://raw.githubusercontent.com/Mint-Blockchain/ERCs/master/ERCS/erc-7765.md",
     "requires": [
       165,
       721
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7765.md"
   },
   "7766": {
     "title": "Signature Aggregation for ERC-4337",
@@ -7955,6 +7954,13 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7823.md"
   },
+  "7824": {
+    "title": "State Channels Framework",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 728,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/ERCs/master/ERCS/erc-7824.md"
+  },
   "7825": {
     "title": "Transaction Gas Limit Cap",
     "status": "Draft",
@@ -8251,6 +8257,12 @@
     "status": "Draft",
     "prNo": 9241,
     "markdownPath": "https://raw.githubusercontent.com/charlie-paradigm/EIPs/delayed-root/EIPS/eip-7862.md"
+  },
+  "7863": {
+    "title": "Block-level Warming",
+    "status": "Draft",
+    "prNo": 9246,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/master/EIPS/eip-7863.md"
   },
   "7921": {
     "title": "Data Asset NFT",

@@ -6602,6 +6602,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7824",
+      "eipNo": 7824,
+      "title": "State Channels Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7825",
       "eipNo": 7825,
       "title": "Transaction Gas Limit Cap",
@@ -6850,6 +6857,13 @@
       "id": "eip-7862",
       "eipNo": 7862,
       "title": "Delayed Execution Layer State Root",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7863",
+      "eipNo": 7863,
+      "title": "Block-level Warming",
       "status": "Draft",
       "isERC": false
     },
@@ -11468,6 +11482,10 @@
     {
       "source": "eip-7842",
       "target": "eip-4337"
+    },
+    {
+      "source": "eip-7842",
+      "target": "eip-7824"
     },
     {
       "source": "eip-7851",
