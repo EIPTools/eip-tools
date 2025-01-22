@@ -7152,7 +7152,7 @@
   },
   "7713": {
     "title": "Box type for EIP-712 messages",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       712
     ],
@@ -8022,19 +8022,18 @@
   "7831": {
     "title": "Multi-Chain Addressing",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 749,
-    "markdownPath": "https://raw.githubusercontent.com/SamWilsn/ERCs/cas/ERCS/erc-7831.md",
     "requires": [
       55,
       137,
       155,
       165,
       2304
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7831.md"
   },
   "7832": {
-    "title": "Sustainable NFT Collections",
+    "title": "Sustainable collaborative NFT collections",
     "status": "Draft",
     "isERC": true,
     "prNo": 752,
@@ -8261,8 +8260,21 @@
   "7863": {
     "title": "Block-level Warming",
     "status": "Draft",
-    "prNo": 9246,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/master/EIPS/eip-7863.md"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7863.md"
+  },
+  "7864": {
+    "title": "Ethereum state using a unified binary tree",
+    "status": "Draft",
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7864.md"
+  },
+  "7865": {
+    "title": "Guidelines for Finalizing ERCs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 857,
+    "markdownPath": "https://raw.githubusercontent.com/bumblefudge/ERCs/bumblefudge-patch-1/add-information-eip-on-testing/ERCS/erc-7865.md"
   },
   "7921": {
     "title": "Data Asset NFT",

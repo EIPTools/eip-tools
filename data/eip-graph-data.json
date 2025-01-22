@@ -5940,7 +5940,7 @@
       "id": "eip-7713",
       "eipNo": 7713,
       "title": "Box type for EIP-712 messages",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6660,7 +6660,7 @@
     {
       "id": "eip-7832",
       "eipNo": 7832,
-      "title": "Sustainable NFT Collections",
+      "title": "Sustainable collaborative NFT collections",
       "status": "Draft",
       "isERC": true
     },
@@ -6866,6 +6866,20 @@
       "title": "Block-level Warming",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-7864",
+      "eipNo": 7864,
+      "title": "Ethereum state using a unified binary tree",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7865",
+      "eipNo": 7865,
+      "title": "Guidelines for Finalizing ERCs",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-7921",
