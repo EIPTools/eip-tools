@@ -1,17 +1,32 @@
 "use client";
 
-import { Box, Heading, Text, Flex } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, HStack, Badge } from "@chakra-ui/react";
+import { validEIPs } from "@/data/validEIPs";
 import { EIPGridItem } from "./TrendingEIPs";
+import { EIPStatus } from "@/utils";
 
 export const PectraEIPs = () => {
+  const pectraHardForkMetaEIPNo = 7600;
+  const pectraHardForkStatus = validEIPs[pectraHardForkMetaEIPNo].status!;
   const pectraEIPsArray = [
-    7600, 2537, 2935, 6110, 7002, 7251, 7549, 7594, 7685, 7702, 7692,
+    pectraHardForkMetaEIPNo,
+    ...validEIPs[pectraHardForkMetaEIPNo].requires!,
   ];
 
   return (
     <Box mt={10} px={10}>
       <Box>
-        <Heading>🍴 Pectra Hardfork</Heading>
+        <HStack>
+          <Heading>🍴 Pectra Hardfork</Heading>
+          <Badge
+            p={1}
+            bg={EIPStatus[pectraHardForkStatus]?.bg ?? "cyan.500"}
+            fontWeight={700}
+            rounded="md"
+          >
+            {EIPStatus[pectraHardForkStatus]?.prefix} {pectraHardForkStatus}
+          </Badge>
+        </HStack>
         <Text fontSize={"md"} fontWeight={200}>
           (EIPs scheduled for inclusion in the Prague-Electra Hardfork)
         </Text>
