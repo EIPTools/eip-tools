@@ -42,9 +42,9 @@ const getEIPMetadata = (
   const { title, status, requires } = convertMetadataToJson(metadata);
 
   return {
-    title,
-    status,
-    requires,
+    title: title || `${prefix.toUpperCase()}-${number}`,
+    status: status || "Draft",
+    requires: requires || [],
   };
 };
 

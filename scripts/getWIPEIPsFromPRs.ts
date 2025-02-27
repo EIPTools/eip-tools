@@ -180,7 +180,7 @@ const fetchDataFromOpenPRs = async ({
             console.log(`Found WIP ${filePrefix}: ${eipNo}: ${title}`);
 
             result[eipNo] = {
-              title,
+              title: title || `${filePrefix.toUpperCase()}-${eipNo}`,
               status,
               isERC,
               prNo,

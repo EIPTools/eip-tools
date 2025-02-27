@@ -2,11 +2,13 @@
   "1": {
     "title": "CAIP Purpose and Guidelines",
     "status": "Review",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-1.md"
   },
   "2": {
     "title": "Blockchain ID Specification",
     "status": "Final",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-2.md"
   },
   "3": {
@@ -183,6 +185,7 @@
   "74": {
     "title": "CACAO - Chain Agnostic CApability Object",
     "status": "Review",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-74.md"
   },
   "76": {
@@ -207,16 +210,19 @@
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
     "status": "Review",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-104.md"
   },
   "122": {
     "title": "Sign in With X (SIWx)",
     "status": "Review",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-122.md"
   },
   "154": {
     "title": "Restrict Web3 Provider API Injection",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-154.md"
   },
   "168": {
@@ -238,16 +244,19 @@
   "171": {
     "title": "Session Identifiers",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-171.md"
   },
   "196": {
     "title": "CACAO - Chain Agnostic CApability Object",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-196.md"
   },
   "200": {
     "title": "BlockExplorer API Routes",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-200.md"
   },
   "211": {
@@ -265,6 +274,7 @@
   "217": {
     "title": "Authorization Scopes",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-217.md"
   },
   "218": {
@@ -308,6 +318,7 @@
   "261": {
     "title": "Web of Trust Primitives",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-261.md"
   },
   "271": {
@@ -320,6 +331,7 @@
   "275": {
     "title": "Domain Wallet Authentication",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-275.md"
   },
   "285": {
@@ -334,6 +346,7 @@
   "288": {
     "title": "Best Practices for using CAIP 2 - Blockchain ID Specification",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-288.md"
   },
   "295": {
@@ -395,11 +408,16 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "320": {
-    "title": "Chain Agnostic State Transition Protocol",
+    "title": "Wallet Switch Chain JSON-RPC Method",
     "status": "Draft",
-    "prNo": 337,
-    "markdownPath": "https://raw.githubusercontent.com/layer-3/CAIPs/main/CAIPs/caip-320.md",
-    "requires": []
+    "prNo": 344,
+    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/feat/caip-320/CAIPs/caip-320.md",
+    "requires": [
+      2,
+      25,
+      171,
+      316
+    ]
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",

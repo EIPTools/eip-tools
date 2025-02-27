@@ -2,6 +2,7 @@
   "7212": {
     "title": "Precompile for secp256r1 Curve Support",
     "status": "Final",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7212.md"
   },
   "7559": {
@@ -21,11 +22,13 @@
   "7614": {
     "title": "Expose call stack to contracts",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7614.md"
   },
   "7696": {
     "title": "Precompile for generic DSM (double scalar multiplication)",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7696.md"
   },
   "7711": {
@@ -53,26 +56,31 @@
   "7728": {
     "title": "Precompile for L1SLOAD",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7728.md"
   },
   "7740": {
     "title": "Preinstall deterministic deployment factories",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7740.md"
   },
   "7755": {
     "title": "Cross-L2-Call",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7755.md"
   },
   "7759": {
     "title": "Layer 2 Transaction Fees",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7759.md"
   },
   "7767": {
     "title": "Gas to Ether contract",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7767.md"
   },
   "7777": {
@@ -90,16 +98,19 @@
   "7810": {
     "title": "RIP Purpose and Guidelines",
     "status": "Living",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7810.md"
   },
   "7859": {
     "title": "Expose L1 origin information inside L2 execution environment",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7859.md"
   },
   "7875": {
     "title": "Canonical ERC-7802 token bridge address",
     "status": "Draft",
+    "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7875.md"
   }
 }
