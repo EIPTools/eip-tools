@@ -71,7 +71,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7759.md"
   },
   "7767": {
-    "title": "Gas to Ether precompile",
+    "title": "Gas to Ether contract",
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7767.md"
   },
@@ -93,8 +93,13 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7810.md"
   },
   "7859": {
-    "title": "Store L1 origin data and historic L2 block hashes in L2 state",
+    "title": "Expose L1 origin information inside L2 execution environment",
     "status": "Draft",
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7859.md"
+  },
+  "7875": {
+    "title": "Canonical ERC-7802 token bridge address",
+    "status": "Draft",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7875.md"
   }
 }

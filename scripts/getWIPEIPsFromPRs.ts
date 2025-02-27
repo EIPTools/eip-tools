@@ -162,28 +162,39 @@ const fetchDataFromOpenPRs = async ({
 
   await Promise.all(
     prNumbers.map(async (prNo) => {
-      const prData = await getPRData(orgName, prNo, repo);
-      if (!prData) return;
-      const { diffUrl, repoOwnerAndName, branchName } = prData;
-      const eipNo = await getEIPNoFromDiff(diffUrl, folderName, filePrefix);
+      try {
+        const prData = await getPRData(orgName, prNo, repo);
+        if (!prData) return;
+        const { diffUrl, repoOwnerAndName, branchName } = prData;
+        const eipNo = await getEIPNoFromDiff(diffUrl, folderName, filePrefix);
 
-      if (eipNo > 0) {
-        const markdownPath = `https://raw.githubusercontent.com/${repoOwnerAndName}/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
-        const eipMarkdownRes: string = (await fetchWithRetry(markdownPath, {}))
-          .data;
-        const { metadata } = extractMetadata(eipMarkdownRes);
-        const { title, status, requires } = convertMetadataToJson(metadata);
+        if (eipNo > 0) {
+          const markdownPath = `https://raw.githubusercontent.com/${repoOwnerAndName}/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
+          try {
+            const eipMarkdownRes: string = (
+              await fetchWithRetry(markdownPath, {})
+            ).data;
+            const { metadata } = extractMetadata(eipMarkdownRes);
+            const { title, status, requires } = convertMetadataToJson(metadata);
 
-        console.log(`Found WIP ${filePrefix}: ${eipNo}: ${title}`);
+            console.log(`Found WIP ${filePrefix}: ${eipNo}: ${title}`);
 
-        result[eipNo] = {
-          title,
-          status,
-          isERC,
-          prNo,
-          markdownPath,
-          requires,
-        };
+            result[eipNo] = {
+              title,
+              status,
+              isERC,
+              prNo,
+              markdownPath,
+              requires,
+            };
+          } catch (error: any) {
+            console.warn(
+              `⚠️ Could not fetch content for ${filePrefix}-${eipNo} from PR #${prNo}: ${error.message}`
+            );
+          }
+        }
+      } catch (error: any) {
+        console.warn(`⚠️ Error processing PR #${prNo}: ${error.message}`);
       }
     })
   );

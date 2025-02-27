@@ -424,5 +424,14 @@
     "requires": [
       294
     ]
+  },
+  "345": {
+    "title": "Wallet Service URL property",
+    "status": "Draft",
+    "prNo": 345,
+    "markdownPath": "https://raw.githubusercontent.com/chris13524/CAIPs/add-wallet-service-caip/CAIPs/caip-345.md",
+    "requires": [
+      25
+    ]
   }
 }
