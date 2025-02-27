@@ -26,12 +26,14 @@ async function generateGraphData(validEIPs: ValidEIPs): Promise<void> {
       graphData.nodes.push({
         id,
         eipNo,
-        title: eipData.title,
+        title: eipData.title || `EIP-${eipNo}`,
         status: eipData.status || "Draft",
         isERC: eipData.isERC || false,
       });
       processedEIPs.add(eipNo);
-      console.log(`Added node: EIP-${eipNo} (${eipData.title})`);
+      console.log(
+        `Added node: EIP-${eipNo} (${eipData.title || `EIP-${eipNo}`})`
+      );
     }
   };
 
