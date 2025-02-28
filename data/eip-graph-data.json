@@ -5209,6 +5209,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7557",
+      "eipNo": 7557,
+      "title": "Block-level Warming with fair cost savings",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7561",
       "eipNo": 7561,
       "title": "Simple NFT, Simplified ERC-721",
@@ -6905,7 +6912,7 @@
     {
       "id": "eip-7870",
       "eipNo": 7870,
-      "title": "Hardware and Bandwidth Recommendations for Validators and Full Nodes",
+      "title": "Hardware and Bandwidth Recommendations",
       "status": "Draft",
       "isERC": false
     },
@@ -7034,6 +7041,13 @@
       "title": "Splitting and Merging of NFTs",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-7892",
+      "eipNo": 7892,
+      "title": "Blob Parameter Only Hardforks",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-7921",
@@ -11257,6 +11271,10 @@
     },
     {
       "source": "eip-7730",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-7730",
       "target": "eip-712"
     },
     {
@@ -11780,12 +11798,20 @@
       "target": "eip-7540"
     },
     {
+      "source": "eip-7890",
+      "target": "eip-2718"
+    },
+    {
       "source": "eip-7891",
       "target": "eip-721"
     },
     {
       "source": "eip-7891",
       "target": "eip-6150"
+    },
+    {
+      "source": "eip-7892",
+      "target": "eip-7840"
     }
   ]
 }

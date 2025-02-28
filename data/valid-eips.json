@@ -6436,6 +6436,12 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7555.md"
   },
+  "7557": {
+    "title": "Block-level Warming with fair cost savings",
+    "status": "Draft",
+    "prNo": 9428,
+    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/EIPs/create_global_warming_eip_7557/EIPS/eip-7557.md"
+  },
   "7561": {
     "title": "Simple NFT, Simplified ERC-721",
     "status": "Draft",
@@ -7621,6 +7627,7 @@
     "prNo": 509,
     "markdownPath": "https://raw.githubusercontent.com/lcastillo-ledger/ERCs/master/ERCS/erc-7730.md",
     "requires": [
+      155,
       712
     ]
   },
@@ -8671,7 +8678,7 @@
     "markdownPath": "https://raw.githubusercontent.com/polymerdao/ERCs/bo/xrollup-links/ERCS/erc-7868.md"
   },
   "7870": {
-    "title": "Hardware and Bandwidth Recommendations for Validators and Full Nodes",
+    "title": "Hardware and Bandwidth Recommendations",
     "status": "Draft",
     "prNo": 9270,
     "markdownPath": "https://raw.githubusercontent.com/kevaundray/EIPs/kw/hardware-bandwidth-recs/EIPS/eip-7870.md"
@@ -8821,7 +8828,9 @@
     "status": "Draft",
     "prNo": 9405,
     "markdownPath": "https://raw.githubusercontent.com/Leon-Africa/EIPs/eip-clawback-tx/EIPS/eip-7890.md",
-    "requires": []
+    "requires": [
+      2718
+    ]
   },
   "7891": {
     "title": "Splitting and Merging of NFTs",
@@ -8831,6 +8840,15 @@
     "requires": [
       721,
       6150
+    ]
+  },
+  "7892": {
+    "title": "Blob Parameter Only Hardforks",
+    "status": "Draft",
+    "prNo": 9423,
+    "markdownPath": "https://raw.githubusercontent.com/ethDreamer/EIPs/blob_parameter_only_forks/EIPS/eip-7892.md",
+    "requires": [
+      7840
     ]
   },
   "7921": {
