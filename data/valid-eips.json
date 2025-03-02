@@ -2222,7 +2222,7 @@
   },
   "2539": {
     "title": "BLS12-377 curve operations",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       1109,
       2046
@@ -8834,9 +8834,10 @@
   },
   "7891": {
     "title": "Splitting and Merging of NFTs",
+    "status": "Draft",
     "isERC": true,
-    "prNo": 920,
-    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/eip-6312/ERCS/erc-7891.md",
+    "prNo": 930,
+    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/erc-7891-update1/ERCS/erc-7891.md",
     "requires": [
       721,
       6150
