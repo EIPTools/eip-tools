@@ -7050,6 +7050,55 @@
       "isERC": false
     },
     {
+      "id": "eip-7893",
+      "eipNo": 7893,
+      "title": "DeFi Protocol Solvency Proof Mechanism",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7894",
+      "eipNo": 7894,
+      "title": "Social SBT",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7895",
+      "eipNo": 7895,
+      "title": "API for hierarchical accounts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7896",
+      "eipNo": 7896,
+      "title": "ABI attachment in `wallet_sendCalls`",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7897",
+      "eipNo": 7897,
+      "title": "Wallet-Linked Services for Smart Accounts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7898",
+      "eipNo": 7898,
+      "title": "Uncouple execution payload from beacon block",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7899",
+      "eipNo": 7899,
+      "title": "On-Chain Function Return Type Encoding",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7921",
       "eipNo": 7921,
       "title": "Data Asset NFT",
@@ -11812,6 +11861,42 @@
     {
       "source": "eip-7892",
       "target": "eip-7840"
+    },
+    {
+      "source": "eip-7893",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-7893",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-7896",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-7897",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-7897",
+      "target": "eip-1167"
+    },
+    {
+      "source": "eip-7897",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-7897",
+      "target": "eip-6551"
+    },
+    {
+      "source": "eip-7897",
+      "target": "eip-7656"
+    },
+    {
+      "source": "eip-7899",
+      "target": "eip-165"
     }
   ]
 }

@@ -8153,13 +8153,12 @@
   "7802": {
     "title": "Crosschain Token Interface",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 692,
-    "markdownPath": "https://raw.githubusercontent.com/defi-wonderland/ERCs/erc/crosschain-token-interface/ERCS/erc-7802.md",
     "requires": [
       165,
       5679
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7802.md"
   },
   "7803": {
     "title": "EIP-712 Extensions for Account Abstraction",
@@ -8850,6 +8849,69 @@
     "markdownPath": "https://raw.githubusercontent.com/ethDreamer/EIPs/blob_parameter_only_forks/EIPS/eip-7892.md",
     "requires": [
       7840
+    ]
+  },
+  "7893": {
+    "title": "DeFi Protocol Solvency Proof Mechanism",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 922,
+    "markdownPath": "https://raw.githubusercontent.com/SeanLuis/ercs/feat/erc-draft/ERCS/erc-7893.md",
+    "requires": [
+      20,
+      165
+    ]
+  },
+  "7894": {
+    "title": "Social SBT",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 924,
+    "markdownPath": "https://raw.githubusercontent.com/alibertay/ERCs/patch-1/ERCS/erc-7894.md"
+  },
+  "7895": {
+    "title": "API for hierarchical accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 932,
+    "markdownPath": "https://raw.githubusercontent.com/jakeFeldman/ERCs/hierarchical-accounts-api/ERCS/erc-7895.md"
+  },
+  "7896": {
+    "title": "ABI attachment in `wallet_sendCalls`",
+    "status": "Draft",
+    "prNo": 9422,
+    "markdownPath": "https://raw.githubusercontent.com/frangio/EIPs/sendcalls-abi/EIPS/eip-7896.md",
+    "requires": [
+      5792
+    ]
+  },
+  "7897": {
+    "title": "Wallet-Linked Services for Smart Accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 934,
+    "markdownPath": "https://raw.githubusercontent.com/sullof/ERCs/adding-4337-linked-services/ERCS/erc-7897.md",
+    "requires": [
+      165,
+      1167,
+      4337,
+      6551,
+      7656
+    ]
+  },
+  "7898": {
+    "title": "Uncouple execution payload from beacon block",
+    "status": "Draft",
+    "prNo": 9432,
+    "markdownPath": "https://raw.githubusercontent.com/g11tech/EIPs/uncouple-payload/EIPS/eip-7898.md"
+  },
+  "7899": {
+    "title": "On-Chain Function Return Type Encoding",
+    "status": "Draft",
+    "prNo": 9433,
+    "markdownPath": "https://raw.githubusercontent.com/genkifs/EIPs/Function-Return-Encoding/EIPS/eip-7899.md",
+    "requires": [
+      165
     ]
   },
   "7921": {
