@@ -408,16 +408,11 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "320": {
-    "title": "Wallet Switch Chain JSON-RPC Method",
+    "title": "Chain Agnostic State Transition Protocol",
     "status": "Draft",
-    "prNo": 344,
-    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/feat/caip-320/CAIPs/caip-320.md",
-    "requires": [
-      2,
-      25,
-      171,
-      316
-    ]
+    "prNo": 337,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/CAIPs/main/CAIPs/caip-320.md",
+    "requires": []
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",
