@@ -3505,7 +3505,7 @@
   },
   "4750": {
     "title": "EOF - Functions",
-    "status": "Stagnant",
+    "status": "Review",
     "requires": [
       3540,
       3670,
@@ -7177,13 +7177,12 @@
   "7674": {
     "title": "Temporary Approval Extension for ERC-20",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 358,
-    "markdownPath": "https://raw.githubusercontent.com/byshape/ERCs/transient-approve/ERCS/erc-7674.md",
     "requires": [
       20,
       1153
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7674.md"
   },
   "7675": {
     "title": "Retroactively Included EIPs",
@@ -7375,7 +7374,7 @@
   },
   "7698": {
     "title": "EOF - Creation transaction",
-    "status": "Stagnant",
+    "status": "Review",
     "requires": [
       3540
     ],
@@ -8912,6 +8911,15 @@
     "markdownPath": "https://raw.githubusercontent.com/genkifs/EIPs/Function-Return-Encoding/EIPS/eip-7899.md",
     "requires": [
       165
+    ]
+  },
+  "7901": {
+    "title": "General Repricing",
+    "status": "Draft",
+    "prNo": 9454,
+    "markdownPath": "https://raw.githubusercontent.com/JacekGlen/EIPs/repricing/EIPS/eip-7901.md",
+    "requires": [
+      7883
     ]
   },
   "7921": {

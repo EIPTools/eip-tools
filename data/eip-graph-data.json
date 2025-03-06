@@ -3000,7 +3000,7 @@
       "id": "eip-4750",
       "eipNo": 4750,
       "title": "EOF - Functions",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -5856,7 +5856,7 @@
       "id": "eip-7698",
       "eipNo": 7698,
       "title": "EOF - Creation transaction",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7095,6 +7095,13 @@
       "id": "eip-7899",
       "eipNo": 7899,
       "title": "On-Chain Function Return Type Encoding",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7901",
+      "eipNo": 7901,
+      "title": "General Repricing",
       "status": "Draft",
       "isERC": false
     },
@@ -11897,6 +11904,10 @@
     {
       "source": "eip-7899",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-7901",
+      "target": "eip-7883"
     }
   ]
 }
