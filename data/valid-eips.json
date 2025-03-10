@@ -7715,7 +7715,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7744.md"
   },
   "7745": {
-    "title": "Two dimensional log filter data structure",
+    "title": "Light client and DHT friendly log index",
     "status": "Draft",
     "requires": [],
     "isERC": false,
@@ -8780,9 +8780,9 @@
   "7884": {
     "title": "Operation Router",
     "status": "Draft",
+    "requires": [],
     "isERC": true,
-    "prNo": 893,
-    "markdownPath": "https://raw.githubusercontent.com/blockful-io/ERCs/operation-router/ERCS/erc-7884.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7884.md"
   },
   "7885": {
     "title": "Precompile for NTT operations",
