@@ -7622,13 +7622,12 @@
   "7730": {
     "title": "Structured Data Clear Signing Format",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 509,
-    "markdownPath": "https://raw.githubusercontent.com/lcastillo-ledger/ERCs/master/ERCS/erc-7730.md",
     "requires": [
       155,
       712
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7730.md"
   },
   "7731": {
     "title": "Vulnerability and Exposure Identifier",
