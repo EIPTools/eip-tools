@@ -7075,7 +7075,7 @@
   },
   "7656": {
     "title": "Generalized Token-Linked Services",
-    "status": "Last Call",
+    "status": "Review",
     "requires": [
       165,
       1167,
@@ -8019,9 +8019,11 @@
   "7785": {
     "title": "Onchain registration of chain identifiers",
     "status": "Draft",
+    "requires": [
+      2304
+    ],
     "isERC": true,
-    "prNo": 669,
-    "markdownPath": "https://raw.githubusercontent.com/yuliyaalexiev/ERCs/master/ERCS/erc-7785.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7785.md"
   },
   "7786": {
     "title": "Cross-Chain Messaging Gateway",
@@ -8060,11 +8062,11 @@
   "7791": {
     "title": "GAS2ETH opcode",
     "status": "Draft",
-    "prNo": 8980,
-    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/gas_to_eth/EIPS/eip-7791.md",
     "requires": [
       2929
-    ]
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7791.md"
   },
   "7792": {
     "title": "Verifiable logs",
@@ -8368,13 +8370,12 @@
   "7829": {
     "title": "Data Asset NFT",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 744,
-    "markdownPath": "https://raw.githubusercontent.com/memoio/ERCs/data-asset-nft/ERCS/erc-7829.md",
     "requires": [
       165,
       721
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7829.md"
   },
   "7830": {
     "title": "Contract size limit increase for EOF",
@@ -8661,11 +8662,11 @@
   "7867": {
     "title": "Flow Control Wallet Call Capability",
     "status": "Draft",
-    "prNo": 9259,
-    "markdownPath": "https://raw.githubusercontent.com/SamWilsn/EIPs/eip-call-flow-control/EIPS/eip-7867.md",
     "requires": [
       5792
-    ]
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7867.md"
   },
   "7868": {
     "title": "Verifiable Cross Rollup Links",
@@ -8677,8 +8678,9 @@
   "7870": {
     "title": "Hardware and Bandwidth Recommendations",
     "status": "Draft",
-    "prNo": 9270,
-    "markdownPath": "https://raw.githubusercontent.com/kevaundray/EIPs/kw/hardware-bandwidth-recs/EIPS/eip-7870.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7870.md"
   },
   "7872": {
     "title": "Max blob flag for local builders",
@@ -8833,8 +8835,8 @@
     "title": "Splitting and Merging of NFTs",
     "status": "Draft",
     "isERC": true,
-    "prNo": 930,
-    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/erc-7891-update1/ERCS/erc-7891.md",
+    "prNo": 964,
+    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/fixed_references_and_formatting_issues/ERCS/erc-7891.md",
     "requires": [
       721,
       6150
@@ -8877,25 +8879,24 @@
   "7896": {
     "title": "ABI attachment in `wallet_sendCalls`",
     "status": "Draft",
-    "prNo": 9422,
-    "markdownPath": "https://raw.githubusercontent.com/frangio/EIPs/sendcalls-abi/EIPS/eip-7896.md",
     "requires": [
       5792
-    ]
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7896.md"
   },
   "7897": {
     "title": "Wallet-Linked Services for Smart Accounts",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 934,
-    "markdownPath": "https://raw.githubusercontent.com/sullof/ERCs/adding-4337-linked-services/ERCS/erc-7897.md",
     "requires": [
       165,
       1167,
       4337,
       6551,
       7656
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7897.md"
   },
   "7898": {
     "title": "Uncouple execution payload from beacon block",
@@ -8913,13 +8914,37 @@
     ]
   },
   "7901": {
-    "title": "General Repricing",
+    "title": "Stateless mempool transaction",
     "status": "Draft",
-    "prNo": 9454,
-    "markdownPath": "https://raw.githubusercontent.com/JacekGlen/EIPs/repricing/EIPS/eip-7901.md",
+    "prNo": 9441,
+    "markdownPath": "https://raw.githubusercontent.com/g11tech/EIPs/statelesstx/EIPS/eip-7901.md"
+  },
+  "7902": {
+    "title": "Wallet Capabilities for Account Abstraction",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 947,
+    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-429-new-aa-capabilities-erc/ERCS/erc-7902.md",
     "requires": [
-      7883
+      5792,
+      7702
     ]
+  },
+  "7903": {
+    "title": "Remove Initcode Size Limit",
+    "status": "Draft",
+    "prNo": 9452,
+    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/remove-initcode-limit/EIPS/eip-7903.md",
+    "requires": [
+      170,
+      3860
+    ]
+  },
+  "7906": {
+    "title": "Restricted Behavior Transaction Type",
+    "status": "Draft",
+    "prNo": 9476,
+    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/EIPs/restricted_writes_transaction_eip/EIPS/eip-7906.md"
   },
   "7921": {
     "title": "Data Asset NFT",

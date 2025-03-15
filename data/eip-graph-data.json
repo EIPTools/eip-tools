@@ -5667,7 +5667,7 @@
       "id": "eip-7656",
       "eipNo": 7656,
       "title": "Generalized Token-Linked Services",
-      "status": "Last Call",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7101,7 +7101,28 @@
     {
       "id": "eip-7901",
       "eipNo": 7901,
-      "title": "General Repricing",
+      "title": "Stateless mempool transaction",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7902",
+      "eipNo": 7902,
+      "title": "Wallet Capabilities for Account Abstraction",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7903",
+      "eipNo": 7903,
+      "title": "Remove Initcode Size Limit",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7906",
+      "eipNo": 7906,
+      "title": "Restricted Behavior Transaction Type",
       "status": "Draft",
       "isERC": false
     },
@@ -11502,6 +11523,10 @@
       "target": "eip-7778"
     },
     {
+      "source": "eip-7785",
+      "target": "eip-2304"
+    },
+    {
       "source": "eip-7787",
       "target": "eip-20"
     },
@@ -11906,8 +11931,20 @@
       "target": "eip-165"
     },
     {
-      "source": "eip-7901",
-      "target": "eip-7883"
+      "source": "eip-7902",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-7902",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-7903",
+      "target": "eip-170"
+    },
+    {
+      "source": "eip-7903",
+      "target": "eip-3860"
     }
   ]
 }
