@@ -6930,7 +6930,7 @@
   },
   "7637": {
     "title": "Optimize EOA EXTCODEHASH",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       1052
     ],
@@ -8835,8 +8835,8 @@
     "title": "Splitting and Merging of NFTs",
     "status": "Draft",
     "isERC": true,
-    "prNo": 964,
-    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/fixed_references_and_formatting_issues/ERCS/erc-7891.md",
+    "prNo": 963,
+    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/fix-broken-links/ERCS/erc-7891.md",
     "requires": [
       721,
       6150
@@ -8914,10 +8914,13 @@
     ]
   },
   "7901": {
-    "title": "Stateless mempool transaction",
+    "title": "General Repricing",
     "status": "Draft",
-    "prNo": 9441,
-    "markdownPath": "https://raw.githubusercontent.com/g11tech/EIPs/statelesstx/EIPS/eip-7901.md"
+    "prNo": 9454,
+    "markdownPath": "https://raw.githubusercontent.com/JacekGlen/EIPs/repricing/EIPS/eip-7901.md",
+    "requires": [
+      7883
+    ]
   },
   "7902": {
     "title": "Wallet Capabilities for Account Abstraction",
@@ -8945,6 +8948,15 @@
     "status": "Draft",
     "prNo": 9476,
     "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/EIPs/restricted_writes_transaction_eip/EIPS/eip-7906.md"
+  },
+  "7907": {
+    "title": "Remove Contract Code Size Limit",
+    "status": "Draft",
+    "prNo": 9483,
+    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/remove-codesize-limit/EIPS/eip-7907.md",
+    "requires": [
+      170
+    ]
   },
   "7921": {
     "title": "Data Asset NFT",

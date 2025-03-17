@@ -5562,7 +5562,7 @@
       "id": "eip-7637",
       "eipNo": 7637,
       "title": "Optimize EOA EXTCODEHASH",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7101,7 +7101,7 @@
     {
       "id": "eip-7901",
       "eipNo": 7901,
-      "title": "Stateless mempool transaction",
+      "title": "General Repricing",
       "status": "Draft",
       "isERC": false
     },
@@ -7123,6 +7123,13 @@
       "id": "eip-7906",
       "eipNo": 7906,
       "title": "Restricted Behavior Transaction Type",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7907",
+      "eipNo": 7907,
+      "title": "Remove Contract Code Size Limit",
       "status": "Draft",
       "isERC": false
     },
@@ -11931,6 +11938,10 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-7901",
+      "target": "eip-7883"
+    },
+    {
       "source": "eip-7902",
       "target": "eip-5792"
     },
@@ -11945,6 +11956,10 @@
     {
       "source": "eip-7903",
       "target": "eip-3860"
+    },
+    {
+      "source": "eip-7907",
+      "target": "eip-170"
     }
   ]
 }
