@@ -8621,6 +8621,7 @@
     "prNo": 851,
     "markdownPath": "https://raw.githubusercontent.com/vmc-crossmint/ERCs/vmc/vc_erc/ERCS/erc-7861.md",
     "requires": [
+      165,
       721
     ]
   },
@@ -8835,8 +8836,8 @@
     "title": "Splitting and Merging of NFTs",
     "status": "Draft",
     "isERC": true,
-    "prNo": 963,
-    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/fix-broken-links/ERCS/erc-7891.md",
+    "prNo": 930,
+    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/erc-7891-update1/ERCS/erc-7891.md",
     "requires": [
       721,
       6150
@@ -8914,13 +8915,10 @@
     ]
   },
   "7901": {
-    "title": "General Repricing",
+    "title": "Stateless mempool transaction",
     "status": "Draft",
-    "prNo": 9454,
-    "markdownPath": "https://raw.githubusercontent.com/JacekGlen/EIPs/repricing/EIPS/eip-7901.md",
-    "requires": [
-      7883
-    ]
+    "prNo": 9441,
+    "markdownPath": "https://raw.githubusercontent.com/g11tech/EIPs/statelesstx/EIPS/eip-7901.md"
   },
   "7902": {
     "title": "Wallet Capabilities for Account Abstraction",
@@ -8943,6 +8941,15 @@
       3860
     ]
   },
+  "7904": {
+    "title": "General Repricing",
+    "status": "Draft",
+    "prNo": 9454,
+    "markdownPath": "https://raw.githubusercontent.com/JacekGlen/EIPs/repricing/EIPS/eip-7904.md",
+    "requires": [
+      7883
+    ]
+  },
   "7906": {
     "title": "Restricted Behavior Transaction Type",
     "status": "Draft",
@@ -8958,12 +8965,66 @@
       170
     ]
   },
-  "7921": {
-    "title": "Data Asset NFT",
+  "7908": {
+    "title": "HD wallet In Treasury Management",
     "status": "Draft",
     "isERC": true,
-    "prNo": 744,
-    "markdownPath": "https://raw.githubusercontent.com/memoio/ERCs/data-asset-nft/ERCS/erc-7921.md"
+    "prNo": 978,
+    "markdownPath": "https://raw.githubusercontent.com/elizabethxiaoyu/ERCs/treasury_hd_wallet_proposal/ERCS/erc-7908.md"
+  },
+  "7909": {
+    "title": "Margin Token Wrapper",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 979,
+    "markdownPath": "https://raw.githubusercontent.com/hellohanchen/ERCs/erc-margin-token/ERCS/erc-7909.md",
+    "requires": [
+      20,
+      165,
+      721,
+      1155
+    ]
+  },
+  "7911": {
+    "title": "Scaling Ethereum with a Perceptron Tree ZKP",
+    "status": "Draft",
+    "prNo": 9497,
+    "markdownPath": "https://raw.githubusercontent.com/khajievN/EIPs/eip-perceptron-zk/EIPS/eip-7911.md"
+  },
+  "7912": {
+    "title": "Pragmatic expansion of stack manipulation tools",
+    "status": "Draft",
+    "prNo": 9501,
+    "markdownPath": "https://raw.githubusercontent.com/lightclient/EIPs/pragmatic-swap-dup/EIPS/eip-7912.md"
+  },
+  "7913": {
+    "title": "Signature Verifiers",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 986,
+    "markdownPath": "https://raw.githubusercontent.com/Amxx/ERCs/new-ERC/key-verifiers/ERCS/erc-7913.md"
+  },
+  "7914": {
+    "title": "An Interface for Transfer From Native",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 987,
+    "markdownPath": "https://raw.githubusercontent.com/snreynolds/ERCs/erc-transfer-from-native/ERCS/erc-7914.md",
+    "requires": [
+      165
+    ]
+  },
+  "7921": {
+    "title": "Skip `JUMPDEST` immediate argument check",
+    "status": "Draft",
+    "prNo": 9548,
+    "markdownPath": "https://raw.githubusercontent.com/wjmelements/EIPs/eip-draft-remove-jumpdest-push-check/EIPS/eip-7921.md"
+  },
+  "9552": {
+    "title": "Dynamic Exit Churn Limit Using Historical Unused Capacity",
+    "status": "Draft",
+    "prNo": 9552,
+    "markdownPath": "https://raw.githubusercontent.com/michaelneuder/EIPs/exit-queue/EIPS/eip-9552.md"
   },
   "9999": {
     "title": "Block-level warming",
