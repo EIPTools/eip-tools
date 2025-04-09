@@ -15,7 +15,7 @@
     "title": "Native Account Abstraction",
     "status": "Draft",
     "requires": [
-      7702
+      "7702"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7560.md"
   },
@@ -35,7 +35,7 @@
     "title": "Validation-Execution Separation in Native Account Abstraction",
     "status": "Draft",
     "requires": [
-      7560
+      "7560"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7711.md"
   },
@@ -43,7 +43,7 @@
     "title": "Enable RIP-7560 transactions using a two-dimensional nonce",
     "status": "Draft",
     "requires": [
-      7560
+      "7560"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7712.md"
   },
@@ -117,7 +117,7 @@
     "title": "Native Account Abstraction RPC methods",
     "status": "Draft",
     "requires": [
-      7560
+      "7560"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-0000.md"
   },
@@ -127,7 +127,7 @@
     "prNo": 65,
     "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/RIPs/create_rip_aa_system_logs/RIPS/rip-0001.md",
     "requires": [
-      7560
+      "7560"
     ]
   }
 }

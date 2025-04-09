@@ -185,7 +185,7 @@
     "title": "Standard Interface Detection",
     "status": "Final",
     "requires": [
-      214
+      "214"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-165.md"
@@ -250,8 +250,8 @@
     "title": "ENS support for contract ABIs",
     "status": "Stagnant",
     "requires": [
-      137,
-      181
+      "137",
+      "181"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-205.md"
@@ -302,7 +302,7 @@
     "title": "Add `blockHash` to JSON-RPC filter options.",
     "status": "Final",
     "requires": [
-      1474
+      "1474"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-234.md"
@@ -325,9 +325,9 @@
     "title": "\"Hardfork Meta: Homestead\"",
     "status": "Final",
     "requires": [
-      2,
-      7,
-      8
+      "2",
+      "7",
+      "8"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-606.md"
@@ -336,11 +336,11 @@
     "title": "\"Hardfork Meta: Spurious Dragon\"",
     "status": "Final",
     "requires": [
-      155,
-      160,
-      161,
-      170,
-      608
+      "155",
+      "160",
+      "161",
+      "170",
+      "608"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-607.md"
@@ -349,8 +349,8 @@
     "title": "\"Hardfork Meta: Tangerine Whistle\"",
     "status": "Final",
     "requires": [
-      150,
-      779
+      "150",
+      "779"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-608.md"
@@ -359,16 +359,16 @@
     "title": "\"Hardfork Meta: Byzantium\"",
     "status": "Final",
     "requires": [
-      100,
-      140,
-      196,
-      197,
-      198,
-      211,
-      214,
-      607,
-      649,
-      658
+      "100",
+      "140",
+      "196",
+      "197",
+      "198",
+      "211",
+      "214",
+      "607",
+      "649",
+      "658"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-609.md"
@@ -398,8 +398,8 @@
     "title": "Storage of text records in ENS",
     "status": "Stagnant",
     "requires": [
-      137,
-      165
+      "137",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-634.md"
@@ -415,7 +415,7 @@
     "title": "Embedding transaction status code in receipts",
     "status": "Final",
     "requires": [
-      140
+      "140"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-658.md"
@@ -424,8 +424,8 @@
     "title": "SWAPN, DUPN and EXCHANGE instructions",
     "status": "Review",
     "requires": [
-      3540,
-      5450
+      "3540",
+      "5450"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-663.md"
@@ -441,8 +441,8 @@
     "title": "URL Format for Transaction Requests",
     "status": "Final",
     "requires": [
-      20,
-      137
+      "20",
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-681.md"
@@ -465,7 +465,7 @@
     "title": "Create `eth_chainId` method for JSON-RPC",
     "status": "Final",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-695.md"
@@ -488,8 +488,8 @@
     "title": "Typed structured data hashing and signing",
     "status": "Final",
     "requires": [
-      155,
-      191
+      "155",
+      "191"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-712.md"
@@ -498,7 +498,7 @@
     "title": "Non-Fungible Token Standard",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-721.md"
@@ -507,8 +507,8 @@
     "title": "General data key/value store and execution",
     "status": "Draft",
     "requires": [
-      165,
-      173
+      "165",
+      "173"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-725.md"
@@ -517,9 +517,9 @@
     "title": "wallet_watchAsset RPC Method",
     "status": "Final",
     "requires": [
-      20,
-      1046,
-      1193
+      "20",
+      "1046",
+      "1193"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-747.md"
@@ -528,7 +528,7 @@
     "title": "Subscriptions and filters for completed transactions",
     "status": "Stagnant",
     "requires": [
-      1474
+      "1474"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-758.md"
@@ -537,7 +537,7 @@
     "title": "Token Standard",
     "status": "Final",
     "requires": [
-      1820
+      "1820"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-777.md"
@@ -553,7 +553,7 @@
     "title": "\"Hardfork Meta: DAO Fork\"",
     "status": "Final",
     "requires": [
-      606
+      "606"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-779.md"
@@ -569,8 +569,8 @@
     "title": "Pseudo-introspection Registry Contract",
     "status": "Final",
     "requires": [
-      165,
-      214
+      "165",
+      "214"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-820.md"
@@ -579,7 +579,7 @@
     "title": "Token Exchange Standard",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-823.md"
@@ -588,8 +588,8 @@
     "title": "URI Format for Ethereum",
     "status": "Stagnant",
     "requires": [
-      67,
-      681
+      "67",
+      "681"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-831.md"
@@ -619,8 +619,8 @@
     "title": "Node Discovery v4 ENR Extension",
     "status": "Final",
     "requires": [
-      8,
-      778
+      "8",
+      "778"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-868.md"
@@ -657,7 +657,7 @@
     "title": "Token Validation",
     "status": "Stagnant",
     "requires": [
-      1066
+      "1066"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-902.md"
@@ -680,7 +680,7 @@
     "title": "Address metadata registry",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-926.md"
@@ -689,7 +689,7 @@
     "title": "Generalised authorisations",
     "status": "Stagnant",
     "requires": [
-      926
+      "926"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-927.md"
@@ -705,9 +705,9 @@
     "title": "Composable Non-Fungible Token",
     "status": "Draft",
     "requires": [
-      20,
-      165,
-      721
+      "20",
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-998.md"
@@ -737,12 +737,12 @@
     "title": "\"Hardfork Meta: Constantinople\"",
     "status": "Final",
     "requires": [
-      145,
-      609,
-      1014,
-      1052,
-      1234,
-      1283
+      "145",
+      "609",
+      "1014",
+      "1052",
+      "1234",
+      "1283"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1013.md"
@@ -765,9 +765,9 @@
     "title": "tokenURI Interoperability",
     "status": "Final",
     "requires": [
-      20,
-      721,
-      1155
+      "20",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1046.md"
@@ -783,7 +783,7 @@
     "title": "EXTCODEHASH opcode",
     "status": "Final",
     "requires": [
-      161
+      "161"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1052.md"
@@ -820,10 +820,10 @@
     "title": "Gas relay for contract calls",
     "status": "Stagnant",
     "requires": [
-      20,
-      191,
-      1271,
-      1344
+      "20",
+      "191",
+      "1271",
+      "1344"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1077.md"
@@ -832,10 +832,10 @@
     "title": "Universal login / signup using ENS subdomains",
     "status": "Stagnant",
     "requires": [
-      191,
-      681,
-      725,
-      1077
+      "191",
+      "681",
+      "725",
+      "1077"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1078.md"
@@ -851,7 +851,7 @@
     "title": "Standard Bounties",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1081.md"
@@ -867,7 +867,7 @@
     "title": "Opt-in account exposure",
     "status": "Stagnant",
     "requires": [
-      1474
+      "1474"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1102.md"
@@ -876,8 +876,8 @@
     "title": "Reduce alt_bn128 precompile gas costs",
     "status": "Final",
     "requires": [
-      196,
-      197
+      "196",
+      "197"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1108.md"
@@ -914,8 +914,8 @@
     "title": "Transient storage opcodes",
     "status": "Final",
     "requires": [
-      2200,
-      3529
+      "2200",
+      "3529"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1153.md"
@@ -931,7 +931,7 @@
     "title": "Multi Token Standard",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1155.md"
@@ -940,7 +940,7 @@
     "title": "Minimal Proxy Contract",
     "status": "Final",
     "requires": [
-      211
+      "211"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1167.md"
@@ -949,7 +949,7 @@
     "title": "Wallet & shop standard for all tokens (erc20)",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1175.md"
@@ -965,7 +965,7 @@
     "title": "Storage of DNS Records in ENS",
     "status": "Review",
     "requires": [
-      137
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1185.md"
@@ -974,7 +974,7 @@
     "title": "RPC-Method to get Merkle Proofs - eth_getProof",
     "status": "Stagnant",
     "requires": [
-      1474
+      "1474"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1186.md"
@@ -983,8 +983,8 @@
     "title": "Add chain id to mixed-case checksum address encoding",
     "status": "Last Call",
     "requires": [
-      55,
-      155
+      "55",
+      "155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1191.md"
@@ -993,8 +993,8 @@
     "title": "Ethereum Provider JavaScript API",
     "status": "Final",
     "requires": [
-      155,
-      695
+      "155",
+      "695"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1193.md"
@@ -1003,7 +1003,7 @@
     "title": "Voting Interface",
     "status": "Draft",
     "requires": [
-      5269
+      "5269"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1202.md"
@@ -1026,7 +1026,7 @@
     "title": "Defuse Difficulty Bomb and Reset Block Reward",
     "status": "Stagnant",
     "requires": [
-      649
+      "649"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1227.md"
@@ -1049,8 +1049,8 @@
     "title": "Membership Verification Token (MVT)",
     "status": "Stagnant",
     "requires": [
-      165,
-      173
+      "165",
+      "173"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1261.md"
@@ -1108,8 +1108,8 @@
     "title": "Subscriptions on the blockchain",
     "status": "Stagnant",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1337.md"
@@ -1118,7 +1118,7 @@
     "title": "ChainID opcode",
     "status": "Final",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1344.md"
@@ -1141,8 +1141,8 @@
     "title": "Payable Token",
     "status": "Final",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1363.md"
@@ -1151,7 +1151,7 @@
     "title": "Reduced gas cost for call to self",
     "status": "Stagnant",
     "requires": [
-      150
+      "150"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1380.md"
@@ -1181,8 +1181,8 @@
     "title": "Poll Standard",
     "status": "Stagnant",
     "requires": [
-      165,
-      1261
+      "165",
+      "1261"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1417.md"
@@ -1191,7 +1191,7 @@
     "title": "Blockchain Storage Rent Payment",
     "status": "Stagnant",
     "requires": [
-      1559
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1418.md"
@@ -1221,7 +1221,7 @@
     "title": "Node Discovery via DNS",
     "status": "Stagnant",
     "requires": [
-      778
+      "778"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1459.md"
@@ -1230,8 +1230,8 @@
     "title": "Base Security Token",
     "status": "Stagnant",
     "requires": [
-      20,
-      1066
+      "20",
+      "1066"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1462.md"
@@ -1261,7 +1261,7 @@
     "title": "Digital Identity Aggregator",
     "status": "Stagnant",
     "requires": [
-      191
+      "191"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1484.md"
@@ -1291,7 +1291,7 @@
     "title": "Standard for Insurance Policies as ERC-721 Non Fungible Tokens",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1523.md"
@@ -1307,8 +1307,8 @@
     "title": "Fee market change for ETH 1.0 chain",
     "status": "Final",
     "requires": [
-      2718,
-      2930
+      "2718",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1559.md"
@@ -1338,7 +1338,7 @@
     "title": "\"Hardfork Meta: Ethereum ProgPoW\"",
     "status": "Stagnant",
     "requires": [
-      1057
+      "1057"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1588.md"
@@ -1354,7 +1354,7 @@
     "title": "Gas stations network",
     "status": "Stagnant",
     "requires": [
-      1077
+      "1077"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1613.md"
@@ -1363,7 +1363,7 @@
     "title": "Attribute Registry Standard",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1616.md"
@@ -1379,9 +1379,9 @@
     "title": "Re-Fungible Token Standard (RFT)",
     "status": "Stagnant",
     "requires": [
-      20,
-      165,
-      721
+      "20",
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1633.md"
@@ -1390,13 +1390,13 @@
     "title": "\"Hardfork Meta: Istanbul\"",
     "status": "Final",
     "requires": [
-      152,
-      1108,
-      1344,
-      1716,
-      1884,
-      2028,
-      2200
+      "152",
+      "1108",
+      "1344",
+      "1716",
+      "1884",
+      "2028",
+      "2200"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1679.md"
@@ -1426,7 +1426,7 @@
     "title": "Disable SSTORE with gasleft lower than call stipend",
     "status": "Withdrawn",
     "requires": [
-      1283
+      "1283"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1706.md"
@@ -1435,7 +1435,7 @@
     "title": "URL Format for Web3 Browsers",
     "status": "Stagnant",
     "requires": [
-      155
+      "155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1710.md"
@@ -1444,8 +1444,8 @@
     "title": "\"Hardfork Meta: Petersburg\"",
     "status": "Final",
     "requires": [
-      1013,
-      1283
+      "1013",
+      "1283"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1716.md"
@@ -1461,7 +1461,7 @@
     "title": "Scoped Approval Interface",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1761.md"
@@ -1484,7 +1484,7 @@
     "title": "Rename opcodes for clarity",
     "status": "Stagnant",
     "requires": [
-      141
+      "141"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1803.md"
@@ -1493,7 +1493,7 @@
     "title": "Ethereum Verifiable Claims",
     "status": "Stagnant",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1812.md"
@@ -1502,8 +1502,8 @@
     "title": "Pseudo-introspection Registry Contract",
     "status": "Final",
     "requires": [
-      165,
-      214
+      "165",
+      "214"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1820.md"
@@ -1526,8 +1526,8 @@
     "title": "ENS Interface Discovery",
     "status": "Stagnant",
     "requires": [
-      137,
-      165
+      "137",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1844.md"
@@ -1543,8 +1543,8 @@
     "title": "Repricing for trie-size-dependent opcodes",
     "status": "Final",
     "requires": [
-      150,
-      1052
+      "150",
+      "1052"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1884.md"
@@ -1567,7 +1567,7 @@
     "title": "Add `blockHash` to defaultBlock methods",
     "status": "Last Call",
     "requires": [
-      234
+      "234"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1898.md"
@@ -1590,7 +1590,7 @@
     "title": "dType Functions Extension",
     "status": "Stagnant",
     "requires": [
-      1900
+      "1900"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1921.md"
@@ -1599,9 +1599,9 @@
     "title": "zk-SNARK Verifier Standard",
     "status": "Stagnant",
     "requires": [
-      165,
-      196,
-      197
+      "165",
+      "196",
+      "197"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1922.md"
@@ -1610,9 +1610,9 @@
     "title": "zk-SNARK Verifier Registry Standard",
     "status": "Stagnant",
     "requires": [
-      165,
-      196,
-      197
+      "165",
+      "196",
+      "197"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1923.md"
@@ -1628,7 +1628,7 @@
     "title": "Non-fungible Data Token",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1948.md"
@@ -1637,7 +1637,7 @@
     "title": "New Opcode to check if a chainID is part of the history of chainIDs",
     "status": "Stagnant",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1959.md"
@@ -1646,7 +1646,7 @@
     "title": "EC arithmetic and pairings with runtime definitions",
     "status": "Stagnant",
     "requires": [
-      1109
+      "1109"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1962.md"
@@ -1655,7 +1655,7 @@
     "title": "Method to check if a chainID is valid at a specific block Number",
     "status": "Stagnant",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1965.md"
@@ -1685,7 +1685,7 @@
     "title": "Holdable Token",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1996.md"
@@ -1694,7 +1694,7 @@
     "title": "EVMC modules for implementations of precompiled contracts",
     "status": "Stagnant",
     "requires": [
-      1352
+      "1352"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2003.md"
@@ -1703,7 +1703,7 @@
     "title": "Compliance Service",
     "status": "Stagnant",
     "requires": [
-      1066
+      "1066"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2009.md"
@@ -1712,7 +1712,7 @@
     "title": "Extended State Oracle",
     "status": "Stagnant",
     "requires": [
-      140
+      "140"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2014.md"
@@ -1721,7 +1721,7 @@
     "title": "wallet_updateEthereumChain RPC Method",
     "status": "Stagnant",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2015.md"
@@ -1730,7 +1730,7 @@
     "title": "Clearable Token",
     "status": "Stagnant",
     "requires": [
-      1996
+      "1996"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2018.md"
@@ -1739,7 +1739,7 @@
     "title": "Fundable Token",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2019.md"
@@ -1748,13 +1748,13 @@
     "title": "E-Money Standard Token",
     "status": "Stagnant",
     "requires": [
-      20,
-      1066,
-      1996,
-      2009,
-      2018,
-      2019,
-      2021
+      "20",
+      "1066",
+      "1996",
+      "2009",
+      "2018",
+      "2019",
+      "2021"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2020.md"
@@ -1763,9 +1763,9 @@
     "title": "Payoutable Token",
     "status": "Stagnant",
     "requires": [
-      20,
-      1066,
-      1996
+      "20",
+      "1066",
+      "1996"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2021.md"
@@ -1774,7 +1774,7 @@
     "title": "Block Rewards Proposal for funding Eth1.x",
     "status": "Withdrawn",
     "requires": [
-      1890
+      "1890"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2025.md"
@@ -1811,7 +1811,7 @@
     "title": "State Rent B - Net transaction counter",
     "status": "Stagnant",
     "requires": [
-      2029
+      "2029"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2031.md"
@@ -1834,8 +1834,8 @@
     "title": "Reduced gas cost for static calls made to precompiles",
     "status": "Stagnant",
     "requires": [
-      214,
-      1352
+      "214",
+      "1352"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2046.md"
@@ -1851,7 +1851,7 @@
     "title": "\"Hardfork Meta: Berlin\"",
     "status": "Withdrawn",
     "requires": [
-      1679
+      "1679"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2070.md"
@@ -1860,7 +1860,7 @@
     "title": "Compact Signature Representation",
     "status": "Final",
     "requires": [
-      2
+      "2"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2098.md"
@@ -1876,9 +1876,9 @@
     "title": "Consumable Interface (Tickets, etc)",
     "status": "Final",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2135.md"
@@ -1887,7 +1887,7 @@
     "title": "dType Storage Extension - Decentralized Type System for EVM",
     "status": "Stagnant",
     "requires": [
-      1900
+      "1900"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2157.md"
@@ -1903,9 +1903,9 @@
     "title": "dType Alias Extension - Decentralized Type System",
     "status": "Stagnant",
     "requires": [
-      155,
-      1900,
-      2157
+      "155",
+      "1900",
+      "2157"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2193.md"
@@ -1942,7 +1942,7 @@
     "title": "Wallet Permissions System",
     "status": "Final",
     "requires": [
-      1193
+      "1193"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2255.md"
@@ -1951,9 +1951,9 @@
     "title": "wallet_getOwnedAssets JSON-RPC Method",
     "status": "Stagnant",
     "requires": [
-      55,
-      155,
-      1474
+      "55",
+      "155",
+      "1474"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2256.md"
@@ -1969,7 +1969,7 @@
     "title": "Explicit bound to Chain ID size",
     "status": "Review",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2294.md"
@@ -1978,7 +1978,7 @@
     "title": "Multichain address resolution for ENS",
     "status": "Stagnant",
     "requires": [
-      137
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2304.md"
@@ -1987,7 +1987,7 @@
     "title": "ERC-721 Consecutive Transfer Extension",
     "status": "Final",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2309.md"
@@ -1996,9 +1996,9 @@
     "title": "Simple Subroutines for the EVM",
     "status": "Withdrawn",
     "requires": [
-      3540,
-      3670,
-      4200
+      "3540",
+      "3670",
+      "4200"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2315.md"
@@ -2014,7 +2014,7 @@
     "title": "EXTSLOAD opcode",
     "status": "Stagnant",
     "requires": [
-      2929
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2330.md"
@@ -2030,7 +2030,7 @@
     "title": "BLS12-381 Deterministic Account Hierarchy",
     "status": "Stagnant",
     "requires": [
-      2333
+      "2333"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2334.md"
@@ -2039,8 +2039,8 @@
     "title": "BLS12-381 Keystore",
     "status": "Stagnant",
     "requires": [
-      2333,
-      2334
+      "2333",
+      "2334"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2335.md"
@@ -2049,7 +2049,7 @@
     "title": "\"eth/64: forkid-extended protocol handshake\"",
     "status": "Final",
     "requires": [
-      2124
+      "2124"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2364.md"
@@ -2072,8 +2072,8 @@
     "title": "Ethereum 2 Hierarchical Deterministic Walletstore",
     "status": "Stagnant",
     "requires": [
-      2334,
-      2335
+      "2334",
+      "2335"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2386.md"
@@ -2082,8 +2082,8 @@
     "title": "\"Hardfork Meta: Muir Glacier\"",
     "status": "Final",
     "requires": [
-      1679,
-      2384
+      "1679",
+      "2384"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2387.md"
@@ -2092,10 +2092,10 @@
     "title": "Geo-ENS",
     "status": "Stagnant",
     "requires": [
-      137,
-      165,
-      1062,
-      1185
+      "137",
+      "165",
+      "1062",
+      "1185"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2390.md"
@@ -2104,8 +2104,8 @@
     "title": "Transaction Receipt URI",
     "status": "Stagnant",
     "requires": [
-      155,
-      681
+      "155",
+      "681"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2400.md"
@@ -2121,7 +2121,7 @@
     "title": "\"eth/65: transaction announcements and retrievals\"",
     "status": "Final",
     "requires": [
-      2364
+      "2364"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2464.md"
@@ -2130,7 +2130,7 @@
     "title": "Singleton Factory",
     "status": "Stagnant",
     "requires": [
-      1014
+      "1014"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2470.md"
@@ -2146,9 +2146,9 @@
     "title": "Token Metadata Integrity",
     "status": "Stagnant",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2477.md"
@@ -2157,7 +2157,7 @@
     "title": "eth/66 request identifier",
     "status": "Final",
     "requires": [
-      2464
+      "2464"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2481.md"
@@ -2166,7 +2166,7 @@
     "title": "Deprecate the CALLCODE opcode",
     "status": "Stagnant",
     "requires": [
-      7
+      "7"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2488.md"
@@ -2189,7 +2189,7 @@
     "title": "Multiple contenthash records for ENS",
     "status": "Stagnant",
     "requires": [
-      1577
+      "1577"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2520.md"
@@ -2198,10 +2198,10 @@
     "title": "ENSLogin",
     "status": "Stagnant",
     "requires": [
-      137,
-      634,
-      1193,
-      2304
+      "137",
+      "634",
+      "1193",
+      "2304"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2525.md"
@@ -2224,8 +2224,8 @@
     "title": "BLS12-377 curve operations",
     "status": "Stagnant",
     "requires": [
-      1109,
-      2046
+      "1109",
+      "2046"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2539.md"
@@ -2241,7 +2241,7 @@
     "title": "ENS Wildcard Resolution",
     "status": "Stagnant",
     "requires": [
-      137
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2544.md"
@@ -2250,7 +2250,7 @@
     "title": "ModExp Gas Cost",
     "status": "Final",
     "requires": [
-      198
+      "198"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2565.md"
@@ -2294,8 +2294,8 @@
     "title": "Permit Extension for EIP-20 Signed Approvals",
     "status": "Final",
     "requires": [
-      20,
-      712
+      "20",
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2612.md"
@@ -2304,8 +2304,8 @@
     "title": "Non-Fungible Token with mortgage and rental functions",
     "status": "Stagnant",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2615.md"
@@ -2328,9 +2328,9 @@
     "title": "Repricing of precompiles and Keccak256 function",
     "status": "Stagnant",
     "requires": [
-      1352,
-      2046,
-      2565
+      "1352",
+      "2046",
+      "2565"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2666.md"
@@ -2381,7 +2381,7 @@
     "title": "Sponsored, expiring and batch transactions.",
     "status": "Withdrawn",
     "requires": [
-      2718
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2711.md"
@@ -2397,7 +2397,7 @@
     "title": "Transaction Package",
     "status": "Withdrawn",
     "requires": [
-      2718
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2733.md"
@@ -2413,9 +2413,9 @@
     "title": "Contract Ownership Governance",
     "status": "Stagnant",
     "requires": [
-      20,
-      165,
-      173
+      "20",
+      "165",
+      "173"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2767.md"
@@ -2424,8 +2424,8 @@
     "title": "Meta-Transactions Forwarder Contract",
     "status": "Stagnant",
     "requires": [
-      712,
-      2771
+      "712",
+      "2771"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2770.md"
@@ -2448,7 +2448,7 @@
     "title": "Ethereum Provider Connect/Disconnect Events",
     "status": "Withdrawn",
     "requires": [
-      2700
+      "2700"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2786.md"
@@ -2464,7 +2464,7 @@
     "title": "Transaction Replacement Message Type",
     "status": "Stagnant",
     "requires": [
-      1193
+      "1193"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2831.md"
@@ -2501,9 +2501,9 @@
     "title": "Chunk-Based Code Merkleization",
     "status": "Stagnant",
     "requires": [
-      161,
-      170,
-      2584
+      "161",
+      "170",
+      "2584"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2926.md"
@@ -2519,8 +2519,8 @@
     "title": "Optional access lists",
     "status": "Final",
     "requires": [
-      2718,
-      2929
+      "2718",
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2930.md"
@@ -2550,7 +2550,7 @@
     "title": "Account Abstraction",
     "status": "Stagnant",
     "requires": [
-      2718
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2938.md"
@@ -2559,7 +2559,7 @@
     "title": "EthPM URI Specification",
     "status": "Stagnant",
     "requires": [
-      2678
+      "2678"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2942.md"
@@ -2575,8 +2575,8 @@
     "title": "Wrapped Legacy Transactions",
     "status": "Withdrawn",
     "requires": [
-      155,
-      2718
+      "155",
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2972.md"
@@ -2585,7 +2585,7 @@
     "title": "Typed Transactions over Gossip",
     "status": "Final",
     "requires": [
-      2718
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2976.md"
@@ -2594,7 +2594,7 @@
     "title": "Swiss Compliant Asset Token",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2980.md"
@@ -2603,7 +2603,7 @@
     "title": "NFT Royalty Standard",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-2981.md"
@@ -2640,8 +2640,8 @@
     "title": "Transfer With Authorization",
     "status": "Stagnant",
     "requires": [
-      20,
-      712
+      "20",
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3009.md"
@@ -2657,7 +2657,7 @@
     "title": "BW6-761 curve operations",
     "status": "Stagnant",
     "requires": [
-      2539
+      "2539"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3026.md"
@@ -2673,8 +2673,8 @@
     "title": "Adds `baseFee` to `eth_getBlockByHash`",
     "status": "Stagnant",
     "requires": [
-      1474,
-      1559
+      "1474",
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3041.md"
@@ -2683,8 +2683,8 @@
     "title": "Adds `baseFee` to `eth_getBlockByNumber`",
     "status": "Stagnant",
     "requires": [
-      1474,
-      1559
+      "1474",
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3044.md"
@@ -2693,8 +2693,8 @@
     "title": "Adds `baseFee` to `eth_getUncleByBlockHashAndIndex`",
     "status": "Stagnant",
     "requires": [
-      1474,
-      1559
+      "1474",
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3045.md"
@@ -2703,8 +2703,8 @@
     "title": "Adds `baseFee` to `eth_getUncleByBlockNumberAndIndex`",
     "status": "Stagnant",
     "requires": [
-      1474,
-      1559
+      "1474",
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3046.md"
@@ -2713,8 +2713,8 @@
     "title": "Precompile for BN256 HashToCurve Algorithms",
     "status": "Stagnant",
     "requires": [
-      198,
-      1108
+      "198",
+      "1108"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3068.md"
@@ -2723,7 +2723,7 @@
     "title": "AUTH and AUTHCALL opcodes",
     "status": "Stagnant",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3074.md"
@@ -2739,7 +2739,7 @@
     "title": "wallet_addEthereumChain RPC Method",
     "status": "Stagnant",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3085.md"
@@ -2762,7 +2762,7 @@
     "title": "Exclusive Claimable Token",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3135.md"
@@ -2792,7 +2792,7 @@
     "title": "BASEFEE opcode",
     "status": "Final",
     "requires": [
-      1559
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3198.md"
@@ -2808,7 +2808,7 @@
     "title": "Described Data",
     "status": "Stagnant",
     "requires": [
-      191
+      "191"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3224.md"
@@ -2859,8 +2859,8 @@
     "title": "Wallet Switch Ethereum Chain RPC Method (`wallet_switchEthereumChain`)",
     "status": "Stagnant",
     "requires": [
-      155,
-      695
+      "155",
+      "695"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3326.md"
@@ -2883,7 +2883,7 @@
     "title": "Frame pointer support for memory load and store operations",
     "status": "Stagnant",
     "requires": [
-      3336
+      "3336"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3337.md"
@@ -2927,7 +2927,7 @@
     "title": "ERC-721 and ERC-1155 to ERC-20 Wrapper",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3386.md"
@@ -2950,7 +2950,7 @@
     "title": "Expanded Clique Block Choice Rule",
     "status": "Stagnant",
     "requires": [
-      225
+      "225"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3436.md"
@@ -2959,8 +2959,8 @@
     "title": "ERC-721 Editions Standard",
     "status": "Stagnant",
     "requires": [
-      712,
-      721
+      "712",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3440.md"
@@ -2990,9 +2990,9 @@
     "title": "Abstract Storage Bonds",
     "status": "Final",
     "requires": [
-      20,
-      721,
-      1155
+      "20",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3475.md"
@@ -3008,7 +3008,7 @@
     "title": "Transaction Destination Opcode",
     "status": "Stagnant",
     "requires": [
-      3508
+      "3508"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3520.md"
@@ -3017,8 +3017,8 @@
     "title": "Reduce access list cost",
     "status": "Stagnant",
     "requires": [
-      2028,
-      2930
+      "2028",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3521.md"
@@ -3027,9 +3027,9 @@
     "title": "Semi-Fungible Token",
     "status": "Final",
     "requires": [
-      20,
-      165,
-      721
+      "20",
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3525.md"
@@ -3038,9 +3038,9 @@
     "title": "Reduction in refunds",
     "status": "Final",
     "requires": [
-      2200,
-      2929,
-      2930
+      "2200",
+      "2929",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3529.md"
@@ -3049,8 +3049,8 @@
     "title": "Restricted Chain Context Type Transactions",
     "status": "Stagnant",
     "requires": [
-      2718,
-      2930
+      "2718",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3534.md"
@@ -3059,8 +3059,8 @@
     "title": "EOF - EVM Object Format v1",
     "status": "Review",
     "requires": [
-      3541,
-      3860
+      "3541",
+      "3860"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3540.md"
@@ -3097,8 +3097,8 @@
     "title": "Block Access List",
     "status": "Stagnant",
     "requires": [
-      2929,
-      2930
+      "2929",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3584.md"
@@ -3107,7 +3107,7 @@
     "title": "Assemble assets into NFTs",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3589.md"
@@ -3123,8 +3123,8 @@
     "title": "T-REX - Token for Regulated EXchanges",
     "status": "Final",
     "requires": [
-      20,
-      173
+      "20",
+      "173"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-3643.md"
@@ -3133,7 +3133,7 @@
     "title": "Warm COINBASE",
     "status": "Final",
     "requires": [
-      2929
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3651.md"
@@ -3149,7 +3149,7 @@
     "title": "EOF - Code Validation",
     "status": "Review",
     "requires": [
-      3540
+      "3540"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3670.md"
@@ -3158,7 +3158,7 @@
     "title": "Upgrade consensus to Proof-of-Stake",
     "status": "Final",
     "requires": [
-      2124
+      "2124"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3675.md"
@@ -3167,8 +3167,8 @@
     "title": "EOF - JUMPDEST Table",
     "status": "Stagnant",
     "requires": [
-      3540,
-      3670
+      "3540",
+      "3670"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3690.md"
@@ -3177,7 +3177,7 @@
     "title": "Remove Support for Type 1 Transactions",
     "status": "Stagnant",
     "requires": [
-      1559
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3709.md"
@@ -3228,7 +3228,7 @@
     "title": "Strict enforcement of chainId",
     "status": "Stagnant",
     "requires": [
-      155
+      "155"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3788.md"
@@ -3244,7 +3244,7 @@
     "title": "Limit and meter initcode",
     "status": "Final",
     "requires": [
-      170
+      "170"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3860.md"
@@ -3253,7 +3253,7 @@
     "title": "Gas refunds on reverts",
     "status": "Stagnant",
     "requires": [
-      2929
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-3978.md"
@@ -3262,29 +3262,18 @@
     "title": "EOF - Static relative jumps",
     "status": "Review",
     "requires": [
-      3540,
-      3670
+      "3540",
+      "3670"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4200.md"
-  },
-  "4242": {
-    "title": "NFT Recursive Synthesis Asset Standard",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 296,
-    "markdownPath": "https://raw.githubusercontent.com/muadao/ERCs/ERC4242/ERCS/erc-4242.md",
-    "requires": [
-      165,
-      721
-    ]
   },
   "4337": {
     "title": "Account Abstraction Using Alt Mempool",
     "status": "Draft",
     "requires": [
-      712,
-      7562
+      "712",
+      "7562"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4337.md"
@@ -3307,7 +3296,7 @@
     "title": "Interface for Staked Tokens in NFTs",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4353.md"
@@ -3316,12 +3305,12 @@
     "title": "Sign-In with Ethereum",
     "status": "Review",
     "requires": [
-      55,
-      137,
-      155,
-      191,
-      1271,
-      1328
+      "55",
+      "137",
+      "155",
+      "191",
+      "1271",
+      "1328"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4361.md"
@@ -3330,9 +3319,9 @@
     "title": "Micropayments for NFTs and Multi Tokens",
     "status": "Stagnant",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4393.md"
@@ -3348,7 +3337,7 @@
     "title": "Supplant DIFFICULTY opcode with PREVRANDAO",
     "status": "Final",
     "requires": [
-      3675
+      "3675"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4399.md"
@@ -3357,8 +3346,8 @@
     "title": "EIP-721 Consumable Extension",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4400.md"
@@ -3388,9 +3377,9 @@
     "title": "Permit for ERC-721 NFTs",
     "status": "Stagnant",
     "requires": [
-      165,
-      712,
-      721
+      "165",
+      "712",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4494.md"
@@ -3399,8 +3388,8 @@
     "title": "Non-Fungible Tokens Tied to Physical Assets",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4519.md"
@@ -3416,7 +3405,7 @@
     "title": "721/20-compatible transfer",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4521.md"
@@ -3425,8 +3414,8 @@
     "title": "Safer ERC-20",
     "status": "Stagnant",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4524.md"
@@ -3449,11 +3438,11 @@
     "title": "Procedures for the EVM",
     "status": "Stagnant",
     "requires": [
-      2315,
-      3540,
-      3670,
-      3779,
-      4200
+      "2315",
+      "3540",
+      "3670",
+      "3779",
+      "4200"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4573.md"
@@ -3462,8 +3451,8 @@
     "title": "Tokenized Vaults",
     "status": "Final",
     "requires": [
-      20,
-      2612
+      "20",
+      "2612"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4626.md"
@@ -3472,7 +3461,7 @@
     "title": "Non-Tradable Tokens Standard",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4671.md"
@@ -3481,8 +3470,8 @@
     "title": "Multi-Fractional Non-Fungible Tokens",
     "status": "Stagnant",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4675.md"
@@ -3498,7 +3487,7 @@
     "title": "Simplify EIP-161",
     "status": "Stagnant",
     "requires": [
-      161
+      "161"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4747.md"
@@ -3507,9 +3496,9 @@
     "title": "EOF - Functions",
     "status": "Review",
     "requires": [
-      3540,
-      3670,
-      5450
+      "3540",
+      "3670",
+      "5450"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4750.md"
@@ -3539,7 +3528,7 @@
     "title": "Beacon block root in the EVM",
     "status": "Final",
     "requires": [
-      1559
+      "1559"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4788.md"
@@ -3548,7 +3537,7 @@
     "title": "Non-Fungible Token Ownership Designation Standard",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4799.md"
@@ -3564,7 +3553,7 @@
     "title": "Web3 URL to EVM Call Message Translation",
     "status": "Final",
     "requires": [
-      137
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4804.md"
@@ -3587,10 +3576,10 @@
     "title": "Shard Blob Transactions",
     "status": "Final",
     "requires": [
-      1559,
-      2718,
-      2930,
-      4895
+      "1559",
+      "2718",
+      "2930",
+      "4895"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4844.md"
@@ -3613,7 +3602,7 @@
     "title": "Composable SVG NFT",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4883.md"
@@ -3622,9 +3611,9 @@
     "title": "Subscription NFTs and Multi Tokens",
     "status": "Stagnant",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4885.md"
@@ -3647,8 +3636,8 @@
     "title": "EIP-721 Metadata Update Extension",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4906.md"
@@ -3657,8 +3646,8 @@
     "title": "Rental NFT, an Extension of EIP-721",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4907.md"
@@ -3667,8 +3656,8 @@
     "title": "Royalty Bearing NFTs",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4910.md"
@@ -3677,7 +3666,7 @@
     "title": "Generic Token Upgrade Standard",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4931.md"
@@ -3686,8 +3675,8 @@
     "title": "\"eth/67 - Removal of GetNodeData\"",
     "status": "Final",
     "requires": [
-      2464,
-      2481
+      "2464",
+      "2481"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-4938.md"
@@ -3696,7 +3685,7 @@
     "title": "Contract with Exactly One Non-fungible Token",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4944.md"
@@ -3705,9 +3694,9 @@
     "title": "Entangled Tokens",
     "status": "Stagnant",
     "requires": [
-      20,
-      721,
-      1155
+      "20",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4950.md"
@@ -3716,8 +3705,8 @@
     "title": "Vendor Metadata Extension for NFTs",
     "status": "Final",
     "requires": [
-      721,
-      1155
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4955.md"
@@ -3726,7 +3715,7 @@
     "title": "Name-Owned Account",
     "status": "Draft",
     "requires": [
-      137
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4972.md"
@@ -3735,10 +3724,10 @@
     "title": "Account-bound Tokens",
     "status": "Review",
     "requires": [
-      165,
-      712,
-      721,
-      1271
+      "165",
+      "712",
+      "721",
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4973.md"
@@ -3747,7 +3736,7 @@
     "title": "Ratings",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4974.md"
@@ -3756,10 +3745,10 @@
     "title": "Held token interface",
     "status": "Stagnant",
     "requires": [
-      20,
-      165,
-      721,
-      1155
+      "20",
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4987.md"
@@ -3775,8 +3764,8 @@
     "title": "Insert Code into EOAs with AUTHUSURP",
     "status": "Stagnant",
     "requires": [
-      3074,
-      3607
+      "3074",
+      "3607"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5003.md"
@@ -3785,7 +3774,7 @@
     "title": "Zodiac Modular Accounts",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5005.md"
@@ -3794,8 +3783,8 @@
     "title": "Rental NFT, NFT User Extension",
     "status": "Final",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5006.md"
@@ -3804,8 +3793,8 @@
     "title": "Time NFT, ERC-721 Time Extension",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5007.md"
@@ -3814,8 +3803,8 @@
     "title": "ERC-721 Nonce Extension",
     "status": "Last Call",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5008.md"
@@ -3838,7 +3827,7 @@
     "title": "Shareable Non-Fungible Token",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5023.md"
@@ -3847,9 +3836,9 @@
     "title": "Remove the limit on contract code size",
     "status": "Stagnant",
     "requires": [
-      170,
-      2929,
-      2930
+      "170",
+      "2929",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5027.md"
@@ -3858,12 +3847,12 @@
     "title": "Interactive NFTs with Modular Environments",
     "status": "Stagnant",
     "requires": [
-      165,
-      173,
-      721,
-      1155,
-      1820,
-      4906
+      "165",
+      "173",
+      "721",
+      "1155",
+      "1820",
+      "4906"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5050.md"
@@ -3872,9 +3861,9 @@
     "title": "Lockable Non-Fungible Tokens",
     "status": "Stagnant",
     "requires": [
-      20,
-      165,
-      721
+      "20",
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5058.md"
@@ -3883,7 +3872,7 @@
     "title": "Instruction for transferring ether",
     "status": "Stagnant",
     "requires": [
-      2929
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5065.md"
@@ -3892,7 +3881,7 @@
     "title": "EIP Editor Handbook",
     "status": "Living",
     "requires": [
-      1
+      "1"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5069.md"
@@ -3901,11 +3890,11 @@
     "title": "Expirable Transaction",
     "status": "Stagnant",
     "requires": [
-      155,
-      1559,
-      2718,
-      2929,
-      2930
+      "155",
+      "1559",
+      "2718",
+      "2929",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5081.md"
@@ -3914,8 +3903,8 @@
     "title": "URL Format for Ethereum Network Switching",
     "status": "Stagnant",
     "requires": [
-      681,
-      831
+      "681",
+      "831"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5094.md"
@@ -3924,8 +3913,8 @@
     "title": "Principal Token",
     "status": "Stagnant",
     "requires": [
-      20,
-      2612
+      "20",
+      "2612"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5095.md"
@@ -3941,7 +3930,7 @@
     "title": "SY Token",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5115.md"
@@ -3950,9 +3939,9 @@
     "title": "SAFE Authentication For ENS",
     "status": "Stagnant",
     "requires": [
-      137,
-      181,
-      634
+      "137",
+      "181",
+      "634"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5131.md"
@@ -3968,8 +3957,8 @@
     "title": "Remote Procedure Call Provider Lists",
     "status": "Stagnant",
     "requires": [
-      155,
-      1577
+      "155",
+      "1577"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5139.md"
@@ -3978,8 +3967,8 @@
     "title": "Slippage Protection for Tokenized Vault",
     "status": "Stagnant",
     "requires": [
-      20,
-      4626
+      "20",
+      "4626"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5143.md"
@@ -3995,11 +3984,11 @@
     "title": "Client Script URI for Token Contracts",
     "status": "Final",
     "requires": [
-      20,
-      165,
-      721,
-      777,
-      1155
+      "20",
+      "165",
+      "721",
+      "777",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5169.md"
@@ -4008,8 +3997,8 @@
     "title": "NFT Future Rewards (nFR)",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5173.md"
@@ -4018,8 +4007,8 @@
     "title": "NFT Updatable Metadata Extension",
     "status": "Stagnant",
     "requires": [
-      721,
-      1155
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5185.md"
@@ -4028,8 +4017,8 @@
     "title": "Extend EIP-1155 with rentable usage rights",
     "status": "Stagnant",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5187.md"
@@ -4045,8 +4034,8 @@
     "title": "Minimal Soulbound NFTs",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5192.md"
@@ -4055,7 +4044,7 @@
     "title": "Blueprint contract format",
     "status": "Final",
     "requires": [
-      170
+      "170"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5202.md"
@@ -4064,9 +4053,9 @@
     "title": "ERC-1155 Allowance Extension",
     "status": "Last Call",
     "requires": [
-      20,
-      165,
-      1155
+      "20",
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5216.md"
@@ -4075,7 +4064,7 @@
     "title": "NFT Rights Management",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5218.md"
@@ -4098,10 +4087,10 @@
     "title": "Account-bound Finance",
     "status": "Stagnant",
     "requires": [
-      20,
-      721,
-      1155,
-      5114
+      "20",
+      "721",
+      "1155",
+      "5114"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5252.md"
@@ -4110,9 +4099,9 @@
     "title": "Retrieval of EIP-712 domain",
     "status": "Final",
     "requires": [
-      155,
-      712,
-      2612
+      "155",
+      "712",
+      "2612"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5267.md"
@@ -4121,7 +4110,7 @@
     "title": "ERC Detection and Discovery",
     "status": "Review",
     "requires": [
-      5750
+      "5750"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5269.md"
@@ -4130,9 +4119,9 @@
     "title": "Semaphore for Reentrancy Protection",
     "status": "Stagnant",
     "requires": [
-      20,
-      1283,
-      1352
+      "20",
+      "1283",
+      "1352"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5283.md"
@@ -4141,8 +4130,8 @@
     "title": "Ethereum Notary Interface",
     "status": "Review",
     "requires": [
-      165,
-      5568
+      "165",
+      "5568"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5289.md"
@@ -4151,9 +4140,9 @@
     "title": "ENS Trust to hold NFTs under ENS name",
     "status": "Stagnant",
     "requires": [
-      137,
-      721,
-      1155
+      "137",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5298.md"
@@ -4162,8 +4151,8 @@
     "title": "Light Contract Ownership",
     "status": "Final",
     "requires": [
-      165,
-      173
+      "165",
+      "173"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5313.md"
@@ -4172,8 +4161,8 @@
     "title": "EIP-721 User And Expires And Level Extension",
     "status": "Stagnant",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5334.md"
@@ -4189,11 +4178,11 @@
     "title": "NFT Author Information and Consent",
     "status": "Final",
     "requires": [
-      55,
-      155,
-      712,
-      721,
-      1155
+      "55",
+      "155",
+      "712",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5375.md"
@@ -4202,9 +4191,9 @@
     "title": "ERC-721 Entitlement Extension",
     "status": "Final",
     "requires": [
-      165,
-      721,
-      1046
+      "165",
+      "721",
+      "1046"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5380.md"
@@ -4213,9 +4202,9 @@
     "title": "EIP-1155 Non-Fungible Token extension",
     "status": "Stagnant",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5409.md"
@@ -4224,7 +4213,7 @@
     "title": "Security Contact Interface",
     "status": "Stagnant",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5437.md"
@@ -4233,10 +4222,10 @@
     "title": "EOF - Stack Validation",
     "status": "Review",
     "requires": [
-      3540,
-      3670,
-      4200,
-      4750
+      "3540",
+      "3670",
+      "4200",
+      "4750"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5450.md"
@@ -4245,10 +4234,10 @@
     "title": "Endorsement - Permit for Any Functions",
     "status": "Last Call",
     "requires": [
-      165,
-      712,
-      1271,
-      5750
+      "165",
+      "712",
+      "1271",
+      "5750"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5453.md"
@@ -4257,8 +4246,8 @@
     "title": "CREATE2COPY Opcode",
     "status": "Stagnant",
     "requires": [
-      1014,
-      2929
+      "1014",
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5478.md"
@@ -4267,8 +4256,8 @@
     "title": "Consensual Soulbound Tokens",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5484.md"
@@ -4277,8 +4266,8 @@
     "title": "Legitimacy, Jurisdiction and Sovereignty",
     "status": "Draft",
     "requires": [
-      165,
-      5247
+      "165",
+      "5247"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5485.md"
@@ -4287,8 +4276,8 @@
     "title": "NFT Hyperlink Extension",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5489.md"
@@ -4297,7 +4286,7 @@
     "title": "Multi-privilege Management NFT Extension",
     "status": "Last Call",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5496.md"
@@ -4306,10 +4295,10 @@
     "title": "Rental & Delegation NFT - EIP-721 Extension",
     "status": "Stagnant",
     "requires": [
-      165,
-      721,
-      4400,
-      4907
+      "165",
+      "721",
+      "4400",
+      "4907"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5501.md"
@@ -4318,7 +4307,7 @@
     "title": "EIP-1155 asset backed NFT extension",
     "status": "Stagnant",
     "requires": [
-      1155
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5505.md"
@@ -4327,10 +4316,10 @@
     "title": "Refundable Tokens",
     "status": "Final",
     "requires": [
-      20,
-      165,
-      721,
-      1155
+      "20",
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5507.md"
@@ -4339,8 +4328,8 @@
     "title": "Soulbound Multi-owner Tokens",
     "status": "Stagnant",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5516.md"
@@ -4349,8 +4338,8 @@
     "title": "Referable NFT",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5521.md"
@@ -4359,7 +4348,7 @@
     "title": "Refundable Fungible Token",
     "status": "Final",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5528.md"
@@ -4368,7 +4357,7 @@
     "title": "Revocation List Registry",
     "status": "Stagnant",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5539.md"
@@ -4377,8 +4366,8 @@
     "title": "Representing IP and its Royalty Structure",
     "status": "Stagnant",
     "requires": [
-      20,
-      721
+      "20",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5553.md"
@@ -4387,7 +4376,7 @@
     "title": "NFT Legal Use, Repurposing, and Remixing",
     "status": "Stagnant",
     "requires": [
-      5218
+      "5218"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5554.md"
@@ -4396,7 +4385,7 @@
     "title": "\"Cross Chain Write Deferral Protocol\"",
     "status": "Stagnant",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5559.md"
@@ -4405,8 +4394,8 @@
     "title": "Redeemable NFTs",
     "status": "Stagnant",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5560.md"
@@ -4422,7 +4411,7 @@
     "title": "Well-Known Format for Required Actions",
     "status": "Review",
     "requires": [
-      140
+      "140"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5568.md"
@@ -4431,7 +4420,7 @@
     "title": "Digital Receipt Non-Fungible Tokens",
     "status": "Final",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5570.md"
@@ -4440,7 +4429,7 @@
     "title": "Sign-In with Ethereum Capabilities, ReCaps",
     "status": "Draft",
     "requires": [
-      4361
+      "4361"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5573.md"
@@ -4449,7 +4438,7 @@
     "title": "ERC-721 NFT Authorization",
     "status": "Final",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5585.md"
@@ -4458,7 +4447,7 @@
     "title": "Restrict Ethereum Provider API Injection",
     "status": "Stagnant",
     "requires": [
-      1193
+      "1193"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5593.md"
@@ -4467,8 +4456,8 @@
     "title": "NFT Lien",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5604.md"
@@ -4477,8 +4466,8 @@
     "title": "Multiverse NFTs",
     "status": "Final",
     "requires": [
-      721,
-      1155
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5606.md"
@@ -4487,7 +4476,7 @@
     "title": "ERC-1155 Supply Extension",
     "status": "Final",
     "requires": [
-      1155
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5615.md"
@@ -4496,8 +4485,8 @@
     "title": "NFT Metadata JSON Schema dStorage Extension",
     "status": "Final",
     "requires": [
-      721,
-      1155
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5625.md"
@@ -4513,8 +4502,8 @@
     "title": "Composable Soulbound NFT, EIP-1155 Extension",
     "status": "Stagnant",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5633.md"
@@ -4523,10 +4512,10 @@
     "title": "NFT Licensing Agreements",
     "status": "Stagnant",
     "requires": [
-      165,
-      721,
-      1155,
-      2981
+      "165",
+      "721",
+      "1155",
+      "2981"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5635.md"
@@ -4542,7 +4531,7 @@
     "title": "Subscription NFTs",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5643.md"
@@ -4551,7 +4540,7 @@
     "title": "Token State Fingerprint",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5646.md"
@@ -4567,10 +4556,10 @@
     "title": "Token Minting and Burning",
     "status": "Final",
     "requires": [
-      20,
-      165,
-      721,
-      1155
+      "20",
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5679.md"
@@ -4579,9 +4568,9 @@
     "title": "Bindable Token Interface",
     "status": "Draft",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5700.md"
@@ -4590,7 +4579,7 @@
     "title": "Signature replacement interface",
     "status": "Stagnant",
     "requires": [
-      1271
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5719.md"
@@ -4599,7 +4588,7 @@
     "title": "Transferable Vesting NFT",
     "status": "Final",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5725.md"
@@ -4608,13 +4597,13 @@
     "title": "Semi-Fungible Soulbound Token",
     "status": "Draft",
     "requires": [
-      165,
-      712,
-      721,
-      3525,
-      4906,
-      5192,
-      5484
+      "165",
+      "712",
+      "721",
+      "3525",
+      "4906",
+      "5192",
+      "5484"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5727.md"
@@ -4623,8 +4612,8 @@
     "title": "Commit Interface",
     "status": "Final",
     "requires": [
-      165,
-      1271
+      "165",
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5732.md"
@@ -4633,8 +4622,8 @@
     "title": "Latent Fungible Token",
     "status": "Stagnant",
     "requires": [
-      20,
-      2612
+      "20",
+      "2612"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5744.md"
@@ -4643,7 +4632,7 @@
     "title": "The 'window.evmproviders' object",
     "status": "Final",
     "requires": [
-      1193
+      "1193"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5749.md"
@@ -4652,7 +4641,7 @@
     "title": "General Extensibility for Method Behaviors",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5750.md"
@@ -4661,8 +4650,8 @@
     "title": "Lockable Extension for EIP-721",
     "status": "Stagnant",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5753.md"
@@ -4671,7 +4660,7 @@
     "title": "Process for Approving External Resources",
     "status": "Final",
     "requires": [
-      1
+      "1"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5757.md"
@@ -4680,8 +4669,8 @@
     "title": "Context-Dependent Multi-Asset Tokens",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5773.md"
@@ -4690,8 +4679,8 @@
     "title": "Physical Backed Tokens",
     "status": "Draft",
     "requires": [
-      191,
-      721
+      "191",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5791.md"
@@ -4707,9 +4696,9 @@
     "title": "eth/68 - Add tx type to tx announcement",
     "status": "Final",
     "requires": [
-      2464,
-      2481,
-      4938
+      "2464",
+      "2481",
+      "4938"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5793.md"
@@ -4718,8 +4707,8 @@
     "title": "Voting with delegation",
     "status": "Stagnant",
     "requires": [
-      712,
-      6372
+      "712",
+      "6372"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5805.md"
@@ -4728,8 +4717,8 @@
     "title": "Delegate transaction",
     "status": "Stagnant",
     "requires": [
-      2718,
-      2930
+      "2718",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5806.md"
@@ -4738,8 +4727,8 @@
     "title": "Auto-renewable allowance extension",
     "status": "Stagnant",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5827.md"
@@ -4755,11 +4744,11 @@
     "title": "On-Chain Verifiable Credentials",
     "status": "Stagnant",
     "requires": [
-      721,
-      1155,
-      1167,
-      1967,
-      3475
+      "721",
+      "1155",
+      "1167",
+      "1967",
+      "3475"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5851.md"
@@ -4775,7 +4764,7 @@
     "title": "Smart Contract Event Hooks",
     "status": "Stagnant",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5902.md"
@@ -4784,8 +4773,8 @@
     "title": "PAY opcode",
     "status": "Draft",
     "requires": [
-      2929,
-      7523
+      "2929",
+      "7523"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5920.md"
@@ -4794,8 +4783,8 @@
     "title": "Role-based Access Control",
     "status": "Review",
     "requires": [
-      165,
-      5750
+      "165",
+      "5750"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-5982.md"
@@ -4811,9 +4800,9 @@
     "title": "Replace SELFDESTRUCT with DEACTIVATE",
     "status": "Stagnant",
     "requires": [
-      2681,
-      2929,
-      3529
+      "2681",
+      "2929",
+      "3529"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6046.md"
@@ -4822,7 +4811,7 @@
     "title": "ERC-721 Balance indexing via Transfer event",
     "status": "Stagnant",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6047.md"
@@ -4845,8 +4834,8 @@
     "title": "Parent-Governed Nestable Non-Fungible Tokens",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6059.md"
@@ -4855,7 +4844,7 @@
     "title": "Real Estate Token",
     "status": "Review",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6065.md"
@@ -4864,11 +4853,11 @@
     "title": "Signature Validation Method for NFTs",
     "status": "Final",
     "requires": [
-      165,
-      721,
-      1155,
-      1271,
-      5750
+      "165",
+      "721",
+      "1155",
+      "1271",
+      "5750"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6066.md"
@@ -4877,9 +4866,9 @@
     "title": "Custom errors for commonly-used tokens",
     "status": "Last Call",
     "requires": [
-      20,
-      721,
-      1155
+      "20",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6093.md"
@@ -4888,10 +4877,10 @@
     "title": "No Intermediary NFT Trading Protocol",
     "status": "Final",
     "requires": [
-      20,
-      165,
-      721,
-      2981
+      "20",
+      "165",
+      "721",
+      "2981"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6105.md"
@@ -4900,7 +4889,7 @@
     "title": "Supply validator deposits on chain",
     "status": "Last Call",
     "requires": [
-      7685
+      "7685"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6110.md"
@@ -4909,11 +4898,11 @@
     "title": "Universal Token Router",
     "status": "Review",
     "requires": [
-      20,
-      165,
-      721,
-      1014,
-      1155
+      "20",
+      "165",
+      "721",
+      "1014",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6120.md"
@@ -4922,7 +4911,7 @@
     "title": "Forkid checks based on timestamps",
     "status": "Final",
     "requires": [
-      2124
+      "2124"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6122.md"
@@ -4938,8 +4927,8 @@
     "title": "Guard of NFT/SBT, an Extension of ERC-721",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6147.md"
@@ -4948,8 +4937,8 @@
     "title": "Hierarchical NFTs",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6150.md"
@@ -4965,7 +4954,7 @@
     "title": "Nonce Cap",
     "status": "Stagnant",
     "requires": [
-      2929
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6188.md"
@@ -4974,8 +4963,8 @@
     "title": "Alias Contracts",
     "status": "Stagnant",
     "requires": [
-      2929,
-      6188
+      "2929",
+      "6188"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6189.md"
@@ -4984,9 +4973,9 @@
     "title": "Verkle-compatible SELFDESTRUCT",
     "status": "Stagnant",
     "requires": [
-      2929,
-      6188,
-      6189
+      "2929",
+      "6188",
+      "6189"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6190.md"
@@ -4995,8 +4984,8 @@
     "title": "EOF - JUMPF and non-returning functions",
     "status": "Review",
     "requires": [
-      4750,
-      5450
+      "4750",
+      "5450"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6206.md"
@@ -5005,10 +4994,10 @@
     "title": "Composable NFTs utilizing Equippable Parts",
     "status": "Final",
     "requires": [
-      165,
-      721,
-      5773,
-      6059
+      "165",
+      "721",
+      "5773",
+      "6059"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6220.md"
@@ -5017,8 +5006,8 @@
     "title": "Contracts Dependencies Registry",
     "status": "Review",
     "requires": [
-      1967,
-      5750
+      "1967",
+      "5750"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6224.md"
@@ -5027,7 +5016,7 @@
     "title": "Tokenized Vaults with Lock-in Period",
     "status": "Draft",
     "requires": [
-      4626
+      "4626"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6229.md"
@@ -5036,9 +5025,9 @@
     "title": "Semantic Soulbound Tokens",
     "status": "Final",
     "requires": [
-      165,
-      721,
-      5192
+      "165",
+      "721",
+      "5192"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6239.md"
@@ -5047,8 +5036,8 @@
     "title": "Untransferability Indicator for EIP-1155",
     "status": "Stagnant",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6268.md"
@@ -5057,8 +5046,8 @@
     "title": "ERC-2771 Namespaced Account Abstraction",
     "status": "Review",
     "requires": [
-      165,
-      2771
+      "165",
+      "2771"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6315.md"
@@ -5074,7 +5063,7 @@
     "title": "Charity token",
     "status": "Stagnant",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6353.md"
@@ -5097,7 +5086,7 @@
     "title": "Permission Token",
     "status": "Review",
     "requires": [
-      6617
+      "6617"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6366.md"
@@ -5113,7 +5102,7 @@
     "title": "Public Non-Fungible Token Emote Repository",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6381.md"
@@ -5122,7 +5111,7 @@
     "title": "Human-readable offline signatures",
     "status": "Stagnant",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6384.md"
@@ -5131,14 +5120,14 @@
     "title": "SSZ transactions",
     "status": "Draft",
     "requires": [
-      155,
-      1559,
-      2718,
-      2930,
-      4844,
-      5793,
-      7495,
-      7702
+      "155",
+      "1559",
+      "2718",
+      "2930",
+      "4844",
+      "5793",
+      "7495",
+      "7702"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6404.md"
@@ -5147,8 +5136,8 @@
     "title": "Minimal Transferable NFT detection interface",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6454.md"
@@ -5157,8 +5146,8 @@
     "title": "Multi-operator, per-token ERC-721 approvals.",
     "status": "Stagnant",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6464.md"
@@ -5167,9 +5156,9 @@
     "title": "SSZ withdrawals root",
     "status": "Draft",
     "requires": [
-      2718,
-      4895,
-      6404
+      "2718",
+      "4895",
+      "6404"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6465.md"
@@ -5178,10 +5167,10 @@
     "title": "SSZ receipts",
     "status": "Draft",
     "requires": [
-      658,
-      2718,
-      6404,
-      7702
+      "658",
+      "2718",
+      "6404",
+      "7702"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6466.md"
@@ -5197,7 +5186,7 @@
     "title": "Signature Validation for Predeploy Contracts",
     "status": "Final",
     "requires": [
-      1271
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6492.md"
@@ -5206,8 +5195,8 @@
     "title": "SSZ transaction signature scheme",
     "status": "Draft",
     "requires": [
-      6404,
-      6466
+      "6404",
+      "6466"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6493.md"
@@ -5223,9 +5212,9 @@
     "title": "Stealth Meta-Address Registry",
     "status": "Final",
     "requires": [
-      712,
-      1271,
-      5564
+      "712",
+      "1271",
+      "5564"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6538.md"
@@ -5234,10 +5223,10 @@
     "title": "Non-fungible Token Bound Accounts",
     "status": "Review",
     "requires": [
-      165,
-      721,
-      1167,
-      1271
+      "165",
+      "721",
+      "1167",
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6551.md"
@@ -5246,8 +5235,8 @@
     "title": "Cultural and Historical Asset Token",
     "status": "Review",
     "requires": [
-      721,
-      1155
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6596.md"
@@ -5256,10 +5245,10 @@
     "title": "Abstract Token",
     "status": "Draft",
     "requires": [
-      20,
-      165,
-      721,
-      1155
+      "20",
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6604.md"
@@ -5275,8 +5264,8 @@
     "title": "AA Account Metadata For Authentication",
     "status": "Draft",
     "requires": [
-      4337,
-      4804
+      "4337",
+      "4804"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6662.md"
@@ -5285,8 +5274,8 @@
     "title": "Multi-redeemable NFTs",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6672.md"
@@ -5295,9 +5284,9 @@
     "title": "NFT Flashloans",
     "status": "Draft",
     "requires": [
-      20,
-      721,
-      3156
+      "20",
+      "721",
+      "3156"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6682.md"
@@ -5313,7 +5302,7 @@
     "title": "L2 Token List",
     "status": "Review",
     "requires": [
-      155
+      "155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6734.md"
@@ -5322,7 +5311,7 @@
     "title": "L2 Aliasing of EVM-based Addresses",
     "status": "Review",
     "requires": [
-      55
+      "55"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6735.md"
@@ -5331,9 +5320,9 @@
     "title": "SELFDESTRUCT only in same transaction",
     "status": "Final",
     "requires": [
-      2681,
-      2929,
-      3529
+      "2681",
+      "2929",
+      "3529"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6780.md"
@@ -5342,8 +5331,8 @@
     "title": "ERC-721 Utilities Information Extension",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6785.md"
@@ -5352,8 +5341,8 @@
     "title": "Registry for royalties payment for NFTs",
     "status": "Draft",
     "requires": [
-      165,
-      2981
+      "165",
+      "2981"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6786.md"
@@ -5376,7 +5365,7 @@
     "title": "Ethereum state using a unified verkle tree",
     "status": "Draft",
     "requires": [
-      6780
+      "6780"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6800.md"
@@ -5385,7 +5374,7 @@
     "title": "ERC-721 Holding Time Tracking",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6806.md"
@@ -5394,7 +5383,7 @@
     "title": "Fungible Key Bound Token",
     "status": "Final",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6808.md"
@@ -5403,7 +5392,7 @@
     "title": "Non-Fungible Key Bound Token",
     "status": "Final",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6809.md"
@@ -5412,8 +5401,8 @@
     "title": "Ex Post Facto Cascading Revert",
     "status": "Stagnant",
     "requires": [
-      2718,
-      2929
+      "2718",
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6810.md"
@@ -5429,10 +5418,10 @@
     "title": "Support ENS Name for Web3 URL",
     "status": "Draft",
     "requires": [
-      137,
-      634,
-      3770,
-      4804
+      "137",
+      "634",
+      "3770",
+      "4804"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6821.md"
@@ -5441,9 +5430,9 @@
     "title": "Token Mapping Slot Retrieval Extension",
     "status": "Draft",
     "requires": [
-      20,
-      721,
-      1155
+      "20",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6823.md"
@@ -5452,7 +5441,7 @@
     "title": "Web3 URL to EVM Call Message Translation",
     "status": "Draft",
     "requires": [
-      137
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6860.md"
@@ -5461,7 +5450,7 @@
     "title": "Upgradable Fungible Token",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6864.md"
@@ -5470,7 +5459,7 @@
     "title": "On-Chain EIP-712 Visualization",
     "status": "Draft",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6865.md"
@@ -5493,9 +5482,9 @@
     "title": "Modular Smart Contract Accounts",
     "status": "Draft",
     "requires": [
-      165,
-      1271,
-      4337
+      "165",
+      "1271",
+      "4337"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6900.md"
@@ -5504,7 +5493,7 @@
     "title": "Minimal Multi-Token Interface",
     "status": "Review",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6909.md"
@@ -5534,7 +5523,7 @@
     "title": "Subscription-Based Token",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6932.md"
@@ -5543,8 +5532,8 @@
     "title": "ERC-5219 Resolve Mode",
     "status": "Draft",
     "requires": [
-      4804,
-      5219
+      "4804",
+      "5219"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6944.md"
@@ -5553,9 +5542,9 @@
     "title": "Network Upgrade Activation Triggers",
     "status": "Final",
     "requires": [
-      2982,
-      3675,
-      6122
+      "2982",
+      "3675",
+      "6122"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6953.md"
@@ -5564,8 +5553,8 @@
     "title": "Asset-bound Non-Fungible Tokens",
     "status": "Review",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6956.md"
@@ -5581,7 +5570,7 @@
     "title": "Multi Injected Provider Discovery",
     "status": "Final",
     "requires": [
-      1193
+      "1193"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6963.md"
@@ -5597,9 +5586,9 @@
     "title": "Reserved Ownership Accounts",
     "status": "Draft",
     "requires": [
-      1167,
-      1271,
-      6492
+      "1167",
+      "1271",
+      "6492"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6981.md"
@@ -5608,8 +5597,8 @@
     "title": "Efficient Default Lockable Tokens",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6982.md"
@@ -5625,7 +5614,7 @@
     "title": "ERC-721 with transaction validation step.",
     "status": "Review",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-6997.md"
@@ -5634,7 +5623,7 @@
     "title": "Execution layer triggerable withdrawals",
     "status": "Last Call",
     "requires": [
-      7685
+      "7685"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7002.md"
@@ -5643,8 +5632,8 @@
     "title": "Verifiable AI-Generated Content Token",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7007.md"
@@ -5653,11 +5642,11 @@
     "title": "NFT Creator Attribution",
     "status": "Review",
     "requires": [
-      55,
-      155,
-      712,
-      721,
-      1155
+      "55",
+      "155",
+      "712",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7015.md"
@@ -5666,7 +5655,7 @@
     "title": "Scheme-Handler Discovery Option for Wallets",
     "status": "Stagnant",
     "requires": [
-      1193
+      "1193"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7039.md"
@@ -5696,8 +5685,8 @@
     "title": "Lockable Extension for ERC-721",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7066.md"
@@ -5706,11 +5695,11 @@
     "title": "Revamped CALL instructions",
     "status": "Review",
     "requires": [
-      150,
-      211,
-      214,
-      2929,
-      3540
+      "150",
+      "211",
+      "214",
+      "2929",
+      "3540"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7069.md"
@@ -5719,8 +5708,8 @@
     "title": "NFT Relationship Enhancement",
     "status": "Draft",
     "requires": [
-      721,
-      1155
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7085.md"
@@ -5729,7 +5718,7 @@
     "title": "MIME type for Web3 URL in Auto Mode",
     "status": "Draft",
     "requires": [
-      6860
+      "6860"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7087.md"
@@ -5738,7 +5727,7 @@
     "title": "Financial Bonds",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7092.md"
@@ -5747,7 +5736,7 @@
     "title": "Social Recovery Interface",
     "status": "Draft",
     "requires": [
-      1271
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7093.md"
@@ -5756,7 +5745,7 @@
     "title": "ERC-20 with transaction validation step.",
     "status": "Review",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7144.md"
@@ -5765,8 +5754,8 @@
     "title": "ERC-721 Multi-Metadata Extension",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7160.md"
@@ -5775,7 +5764,7 @@
     "title": "Simple token, Simplified ERC-20",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7196.md"
@@ -5798,7 +5787,7 @@
     "title": "Contract wallet management token",
     "status": "Draft",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7204.md"
@@ -5807,7 +5796,7 @@
     "title": "On-Chain Data Containers",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7208.md"
@@ -5816,9 +5805,9 @@
     "title": "Identity-aggregated NFT",
     "status": "Final",
     "requires": [
-      165,
-      721,
-      1271
+      "165",
+      "721",
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7231.md"
@@ -5827,7 +5816,7 @@
     "title": "Encumber - Splitting Ownership & Guarantees",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7246.md"
@@ -5836,8 +5825,8 @@
     "title": "Increase the MAX_EFFECTIVE_BALANCE",
     "status": "Last Call",
     "requires": [
-      7002,
-      7685
+      "7002",
+      "7685"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7251.md"
@@ -5860,7 +5849,7 @@
     "title": "Ethereum Access Token",
     "status": "Draft",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7272.md"
@@ -5869,9 +5858,9 @@
     "title": "NFT Metadata Extension like JSON-LD",
     "status": "Draft",
     "requires": [
-      721,
-      1155,
-      3525
+      "721",
+      "1155",
+      "3525"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7280.md"
@@ -5883,16 +5872,16 @@
     "prNo": 89,
     "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      20
+      "20"
     ]
   },
   "7291": {
     "title": "Purpose bound money",
     "status": "Draft",
     "requires": [
-      165,
-      173,
-      1155
+      "165",
+      "173",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7291.md"
@@ -5901,9 +5890,9 @@
     "title": "Token-Controlled Token Circulation",
     "status": "Draft",
     "requires": [
-      721,
-      1155,
-      5679
+      "721",
+      "1155",
+      "5679"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7303.md"
@@ -5912,7 +5901,7 @@
     "title": "ERC/EIP Repository split",
     "status": "Final",
     "requires": [
-      1
+      "1"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7329.md"
@@ -5921,10 +5910,10 @@
     "title": "Migration Transaction",
     "status": "Stagnant",
     "requires": [
-      170,
-      1559,
-      2200,
-      2718
+      "170",
+      "1559",
+      "2200",
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7377.md"
@@ -5940,8 +5929,8 @@
     "title": "Vanilla Options for ERC-20 Tokens",
     "status": "Draft",
     "requires": [
-      20,
-      1155
+      "20",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7390.md"
@@ -5950,7 +5939,7 @@
     "title": "⚡ Flash Loans ⚡",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7399.md"
@@ -5959,8 +5948,8 @@
     "title": "Parent-Governed Non-Fungible Tokens Nesting",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7401.md"
@@ -5969,8 +5958,8 @@
     "title": "Portable Smart Contract Accounts",
     "status": "Draft",
     "requires": [
-      191,
-      1967
+      "191",
+      "1967"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7405.md"
@@ -5979,7 +5968,7 @@
     "title": "Multi-Namespace Onchain Registry",
     "status": "Draft",
     "requires": [
-      137
+      "137"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7406.md"
@@ -5988,7 +5977,7 @@
     "title": "Public Non-Fungible Tokens Emote Repository",
     "status": "Final",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7409.md"
@@ -5997,8 +5986,8 @@
     "title": "ERC-20 Update Allowance By Spender",
     "status": "Draft",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7410.md"
@@ -6014,9 +6003,9 @@
     "title": "Token Converter",
     "status": "Review",
     "requires": [
-      20,
-      165,
-      223
+      "20",
+      "165",
+      "223"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7417.md"
@@ -6025,8 +6014,8 @@
     "title": "Tokenized Reserve",
     "status": "Draft",
     "requires": [
-      20,
-      4626
+      "20",
+      "4626"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7425.md"
@@ -6035,8 +6024,8 @@
     "title": "Non-Fungible Token Roles",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7432.md"
@@ -6045,8 +6034,8 @@
     "title": "Prevent ticket touting",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7439.md"
@@ -6062,7 +6051,7 @@
     "title": "Time Locks Maturity",
     "status": "Draft",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7444.md"
@@ -6071,8 +6060,8 @@
     "title": "EOF - Data section access instructions",
     "status": "Review",
     "requires": [
-      3540,
-      3670
+      "3540",
+      "3670"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7480.md"
@@ -6081,7 +6070,7 @@
     "title": "Registry Extension for ERC-7579",
     "status": "Draft",
     "requires": [
-      7579
+      "7579"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7484.md"
@@ -6097,9 +6086,9 @@
     "title": "NFT Dynamic Traits",
     "status": "Draft",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7496.md"
@@ -6108,11 +6097,11 @@
     "title": "NFT Redeemables",
     "status": "Draft",
     "requires": [
-      165,
-      712,
-      721,
-      1155,
-      1271
+      "165",
+      "712",
+      "721",
+      "1155",
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7498.md"
@@ -6121,9 +6110,9 @@
     "title": "Zero-Knowledge Wormholes",
     "status": "Draft",
     "requires": [
-      2718,
-      4844,
-      7708
+      "2718",
+      "4844",
+      "7708"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7503.md"
@@ -6132,7 +6121,7 @@
     "title": "Trusted Hint Registry",
     "status": "Draft",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7506.md"
@@ -6141,7 +6130,7 @@
     "title": "Multi-User NFT Extension",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7507.md"
@@ -6150,7 +6139,7 @@
     "title": "Dynamic On-Chain Token Attributes Repository",
     "status": "Draft",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7508.md"
@@ -6166,7 +6155,7 @@
     "title": "Cross-Contract Hierarchical NFT",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7510.md"
@@ -6175,10 +6164,10 @@
     "title": "Minimal Proxy Contract with PUSH0",
     "status": "Draft",
     "requires": [
-      7,
-      211,
-      1167,
-      3855
+      "7",
+      "211",
+      "1167",
+      "3855"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7511.md"
@@ -6187,7 +6176,7 @@
     "title": "Onchain Representation for Audits",
     "status": "Draft",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7512.md"
@@ -6196,8 +6185,8 @@
     "title": "Smart NFT - A Component for Intent-Centric",
     "status": "Draft",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7513.md"
@@ -6213,8 +6202,8 @@
     "title": "BLOBBASEFEE instruction",
     "status": "Final",
     "requires": [
-      3198,
-      4844
+      "3198",
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7516.md"
@@ -6223,8 +6212,8 @@
     "title": "Content Consent for AI/ML Data Mining",
     "status": "Draft",
     "requires": [
-      721,
-      7053
+      "721",
+      "7053"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7517.md"
@@ -6233,8 +6222,8 @@
     "title": "Dynamic Compliant Interop Security Token",
     "status": "Draft",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7518.md"
@@ -6243,8 +6232,8 @@
     "title": "Atomic Storage Operations SCREDIT and SDEBIT",
     "status": "Draft",
     "requires": [
-      2200,
-      2929
+      "2200",
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7519.md"
@@ -6260,7 +6249,7 @@
     "title": "OIDC ZK Verifier for AA Account",
     "status": "Draft",
     "requires": [
-      4337
+      "4337"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7522.md"
@@ -6269,7 +6258,7 @@
     "title": "Empty accounts deprecation",
     "status": "Last Call",
     "requires": [
-      161
+      "161"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7523.md"
@@ -6285,8 +6274,8 @@
     "title": "Token Bound Function Oracle AMM",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7527.md"
@@ -6295,9 +6284,9 @@
     "title": "ETH (Native Asset) Address Convention",
     "status": "Final",
     "requires": [
-      20,
-      55,
-      4626
+      "20",
+      "55",
+      "4626"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7528.md"
@@ -6306,7 +6295,7 @@
     "title": "Contract Discovery and eTLD+1 Association",
     "status": "Draft",
     "requires": [
-      1191
+      "1191"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7529.md"
@@ -6315,8 +6304,8 @@
     "title": "Staked ERC-721 Ownership Recognition",
     "status": "Review",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7531.md"
@@ -6332,27 +6321,20 @@
     "title": "Native Asset ERC-4626 Tokenized Vault",
     "status": "Final",
     "requires": [
-      20,
-      4626,
-      7528
+      "20",
+      "4626",
+      "7528"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7535.md"
-  },
-  "7536": {
-    "title": "Multi-edition NFT Distribution",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 221,
-    "markdownPath": "https://raw.githubusercontent.com/didhubdev/ERCs/Distributor/ERCS/erc-7536.md"
   },
   "7538": {
     "title": "Multiplicative Tokens",
     "status": "Draft",
     "requires": [
-      20,
-      1046,
-      1155
+      "20",
+      "1046",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7538.md"
@@ -6361,10 +6343,10 @@
     "title": "Asynchronous ERC-4626 Tokenized Vaults",
     "status": "Final",
     "requires": [
-      20,
-      165,
-      4626,
-      7575
+      "20",
+      "165",
+      "4626",
+      "7575"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7540.md"
@@ -6373,7 +6355,7 @@
     "title": "eth/70 - available-blocks-extended protocol",
     "status": "Withdrawn",
     "requires": [
-      7642
+      "7642"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7542.md"
@@ -6396,9 +6378,9 @@
     "title": "Upgradeable Clone for Scalable Contracts",
     "status": "Draft",
     "requires": [
-      165,
-      1967,
-      7201
+      "165",
+      "1967",
+      "7201"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7546.md"
@@ -6414,8 +6396,8 @@
     "title": "Open IP Protocol built on NFTs",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7548.md"
@@ -6431,7 +6413,7 @@
     "title": "Single Sign-On for Account Discovery",
     "status": "Draft",
     "requires": [
-      4337
+      "4337"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7555.md"
@@ -6447,7 +6429,7 @@
     "title": "Simple NFT, Simplified ERC-721",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7561.md"
@@ -6463,7 +6445,7 @@
     "title": "Contract wallet management NFT",
     "status": "Draft",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7564.md"
@@ -6472,8 +6454,8 @@
     "title": "Perpetual Contract NFTs as Collateral",
     "status": "Draft",
     "requires": [
-      721,
-      4907
+      "721",
+      "4907"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7565.md"
@@ -6489,11 +6471,11 @@
     "title": "Hardfork Meta Backfill - Berlin to Shapella",
     "status": "Final",
     "requires": [
-      2070,
-      2387,
-      2982,
-      6122,
-      6953
+      "2070",
+      "2387",
+      "2982",
+      "6122",
+      "6953"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7568.md"
@@ -6502,16 +6484,16 @@
     "title": "Hardfork Meta - Dencun",
     "status": "Final",
     "requires": [
-      1153,
-      4788,
-      4844,
-      5656,
-      6780,
-      7044,
-      7045,
-      7514,
-      7516,
-      7568
+      "1153",
+      "4788",
+      "4844",
+      "5656",
+      "6780",
+      "7044",
+      "7045",
+      "7514",
+      "7516",
+      "7568"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7569.md"
@@ -6534,10 +6516,10 @@
     "title": "Multi-Asset ERC-4626 Vaults",
     "status": "Final",
     "requires": [
-      20,
-      165,
-      2771,
-      4626
+      "20",
+      "165",
+      "2771",
+      "4626"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7575.md"
@@ -6553,8 +6535,8 @@
     "title": "Physical Asset Redemption",
     "status": "Final",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7578.md"
@@ -6563,10 +6545,10 @@
     "title": "Minimal Modular Smart Accounts",
     "status": "Draft",
     "requires": [
-      165,
-      1271,
-      2771,
-      4337
+      "165",
+      "1271",
+      "2771",
+      "4337"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7579.md"
@@ -6582,7 +6564,7 @@
     "title": "Modular Accounts with Delegated Validation",
     "status": "Draft",
     "requires": [
-      4337
+      "4337"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7582.md"
@@ -6591,9 +6573,9 @@
     "title": "MixHash and Public Data Storage Proofs",
     "status": "Draft",
     "requires": [
-      165,
-      721,
-      1155
+      "165",
+      "721",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7585.md"
@@ -6602,8 +6584,8 @@
     "title": "Interest Rate Swaps",
     "status": "Review",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7586.md"
@@ -6619,7 +6601,7 @@
     "title": "Blob Transactions Metadata JSON Schema",
     "status": "Final",
     "requires": [
-      4844
+      "4844"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7588.md"
@@ -6628,8 +6610,8 @@
     "title": "Semi-Fungible Token Roles",
     "status": "Draft",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7589.md"
@@ -6638,9 +6620,9 @@
     "title": "ERC-20 Holder Extension for NFTs",
     "status": "Review",
     "requires": [
-      20,
-      165,
-      721
+      "20",
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7590.md"
@@ -6656,7 +6638,7 @@
     "title": "PeerDAS - Peer Data Availability Sampling",
     "status": "Review",
     "requires": [
-      4844
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7594.md"
@@ -6665,8 +6647,8 @@
     "title": "Collateralized NFT",
     "status": "Draft",
     "requires": [
-      20,
-      721
+      "20",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7595.md"
@@ -6675,8 +6657,8 @@
     "title": "Signature Validation Extension for Permit",
     "status": "Draft",
     "requires": [
-      1271,
-      2612
+      "1271",
+      "2612"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7597.md"
@@ -6685,8 +6667,8 @@
     "title": "Use contract signature for signed transfer",
     "status": "Draft",
     "requires": [
-      1271,
-      3009
+      "1271",
+      "3009"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7598.md"
@@ -6695,17 +6677,17 @@
     "title": "Hardfork Meta - Pectra",
     "status": "Last Call",
     "requires": [
-      2537,
-      2935,
-      6110,
-      7002,
-      7251,
-      7549,
-      7623,
-      7685,
-      7691,
-      7702,
-      7840
+      "2537",
+      "2935",
+      "6110",
+      "7002",
+      "7251",
+      "7549",
+      "7623",
+      "7685",
+      "7691",
+      "7702",
+      "7840"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7600.md"
@@ -6714,8 +6696,8 @@
     "title": "ERC-1155 Multi-Asset extension",
     "status": "Draft",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7603.md"
@@ -6724,12 +6706,12 @@
     "title": "ERC-1155 Permit Approvals",
     "status": "Draft",
     "requires": [
-      165,
-      712,
-      1155,
-      1271,
-      2098,
-      5216
+      "165",
+      "712",
+      "1155",
+      "1271",
+      "2098",
+      "5216"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7604.md"
@@ -6738,7 +6720,7 @@
     "title": "Hardfork Meta - Fusaka",
     "status": "Draft",
     "requires": [
-      7600
+      "7600"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7607.md"
@@ -6747,7 +6729,7 @@
     "title": "Decrease base cost of TLOAD/TSTORE",
     "status": "Stagnant",
     "requires": [
-      1153
+      "1153"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7609.md"
@@ -6763,9 +6745,9 @@
     "title": "Verkle state transition via an overlay tree",
     "status": "Draft",
     "requires": [
-      4762,
-      6800,
-      7545
+      "4762",
+      "6800",
+      "7545"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7612.md"
@@ -6784,23 +6766,12 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7615.md"
   },
-  "7616": {
-    "title": "Hybrid Fungible Token",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 244,
-    "markdownPath": "https://raw.githubusercontent.com/fomo-protocol/ERCs/master/ERCS/erc-7616.md",
-    "requires": [
-      20,
-      721
-    ]
-  },
   "7617": {
     "title": "Chunk support for ERC-5219 mode in Web3 URL",
     "status": "Draft",
     "requires": [
-      5219,
-      6944
+      "5219",
+      "6944"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7617.md"
@@ -6809,8 +6780,8 @@
     "title": "Content encoding in ERC-5219 mode Web3 URL",
     "status": "Draft",
     "requires": [
-      5219,
-      6944
+      "5219",
+      "6944"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7618.md"
@@ -6819,12 +6790,12 @@
     "title": "EOF Contract Creation",
     "status": "Review",
     "requires": [
-      170,
-      684,
-      2929,
-      3540,
-      3541,
-      3670
+      "170",
+      "684",
+      "2929",
+      "3540",
+      "3541",
+      "3670"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7620.md"
@@ -6833,8 +6804,8 @@
     "title": "Basket Token",
     "status": "Draft",
     "requires": [
-      20,
-      721
+      "20",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7621.md"
@@ -6845,13 +6816,6 @@
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7623.md"
-  },
-  "7625": {
-    "title": "Smart Contract Identifiers and Metadata Extension",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 265,
-    "markdownPath": "https://raw.githubusercontent.com/SaulBuilds/ERCs/master/ERCS/erc-7625.md"
   },
   "7627": {
     "title": "Secure Messaging Protocol",
@@ -6864,7 +6828,7 @@
     "title": "ERC-721 Ownership Shares Extension",
     "status": "Review",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7628.md"
@@ -6873,9 +6837,9 @@
     "title": "ERC-20/ERC-721 Unified Token Interface",
     "status": "Draft",
     "requires": [
-      20,
-      165,
-      721
+      "20",
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7629.md"
@@ -6884,8 +6848,8 @@
     "title": "Dual Nature Token Pair",
     "status": "Review",
     "requires": [
-      20,
-      721
+      "20",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7631.md"
@@ -6894,7 +6858,7 @@
     "title": "Interfaces for Named Token",
     "status": "Draft",
     "requires": [
-      165
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7632.md"
@@ -6903,28 +6867,17 @@
     "title": "Limited Transfer Count NFT",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7634.md"
-  },
-  "7635": {
-    "title": "Multi-Fungible Token",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 277,
-    "markdownPath": "https://raw.githubusercontent.com/memelabs-dev/ERCs/add-erc-8000/ERCS/erc-7635.md",
-    "requires": [
-      165,
-      721
-    ]
   },
   "7636": {
     "title": "Extension of EIP-778 for \"client\" ENR Entry",
     "status": "Final",
     "requires": [
-      778
+      "778"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7636.md"
@@ -6933,7 +6886,7 @@
     "title": "Optimize EOA EXTCODEHASH",
     "status": "Stagnant",
     "requires": [
-      1052
+      "1052"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7637.md"
@@ -6956,7 +6909,7 @@
     "title": "Intrinsic RevShare Token",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7641.md"
@@ -6965,7 +6918,7 @@
     "title": "eth/69 - Drop pre-merge fields",
     "status": "Stagnant",
     "requires": [
-      5793
+      "5793"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7642.md"
@@ -6981,7 +6934,7 @@
     "title": "ERC-721 Name Registry Extension",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7644.md"
@@ -6993,22 +6946,11 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7645.md"
   },
-  "7646": {
-    "title": "Metadata Management for NFTs",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 293,
-    "markdownPath": "https://raw.githubusercontent.com/Kureev/ERCs/kureev/erc_draft_metadata_management_for_nfts/ERCS/erc-7646.md",
-    "requires": [
-      721,
-      1155
-    ]
-  },
   "7649": {
     "title": "Bonding curve-embedded liquidity for NFTs",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7649.md"
@@ -7017,8 +6959,8 @@
     "title": "Programmable access lists",
     "status": "Stagnant",
     "requires": [
-      2929,
-      2930
+      "2929",
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7650.md"
@@ -7027,9 +6969,9 @@
     "title": "Fractionally Represented Non-Fungible Token",
     "status": "Draft",
     "requires": [
-      20,
-      165,
-      721
+      "20",
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7651.md"
@@ -7038,8 +6980,8 @@
     "title": "ERC-721 Guarantee Extension",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7652.md"
@@ -7051,9 +6993,9 @@
     "prNo": 320,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/xinbenlv-patch-1/ERCS/erc-7653.md",
     "requires": [
-      165,
-      721,
-      7632
+      "165",
+      "721",
+      "7632"
     ]
   },
   "7654": {
@@ -7063,27 +7005,17 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7654.md"
   },
-  "7655": {
-    "title": "ERC-5189 Operation Receipts",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 318,
-    "markdownPath": "https://raw.githubusercontent.com/attente/ERCs/erc-5189-receipts/ERCS/erc-7655.md",
-    "requires": [
-      5189
-    ]
-  },
   "7656": {
     "title": "Generalized Contract-Linked Services",
     "status": "Review",
     "requires": [
-      20,
-      165,
-      721,
-      1155,
-      1167,
-      4337,
-      6551
+      "20",
+      "165",
+      "721",
+      "1155",
+      "1167",
+      "4337",
+      "6551"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7656.md"
@@ -7102,16 +7034,6 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7658.md"
   },
-  "7660": {
-    "title": "Release tokens on predefined periods",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 347,
-    "markdownPath": "https://raw.githubusercontent.com/erc4377/ERCs/master/ERCS/erc-7660.md",
-    "requires": [
-      20
-    ]
-  },
   "7661": {
     "title": "Extended Multiphase Fractional NFTs",
     "status": "Draft",
@@ -7119,15 +7041,15 @@
     "prNo": 344,
     "markdownPath": "https://raw.githubusercontent.com/JEflyer/ERCs/patch-3/ERCS/erc-7661.md",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ]
   },
   "7662": {
     "title": "AI Agent NFTs",
     "status": "Draft",
     "requires": [
-      721
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7662.md"
@@ -7136,9 +7058,9 @@
     "title": "Access-Key opcode",
     "status": "Withdrawn",
     "requires": [
-      1153,
-      2930,
-      4844
+      "1153",
+      "2930",
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7664.md"
@@ -7182,8 +7104,8 @@
     "title": "Temporary Approval Extension for ERC-20",
     "status": "Draft",
     "requires": [
-      20,
-      1153
+      "20",
+      "1153"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7674.md"
@@ -7192,11 +7114,11 @@
     "title": "Retroactively Included EIPs",
     "status": "Withdrawn",
     "requires": [
-      2681,
-      3607,
-      4803,
-      7523,
-      7610
+      "2681",
+      "3607",
+      "4803",
+      "7523",
+      "7610"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7675.md"
@@ -7205,9 +7127,9 @@
     "title": "EOF - Prepare for Address Space Extension",
     "status": "Stagnant",
     "requires": [
-      3540,
-      3670,
-      7069
+      "3540",
+      "3670",
+      "7069"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7676.md"
@@ -7216,8 +7138,8 @@
     "title": "Paymaster Web Service Capability",
     "status": "Review",
     "requires": [
-      4337,
-      5792
+      "4337",
+      "5792"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7677.md"
@@ -7226,28 +7148,17 @@
     "title": "UserOperation Builder",
     "status": "Draft",
     "requires": [
-      4337
+      "4337"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7679.md"
-  },
-  "7680": {
-    "title": "Valued Tokens with Layered Liquidity",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 368,
-    "markdownPath": "https://raw.githubusercontent.com/catiga/ERCs/master/ERCS/erc-7680.md",
-    "requires": [
-      20,
-      165
-    ]
   },
   "7681": {
     "title": "Dual Nature Multi Token Protocol",
     "status": "Draft",
     "requires": [
-      20,
-      1155
+      "20",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7681.md"
@@ -7256,7 +7167,7 @@
     "title": "Auxiliary Funds Capability",
     "status": "Draft",
     "requires": [
-      5792
+      "5792"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7682.md"
@@ -7293,26 +7204,15 @@
     "title": "Forward compatible consensus data structures",
     "status": "Review",
     "requires": [
-      6110,
-      7002,
-      7251,
-      7495,
-      7549,
-      7569
+      "6110",
+      "7002",
+      "7251",
+      "7495",
+      "7549",
+      "7569"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7688.md"
-  },
-  "7689": {
-    "title": "Smart Blobs",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 380,
-    "markdownPath": "https://raw.githubusercontent.com/charmful0x/ERCs/master/ERCS/erc-7689.md",
-    "requires": [
-      1559,
-      4844
-    ]
   },
   "7690": {
     "title": "Union Lock",
@@ -7332,17 +7232,17 @@
     "title": "EVM Object Format (EOFv1) Meta",
     "status": "Review",
     "requires": [
-      663,
-      3540,
-      3670,
-      4200,
-      4750,
-      5450,
-      6206,
-      7069,
-      7480,
-      7620,
-      7698
+      "663",
+      "3540",
+      "3670",
+      "4200",
+      "4750",
+      "5450",
+      "6206",
+      "7069",
+      "7480",
+      "7620",
+      "7698"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7692.md"
@@ -7351,8 +7251,8 @@
     "title": "Solana Storage Router",
     "status": "Draft",
     "requires": [
-      3668,
-      7700
+      "3668",
+      "7700"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7694.md"
@@ -7361,26 +7261,17 @@
     "title": "Ownership Delegation and Context for ERC-721",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7695.md"
-  },
-  "7697": {
-    "title": "AUTHCREATE opcode",
-    "status": "Draft",
-    "prNo": 8493,
-    "markdownPath": "https://raw.githubusercontent.com/txgyy/EIPs/AuthCreate/EIPS/eip-7697.md",
-    "requires": [
-      155
-    ]
   },
   "7698": {
     "title": "EOF - Creation transaction",
     "status": "Review",
     "requires": [
-      3540
+      "3540"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7698.md"
@@ -7389,8 +7280,8 @@
     "title": "ERC-20 Transfer Reference Extension",
     "status": "Draft",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7699.md"
@@ -7399,7 +7290,7 @@
     "title": "Cross-chain Storage Router Protocol",
     "status": "Draft",
     "requires": [
-      155
+      "155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7700.md"
@@ -7408,7 +7299,7 @@
     "title": "Native Account Abstraction with EOF",
     "status": "Draft",
     "requires": [
-      3540
+      "3540"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7701.md"
@@ -7417,15 +7308,15 @@
     "title": "Set EOA account code",
     "status": "Last Call",
     "requires": [
-      2,
-      161,
-      1052,
-      2718,
-      2929,
-      2930,
-      3541,
-      3607,
-      4844
+      "2",
+      "161",
+      "1052",
+      "2718",
+      "2929",
+      "2930",
+      "3541",
+      "3607",
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7702.md"
@@ -7444,7 +7335,7 @@
     "prNo": 551,
     "markdownPath": "https://raw.githubusercontent.com/mike0x1024/ERCs/master/ERCS/erc-7704.md",
     "requires": [
-      20
+      "20"
     ]
   },
   "7705": {
@@ -7458,8 +7349,8 @@
     "title": "Separate gas type for calldata",
     "status": "Stagnant",
     "requires": [
-      1559,
-      4844
+      "1559",
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7706.md"
@@ -7468,7 +7359,7 @@
     "title": "Incentivize Access List Provisioning",
     "status": "Stagnant",
     "requires": [
-      2930
+      "2930"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7707.md"
@@ -7484,7 +7375,7 @@
     "title": "Read BLOCKHASH from storage and update cost",
     "status": "Draft",
     "requires": [
-      2935
+      "2935"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7709.md"
@@ -7493,8 +7384,8 @@
     "title": "Smart Contract Delegation",
     "status": "Draft",
     "requires": [
-      1271,
-      7579
+      "1271",
+      "7579"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7710.md"
@@ -7503,7 +7394,7 @@
     "title": "Box type for EIP-712 messages",
     "status": "Stagnant",
     "requires": [
-      712
+      "712"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7713.md"
@@ -7515,17 +7406,17 @@
     "prNo": 435,
     "markdownPath": "https://raw.githubusercontent.com/hieronx/ERCs/permissions/ERCS/erc-7714.md",
     "requires": [
-      165
+      "165"
     ]
   },
   "7715": {
     "title": "Grant Permissions from Wallets",
     "status": "Draft",
     "requires": [
-      4337,
-      5792,
-      7679,
-      7710
+      "4337",
+      "5792",
+      "7679",
+      "7710"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7715.md"
@@ -7536,16 +7427,6 @@
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7716.md"
-  },
-  "7717": {
-    "title": "Deterministic AA wallet",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 453,
-    "markdownPath": "https://raw.githubusercontent.com/jaehunkim/ERCs/deterministic_aa/ERCS/erc-7717.md",
-    "requires": [
-      4337
-    ]
   },
   "7718": {
     "title": "Portal Wire Protocol a framework for discv5",
@@ -7559,15 +7440,15 @@
     "prNo": 8630,
     "markdownPath": "https://raw.githubusercontent.com/KolbyML/EIPs/portal-history/EIPS/eip-7719.md",
     "requires": [
-      7643,
-      7718
+      "7643",
+      "7718"
     ]
   },
   "7720": {
     "title": "Deferred Token Transfer",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7720.md"
@@ -7576,8 +7457,8 @@
     "title": "Lockable Extension for ERC-1155",
     "status": "Draft",
     "requires": [
-      165,
-      1155
+      "165",
+      "1155"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7721.md"
@@ -7600,7 +7481,7 @@
     "title": "Common Quote Oracle",
     "status": "Draft",
     "requires": [
-      7528
+      "7528"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7726.md"
@@ -7609,7 +7490,7 @@
     "title": "EVM Transaction Bundles",
     "status": "Stagnant",
     "requires": [
-      2718
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7727.md"
@@ -7618,7 +7499,7 @@
     "title": "Token with Metadata",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7729.md"
@@ -7627,18 +7508,11 @@
     "title": "Structured Data Clear Signing Format",
     "status": "Draft",
     "requires": [
-      155,
-      712
+      "155",
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7730.md"
-  },
-  "7731": {
-    "title": "Vulnerability and Exposure Identifier",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 513,
-    "markdownPath": "https://raw.githubusercontent.com/SecurFi/ERCs/master/ERCS/erc-7731.md"
   },
   "7732": {
     "title": "Enshrined Proposer-Builder Separation",
@@ -7658,7 +7532,7 @@
     "title": "Leaf-level state expiry in verkle trees",
     "status": "Stagnant",
     "requires": [
-      6800
+      "6800"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7736.md"
@@ -7667,7 +7541,7 @@
     "title": "Permissionless Script Registry",
     "status": "Draft",
     "requires": [
-      173
+      "173"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7738.md"
@@ -7676,10 +7550,10 @@
     "title": "Readable Typed Signatures for Smart Accounts",
     "status": "Draft",
     "requires": [
-      191,
-      712,
-      1271,
-      5267
+      "191",
+      "712",
+      "1271",
+      "5267"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7739.md"
@@ -7688,8 +7562,8 @@
     "title": "Authorize Operator",
     "status": "Draft",
     "requires": [
-      712,
-      1271
+      "712",
+      "1271"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7741.md"
@@ -7698,7 +7572,7 @@
     "title": "Uncouple blob count between CL and EL",
     "status": "Review",
     "requires": [
-      4844
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7742.md"
@@ -7721,7 +7595,7 @@
     "title": "Light client and DHT friendly log index",
     "status": "Draft",
     "requires": [
-      7916
+      "7916"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7745.md"
@@ -7737,7 +7611,7 @@
     "title": "State conversion to Verkle Tree",
     "status": "Draft",
     "requires": [
-      7612
+      "7612"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7748.md"
@@ -7746,8 +7620,8 @@
     "title": "Add wallet_signIntendedValidatorData method",
     "status": "Draft",
     "requires": [
-      191,
-      712
+      "191",
+      "712"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7749.md"
@@ -7773,21 +7647,14 @@
     "prNo": 579,
     "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/eip-equity-token/ERCS/erc-7752.md",
     "requires": [
-      173
+      "173"
     ]
-  },
-  "7753": {
-    "title": "Algorithmically generated NFT",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 584,
-    "markdownPath": "https://raw.githubusercontent.com/chen4903/ERCs/master/ERCS/erc-7753.md"
   },
   "7754": {
     "title": "Tamperproof Web Immutable Transaction (TWIT)",
     "status": "Draft",
     "requires": [
-      1193
+      "1193"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7754.md"
@@ -7796,8 +7663,8 @@
     "title": "EOF/EVM Trace Specification",
     "status": "Draft",
     "requires": [
-      3155,
-      4750
+      "3155",
+      "4750"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7756.md"
@@ -7813,8 +7680,8 @@
     "title": "Transfer With Authorization",
     "status": "Review",
     "requires": [
-      20,
-      712
+      "20",
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7758.md"
@@ -7823,7 +7690,7 @@
     "title": "Minimal Upgradeable Proxies",
     "status": "Draft",
     "requires": [
-      1967
+      "1967"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7760.md"
@@ -7832,8 +7699,8 @@
     "title": "EXTCODETYPE instruction",
     "status": "Review",
     "requires": [
-      3540,
-      7692
+      "3540",
+      "7692"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7761.md"
@@ -7842,7 +7709,7 @@
     "title": "Increase MIN_BASE_FEE_PER_BLOB_GAS",
     "status": "Review",
     "requires": [
-      4844
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7762.md"
@@ -7854,7 +7721,7 @@
     "prNo": 615,
     "markdownPath": "https://raw.githubusercontent.com/danfinlay/ERCs/wallet_getExposedAppKey/ERCS/erc-7763.md",
     "requires": [
-      1193
+      "1193"
     ]
   },
   "7764": {
@@ -7868,8 +7735,8 @@
     "title": "Privileged Non-Fungible Tokens Tied To RWA",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7765.md"
@@ -7878,8 +7745,8 @@
     "title": "Signature Aggregation for ERC-4337",
     "status": "Draft",
     "requires": [
-      4337,
-      7562
+      "4337",
+      "7562"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7766.md"
@@ -7895,9 +7762,9 @@
     "title": "JSON-RPC API for ERC-4337",
     "status": "Draft",
     "requires": [
-      155,
-      4337,
-      7562
+      "155",
+      "4337",
+      "7562"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7769.md"
@@ -7909,7 +7776,7 @@
     "prNo": 644,
     "markdownPath": "https://raw.githubusercontent.com/yaronvel/ERCs/master/ERCS/erc-7770.md",
     "requires": [
-      20
+      "20"
     ]
   },
   "7771": {
@@ -7926,15 +7793,15 @@
     "prNo": 649,
     "markdownPath": "https://raw.githubusercontent.com/limyeechern/ERCs/erc/igassponsor/ERCS/erc-7772.md",
     "requires": [
-      4337
+      "4337"
     ]
   },
   "7773": {
     "title": "Hardfork Meta - Amsterdam",
     "status": "Draft",
     "requires": [
-      7607,
-      7723
+      "7607",
+      "7723"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7773.md"
@@ -7943,8 +7810,8 @@
     "title": "Cache invalidation in ERC-5219 mode Web3 URL",
     "status": "Draft",
     "requires": [
-      5219,
-      6944
+      "5219",
+      "6944"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7774.md"
@@ -7960,7 +7827,7 @@
     "title": "Transparent Financial Statements",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7776.md"
@@ -7983,8 +7850,8 @@
     "title": "Interoperable Delegated Accounts",
     "status": "Draft",
     "requires": [
-      7201,
-      7702
+      "7201",
+      "7702"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7779.md"
@@ -7993,7 +7860,7 @@
     "title": "Validation Module Extension for ERC-7579",
     "status": "Draft",
     "requires": [
-      7579
+      "7579"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7780.md"
@@ -8002,8 +7869,8 @@
     "title": "Reduce Slot Time for Lower Peak Bandwidth",
     "status": "Draft",
     "requires": [
-      7623,
-      7778
+      "7623",
+      "7778"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7782.md"
@@ -8026,7 +7893,7 @@
     "title": "Onchain registration of chain identifiers",
     "status": "Draft",
     "requires": [
-      2304
+      "2304"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7785.md"
@@ -8042,7 +7909,7 @@
     "title": "Soulbound Degradable Governance",
     "status": "Draft",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7787.md"
@@ -8051,7 +7918,7 @@
     "title": "Dynamic target blob count",
     "status": "Draft",
     "requires": [
-      7742
+      "7742"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7788.md"
@@ -8060,7 +7927,7 @@
     "title": "Controlled Gas Limit Increase Guidelines",
     "status": "Draft",
     "requires": [
-      7783
+      "7783"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7790.md"
@@ -8069,7 +7936,7 @@
     "title": "GAS2ETH opcode",
     "status": "Draft",
     "requires": [
-      2929
+      "2929"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7791.md"
@@ -8078,7 +7945,7 @@
     "title": "Verifiable logs",
     "status": "Draft",
     "requires": [
-      6466
+      "6466"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7792.md"
@@ -8101,10 +7968,10 @@
     "title": "Wallet Call Token Capabilities",
     "status": "Draft",
     "requires": [
-      20,
-      721,
-      1155,
-      5792
+      "20",
+      "721",
+      "1155",
+      "5792"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7795.md"
@@ -8123,26 +7990,14 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7797.md"
   },
-  "7798": {
-    "title": "Tap to Pay",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 686,
-    "markdownPath": "https://raw.githubusercontent.com/amhed/ERCs/erc-taptopay/ERCS/erc-7798.md",
-    "requires": [
-      20,
-      681,
-      712
-    ]
-  },
   "7799": {
     "title": "System logs",
     "status": "Draft",
     "requires": [
-      1559,
-      4895,
-      6466,
-      7708
+      "1559",
+      "4895",
+      "6466",
+      "7708"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7799.md"
@@ -8151,7 +8006,7 @@
     "title": "etha - Sharded Blocks Subprotocol",
     "status": "Draft",
     "requires": [
-      7642
+      "7642"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7801.md"
@@ -8160,8 +8015,8 @@
     "title": "Crosschain Token Interface",
     "status": "Draft",
     "requires": [
-      165,
-      5679
+      "165",
+      "5679"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7802.md"
@@ -8170,7 +8025,7 @@
     "title": "EIP-712 Extensions for Account Abstraction",
     "status": "Draft",
     "requires": [
-      712
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7803.md"
@@ -8196,18 +8051,18 @@
     "prNo": 696,
     "markdownPath": "https://raw.githubusercontent.com/hellohanchen/ERCs/erc-intent-7702/ERCS/erc-7806.md",
     "requires": [
-      7702
+      "7702"
     ]
   },
   "7807": {
     "title": "SSZ execution blocks",
     "status": "Draft",
     "requires": [
-      6404,
-      6465,
-      6466,
-      7706,
-      7799
+      "6404",
+      "6465",
+      "6466",
+      "7706",
+      "7799"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7807.md"
@@ -8216,7 +8071,7 @@
     "title": "Reserve Tx-Type Range for RIPs",
     "status": "Review",
     "requires": [
-      2718
+      "2718"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7808.md"
@@ -8227,18 +8082,18 @@
     "prNo": 9026,
     "markdownPath": "https://raw.githubusercontent.com/sablier-labs/EIPs/mnt-eip/EIPS/eip-7809.md",
     "requires": [
-      2718,
-      2930
+      "2718",
+      "2930"
     ]
   },
   "7811": {
     "title": "Wallet Asset Discovery",
     "status": "Draft",
     "requires": [
-      20,
-      155,
-      721,
-      5792
+      "20",
+      "155",
+      "721",
+      "5792"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7811.md"
@@ -8288,7 +8143,7 @@
     "title": "Expirable ERC-20",
     "status": "Final",
     "requires": [
-      20
+      "20"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7818.md"
@@ -8297,8 +8152,8 @@
     "title": "Create delegate",
     "status": "Draft",
     "requires": [
-      7692,
-      7702
+      "7692",
+      "7702"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7819.md"
@@ -8314,7 +8169,7 @@
     "title": "Minimal Batch Executor Interface",
     "status": "Draft",
     "requires": [
-      7579
+      "7579"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7821.md"
@@ -8323,7 +8178,7 @@
     "title": "Set upper bounds for MODEXP",
     "status": "Review",
     "requires": [
-      198
+      "198"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7823.md"
@@ -8349,7 +8204,7 @@
     "prNo": 731,
     "markdownPath": "https://raw.githubusercontent.com/nikojpapa/ERCs/quanutm-bounty/ERCS/erc-7826.md",
     "requires": [
-      2470
+      "2470"
     ]
   },
   "7827": {
@@ -8366,18 +8221,18 @@
     "prNo": 735,
     "markdownPath": "https://raw.githubusercontent.com/jrudolf/ERCs/master/ERCS/erc-7828.md",
     "requires": [
-      55,
-      137,
-      155,
-      7785
+      "55",
+      "137",
+      "155",
+      "7785"
     ]
   },
   "7829": {
     "title": "Data Asset NFT",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7829.md"
@@ -8386,9 +8241,9 @@
     "title": "Contract size limit increase for EOF",
     "status": "Review",
     "requires": [
-      170,
-      3540,
-      3860
+      "170",
+      "3540",
+      "3860"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7830.md"
@@ -8397,11 +8252,11 @@
     "title": "Multi-Chain Addressing",
     "status": "Draft",
     "requires": [
-      55,
-      137,
-      155,
-      165,
-      2304
+      "55",
+      "137",
+      "155",
+      "165",
+      "2304"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7831.md"
@@ -8413,7 +8268,7 @@
     "prNo": 752,
     "markdownPath": "https://raw.githubusercontent.com/gfLobo/ERCs/master/ERCS/erc-7832.md",
     "requires": [
-      721
+      "721"
     ]
   },
   "7833": {
@@ -8427,7 +8282,7 @@
     "title": "Separate Metadata Section for EOF",
     "status": "Review",
     "requires": [
-      3540
+      "3540"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7834.md"
@@ -8446,8 +8301,8 @@
     "prNo": 758,
     "markdownPath": "https://raw.githubusercontent.com/lukasrosario/ERCs/wallet-call-preparation-api/ERCS/erc-7836.md",
     "requires": [
-      1193,
-      5792
+      "1193",
+      "5792"
     ]
   },
   "7837": {
@@ -8483,17 +8338,6 @@
     "isERC": true,
     "prNo": 766,
     "markdownPath": "https://raw.githubusercontent.com/elliedavidson/ERCs/master/ERCS/erc-7841.md"
-  },
-  "7842": {
-    "title": "State Channel Data Types & Interfaces",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 728,
-    "markdownPath": "https://raw.githubusercontent.com/layer-3/ERCs/master/ERCS/erc-7842.md",
-    "requires": [
-      4337,
-      7824
-    ]
   },
   "7843": {
     "title": "SLOT precompile",
@@ -8540,23 +8384,10 @@
     "title": "Deactivate/Reactivate a Delegated EOA's Key",
     "status": "Draft",
     "requires": [
-      7702
+      "7702"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7851.md"
-  },
-  "7852": {
-    "title": "Opcodes Per Second",
-    "status": "Draft",
-    "prNo": 9203,
-    "markdownPath": "https://raw.githubusercontent.com/MASDXI/EIPs/master/EIPS/eip-7852.md"
-  },
-  "7853": {
-    "title": "Social SBT",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 808,
-    "markdownPath": "https://raw.githubusercontent.com/alibertay/ERCs/patch-1/ERCS/erc-7853.md"
   },
   "7854": {
     "title": "Verification-independent Cross-Chain Messaging",
@@ -8590,22 +8421,11 @@
     "title": "Expirable NFTs and SBTs",
     "status": "Draft",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7858.md"
-  },
-  "7859": {
-    "title": "AgentNFT Extension for ERC721",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 844,
-    "markdownPath": "https://raw.githubusercontent.com/agentball/ERCs/master/ERCS/erc-7859.md",
-    "requires": [
-      165,
-      721
-    ]
   },
   "7860": {
     "title": "AgentNFT Extension for ERC-721",
@@ -8614,8 +8434,8 @@
     "prNo": 844,
     "markdownPath": "https://raw.githubusercontent.com/agentball/ERCs/master/ERCS/erc-7860.md",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ]
   },
   "7861": {
@@ -8625,8 +8445,8 @@
     "prNo": 851,
     "markdownPath": "https://raw.githubusercontent.com/vmc-crossmint/ERCs/vmc/vc_erc/ERCS/erc-7861.md",
     "requires": [
-      165,
-      721
+      "165",
+      "721"
     ]
   },
   "7862": {
@@ -8664,14 +8484,14 @@
     "prNo": 861,
     "markdownPath": "https://raw.githubusercontent.com/anistark/ERCs/master/ERCS/erc-7866.md",
     "requires": [
-      165
+      "165"
     ]
   },
   "7867": {
     "title": "Flow Control Wallet Call Capability",
     "status": "Draft",
     "requires": [
-      5792
+      "5792"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7867.md"
@@ -8701,10 +8521,10 @@
     "title": "EOF - TXCREATE and InitcodeTransaction type",
     "status": "Review",
     "requires": [
-      3540,
-      3670,
-      3860,
-      7620
+      "3540",
+      "3670",
+      "3860",
+      "7620"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7873.md"
@@ -8716,16 +8536,16 @@
     "prNo": 1003,
     "markdownPath": "https://raw.githubusercontent.com/bogdan/ERCs/master/ERCS/erc-7876.md",
     "requires": [
-      55
+      "55"
     ]
   },
   "7877": {
     "title": "Enhanced RETURN opcodes",
     "status": "Draft",
     "requires": [
-      6,
-      1153,
-      3855
+      "6",
+      "1153",
+      "3855"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7877.md"
@@ -8737,10 +8557,10 @@
     "prNo": 886,
     "markdownPath": "https://raw.githubusercontent.com/wamith/ERCs/bequeathable/ERCS/erc-7878.md",
     "requires": [
-      20,
-      165,
-      721,
-      1155
+      "20",
+      "165",
+      "721",
+      "1155"
     ]
   },
   "7879": {
@@ -8753,9 +8573,9 @@
     "title": "EOF - EXTCODEADDRESS instruction",
     "status": "Review",
     "requires": [
-      7692,
-      7702,
-      7761
+      "7692",
+      "7702",
+      "7761"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7880.md"
@@ -8765,7 +8585,9 @@
     "status": "Draft",
     "prNo": 9354,
     "markdownPath": "https://raw.githubusercontent.com/sslivkoff/EIPs/increase_gas_target/EIPS/eip-7881.md",
-    "requires": []
+    "requires": [
+      "<1559>"
+    ]
   },
   "7882": {
     "title": "Wallet Call Simulation API",
@@ -8774,15 +8596,15 @@
     "prNo": 892,
     "markdownPath": "https://raw.githubusercontent.com/jxom/ERCs/jxom/simulate-calls/ERCS/erc-7882.md",
     "requires": [
-      5792,
-      7836
+      "5792",
+      "7836"
     ]
   },
   "7883": {
     "title": "ModExp Gas Cost Increase",
     "status": "Draft",
     "requires": [
-      2565
+      "2565"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7883.md"
@@ -8811,8 +8633,8 @@
     "title": "Cancelation for ERC-7540 Tokenized Vaults",
     "status": "Draft",
     "requires": [
-      165,
-      7540
+      "165",
+      "7540"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7887.md"
@@ -8837,7 +8659,7 @@
     "prNo": 9405,
     "markdownPath": "https://raw.githubusercontent.com/Leon-Africa/EIPs/eip-clawback-tx/EIPS/eip-7890.md",
     "requires": [
-      2718
+      "2718"
     ]
   },
   "7891": {
@@ -8847,15 +8669,15 @@
     "prNo": 930,
     "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/erc-7891-update1/ERCS/erc-7891.md",
     "requires": [
-      721,
-      6150
+      "721",
+      "6150"
     ]
   },
   "7892": {
     "title": "Blob Parameter Only Hardforks",
     "status": "Draft",
     "requires": [
-      7840
+      "7840"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7892.md"
@@ -8867,8 +8689,8 @@
     "prNo": 922,
     "markdownPath": "https://raw.githubusercontent.com/SeanLuis/ercs/feat/erc-draft/ERCS/erc-7893.md",
     "requires": [
-      20,
-      165
+      "20",
+      "165"
     ]
   },
   "7894": {
@@ -8889,7 +8711,7 @@
     "title": "ABI attachment in `wallet_sendCalls`",
     "status": "Draft",
     "requires": [
-      5792
+      "5792"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7896.md"
@@ -8898,11 +8720,11 @@
     "title": "Wallet-Linked Services for Smart Accounts",
     "status": "Withdrawn",
     "requires": [
-      165,
-      1167,
-      4337,
-      6551,
-      7656
+      "165",
+      "1167",
+      "4337",
+      "6551",
+      "7656"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7897.md"
@@ -8920,7 +8742,7 @@
     "prNo": 9433,
     "markdownPath": "https://raw.githubusercontent.com/genkifs/EIPs/Function-Return-Encoding/EIPS/eip-7899.md",
     "requires": [
-      165
+      "165"
     ]
   },
   "7901": {
@@ -8936,16 +8758,16 @@
     "prNo": 947,
     "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/AA-429-new-aa-capabilities-erc/ERCS/erc-7902.md",
     "requires": [
-      5792,
-      7702
+      "5792",
+      "7702"
     ]
   },
   "7903": {
     "title": "Remove Initcode Size Limit",
     "status": "Draft",
     "requires": [
-      170,
-      3860
+      "170",
+      "3860"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7903.md"
@@ -8956,7 +8778,7 @@
     "prNo": 9454,
     "markdownPath": "https://raw.githubusercontent.com/JacekGlen/EIPs/repricing/EIPS/eip-7904.md",
     "requires": [
-      7883
+      "7883"
     ]
   },
   "7906": {
@@ -8969,7 +8791,7 @@
     "title": "Meter Contract Code Size And Increase Limit",
     "status": "Draft",
     "requires": [
-      170
+      "170"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7907.md"
@@ -8988,10 +8810,10 @@
     "prNo": 979,
     "markdownPath": "https://raw.githubusercontent.com/hellohanchen/ERCs/erc-margin-token/ERCS/erc-7909.md",
     "requires": [
-      20,
-      165,
-      721,
-      1155
+      "20",
+      "165",
+      "721",
+      "1155"
     ]
   },
   "7910": {
@@ -9021,20 +8843,17 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7913.md"
   },
   "7914": {
-    "title": "An Interface for Transfer From Native",
+    "title": "Smart Creative Commons Zero (SCC0) License for public dAIpps and dApps",
     "status": "Draft",
     "isERC": true,
-    "prNo": 987,
-    "markdownPath": "https://raw.githubusercontent.com/snreynolds/ERCs/erc-transfer-from-native/ERCS/erc-7914.md",
-    "requires": [
-      165
-    ]
+    "prNo": 906,
+    "markdownPath": "https://raw.githubusercontent.com/zhous/SCC0-eip/master/ERCS/erc-7914.md"
   },
   "7915": {
     "title": "Adaptive mean reversion blob pricing",
     "status": "Draft",
     "requires": [
-      4844
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7915.md"
@@ -9057,7 +8876,7 @@
     "title": "Blob base fee bounded by execution cost",
     "status": "Draft",
     "requires": [
-      4844
+      "4844"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7918.md"
@@ -9066,20 +8885,20 @@
     "title": "Pureth Meta",
     "status": "Draft",
     "requires": [
-      6404,
-      6465,
-      6466,
-      6493,
-      7495,
-      7668,
-      7688,
-      7706,
-      7708,
-      7745,
-      7792,
-      7799,
-      7807,
-      7916
+      "6404",
+      "6465",
+      "6466",
+      "6493",
+      "7495",
+      "7668",
+      "7688",
+      "7706",
+      "7708",
+      "7745",
+      "7792",
+      "7799",
+      "7807",
+      "7916"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7919.md"
@@ -9091,8 +8910,8 @@
     "prNo": 993,
     "markdownPath": "https://raw.githubusercontent.com/sola92/ERCs/master/ERCS/erc-7920.md",
     "requires": [
-      20,
-      712
+      "20",
+      "712"
     ]
   },
   "7921": {
@@ -9126,12 +8945,6 @@
     "prNo": 9562,
     "markdownPath": "https://raw.githubusercontent.com/sambacha/eips-poa/patch-5/EIPS/eip-7925.md"
   },
-  "9552": {
-    "title": "Dynamic Exit Churn Limit Using Historical Unused Capacity",
-    "status": "Draft",
-    "prNo": 9552,
-    "markdownPath": "https://raw.githubusercontent.com/michaelneuder/EIPs/exit-queue/EIPS/eip-9552.md"
-  },
   "9999": {
     "title": "Block-Level Access Lists",
     "status": "Draft",
@@ -9144,16 +8957,16 @@
     "prNo": 9558,
     "markdownPath": "https://raw.githubusercontent.com/rakita/EIPs/rakita/call_gas_split/EIPS/eip-99999.md"
   },
-  "00000": {
-    "title": "BLOB Data and Rollup Operator Rewards",
-    "status": "Draft",
-    "prNo": 8993,
-    "markdownPath": "https://raw.githubusercontent.com/khajievN/EIPs/eip-blob-data/EIPS/eip-00000.md"
-  },
   "010101": {
     "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
     "status": "Draft",
     "prNo": 9273,
     "markdownPath": "https://raw.githubusercontent.com/MrxTrickster/EIPs/master/EIPS/eip-010101.md"
+  },
+  "00000": {
+    "title": "BLOB Data and Rollup Operator Rewards",
+    "status": "Draft",
+    "prNo": 8993,
+    "markdownPath": "https://raw.githubusercontent.com/khajievN/EIPs/eip-blob-data/EIPS/eip-00000.md"
   }
 }

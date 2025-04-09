@@ -6,7 +6,7 @@ import { EIPGridItem } from "./TrendingEIPs";
 import { EIPStatus } from "@/utils";
 
 export const PectraEIPs = () => {
-  const pectraHardForkMetaEIPNo = 7600;
+  const pectraHardForkMetaEIPNo = "7600";
   const pectraHardForkStatus = validEIPs[pectraHardForkMetaEIPNo].status!;
   const pectraEIPsArray = [
     pectraHardForkMetaEIPNo,

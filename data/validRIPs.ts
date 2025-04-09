@@ -3,6 +3,4 @@ import { ValidEIPs } from "@/types";
 
 export const validRIPs: ValidEIPs = _validRIPs;
 
-export const validRIPsArray = Object.keys(validRIPs).map((key) =>
-  parseInt(key)
-);
+export const validRIPsArray = Object.keys(validRIPs);

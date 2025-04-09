@@ -63,13 +63,13 @@ const EIP = ({
   const [isERC, setIsERC] = useState<boolean>(true);
 
   const [bookmarks, setBookmarks] = useLocalStorage<
-    { eipNo: number; title: string; type?: EIPType; status?: string }[]
+    { eipNo: string; title: string; type?: EIPType; status?: string }[]
   >("eip-bookmarks", []);
   const [isBookmarked, setIsBookmarked] = useState(false);
 
   const [aiSummary, setAiSummary] = useState<string>("");
 
-  const currentEIPArrayIndex = validEIPsArray.indexOf(parseInt(eipNo));
+  const currentEIPArrayIndex = validEIPsArray.indexOf(eipNo);
 
   const {
     isOpen: aiSummaryIsOpen,
@@ -132,7 +132,7 @@ const EIP = ({
     ) {
       fetch("/api/logPageVisit", {
         method: "POST",
-        body: JSON.stringify({ eipNo: parseInt(eipNo), type: "EIP" }),
+        body: JSON.stringify({ eipNo, type: "EIP" }),
         headers: {
           "Content-Type": "application/json",
         },
@@ -143,7 +143,7 @@ const EIP = ({
   const fetchAISummary = useCallback(async () => {
     fetch("/api/aiSummary", {
       method: "POST",
-      body: JSON.stringify({ eipNo: parseInt(eipNo) }),
+      body: JSON.stringify({ eipNo }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -166,18 +166,18 @@ const EIP = ({
   }, [aiSummaryIsOpen, aiSummary]);
 
   useEffect(() => {
-    setIsBookmarked(bookmarks.some((item) => item.eipNo === parseInt(eipNo)));
+    setIsBookmarked(bookmarks.some((item) => item.eipNo === eipNo));
   }, [bookmarks, eipNo]);
 
   const toggleBookmark = () => {
     if (isBookmarked) {
       const updatedBookmarks = bookmarks.filter(
-        (item: any) => item.eipNo !== parseInt(eipNo)
+        (item: any) => item.eipNo !== eipNo
       );
       setBookmarks(updatedBookmarks);
     } else {
       const newBookmark = {
-        eipNo: Number(eipNo),
+        eipNo,
         title: metadataJson?.title || "",
         status: metadataJson?.status || "",
       };

@@ -14,18 +14,16 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const numId = parseInt(id);
-
   // Check which type of proposal it is and redirect accordingly
-  if (validEIPsArray.includes(numId)) {
+  if (validEIPsArray.includes(id)) {
     return NextResponse.redirect(new URL(`/eip/${id}`, request.url));
   }
 
-  if (validRIPsArray.includes(numId)) {
+  if (validRIPsArray.includes(id)) {
     return NextResponse.redirect(new URL(`/rip/${id}`, request.url));
   }
 
-  if (validCAIPsArray.includes(numId)) {
+  if (validCAIPsArray.includes(id)) {
     return NextResponse.redirect(new URL(`/caip/${id}`, request.url));
   }
 

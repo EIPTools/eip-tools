@@ -21,23 +21,23 @@ import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
 import { validCAIPs } from "@/data/validCAIPs";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
-import { FilteredSuggestion, SearchSuggestion } from "@/types";
+import { FilteredSuggestion, SearchSuggestion, EIPType } from "@/types";
 
-const combinedData = [
+const combinedData: FilteredSuggestion[] = [
   ...Object.entries(validEIPs).map(([eipNo, details]) => ({
-    eipNo: Number(eipNo),
+    eipNo,
     ...details,
-    type: "EIP",
+    type: EIPType.EIP,
   })),
   ...Object.entries(validRIPs).map(([ripNo, details]) => ({
-    eipNo: Number(ripNo),
+    eipNo: ripNo,
     ...details,
-    type: "RIP",
+    type: EIPType.RIP,
   })),
   ...Object.entries(validCAIPs).map(([caipNo, details]) => ({
-    eipNo: Number(caipNo),
+    eipNo: caipNo,
     ...details,
-    type: "CAIP",
+    type: EIPType.CAIP,
   })),
 ];
 
@@ -63,8 +63,8 @@ export const Searchbox = () => {
       suggestion.data.type === "RIP"
         ? "rip"
         : suggestion.data.type === "CAIP"
-        ? "caip"
-        : "eip";
+          ? "caip"
+          : "eip";
 
     setIsLoading(true);
     router.push(`/${subPath}/${proposalNo}`);
@@ -187,10 +187,10 @@ export const Searchbox = () => {
                   suggestion.type === "RIP"
                     ? "RIP-"
                     : suggestion.type === "CAIP"
-                    ? "CAIP-"
-                    : suggestion.isERC
-                    ? "ERC-"
-                    : "EIP-"
+                      ? "CAIP-"
+                      : suggestion.isERC
+                        ? "ERC-"
+                        : "EIP-"
                 }${suggestion.eipNo}: ${suggestion.title}`,
                 data: suggestion,
               }))

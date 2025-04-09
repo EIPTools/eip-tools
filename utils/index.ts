@@ -41,14 +41,10 @@ export const convertMetadataToJson = (
       if (key.trim() === "eip") {
         jsonObject[key.trim()] = parseInt(value.trim());
       } else if (key.trim() === "requires") {
-        const numbers = value
+        jsonObject[key.trim()] = value
           .split(",")
-          .map((v) => {
-            const parsed = parseInt(v.trim());
-            return isNaN(parsed) ? null : parsed;
-          })
-          .filter((n): n is number => n !== null);
-        jsonObject[key.trim()] = numbers;
+          .map((v) => v.trim())
+          .filter(Boolean);
       } else if (key.trim() === "author") {
         jsonObject[key.trim()] = value
           .split(",")

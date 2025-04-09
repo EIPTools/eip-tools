@@ -23,7 +23,7 @@ import { EIPGridItem } from "@/components/TrendingEIPs";
 import { FaRegBookmark } from "react-icons/fa";
 
 interface Bookmark {
-  eipNo: number;
+  eipNo: string;
   type?: EIPType;
   title?: string;
   status?: string;
@@ -61,15 +61,10 @@ const SharedListContent = () => {
           const [type, eipNo] = item.includes("=")
             ? item.split("=")
             : [paramKey, item];
-          const parsedEipNo = parseInt(eipNo, 10);
-
-          if (isNaN(parsedEipNo)) {
-            throw new Error(`Invalid ${type.toUpperCase()} number: ${eipNo}`);
-          }
 
           return {
             type: type.toUpperCase() as EIPType,
-            eipNo: parsedEipNo,
+            eipNo,
           };
         });
     } catch (error) {

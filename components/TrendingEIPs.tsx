@@ -20,7 +20,7 @@ import { validRIPs } from "@/data/validRIPs";
 import { validCAIPs } from "@/data/validCAIPs";
 
 interface TrendingEIP {
-  _id: number;
+  _id: string;
   type?: EIPType;
   count: number;
 }
@@ -29,13 +29,13 @@ export const EIPGridItem = ({
   eipNo,
   type,
 }: {
-  eipNo: number;
+  eipNo: string;
   type?: EIPType;
 }) => {
   const router = useTopLoaderRouter();
 
   const [bookmarks, setBookmarks] = useLocalStorage<
-    { eipNo: number; title: string; type?: EIPType; status?: string }[]
+    { eipNo: string; title: string; type?: EIPType; status?: string }[]
   >("eip-bookmarks", []);
   const [isBookmarked, setIsBookmarked] = useState(false);
 
@@ -43,8 +43,8 @@ export const EIPGridItem = ({
     ? type === EIPType.EIP
       ? validEIPs[eipNo]
       : type === EIPType.RIP
-      ? validRIPs[eipNo]
-      : validCAIPs[eipNo]
+        ? validRIPs[eipNo]
+        : validCAIPs[eipNo]
     : validEIPs[eipNo];
 
   useEffect(() => {
@@ -65,7 +65,7 @@ export const EIPGridItem = ({
   };
 
   const addBookmark = (newBookmark: {
-    eipNo: number;
+    eipNo: string;
     title: string;
     type?: EIPType;
     status?: string;
@@ -73,7 +73,7 @@ export const EIPGridItem = ({
     setBookmarks([...bookmarks, newBookmark]);
   };
 
-  const removeBookmark = (eipNo: number) => {
+  const removeBookmark = (eipNo: string) => {
     const updatedBookmarks = bookmarks.filter(
       (bookmark) => bookmark.eipNo !== eipNo
     );
@@ -137,10 +137,10 @@ export const EIPGridItem = ({
             {type === "RIP"
               ? "RIP"
               : type === "CAIP"
-              ? "CAIP"
-              : eip.isERC
-              ? "ERC"
-              : "EIP"}
+                ? "CAIP"
+                : eip.isERC
+                  ? "ERC"
+                  : "EIP"}
             -{eipNo}
           </Heading>
           <Text>{eip.title}</Text>

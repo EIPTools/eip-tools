@@ -191,7 +191,7 @@
     },
     {
       "id": "eip-214",
-      "eipNo": 214,
+      "eipNo": "214",
       "title": "New opcode STATICCALL",
       "status": "Final",
       "isERC": false
@@ -260,20 +260,6 @@
       "isERC": true
     },
     {
-      "id": "eip-137",
-      "eipNo": 137,
-      "title": "Ethereum Domain Name Service - Specification",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-181",
-      "eipNo": 181,
-      "title": "ENS support for reverse resolution of Ethereum addresses",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-210",
       "eipNo": "210",
       "title": "Blockhash refactoring",
@@ -284,13 +270,6 @@
       "id": "eip-211",
       "eipNo": "211",
       "title": "\"New opcodes: RETURNDATASIZE and RETURNDATACOPY\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-214",
-      "eipNo": "214",
-      "title": "New opcode STATICCALL",
       "status": "Final",
       "isERC": false
     },
@@ -324,7 +303,7 @@
     },
     {
       "id": "eip-1474",
-      "eipNo": 1474,
+      "eipNo": "1474",
       "title": "Remote procedure call specification",
       "status": "Stagnant",
       "isERC": false
@@ -351,65 +330,9 @@
       "isERC": false
     },
     {
-      "id": "eip-2",
-      "eipNo": 2,
-      "title": "Homestead Hard-fork Changes",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7",
-      "eipNo": 7,
-      "title": "DELEGATECALL",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-8",
-      "eipNo": 8,
-      "title": "devp2p Forward Compatibility Requirements for Homestead",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-607",
       "eipNo": "607",
       "title": "\"Hardfork Meta: Spurious Dragon\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-155",
-      "eipNo": 155,
-      "title": "Simple replay attack protection",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-160",
-      "eipNo": 160,
-      "title": "EXP cost increase",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-161",
-      "eipNo": 161,
-      "title": "State trie clearing (invariant-preserving alternative)",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-170",
-      "eipNo": 170,
-      "title": "Contract code size limit",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-608",
-      "eipNo": 608,
-      "title": "\"Hardfork Meta: Tangerine Whistle\"",
       "status": "Final",
       "isERC": false
     },
@@ -421,15 +344,8 @@
       "isERC": false
     },
     {
-      "id": "eip-150",
-      "eipNo": 150,
-      "title": "Gas cost changes for IO-heavy operations",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-779",
-      "eipNo": 779,
+      "eipNo": "779",
       "title": "\"Hardfork Meta: DAO Fork\"",
       "status": "Final",
       "isERC": false
@@ -442,64 +358,15 @@
       "isERC": false
     },
     {
-      "id": "eip-100",
-      "eipNo": 100,
-      "title": "Change difficulty adjustment to target mean block time including uncles",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-140",
-      "eipNo": 140,
-      "title": "REVERT instruction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-196",
-      "eipNo": 196,
-      "title": "Precompiled contracts for addition and scalar multiplication on the elliptic curve alt_bn128",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-197",
-      "eipNo": 197,
-      "title": "Precompiled contracts for optimal ate pairing check on the elliptic curve alt_bn128",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-198",
-      "eipNo": 198,
-      "title": "Big integer modular exponentiation",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-211",
-      "eipNo": 211,
-      "title": "\"New opcodes: RETURNDATASIZE and RETURNDATACOPY\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-607",
-      "eipNo": 607,
-      "title": "\"Hardfork Meta: Spurious Dragon\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-649",
-      "eipNo": 649,
+      "eipNo": "649",
       "title": "Metropolis Difficulty Bomb Delay and Block Reward Reduction",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-658",
-      "eipNo": 658,
+      "eipNo": "658",
       "title": "Embedding transaction status code in receipts",
       "status": "Final",
       "isERC": false
@@ -533,27 +400,6 @@
       "isERC": true
     },
     {
-      "id": "eip-165",
-      "eipNo": 165,
-      "title": "Standard Interface Detection",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-649",
-      "eipNo": "649",
-      "title": "Metropolis Difficulty Bomb Delay and Block Reward Reduction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-658",
-      "eipNo": "658",
-      "title": "Embedding transaction status code in receipts",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-663",
       "eipNo": "663",
       "title": "SWAPN, DUPN and EXCHANGE instructions",
@@ -562,14 +408,14 @@
     },
     {
       "id": "eip-3540",
-      "eipNo": 3540,
+      "eipNo": "3540",
       "title": "EOF - EVM Object Format v1",
       "status": "Review",
       "isERC": false
     },
     {
       "id": "eip-5450",
-      "eipNo": 5450,
+      "eipNo": "5450",
       "title": "EOF - Stack Validation",
       "status": "Review",
       "isERC": false
@@ -585,13 +431,6 @@
       "id": "eip-681",
       "eipNo": "681",
       "title": "URL Format for Transaction Requests",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-20",
-      "eipNo": 20,
-      "title": "Token Standard",
       "status": "Final",
       "isERC": true
     },
@@ -638,13 +477,6 @@
       "isERC": false
     },
     {
-      "id": "eip-191",
-      "eipNo": 191,
-      "title": "Signed Data Standard",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-721",
       "eipNo": "721",
       "title": "Non-Fungible Token Standard",
@@ -659,13 +491,6 @@
       "isERC": true
     },
     {
-      "id": "eip-173",
-      "eipNo": 173,
-      "title": "Contract Ownership Standard",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-747",
       "eipNo": "747",
       "title": "wallet_watchAsset RPC Method",
@@ -674,14 +499,14 @@
     },
     {
       "id": "eip-1046",
-      "eipNo": 1046,
+      "eipNo": "1046",
       "title": "tokenURI Interoperability",
       "status": "Final",
       "isERC": true
     },
     {
       "id": "eip-1193",
-      "eipNo": 1193,
+      "eipNo": "1193",
       "title": "Ethereum Provider JavaScript API",
       "status": "Final",
       "isERC": false
@@ -702,7 +527,7 @@
     },
     {
       "id": "eip-1820",
-      "eipNo": 1820,
+      "eipNo": "1820",
       "title": "Pseudo-introspection Registry Contract",
       "status": "Final",
       "isERC": true
@@ -711,20 +536,6 @@
       "id": "eip-778",
       "eipNo": "778",
       "title": "Ethereum Node Records (ENR)",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-779",
-      "eipNo": "779",
-      "title": "\"Hardfork Meta: DAO Fork\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-606",
-      "eipNo": 606,
-      "title": "\"Hardfork Meta: Homestead\"",
       "status": "Final",
       "isERC": false
     },
@@ -757,20 +568,6 @@
       "isERC": true
     },
     {
-      "id": "eip-67",
-      "eipNo": 67,
-      "title": "URI Scheme with Metadata, Value and Bytecode",
-      "status": "Withdrawn",
-      "isERC": true
-    },
-    {
-      "id": "eip-681",
-      "eipNo": 681,
-      "title": "URL Format for Transaction Requests",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-838",
       "eipNo": "838",
       "title": "ABI specification for REVERT reason string",
@@ -795,13 +592,6 @@
       "id": "eip-868",
       "eipNo": "868",
       "title": "Node Discovery v4 ENR Extension",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-778",
-      "eipNo": 778,
-      "title": "Ethereum Node Records (ENR)",
       "status": "Final",
       "isERC": false
     },
@@ -842,7 +632,7 @@
     },
     {
       "id": "eip-1066",
-      "eipNo": 1066,
+      "eipNo": "1066",
       "title": "Status Codes",
       "status": "Stagnant",
       "isERC": true
@@ -876,13 +666,6 @@
       "isERC": true
     },
     {
-      "id": "eip-926",
-      "eipNo": 926,
-      "title": "Address metadata registry",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-969",
       "eipNo": "969",
       "title": "Modifications to ethash to invalidate existing dedicated hardware implementations",
@@ -894,13 +677,6 @@
       "eipNo": "998",
       "title": "Composable Non-Fungible Token",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-721",
-      "eipNo": 721,
-      "title": "Non-Fungible Token Standard",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -932,51 +708,30 @@
       "isERC": false
     },
     {
-      "id": "eip-145",
-      "eipNo": 145,
-      "title": "Bitwise shifting instructions in EVM",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-609",
-      "eipNo": 609,
-      "title": "\"Hardfork Meta: Byzantium\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1014",
-      "eipNo": 1014,
+      "eipNo": "1014",
       "title": "Skinny CREATE2",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-1052",
-      "eipNo": 1052,
+      "eipNo": "1052",
       "title": "EXTCODEHASH opcode",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-1234",
-      "eipNo": 1234,
+      "eipNo": "1234",
       "title": "Constantinople Difficulty Bomb Delay and Block Reward Adjustment",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-1283",
-      "eipNo": 1283,
+      "eipNo": "1283",
       "title": "Net gas metering for SSTORE without dirty maps",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-1014",
-      "eipNo": "1014",
-      "title": "Skinny CREATE2",
       "status": "Final",
       "isERC": false
     },
@@ -988,15 +743,8 @@
       "isERC": false
     },
     {
-      "id": "eip-1046",
-      "eipNo": "1046",
-      "title": "tokenURI Interoperability",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-1155",
-      "eipNo": 1155,
+      "eipNo": "1155",
       "title": "Multi Token Standard",
       "status": "Final",
       "isERC": true
@@ -1006,13 +754,6 @@
       "eipNo": "1051",
       "title": "Overflow checking for the EVM",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-1052",
-      "eipNo": "1052",
-      "title": "EXTCODEHASH opcode",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -1037,13 +778,6 @@
       "isERC": true
     },
     {
-      "id": "eip-1066",
-      "eipNo": "1066",
-      "title": "Status Codes",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-1077",
       "eipNo": "1077",
       "title": "Gas relay for contract calls",
@@ -1052,14 +786,14 @@
     },
     {
       "id": "eip-1271",
-      "eipNo": 1271,
+      "eipNo": "1271",
       "title": "Standard Signature Validation Method for Contracts",
       "status": "Final",
       "isERC": true
     },
     {
       "id": "eip-1344",
-      "eipNo": 1344,
+      "eipNo": "1344",
       "title": "ChainID opcode",
       "status": "Final",
       "isERC": false
@@ -1068,20 +802,6 @@
       "id": "eip-1078",
       "eipNo": "1078",
       "title": "Universal login / signup using ENS subdomains",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-725",
-      "eipNo": 725,
-      "title": "General data key/value store and execution",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-1077",
-      "eipNo": 1077,
-      "title": "Gas relay for contract calls",
       "status": "Stagnant",
       "isERC": true
     },
@@ -1157,14 +877,14 @@
     },
     {
       "id": "eip-2200",
-      "eipNo": 2200,
+      "eipNo": "2200",
       "title": "Structured Definitions for Net Gas Metering",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-3529",
-      "eipNo": 3529,
+      "eipNo": "3529",
       "title": "Reduction in refunds",
       "status": "Final",
       "isERC": false
@@ -1174,13 +894,6 @@
       "eipNo": "1154",
       "title": "Oracle Interface",
       "status": "Withdrawn",
-      "isERC": true
-    },
-    {
-      "id": "eip-1155",
-      "eipNo": "1155",
-      "title": "Multi Token Standard",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -1226,27 +939,6 @@
       "isERC": true
     },
     {
-      "id": "eip-55",
-      "eipNo": 55,
-      "title": "Mixed-case checksum address encoding",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-1193",
-      "eipNo": "1193",
-      "title": "Ethereum Provider JavaScript API",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-695",
-      "eipNo": 695,
-      "title": "Create `eth_chainId` method for JSON-RPC",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1202",
       "eipNo": "1202",
       "title": "Voting Interface",
@@ -1255,7 +947,7 @@
     },
     {
       "id": "eip-5269",
-      "eipNo": 5269,
+      "eipNo": "5269",
       "title": "ERC Detection and Discovery",
       "status": "Review",
       "isERC": true
@@ -1282,13 +974,6 @@
       "isERC": false
     },
     {
-      "id": "eip-1234",
-      "eipNo": "1234",
-      "title": "Constantinople Difficulty Bomb Delay and Block Reward Adjustment",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1240",
       "eipNo": "1240",
       "title": "Remove Difficulty Bomb",
@@ -1303,24 +988,10 @@
       "isERC": true
     },
     {
-      "id": "eip-1271",
-      "eipNo": "1271",
-      "title": "Standard Signature Validation Method for Contracts",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-1276",
       "eipNo": "1276",
       "title": "Eliminate Difficulty Bomb and Adjust Block Reward on Constantinople Shift",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-1283",
-      "eipNo": "1283",
-      "title": "Net gas metering for SSTORE without dirty maps",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -1357,13 +1028,6 @@
       "title": "Subscriptions on the blockchain",
       "status": "Stagnant",
       "isERC": true
-    },
-    {
-      "id": "eip-1344",
-      "eipNo": "1344",
-      "title": "ChainID opcode",
-      "status": "Final",
-      "isERC": false
     },
     {
       "id": "eip-1352",
@@ -1422,13 +1086,6 @@
       "isERC": true
     },
     {
-      "id": "eip-1261",
-      "eipNo": 1261,
-      "title": "Membership Verification Token (MVT)",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-1418",
       "eipNo": "1418",
       "title": "Blockchain Storage Rent Payment",
@@ -1437,7 +1094,7 @@
     },
     {
       "id": "eip-1559",
-      "eipNo": 1559,
+      "eipNo": "1559",
       "title": "Fee market change for ETH 1.0 chain",
       "status": "Final",
       "isERC": false
@@ -1481,13 +1138,6 @@
       "id": "eip-1470",
       "eipNo": "1470",
       "title": "Smart Contract Weakness Classification (SWC)",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-1474",
-      "eipNo": "1474",
-      "title": "Remote procedure call specification",
       "status": "Stagnant",
       "isERC": false
     },
@@ -1541,22 +1191,15 @@
       "isERC": true
     },
     {
-      "id": "eip-1559",
-      "eipNo": "1559",
-      "title": "Fee market change for ETH 1.0 chain",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-2718",
-      "eipNo": 2718,
+      "eipNo": "2718",
       "title": "Typed Transaction Envelope",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-2930",
-      "eipNo": 2930,
+      "eipNo": "2930",
       "title": "Optional access lists",
       "status": "Final",
       "isERC": false
@@ -1586,13 +1229,6 @@
       "id": "eip-1588",
       "eipNo": "1588",
       "title": "\"Hardfork Meta: Ethereum ProgPoW\"",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-1057",
-      "eipNo": 1057,
-      "title": "ProgPoW, a Programmatic Proof-of-Work",
       "status": "Stagnant",
       "isERC": false
     },
@@ -1639,36 +1275,22 @@
       "isERC": false
     },
     {
-      "id": "eip-152",
-      "eipNo": 152,
-      "title": "Add BLAKE2 compression function `F` precompile",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-1108",
-      "eipNo": 1108,
-      "title": "Reduce alt_bn128 precompile gas costs",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1716",
-      "eipNo": 1716,
+      "eipNo": "1716",
       "title": "\"Hardfork Meta: Petersburg\"",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-1884",
-      "eipNo": 1884,
+      "eipNo": "1884",
       "title": "Repricing for trie-size-dependent opcodes",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-2028",
-      "eipNo": 2028,
+      "eipNo": "2028",
       "title": "Transaction data gas cost reduction",
       "status": "Final",
       "isERC": false
@@ -1709,20 +1331,6 @@
       "isERC": true
     },
     {
-      "id": "eip-1716",
-      "eipNo": "1716",
-      "title": "\"Hardfork Meta: Petersburg\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-1013",
-      "eipNo": 1013,
-      "title": "\"Hardfork Meta: Constantinople\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1753",
       "eipNo": "1753",
       "title": "Smart Contract Interface for Licences",
@@ -1758,31 +1366,10 @@
       "isERC": false
     },
     {
-      "id": "eip-141",
-      "eipNo": 141,
-      "title": "Designated invalid EVM instruction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1812",
       "eipNo": "1812",
       "title": "Ethereum Verifiable Claims",
       "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-712",
-      "eipNo": 712,
-      "title": "Typed structured data hashing and signing",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-1820",
-      "eipNo": "1820",
-      "title": "Pseudo-introspection Registry Contract",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -1814,13 +1401,6 @@
       "isERC": false
     },
     {
-      "id": "eip-1884",
-      "eipNo": "1884",
-      "title": "Repricing for trie-size-dependent opcodes",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1890",
       "eipNo": "1890",
       "title": "Commitment to Sustainable Ecosystem Funding",
@@ -1842,13 +1422,6 @@
       "isERC": false
     },
     {
-      "id": "eip-234",
-      "eipNo": 234,
-      "title": "Add `blockHash` to JSON-RPC filter options.",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-1900",
       "eipNo": "1900",
       "title": "dType - Decentralized Type System for EVM",
@@ -1866,13 +1439,6 @@
       "id": "eip-1921",
       "eipNo": "1921",
       "title": "dType Functions Extension",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-1900",
-      "eipNo": 1900,
-      "title": "dType - Decentralized Type System for EVM",
       "status": "Stagnant",
       "isERC": true
     },
@@ -1919,13 +1485,6 @@
       "isERC": false
     },
     {
-      "id": "eip-1109",
-      "eipNo": 1109,
-      "title": "PRECOMPILEDCALL opcode (Remove CALL costs for precompiled contracts)",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-1965",
       "eipNo": "1965",
       "title": "Method to check if a chainID is valid at a specific block Number",
@@ -1968,13 +1527,6 @@
       "isERC": false
     },
     {
-      "id": "eip-1352",
-      "eipNo": 1352,
-      "title": "Specify restricted address range for precompiles/system contracts",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-2009",
       "eipNo": "2009",
       "title": "Compliance Service",
@@ -2003,13 +1555,6 @@
       "isERC": true
     },
     {
-      "id": "eip-1996",
-      "eipNo": 1996,
-      "title": "Holdable Token",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-2019",
       "eipNo": "2019",
       "title": "Fundable Token",
@@ -2020,34 +1565,6 @@
       "id": "eip-2020",
       "eipNo": "2020",
       "title": "E-Money Standard Token",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-2009",
-      "eipNo": 2009,
-      "title": "Compliance Service",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-2018",
-      "eipNo": 2018,
-      "title": "Clearable Token",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-2019",
-      "eipNo": 2019,
-      "title": "Fundable Token",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-2021",
-      "eipNo": 2021,
-      "title": "Payoutable Token",
       "status": "Stagnant",
       "isERC": true
     },
@@ -2066,13 +1583,6 @@
       "isERC": false
     },
     {
-      "id": "eip-1890",
-      "eipNo": 1890,
-      "title": "Commitment to Sustainable Ecosystem Funding",
-      "status": "Withdrawn",
-      "isERC": false
-    },
-    {
       "id": "eip-2026",
       "eipNo": "2026",
       "title": "State Rent H - Fixed Prepayment for accounts",
@@ -2087,13 +1597,6 @@
       "isERC": false
     },
     {
-      "id": "eip-2028",
-      "eipNo": "2028",
-      "title": "Transaction data gas cost reduction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-2029",
       "eipNo": "2029",
       "title": "State Rent A - State counters contract",
@@ -2104,13 +1607,6 @@
       "id": "eip-2031",
       "eipNo": "2031",
       "title": "State Rent B - Net transaction counter",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-2029",
-      "eipNo": 2029,
-      "title": "State Rent A - State counters contract",
       "status": "Stagnant",
       "isERC": false
     },
@@ -2147,13 +1643,6 @@
       "eipNo": "2070",
       "title": "\"Hardfork Meta: Berlin\"",
       "status": "Withdrawn",
-      "isERC": false
-    },
-    {
-      "id": "eip-1679",
-      "eipNo": 1679,
-      "title": "\"Hardfork Meta: Istanbul\"",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -2197,20 +1686,6 @@
       "title": "dType Alias Extension - Decentralized Type System",
       "status": "Stagnant",
       "isERC": true
-    },
-    {
-      "id": "eip-2157",
-      "eipNo": 2157,
-      "title": "dType Storage Extension - Decentralized Type System for EVM",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-2200",
-      "eipNo": "2200",
-      "title": "Structured Definitions for Net Gas Metering",
-      "status": "Final",
-      "isERC": false
     },
     {
       "id": "eip-2228",
@@ -2284,14 +1759,14 @@
     },
     {
       "id": "eip-3670",
-      "eipNo": 3670,
+      "eipNo": "3670",
       "title": "EOF - Code Validation",
       "status": "Review",
       "isERC": false
     },
     {
       "id": "eip-4200",
-      "eipNo": 4200,
+      "eipNo": "4200",
       "title": "EOF - Static relative jumps",
       "status": "Review",
       "isERC": false
@@ -2312,7 +1787,7 @@
     },
     {
       "id": "eip-2929",
-      "eipNo": 2929,
+      "eipNo": "2929",
       "title": "Gas cost increases for state access opcodes",
       "status": "Final",
       "isERC": false
@@ -2332,13 +1807,6 @@
       "isERC": true
     },
     {
-      "id": "eip-2333",
-      "eipNo": 2333,
-      "title": "BLS12-381 Key Generation",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-2335",
       "eipNo": "2335",
       "title": "BLS12-381 Keystore",
@@ -2346,23 +1814,9 @@
       "isERC": true
     },
     {
-      "id": "eip-2334",
-      "eipNo": 2334,
-      "title": "BLS12-381 Deterministic Account Hierarchy",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-2364",
       "eipNo": "2364",
       "title": "\"eth/64: forkid-extended protocol handshake\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-2124",
-      "eipNo": 2124,
-      "title": "Fork identifier for chain compatibility checks",
       "status": "Final",
       "isERC": false
     },
@@ -2388,23 +1842,9 @@
       "isERC": true
     },
     {
-      "id": "eip-2335",
-      "eipNo": 2335,
-      "title": "BLS12-381 Keystore",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-2387",
       "eipNo": "2387",
       "title": "\"Hardfork Meta: Muir Glacier\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-2384",
-      "eipNo": 2384,
-      "title": "Muir Glacier Difficulty Bomb Delay",
       "status": "Final",
       "isERC": false
     },
@@ -2413,20 +1853,6 @@
       "eipNo": "2390",
       "title": "Geo-ENS",
       "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-1062",
-      "eipNo": 1062,
-      "title": "Formalize IPFS hash into ENS(Ethereum Name Service) resolver",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-1185",
-      "eipNo": 1185,
-      "title": "Storage of DNS Records in ENS",
-      "status": "Review",
       "isERC": true
     },
     {
@@ -2447,13 +1873,6 @@
       "id": "eip-2464",
       "eipNo": "2464",
       "title": "\"eth/65: transaction announcements and retrievals\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-2364",
-      "eipNo": 2364,
-      "title": "\"eth/64: forkid-extended protocol handshake\"",
       "status": "Final",
       "isERC": false
     },
@@ -2486,13 +1905,6 @@
       "isERC": false
     },
     {
-      "id": "eip-2464",
-      "eipNo": 2464,
-      "title": "\"eth/65: transaction announcements and retrievals\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-2488",
       "eipNo": "2488",
       "title": "Deprecate the CALLCODE opcode",
@@ -2521,30 +1933,9 @@
       "isERC": true
     },
     {
-      "id": "eip-1577",
-      "eipNo": 1577,
-      "title": "contenthash field for ENS",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-2525",
       "eipNo": "2525",
       "title": "ENSLogin",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-634",
-      "eipNo": 634,
-      "title": "Storage of text records in ENS",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-2304",
-      "eipNo": 2304,
-      "title": "Multichain address resolution for ENS",
       "status": "Stagnant",
       "isERC": true
     },
@@ -2566,13 +1957,6 @@
       "id": "eip-2539",
       "eipNo": "2539",
       "title": "BLS12-377 curve operations",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-2046",
-      "eipNo": 2046,
-      "title": "Reduced gas cost for static calls made to precompiles",
       "status": "Stagnant",
       "isERC": false
     },
@@ -2668,13 +2052,6 @@
       "isERC": false
     },
     {
-      "id": "eip-2565",
-      "eipNo": 2565,
-      "title": "ModExp Gas Cost",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-2677",
       "eipNo": "2677",
       "title": "Limit size of `initcode`",
@@ -2724,13 +2101,6 @@
       "isERC": false
     },
     {
-      "id": "eip-2718",
-      "eipNo": "2718",
-      "title": "Typed Transaction Envelope",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-2733",
       "eipNo": "2733",
       "title": "Transaction Package",
@@ -2760,13 +2130,6 @@
     },
     {
       "id": "eip-2771",
-      "eipNo": 2771,
-      "title": "Secure Protocol for Native Meta Transactions",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-2771",
       "eipNo": "2771",
       "title": "Secure Protocol for Native Meta Transactions",
       "status": "Final",
@@ -2784,13 +2147,6 @@
       "eipNo": "2786",
       "title": "Ethereum Provider Connect/Disconnect Events",
       "status": "Withdrawn",
-      "isERC": false
-    },
-    {
-      "id": "eip-2700",
-      "eipNo": 2700,
-      "title": "JavaScript Provider Event Emitter",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -2843,27 +2199,6 @@
       "isERC": false
     },
     {
-      "id": "eip-2584",
-      "eipNo": 2584,
-      "title": "Trie format transition with overlay trees",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-2929",
-      "eipNo": "2929",
-      "title": "Gas cost increases for state access opcodes",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-2930",
-      "eipNo": "2930",
-      "title": "Optional access lists",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-2935",
       "eipNo": "2935",
       "title": "Serve historical block hashes from state",
@@ -2896,13 +2231,6 @@
       "eipNo": "2942",
       "title": "EthPM URI Specification",
       "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-2678",
-      "eipNo": 2678,
-      "title": "Revised Ethereum Smart Contract Packaging Standard (EthPM v3)",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -2986,13 +2314,6 @@
       "id": "eip-3026",
       "eipNo": "3026",
       "title": "BW6-761 curve operations",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-2539",
-      "eipNo": 2539,
-      "title": "BLS12-377 curve operations",
       "status": "Stagnant",
       "isERC": false
     },
@@ -3193,13 +2514,6 @@
       "isERC": false
     },
     {
-      "id": "eip-3336",
-      "eipNo": 3336,
-      "title": "Paged memory allocation for the EVM",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-3338",
       "eipNo": "3338",
       "title": "Limit account nonce to 2^52",
@@ -3263,13 +2577,6 @@
       "isERC": false
     },
     {
-      "id": "eip-225",
-      "eipNo": 225,
-      "title": "Clique proof-of-authority consensus protocol",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-3440",
       "eipNo": "3440",
       "title": "ERC-721 Editions Standard",
@@ -3319,13 +2626,6 @@
       "isERC": false
     },
     {
-      "id": "eip-3508",
-      "eipNo": 3508,
-      "title": "Transaction Data Opcodes",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-3521",
       "eipNo": "3521",
       "title": "Reduce access list cost",
@@ -3340,13 +2640,6 @@
       "isERC": true
     },
     {
-      "id": "eip-3529",
-      "eipNo": "3529",
-      "title": "Reduction in refunds",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-3534",
       "eipNo": "3534",
       "title": "Restricted Chain Context Type Transactions",
@@ -3354,30 +2647,16 @@
       "isERC": false
     },
     {
-      "id": "eip-3540",
-      "eipNo": "3540",
-      "title": "EOF - EVM Object Format v1",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-3541",
-      "eipNo": 3541,
+      "eipNo": "3541",
       "title": "Reject new contract code starting with the 0xEF byte",
       "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-3860",
-      "eipNo": 3860,
+      "eipNo": "3860",
       "title": "Limit and meter initcode",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-3541",
-      "eipNo": "3541",
-      "title": "Reject new contract code starting with the 0xEF byte",
       "status": "Final",
       "isERC": false
     },
@@ -3443,13 +2722,6 @@
       "title": "CCIP Read—Secure offchain data retrieval",
       "status": "Final",
       "isERC": true
-    },
-    {
-      "id": "eip-3670",
-      "eipNo": "3670",
-      "title": "EOF - Code Validation",
-      "status": "Review",
-      "isERC": false
     },
     {
       "id": "eip-3675",
@@ -3529,32 +2801,11 @@
       "isERC": false
     },
     {
-      "id": "eip-3860",
-      "eipNo": "3860",
-      "title": "Limit and meter initcode",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-3978",
       "eipNo": "3978",
       "title": "Gas refunds on reverts",
       "status": "Stagnant",
       "isERC": false
-    },
-    {
-      "id": "eip-4200",
-      "eipNo": "4200",
-      "title": "EOF - Static relative jumps",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-4242",
-      "eipNo": "4242",
-      "title": "NFT Recursive Synthesis Asset Standard",
-      "status": "Draft",
-      "isERC": true
     },
     {
       "id": "eip-4337",
@@ -3565,7 +2816,7 @@
     },
     {
       "id": "eip-7562",
-      "eipNo": 7562,
+      "eipNo": "7562",
       "title": "Account Abstraction Validation Scope Rules",
       "status": "Draft",
       "isERC": true
@@ -3599,13 +2850,6 @@
       "isERC": true
     },
     {
-      "id": "eip-1328",
-      "eipNo": 1328,
-      "title": "WalletConnect URI Format",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-4393",
       "eipNo": "4393",
       "title": "Micropayments for NFTs and Multi Tokens",
@@ -3623,13 +2867,6 @@
       "id": "eip-4399",
       "eipNo": "4399",
       "title": "Supplant DIFFICULTY opcode with PREVRANDAO",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-3675",
-      "eipNo": 3675,
-      "title": "Upgrade consensus to Proof-of-Stake",
       "status": "Final",
       "isERC": false
     },
@@ -3718,30 +2955,9 @@
       "isERC": false
     },
     {
-      "id": "eip-2315",
-      "eipNo": 2315,
-      "title": "Simple Subroutines for the EVM",
-      "status": "Withdrawn",
-      "isERC": false
-    },
-    {
-      "id": "eip-3779",
-      "eipNo": 3779,
-      "title": "Safer Control Flow for the EVM",
-      "status": "Withdrawn",
-      "isERC": false
-    },
-    {
       "id": "eip-4626",
       "eipNo": "4626",
       "title": "Tokenized Vaults",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-2612",
-      "eipNo": 2612,
-      "title": "Permit Extension for EIP-20 Signed Approvals",
       "status": "Final",
       "isERC": true
     },
@@ -3852,7 +3068,7 @@
     },
     {
       "id": "eip-4895",
-      "eipNo": 4895,
+      "eipNo": "4895",
       "title": "Beacon chain push withdrawals as operations",
       "status": "Final",
       "isERC": false
@@ -3893,13 +3109,6 @@
       "isERC": true
     },
     {
-      "id": "eip-4895",
-      "eipNo": "4895",
-      "title": "Beacon chain push withdrawals as operations",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-4906",
       "eipNo": "4906",
       "title": "EIP-721 Metadata Update Extension",
@@ -3931,13 +3140,6 @@
       "id": "eip-4938",
       "eipNo": "4938",
       "title": "\"eth/67 - Removal of GetNodeData\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-2481",
-      "eipNo": 2481,
-      "title": "eth/66 request identifier",
       "status": "Final",
       "isERC": false
     },
@@ -4005,20 +3207,6 @@
       "isERC": false
     },
     {
-      "id": "eip-3074",
-      "eipNo": 3074,
-      "title": "AUTH and AUTHCALL opcodes",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-3607",
-      "eipNo": 3607,
-      "title": "Reject transactions from senders with deployed code",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-5005",
       "eipNo": "5005",
       "title": "Zodiac Modular Accounts",
@@ -4082,13 +3270,6 @@
       "isERC": true
     },
     {
-      "id": "eip-4906",
-      "eipNo": 4906,
-      "title": "EIP-721 Metadata Update Extension",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-5058",
       "eipNo": "5058",
       "title": "Lockable Non-Fungible Tokens",
@@ -4110,13 +3291,6 @@
       "isERC": false
     },
     {
-      "id": "eip-1",
-      "eipNo": 1,
-      "title": "EIP Purpose and Guidelines",
-      "status": "Living",
-      "isERC": false
-    },
-    {
       "id": "eip-5081",
       "eipNo": "5081",
       "title": "Expirable Transaction",
@@ -4127,13 +3301,6 @@
       "id": "eip-5094",
       "eipNo": "5094",
       "title": "URL Format for Ethereum Network Switching",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-831",
-      "eipNo": 831,
-      "title": "URI Format for Ethereum",
       "status": "Stagnant",
       "isERC": true
     },
@@ -4187,13 +3354,6 @@
       "isERC": true
     },
     {
-      "id": "eip-4626",
-      "eipNo": 4626,
-      "title": "Tokenized Vaults",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-5164",
       "eipNo": "5164",
       "title": "Cross-Chain Execution",
@@ -4204,13 +3364,6 @@
       "id": "eip-5169",
       "eipNo": "5169",
       "title": "Client Script URI for Token Contracts",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-777",
-      "eipNo": 777,
-      "title": "Token Standard",
       "status": "Final",
       "isERC": true
     },
@@ -4292,13 +3445,6 @@
       "isERC": true
     },
     {
-      "id": "eip-5114",
-      "eipNo": 5114,
-      "title": "Soulbound Badge",
-      "status": "Last Call",
-      "isERC": true
-    },
-    {
       "id": "eip-5267",
       "eipNo": "5267",
       "title": "Retrieval of EIP-712 domain",
@@ -4306,15 +3452,8 @@
       "isERC": true
     },
     {
-      "id": "eip-5269",
-      "eipNo": "5269",
-      "title": "ERC Detection and Discovery",
-      "status": "Review",
-      "isERC": true
-    },
-    {
       "id": "eip-5750",
-      "eipNo": 5750,
+      "eipNo": "5750",
       "title": "General Extensibility for Method Behaviors",
       "status": "Final",
       "isERC": true
@@ -4335,7 +3474,7 @@
     },
     {
       "id": "eip-5568",
-      "eipNo": 5568,
+      "eipNo": "5568",
       "title": "Well-Known Format for Required Actions",
       "status": "Review",
       "isERC": true
@@ -4397,20 +3536,6 @@
       "isERC": true
     },
     {
-      "id": "eip-5450",
-      "eipNo": "5450",
-      "title": "EOF - Stack Validation",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-4750",
-      "eipNo": 4750,
-      "title": "EOF - Functions",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-5453",
       "eipNo": "5453",
       "title": "Endorsement - Permit for Any Functions",
@@ -4439,13 +3564,6 @@
       "isERC": true
     },
     {
-      "id": "eip-5247",
-      "eipNo": 5247,
-      "title": "Smart Contract Executable Proposal Interface",
-      "status": "Review",
-      "isERC": true
-    },
-    {
       "id": "eip-5489",
       "eipNo": "5489",
       "title": "NFT Hyperlink Extension",
@@ -4464,20 +3582,6 @@
       "eipNo": "5501",
       "title": "Rental & Delegation NFT - EIP-721 Extension",
       "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-4400",
-      "eipNo": 4400,
-      "title": "EIP-721 Consumable Extension",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-4907",
-      "eipNo": 4907,
-      "title": "Rental NFT, an Extension of EIP-721",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -4537,13 +3641,6 @@
       "isERC": true
     },
     {
-      "id": "eip-5218",
-      "eipNo": 5218,
-      "title": "NFT Rights Management",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-5559",
       "eipNo": "5559",
       "title": "\"Cross Chain Write Deferral Protocol\"",
@@ -4565,13 +3662,6 @@
       "isERC": true
     },
     {
-      "id": "eip-5568",
-      "eipNo": "5568",
-      "title": "Well-Known Format for Required Actions",
-      "status": "Review",
-      "isERC": true
-    },
-    {
       "id": "eip-5570",
       "eipNo": "5570",
       "title": "Digital Receipt Non-Fungible Tokens",
@@ -4583,13 +3673,6 @@
       "eipNo": "5573",
       "title": "Sign-In with Ethereum Capabilities, ReCaps",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-4361",
-      "eipNo": 4361,
-      "title": "Sign-In with Ethereum",
-      "status": "Review",
       "isERC": true
     },
     {
@@ -4656,13 +3739,6 @@
       "isERC": true
     },
     {
-      "id": "eip-2981",
-      "eipNo": 2981,
-      "title": "NFT Royalty Standard",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-5639",
       "eipNo": "5639",
       "title": "Delegation Registry",
@@ -4726,27 +3802,6 @@
       "isERC": true
     },
     {
-      "id": "eip-3525",
-      "eipNo": 3525,
-      "title": "Semi-Fungible Token",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-5192",
-      "eipNo": 5192,
-      "title": "Minimal Soulbound NFTs",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-5484",
-      "eipNo": 5484,
-      "title": "Consensual Soulbound Tokens",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-5732",
       "eipNo": "5732",
       "title": "Commit Interface",
@@ -4766,13 +3821,6 @@
       "title": "The 'window.evmproviders' object",
       "status": "Final",
       "isERC": false
-    },
-    {
-      "id": "eip-5750",
-      "eipNo": "5750",
-      "title": "General Extensibility for Method Behaviors",
-      "status": "Final",
-      "isERC": true
     },
     {
       "id": "eip-5753",
@@ -4817,13 +3865,6 @@
       "isERC": false
     },
     {
-      "id": "eip-4938",
-      "eipNo": 4938,
-      "title": "\"eth/67 - Removal of GetNodeData\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-5805",
       "eipNo": "5805",
       "title": "Voting with delegation",
@@ -4832,7 +3873,7 @@
     },
     {
       "id": "eip-6372",
-      "eipNo": 6372,
+      "eipNo": "6372",
       "title": "Contract clock",
       "status": "Review",
       "isERC": true
@@ -4866,27 +3907,6 @@
       "isERC": true
     },
     {
-      "id": "eip-1167",
-      "eipNo": 1167,
-      "title": "Minimal Proxy Contract",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-1967",
-      "eipNo": 1967,
-      "title": "Proxy Storage Slots",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-3475",
-      "eipNo": 3475,
-      "title": "Abstract Storage Bonds",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-5883",
       "eipNo": "5883",
       "title": "Token Transfer by Social Recovery",
@@ -4909,7 +3929,7 @@
     },
     {
       "id": "eip-7523",
-      "eipNo": 7523,
+      "eipNo": "7523",
       "title": "Empty accounts deprecation",
       "status": "Last Call",
       "isERC": false
@@ -4933,13 +3953,6 @@
       "eipNo": "6046",
       "title": "Replace SELFDESTRUCT with DEACTIVATE",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-2681",
-      "eipNo": 2681,
-      "title": "Limit account nonce to 2^64-1",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -5007,7 +4020,7 @@
     },
     {
       "id": "eip-7685",
-      "eipNo": 7685,
+      "eipNo": "7685",
       "title": "General purpose execution layer requests",
       "status": "Last Call",
       "isERC": false
@@ -5069,23 +4082,9 @@
       "isERC": false
     },
     {
-      "id": "eip-6188",
-      "eipNo": 6188,
-      "title": "Nonce Cap",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-6190",
       "eipNo": "6190",
       "title": "Verkle-compatible SELFDESTRUCT",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-6189",
-      "eipNo": 6189,
-      "title": "Alias Contracts",
       "status": "Stagnant",
       "isERC": false
     },
@@ -5100,20 +4099,6 @@
       "id": "eip-6220",
       "eipNo": "6220",
       "title": "Composable NFTs utilizing Equippable Parts",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-5773",
-      "eipNo": 5773,
-      "title": "Context-Dependent Multi-Asset Tokens",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-6059",
-      "eipNo": 6059,
-      "title": "Parent-Governed Nestable Non-Fungible Tokens",
       "status": "Final",
       "isERC": true
     },
@@ -5189,15 +4174,8 @@
     },
     {
       "id": "eip-6617",
-      "eipNo": 6617,
+      "eipNo": "6617",
       "title": "Bit Based Permission",
-      "status": "Review",
-      "isERC": true
-    },
-    {
-      "id": "eip-6372",
-      "eipNo": "6372",
-      "title": "Contract clock",
       "status": "Review",
       "isERC": true
     },
@@ -5223,29 +4201,15 @@
       "isERC": false
     },
     {
-      "id": "eip-4844",
-      "eipNo": 4844,
-      "title": "Shard Blob Transactions",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-5793",
-      "eipNo": 5793,
-      "title": "eth/68 - Add tx type to tx announcement",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7495",
-      "eipNo": 7495,
+      "eipNo": "7495",
       "title": "SSZ StableContainer",
       "status": "Review",
       "isERC": false
     },
     {
       "id": "eip-7702",
-      "eipNo": 7702,
+      "eipNo": "7702",
       "title": "Set EOA account code",
       "status": "Last Call",
       "isERC": false
@@ -5268,13 +4232,6 @@
       "id": "eip-6465",
       "eipNo": "6465",
       "title": "SSZ withdrawals root",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-6404",
-      "eipNo": 6404,
-      "title": "SSZ transactions",
       "status": "Draft",
       "isERC": false
     },
@@ -5307,13 +4264,6 @@
       "isERC": false
     },
     {
-      "id": "eip-6466",
-      "eipNo": 6466,
-      "title": "SSZ receipts",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-6506",
       "eipNo": "6506",
       "title": "P2P Escrowed Governance Incentives",
@@ -5324,13 +4274,6 @@
       "id": "eip-6538",
       "eipNo": "6538",
       "title": "Stealth Meta-Address Registry",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-5564",
-      "eipNo": 5564,
-      "title": "Stealth Addresses",
       "status": "Final",
       "isERC": true
     },
@@ -5356,31 +4299,10 @@
       "isERC": true
     },
     {
-      "id": "eip-6617",
-      "eipNo": "6617",
-      "title": "Bit Based Permission",
-      "status": "Review",
-      "isERC": true
-    },
-    {
       "id": "eip-6662",
       "eipNo": "6662",
       "title": "AA Account Metadata For Authentication",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-4337",
-      "eipNo": 4337,
-      "title": "Account Abstraction Using Alt Mempool",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-4804",
-      "eipNo": 4804,
-      "title": "Web3 URL to EVM Call Message Translation",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -5395,13 +4317,6 @@
       "eipNo": "6682",
       "title": "NFT Flashloans",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-3156",
-      "eipNo": 3156,
-      "title": "Flash Loans",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -5468,13 +4383,6 @@
       "isERC": false
     },
     {
-      "id": "eip-6780",
-      "eipNo": 6780,
-      "title": "SELFDESTRUCT only in same transaction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-6806",
       "eipNo": "6806",
       "title": "ERC-721 Holding Time Tracking",
@@ -5513,13 +4421,6 @@
       "id": "eip-6821",
       "eipNo": "6821",
       "title": "Support ENS Name for Web3 URL",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-3770",
-      "eipNo": 3770,
-      "title": "Chain-specific addresses",
       "status": "Draft",
       "isERC": true
     },
@@ -5615,30 +4516,9 @@
       "isERC": true
     },
     {
-      "id": "eip-5219",
-      "eipNo": 5219,
-      "title": "Contract Resource Requests",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-6953",
       "eipNo": "6953",
       "title": "Network Upgrade Activation Triggers",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-2982",
-      "eipNo": 2982,
-      "title": "Serenity Phase 0",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-6122",
-      "eipNo": 6122,
-      "title": "Forkid checks based on timestamps",
       "status": "Final",
       "isERC": false
     },
@@ -5675,13 +4555,6 @@
       "eipNo": "6981",
       "title": "Reserved Ownership Accounts",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-6492",
-      "eipNo": 6492,
-      "title": "Signature Validation for Predeploy Contracts",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -5783,13 +4656,6 @@
       "isERC": true
     },
     {
-      "id": "eip-6860",
-      "eipNo": 6860,
-      "title": "Web3 URL to EVM Call Message Translation",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7092",
       "eipNo": "7092",
       "title": "Financial Bonds",
@@ -5874,13 +4740,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7002",
-      "eipNo": 7002,
-      "title": "Execution layer triggerable withdrawals",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7254",
       "eipNo": "7254",
       "title": "Token Revenue Sharing",
@@ -5927,13 +4786,6 @@
       "eipNo": "7303",
       "title": "Token-Controlled Token Circulation",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-5679",
-      "eipNo": 5679,
-      "title": "Token Minting and Burning",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -6021,13 +4873,6 @@
       "isERC": true
     },
     {
-      "id": "eip-223",
-      "eipNo": 223,
-      "title": "Token with transaction handling model",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-7425",
       "eipNo": "7425",
       "title": "Tokenized Reserve",
@@ -6078,17 +4923,10 @@
     },
     {
       "id": "eip-7579",
-      "eipNo": 7579,
+      "eipNo": "7579",
       "title": "Minimal Modular Smart Accounts",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-7495",
-      "eipNo": "7495",
-      "title": "SSZ StableContainer",
-      "status": "Review",
-      "isERC": false
     },
     {
       "id": "eip-7496",
@@ -6113,7 +4951,7 @@
     },
     {
       "id": "eip-7708",
-      "eipNo": 7708,
+      "eipNo": "7708",
       "title": "ETH transfers emit a log",
       "status": "Draft",
       "isERC": false
@@ -6161,13 +4999,6 @@
       "isERC": true
     },
     {
-      "id": "eip-3855",
-      "eipNo": 3855,
-      "title": "PUSH0 instruction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7512",
       "eipNo": "7512",
       "title": "Onchain Representation for Audits",
@@ -6196,24 +5027,10 @@
       "isERC": false
     },
     {
-      "id": "eip-3198",
-      "eipNo": 3198,
-      "title": "BASEFEE opcode",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7517",
       "eipNo": "7517",
       "title": "Content Consent for AI/ML Data Mining",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7053",
-      "eipNo": 7053,
-      "title": "Interoperable Digital Media Indexing",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -6245,13 +5062,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7523",
-      "eipNo": "7523",
-      "title": "Empty accounts deprecation",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7524",
       "eipNo": "7524",
       "title": "PLUME Signature in Wallets",
@@ -6280,13 +5090,6 @@
       "isERC": true
     },
     {
-      "id": "eip-1191",
-      "eipNo": 1191,
-      "title": "Add chain id to mixed-case checksum address encoding",
-      "status": "Last Call",
-      "isERC": true
-    },
-    {
       "id": "eip-7531",
       "eipNo": "7531",
       "title": "Staked ERC-721 Ownership Recognition",
@@ -6308,20 +5111,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7528",
-      "eipNo": 7528,
-      "title": "ETH (Native Asset) Address Convention",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-7536",
-      "eipNo": "7536",
-      "title": "Multi-edition NFT Distribution",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7538",
       "eipNo": "7538",
       "title": "Multiplicative Tokens",
@@ -6337,7 +5126,7 @@
     },
     {
       "id": "eip-7575",
-      "eipNo": 7575,
+      "eipNo": "7575",
       "title": "Multi-Asset ERC-4626 Vaults",
       "status": "Final",
       "isERC": true
@@ -6351,7 +5140,7 @@
     },
     {
       "id": "eip-7642",
-      "eipNo": 7642,
+      "eipNo": "7642",
       "title": "eth/69 - Drop pre-merge fields",
       "status": "Stagnant",
       "isERC": false
@@ -6375,13 +5164,6 @@
       "eipNo": "7546",
       "title": "Upgradeable Clone for Scalable Contracts",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7201",
-      "eipNo": 7201,
-      "title": "Namespaced Storage Layout",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -6427,13 +5209,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7562",
-      "eipNo": "7562",
-      "title": "Account Abstraction Validation Scope Rules",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7564",
       "eipNo": "7564",
       "title": "Contract wallet management NFT",
@@ -6462,86 +5237,9 @@
       "isERC": false
     },
     {
-      "id": "eip-2070",
-      "eipNo": 2070,
-      "title": "\"Hardfork Meta: Berlin\"",
-      "status": "Withdrawn",
-      "isERC": false
-    },
-    {
-      "id": "eip-2387",
-      "eipNo": 2387,
-      "title": "\"Hardfork Meta: Muir Glacier\"",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-6953",
-      "eipNo": 6953,
-      "title": "Network Upgrade Activation Triggers",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7569",
       "eipNo": "7569",
       "title": "Hardfork Meta - Dencun",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-1153",
-      "eipNo": 1153,
-      "title": "Transient storage opcodes",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-4788",
-      "eipNo": 4788,
-      "title": "Beacon block root in the EVM",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-5656",
-      "eipNo": 5656,
-      "title": "MCOPY - Memory copying instruction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7044",
-      "eipNo": 7044,
-      "title": "Perpetually Valid Signed Voluntary Exits",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7045",
-      "eipNo": 7045,
-      "title": "Increase max attestation inclusion slot",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7514",
-      "eipNo": 7514,
-      "title": "Add Max Epoch Churn Limit",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7516",
-      "eipNo": 7516,
-      "title": "BLOBBASEFEE instruction",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7568",
-      "eipNo": 7568,
-      "title": "Hardfork Meta Backfill - Berlin to Shapella",
       "status": "Final",
       "isERC": false
     },
@@ -6560,13 +5258,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7575",
-      "eipNo": "7575",
-      "title": "Multi-Asset ERC-4626 Vaults",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-7577",
       "eipNo": "7577",
       "title": "Versioning Scheme for EIPs",
@@ -6578,13 +5269,6 @@
       "eipNo": "7578",
       "title": "Physical Asset Redemption",
       "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-7579",
-      "eipNo": "7579",
-      "title": "Minimal Modular Smart Accounts",
-      "status": "Draft",
       "isERC": true
     },
     {
@@ -6679,13 +5363,6 @@
       "isERC": true
     },
     {
-      "id": "eip-3009",
-      "eipNo": 3009,
-      "title": "Transfer With Authorization",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-7600",
       "eipNo": "7600",
       "title": "Hardfork Meta - Pectra",
@@ -6693,57 +5370,22 @@
       "isERC": false
     },
     {
-      "id": "eip-2537",
-      "eipNo": 2537,
-      "title": "Precompile for BLS12-381 curve operations",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
-      "id": "eip-2935",
-      "eipNo": 2935,
-      "title": "Serve historical block hashes from state",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
-      "id": "eip-6110",
-      "eipNo": 6110,
-      "title": "Supply validator deposits on chain",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
-      "id": "eip-7251",
-      "eipNo": 7251,
-      "title": "Increase the MAX_EFFECTIVE_BALANCE",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
-      "id": "eip-7549",
-      "eipNo": 7549,
-      "title": "Move committee index outside Attestation",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7623",
-      "eipNo": 7623,
+      "eipNo": "7623",
       "title": "Increase calldata cost",
       "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-7691",
-      "eipNo": 7691,
+      "eipNo": "7691",
       "title": "Blob throughput increase",
       "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-7840",
-      "eipNo": 7840,
+      "eipNo": "7840",
       "title": "Add blob schedule to EL config files",
       "status": "Last Call",
       "isERC": false
@@ -6763,31 +5405,10 @@
       "isERC": true
     },
     {
-      "id": "eip-2098",
-      "eipNo": 2098,
-      "title": "Compact Signature Representation",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-5216",
-      "eipNo": 5216,
-      "title": "ERC-1155 Allowance Extension",
-      "status": "Last Call",
-      "isERC": true
-    },
-    {
       "id": "eip-7607",
       "eipNo": "7607",
       "title": "Hardfork Meta - Fusaka",
       "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7600",
-      "eipNo": 7600,
-      "title": "Hardfork Meta - Pectra",
-      "status": "Last Call",
       "isERC": false
     },
     {
@@ -6812,27 +5433,6 @@
       "isERC": false
     },
     {
-      "id": "eip-4762",
-      "eipNo": 4762,
-      "title": "Statelessness gas cost changes",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-6800",
-      "eipNo": 6800,
-      "title": "Ethereum state using a unified verkle tree",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7545",
-      "eipNo": 7545,
-      "title": "Verkle proof verification precompile",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-7613",
       "eipNo": "7613",
       "title": "Puppet Proxy Contract",
@@ -6847,23 +5447,9 @@
       "isERC": true
     },
     {
-      "id": "eip-7616",
-      "eipNo": "7616",
-      "title": "Hybrid Fungible Token",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7617",
       "eipNo": "7617",
       "title": "Chunk support for ERC-5219 mode in Web3 URL",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-6944",
-      "eipNo": 6944,
-      "title": "ERC-5219 Resolve Mode",
       "status": "Draft",
       "isERC": true
     },
@@ -6882,30 +5468,9 @@
       "isERC": false
     },
     {
-      "id": "eip-684",
-      "eipNo": 684,
-      "title": "Revert creation in case of collision",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7621",
       "eipNo": "7621",
       "title": "Basket Token",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7623",
-      "eipNo": "7623",
-      "title": "Increase calldata cost",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
-      "id": "eip-7625",
-      "eipNo": "7625",
-      "title": "Smart Contract Identifiers and Metadata Extension",
       "status": "Draft",
       "isERC": true
     },
@@ -6952,13 +5517,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7635",
-      "eipNo": "7635",
-      "title": "Multi-Fungible Token",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7636",
       "eipNo": "7636",
       "title": "Extension of EIP-778 for \"client\" ENR Entry",
@@ -6994,13 +5552,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7642",
-      "eipNo": "7642",
-      "title": "eth/69 - Drop pre-merge fields",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-7643",
       "eipNo": "7643",
       "title": "History accumulator for pre-PoS data",
@@ -7020,13 +5571,6 @@
       "title": "Alias ORIGIN to SENDER",
       "status": "Stagnant",
       "isERC": false
-    },
-    {
-      "id": "eip-7646",
-      "eipNo": "7646",
-      "title": "Metadata Management for NFTs",
-      "status": "Draft",
-      "isERC": true
     },
     {
       "id": "eip-7649",
@@ -7064,13 +5608,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7632",
-      "eipNo": 7632,
-      "title": "Interfaces for Named Token",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7654",
       "eipNo": "7654",
       "title": "Request Method Types",
@@ -7078,30 +5615,9 @@
       "isERC": true
     },
     {
-      "id": "eip-7655",
-      "eipNo": "7655",
-      "title": "ERC-5189 Operation Receipts",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-5189",
-      "eipNo": 5189,
-      "title": "Account Abstraction via Endorsed Operations",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7656",
       "eipNo": "7656",
       "title": "Generalized Contract-Linked Services",
-      "status": "Review",
-      "isERC": true
-    },
-    {
-      "id": "eip-6551",
-      "eipNo": 6551,
-      "title": "Non-fungible Token Bound Accounts",
       "status": "Review",
       "isERC": true
     },
@@ -7118,13 +5634,6 @@
       "title": "Light client data backfill",
       "status": "Stagnant",
       "isERC": false
-    },
-    {
-      "id": "eip-7660",
-      "eipNo": "7660",
-      "title": "Release tokens on predefined periods",
-      "status": "Draft",
-      "isERC": true
     },
     {
       "id": "eip-7661",
@@ -7197,31 +5706,10 @@
       "isERC": false
     },
     {
-      "id": "eip-4803",
-      "eipNo": 4803,
-      "title": "Limit transaction gas to a maximum of 2^63-1",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-7610",
-      "eipNo": 7610,
-      "title": "Revert creation in case of non-empty storage",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7676",
       "eipNo": "7676",
       "title": "EOF - Prepare for Address Space Extension",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7069",
-      "eipNo": 7069,
-      "title": "Revamped CALL instructions",
-      "status": "Review",
       "isERC": false
     },
     {
@@ -7232,23 +5720,9 @@
       "isERC": true
     },
     {
-      "id": "eip-5792",
-      "eipNo": 5792,
-      "title": "Wallet Call API",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-7679",
       "eipNo": "7679",
       "title": "UserOperation Builder",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7680",
-      "eipNo": "7680",
-      "title": "Valued Tokens with Layered Liquidity",
       "status": "Draft",
       "isERC": true
     },
@@ -7281,13 +5755,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7685",
-      "eipNo": "7685",
-      "title": "General purpose execution layer requests",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7686",
       "eipNo": "7686",
       "title": "Linear EVM memory limits",
@@ -7302,32 +5769,11 @@
       "isERC": false
     },
     {
-      "id": "eip-7569",
-      "eipNo": 7569,
-      "title": "Hardfork Meta - Dencun",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7689",
-      "eipNo": "7689",
-      "title": "Smart Blobs",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7690",
       "eipNo": "7690",
       "title": "Union Lock",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-7691",
-      "eipNo": "7691",
-      "title": "Blob throughput increase",
-      "status": "Last Call",
-      "isERC": false
     },
     {
       "id": "eip-7692",
@@ -7337,36 +5783,8 @@
       "isERC": false
     },
     {
-      "id": "eip-663",
-      "eipNo": 663,
-      "title": "SWAPN, DUPN and EXCHANGE instructions",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-6206",
-      "eipNo": 6206,
-      "title": "EOF - JUMPF and non-returning functions",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-7480",
-      "eipNo": 7480,
-      "title": "EOF - Data section access instructions",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-7620",
-      "eipNo": 7620,
-      "title": "EOF Contract Creation",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-7698",
-      "eipNo": 7698,
+      "eipNo": "7698",
       "title": "EOF - Creation transaction",
       "status": "Review",
       "isERC": false
@@ -7379,15 +5797,8 @@
       "isERC": true
     },
     {
-      "id": "eip-3668",
-      "eipNo": 3668,
-      "title": "CCIP Read—Secure offchain data retrieval",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-7700",
-      "eipNo": 7700,
+      "eipNo": "7700",
       "title": "Cross-chain Storage Router Protocol",
       "status": "Draft",
       "isERC": true
@@ -7400,30 +5811,9 @@
       "isERC": true
     },
     {
-      "id": "eip-7697",
-      "eipNo": "7697",
-      "title": "AUTHCREATE opcode",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7698",
-      "eipNo": "7698",
-      "title": "EOF - Creation transaction",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-7699",
       "eipNo": "7699",
       "title": "ERC-20 Transfer Reference Extension",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7700",
-      "eipNo": "7700",
-      "title": "Cross-chain Storage Router Protocol",
       "status": "Draft",
       "isERC": true
     },
@@ -7432,13 +5822,6 @@
       "eipNo": "7701",
       "title": "Native Account Abstraction with EOF",
       "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7702",
-      "eipNo": "7702",
-      "title": "Set EOA account code",
-      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7477,13 +5860,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7708",
-      "eipNo": "7708",
-      "title": "ETH transfers emit a log",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-7709",
       "eipNo": "7709",
       "title": "Read BLOCKHASH from storage and update cost",
@@ -7519,32 +5895,11 @@
       "isERC": true
     },
     {
-      "id": "eip-7679",
-      "eipNo": 7679,
-      "title": "UserOperation Builder",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7710",
-      "eipNo": 7710,
-      "title": "Smart Contract Delegation",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7716",
       "eipNo": "7716",
       "title": "Anti-correlation attestation penalties",
       "status": "Stagnant",
       "isERC": false
-    },
-    {
-      "id": "eip-7717",
-      "eipNo": "7717",
-      "title": "Deterministic AA wallet",
-      "status": "Draft",
-      "isERC": true
     },
     {
       "id": "eip-7718",
@@ -7557,20 +5912,6 @@
       "id": "eip-7719",
       "eipNo": "7719",
       "title": "P2P History Network",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7643",
-      "eipNo": 7643,
-      "title": "History accumulator for pre-PoS data",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7718",
-      "eipNo": 7718,
-      "title": "Portal Wire Protocol a framework for discv5",
       "status": "Draft",
       "isERC": false
     },
@@ -7631,13 +5972,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7731",
-      "eipNo": "7731",
-      "title": "Vulnerability and Exposure Identifier",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7732",
       "eipNo": "7732",
       "title": "Enshrined Proposer-Builder Separation",
@@ -7670,13 +6004,6 @@
       "eipNo": "7739",
       "title": "Readable Typed Signatures for Smart Accounts",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-5267",
-      "eipNo": 5267,
-      "title": "Retrieval of EIP-712 domain",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -7716,7 +6043,7 @@
     },
     {
       "id": "eip-7916",
-      "eipNo": 7916,
+      "eipNo": "7916",
       "title": "SSZ ProgressiveList",
       "status": "Draft",
       "isERC": false
@@ -7732,13 +6059,6 @@
       "id": "eip-7748",
       "eipNo": "7748",
       "title": "State conversion to Verkle Tree",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7612",
-      "eipNo": 7612,
-      "title": "Verkle state transition via an overlay tree",
       "status": "Draft",
       "isERC": false
     },
@@ -7771,13 +6091,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7753",
-      "eipNo": "7753",
-      "title": "Algorithmically generated NFT",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7754",
       "eipNo": "7754",
       "title": "Tamperproof Web Immutable Transaction (TWIT)",
@@ -7789,13 +6102,6 @@
       "eipNo": "7756",
       "title": "EOF/EVM Trace Specification",
       "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-3155",
-      "eipNo": 3155,
-      "title": "EVM trace specification",
-      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7823,13 +6129,6 @@
       "id": "eip-7761",
       "eipNo": "7761",
       "title": "EXTCODETYPE instruction",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-7692",
-      "eipNo": 7692,
-      "title": "EVM Object Format (EOFv1) Meta",
       "status": "Review",
       "isERC": false
     },
@@ -7911,20 +6210,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7607",
-      "eipNo": 7607,
-      "title": "Hardfork Meta - Fusaka",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7723",
-      "eipNo": 7723,
-      "title": "Network Upgrade Inclusion Stages",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7774",
       "eipNo": "7774",
       "title": "Cache invalidation in ERC-5219 mode Web3 URL",
@@ -7981,13 +6266,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7778",
-      "eipNo": 7778,
-      "title": "Prevent Block Gas Smuggling",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-7783",
       "eipNo": "7783",
       "title": "Add Controlled Gas Limit Increase Strategy",
@@ -8030,23 +6308,9 @@
       "isERC": false
     },
     {
-      "id": "eip-7742",
-      "eipNo": 7742,
-      "title": "Uncouple blob count between CL and EL",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-7790",
       "eipNo": "7790",
       "title": "Controlled Gas Limit Increase Guidelines",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7783",
-      "eipNo": 7783,
-      "title": "Add Controlled Gas Limit Increase Strategy",
       "status": "Draft",
       "isERC": false
     },
@@ -8098,13 +6362,6 @@
       "title": "Double speed for hash_tree_root",
       "status": "Draft",
       "isERC": false
-    },
-    {
-      "id": "eip-7798",
-      "eipNo": "7798",
-      "title": "Tap to Pay",
-      "status": "Draft",
-      "isERC": true
     },
     {
       "id": "eip-7799",
@@ -8159,27 +6416,6 @@
       "id": "eip-7807",
       "eipNo": "7807",
       "title": "SSZ execution blocks",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-6465",
-      "eipNo": 6465,
-      "title": "SSZ withdrawals root",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7706",
-      "eipNo": 7706,
-      "title": "Separate gas type for calldata",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7799",
-      "eipNo": 7799,
-      "title": "System logs",
       "status": "Draft",
       "isERC": false
     },
@@ -8303,13 +6539,6 @@
       "isERC": true
     },
     {
-      "id": "eip-2470",
-      "eipNo": 2470,
-      "title": "Singleton Factory",
-      "status": "Stagnant",
-      "isERC": true
-    },
-    {
       "id": "eip-7827",
       "eipNo": "7827",
       "title": "JSON Smart Contract with Value Version Control",
@@ -8320,13 +6549,6 @@
       "id": "eip-7828",
       "eipNo": "7828",
       "title": "Chain-specific addresses using ENS",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7785",
-      "eipNo": 7785,
-      "title": "Onchain registration of chain identifiers",
       "status": "Draft",
       "isERC": true
     },
@@ -8408,30 +6630,9 @@
       "isERC": false
     },
     {
-      "id": "eip-7840",
-      "eipNo": "7840",
-      "title": "Add blob schedule to EL config files",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7841",
       "eipNo": "7841",
       "title": "Cross-chain Message Format and Mailbox",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7842",
-      "eipNo": "7842",
-      "title": "State Channel Data Types & Interfaces",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7824",
-      "eipNo": 7824,
-      "title": "State Channels Framework",
       "status": "Draft",
       "isERC": true
     },
@@ -8485,20 +6686,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7852",
-      "eipNo": "7852",
-      "title": "Opcodes Per Second",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7853",
-      "eipNo": "7853",
-      "title": "Social SBT",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7854",
       "eipNo": "7854",
       "title": "Verification-independent Cross-Chain Messaging",
@@ -8530,13 +6717,6 @@
       "id": "eip-7858",
       "eipNo": "7858",
       "title": "Expirable NFTs and SBTs",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7859",
-      "eipNo": "7859",
-      "title": "AgentNFT Extension for ERC721",
       "status": "Draft",
       "isERC": true
     },
@@ -8639,13 +6819,6 @@
       "isERC": false
     },
     {
-      "id": "eip-6",
-      "eipNo": 6,
-      "title": "Renaming SUICIDE opcode",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7878",
       "eipNo": "7878",
       "title": "Bequeathable Contracts",
@@ -8667,13 +6840,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7761",
-      "eipNo": 7761,
-      "title": "EXTCODETYPE instruction",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-7881",
       "eipNo": "7881",
       "title": "Increase Gas Utilization Target",
@@ -8684,13 +6850,6 @@
       "id": "eip-7882",
       "eipNo": "7882",
       "title": "Wallet Call Simulation API",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7836",
-      "eipNo": 7836,
-      "title": "Wallet Call Preparation API",
       "status": "Draft",
       "isERC": true
     },
@@ -8730,13 +6889,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7540",
-      "eipNo": 7540,
-      "title": "Asynchronous ERC-4626 Tokenized Vaults",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-7888",
       "eipNo": "7888",
       "title": "Crosschain Broadcaster",
@@ -8762,13 +6914,6 @@
       "eipNo": "7891",
       "title": "Splitting and Merging of NFTs",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-6150",
-      "eipNo": 6150,
-      "title": "Hierarchical NFTs",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -8814,13 +6959,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7656",
-      "eipNo": 7656,
-      "title": "Generalized Contract-Linked Services",
-      "status": "Review",
-      "isERC": true
-    },
-    {
       "id": "eip-7898",
       "eipNo": "7898",
       "title": "Uncouple execution payload from beacon block",
@@ -8859,13 +6997,6 @@
       "id": "eip-7904",
       "eipNo": "7904",
       "title": "General Repricing",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7883",
-      "eipNo": 7883,
-      "title": "ModExp Gas Cost Increase",
       "status": "Draft",
       "isERC": false
     },
@@ -8928,7 +7059,7 @@
     {
       "id": "eip-7914",
       "eipNo": "7914",
-      "title": "An Interface for Transfer From Native",
+      "title": "Smart Creative Commons Zero (SCC0) License for public dAIpps and dApps",
       "status": "Draft",
       "isERC": true
     },
@@ -8936,13 +7067,6 @@
       "id": "eip-7915",
       "eipNo": "7915",
       "title": "Adaptive mean reversion blob pricing",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7916",
-      "eipNo": "7916",
-      "title": "SSZ ProgressiveList",
       "status": "Draft",
       "isERC": false
     },
@@ -8964,48 +7088,6 @@
       "id": "eip-7919",
       "eipNo": "7919",
       "title": "Pureth Meta",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-6493",
-      "eipNo": 6493,
-      "title": "SSZ transaction signature scheme",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7668",
-      "eipNo": 7668,
-      "title": "Remove bloom filters",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7688",
-      "eipNo": 7688,
-      "title": "Forward compatible consensus data structures",
-      "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-7745",
-      "eipNo": 7745,
-      "title": "Light client and DHT friendly log index",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7792",
-      "eipNo": 7792,
-      "title": "Verifiable logs",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-7807",
-      "eipNo": 7807,
-      "title": "SSZ execution blocks",
       "status": "Draft",
       "isERC": false
     },
@@ -9052,13 +7134,6 @@
       "isERC": false
     },
     {
-      "id": "eip-9552",
-      "eipNo": "9552",
-      "title": "Dynamic Exit Churn Limit Using Historical Unused Capacity",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-9999",
       "eipNo": "9999",
       "title": "Block-Level Access Lists",
@@ -9073,16 +7148,16 @@
       "isERC": false
     },
     {
-      "id": "eip-00000",
-      "eipNo": "00000",
-      "title": "BLOB Data and Rollup Operator Rewards",
+      "id": "eip-010101",
+      "eipNo": "010101",
+      "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
       "status": "Draft",
       "isERC": false
     },
     {
-      "id": "eip-010101",
-      "eipNo": "010101",
-      "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
+      "id": "eip-00000",
+      "eipNo": "00000",
+      "title": "BLOB Data and Rollup Operator Rewards",
       "status": "Draft",
       "isERC": false
     }
@@ -10299,14 +8374,6 @@
     {
       "source": "eip-4200",
       "target": "eip-3670"
-    },
-    {
-      "source": "eip-4242",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-4242",
-      "target": "eip-721"
     },
     {
       "source": "eip-4337",
@@ -12765,14 +10832,6 @@
       "target": "eip-7545"
     },
     {
-      "source": "eip-7616",
-      "target": "eip-20"
-    },
-    {
-      "source": "eip-7616",
-      "target": "eip-721"
-    },
-    {
       "source": "eip-7617",
       "target": "eip-5219"
     },
@@ -12857,14 +10916,6 @@
       "target": "eip-721"
     },
     {
-      "source": "eip-7635",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-7635",
-      "target": "eip-721"
-    },
-    {
       "source": "eip-7636",
       "target": "eip-778"
     },
@@ -12883,14 +10934,6 @@
     {
       "source": "eip-7644",
       "target": "eip-721"
-    },
-    {
-      "source": "eip-7646",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-7646",
-      "target": "eip-1155"
     },
     {
       "source": "eip-7649",
@@ -12937,10 +10980,6 @@
       "target": "eip-7632"
     },
     {
-      "source": "eip-7655",
-      "target": "eip-5189"
-    },
-    {
       "source": "eip-7656",
       "target": "eip-20"
     },
@@ -12967,10 +11006,6 @@
     {
       "source": "eip-7656",
       "target": "eip-6551"
-    },
-    {
-      "source": "eip-7660",
-      "target": "eip-20"
     },
     {
       "source": "eip-7661",
@@ -13049,14 +11084,6 @@
       "target": "eip-4337"
     },
     {
-      "source": "eip-7680",
-      "target": "eip-20"
-    },
-    {
-      "source": "eip-7680",
-      "target": "eip-165"
-    },
-    {
       "source": "eip-7681",
       "target": "eip-20"
     },
@@ -13091,14 +11118,6 @@
     {
       "source": "eip-7688",
       "target": "eip-7569"
-    },
-    {
-      "source": "eip-7689",
-      "target": "eip-1559"
-    },
-    {
-      "source": "eip-7689",
-      "target": "eip-4844"
     },
     {
       "source": "eip-7692",
@@ -13159,10 +11178,6 @@
     {
       "source": "eip-7695",
       "target": "eip-721"
-    },
-    {
-      "source": "eip-7697",
-      "target": "eip-155"
     },
     {
       "source": "eip-7698",
@@ -13271,10 +11286,6 @@
     {
       "source": "eip-7715",
       "target": "eip-7710"
-    },
-    {
-      "source": "eip-7717",
-      "target": "eip-4337"
     },
     {
       "source": "eip-7719",
@@ -13529,18 +11540,6 @@
       "target": "eip-5792"
     },
     {
-      "source": "eip-7798",
-      "target": "eip-20"
-    },
-    {
-      "source": "eip-7798",
-      "target": "eip-681"
-    },
-    {
-      "source": "eip-7798",
-      "target": "eip-712"
-    },
-    {
       "source": "eip-7799",
       "target": "eip-1559"
     },
@@ -13721,14 +11720,6 @@
       "target": "eip-5792"
     },
     {
-      "source": "eip-7842",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-7842",
-      "target": "eip-7824"
-    },
-    {
       "source": "eip-7851",
       "target": "eip-7702"
     },
@@ -13738,14 +11729,6 @@
     },
     {
       "source": "eip-7858",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-7859",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-7859",
       "target": "eip-721"
     },
     {
@@ -13943,10 +11926,6 @@
     {
       "source": "eip-7909",
       "target": "eip-1155"
-    },
-    {
-      "source": "eip-7914",
-      "target": "eip-165"
     },
     {
       "source": "eip-7915",
