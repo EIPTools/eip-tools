@@ -3898,7 +3898,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5069.md"
   },
   "5081": {
-    "title": "Expirable Trainsaction",
+    "title": "Expirable Transaction",
     "status": "Stagnant",
     "requires": [
       155,
@@ -5367,7 +5367,7 @@
   },
   "6789": {
     "title": "Rename gas to mana",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6789.md"
@@ -6439,8 +6439,9 @@
   "7557": {
     "title": "Block-level Warming with fair cost savings",
     "status": "Draft",
-    "prNo": 9428,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/EIPs/create_global_warming_eip_7557/EIPS/eip-7557.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7557.md"
   },
   "7561": {
     "title": "Simple NFT, Simplified ERC-721",
@@ -6653,7 +6654,7 @@
   },
   "7594": {
     "title": "PeerDAS - Peer Data Availability Sampling",
-    "status": "Stagnant",
+    "status": "Review",
     "requires": [
       4844
     ],
@@ -6744,7 +6745,7 @@
   },
   "7609": {
     "title": "Decrease base cost of TLOAD/TSTORE",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       1153
     ],
@@ -7036,13 +7037,12 @@
   "7652": {
     "title": "ERC-721 Guarantee Extension",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 349,
-    "markdownPath": "https://raw.githubusercontent.com/iunknow588/EthCDao/master/ERCS/erc-7652.md",
     "requires": [
       165,
       721
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7652.md"
   },
   "7653": {
     "title": "Named NFT",
@@ -7074,12 +7074,16 @@
     ]
   },
   "7656": {
-    "title": "Generalized Token-Linked Services",
+    "title": "Generalized Contract-Linked Services",
     "status": "Review",
     "requires": [
+      20,
       165,
+      721,
+      1155,
       1167,
-      5313
+      4337,
+      6551
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7656.md"
@@ -7716,7 +7720,9 @@
   "7745": {
     "title": "Light client and DHT friendly log index",
     "status": "Draft",
-    "requires": [],
+    "requires": [
+      7916
+    ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7745.md"
   },
@@ -7824,7 +7830,7 @@
   },
   "7761": {
     "title": "EXTCODETYPE instruction",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       3540,
       7692
@@ -8228,15 +8234,14 @@
   "7811": {
     "title": "Wallet Asset Discovery",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 709,
-    "markdownPath": "https://raw.githubusercontent.com/lukaisailovic/ERCs/wallet-asset-discovery/ERCS/erc-7811.md",
     "requires": [
       20,
       155,
       721,
       5792
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7811.md"
   },
   "7812": {
     "title": "ZK Identity Registry",
@@ -8248,9 +8253,9 @@
   "7813": {
     "title": "Store, Table-Based Introspectable Storage",
     "status": "Draft",
+    "requires": [],
     "isERC": true,
-    "prNo": 711,
-    "markdownPath": "https://raw.githubusercontent.com/latticexyz/ERCs/store/ERCS/erc-7813.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7813.md"
   },
   "7814": {
     "title": "Introspection precompiles",
@@ -8420,7 +8425,7 @@
   },
   "7834": {
     "title": "Separate Metadata Section for EOF",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       3540
     ],
@@ -8447,7 +8452,7 @@
   },
   "7837": {
     "title": "Diffusive Tokens",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7837.md"
@@ -8570,9 +8575,9 @@
   "7856": {
     "title": "Chain-Specific Payment Requests",
     "status": "Draft",
+    "requires": [],
     "isERC": true,
-    "prNo": 823,
-    "markdownPath": "https://raw.githubusercontent.com/jackchuma/ERCs/jack/payment-requests/ERCS/erc-7856.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7856.md"
   },
   "7857": {
     "title": "AI Agents NFT with Private Metadata",
@@ -8584,13 +8589,12 @@
   "7858": {
     "title": "Expirable NFTs and SBTs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 841,
-    "markdownPath": "https://raw.githubusercontent.com/parametprame/ERCs/master/ERCS/erc-7858.md",
     "requires": [
       165,
       721
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7858.md"
   },
   "7859": {
     "title": "AgentNFT Extension for ERC721",
@@ -8658,7 +8662,10 @@
     "status": "Draft",
     "isERC": true,
     "prNo": 861,
-    "markdownPath": "https://raw.githubusercontent.com/anistark/ERCs/master/ERCS/erc-7866.md"
+    "markdownPath": "https://raw.githubusercontent.com/anistark/ERCs/master/ERCS/erc-7866.md",
+    "requires": [
+      165
+    ]
   },
   "7867": {
     "title": "Flow Control Wallet Call Capability",
@@ -8678,7 +8685,7 @@
   },
   "7870": {
     "title": "Hardware and Bandwidth Recommendations",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7870.md"
@@ -8692,7 +8699,7 @@
   },
   "7873": {
     "title": "EOF - TXCREATE and InitcodeTransaction type",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       3540,
       3670,
@@ -8705,8 +8712,9 @@
   "7876": {
     "title": "Ethereum Network Configuration for DApps",
     "status": "Draft",
-    "prNo": 9312,
-    "markdownPath": "https://raw.githubusercontent.com/bogdan/EIPs/master/EIPS/eip-7876.md",
+    "isERC": true,
+    "prNo": 1003,
+    "markdownPath": "https://raw.githubusercontent.com/bogdan/ERCs/master/ERCS/erc-7876.md",
     "requires": [
       55
     ]
@@ -8743,7 +8751,7 @@
   },
   "7880": {
     "title": "EOF - EXTCODEADDRESS instruction",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       7692,
       7702,
@@ -8802,13 +8810,12 @@
   "7887": {
     "title": "Cancelation for ERC-7540 Tokenized Vaults",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 896,
-    "markdownPath": "https://raw.githubusercontent.com/ERC4626-Alliance/ERCs/master/ERCS/erc-7887.md",
     "requires": [
       165,
       7540
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7887.md"
   },
   "7888": {
     "title": "Crosschain Broadcaster",
@@ -8820,8 +8827,9 @@
   "7889": {
     "title": "Emit log on revert",
     "status": "Draft",
-    "prNo": 9390,
-    "markdownPath": "https://raw.githubusercontent.com/shohamc1/EIPs/shohamc1/add-eip/EIPS/eip-7889.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7889.md"
   },
   "7890": {
     "title": "Clawback Transactions for EOAs",
@@ -8846,11 +8854,11 @@
   "7892": {
     "title": "Blob Parameter Only Hardforks",
     "status": "Draft",
-    "prNo": 9423,
-    "markdownPath": "https://raw.githubusercontent.com/ethDreamer/EIPs/blob_parameter_only_forks/EIPS/eip-7892.md",
     "requires": [
       7840
-    ]
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7892.md"
   },
   "7893": {
     "title": "DeFi Protocol Solvency Proof Mechanism",
@@ -8888,7 +8896,7 @@
   },
   "7897": {
     "title": "Wallet-Linked Services for Smart Accounts",
-    "status": "Draft",
+    "status": "Withdrawn",
     "requires": [
       165,
       1167,
@@ -8902,8 +8910,9 @@
   "7898": {
     "title": "Uncouple execution payload from beacon block",
     "status": "Draft",
-    "prNo": 9432,
-    "markdownPath": "https://raw.githubusercontent.com/g11tech/EIPs/uncouple-payload/EIPS/eip-7898.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7898.md"
   },
   "7899": {
     "title": "On-Chain Function Return Type Encoding",
@@ -8934,12 +8943,12 @@
   "7903": {
     "title": "Remove Initcode Size Limit",
     "status": "Draft",
-    "prNo": 9452,
-    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/remove-initcode-limit/EIPS/eip-7903.md",
     "requires": [
       170,
       3860
-    ]
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7903.md"
   },
   "7904": {
     "title": "General Repricing",
@@ -8957,13 +8966,13 @@
     "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/EIPs/restricted_writes_transaction_eip/EIPS/eip-7906.md"
   },
   "7907": {
-    "title": "Remove Contract Code Size Limit",
+    "title": "Meter Contract Code Size And Increase Limit",
     "status": "Draft",
-    "prNo": 9483,
-    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/remove-codesize-limit/EIPS/eip-7907.md",
     "requires": [
       170
-    ]
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7907.md"
   },
   "7908": {
     "title": "HD wallet In Treasury Management",
@@ -8985,6 +8994,13 @@
       1155
     ]
   },
+  "7910": {
+    "title": "eth_config JSON-RPC Method",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7910.md"
+  },
   "7911": {
     "title": "Scaling Ethereum with a Perceptron Tree ZKP",
     "status": "Draft",
@@ -9000,9 +9016,9 @@
   "7913": {
     "title": "Signature Verifiers",
     "status": "Draft",
+    "requires": [],
     "isERC": true,
-    "prNo": 986,
-    "markdownPath": "https://raw.githubusercontent.com/Amxx/ERCs/new-ERC/key-verifiers/ERCS/erc-7913.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7913.md"
   },
   "7914": {
     "title": "An Interface for Transfer From Native",
@@ -9014,11 +9030,101 @@
       165
     ]
   },
+  "7915": {
+    "title": "Adaptive mean reversion blob pricing",
+    "status": "Draft",
+    "requires": [
+      4844
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7915.md"
+  },
+  "7916": {
+    "title": "SSZ ProgressiveList",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7916.md"
+  },
+  "7917": {
+    "title": "Deterministic proposer lookahead",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7917.md"
+  },
+  "7918": {
+    "title": "Blob base fee bounded by execution cost",
+    "status": "Draft",
+    "requires": [
+      4844
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7918.md"
+  },
+  "7919": {
+    "title": "Pureth Meta",
+    "status": "Draft",
+    "requires": [
+      6404,
+      6465,
+      6466,
+      6493,
+      7495,
+      7668,
+      7688,
+      7706,
+      7708,
+      7745,
+      7792,
+      7799,
+      7807,
+      7916
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7919.md"
+  },
+  "7920": {
+    "title": "Composite EIP-712 Signatures",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 993,
+    "markdownPath": "https://raw.githubusercontent.com/sola92/ERCs/master/ERCS/erc-7920.md",
+    "requires": [
+      20,
+      712
+    ]
+  },
   "7921": {
     "title": "Skip `JUMPDEST` immediate argument check",
     "status": "Draft",
-    "prNo": 9548,
-    "markdownPath": "https://raw.githubusercontent.com/wjmelements/EIPs/eip-draft-remove-jumpdest-push-check/EIPS/eip-7921.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7921.md"
+  },
+  "7922": {
+    "title": "Dynamic exit queue rate limit",
+    "status": "Draft",
+    "prNo": 9552,
+    "markdownPath": "https://raw.githubusercontent.com/michaelneuder/EIPs/exit-queue/EIPS/eip-7922.md"
+  },
+  "7923": {
+    "title": "Linear, Page-Based Memory Costing",
+    "status": "Draft",
+    "prNo": 9556,
+    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/memory-paging-eip/EIPS/eip-7923.md"
+  },
+  "7924": {
+    "title": "ERC-20 totalSupply Extension",
+    "isERC": true,
+    "prNo": 997,
+    "markdownPath": "https://raw.githubusercontent.com/astroyhzcc/ERCs/astroyhzcc_stablecoin_max_supply/ERCS/erc-7924.md"
+  },
+  "7925": {
+    "title": "Optional RPC Methods `eth_sendBlobs`  and `eth_getBlobsStatus`",
+    "status": "Draft",
+    "prNo": 9562,
+    "markdownPath": "https://raw.githubusercontent.com/sambacha/eips-poa/patch-5/EIPS/eip-7925.md"
   },
   "9552": {
     "title": "Dynamic Exit Churn Limit Using Historical Unused Capacity",
@@ -9027,9 +9133,27 @@
     "markdownPath": "https://raw.githubusercontent.com/michaelneuder/EIPs/exit-queue/EIPS/eip-9552.md"
   },
   "9999": {
-    "title": "Block-level warming",
+    "title": "Block-Level Access Lists",
     "status": "Draft",
-    "prNo": 9246,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/master/EIPS/eip-9999.md"
+    "prNo": 9580,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/bl-lvl-al/EIPS/eip-9999.md"
+  },
+  "99999": {
+    "title": "CALL_GAS_SPLIT opcode",
+    "status": "Draft",
+    "prNo": 9558,
+    "markdownPath": "https://raw.githubusercontent.com/rakita/EIPs/rakita/call_gas_split/EIPS/eip-99999.md"
+  },
+  "00000": {
+    "title": "BLOB Data and Rollup Operator Rewards",
+    "status": "Draft",
+    "prNo": 8993,
+    "markdownPath": "https://raw.githubusercontent.com/khajievN/EIPs/eip-blob-data/EIPS/eip-00000.md"
+  },
+  "010101": {
+    "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
+    "status": "Draft",
+    "prNo": 9273,
+    "markdownPath": "https://raw.githubusercontent.com/MrxTrickster/EIPs/master/EIPS/eip-010101.md"
   }
 }

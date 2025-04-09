@@ -112,5 +112,22 @@
     "status": "Draft",
     "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7875.md"
+  },
+  "0000": {
+    "title": "Native Account Abstraction RPC methods",
+    "status": "Draft",
+    "requires": [
+      7560
+    ],
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-0000.md"
+  },
+  "0001": {
+    "title": "System Events for Native Account Abstraction",
+    "status": "Draft",
+    "prNo": 65,
+    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/RIPs/create_rip_aa_system_logs/RIPS/rip-0001.md",
+    "requires": [
+      7560
+    ]
   }
 }
