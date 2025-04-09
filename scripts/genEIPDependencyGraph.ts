@@ -17,10 +17,10 @@ async function generateGraphData(validEIPs: ValidEIPs): Promise<void> {
     links: [],
   };
 
-  const processedEIPs = new Set<number>();
+  const processedEIPs = new Set<string>();
 
   // Helper function to add a node if it doesn't exist
-  const addNode = (eipNo: number, eipData: ValidEIPs[number]) => {
+  const addNode = (eipNo: string, eipData: ValidEIPs[string]) => {
     const id = `eip-${eipNo}`;
     if (!processedEIPs.has(eipNo)) {
       graphData.nodes.push({
@@ -43,7 +43,7 @@ async function generateGraphData(validEIPs: ValidEIPs): Promise<void> {
       console.log(`\nProcessing EIP-${eipNo}...`);
 
       // Add the current EIP as a node
-      addNode(parseInt(eipNo), eipData);
+      addNode(eipNo, eipData);
 
       // Process requirements if they exist
       if (eipData.requires && Array.isArray(eipData.requires)) {

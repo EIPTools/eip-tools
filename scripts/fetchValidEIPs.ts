@@ -12,14 +12,14 @@ const ercDir = path.join(__dirname, "../submodules/ERCs/ERCS");
 const ripDir = path.join(__dirname, "../submodules/RIPs/RIPS");
 const caipDir = path.join(__dirname, "../submodules/CAIPs/CAIPs");
 
-const listFiles = (dir: string, filePrefix: string): number[] => {
+const listFiles = (dir: string, filePrefix: string): string[] => {
   const files = fs.readdirSync(dir);
-  const numbers: number[] = [];
+  const numbers: string[] = [];
 
   files.forEach((file) => {
     const match = file.match(new RegExp(`^${filePrefix}-(\\d+)\\.md$`));
     if (match) {
-      numbers.push(parseInt(match[1], 10));
+      numbers.push(match[1]);
     }
   });
 
@@ -29,11 +29,11 @@ const listFiles = (dir: string, filePrefix: string): number[] => {
 const getEIPMetadata = (
   dir: string,
   prefix: string,
-  number: number
+  number: string
 ): {
   title: string;
   status: string;
-  requires: number[];
+  requires: string[];
 } => {
   const filePath = path.join(dir, `${prefix}-${number}.md`);
   const content = fs.readFileSync(filePath, "utf-8");
@@ -74,9 +74,10 @@ const updateEIPData = async () => {
   const eipNumbers = listFiles(eipDir, "eip");
   const ercNumbers = listFiles(ercDir, "erc");
 
-  const combinedEIPNumbers = [...eipNumbers, ...ercNumbers].sort(
-    (a, b) => a - b
-  );
+  const combinedEIPNumbers = [...eipNumbers, ...ercNumbers].sort((a, b) => {
+    // Sort by numeric value to maintain correct ordering
+    return parseInt(a) - parseInt(b);
+  });
 
   const result: ValidEIPs = {};
 

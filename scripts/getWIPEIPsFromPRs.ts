@@ -99,14 +99,14 @@ async function getEIPNoFromDiff(
   diffUrl: string,
   folderName: string,
   filePrefix: string
-) {
+): Promise<string> {
   try {
     const response = await fetchWithRetry(diffUrl, {});
     const diffContent = response.data;
 
     const lines = diffContent.split("\n");
 
-    let eipNumber: number = 0;
+    let eipNumber: string = "";
 
     lines.forEach((line: string, index: number) => {
       if (line.startsWith("new file mode")) {
@@ -124,7 +124,7 @@ async function getEIPNoFromDiff(
     return eipNumber;
   } catch (error) {
     console.error(`Failed to fetch or parse diff: ${error}`);
-    return 0;
+    return "";
   }
 }
 
@@ -132,14 +132,14 @@ function extractEIPNumber(
   filePath: string,
   folderName: string,
   filePrefix: string
-) {
+): string {
   const regex = new RegExp(`b/${folderName}/${filePrefix}-(\\d+)\\.md`);
   const match = filePath.match(regex);
 
   if (match && match[1]) {
-    return parseInt(match[1]);
+    return match[1];
   } else {
-    return 0;
+    return "";
   }
 }
 
@@ -168,7 +168,7 @@ const fetchDataFromOpenPRs = async ({
         const { diffUrl, repoOwnerAndName, branchName } = prData;
         const eipNo = await getEIPNoFromDiff(diffUrl, folderName, filePrefix);
 
-        if (eipNo > 0) {
+        if (eipNo) {
           const markdownPath = `https://raw.githubusercontent.com/${repoOwnerAndName}/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
           try {
             const eipMarkdownRes: string = (

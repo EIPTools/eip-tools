@@ -1,16 +1,16 @@
 export interface ValidEIPs {
-  [eipNo: number]: {
+  [eipNo: string]: {
     title: string;
     status?: string;
     isERC?: boolean;
     prNo?: number;
     markdownPath: string;
-    requires?: number[];
+    requires?: string[];
   };
 }
 
 export interface EipMetadataJson {
-  eip: number;
+  eip: string;
   title: string;
   description: string;
   author: string[];
@@ -19,7 +19,7 @@ export interface EipMetadataJson {
   type: string;
   category: string;
   created: string;
-  requires: number[];
+  requires: string[];
 }
 
 export enum EIPType {
@@ -29,13 +29,13 @@ export enum EIPType {
 }
 
 export interface IPageVisit {
-  eipNo: number;
+  eipNo: string;
   type?: EIPType;
   timestamp: Date;
 }
 
 export interface IAISummary {
-  eipNo: number;
+  eipNo: string;
   summary: string;
   eipStatus: string;
   timestamp: Date;
@@ -47,7 +47,7 @@ export interface FilteredSuggestion {
   isERC?: boolean;
   prNo?: number;
   markdownPath: string;
-  eipNo: number;
+  eipNo: string;
   type: EIPType;
 }
 
@@ -59,7 +59,7 @@ export interface SearchSuggestion {
 export interface GraphNode {
   id: string;
   isERC?: boolean;
-  eipNo: number;
+  eipNo: string;
   title: string;
   status: string;
   type?: string;
