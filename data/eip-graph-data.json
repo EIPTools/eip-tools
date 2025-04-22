@@ -1418,7 +1418,7 @@
       "id": "eip-1898",
       "eipNo": "1898",
       "title": "Add `blockHash` to defaultBlock methods",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -3924,7 +3924,7 @@
       "id": "eip-5920",
       "eipNo": "5920",
       "title": "PAY opcode",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -4204,7 +4204,7 @@
       "id": "eip-7495",
       "eipNo": "7495",
       "title": "SSZ StableContainer",
-      "status": "Review",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -4929,6 +4929,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7916",
+      "eipNo": "7916",
+      "title": "SSZ ProgressiveList",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7496",
       "eipNo": "7496",
       "title": "NFT Dynamic Traits",
@@ -4953,7 +4960,7 @@
       "id": "eip-7708",
       "eipNo": "7708",
       "title": "ETH transfers emit a log",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -5141,8 +5148,8 @@
     {
       "id": "eip-7642",
       "eipNo": "7642",
-      "title": "eth/69 - Drop pre-merge fields",
-      "status": "Stagnant",
+      "title": "eth/69 - history expiry and simpler receipts",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -5667,7 +5674,7 @@
       "id": "eip-7667",
       "eipNo": "7667",
       "title": "Raise gas costs of hash functions",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -5765,7 +5772,7 @@
       "id": "eip-7688",
       "eipNo": "7688",
       "title": "Forward compatible consensus data structures",
-      "status": "Review",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -6042,13 +6049,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7916",
-      "eipNo": "7916",
-      "title": "SSZ ProgressiveList",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-7746",
       "eipNo": "7746",
       "title": "Composable Security Middleware Hooks",
@@ -6206,7 +6206,7 @@
       "id": "eip-7773",
       "eipNo": "7773",
       "title": "Hardfork Meta - Amsterdam",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6380,7 +6380,7 @@
     {
       "id": "eip-7802",
       "eipNo": "7802",
-      "title": "Crosschain Token Interface",
+      "title": "Token With Mint/Burn Access Across Chains",
       "status": "Draft",
       "isERC": true
     },
@@ -6794,7 +6794,7 @@
       "id": "eip-7872",
       "eipNo": "7872",
       "title": "Max blob flag for local builders",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7059,7 +7059,7 @@
     {
       "id": "eip-7914",
       "eipNo": "7914",
-      "title": "Smart Creative Commons Zero (SCC0) License for public dAIpps and dApps",
+      "title": "Smart Creative Commons Zero License (SCC0)",
       "status": "Draft",
       "isERC": true
     },
@@ -7081,7 +7081,7 @@
       "id": "eip-7918",
       "eipNo": "7918",
       "title": "Blob base fee bounded by execution cost",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7130,6 +7130,41 @@
       "id": "eip-7925",
       "eipNo": "7925",
       "title": "Optional RPC Methods `eth_sendBlobs`  and `eth_getBlobsStatus`",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7927",
+      "eipNo": "7927",
+      "title": "History Expiry Meta",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7928",
+      "eipNo": "7928",
+      "title": "Block-Level Access Lists",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7930",
+      "eipNo": "7930",
+      "title": "Interoperable Addresses",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7932",
+      "eipNo": "7932",
+      "title": "Algorithmic Transactions",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7933",
+      "eipNo": "7933",
+      "title": "Ethereum Intent URI (EIURI)",
       "status": "Draft",
       "isERC": false
     },
@@ -9380,6 +9415,10 @@
       "target": "eip-721"
     },
     {
+      "source": "eip-5792",
+      "target": "eip-1193"
+    },
+    {
       "source": "eip-5793",
       "target": "eip-2464"
     },
@@ -10314,6 +10353,10 @@
     {
       "source": "eip-7484",
       "target": "eip-7579"
+    },
+    {
+      "source": "eip-7495",
+      "target": "eip-7916"
     },
     {
       "source": "eip-7496",
@@ -11912,6 +11955,10 @@
       "target": "eip-170"
     },
     {
+      "source": "eip-7907",
+      "target": "eip-3860"
+    },
+    {
       "source": "eip-7909",
       "target": "eip-20"
     },
@@ -11998,6 +12045,38 @@
     {
       "source": "eip-7920",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-7927",
+      "target": "eip-4444"
+    },
+    {
+      "source": "eip-7932",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-7932",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-7932",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-7932",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-7932",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-7932",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-7933",
+      "target": "eip-681"
     }
   ]
 }

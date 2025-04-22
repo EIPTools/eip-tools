@@ -410,12 +410,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "320": {
-    "title": "Chain Agnostic State Transition Protocol",
+    "title": "Wallet Switch Chain JSON-RPC Method",
     "status": "Draft",
-    "prNo": 337,
-    "markdownPath": "https://raw.githubusercontent.com/layer-3/CAIPs/main/CAIPs/caip-320.md",
+    "prNo": 344,
+    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/feat/caip-320/CAIPs/caip-320.md",
     "requires": [
-      "[1]"
+      "2",
+      "25",
+      "171",
+      "316"
     ]
   },
   "322": {
@@ -449,6 +452,15 @@
     "markdownPath": "https://raw.githubusercontent.com/chris13524/CAIPs/add-wallet-service-caip/CAIPs/caip-345.md",
     "requires": [
       "25"
+    ]
+  },
+  "000": {
+    "title": "Binary serialization of blockchain IDs and addresses",
+    "status": "Draft",
+    "prNo": 350,
+    "markdownPath": "https://raw.githubusercontent.com/0xteddybear/CAIPs/CAIP-X-InteroperableAddress-binary-specification/CAIPs/caip-000.md",
+    "requires": [
+      "2"
     ]
   }
 }

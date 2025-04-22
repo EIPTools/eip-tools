@@ -1565,7 +1565,7 @@
   },
   "1898": {
     "title": "Add `blockHash` to defaultBlock methods",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "234"
     ],
@@ -4688,7 +4688,9 @@
   "5792": {
     "title": "Wallet Call API",
     "status": "Review",
-    "requires": [],
+    "requires": [
+      "1193"
+    ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-5792.md"
   },
@@ -4771,7 +4773,7 @@
   },
   "5920": {
     "title": "PAY opcode",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "2929",
       "7523"
@@ -6077,8 +6079,10 @@
   },
   "7495": {
     "title": "SSZ StableContainer",
-    "status": "Review",
-    "requires": [],
+    "status": "Draft",
+    "requires": [
+      "7916"
+    ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7495.md"
   },
@@ -6915,8 +6919,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7641.md"
   },
   "7642": {
-    "title": "eth/69 - Drop pre-merge fields",
-    "status": "Stagnant",
+    "title": "eth/69 - history expiry and simpler receipts",
+    "status": "Last Call",
     "requires": [
       "5793"
     ],
@@ -7074,7 +7078,7 @@
   },
   "7667": {
     "title": "Raise gas costs of hash functions",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7667.md"
@@ -7202,7 +7206,7 @@
   },
   "7688": {
     "title": "Forward compatible consensus data structures",
-    "status": "Review",
+    "status": "Draft",
     "requires": [
       "6110",
       "7002",
@@ -7366,7 +7370,7 @@
   },
   "7708": {
     "title": "ETH transfers emit a log",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7708.md"
@@ -7798,7 +7802,7 @@
   },
   "7773": {
     "title": "Hardfork Meta - Amsterdam",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "7607",
       "7723"
@@ -8012,7 +8016,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7801.md"
   },
   "7802": {
-    "title": "Crosschain Token Interface",
+    "title": "Token With Mint/Burn Access Across Chains",
     "status": "Draft",
     "requires": [
       "165",
@@ -8377,8 +8381,9 @@
   "7848": {
     "title": "On-chain upgrade signaling",
     "status": "Draft",
-    "prNo": 9174,
-    "markdownPath": "https://raw.githubusercontent.com/fulldecent/EIPs/patch-135720/EIPS/eip-7848.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7848.md"
   },
   "7851": {
     "title": "Deactivate/Reactivate a Delegated EOA's Key",
@@ -8512,7 +8517,7 @@
   },
   "7872": {
     "title": "Max blob flag for local builders",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7872.md"
@@ -8791,7 +8796,8 @@
     "title": "Meter Contract Code Size And Increase Limit",
     "status": "Draft",
     "requires": [
-      "170"
+      "170",
+      "3860"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7907.md"
@@ -8843,7 +8849,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7913.md"
   },
   "7914": {
-    "title": "Smart Creative Commons Zero (SCC0) License for public dAIpps and dApps",
+    "title": "Smart Creative Commons Zero License (SCC0)",
     "status": "Draft",
     "isERC": true,
     "prNo": 906,
@@ -8874,7 +8880,7 @@
   },
   "7918": {
     "title": "Blob base fee bounded by execution cost",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "4844"
     ],
@@ -8924,14 +8930,16 @@
   "7922": {
     "title": "Dynamic exit queue rate limit",
     "status": "Draft",
-    "prNo": 9552,
-    "markdownPath": "https://raw.githubusercontent.com/michaelneuder/EIPs/exit-queue/EIPS/eip-7922.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7922.md"
   },
   "7923": {
     "title": "Linear, Page-Based Memory Costing",
     "status": "Draft",
-    "prNo": 9556,
-    "markdownPath": "https://raw.githubusercontent.com/charles-cooper/EIPs/memory-paging-eip/EIPS/eip-7923.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7923.md"
   },
   "7924": {
     "title": "ERC-20 totalSupply Extension",
@@ -8944,6 +8952,51 @@
     "status": "Draft",
     "prNo": 9562,
     "markdownPath": "https://raw.githubusercontent.com/sambacha/eips-poa/patch-5/EIPS/eip-7925.md"
+  },
+  "7927": {
+    "title": "History Expiry Meta",
+    "status": "Draft",
+    "requires": [
+      "4444"
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7927.md"
+  },
+  "7928": {
+    "title": "Block-Level Access Lists",
+    "status": "Draft",
+    "prNo": 9580,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/bl-lvl-al/EIPS/eip-7928.md"
+  },
+  "7930": {
+    "title": "Interoperable Addresses",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1002,
+    "markdownPath": "https://raw.githubusercontent.com/defi-wonderland/ERCs/ERC-X-interoperable-addresses/ERCS/erc-7930.md"
+  },
+  "7932": {
+    "title": "Algorithmic Transactions",
+    "status": "Draft",
+    "prNo": 9633,
+    "markdownPath": "https://raw.githubusercontent.com/SirSpudlington/EIPs/Add-eip-multi-algorithm-pki/EIPS/eip-7932.md",
+    "requires": [
+      "155",
+      "1559",
+      "2718",
+      "2930",
+      "4844",
+      "7702"
+    ]
+  },
+  "7933": {
+    "title": "Ethereum Intent URI (EIURI)",
+    "status": "Draft",
+    "prNo": 9644,
+    "markdownPath": "https://raw.githubusercontent.com/frani/EIPs/add-eip-ethereum-intent-uri/EIPS/eip-7933.md",
+    "requires": [
+      "681"
+    ]
   },
   "9999": {
     "title": "Block-Level Access Lists",
