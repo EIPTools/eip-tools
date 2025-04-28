@@ -3,12 +3,26 @@ import { validEIPsArray } from "@/data/validEIPs";
 import neynarClient from "@/app/lib/neynar";
 import crypto from "crypto";
 
+// Define allowed methods
+export const dynamic = "force-dynamic";
+export const runtime = "edge";
+
 interface WebhookData {
   type: string;
   data: {
     text: string;
     hash: string;
   };
+}
+
+// This is required to handle OPTIONS requests from CORS preflight
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      Allow: "POST",
+    },
+  });
 }
 
 export async function POST(req: Request) {
