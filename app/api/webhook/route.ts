@@ -5,7 +5,6 @@ import crypto from "crypto";
 
 // Define allowed methods
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
 
 interface WebhookData {
   type: string;
@@ -45,8 +44,26 @@ export async function POST(req: Request) {
       throw new Error("NEYNAR_WEBHOOK_SECRET not set in environment variables");
     }
 
-    const hmac = crypto.createHmac("sha512", webhookSecret);
-    const computedSignature = hmac.update(rawBody).digest("hex");
+    // Convert webhook secret to Uint8Array
+    const encoder = new TextEncoder();
+    const keyData = encoder.encode(webhookSecret);
+    const messageData = encoder.encode(rawBody);
+
+    // Create HMAC using Web Crypto API
+    const key = await crypto.subtle.importKey(
+      "raw",
+      keyData,
+      { name: "HMAC", hash: "SHA-512" },
+      false,
+      ["sign"]
+    );
+
+    const signature_array = await crypto.subtle.sign("HMAC", key, messageData);
+
+    // Convert to hex string
+    const computedSignature = Array.from(new Uint8Array(signature_array))
+      .map((b) => b.toString(16).padStart(2, "0"))
+      .join("");
 
     // Compare signatures
     if (signature !== computedSignature) {
