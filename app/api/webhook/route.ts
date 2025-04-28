@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { validEIPsArray } from "@/data/validEIPs";
 import neynarClient from "@/app/lib/neynar";
+import crypto from "crypto";
 
 interface WebhookData {
   type: string;
@@ -12,7 +13,34 @@ interface WebhookData {
 
 export async function POST(req: Request) {
   try {
-    const body = (await req.json()) as WebhookData;
+    // Get the signature from header
+    const signature = req.headers.get("x-neynar-signature");
+    if (!signature) {
+      return NextResponse.json(
+        { error: "Missing signature header" },
+        { status: 401 }
+      );
+    }
+
+    // Get the raw request body as a string
+    const rawBody = await req.text();
+
+    // Create signature using shared secret
+    const webhookSecret = process.env.NEYNAR_WEBHOOK_SECRET;
+    if (!webhookSecret) {
+      throw new Error("NEYNAR_WEBHOOK_SECRET not set in environment variables");
+    }
+
+    const hmac = crypto.createHmac("sha512", webhookSecret);
+    const computedSignature = hmac.update(rawBody).digest("hex");
+
+    // Compare signatures
+    if (signature !== computedSignature) {
+      return NextResponse.json({ error: "Invalid signature" }, { status: 401 });
+    }
+
+    // Parse the body after verification
+    const body = JSON.parse(rawBody) as WebhookData;
 
     if (body.type === "cast.created") {
       const text = body.data.text;
