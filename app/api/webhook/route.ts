@@ -100,13 +100,22 @@ export async function POST(req: Request) {
           );
         }
 
-        // Create the reply text with URLs
-        const replyText = `Explore the EIPs / ERCs mentioned in this cast:\n\n${urls.join("\n")}`;
+        // Create the reply text based on number of URLs
+        let replyText = "More EIPs / ERCs mentioned in this cast:";
+        if (urls.length >= 2) {
+          const additionalUrls = urls.slice(1);
+          replyText += `\n\n${additionalUrls.join("\n")}`;
+        }
 
         // Post the reply using Neynar client
         const reply = await neynarClient.publishCast({
           signerUuid: process.env.NEYNAR_SIGNER_UUID,
           text: replyText,
+          embeds: [
+            {
+              url: urls[0],
+            },
+          ],
           parent: originalCastHash,
         });
 
