@@ -29,10 +29,9 @@ async function createWebhook() {
       subscription: {
         "cast.created": {
           // This regex pattern matches:
-          // - EIP followed by optional hyphen/space and numbers (case insensitive)
-          // - Standalone numbers between 1-4 digits (1 to 9999)
-          // - ERC followed by optional hyphen/space and numbers (case insensitive)
-          text: ".*\\b([0-9]|[1-9][0-9]{1,3})\\b.*",
+          // - ERC or EIP case-insensitively
+          // - Can have any text before or after
+          text: "(?i)\b(eip|erc)(\b|[-d])",
         },
       },
     });

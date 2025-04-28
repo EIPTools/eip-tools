@@ -80,7 +80,7 @@ export async function POST(req: Request) {
       // Match patterns for numbers with optional EIP/ERC prefix
       const pattern = /(?:eip[-\s]?(\d+)|erc[-\s]?(\d+)|(?<!\S)(\d+)(?!\S))/gi;
 
-      const urls: string[] = [];
+      let urls: string[] = [];
       let match;
 
       while ((match = pattern.exec(text)) !== null) {
@@ -92,6 +92,9 @@ export async function POST(req: Request) {
           urls.push(`https://eip.tools/eip/${number}`);
         }
       }
+
+      // filter out duplicates
+      urls = Array.from(new Set(urls));
 
       if (urls.length > 0) {
         if (!process.env.NEYNAR_SIGNER_UUID) {
