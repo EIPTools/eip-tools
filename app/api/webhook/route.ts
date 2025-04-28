@@ -104,7 +104,7 @@ export async function POST(req: Request) {
         }
 
         // Create the reply text based on number of URLs
-        let replyText = "More EIPs / ERCs mentioned in this cast:";
+        let replyText = "Explore the EIPs / ERCs mentioned in this cast:";
         if (urls.length >= 2) {
           const additionalUrls = urls.slice(1);
           replyText += `\n\n${additionalUrls.join("\n")}`;
