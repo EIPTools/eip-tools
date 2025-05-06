@@ -4719,6 +4719,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7212",
+      "eipNo": "7212",
+      "title": "Precompile for secp256r1 Curve Support",
+      "status": "Review",
+      "isERC": false
+    },
+    {
       "id": "eip-7231",
       "eipNo": "7231",
       "title": "Identity-aggregated NFT",
@@ -6548,7 +6555,7 @@
     {
       "id": "eip-7828",
       "eipNo": "7828",
-      "title": "Chain-specific addresses using ENS",
+      "title": "Human readable names for Interoperable Addresses",
       "status": "Draft",
       "isERC": true
     },
@@ -6653,7 +6660,7 @@
     {
       "id": "eip-7845",
       "eipNo": "7845",
-      "title": "Minimal Orchestrator RPC",
+      "title": "Universal Orchestrator RPC",
       "status": "Draft",
       "isERC": true
     },
@@ -7066,7 +7073,7 @@
     {
       "id": "eip-7914",
       "eipNo": "7914",
-      "title": "Smart Creative Commons Zero License (SCC0)",
+      "title": "An Interface for Transfer From Native",
       "status": "Draft",
       "isERC": true
     },
@@ -7164,7 +7171,7 @@
     {
       "id": "eip-7932",
       "eipNo": "7932",
-      "title": "Algorithmic Transactions",
+      "title": "Algorithmic Transaction Wrapper",
       "status": "Draft",
       "isERC": false
     },
@@ -7181,6 +7188,13 @@
       "title": "RLP Execution Block Size Limit",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-7936",
+      "eipNo": "7936",
+      "title": "Versioned Proxy Contract Interface",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-7937",
@@ -7211,6 +7225,20 @@
       "isERC": false
     },
     {
+      "id": "eip-7941",
+      "eipNo": "7941",
+      "title": "Smart Creative Commons Zero License (SCC0)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8000",
+      "eipNo": "8000",
+      "title": "Available Attestation",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-9999",
       "eipNo": "9999",
       "title": "Block-Level Access Lists",
@@ -7237,6 +7265,13 @@
       "title": "BLOB Data and Rollup Operator Rewards",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-undefined",
+      "eipNo": "undefined",
+      "title": "Sovereign Bridged Token",
+      "status": "Draft",
+      "isERC": true
     }
   ],
   "links": [
@@ -12025,6 +12060,10 @@
       "target": "eip-1155"
     },
     {
+      "source": "eip-7914",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-7915",
       "target": "eip-4844"
     },
@@ -12127,6 +12166,10 @@
     {
       "source": "eip-7933",
       "target": "eip-681"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-20"
     }
   ]
 }

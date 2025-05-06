@@ -31,30 +31,30 @@ async function generateGraphData(validEIPs: ValidEIPs): Promise<void> {
         isERC: eipData.isERC || false,
       });
       processedEIPs.add(eipNo);
-      console.log(
-        `Added node: EIP-${eipNo} (${eipData.title || `EIP-${eipNo}`})`
-      );
+      // console.log(
+      //   `Added node: EIP-${eipNo} (${eipData.title || `EIP-${eipNo}`})`
+      // );
     }
   };
 
   // Process each EIP
   for (const [eipNo, eipData] of Object.entries(validEIPs)) {
     try {
-      console.log(`\nProcessing EIP-${eipNo}...`);
+      // console.log(`\nProcessing EIP-${eipNo}...`);
 
       // Add the current EIP as a node
       addNode(eipNo, eipData);
 
       // Process requirements if they exist
       if (eipData.requires && Array.isArray(eipData.requires)) {
-        console.log(
-          `- Processing ${eipData.requires.length} dependencies for EIP-${eipNo}`
-        );
+        // console.log(
+        //   `- Processing ${eipData.requires.length} dependencies for EIP-${eipNo}`
+        // );
 
         for (const requiredEip of eipData.requires) {
           // Only add links for EIPs that exist in validEIPs
           if (validEIPs[requiredEip]) {
-            console.log(`  - Loading dependency: EIP-${requiredEip}`);
+            // console.log(`  - Loading dependency: EIP-${requiredEip}`);
 
             // Add required EIP as node
             addNode(requiredEip, validEIPs[requiredEip]);
@@ -64,9 +64,9 @@ async function generateGraphData(validEIPs: ValidEIPs): Promise<void> {
               source: `eip-${eipNo}`,
               target: `eip-${requiredEip}`,
             });
-            console.log(
-              `  - Added dependency link: EIP-${eipNo} -> EIP-${requiredEip}`
-            );
+            // console.log(
+            //   `  - Added dependency link: EIP-${eipNo} -> EIP-${requiredEip}`
+            // );
           } else {
             console.log(
               `  - Skipping invalid dependency: EIP-${requiredEip} (not in validEIPs)`

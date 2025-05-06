@@ -6,6 +6,7 @@ export interface ValidEIPs {
     prNo?: number;
     markdownPath: string;
     requires?: string[];
+    timestamp?: string;
   };
 }
 
