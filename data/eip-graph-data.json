@@ -3854,7 +3854,7 @@
       "id": "eip-5792",
       "eipNo": "5792",
       "title": "Wallet Call API",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -4210,7 +4210,7 @@
     {
       "id": "eip-7702",
       "eipNo": "7702",
-      "title": "Set EOA account code",
+      "title": "Set Code for EOAs",
       "status": "Last Call",
       "isERC": false
     },
@@ -4379,7 +4379,7 @@
       "id": "eip-6800",
       "eipNo": "6800",
       "title": "Ethereum state using a unified verkle tree",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4498,7 +4498,7 @@
       "id": "eip-6916",
       "eipNo": "6916",
       "title": "Automatically Reset Testnet",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -5506,7 +5506,7 @@
       "id": "eip-7631",
       "eipNo": "7631",
       "title": "Dual Nature Token Pair",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6241,7 +6241,7 @@
       "id": "eip-7778",
       "eipNo": "7778",
       "title": "Prevent Block Gas Smuggling",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6262,7 +6262,7 @@
       "id": "eip-7782",
       "eipNo": "7782",
       "title": "Reduce Slot Time for Lower Peak Bandwidth",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6492,7 +6492,7 @@
     {
       "id": "eip-7819",
       "eipNo": "7819",
-      "title": "Create delegate",
+      "title": "SETDELEGATE instruction",
       "status": "Draft",
       "isERC": false
     },
@@ -6612,7 +6612,7 @@
       "id": "eip-7837",
       "eipNo": "7837",
       "title": "Diffusive Tokens",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6789,6 +6789,13 @@
       "title": "Hardware and Bandwidth Recommendations",
       "status": "Review",
       "isERC": false
+    },
+    {
+      "id": "eip-7871",
+      "eipNo": "7871",
+      "title": "Wallet Signing API",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-7872",
@@ -7045,7 +7052,7 @@
     {
       "id": "eip-7912",
       "eipNo": "7912",
-      "title": "Pragmatic expansion of stack manipulation tools",
+      "title": "Pragmatic stack manipulation tools",
       "status": "Draft",
       "isERC": false
     },
@@ -7165,6 +7172,41 @@
       "id": "eip-7933",
       "eipNo": "7933",
       "title": "Ethereum Intent URI (EIURI)",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7934",
+      "eipNo": "7934",
+      "title": "RLP Execution Block Size Limit",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7937",
+      "eipNo": "7937",
+      "title": "64-bit mode EVM opcodes (EVM64)",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7938",
+      "eipNo": "7938",
+      "title": "Exponential Gas Limit Increase",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7939",
+      "eipNo": "7939",
+      "title": "Count leading zeros (CLZ) opcode",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7940",
+      "eipNo": "7940",
+      "title": "Ethereum Shah",
       "status": "Draft",
       "isERC": false
     },
@@ -11672,10 +11714,6 @@
     },
     {
       "source": "eip-7819",
-      "target": "eip-7692"
-    },
-    {
-      "source": "eip-7819",
       "target": "eip-7702"
     },
     {
@@ -11796,6 +11834,18 @@
     },
     {
       "source": "eip-7867",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-7871",
+      "target": "eip-191"
+    },
+    {
+      "source": "eip-7871",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-7871",
       "target": "eip-5792"
     },
     {

@@ -4687,7 +4687,7 @@
   },
   "5792": {
     "title": "Wallet Call API",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "1193"
     ],
@@ -5365,7 +5365,7 @@
   },
   "6800": {
     "title": "Ethereum state using a unified verkle tree",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "6780"
     ],
@@ -5516,7 +5516,7 @@
   },
   "6916": {
     "title": "Automatically Reset Testnet",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6916.md"
@@ -6850,7 +6850,7 @@
   },
   "7631": {
     "title": "Dual Nature Token Pair",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "20",
       "721"
@@ -7309,7 +7309,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7701.md"
   },
   "7702": {
-    "title": "Set EOA account code",
+    "title": "Set Code for EOAs",
     "status": "Last Call",
     "requires": [
       "2",
@@ -7845,7 +7845,7 @@
   },
   "7778": {
     "title": "Prevent Block Gas Smuggling",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7778.md"
@@ -7871,7 +7871,7 @@
   },
   "7782": {
     "title": "Reduce Slot Time for Lower Peak Bandwidth",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "7623",
       "7778"
@@ -8051,12 +8051,11 @@
   "7806": {
     "title": "Minimal intent-centric EOA smart account",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 696,
-    "markdownPath": "https://raw.githubusercontent.com/hellohanchen/ERCs/erc-intent-7702/ERCS/erc-7806.md",
     "requires": [
       "7702"
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7806.md"
   },
   "7807": {
     "title": "SSZ execution blocks",
@@ -8153,10 +8152,9 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7818.md"
   },
   "7819": {
-    "title": "Create delegate",
+    "title": "SETDELEGATE instruction",
     "status": "Draft",
     "requires": [
-      "7692",
       "7702"
     ],
     "isERC": false,
@@ -8311,7 +8309,7 @@
   },
   "7837": {
     "title": "Diffusive Tokens",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7837.md"
@@ -8515,6 +8513,17 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7870.md"
   },
+  "7871": {
+    "title": "Wallet Signing API",
+    "status": "Draft",
+    "requires": [
+      "191",
+      "712",
+      "5792"
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7871.md"
+  },
   "7872": {
     "title": "Max blob flag for local builders",
     "status": "Review",
@@ -8558,15 +8567,14 @@
   "7878": {
     "title": "Bequeathable Contracts",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 886,
-    "markdownPath": "https://raw.githubusercontent.com/wamith/ERCs/bequeathable/ERCS/erc-7878.md",
     "requires": [
       "20",
       "165",
       "721",
       "1155"
-    ]
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7878.md"
   },
   "7879": {
     "title": "ERC-7879",
@@ -8836,10 +8844,11 @@
     "markdownPath": "https://raw.githubusercontent.com/khajievN/EIPs/eip-perceptron-zk/EIPS/eip-7911.md"
   },
   "7912": {
-    "title": "Pragmatic expansion of stack manipulation tools",
+    "title": "Pragmatic stack manipulation tools",
     "status": "Draft",
-    "prNo": 9501,
-    "markdownPath": "https://raw.githubusercontent.com/lightclient/EIPs/pragmatic-swap-dup/EIPS/eip-7912.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7912.md"
   },
   "7913": {
     "title": "Signature Verifiers",
@@ -8965,8 +8974,9 @@
   "7928": {
     "title": "Block-Level Access Lists",
     "status": "Draft",
-    "prNo": 9580,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/bl-lvl-al/EIPS/eip-7928.md"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7928.md"
   },
   "7930": {
     "title": "Interoperable Addresses",
@@ -8997,6 +9007,41 @@
     "requires": [
       "681"
     ]
+  },
+  "7934": {
+    "title": "RLP Execution Block Size Limit",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7934.md"
+  },
+  "7937": {
+    "title": "64-bit mode EVM opcodes (EVM64)",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7937.md"
+  },
+  "7938": {
+    "title": "Exponential Gas Limit Increase",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7938.md"
+  },
+  "7939": {
+    "title": "Count leading zeros (CLZ) opcode",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7939.md"
+  },
+  "7940": {
+    "title": "Ethereum Shah",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7940.md"
   },
   "9999": {
     "title": "Block-Level Access Lists",
