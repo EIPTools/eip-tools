@@ -6,6 +6,24 @@ import crypto from "crypto";
 // Define allowed methods
 export const dynamic = "force-dynamic";
 
+// EIP numbers to ignore
+const IGNORED_EIPS = [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "20",
+  "155",
+  "721",
+  "1155",
+  "2025",
+];
+
 interface WebhookData {
   type: string;
   data: {
@@ -87,8 +105,8 @@ export async function POST(req: Request) {
         // match[1] = EIP number, match[2] = ERC number, match[3] = standalone number
         const number = match[1] || match[2] || match[3];
 
-        // Only add URL if the number exists in validEIPs
-        if (validEIPsArray.includes(number)) {
+        // Only add URL if the number exists in validEIPs and is not in ignored list
+        if (validEIPsArray.includes(number) && !IGNORED_EIPS.includes(number)) {
           urls.push(`https://eip.tools/eip/${number}`);
         }
       }
