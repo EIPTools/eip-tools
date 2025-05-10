@@ -26,12 +26,10 @@ import { AddIcon, MinusIcon, SearchIcon, RepeatIcon } from "@chakra-ui/icons";
 import { ForceGraphMethods } from "react-force-graph-3d";
 import SpriteText from "three-spritetext";
 import * as THREE from "three";
-import { Poppins } from "next/font/google";
 import { GraphNode } from "@/types";
 import { eipGraphData } from "@/data/eipGraphData";
 import { EIPStatus, STATUS_COLORS } from "@/utils";
-
-const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"] });
+import { poppins } from "@/app/fonts";
 
 const EIPGraph = ({
   isEmbedded = false,

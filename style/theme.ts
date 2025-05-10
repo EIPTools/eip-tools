@@ -17,10 +17,6 @@ const colors = {
   },
 };
 
-const fonts = {
-  brand: "Poppins",
-};
-
 const config: ThemeConfig = {
   initialColorMode: "dark",
   useSystemColorMode: false,
@@ -35,13 +31,11 @@ const theme = extendTheme({
       body: {
         bg: "bg.900",
         color: "white",
-        fontFamily: "Poppins",
       },
     },
   },
   config,
   colors,
-  fonts,
 });
 
 export default theme;
