@@ -7313,11 +7313,9 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7700.md"
   },
   "7701": {
-    "title": "Native Account Abstraction with EOF",
+    "title": "Native Account Abstraction",
     "status": "Draft",
-    "requires": [
-      "3540"
-    ],
+    "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7701.md"
   },
@@ -9093,6 +9091,13 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7934.md"
   },
+  "7935": {
+    "title": "Set default gas limit to XX0M",
+    "status": "Draft",
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7935.md"
+  },
   "7936": {
     "title": "Versioned Proxy Contract Interface",
     "status": "Draft",
@@ -9180,6 +9185,6 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-05-06T16:28:36.566Z"
+    "timestamp": "2025-05-10T08:06:53.300Z"
   }
 }

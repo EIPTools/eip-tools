@@ -5834,7 +5834,7 @@
     {
       "id": "eip-7701",
       "eipNo": "7701",
-      "title": "Native Account Abstraction with EOF",
+      "title": "Native Account Abstraction",
       "status": "Draft",
       "isERC": false
     },
@@ -7186,6 +7186,13 @@
       "id": "eip-7934",
       "eipNo": "7934",
       "title": "RLP Execution Block Size Limit",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7935",
+      "eipNo": "7935",
+      "title": "Set default gas limit to XX0M",
       "status": "Draft",
       "isERC": false
     },
@@ -11314,10 +11321,6 @@
     {
       "source": "eip-7700",
       "target": "eip-155"
-    },
-    {
-      "source": "eip-7701",
-      "target": "eip-3540"
     },
     {
       "source": "eip-7702",
