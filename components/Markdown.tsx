@@ -24,6 +24,7 @@ import remarkGfm from "remark-gfm";
 // import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working, so borrowing its logic here
 import { CodeBlock } from "./CodeBlock";
 import { extractEipNumber } from "@/utils";
+import { validEIPs } from "@/data/validEIPs";
 
 const isRelativeURL = (url: string) => {
   // A URL is relative if it does not start with a protocol like http, https, ftp, etc.
@@ -32,8 +33,91 @@ const isRelativeURL = (url: string) => {
 };
 
 const resolveURL = (markdownFileURL: string, url: string) => {
+  console.log("url", url);
   if (isRelativeURL(url)) {
-    // Remove the markdown filename from the URL to get the directory
+    console.log("isRelativeURL", url);
+
+    // Check if this is a GitHub raw URL
+    const isGitHubRaw = markdownFileURL.includes("raw.githubusercontent.com");
+
+    if (isGitHubRaw) {
+      // Parse the GitHub URL to extract the repo and branch information
+      const urlParts = markdownFileURL.split("/");
+      // Format: https://raw.githubusercontent.com/owner/repo/branch/path
+      if (urlParts.length >= 7) {
+        const owner = urlParts[3];
+        const repo = urlParts[4];
+        const branch = urlParts[5];
+
+        // Get the directory path of the current file
+        const currentPath = urlParts.slice(6, urlParts.length - 1).join("/");
+
+        // Resolve the relative path against the current path
+        let resolvedPath = "";
+        if (url.startsWith("../")) {
+          // Count how many levels up we need to go
+          let levelsUp = 0;
+          let tempUrl = url;
+          while (tempUrl.startsWith("../")) {
+            tempUrl = tempUrl.substring(3);
+            levelsUp++;
+          }
+
+          // Go up that many levels from the current path
+          const currentPathParts = currentPath.split("/");
+          if (levelsUp >= currentPathParts.length) {
+            // We're going to the root of the repo
+            resolvedPath = tempUrl;
+          } else {
+            const newBasePath = currentPathParts
+              .slice(0, currentPathParts.length - levelsUp)
+              .join("/");
+            resolvedPath = newBasePath ? `${newBasePath}/${tempUrl}` : tempUrl;
+          }
+        } else if (url.startsWith("./")) {
+          resolvedPath = `${currentPath}/${url.substring(2)}`;
+        } else {
+          resolvedPath = `${currentPath}/${url}`;
+        }
+
+        console.log({
+          url,
+          finalPath: `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${resolvedPath}`,
+        });
+
+        // Check if this is an image file (common image extensions)
+        const isImage = /\.(jpg|jpeg|png|gif|svg|webp|avif)$/i.test(url);
+
+        // For images, use the refs/heads/ path format that works for assets
+        if (isImage) {
+          // Check if the path contains something like eip-XXXX or EIP-XXXX
+          const eipMatch = resolvedPath.match(
+            /\/(?:assets\/)?(?:eip|EIP)-(\d+)\//i
+          );
+          if (eipMatch && eipMatch[1]) {
+            const eipNumber = eipMatch[1];
+
+            // Check if this EIP is actually an ERC
+            const isERC = validEIPs[eipNumber]?.isERC === true;
+
+            if (isERC) {
+              // Replace eip-XXXX with erc-XXXX in the path
+              resolvedPath = resolvedPath.replace(
+                /\/(assets\/)?(?:eip|EIP)-(\d+)\//i,
+                "/$1erc-$2/"
+              );
+            }
+          }
+
+          return `https://raw.githubusercontent.com/${owner}/${repo}/refs/heads/${branch}/${resolvedPath}`;
+        }
+
+        // For non-images, use the standard raw format
+        return `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${resolvedPath}`;
+      }
+    }
+
+    // If not a GitHub URL or couldn't parse it correctly, fall back to the original logic
     const markdownFilePath = new URL(markdownFileURL);
     const basePath = markdownFilePath.href.substring(
       0,
@@ -143,6 +227,7 @@ export const Markdown = ({
         img: (props) => (
           <Image
             {...props}
+            alt={props.alt as string}
             src={resolveURL(markdownFileURL, props.src as string)}
           />
         ),
