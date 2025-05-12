@@ -2216,7 +2216,7 @@
   },
   "2537": {
     "title": "Precompile for BLS12-381 curve operations",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-2537.md"
@@ -4688,7 +4688,7 @@
   },
   "5792": {
     "title": "Wallet Call API",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "1193"
     ],
@@ -8690,7 +8690,13 @@
   "7886": {
     "title": "Delayed execution",
     "status": "Draft",
-    "requires": [],
+    "requires": [
+      "1559",
+      "2930",
+      "4844",
+      "7623",
+      "7702"
+    ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7886.md"
   },

@@ -1950,7 +1950,7 @@
       "id": "eip-2537",
       "eipNo": "2537",
       "title": "Precompile for BLS12-381 curve operations",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -3854,7 +3854,7 @@
       "id": "eip-5792",
       "eipNo": "5792",
       "title": "Wallet Call API",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -11957,6 +11957,26 @@
     {
       "source": "eip-7883",
       "target": "eip-2565"
+    },
+    {
+      "source": "eip-7886",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-7886",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-7886",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-7886",
+      "target": "eip-7623"
+    },
+    {
+      "source": "eip-7886",
+      "target": "eip-7702"
     },
     {
       "source": "eip-7887",
