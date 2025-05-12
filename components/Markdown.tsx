@@ -21,6 +21,7 @@ import {
 } from "@chakra-ui/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 // import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working, so borrowing its logic here
 import { CodeBlock } from "./CodeBlock";
 import { extractEipNumber } from "@/utils";
@@ -150,6 +151,7 @@ export const Markdown = ({
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
+      rehypePlugins={[rehypeRaw]}
       components={{
         p: (props) => {
           const { children } = props;
@@ -224,13 +226,44 @@ export const Markdown = ({
             );
           }
         },
-        img: (props) => (
-          <Image
-            {...props}
-            alt={props.alt as string}
-            src={resolveURL(markdownFileURL, props.src as string)}
-          />
-        ),
+        img: (props) => {
+          // Get the source URL with proper resolution
+          const src = resolveURL(markdownFileURL, props.src as string);
+
+          // Extract properties from props
+          const { src: _, alt, ...rest } = props;
+
+          // Get the align attribute from the HTML props
+          const alignAttr = (props as any).align;
+
+          // Map align attribute to Chakra's float property
+          const floatValue =
+            alignAttr === "right"
+              ? "right"
+              : alignAttr === "left"
+                ? "left"
+                : undefined;
+
+          // Add margins based on alignment
+          const marginLeft = alignAttr === "right" ? "1rem" : undefined;
+          const marginRight = alignAttr === "left" ? "1rem" : undefined;
+
+          // Define display based on if floating or not
+          const display = floatValue ? "inline-block" : undefined;
+
+          return (
+            <Image
+              alt={alt as string}
+              src={src}
+              float={floatValue}
+              display={display}
+              ml={marginLeft}
+              mr={marginRight}
+              mb={floatValue ? "0.5rem" : undefined}
+              {...rest}
+            />
+          );
+        },
         text: (props) => {
           const { children } = props;
           return <Text as="span">{children}</Text>;
