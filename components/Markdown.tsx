@@ -21,11 +21,14 @@ import {
 } from "@chakra-ui/react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import rehypeRaw from "rehype-raw";
+import rehypeKatex from "rehype-katex";
 // import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working, so borrowing its logic here
 import { CodeBlock } from "./CodeBlock";
 import { extractEipNumber } from "@/utils";
 import { validEIPs } from "@/data/validEIPs";
+import "katex/dist/katex.min.css";
 
 const isRelativeURL = (url: string) => {
   // A URL is relative if it does not start with a protocol like http, https, ftp, etc.
@@ -148,10 +151,37 @@ export const Markdown = ({
   md: string;
   markdownFileURL: string;
 }) => {
+  // Customize the markdown to properly process LaTeX blocks
+  // Replace block math patterns first
+  let processedMd = md;
+  const blockMathRegex = /\$\$([\s\S]*?)\$\$/g;
+  processedMd = processedMd.replace(
+    blockMathRegex,
+    (_, formula) =>
+      `<div class="math-block" style="font-size: 1.2em; margin: 1em 0;">$$${formula}$$</div>`
+  );
+
+  // Then replace inline math patterns
+  const inlineMathRegex = /\$((?!\$)[\s\S]*?)\$/g;
+  processedMd = processedMd.replace(
+    inlineMathRegex,
+    (_, formula) => `$${formula}$`
+  );
+
   return (
     <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
-      rehypePlugins={[rehypeRaw]}
+      remarkPlugins={[remarkGfm, remarkMath]}
+      rehypePlugins={[
+        rehypeRaw,
+        [
+          rehypeKatex,
+          {
+            throwOnError: false,
+            output: "htmlAndMathml",
+            strict: false,
+          },
+        ],
+      ]}
       components={{
         p: (props) => {
           const { children } = props;
@@ -372,7 +402,7 @@ export const Markdown = ({
         ),
       }}
     >
-      {md}
+      {processedMd}
     </ReactMarkdown>
   );
 };
