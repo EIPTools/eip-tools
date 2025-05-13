@@ -45,6 +45,7 @@ import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
+import { CopyToClipboard } from "@/components/CopyToClipboard";
 
 const EIP = ({
   params: { eipOrNo },
@@ -422,6 +423,33 @@ const EIP = ({
                         </NLink>
                       ))}
                     </HStack>
+                  </Td>
+                </Tr>
+              )}
+              {markdownFileURL && (
+                <Tr>
+                  <Th>
+                    <HStack>
+                      <Text>Markdown</Text>
+                      <CopyToClipboard
+                        textToCopy={markdownFileURL}
+                        labelText=""
+                        size={"xs"}
+                      />
+                    </HStack>
+                  </Th>
+                  <Td>
+                    <Tooltip label={markdownFileURL}>
+                      <Link
+                        href={markdownFileURL}
+                        color={"blue.400"}
+                        isExternal
+                      >
+                        {markdownFileURL.length > 50
+                          ? `${markdownFileURL.substring(0, 50)}...`
+                          : markdownFileURL}
+                      </Link>
+                    </Tooltip>
                   </Td>
                 </Tr>
               )}
