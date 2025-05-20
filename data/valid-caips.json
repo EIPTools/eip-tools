@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-05-20T10:34:48.883Z"
+    "timestamp": "2025-05-20T15:37:26.367Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-05-20T10:34:49.088Z"
+    "timestamp": "2025-05-20T15:37:26.315Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-05-20T10:34:47.865Z"
+    "timestamp": "2025-05-20T15:37:24.037Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-20T10:34:47.498Z"
+    "timestamp": "2025-05-20T15:37:23.911Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-20T10:34:47.650Z"
+    "timestamp": "2025-05-20T15:37:23.468Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-05-20T10:48:36.567Z"
+    "timestamp": "2025-05-20T15:37:21.678Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -353,7 +353,7 @@
       "217",
       "275"
     ],
-    "timestamp": "2025-05-20T10:34:46.822Z"
+    "timestamp": "2025-05-20T15:37:21.575Z"
   },
   "285": {
     "title": "JSON-RPC Method for Revoking Session Authorizations",
@@ -370,16 +370,29 @@
     "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-288.md"
   },
-  "295": {
-    "title": "Browser Wallet Messaging for Iframes",
+  "294": {
+    "title": "Browser Wallet Messaging for Extensions",
     "status": "Draft",
     "prNo": 282,
-    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/browser-wallet-messaging-interface/CAIPs/caip-295.md",
+    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/browser-wallet-messaging-interface/CAIPs/caip-294.md",
     "requires": [
       "25",
       "27",
       "282"
-    ]
+    ],
+    "timestamp": "2025-05-20T15:37:22.181Z"
+  },
+  "295": {
+    "title": "Browser Wallet Messaging for Iframes",
+    "status": "Draft",
+    "prNo": 282,
+    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/browser-wallet-messaging-interface/CAIPs/caip-295.md",
+    "requires": [
+      "25",
+      "27",
+      "282"
+    ],
+    "timestamp": "2025-05-20T15:37:22.711Z"
   },
   "311": {
     "title": "JSON-RPC Event for Session Authorization Updates",
@@ -429,17 +442,14 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "320": {
-    "title": "Wallet Switch Chain JSON-RPC Method",
+    "title": "Chain Agnostic State Transition Protocol",
     "status": "Draft",
-    "prNo": 344,
-    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
+    "prNo": 337,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/CAIPs/refs/heads/main/CAIPs/caip-320.md",
     "requires": [
-      "2",
-      "25",
-      "171",
-      "316"
+      "[1]"
     ],
-    "timestamp": "2025-05-20T10:48:35.870Z"
+    "timestamp": "2025-05-20T15:37:19.367Z"
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",
@@ -455,7 +465,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-05-20T10:48:35.791Z"
+    "timestamp": "2025-05-20T15:37:20.074Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -465,7 +475,7 @@
     "requires": [
       "294"
     ],
-    "timestamp": "2025-05-20T10:34:44.693Z"
+    "timestamp": "2025-05-20T15:37:18.953Z"
   },
   "345": {
     "title": "Wallet Service URL property",
@@ -475,7 +485,7 @@
     "requires": [
       "25"
     ],
-    "timestamp": "2025-05-20T10:34:44.651Z"
+    "timestamp": "2025-05-20T15:37:17.275Z"
   },
   "350": {
     "title": "Binary serialization of blockchain IDs and addresses",
@@ -485,7 +495,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-20T10:34:44.650Z"
+    "timestamp": "2025-05-20T15:37:17.211Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
@@ -505,6 +515,6 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-05-20T10:48:36.607Z"
+    "timestamp": "2025-05-20T11:10:44.590Z"
   }
 }

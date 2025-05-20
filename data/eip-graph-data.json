@@ -5685,6 +5685,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7669",
+      "eipNo": "7669",
+      "title": "Hardfork Meta - Dencun",
+      "status": "Final",
+      "isERC": false
+    },
+    {
       "id": "eip-7672",
       "eipNo": "7672",
       "title": "Event-Driven NFT Utilities",
@@ -6548,7 +6555,14 @@
     {
       "id": "eip-7828",
       "eipNo": "7828",
-      "title": "Human readable names for Interoperable Addresses",
+      "title": "Human readable names for Interoperable Addresses using ENS",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7930",
+      "eipNo": "7930",
+      "title": "Interoperable Addresses",
       "status": "Draft",
       "isERC": true
     },
@@ -7162,13 +7176,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7930",
-      "eipNo": "7930",
-      "title": "Interoperable Addresses",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-7932",
       "eipNo": "7932",
       "title": "Algorithmic Transaction Wrapper",
@@ -7260,6 +7267,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7946",
+      "eipNo": "7946",
+      "title": "Unidirectional Wallet Uplink aka UWULink",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-99999",
       "eipNo": "99999",
       "title": "CALL_GAS_SPLIT opcode",
@@ -7279,6 +7293,13 @@
       "title": "BLOB Data and Rollup Operator Rewards",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-undefined",
+      "eipNo": "undefined",
+      "title": "Sovereign Bridged Token",
+      "status": "Draft",
+      "isERC": true
     }
   ],
   "links": [
@@ -11163,6 +11184,46 @@
       "target": "eip-4844"
     },
     {
+      "source": "eip-7669",
+      "target": "eip-1153"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-4788"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-5656"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-6780"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-7044"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-7045"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-7514"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-7516"
+    },
+    {
+      "source": "eip-7669",
+      "target": "eip-7568"
+    },
+    {
       "source": "eip-7674",
       "target": "eip-20"
     },
@@ -11775,6 +11836,10 @@
       "target": "eip-155"
     },
     {
+      "source": "eip-7828",
+      "target": "eip-7930"
+    },
+    {
       "source": "eip-7829",
       "target": "eip-165"
     },
@@ -12200,6 +12265,14 @@
     },
     {
       "source": "eip-7945",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-7946",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-undefined",
       "target": "eip-20"
     }
   ]
