@@ -2202,7 +2202,7 @@
       "id": "eip-2935",
       "eipNo": "2935",
       "title": "Serve historical block hashes from state",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -2363,7 +2363,7 @@
       "id": "eip-3074",
       "eipNo": "3074",
       "title": "AUTH and AUTHCALL opcodes",
-      "status": "Stagnant",
+      "status": "Withdrawn",
       "isERC": false
     },
     {
@@ -4015,14 +4015,14 @@
       "id": "eip-6110",
       "eipNo": "6110",
       "title": "Supply validator deposits on chain",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-7685",
       "eipNo": "7685",
       "title": "General purpose execution layer requests",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -4582,7 +4582,7 @@
       "id": "eip-7002",
       "eipNo": "7002",
       "title": "Execution layer triggerable withdrawals",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -4719,13 +4719,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7212",
-      "eipNo": "7212",
-      "title": "Precompile for secp256r1 Curve Support",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-7231",
       "eipNo": "7231",
       "title": "Identity-aggregated NFT",
@@ -4743,7 +4736,7 @@
       "id": "eip-7251",
       "eipNo": "7251",
       "title": "Increase the MAX_EFFECTIVE_BALANCE",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -4785,7 +4778,7 @@
       "id": "eip-7291",
       "eipNo": "7291",
       "title": "Purpose bound money",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -5198,7 +5191,7 @@
       "id": "eip-7549",
       "eipNo": "7549",
       "title": "Move committee index outside Attestation",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -5387,21 +5380,21 @@
       "id": "eip-7623",
       "eipNo": "7623",
       "title": "Increase calldata cost",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-7691",
       "eipNo": "7691",
       "title": "Blob throughput increase",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-7840",
       "eipNo": "7840",
       "title": "Add blob schedule to EL config files",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -5527,7 +5520,7 @@
       "id": "eip-7634",
       "eipNo": "7634",
       "title": "Limited Transfer Count NFT",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6038,7 +6031,7 @@
       "id": "eip-7743",
       "eipNo": "7743",
       "title": "Multi-Owner Non-Fungible Tokens (MO-NFT)",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6227,7 +6220,7 @@
       "id": "eip-7775",
       "eipNo": "7775",
       "title": "BURN opcode",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6318,7 +6311,7 @@
       "id": "eip-7790",
       "eipNo": "7790",
       "title": "Controlled Gas Limit Increase Guidelines",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6338,7 +6331,7 @@
     {
       "id": "eip-7793",
       "eipNo": "7793",
-      "title": "TXINDEX precompile",
+      "title": "ASSERTTXINDEX opcode",
       "status": "Draft",
       "isERC": false
     },
@@ -6584,7 +6577,7 @@
       "id": "eip-7832",
       "eipNo": "7832",
       "title": "Sustainable collaborative NFT collections",
-      "status": "Review",
+      "status": "Draft",
       "isERC": true
     },
     {
@@ -6724,7 +6717,7 @@
       "id": "eip-7858",
       "eipNo": "7858",
       "title": "Expirable NFTs and SBTs",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6836,7 +6829,7 @@
       "id": "eip-7878",
       "eipNo": "7878",
       "title": "Bequeathable Contracts",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7162,6 +7155,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7929",
+      "eipNo": "7929",
+      "title": "PermaLink Asset Bound Token",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7930",
       "eipNo": "7930",
       "title": "Interoperable Addresses",
@@ -7239,18 +7239,25 @@
       "isERC": true
     },
     {
-      "id": "eip-8000",
-      "eipNo": "8000",
+      "id": "eip-7942",
+      "eipNo": "7942",
       "title": "Available Attestation",
       "status": "Draft",
       "isERC": false
     },
     {
-      "id": "eip-9999",
-      "eipNo": "9999",
-      "title": "Block-Level Access Lists",
+      "id": "eip-7943",
+      "eipNo": "7943",
+      "title": "uRWA - Universal Real World Asset Interface",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
+    },
+    {
+      "id": "eip-7945",
+      "eipNo": "7945",
+      "title": "Confidential Transactions Supported Token",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-99999",
@@ -7272,13 +7279,6 @@
       "title": "BLOB Data and Rollup Operator Rewards",
       "status": "Draft",
       "isERC": false
-    },
-    {
-      "id": "eip-undefined",
-      "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
-      "status": "Draft",
-      "isERC": true
     }
   ],
   "links": [
@@ -9564,6 +9564,10 @@
     },
     {
       "source": "eip-5920",
+      "target": "eip-214"
+    },
+    {
+      "source": "eip-5920",
       "target": "eip-2929"
     },
     {
@@ -11768,19 +11772,7 @@
     },
     {
       "source": "eip-7828",
-      "target": "eip-55"
-    },
-    {
-      "source": "eip-7828",
-      "target": "eip-137"
-    },
-    {
-      "source": "eip-7828",
       "target": "eip-155"
-    },
-    {
-      "source": "eip-7828",
-      "target": "eip-7785"
     },
     {
       "source": "eip-7829",
@@ -11837,6 +11829,14 @@
     {
       "source": "eip-7836",
       "target": "eip-5792"
+    },
+    {
+      "source": "eip-7847",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-7847",
+      "target": "eip-1155"
     },
     {
       "source": "eip-7851",
@@ -12163,6 +12163,10 @@
       "target": "eip-4444"
     },
     {
+      "source": "eip-7929",
+      "target": "eip-721"
+    },
+    {
       "source": "eip-7932",
       "target": "eip-155"
     },
@@ -12191,7 +12195,11 @@
       "target": "eip-681"
     },
     {
-      "source": "eip-undefined",
+      "source": "eip-7943",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-7945",
       "target": "eip-20"
     }
   ]

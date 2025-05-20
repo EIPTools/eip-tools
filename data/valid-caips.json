@@ -111,11 +111,11 @@
     "title": "Asset Reference for the Cosmos Asset Namespace",
     "status": "Draft",
     "prNo": 111,
-    "markdownPath": "https://github.com/shapeshift/CAIPs/blob/master/CAIPs/caip-24.md",
+    "markdownPath": "https://raw.githubusercontent.com/shapeshift/CAIPs/refs/heads/master/CAIPs/caip-24.md",
     "requires": [
       "19"
     ],
-    "timestamp": "2025-05-06T15:49:41.853Z"
+    "timestamp": "2025-05-20T10:34:48.883Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -202,12 +202,12 @@
     "title": "Account Address for the Hive namespace",
     "status": "Draft",
     "prNo": 95,
-    "markdownPath": "https://github.com/stoodkev/CAIPs/blob/hive/account/CAIPs/caip-95.md",
+    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
     "requires": [
       "10",
       "94"
     ],
-    "timestamp": "2025-05-06T15:49:53.651Z"
+    "timestamp": "2025-05-20T10:34:49.088Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -283,31 +283,31 @@
     "title": "ChainProofs - Fresh Facts Straight from the Blockchain",
     "status": "Draft",
     "prNo": 218,
-    "markdownPath": "https://github.com/oed/CAIPs/blob/caip/chainproof/CAIPs/caip-218.md",
+    "markdownPath": "https://raw.githubusercontent.com/oed/CAIPs/refs/heads/caip/chainproof/CAIPs/caip-218.md",
     "requires": [
       "196"
     ],
-    "timestamp": "2025-05-06T15:49:17.288Z"
+    "timestamp": "2025-05-20T10:34:47.865Z"
   },
   "220": {
     "title": "Block Addressing",
     "status": "Draft",
     "prNo": 220,
-    "markdownPath": "https://github.com/ChainAgnostic/CAIPs/blob/feat/caip-220-block-addressing/CAIPs/caip-220.md",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/heads/feat/caip-220-block-addressing/CAIPs/caip-220.md",
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-06T15:49:11.648Z"
+    "timestamp": "2025-05-20T10:34:47.498Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
     "status": "Draft",
     "prNo": 221,
-    "markdownPath": "https://github.com/ChainAgnostic/CAIPs/blob/feat/caip-221-txn-object-ordering/CAIPs/caip-221.md",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/heads/feat/caip-221-txn-object-ordering/CAIPs/caip-221.md",
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-06T15:49:17.287Z"
+    "timestamp": "2025-05-20T10:34:47.650Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -330,11 +330,11 @@
     "title": "Community-Powered Assessment of Trust in Discrete Resources",
     "status": "Draft",
     "prNo": 271,
-    "markdownPath": "https://github.com/dayksx/CAIPs/blob/community-powered-trust-assessment/CAIPs/caip-271.md",
+    "markdownPath": "https://raw.githubusercontent.com/dayksx/CAIPs/refs/heads/community-powered-trust-assessment/CAIPs/caip-271.md",
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-05-06T15:48:58.295Z"
+    "timestamp": "2025-05-20T10:48:36.567Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -346,14 +346,14 @@
     "title": "Browser Wallet Discovery Interface",
     "status": "Draft",
     "prNo": 282,
-    "markdownPath": "https://github.com/pedrouid/CAIPs/blob/browser-wallet-messaging-interface/CAIPs/caip-282.md",
+    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/browser-wallet-messaging-interface/CAIPs/caip-282.md",
     "requires": [
       "25",
       "27",
       "217",
       "275"
     ],
-    "timestamp": "2025-05-06T15:48:57.650Z"
+    "timestamp": "2025-05-20T10:34:46.822Z"
   },
   "285": {
     "title": "JSON-RPC Method for Revoking Session Authorizations",
@@ -432,20 +432,20 @@
     "title": "Wallet Switch Chain JSON-RPC Method",
     "status": "Draft",
     "prNo": 344,
-    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/feat/caip-320/CAIPs/caip-320.md",
+    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
     "requires": [
       "2",
       "25",
       "171",
       "316"
     ],
-    "timestamp": "2025-05-06T16:19:35.262Z"
+    "timestamp": "2025-05-20T10:48:35.870Z"
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",
     "status": "Draft",
     "prNo": 322,
-    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/caip317/uri-scheme-caip/CAIPs/caip-322.md",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/heads/caip317/uri-scheme-caip/CAIPs/caip-322.md",
     "requires": [
       "2",
       "10",
@@ -455,37 +455,37 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-05-06T16:19:44.955Z"
+    "timestamp": "2025-05-20T10:48:35.791Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
     "status": "Draft",
     "prNo": 341,
-    "markdownPath": "https://github.com/ffmcgee725/CAIPs/blob/feat/define-extension-id-as-a-valid-target-type/CAIPs/caip-341.md",
+    "markdownPath": "https://raw.githubusercontent.com/ffmcgee725/CAIPs/refs/heads/feat/define-extension-id-as-a-valid-target-type/CAIPs/caip-341.md",
     "requires": [
       "294"
     ],
-    "timestamp": "2025-05-06T15:48:04.942Z"
+    "timestamp": "2025-05-20T10:34:44.693Z"
   },
   "345": {
     "title": "Wallet Service URL property",
     "status": "Draft",
     "prNo": 345,
-    "markdownPath": "https://github.com/chris13524/CAIPs/blob/add-wallet-service-caip/CAIPs/caip-345.md",
+    "markdownPath": "https://raw.githubusercontent.com/chris13524/CAIPs/refs/heads/add-wallet-service-caip/CAIPs/caip-345.md",
     "requires": [
       "25"
     ],
-    "timestamp": "2025-05-06T15:48:05.201Z"
+    "timestamp": "2025-05-20T10:34:44.651Z"
   },
   "350": {
     "title": "Binary serialization of blockchain IDs and addresses",
     "status": "Draft",
     "prNo": 350,
-    "markdownPath": "https://github.com/0xteddybear/CAIPs/blob/CAIP-X-InteroperableAddress-binary-specification/CAIPs/caip-350.md",
+    "markdownPath": "https://raw.githubusercontent.com/0xteddybear/CAIPs/refs/heads/CAIP-X-InteroperableAddress-binary-specification/CAIPs/caip-350.md",
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-06T15:48:04.898Z"
+    "timestamp": "2025-05-20T10:34:44.650Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
@@ -500,11 +500,11 @@
     "title": "Account Address for the Hive namespace",
     "status": "Draft",
     "prNo": 95,
-    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/hive/account/CAIPs/caip-95.md",
+    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
     "requires": [
       "10",
       "94"
     ],
-    "timestamp": "2025-05-10T08:06:24.126Z"
+    "timestamp": "2025-05-20T10:48:36.607Z"
   }
 }

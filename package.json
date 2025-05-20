@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update": "tsx ./scripts/getWIPEIPsFromPRs.ts && git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts && tsx ./scripts/genEIPDependencyGraph.ts",
+    "eip": "tsx ./scripts/getWIPEIPsFromPRs.ts && git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts && tsx ./scripts/genEIPDependencyGraph.ts",
     "gen-graph": "tsx ./scripts/genEIPDependencyGraph.ts"
   },
   "dependencies": {

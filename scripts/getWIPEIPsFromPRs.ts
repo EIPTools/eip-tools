@@ -25,7 +25,7 @@ const headers = {
 
 const MAX_RETRIES = 5;
 // Concurrency control to make fetching faster but not trigger rate limits
-const MAX_CONCURRENT_REQUESTS = 5;
+const MAX_CONCURRENT_REQUESTS = 3;
 // Time in hours for which we consider cached data fresh enough
 const CACHE_FRESHNESS_HOURS = 24 * 5;
 
@@ -77,19 +77,74 @@ async function processWithConcurrency<T, R>(
   });
 }
 
+/**
+ * Check GitHub API rate limit status
+ */
+async function checkRateLimit() {
+  try {
+    const response = await axios.get("https://api.github.com/rate_limit", {
+      headers,
+    });
+    const { rate } = response.data;
+    console.log(`GitHub API Rate Limit Status:
+      Remaining: ${rate.remaining}/${rate.limit}
+      Reset Time: ${new Date(rate.reset * 1000).toLocaleString()}
+    `);
+    return rate;
+  } catch (error) {
+    console.error("Failed to check rate limit:", error);
+    return null;
+  }
+}
+
+/**
+ * Sleep with exponential backoff
+ */
+async function sleep(retryCount: number) {
+  const baseDelay = 2000; // Start with 2 seconds
+  const delay = baseDelay * Math.pow(2, retryCount - 1); // Exponential backoff
+  const jitter = Math.random() * 1000; // Add some randomness
+  await new Promise((res) => setTimeout(res, delay + jitter));
+}
+
 async function fetchWithRetry(
   url: string,
   options: any,
   retries = MAX_RETRIES
 ): Promise<any> {
   try {
-    return await axios.get(url, options);
-  } catch (error) {
+    const response = await axios.get(url, options);
+
+    // Check remaining rate limit from headers
+    const remaining = response.headers["x-ratelimit-remaining"];
+    const resetTime = response.headers["x-ratelimit-reset"];
+    if (remaining && parseInt(remaining) < 100) {
+      console.warn(`Warning: Rate limit running low. ${remaining} requests remaining.
+        Reset at: ${new Date(parseInt(resetTime) * 1000).toLocaleString()}`);
+    }
+
+    return response;
+  } catch (error: any) {
+    if (error.response?.status === 403) {
+      // Check if it's a rate limit issue
+      if (error.response.headers["x-ratelimit-remaining"] === "0") {
+        const resetTime = error.response.headers["x-ratelimit-reset"];
+        const waitTime = parseInt(resetTime) * 1000 - Date.now();
+        console.warn(
+          `Rate limit exceeded. Reset in ${Math.ceil(waitTime / 1000)} seconds`
+        );
+
+        if (retries > 0) {
+          // Wait until rate limit resets, plus a small buffer
+          await sleep(MAX_RETRIES - retries + 1);
+          return fetchWithRetry(url, options, retries - 1);
+        }
+      }
+    }
+
     if (retries > 0) {
       console.warn(`Retrying... (${MAX_RETRIES - retries + 1})`);
-      await new Promise((res) =>
-        setTimeout(res, 1000 * (MAX_RETRIES - retries + 1))
-      ); // Exponential backoff
+      await sleep(MAX_RETRIES - retries + 1);
       return fetchWithRetry(url, options, retries - 1);
     } else {
       throw error;
@@ -292,7 +347,7 @@ async function getEIPNoFromPR(
         // GitHub URLs for the file
         const { repoOwnerAndName, branchName } = prData;
         const githubUrl = `https://github.com/${repoOwnerAndName}/blob/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
-        const rawGithubUrl = `https://raw.githubusercontent.com/${repoOwnerAndName}/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
+        const rawGithubUrl = `https://raw.githubusercontent.com/${repoOwnerAndName}/refs/heads/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
 
         return {
           eipNo,
@@ -314,7 +369,8 @@ function extractEIPNumber(
   folderName: string,
   filePrefix: string
 ): string {
-  const regex = new RegExp(`b/${folderName}/${filePrefix}-(\\d+)\\.md`);
+  // Remove the b/ prefix requirement and make it case insensitive
+  const regex = new RegExp(`${folderName}/${filePrefix}-(\\d+)\\.md$`, "i");
   const match = filePath.match(regex);
 
   if (match && match[1]) {
@@ -335,11 +391,11 @@ function fixGitHubUrl(url: string): string {
     return url;
   }
 
-  // Convert GitHub blob URL to raw URL
-  // Example: https://github.com/user/repo/blob/branch/path/file.md -> https://raw.githubusercontent.com/user/repo/branch/path/file.md
+  // Convert GitHub blob URL to raw URL with refs/heads/
+  // Example: https://github.com/user/repo/blob/branch/path/file.md -> https://raw.githubusercontent.com/user/repo/refs/heads/branch/path/file.md
   return url
     .replace("github.com", "raw.githubusercontent.com")
-    .replace("/blob/", "/");
+    .replace("/blob/", "/refs/heads/");
 }
 
 /**
@@ -381,6 +437,58 @@ function getCachedPRData(prNo: number, repo: string): any {
   return existingData;
 }
 
+/**
+ * Process file changes to find relevant files and handle renames
+ */
+function processFileChanges(
+  prFiles: any[],
+  folderName: string,
+  filePrefix: string
+): {
+  addedFiles: any[];
+  renamedFiles: Array<{ oldFile: any; newFile: any }>;
+} {
+  const addedFiles: any[] = [];
+  const renamedFiles: Array<{ oldFile: any; newFile: any }> = [];
+
+  // First pass to collect renamed files
+  const renameMap = new Map<string, any>();
+  prFiles.forEach((file) => {
+    if (file.status === "renamed") {
+      renameMap.set(file.previous_filename, file);
+    }
+  });
+
+  // Second pass to process files
+  prFiles.forEach((file) => {
+    const matchesPattern = (filename: string) =>
+      filename.match(new RegExp(`${folderName}/${filePrefix}-\\d+\\.md$`, "i"));
+
+    if (file.status === "added" && matchesPattern(file.filename)) {
+      addedFiles.push(file);
+    } else if (file.status === "renamed") {
+      const oldMatches = matchesPattern(file.previous_filename);
+      const newMatches = matchesPattern(file.filename);
+
+      // Only process renames where at least one of the filenames matches our pattern
+      if (oldMatches || newMatches) {
+        renamedFiles.push({
+          oldFile: {
+            filename: file.previous_filename,
+            status: "removed",
+          },
+          newFile: {
+            filename: file.filename,
+            status: "added",
+          },
+        });
+      }
+    }
+  });
+
+  return { addedFiles, renamedFiles };
+}
+
 const fetchDataFromOpenPRs = async ({
   orgName,
   repo,
@@ -396,6 +504,7 @@ const fetchDataFromOpenPRs = async ({
 }) => {
   const prNumbers = await getOpenPRNumbers(orgName, repo);
   const result: ValidEIPs = {};
+  console.log(`Processing ${prNumbers.length} PRs for ${repo}...`);
 
   // Process PRs with improved concurrency
   await processWithConcurrency(
@@ -422,83 +531,109 @@ const fetchDataFromOpenPRs = async ({
           getPRFileChanges(orgName, repo, prNo),
         ]);
 
-        if (!prData) return;
+        if (!prData) {
+          console.log(`No PR data found for PR #${prNo}`);
+          return;
+        }
 
-        // Process file changes to find EIP file
-        const addedFiles = prFiles.filter(
-          (file: any) =>
-            file.status === "added" &&
-            file.filename.match(
-              new RegExp(`${folderName}/${filePrefix}-\\d+\\.md$`)
-            )
-        );
-
-        if (addedFiles.length === 0) return;
-
-        const addedFile = addedFiles[0];
-        const eipNo = extractEIPNumber(
-          addedFile.filename,
+        // Process file changes to find relevant files
+        const { addedFiles, renamedFiles } = processFileChanges(
+          prFiles,
           folderName,
           filePrefix
         );
-        if (!eipNo) return;
 
-        // Construct GitHub URLs
-        const { repoOwnerAndName, branchName } = prData;
-        const rawGithubUrl = `https://raw.githubusercontent.com/${repoOwnerAndName}/${branchName}/${addedFile.filename}`;
-
-        try {
-          // Try local file first
-          const repoPath = getRepoPath(orgName, repo);
-          const localPath = path.join(
-            repoPath,
+        // Handle renamed files first to remove old data
+        for (const { oldFile, newFile } of renamedFiles) {
+          const oldEipNo = extractEIPNumber(
+            oldFile.filename,
             folderName,
-            `${filePrefix}-${eipNo}.md`
+            filePrefix
+          );
+          const newEipNo = extractEIPNumber(
+            newFile.filename,
+            folderName,
+            filePrefix
           );
 
-          let eipMarkdown = "";
-          let useLocalFile = false;
+          if (oldEipNo) {
+            console.log(
+              `Removing old data for ${filePrefix}-${oldEipNo} due to rename`
+            );
+            delete result[oldEipNo];
+          }
+
+          if (newEipNo) {
+            // Process the new file as if it was added
+            addedFiles.push(newFile);
+          }
+        }
+
+        // Process added files (including renamed files with new EIP numbers)
+        for (const addedFile of addedFiles) {
+          const eipNo = extractEIPNumber(
+            addedFile.filename,
+            folderName,
+            filePrefix
+          );
+          if (!eipNo) continue;
+
+          // Construct GitHub URLs
+          const { repoOwnerAndName, branchName } = prData;
+          const rawGithubUrl = `https://raw.githubusercontent.com/${repoOwnerAndName}/refs/heads/${branchName}/${addedFile.filename}`;
 
           try {
-            if (fs.existsSync(localPath)) {
-              eipMarkdown = fs.readFileSync(localPath, "utf-8");
-              useLocalFile = true;
+            // Try local file first
+            const repoPath = getRepoPath(orgName, repo);
+            const localPath = path.join(repoPath, addedFile.filename);
+
+            let eipMarkdown = "";
+            let useLocalFile = false;
+
+            try {
+              if (fs.existsSync(localPath)) {
+                eipMarkdown = fs.readFileSync(localPath, "utf-8");
+                useLocalFile = true;
+                console.log(`Using local file for ${filePrefix}-${eipNo}`);
+              }
+            } catch (error: any) {
+              console.warn(
+                `Could not read local file, will try GitHub API: ${error.message}`
+              );
             }
+
+            // Fallback to GitHub API if local file not available
+            if (!useLocalFile) {
+              console.log(
+                `Fetching content from GitHub for ${filePrefix}-${eipNo} from ${rawGithubUrl}`
+              );
+              const eipMarkdownRes = await fetchWithRetry(rawGithubUrl, {
+                headers,
+              });
+              eipMarkdown = eipMarkdownRes.data;
+            }
+
+            const { metadata } = extractMetadata(eipMarkdown);
+            const { title, status, requires } = convertMetadataToJson(metadata);
+
+            console.log(`Found WIP ${filePrefix}: ${eipNo}: ${title}`);
+
+            result[eipNo] = {
+              title: title || `${filePrefix.toUpperCase()}-${eipNo}`,
+              status,
+              isERC,
+              prNo,
+              markdownPath: rawGithubUrl,
+              requires,
+              timestamp: new Date().toISOString(),
+            };
+
+            console.log(`Successfully added ${filePrefix}-${eipNo} to result`);
           } catch (error: any) {
             console.warn(
-              `Could not read local file, will try GitHub API: ${error.message}`
+              `⚠️ Could not read content for ${filePrefix}-${eipNo} from PR #${prNo}: ${error.message}`
             );
           }
-
-          // Fallback to GitHub API if local file not available
-          if (!useLocalFile) {
-            console.log(
-              `Fetching content from GitHub for ${filePrefix}-${eipNo}`
-            );
-            const eipMarkdownRes = await fetchWithRetry(rawGithubUrl, {
-              headers,
-            });
-            eipMarkdown = eipMarkdownRes.data;
-          }
-
-          const { metadata } = extractMetadata(eipMarkdown);
-          const { title, status, requires } = convertMetadataToJson(metadata);
-
-          console.log(`Found WIP ${filePrefix}: ${eipNo}: ${title}`);
-
-          result[eipNo] = {
-            title: title || `${filePrefix.toUpperCase()}-${eipNo}`,
-            status,
-            isERC,
-            prNo,
-            markdownPath: rawGithubUrl,
-            requires,
-            timestamp: new Date().toISOString(),
-          };
-        } catch (error: any) {
-          console.warn(
-            `⚠️ Could not read content for ${filePrefix}-${eipNo} from PR #${prNo}: ${error.message}`
-          );
         }
       } catch (error: any) {
         console.warn(`⚠️ Error processing PR #${prNo}: ${error.message}`);
@@ -507,6 +642,9 @@ const fetchDataFromOpenPRs = async ({
     MAX_CONCURRENT_REQUESTS
   );
 
+  console.log(
+    `Finished processing ${repo}. Found ${Object.keys(result).length} valid entries.`
+  );
   return result;
 };
 
@@ -563,6 +701,21 @@ const main = async () => {
   console.log("Starting data update process...");
 
   try {
+    // Check rate limit before starting
+    const rateLimit = await checkRateLimit();
+    if (rateLimit && rateLimit.remaining < 100) {
+      console.warn(
+        `Warning: Low rate limit remaining (${rateLimit.remaining}). Consider waiting until reset.`
+      );
+      const waitTime = rateLimit.reset * 1000 - Date.now();
+      if (waitTime > 0) {
+        console.log(
+          `Waiting ${Math.ceil(waitTime / 1000)} seconds for rate limit reset...`
+        );
+        await new Promise((res) => setTimeout(res, waitTime + 1000)); // Add 1 second buffer
+      }
+    }
+
     // Create performance monitoring object
     const perfMetrics: { [key: string]: number } = {};
 
