@@ -442,14 +442,17 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "320": {
-    "title": "Chain Agnostic State Transition Protocol",
+    "title": "Wallet Switch Chain JSON-RPC Method",
     "status": "Draft",
-    "prNo": 337,
-    "markdownPath": "https://raw.githubusercontent.com/layer-3/CAIPs/refs/heads/main/CAIPs/caip-320.md",
+    "prNo": 344,
+    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
     "requires": [
-      "[1]"
+      "2",
+      "25",
+      "171",
+      "316"
     ],
-    "timestamp": "2025-05-20T15:37:19.367Z"
+    "timestamp": "2025-05-23T13:05:46.289Z"
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",
@@ -465,7 +468,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-05-20T15:37:20.074Z"
+    "timestamp": "2025-05-23T13:05:46.440Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -515,6 +518,6 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-05-20T11:10:44.590Z"
+    "timestamp": "2025-05-23T13:05:48.594Z"
   }
 }

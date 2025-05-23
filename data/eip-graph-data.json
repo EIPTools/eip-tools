@@ -6653,7 +6653,7 @@
     {
       "id": "eip-7843",
       "eipNo": "7843",
-      "title": "SLOT precompile",
+      "title": "SLOTNUM opcode",
       "status": "Draft",
       "isERC": false
     },
@@ -7270,6 +7270,34 @@
       "id": "eip-7946",
       "eipNo": "7946",
       "title": "Unidirectional Wallet Uplink aka UWULink",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7947",
+      "eipNo": "7947",
+      "title": "Universal Account Recovery Standard (UARS)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7948",
+      "eipNo": "7948",
+      "title": "Iterable Storage",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7949",
+      "eipNo": "7949",
+      "title": "Genesis File Format",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7950",
+      "eipNo": "7950",
+      "title": "Encode chain id with transaction hash",
       "status": "Draft",
       "isERC": true
     },
@@ -12129,6 +12157,10 @@
     },
     {
       "source": "eip-7907",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-7907",
       "target": "eip-3860"
     },
     {
@@ -12270,6 +12302,10 @@
     {
       "source": "eip-7946",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-7950",
+      "target": "eip-155"
     },
     {
       "source": "eip-undefined",

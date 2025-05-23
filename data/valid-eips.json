@@ -8388,7 +8388,7 @@
     "timestamp": "2025-05-20T15:38:58.670Z"
   },
   "7843": {
-    "title": "SLOT precompile",
+    "title": "SLOTNUM opcode",
     "status": "Draft",
     "requires": [],
     "isERC": false,
@@ -8886,6 +8886,7 @@
     "status": "Draft",
     "requires": [
       "170",
+      "2929",
       "3860"
     ],
     "isERC": false,
@@ -9208,6 +9209,39 @@
     ],
     "timestamp": "2025-05-20T15:38:27.254Z"
   },
+  "7947": {
+    "title": "Universal Account Recovery Standard (UARS)",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1046,
+    "markdownPath": "https://raw.githubusercontent.com/Arvolear/ERCs/refs/heads/master/ERCS/erc-7947.md",
+    "timestamp": "2025-05-23T13:06:45.825Z"
+  },
+  "7948": {
+    "title": "Iterable Storage",
+    "status": "Draft",
+    "prNo": 9792,
+    "markdownPath": "https://raw.githubusercontent.com/keyvank/EIPs/refs/heads/master/EIPS/eip-7948.md",
+    "timestamp": "2025-05-23T13:05:48.498Z"
+  },
+  "7949": {
+    "title": "Genesis File Format",
+    "status": "Draft",
+    "prNo": 9801,
+    "markdownPath": "https://raw.githubusercontent.com/jflo/EIPs/refs/heads/genesisJson/EIPS/eip-7949.md",
+    "timestamp": "2025-05-23T13:05:47.120Z"
+  },
+  "7950": {
+    "title": "Encode chain id with transaction hash",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1036,
+    "markdownPath": "https://raw.githubusercontent.com/microbecode/ERCs/refs/heads/erc-encode-idhash/ERCS/erc-7950.md",
+    "requires": [
+      "155"
+    ],
+    "timestamp": "2025-05-23T13:06:46.918Z"
+  },
   "99999": {
     "title": "CALL_GAS_SPLIT opcode",
     "status": "Draft",
@@ -9238,6 +9272,6 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-05-20T11:11:38.626Z"
+    "timestamp": "2025-05-23T13:07:00.560Z"
   }
 }
