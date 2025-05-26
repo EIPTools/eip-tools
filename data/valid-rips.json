@@ -52,7 +52,7 @@
     "status": "Draft",
     "prNo": 26,
     "markdownPath": "https://raw.githubusercontent.com/Eikix/RIPs/refs/heads/rip_7667/RIPS/rip-7724.md",
-    "timestamp": "2025-05-20T15:37:18.376Z"
+    "timestamp": "2025-05-26T04:54:08.234Z"
   },
   "7728": {
     "title": "Precompile for L1SLOAD",
@@ -95,7 +95,7 @@
     "status": "Draft",
     "prNo": 40,
     "markdownPath": "https://raw.githubusercontent.com/polymerdao/RIPs/refs/heads/bo/cross-contigency/RIPS/rip-7789.md",
-    "timestamp": "2025-05-23T13:05:45.835Z"
+    "timestamp": "2025-05-26T04:54:08.344Z"
   },
   "7810": {
     "title": "RIP Purpose and Guidelines",
@@ -131,7 +131,7 @@
     "requires": [
       "7560"
     ],
-    "timestamp": "2025-05-20T15:37:17.220Z"
+    "timestamp": "2025-05-26T04:54:07.503Z"
   },
   "undefined": {
     "title": "Raise gas costs of hash functions",

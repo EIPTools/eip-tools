@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-05-20T15:37:26.367Z"
+    "timestamp": "2025-05-26T04:54:14.915Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-05-20T15:37:26.315Z"
+    "timestamp": "2025-05-26T04:54:15.103Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-05-20T15:37:24.037Z"
+    "timestamp": "2025-05-26T04:54:12.884Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-20T15:37:23.911Z"
+    "timestamp": "2025-05-26T04:54:12.983Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-20T15:37:23.468Z"
+    "timestamp": "2025-05-26T04:54:12.417Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-05-20T15:37:21.678Z"
+    "timestamp": "2025-05-26T04:54:10.880Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -353,7 +353,7 @@
       "217",
       "275"
     ],
-    "timestamp": "2025-05-20T15:37:21.575Z"
+    "timestamp": "2025-05-26T04:54:10.540Z"
   },
   "285": {
     "title": "JSON-RPC Method for Revoking Session Authorizations",
@@ -380,7 +380,7 @@
       "27",
       "282"
     ],
-    "timestamp": "2025-05-20T15:37:22.181Z"
+    "timestamp": "2025-05-26T04:54:11.043Z"
   },
   "295": {
     "title": "Browser Wallet Messaging for Iframes",
@@ -392,7 +392,7 @@
       "27",
       "282"
     ],
-    "timestamp": "2025-05-20T15:37:22.711Z"
+    "timestamp": "2025-05-26T04:54:11.511Z"
   },
   "311": {
     "title": "JSON-RPC Event for Session Authorization Updates",
@@ -442,17 +442,14 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "320": {
-    "title": "Wallet Switch Chain JSON-RPC Method",
+    "title": "Chain Agnostic State Transition Protocol",
     "status": "Draft",
-    "prNo": 344,
-    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
+    "prNo": 337,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/CAIPs/refs/heads/main/CAIPs/caip-320.md",
     "requires": [
-      "2",
-      "25",
-      "171",
-      "316"
+      "[1]"
     ],
-    "timestamp": "2025-05-23T13:05:46.289Z"
+    "timestamp": "2025-05-26T04:54:08.461Z"
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",
@@ -468,7 +465,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-05-23T13:05:46.440Z"
+    "timestamp": "2025-05-26T04:54:09.617Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -478,7 +475,7 @@
     "requires": [
       "294"
     ],
-    "timestamp": "2025-05-20T15:37:18.953Z"
+    "timestamp": "2025-05-26T04:54:08.339Z"
   },
   "345": {
     "title": "Wallet Service URL property",
@@ -488,7 +485,7 @@
     "requires": [
       "25"
     ],
-    "timestamp": "2025-05-20T15:37:17.275Z"
+    "timestamp": "2025-05-26T04:54:07.660Z"
   },
   "350": {
     "title": "Binary serialization of blockchain IDs and addresses",
@@ -498,7 +495,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-05-20T15:37:17.211Z"
+    "timestamp": "2025-05-26T04:54:07.108Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
@@ -510,14 +507,16 @@
     ]
   },
   "undefined": {
-    "title": "Account Address for the Hive namespace",
+    "title": "Wallet Switch Chain JSON-RPC Method",
     "status": "Draft",
-    "prNo": 95,
-    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
+    "prNo": 344,
+    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
     "requires": [
-      "10",
-      "94"
+      "2",
+      "25",
+      "171",
+      "316"
     ],
-    "timestamp": "2025-05-23T13:05:48.594Z"
+    "timestamp": "2025-05-26T04:54:07.060Z"
   }
 }

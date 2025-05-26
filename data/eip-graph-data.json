@@ -7213,7 +7213,7 @@
     {
       "id": "eip-7937",
       "eipNo": "7937",
-      "title": "64-bit mode EVM opcodes (EVM64)",
+      "title": "EVM64 - 64-bit mode EVM opcodes",
       "status": "Draft",
       "isERC": false
     },
@@ -7258,6 +7258,13 @@
       "title": "uRWA - Universal Real World Asset Interface",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-7944",
+      "eipNo": "7944",
+      "title": "Transaction Ordering:Block-Level Randomness",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-7945",
@@ -7309,6 +7316,13 @@
       "isERC": false
     },
     {
+      "id": "eip-217191",
+      "eipNo": "217191",
+      "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-010101",
       "eipNo": "010101",
       "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
@@ -7325,7 +7339,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Encode chain id with transaction hash",
       "status": "Draft",
       "isERC": true
     }
@@ -12192,6 +12206,10 @@
       "target": "eip-4844"
     },
     {
+      "source": "eip-7918",
+      "target": "eip-7840"
+    },
+    {
       "source": "eip-7919",
       "target": "eip-6404"
     },
@@ -12309,7 +12327,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-155"
     }
   ]
 }
