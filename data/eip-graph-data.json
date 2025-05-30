@@ -4778,7 +4778,7 @@
       "id": "eip-7291",
       "eipNo": "7291",
       "title": "Purpose bound money",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6038,7 +6038,7 @@
       "id": "eip-7743",
       "eipNo": "7743",
       "title": "Multi-Owner Non-Fungible Tokens (MO-NFT)",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6268,8 +6268,8 @@
     {
       "id": "eip-7782",
       "eipNo": "7782",
-      "title": "Reduce Slot Time for Lower Peak Bandwidth",
-      "status": "Stagnant",
+      "title": "Reduce Block Latency",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -6311,7 +6311,7 @@
       "id": "eip-7788",
       "eipNo": "7788",
       "title": "Dynamic target blob count",
-      "status": "Draft",
+      "status": "Withdrawn",
       "isERC": false
     },
     {
@@ -6626,7 +6626,7 @@
       "id": "eip-7837",
       "eipNo": "7837",
       "title": "Diffusive Tokens",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7262,7 +7262,7 @@
     {
       "id": "eip-7944",
       "eipNo": "7944",
-      "title": "Transaction Ordering:Block-Level Randomness",
+      "title": "Transaction Ordering,Block-Level Randomness",
       "status": "Draft",
       "isERC": false
     },
@@ -7290,7 +7290,7 @@
     {
       "id": "eip-7948",
       "eipNo": "7948",
-      "title": "Iterable Storage",
+      "title": "Indexed Storage",
       "status": "Draft",
       "isERC": false
     },
@@ -7307,6 +7307,13 @@
       "title": "Encode chain id with transaction hash",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-7951",
+      "eipNo": "7951",
+      "title": "Precompile for secp256r1 Curve Support",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-99999",
@@ -7339,9 +7346,16 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Encode chain id with transaction hash",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-0000",
+      "eipNo": "0000",
+      "title": "RPC Provider Discovery & Capacity API",
+      "status": "Draft",
+      "isERC": false
     }
   ],
   "links": [
@@ -12327,7 +12341,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-155"
+      "target": "eip-20"
     }
   ]
 }

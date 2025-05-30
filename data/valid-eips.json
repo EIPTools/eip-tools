@@ -5882,7 +5882,7 @@
   },
   "7291": {
     "title": "Purpose bound money",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "165",
       "173",
@@ -7611,7 +7611,7 @@
   },
   "7743": {
     "title": "Multi-Owner Non-Fungible Tokens (MO-NFT)",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7743.md"
@@ -7905,8 +7905,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7780.md"
   },
   "7782": {
-    "title": "Reduce Slot Time for Lower Peak Bandwidth",
-    "status": "Stagnant",
+    "title": "Reduce Block Latency",
+    "status": "Draft",
     "requires": [
       "7623",
       "7778"
@@ -7955,7 +7955,7 @@
   },
   "7788": {
     "title": "Dynamic target blob count",
-    "status": "Draft",
+    "status": "Withdrawn",
     "requires": [
       "7742"
     ],
@@ -8352,7 +8352,7 @@
   },
   "7837": {
     "title": "Diffusive Tokens",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7837.md"
@@ -8541,13 +8541,11 @@
   "7866": {
     "title": "Decentralised User Profiles",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 861,
-    "markdownPath": "https://raw.githubusercontent.com/anistark/ERCs/refs/heads/master/ERCS/erc-7866.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2025-05-26T04:55:12.603Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7866.md"
   },
   "7867": {
     "title": "Flow Control Wallet Call Capability",
@@ -9072,13 +9070,11 @@
   "7929": {
     "title": "PermaLink Asset Bound Token",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 999,
-    "markdownPath": "https://raw.githubusercontent.com/KBTstandard/ERCs/refs/heads/master/ERCS/erc-7929.md",
     "requires": [
       "721"
     ],
-    "timestamp": "2025-05-26T04:55:01.844Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7929.md"
   },
   "7930": {
     "title": "Interoperable Addresses",
@@ -9189,14 +9185,11 @@
     "timestamp": "2025-05-26T04:54:58.132Z"
   },
   "7944": {
-    "title": "Transaction Ordering:Block-Level Randomness",
+    "title": "Transaction Ordering,Block-Level Randomness",
     "status": "Draft",
-    "prNo": 9812,
-    "markdownPath": "https://raw.githubusercontent.com/aryaethn/EIPs/refs/heads/patch-1/EIPS/EIP-7944.md",
-    "requires": [
-      "Companion EIP (Not specified)"
-    ],
-    "timestamp": "2025-05-26T04:54:10.131Z"
+    "prNo": 9813,
+    "markdownPath": "https://raw.githubusercontent.com/aryaethn/EIPs/refs/heads/master/EIPS/eip-7944.md",
+    "timestamp": "2025-05-30T19:55:51.529Z"
   },
   "7945": {
     "title": "Confidential Transactions Supported Token",
@@ -9226,21 +9219,21 @@
     "isERC": true,
     "prNo": 1046,
     "markdownPath": "https://raw.githubusercontent.com/Arvolear/ERCs/refs/heads/master/ERCS/erc-7947.md",
-    "timestamp": "2025-05-23T13:06:45.825Z"
+    "timestamp": "2025-05-30T19:56:29.950Z"
   },
   "7948": {
-    "title": "Iterable Storage",
+    "title": "Indexed Storage",
     "status": "Draft",
     "prNo": 9792,
     "markdownPath": "https://raw.githubusercontent.com/keyvank/EIPs/refs/heads/master/EIPS/eip-7948.md",
-    "timestamp": "2025-05-23T13:05:48.498Z"
+    "timestamp": "2025-05-30T19:55:55.169Z"
   },
   "7949": {
     "title": "Genesis File Format",
     "status": "Draft",
     "prNo": 9801,
     "markdownPath": "https://raw.githubusercontent.com/jflo/EIPs/refs/heads/genesisJson/EIPS/eip-7949.md",
-    "timestamp": "2025-05-23T13:05:47.120Z"
+    "timestamp": "2025-05-30T19:55:53.629Z"
   },
   "7950": {
     "title": "Encode chain id with transaction hash",
@@ -9251,7 +9244,14 @@
     "requires": [
       "155"
     ],
-    "timestamp": "2025-05-23T13:06:46.918Z"
+    "timestamp": "2025-05-30T19:56:30.716Z"
+  },
+  "7951": {
+    "title": "Precompile for secp256r1 Curve Support",
+    "status": "Draft",
+    "prNo": 9833,
+    "markdownPath": "https://raw.githubusercontent.com/CarlBeek/EIPs/refs/heads/secp256r1/EIPS/eip-7951.md",
+    "timestamp": "2025-05-30T19:55:47.100Z"
   },
   "99999": {
     "title": "CALL_GAS_SPLIT opcode",
@@ -9282,14 +9282,21 @@
     "timestamp": "2025-05-26T04:54:46.213Z"
   },
   "undefined": {
-    "title": "Encode chain id with transaction hash",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1036,
-    "markdownPath": "https://raw.githubusercontent.com/microbecode/ERCs/refs/heads/erc-encode-idhash/ERCS/erc-7950.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "155"
+      "20"
     ],
-    "timestamp": "2025-05-26T04:54:55.761Z"
+    "timestamp": "2025-05-30T19:56:41.600Z"
+  },
+  "0000": {
+    "title": "RPC Provider Discovery & Capacity API",
+    "status": "Draft",
+    "prNo": 9832,
+    "markdownPath": "https://raw.githubusercontent.com/peersky/EIPs/refs/heads/master/EIPS/eip-0000.md",
+    "timestamp": "2025-05-30T19:55:47.441Z"
   }
 }

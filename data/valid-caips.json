@@ -465,7 +465,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-05-26T04:54:09.617Z"
+    "timestamp": "2025-05-30T19:55:45.876Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -497,6 +497,18 @@
     ],
     "timestamp": "2025-05-26T04:54:07.108Z"
   },
+  "358": {
+    "title": "Universal Payment Request Method",
+    "status": "Draft",
+    "prNo": 358,
+    "markdownPath": "https://raw.githubusercontent.com/lukaisailovic/CAIPs/refs/heads/wallet-pay-caip/CAIPs/caip-358.md",
+    "requires": [
+      "2",
+      "10",
+      "19"
+    ],
+    "timestamp": "2025-05-30T19:55:44.751Z"
+  },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
     "status": "Draft",
@@ -507,16 +519,14 @@
     ]
   },
   "undefined": {
-    "title": "Wallet Switch Chain JSON-RPC Method",
+    "title": "Account Address for the Hive namespace",
     "status": "Draft",
-    "prNo": 344,
-    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
+    "prNo": 95,
+    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
     "requires": [
-      "2",
-      "25",
-      "171",
-      "316"
+      "10",
+      "94"
     ],
-    "timestamp": "2025-05-26T04:54:07.060Z"
+    "timestamp": "2025-05-30T19:55:47.125Z"
   }
 }
