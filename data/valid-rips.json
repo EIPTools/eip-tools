@@ -52,7 +52,7 @@
     "status": "Draft",
     "prNo": 26,
     "markdownPath": "https://raw.githubusercontent.com/Eikix/RIPs/refs/heads/rip_7667/RIPS/rip-7724.md",
-    "timestamp": "2025-05-26T04:54:08.234Z"
+    "timestamp": "2025-06-08T09:47:27.110Z"
   },
   "7728": {
     "title": "Precompile for L1SLOAD",
@@ -95,7 +95,7 @@
     "status": "Draft",
     "prNo": 40,
     "markdownPath": "https://raw.githubusercontent.com/polymerdao/RIPs/refs/heads/bo/cross-contigency/RIPS/rip-7789.md",
-    "timestamp": "2025-05-30T19:55:45.083Z"
+    "timestamp": "2025-06-08T09:47:27.118Z"
   },
   "7810": {
     "title": "RIP Purpose and Guidelines",
@@ -114,6 +114,22 @@
     "status": "Draft",
     "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7875.md"
+  },
+  "7952": {
+    "title": "Native Account Abstraction RPC methods",
+    "status": "Draft",
+    "requires": [
+      "7560"
+    ],
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7952.md"
+  },
+  "7953": {
+    "title": "System Events for Native Account Abstraction",
+    "status": "Draft",
+    "requires": [
+      "7560"
+    ],
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7953.md"
   },
   "0000": {
     "title": "Native Account Abstraction RPC methods",

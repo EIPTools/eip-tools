@@ -4211,7 +4211,7 @@
       "id": "eip-7702",
       "eipNo": "7702",
       "title": "Set Code for EOAs",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -6338,7 +6338,14 @@
     {
       "id": "eip-7793",
       "eipNo": "7793",
-      "title": "ASSERTTXINDEX opcode",
+      "title": "Conditional Transactions",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7843",
+      "eipNo": "7843",
+      "title": "SLOTNUM opcode",
       "status": "Draft",
       "isERC": false
     },
@@ -6649,13 +6656,6 @@
       "title": "Cross-chain Message Format and Mailbox",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-7843",
-      "eipNo": "7843",
-      "title": "SLOTNUM opcode",
-      "status": "Draft",
-      "isERC": false
     },
     {
       "id": "eip-7844",
@@ -7262,7 +7262,7 @@
     {
       "id": "eip-7944",
       "eipNo": "7944",
-      "title": "Transaction Ordering,Block-Level Randomness",
+      "title": "Transaction Ordering:Block-Level Randomness",
       "status": "Draft",
       "isERC": false
     },
@@ -7283,7 +7283,7 @@
     {
       "id": "eip-7947",
       "eipNo": "7947",
-      "title": "Universal Account Recovery Standard (UARS)",
+      "title": "Account Abstraction Recovery Interface",
       "status": "Draft",
       "isERC": true
     },
@@ -11766,6 +11766,10 @@
     {
       "source": "eip-7792",
       "target": "eip-6466"
+    },
+    {
+      "source": "eip-7793",
+      "target": "eip-7843"
     },
     {
       "source": "eip-7795",
