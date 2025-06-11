@@ -4868,7 +4868,7 @@
   },
   "6093": {
     "title": "Custom errors for commonly-used tokens",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "20",
       "721",
@@ -5942,7 +5942,7 @@
   },
   "7399": {
     "title": "⚡ Flash Loans ⚡",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "20"
     ],
@@ -6682,7 +6682,7 @@
   },
   "7600": {
     "title": "Hardfork Meta - Pectra",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "2537",
       "2935",
@@ -6693,8 +6693,7 @@
       "7623",
       "7685",
       "7691",
-      "7702",
-      "7840"
+      "7702"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7600.md"
@@ -6923,7 +6922,7 @@
   },
   "7642": {
     "title": "eth/69 - history expiry and simpler receipts",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "5793"
     ],
@@ -7836,8 +7835,8 @@
     "timestamp": "2025-06-08T09:48:52.019Z"
   },
   "7773": {
-    "title": "Hardfork Meta - Amsterdam",
-    "status": "Stagnant",
+    "title": "Hardfork Meta - Glamsterdam",
+    "status": "Draft",
     "requires": [
       "7607",
       "7723"
@@ -7879,8 +7878,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7777.md"
   },
   "7778": {
-    "title": "Prevent Block Gas Smuggling",
-    "status": "Stagnant",
+    "title": "Block Gas Limit Accounting without Refunds",
+    "status": "Draft",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7778.md"
@@ -8148,7 +8147,7 @@
   },
   "7813": {
     "title": "Store, Table-Based Introspectable Storage",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7813.md"
@@ -8391,7 +8390,7 @@
   },
   "7843": {
     "title": "SLOTNUM opcode",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7843.md"
@@ -8726,10 +8725,9 @@
   "7888": {
     "title": "Crosschain Broadcaster",
     "status": "Draft",
+    "requires": [],
     "isERC": true,
-    "prNo": 897,
-    "markdownPath": "https://raw.githubusercontent.com/OffchainLabs/ERCs/refs/heads/broadcaster-erc/ERCS/erc-7888.md",
-    "timestamp": "2025-06-08T09:48:35.901Z"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7888.md"
   },
   "7889": {
     "title": "Emit log on revert",
@@ -8751,14 +8749,12 @@
   "7891": {
     "title": "Splitting and Merging of NFTs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 930,
-    "markdownPath": "https://raw.githubusercontent.com/nitin312/ERCs/refs/heads/erc-7891-update1/ERCS/erc-7891.md",
     "requires": [
       "721",
       "6150"
     ],
-    "timestamp": "2025-06-08T09:48:33.775Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7891.md"
   },
   "7892": {
     "title": "Blob Parameter Only Hardforks",
@@ -8937,7 +8933,7 @@
   },
   "7913": {
     "title": "Signature Verifiers",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7913.md"
@@ -9088,7 +9084,7 @@
   },
   "7932": {
     "title": "Algorithmic Transaction Wrapper",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "155",
       "1559",
@@ -9187,14 +9183,11 @@
     "timestamp": "2025-06-08T09:48:25.536Z"
   },
   "7944": {
-    "title": "Transaction Ordering:Block-Level Randomness",
+    "title": "Tx Ordering via Block-level Randomness",
     "status": "Draft",
-    "prNo": 9812,
-    "markdownPath": "https://raw.githubusercontent.com/aryaethn/EIPs/refs/heads/patch-1/EIPS/EIP-7944.md",
-    "requires": [
-      "Companion EIP (Not specified)"
-    ],
-    "timestamp": "2025-06-08T09:47:36.658Z"
+    "prNo": 9813,
+    "markdownPath": "https://raw.githubusercontent.com/aryaethn/EIPs/refs/heads/master/EIPS/eip-7944.md",
+    "timestamp": "2025-06-11T02:47:52.318Z"
   },
   "7945": {
     "title": "Confidential Transactions Supported Token",
@@ -9236,20 +9229,18 @@
   "7949": {
     "title": "Genesis File Format",
     "status": "Draft",
-    "prNo": 9801,
-    "markdownPath": "https://raw.githubusercontent.com/jflo/EIPs/refs/heads/genesisJson/EIPS/eip-7949.md",
-    "timestamp": "2025-06-08T09:47:38.405Z"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7949.md"
   },
   "7950": {
     "title": "Encode chain id with transaction hash",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1036,
-    "markdownPath": "https://raw.githubusercontent.com/microbecode/ERCs/refs/heads/erc-encode-idhash/ERCS/erc-7950.md",
     "requires": [
       "155"
     ],
-    "timestamp": "2025-06-08T09:48:24.235Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7950.md"
   },
   "7951": {
     "title": "Precompile for secp256r1 Curve Support",
@@ -9257,6 +9248,17 @@
     "prNo": 9833,
     "markdownPath": "https://raw.githubusercontent.com/CarlBeek/EIPs/refs/heads/secp256r1/EIPS/eip-7951.md",
     "timestamp": "2025-06-08T09:47:32.655Z"
+  },
+  "7954": {
+    "title": "Increase Maximum Contract Size to 48KiB and initcode Size to 96KiB",
+    "status": "Draft",
+    "prNo": 9884,
+    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/refs/heads/increase-bytesize/EIPS/eip-7954.md",
+    "requires": [
+      "170",
+      "3860"
+    ],
+    "timestamp": "2025-06-11T02:47:42.432Z"
   },
   "99999": {
     "title": "CALL_GAS_SPLIT opcode",
@@ -9295,7 +9297,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-05-30T19:56:41.600Z"
+    "timestamp": "2025-06-11T02:48:45.320Z"
   },
   "0000": {
     "title": "RPC Provider Discovery & Capacity API",

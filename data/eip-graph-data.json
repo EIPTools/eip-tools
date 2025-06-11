@@ -4001,7 +4001,7 @@
       "id": "eip-6093",
       "eipNo": "6093",
       "title": "Custom errors for commonly-used tokens",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -4820,7 +4820,7 @@
       "id": "eip-7399",
       "eipNo": "7399",
       "title": "⚡ Flash Loans ⚡",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -5149,7 +5149,7 @@
       "id": "eip-7642",
       "eipNo": "7642",
       "title": "eth/69 - history expiry and simpler receipts",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -5373,7 +5373,7 @@
       "id": "eip-7600",
       "eipNo": "7600",
       "title": "Hardfork Meta - Pectra",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -5387,13 +5387,6 @@
       "id": "eip-7691",
       "eipNo": "7691",
       "title": "Blob throughput increase",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7840",
-      "eipNo": "7840",
-      "title": "Add blob schedule to EL config files",
       "status": "Final",
       "isERC": false
     },
@@ -6212,8 +6205,8 @@
     {
       "id": "eip-7773",
       "eipNo": "7773",
-      "title": "Hardfork Meta - Amsterdam",
-      "status": "Stagnant",
+      "title": "Hardfork Meta - Glamsterdam",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -6247,8 +6240,8 @@
     {
       "id": "eip-7778",
       "eipNo": "7778",
-      "title": "Prevent Block Gas Smuggling",
-      "status": "Stagnant",
+      "title": "Block Gas Limit Accounting without Refunds",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -6346,7 +6339,7 @@
       "id": "eip-7843",
       "eipNo": "7843",
       "title": "SLOTNUM opcode",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -6465,7 +6458,7 @@
       "id": "eip-7813",
       "eipNo": "7813",
       "title": "Store, Table-Based Introspectable Storage",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6648,6 +6641,13 @@
       "eipNo": "7839",
       "title": "Unified Network Configuration",
       "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7840",
+      "eipNo": "7840",
+      "title": "Add blob schedule to EL config files",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -7074,7 +7074,7 @@
       "id": "eip-7913",
       "eipNo": "7913",
       "title": "Signature Verifiers",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7179,7 +7179,7 @@
       "id": "eip-7932",
       "eipNo": "7932",
       "title": "Algorithmic Transaction Wrapper",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7262,7 +7262,7 @@
     {
       "id": "eip-7944",
       "eipNo": "7944",
-      "title": "Transaction Ordering:Block-Level Randomness",
+      "title": "Tx Ordering via Block-level Randomness",
       "status": "Draft",
       "isERC": false
     },
@@ -7306,12 +7306,19 @@
       "eipNo": "7950",
       "title": "Encode chain id with transaction hash",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-7951",
       "eipNo": "7951",
       "title": "Precompile for secp256r1 Curve Support",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7954",
+      "eipNo": "7954",
+      "title": "Increase Maximum Contract Size to 48KiB and initcode Size to 96KiB",
       "status": "Draft",
       "isERC": false
     },
@@ -10984,10 +10991,6 @@
       "target": "eip-7702"
     },
     {
-      "source": "eip-7600",
-      "target": "eip-7840"
-    },
-    {
       "source": "eip-7603",
       "target": "eip-165"
     },
@@ -12342,6 +12345,14 @@
     {
       "source": "eip-7950",
       "target": "eip-155"
+    },
+    {
+      "source": "eip-7954",
+      "target": "eip-170"
+    },
+    {
+      "source": "eip-7954",
+      "target": "eip-3860"
     },
     {
       "source": "eip-undefined",

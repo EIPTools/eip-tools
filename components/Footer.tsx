@@ -5,10 +5,12 @@ import {
   Container,
   Stack,
   VStack,
+  HStack,
   Center,
   Heading,
   Link,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,13 +40,26 @@ export const Footer = () => {
         <VStack spacing={3}>
           <Center flexDir={"column"}>
             <Heading size="md">
-              <Link
-                color={"white"}
-                href="https://github.com/apoorvlathey/eip-tools"
-                isExternal
-              >
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </Link>
+              <HStack spacing={4}>
+                <Link
+                  color={"white"}
+                  href="https://github.com/apoorvlathey/eip-tools"
+                  isExternal
+                >
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                </Link>
+                <Link
+                  href="https://farcaster.xyz/eiptools/casts-and-replies"
+                  isExternal
+                >
+                  <Image
+                    src="/farcaster-logo.svg"
+                    alt="Farcaster"
+                    width="2rem"
+                    height="2rem"
+                  />
+                </Link>
+              </HStack>
             </Heading>
           </Center>
           <Center flexDir={"column"}>
