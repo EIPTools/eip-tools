@@ -6086,7 +6086,7 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "Restricted Security Token",
+      "title": "Lot Token",
       "status": "Draft",
       "isERC": true
     },
@@ -6555,7 +6555,7 @@
     {
       "id": "eip-7828",
       "eipNo": "7828",
-      "title": "Human readable names for Interoperable Addresses using ENS",
+      "title": "Readable Interoperable Addresses using ENS",
       "status": "Draft",
       "isERC": true
     },
@@ -7176,6 +7176,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7931",
+      "eipNo": "7931",
+      "title": "Hybrid Governance Documents  Management",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7932",
       "eipNo": "7932",
       "title": "Algorithmic Transaction Wrapper",
@@ -7311,14 +7318,42 @@
     {
       "id": "eip-7951",
       "eipNo": "7951",
-      "title": "Precompile for secp256r1 Curve Support",
+      "title": "Owner-Authorized Token Transfer Protocol",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-7954",
       "eipNo": "7954",
       "title": "Increase Maximum Contract Size to 48KiB and initcode Size to 96KiB",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-9819",
+      "eipNo": "9819",
+      "title": "EVM64 - EOF support",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-9821",
+      "eipNo": "9821",
+      "title": "EVM64 - Little endian opcodes",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-9834",
+      "eipNo": "9834",
+      "title": "EOF - Extended types section",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-9835",
+      "eipNo": "9835",
+      "title": "EVM64 - EOF code section",
       "status": "Draft",
       "isERC": false
     },
@@ -7353,9 +7388,9 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Tx Ordering via Block-level Randomness",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-0000",
@@ -12215,10 +12250,6 @@
       "target": "eip-1155"
     },
     {
-      "source": "eip-7914",
-      "target": "eip-165"
-    },
-    {
       "source": "eip-7915",
       "target": "eip-4844"
     },
@@ -12347,6 +12378,10 @@
       "target": "eip-155"
     },
     {
+      "source": "eip-7951",
+      "target": "eip-20"
+    },
+    {
       "source": "eip-7954",
       "target": "eip-170"
     },
@@ -12355,8 +12390,40 @@
       "target": "eip-3860"
     },
     {
-      "source": "eip-undefined",
-      "target": "eip-20"
+      "source": "eip-9819",
+      "target": "eip-3540"
+    },
+    {
+      "source": "eip-9819",
+      "target": "eip-3670"
+    },
+    {
+      "source": "eip-9819",
+      "target": "eip-4200"
+    },
+    {
+      "source": "eip-9819",
+      "target": "eip-7937"
+    },
+    {
+      "source": "eip-9821",
+      "target": "eip-7937"
+    },
+    {
+      "source": "eip-9834",
+      "target": "eip-3540"
+    },
+    {
+      "source": "eip-9835",
+      "target": "eip-3540"
+    },
+    {
+      "source": "eip-9835",
+      "target": "eip-4750"
+    },
+    {
+      "source": "eip-9835",
+      "target": "eip-9834"
     }
   ]
 }

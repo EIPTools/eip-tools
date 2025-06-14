@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-06-08T09:47:35.524Z"
+    "timestamp": "2025-06-14T01:14:40.167Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-06-08T09:47:35.781Z"
+    "timestamp": "2025-06-14T01:14:40.197Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-06-08T09:47:33.702Z"
+    "timestamp": "2025-06-14T01:14:38.121Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-06-08T09:47:33.637Z"
+    "timestamp": "2025-06-14T01:14:37.333Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-06-08T09:47:33.153Z"
+    "timestamp": "2025-06-14T01:14:36.950Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-06-08T09:47:31.861Z"
+    "timestamp": "2025-06-14T01:14:35.331Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -353,7 +353,7 @@
       "217",
       "275"
     ],
-    "timestamp": "2025-06-08T09:47:31.613Z"
+    "timestamp": "2025-06-14T01:14:34.351Z"
   },
   "285": {
     "title": "JSON-RPC Method for Revoking Session Authorizations",
@@ -380,7 +380,7 @@
       "27",
       "282"
     ],
-    "timestamp": "2025-06-08T09:47:32.115Z"
+    "timestamp": "2025-06-14T01:14:35.009Z"
   },
   "295": {
     "title": "Browser Wallet Messaging for Iframes",
@@ -392,7 +392,7 @@
       "27",
       "282"
     ],
-    "timestamp": "2025-06-08T09:47:32.572Z"
+    "timestamp": "2025-06-14T01:14:35.647Z"
   },
   "311": {
     "title": "JSON-RPC Event for Session Authorization Updates",
@@ -442,17 +442,14 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-319.md"
   },
   "320": {
-    "title": "Wallet Switch Chain JSON-RPC Method",
+    "title": "Chain Agnostic State Transition Protocol",
     "status": "Draft",
-    "prNo": 344,
-    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
+    "prNo": 337,
+    "markdownPath": "https://raw.githubusercontent.com/layer-3/CAIPs/refs/heads/main/CAIPs/caip-320.md",
     "requires": [
-      "2",
-      "25",
-      "171",
-      "316"
+      "[1]"
     ],
-    "timestamp": "2025-06-11T02:47:40.771Z"
+    "timestamp": "2025-06-14T01:14:31.977Z"
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",
@@ -468,7 +465,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-06-11T02:47:41.467Z"
+    "timestamp": "2025-06-14T01:14:33.184Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -478,7 +475,7 @@
     "requires": [
       "294"
     ],
-    "timestamp": "2025-06-08T09:47:29.281Z"
+    "timestamp": "2025-06-14T01:14:31.769Z"
   },
   "345": {
     "title": "Wallet Service URL property",
@@ -488,7 +485,7 @@
     "requires": [
       "25"
     ],
-    "timestamp": "2025-06-08T09:47:28.101Z"
+    "timestamp": "2025-06-14T01:14:31.762Z"
   },
   "350": {
     "title": "Binary Serialization of Blockchain IDs and Addresses",
@@ -498,7 +495,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-06-08T09:47:26.870Z"
+    "timestamp": "2025-06-14T01:14:30.464Z"
   },
   "358": {
     "title": "Universal Payment Request Method",
@@ -510,7 +507,7 @@
       "10",
       "19"
     ],
-    "timestamp": "2025-06-08T09:47:29.520Z"
+    "timestamp": "2025-06-14T01:14:30.284Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
@@ -522,14 +519,16 @@
     ]
   },
   "undefined": {
-    "title": "Account Address for the Hive namespace",
+    "title": "Wallet Switch Chain JSON-RPC Method",
     "status": "Draft",
-    "prNo": 95,
-    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
+    "prNo": 344,
+    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
     "requires": [
-      "10",
-      "94"
+      "2",
+      "25",
+      "171",
+      "316"
     ],
-    "timestamp": "2025-06-11T02:47:43.072Z"
+    "timestamp": "2025-06-14T01:14:30.285Z"
   }
 }
