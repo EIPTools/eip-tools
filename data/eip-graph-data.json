@@ -3035,7 +3035,7 @@
       "id": "eip-4803",
       "eipNo": "4803",
       "title": "Limit transaction gas to a maximum of 2^63-1",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4463,7 +4463,7 @@
       "id": "eip-6888",
       "eipNo": "6888",
       "title": "Arithmetic verification at EVM level",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7312,7 +7312,7 @@
       "id": "eip-7950",
       "eipNo": "7950",
       "title": "Encode chain id with transaction hash",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7325,7 +7325,161 @@
     {
       "id": "eip-7954",
       "eipNo": "7954",
-      "title": "Increase Maximum Contract Size to 48KiB and initcode Size to 96KiB",
+      "title": "Increase Maximum Contract Size",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7955",
+      "eipNo": "7955",
+      "title": "Permissionless CREATE2 Factory",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7956",
+      "eipNo": "7956",
+      "title": "Tx Ordering via Block-level Randomness",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7957",
+      "eipNo": "7957",
+      "title": "EVM64 - EOF support",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7958",
+      "eipNo": "7958",
+      "title": "EVM64 - Little endian opcodes",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7959",
+      "eipNo": "7959",
+      "title": "RPC Provider Discovery & Capacity API",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7960",
+      "eipNo": "7960",
+      "title": "EOF - Extended types section",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7961",
+      "eipNo": "7961",
+      "title": "EVM64 - EOF code section",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-9834",
+      "eipNo": "9834",
+      "title": "EOF - Extended types section",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7962",
+      "eipNo": "7962",
+      "title": "Key Hash Based Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7963",
+      "eipNo": "7963",
+      "title": "Oracle-Permissioned ERC-20 with ZK-Verified ISO 20022 Payment Instructions",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7964",
+      "eipNo": "7964",
+      "title": "Cross-Chain EIP-712 Signing Domains",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7965",
+      "eipNo": "7965",
+      "title": "Proof-based Broadcast in ERC-7786 Gateways",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7966",
+      "eipNo": "7966",
+      "title": "eth_sendRawTransactionSync Method",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7967",
+      "eipNo": "7967",
+      "title": "Set MAX_RECEIPTS_MESSAGE_SIZE for GetReceipts in devp2p",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7969",
+      "eipNo": "7969",
+      "title": "DKIM Registry Interface",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7970",
+      "eipNo": "7970",
+      "title": "Stateless Encrypted Communication",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7971",
+      "eipNo": "7971",
+      "title": "Hard limit and cost reduction for transient storage allocation",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7972",
+      "eipNo": "7972",
+      "title": "Universal Compliance Router for RWA's",
+      "status": "Review",
+      "isERC": true
+    },
+    {
+      "id": "eip-7973",
+      "eipNo": "7973",
+      "title": "Warm Account Write Metering",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7974",
+      "eipNo": "7974",
+      "title": "Non-Economic Token",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7975",
+      "eipNo": "7975",
+      "title": "eth/70 - partial block receipt lists",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7976",
+      "eipNo": "7976",
+      "title": "Further increase calldata cost",
       "status": "Draft",
       "isERC": false
     },
@@ -7340,13 +7494,6 @@
       "id": "eip-9821",
       "eipNo": "9821",
       "title": "EVM64 - Little endian opcodes",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-9834",
-      "eipNo": "9834",
-      "title": "EOF - Extended types section",
       "status": "Draft",
       "isERC": false
     },
@@ -12371,6 +12518,10 @@
     },
     {
       "source": "eip-7946",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-7946",
       "target": "eip-7702"
     },
     {
@@ -12388,6 +12539,106 @@
     {
       "source": "eip-7954",
       "target": "eip-3860"
+    },
+    {
+      "source": "eip-7955",
+      "target": "eip-1014"
+    },
+    {
+      "source": "eip-7955",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-7957",
+      "target": "eip-3540"
+    },
+    {
+      "source": "eip-7957",
+      "target": "eip-3670"
+    },
+    {
+      "source": "eip-7957",
+      "target": "eip-4200"
+    },
+    {
+      "source": "eip-7957",
+      "target": "eip-7937"
+    },
+    {
+      "source": "eip-7958",
+      "target": "eip-7937"
+    },
+    {
+      "source": "eip-7960",
+      "target": "eip-3540"
+    },
+    {
+      "source": "eip-7961",
+      "target": "eip-3540"
+    },
+    {
+      "source": "eip-7961",
+      "target": "eip-4750"
+    },
+    {
+      "source": "eip-7961",
+      "target": "eip-9834"
+    },
+    {
+      "source": "eip-7962",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-7962",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-7962",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-7962",
+      "target": "eip-2612"
+    },
+    {
+      "source": "eip-7962",
+      "target": "eip-5564"
+    },
+    {
+      "source": "eip-7964",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-7964",
+      "target": "eip-7803"
+    },
+    {
+      "source": "eip-7965",
+      "target": "eip-7786"
+    },
+    {
+      "source": "eip-7967",
+      "target": "eip-8"
+    },
+    {
+      "source": "eip-7971",
+      "target": "eip-1153"
+    },
+    {
+      "source": "eip-7973",
+      "target": "eip-2200"
+    },
+    {
+      "source": "eip-7975",
+      "target": "eip-7642"
+    },
+    {
+      "source": "eip-7975",
+      "target": "eip-7825"
+    },
+    {
+      "source": "eip-7976",
+      "target": "eip-7623"
     },
     {
       "source": "eip-9819",
