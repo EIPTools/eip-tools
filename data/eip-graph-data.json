@@ -3643,7 +3643,7 @@
     {
       "id": "eip-5559",
       "eipNo": "5559",
-      "title": "\"Cross Chain Write Deferral Protocol\"",
+      "title": "Cross Chain Write Deferral Protocol",
       "status": "Stagnant",
       "isERC": true
     },
@@ -4203,7 +4203,7 @@
     {
       "id": "eip-7495",
       "eipNo": "7495",
-      "title": "SSZ StableContainer",
+      "title": "SSZ ProgressiveContainer",
       "status": "Draft",
       "isERC": false
     },
@@ -4212,6 +4212,13 @@
       "eipNo": "7702",
       "title": "Set Code for EOAs",
       "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7916",
+      "eipNo": "7916",
+      "title": "SSZ ProgressiveList",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -4323,7 +4330,7 @@
       "id": "eip-6690",
       "eipNo": "6690",
       "title": "EVM Modular Arithmetic Extensions",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4927,13 +4934,6 @@
       "title": "Minimal Modular Smart Accounts",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-7916",
-      "eipNo": "7916",
-      "title": "SSZ ProgressiveList",
-      "status": "Draft",
-      "isERC": false
     },
     {
       "id": "eip-7496",
@@ -6451,7 +6451,7 @@
       "id": "eip-7812",
       "eipNo": "7812",
       "title": "ZK Identity Registry",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6535,7 +6535,7 @@
       "id": "eip-7825",
       "eipNo": "7825",
       "title": "Transaction Gas Limit Cap",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6961,7 +6961,7 @@
     {
       "id": "eip-7895",
       "eipNo": "7895",
-      "title": "API for hierarchical accounts",
+      "title": "API for Hierarchical Accounts",
       "status": "Draft",
       "isERC": true
     },
@@ -7318,9 +7318,9 @@
     {
       "id": "eip-7951",
       "eipNo": "7951",
-      "title": "Owner-Authorized Token Transfer Protocol",
+      "title": "Precompile for secp256r1 Curve Support",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-7954",
@@ -7428,6 +7428,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7968",
+      "eipNo": "7968",
+      "title": "Owner-Authorized Token Transfer Protocol",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7969",
       "eipNo": "7969",
       "title": "DKIM Registry Interface",
@@ -7482,6 +7489,48 @@
       "title": "Further increase calldata cost",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-7977",
+      "eipNo": "7977",
+      "title": "Future-block oracleless randomness",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7978",
+      "eipNo": "7978",
+      "title": "Non‑Fungible Account Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7979",
+      "eipNo": "7979",
+      "title": "Call and Return Opcodes for the EVM",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7980",
+      "eipNo": "7980",
+      "title": "Ed25519 transaction support",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7981",
+      "eipNo": "7981",
+      "title": "Increase access list cost",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7982",
+      "eipNo": "7982",
+      "title": "Decentralized Gateway URLs for ERC-3668",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-9819",
@@ -10094,15 +10143,15 @@
     },
     {
       "source": "eip-6404",
-      "target": "eip-5793"
-    },
-    {
-      "source": "eip-6404",
       "target": "eip-7495"
     },
     {
       "source": "eip-6404",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-6404",
+      "target": "eip-7916"
     },
     {
       "source": "eip-6454",
@@ -10133,6 +10182,14 @@
       "target": "eip-6404"
     },
     {
+      "source": "eip-6465",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-6465",
+      "target": "eip-7916"
+    },
+    {
       "source": "eip-6466",
       "target": "eip-658"
     },
@@ -10146,7 +10203,15 @@
     },
     {
       "source": "eip-6466",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-6466",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-6466",
+      "target": "eip-7916"
     },
     {
       "source": "eip-6492",
@@ -11553,6 +11618,10 @@
       "target": "eip-7569"
     },
     {
+      "source": "eip-7688",
+      "target": "eip-7916"
+    },
+    {
       "source": "eip-7692",
       "target": "eip-663"
     },
@@ -11989,6 +12058,10 @@
       "target": "eip-7708"
     },
     {
+      "source": "eip-7799",
+      "target": "eip-7916"
+    },
+    {
       "source": "eip-7801",
       "target": "eip-7642"
     },
@@ -12019,6 +12092,10 @@
     {
       "source": "eip-7807",
       "target": "eip-6466"
+    },
+    {
+      "source": "eip-7807",
+      "target": "eip-7495"
     },
     {
       "source": "eip-7807",
@@ -12473,6 +12550,10 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7924",
+      "target": "eip-20"
+    },
+    {
       "source": "eip-7927",
       "target": "eip-4444"
     },
@@ -12527,10 +12608,6 @@
     {
       "source": "eip-7950",
       "target": "eip-155"
-    },
-    {
-      "source": "eip-7951",
-      "target": "eip-20"
     },
     {
       "source": "eip-7954",
@@ -12621,6 +12698,14 @@
       "target": "eip-8"
     },
     {
+      "source": "eip-7968",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-7970",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-7971",
       "target": "eip-1153"
     },
@@ -12639,6 +12724,46 @@
     {
       "source": "eip-7976",
       "target": "eip-7623"
+    },
+    {
+      "source": "eip-7978",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-7978",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-7978",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-7978",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-7978",
+      "target": "eip-7579"
+    },
+    {
+      "source": "eip-7979",
+      "target": "eip-3541"
+    },
+    {
+      "source": "eip-7980",
+      "target": "eip-7932"
+    },
+    {
+      "source": "eip-7981",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-7982",
+      "target": "eip-3668"
+    },
+    {
+      "source": "eip-7982",
+      "target": "eip-4804"
     },
     {
       "source": "eip-9819",
