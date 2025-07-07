@@ -7606,7 +7606,7 @@
   },
   "7742": {
     "title": "Uncouple blob count between CL and EL",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       "4844"
     ],
@@ -7927,7 +7927,7 @@
   },
   "7784": {
     "title": "GETCONTRACT opcode",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7784.md"
@@ -9367,15 +9367,16 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7964.md"
   },
   "7965": {
-    "title": "Proof-based Broadcast in ERC-7786 Gateways",
+    "title": "A Capability-Based Security Framework",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1072,
-    "markdownPath": "https://raw.githubusercontent.com/ernestognw/ERCs/refs/heads/feat/storage-proof-broadcasting-gateways/ERCS/erc-7965.md",
+    "prNo": 1115,
+    "markdownPath": "https://raw.githubusercontent.com/FeurJak/ERCs/refs/heads/master/ERCS/erc-7965.md",
     "requires": [
-      "7786"
+      "1967",
+      "7201"
     ],
-    "timestamp": "2025-07-03T12:13:38.112Z"
+    "timestamp": "2025-07-07T07:17:11.074Z"
   },
   "7966": {
     "title": "eth_sendRawTransactionSync Method",
@@ -9544,6 +9545,13 @@
     ],
     "timestamp": "2025-07-03T12:13:30.841Z"
   },
+  "7983": {
+    "title": "Transaction Gas Limit Cap at 16,777,216 Gas",
+    "status": "Draft",
+    "prNo": 9984,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/tx-cap-eip/EIPS/eip-7983.md",
+    "timestamp": "2025-07-07T07:16:20.080Z"
+  },
   "9819": {
     "title": "EVM64 - EOF support",
     "status": "Draft",
@@ -9618,11 +9626,15 @@
     "timestamp": "2025-07-03T12:13:20.137Z"
   },
   "undefined": {
-    "title": "Tx Ordering via Block-level Randomness",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
-    "prNo": 9813,
-    "markdownPath": "https://raw.githubusercontent.com/aryaethn/EIPs/refs/heads/master/EIPS/eip-7944.md",
-    "timestamp": "2025-06-14T01:14:43.063Z"
+    "isERC": true,
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
+    "requires": [
+      "20"
+    ],
+    "timestamp": "2025-07-07T07:17:26.957Z"
   },
   "0000": {
     "title": "RPC Provider Discovery & Capacity API",

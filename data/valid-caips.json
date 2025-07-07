@@ -465,7 +465,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-07-03T12:12:22.841Z"
+    "timestamp": "2025-07-07T07:16:20.572Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -526,16 +526,14 @@
     ]
   },
   "undefined": {
-    "title": "Wallet Switch Chain JSON-RPC Method",
+    "title": "Account Address for the Hive namespace",
     "status": "Draft",
-    "prNo": 344,
-    "markdownPath": "https://raw.githubusercontent.com/tuna1207/CAIPs/refs/heads/feat/caip-320/CAIPs/caip-320.md",
+    "prNo": 95,
+    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
     "requires": [
-      "2",
-      "25",
-      "171",
-      "316"
+      "10",
+      "94"
     ],
-    "timestamp": "2025-06-14T01:14:30.285Z"
+    "timestamp": "2025-07-07T07:16:22.686Z"
   }
 }

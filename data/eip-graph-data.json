@@ -6024,7 +6024,7 @@
       "id": "eip-7742",
       "eipNo": "7742",
       "title": "Uncouple blob count between CL and EL",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6276,7 +6276,7 @@
       "id": "eip-7784",
       "eipNo": "7784",
       "title": "GETCONTRACT opcode",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7409,7 +7409,7 @@
     {
       "id": "eip-7965",
       "eipNo": "7965",
-      "title": "Proof-based Broadcast in ERC-7786 Gateways",
+      "title": "A Capability-Based Security Framework",
       "status": "Draft",
       "isERC": true
     },
@@ -7533,6 +7533,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7983",
+      "eipNo": "7983",
+      "title": "Transaction Gas Limit Cap at 16,777,216 Gas",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -7584,9 +7591,9 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Tx Ordering via Block-level Randomness",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-0000",
@@ -12691,7 +12698,11 @@
     },
     {
       "source": "eip-7965",
-      "target": "eip-7786"
+      "target": "eip-1967"
+    },
+    {
+      "source": "eip-7965",
+      "target": "eip-7201"
     },
     {
       "source": "eip-7967",
@@ -12800,6 +12811,10 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-20"
     }
   ]
 }
