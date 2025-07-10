@@ -1,6 +1,13 @@
 {
   "nodes": [
     {
+      "id": "eip-0",
+      "eipNo": "0",
+      "title": "Minimal Avatar Smart Wallet (MASW)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-1",
       "eipNo": "1",
       "title": "EIP Purpose and Guidelines",
@@ -4106,7 +4113,7 @@
       "id": "eip-6224",
       "eipNo": "6224",
       "title": "Contracts Dependencies Registry",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6294,6 +6301,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7930",
+      "eipNo": "7930",
+      "title": "Interoperable Addresses",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7787",
       "eipNo": "7787",
       "title": "Soulbound Degradable Governance",
@@ -6556,13 +6570,6 @@
       "id": "eip-7828",
       "eipNo": "7828",
       "title": "Readable Interoperable Addresses using ENS",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7930",
-      "eipNo": "7930",
-      "title": "Interoperable Addresses",
       "status": "Draft",
       "isERC": true
     },
@@ -7409,7 +7416,7 @@
     {
       "id": "eip-7965",
       "eipNo": "7965",
-      "title": "A Capability-Based Security Framework",
+      "title": "Proof-based Broadcast in ERC-7786 Gateways",
       "status": "Draft",
       "isERC": true
     },
@@ -7591,7 +7598,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "A Capability-Based Security Framework",
       "status": "Draft",
       "isERC": true
     },
@@ -12009,6 +12016,10 @@
       "target": "eip-2304"
     },
     {
+      "source": "eip-7786",
+      "target": "eip-7930"
+    },
+    {
       "source": "eip-7787",
       "target": "eip-20"
     },
@@ -12465,6 +12476,10 @@
       "target": "eip-3860"
     },
     {
+      "source": "eip-7907",
+      "target": "eip-7702"
+    },
+    {
       "source": "eip-7909",
       "target": "eip-20"
     },
@@ -12698,11 +12713,11 @@
     },
     {
       "source": "eip-7965",
-      "target": "eip-1967"
+      "target": "eip-7786"
     },
     {
       "source": "eip-7965",
-      "target": "eip-7201"
+      "target": "eip-7930"
     },
     {
       "source": "eip-7967",
@@ -12814,7 +12829,11 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-1967"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7201"
     }
   ]
 }
