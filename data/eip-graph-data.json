@@ -2202,7 +2202,7 @@
       "id": "eip-2926",
       "eipNo": "2926",
       "title": "Chunk-Based Code Merkleization",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -2853,7 +2853,7 @@
       "id": "eip-4361",
       "eipNo": "4361",
       "title": "Sign-In with Ethereum",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -5506,7 +5506,7 @@
       "id": "eip-7631",
       "eipNo": "7631",
       "title": "Dual Nature Token Pair",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6045,7 +6045,7 @@
       "id": "eip-7744",
       "eipNo": "7744",
       "title": "Code Index",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6059,7 +6059,7 @@
       "id": "eip-7746",
       "eipNo": "7746",
       "title": "Composable Security Middleware Hooks",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6108,7 +6108,7 @@
       "id": "eip-7756",
       "eipNo": "7756",
       "title": "EOF/EVM Trace Specification",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6549,7 +6549,7 @@
       "id": "eip-7825",
       "eipNo": "7825",
       "title": "Transaction Gas Limit Cap",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -6605,7 +6605,7 @@
       "id": "eip-7833",
       "eipNo": "7833",
       "title": "Scheduled function calls",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7386,13 +7386,6 @@
       "isERC": false
     },
     {
-      "id": "eip-9834",
-      "eipNo": "9834",
-      "title": "EOF - Extended types section",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-7962",
       "eipNo": "7962",
       "title": "Key Hash Based Tokens",
@@ -7444,7 +7437,7 @@
     {
       "id": "eip-7969",
       "eipNo": "7969",
-      "title": "DKIM Registry Interface",
+      "title": "DKIM Registry for DKIM Verification",
       "status": "Draft",
       "isERC": true
     },
@@ -7542,9 +7535,44 @@
     {
       "id": "eip-7983",
       "eipNo": "7983",
-      "title": "Transaction Gas Limit Cap at 16,777,216 Gas",
+      "title": "Granular Transaction Types",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-7984",
+      "eipNo": "7984",
+      "title": "Confidential Fungible Token Interface",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7985",
+      "eipNo": "7985",
+      "title": "Gateway Attributes for Message Control",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7986",
+      "eipNo": "7986",
+      "title": "A Capability-Based Security Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7987",
+      "eipNo": "7987",
+      "title": "Transaction Gas Limit Cap at 16,777,216",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7988",
+      "eipNo": "7988",
+      "title": "Minimal Avatar Smart Wallet (MASW)",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-9819",
@@ -7557,6 +7585,13 @@
       "id": "eip-9821",
       "eipNo": "9821",
       "title": "EVM64 - Little endian opcodes",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-9834",
+      "eipNo": "9834",
+      "title": "EOF - Extended types section",
       "status": "Draft",
       "isERC": false
     },
@@ -8554,10 +8589,6 @@
     {
       "source": "eip-2926",
       "target": "eip-170"
-    },
-    {
-      "source": "eip-2926",
-      "target": "eip-2584"
     },
     {
       "source": "eip-2930",
@@ -12521,10 +12552,6 @@
     },
     {
       "source": "eip-7919",
-      "target": "eip-6493"
-    },
-    {
-      "source": "eip-7919",
       "target": "eip-7495"
     },
     {
@@ -12533,23 +12560,11 @@
     },
     {
       "source": "eip-7919",
-      "target": "eip-7688"
-    },
-    {
-      "source": "eip-7919",
-      "target": "eip-7706"
-    },
-    {
-      "source": "eip-7919",
       "target": "eip-7708"
     },
     {
       "source": "eip-7919",
       "target": "eip-7745"
-    },
-    {
-      "source": "eip-7919",
-      "target": "eip-7792"
     },
     {
       "source": "eip-7919",
@@ -12681,7 +12696,7 @@
     },
     {
       "source": "eip-7961",
-      "target": "eip-9834"
+      "target": "eip-7960"
     },
     {
       "source": "eip-7962",
@@ -12790,6 +12805,18 @@
     {
       "source": "eip-7982",
       "target": "eip-4804"
+    },
+    {
+      "source": "eip-7985",
+      "target": "eip-7786"
+    },
+    {
+      "source": "eip-7986",
+      "target": "eip-1967"
+    },
+    {
+      "source": "eip-7986",
+      "target": "eip-7201"
     },
     {
       "source": "eip-9819",
