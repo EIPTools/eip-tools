@@ -7575,6 +7575,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7989",
+      "eipNo": "7989",
+      "title": "Ethereum Intent URI (EIURI)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -7633,7 +7640,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "A Capability-Based Security Framework",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -12819,6 +12826,10 @@
       "target": "eip-7201"
     },
     {
+      "source": "eip-7989",
+      "target": "eip-681"
+    },
+    {
       "source": "eip-9819",
       "target": "eip-3540"
     },
@@ -12856,11 +12867,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-1967"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7201"
+      "target": "eip-20"
     }
   ]
 }

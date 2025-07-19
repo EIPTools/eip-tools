@@ -9591,7 +9591,18 @@
     "isERC": true,
     "prNo": 1118,
     "markdownPath": "https://raw.githubusercontent.com/MostafaS/ERCs/refs/heads/masw-erc/ERCS/erc-7988.md",
-    "timestamp": "2025-07-17T02:22:03.179Z"
+    "timestamp": "2025-07-19T18:49:41.307Z"
+  },
+  "7989": {
+    "title": "Ethereum Intent URI (EIURI)",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1119,
+    "markdownPath": "https://raw.githubusercontent.com/frani/ERCs/refs/heads/eiuri/ERCS/erc-7989.md",
+    "requires": [
+      "681"
+    ],
+    "timestamp": "2025-07-19T18:49:38.186Z"
   },
   "9819": {
     "title": "EVM64 - EOF support",
@@ -9667,16 +9678,15 @@
     "timestamp": "2025-07-17T02:21:56.181Z"
   },
   "undefined": {
-    "title": "A Capability-Based Security Framework",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1115,
-    "markdownPath": "https://raw.githubusercontent.com/FeurJak/ERCs/refs/heads/master/ERCS/erc-7965.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "1967",
-      "7201"
+      "20"
     ],
-    "timestamp": "2025-07-10T14:15:46.159Z"
+    "timestamp": "2025-07-19T18:49:52.413Z"
   },
   "0000": {
     "title": "RPC Provider Discovery & Capacity API",
