@@ -5527,7 +5527,7 @@
       "id": "eip-7636",
       "eipNo": "7636",
       "title": "Extension of EIP-778 for \"client\" ENR Entry",
-      "status": "Final",
+      "status": "Withdrawn",
       "isERC": false
     },
     {
@@ -7242,7 +7242,7 @@
       "id": "eip-7939",
       "eipNo": "7939",
       "title": "Count leading zeros (CLZ) opcode",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7582,6 +7582,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7990",
+      "eipNo": "7990",
+      "title": "Opcode for arbitrary bytecode execution",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -7608,6 +7615,13 @@
       "title": "EVM64 - EOF code section",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-9999",
+      "eipNo": "9999",
+      "title": "ERC-vTOKEN: Virtual Token Standard",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-99999",
@@ -7640,16 +7654,16 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Ethereum Intent URI (EIURI)",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "RPC Provider Discovery & Capacity API",
+      "title": "Verifiable ML Model Inference (ZKML)",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     }
   ],
   "links": [
@@ -11930,10 +11944,6 @@
       "target": "eip-712"
     },
     {
-      "source": "eip-7752",
-      "target": "eip-173"
-    },
-    {
       "source": "eip-7754",
       "target": "eip-1193"
     },
@@ -12866,8 +12876,16 @@
       "target": "eip-9834"
     },
     {
-      "source": "eip-undefined",
+      "source": "eip-9999",
       "target": "eip-20"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-681"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-165"
     }
   ]
 }

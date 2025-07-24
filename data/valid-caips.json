@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-07-17T02:21:18.665Z"
+    "timestamp": "2025-07-24T03:10:35.682Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-07-17T02:21:19.014Z"
+    "timestamp": "2025-07-24T03:10:35.914Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-07-17T02:21:17.305Z"
+    "timestamp": "2025-07-24T03:10:33.374Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-07-17T02:21:16.882Z"
+    "timestamp": "2025-07-24T03:10:33.298Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-07-17T02:21:16.514Z"
+    "timestamp": "2025-07-24T03:10:32.774Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-07-17T02:21:15.427Z"
+    "timestamp": "2025-07-24T03:10:30.958Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -353,7 +353,7 @@
       "217",
       "275"
     ],
-    "timestamp": "2025-07-17T02:21:14.918Z"
+    "timestamp": "2025-07-24T03:10:30.553Z"
   },
   "285": {
     "title": "JSON-RPC Method for Revoking Session Authorizations",
@@ -380,7 +380,7 @@
       "27",
       "282"
     ],
-    "timestamp": "2025-07-17T02:21:15.409Z"
+    "timestamp": "2025-07-24T03:10:31.175Z"
   },
   "295": {
     "title": "Browser Wallet Messaging for Iframes",
@@ -392,7 +392,7 @@
       "27",
       "282"
     ],
-    "timestamp": "2025-07-17T02:21:15.847Z"
+    "timestamp": "2025-07-24T03:10:31.768Z"
   },
   "311": {
     "title": "JSON-RPC Event for Session Authorization Updates",
@@ -465,7 +465,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-07-19T18:48:44.293Z"
+    "timestamp": "2025-07-24T03:10:29.430Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -475,7 +475,7 @@
     "requires": [
       "294"
     ],
-    "timestamp": "2025-07-17T02:21:13.621Z"
+    "timestamp": "2025-07-24T03:10:28.651Z"
   },
   "345": {
     "title": "Wallet Service URL property",
@@ -503,7 +503,7 @@
       "10",
       "19"
     ],
-    "timestamp": "2025-07-17T02:21:13.134Z"
+    "timestamp": "2025-07-24T03:10:27.891Z"
   },
   "363": {
     "title": "Chain ID Wildcard",
