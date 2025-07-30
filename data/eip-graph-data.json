@@ -6093,7 +6093,7 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "Lot Token",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
@@ -6478,7 +6478,7 @@
     {
       "id": "eip-7814",
       "eipNo": "7814",
-      "title": "Introspection precompiles",
+      "title": "Introspection opcodes",
       "status": "Draft",
       "isERC": false
     },
@@ -6850,7 +6850,7 @@
       "id": "eip-7878",
       "eipNo": "7878",
       "title": "Bequeathable Contracts",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7081,7 +7081,7 @@
       "id": "eip-7913",
       "eipNo": "7913",
       "title": "Signature Verifiers",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7270,7 +7270,7 @@
       "id": "eip-7943",
       "eipNo": "7943",
       "title": "uRWA - Universal Real World Asset Interface",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7589,6 +7589,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7992",
+      "eipNo": "7992",
+      "title": "Verifiable ML Model Inference (ZKML)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -7619,7 +7626,7 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-vTOKEN: Virtual Token Standard",
+      "title": "ERC-9999",
       "status": "Draft",
       "isERC": true
     },
@@ -12840,6 +12847,10 @@
       "target": "eip-681"
     },
     {
+      "source": "eip-7992",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-9819",
       "target": "eip-3540"
     },
@@ -12874,10 +12885,6 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-20"
     },
     {
       "source": "eip-undefined",
