@@ -7596,6 +7596,20 @@
       "isERC": true
     },
     {
+      "id": "eip-7996",
+      "eipNo": "7996",
+      "title": "Contract Feature Detection",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7998",
+      "eipNo": "7998",
+      "title": "Turn `randao_reveal` into a VRF",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -7668,9 +7682,16 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Verifiable ML Model Inference (ZKML)",
+      "title": "Unified multidimensional fee market",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
+    },
+    {
+      "id": "eip-0288",
+      "eipNo": "0288",
+      "title": "Secure Intents for Agent Coordination",
+      "status": "Draft",
+      "isERC": false
     }
   ],
   "links": [
@@ -12851,6 +12872,10 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-7996",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-9819",
       "target": "eip-3540"
     },
@@ -12892,7 +12917,31 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-165"
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-7516"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-7691"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-7840"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-7918"
     }
   ]
 }
