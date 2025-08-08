@@ -3311,7 +3311,7 @@
   },
   "4361": {
     "title": "Sign-In with Ethereum",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "55",
       "137",
@@ -7692,7 +7692,7 @@
     "timestamp": "2025-08-05T07:43:41.336Z"
   },
   "7754": {
-    "title": "Tamperproof Web Immutable Transaction (TWIT)",
+    "title": "Tamperproof Extension Wallets API (TWIST)",
     "status": "Draft",
     "requires": [
       "1193"
@@ -7872,7 +7872,7 @@
   },
   "7776": {
     "title": "Transparent Financial Statements",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "20"
     ],
@@ -8484,7 +8484,7 @@
   },
   "7858": {
     "title": "Expirable NFTs and SBTs",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "165",
       "721"
@@ -8515,7 +8515,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7861.md"
   },
   "7862": {
-    "title": "Delayed Execution Layer State Root",
+    "title": "Delayed State Root",
     "status": "Draft",
     "requires": [],
     "isERC": false,
@@ -9088,7 +9088,7 @@
     "timestamp": "2025-08-05T07:43:13.975Z"
   },
   "7932": {
-    "title": "Algorithmic Transaction Wrapper",
+    "title": "Secondary Signature Algorithms",
     "status": "Review",
     "requires": [
       "155",
@@ -9553,13 +9553,11 @@
   "7985": {
     "title": "Gateway Attributes for Message Control",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1114,
-    "markdownPath": "https://raw.githubusercontent.com/ernestognw/ERCs/refs/heads/chore/7786-message-control/ERCS/erc-7985.md",
     "requires": [
       "7786"
     ],
-    "timestamp": "2025-08-05T07:43:01.957Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7985.md"
   },
   "7986": {
     "title": "A Capability-Based Security Framework",
@@ -9716,15 +9714,15 @@
     "timestamp": "2025-08-05T07:42:43.628Z"
   },
   "undefined": {
-    "title": "Ethereum Intent URI (EIURI)",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1119,
-    "markdownPath": "https://raw.githubusercontent.com/frani/ERCs/refs/heads/eiuri/ERCS/erc-7989.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "681"
+      "20"
     ],
-    "timestamp": "2025-07-24T03:11:30.627Z"
+    "timestamp": "2025-08-08T10:03:40.840Z"
   },
   "0000": {
     "title": "Unified multidimensional fee market",

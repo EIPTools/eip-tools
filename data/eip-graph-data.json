@@ -2853,7 +2853,7 @@
       "id": "eip-4361",
       "eipNo": "4361",
       "title": "Sign-In with Ethereum",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6100,7 +6100,7 @@
     {
       "id": "eip-7754",
       "eipNo": "7754",
-      "title": "Tamperproof Web Immutable Transaction (TWIT)",
+      "title": "Tamperproof Extension Wallets API (TWIST)",
       "status": "Draft",
       "isERC": true
     },
@@ -6234,7 +6234,7 @@
       "id": "eip-7776",
       "eipNo": "7776",
       "title": "Transparent Financial Statements",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6738,7 +6738,7 @@
       "id": "eip-7858",
       "eipNo": "7858",
       "title": "Expirable NFTs and SBTs",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6758,7 +6758,7 @@
     {
       "id": "eip-7862",
       "eipNo": "7862",
-      "title": "Delayed Execution Layer State Root",
+      "title": "Delayed State Root",
       "status": "Draft",
       "isERC": false
     },
@@ -7192,7 +7192,7 @@
     {
       "id": "eip-7932",
       "eipNo": "7932",
-      "title": "Algorithmic Transaction Wrapper",
+      "title": "Secondary Signature Algorithms",
       "status": "Review",
       "isERC": false
     },
@@ -7675,7 +7675,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Ethereum Intent URI (EIURI)",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -12913,7 +12913,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-681"
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",
