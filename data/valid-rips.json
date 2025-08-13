@@ -52,7 +52,7 @@
     "status": "Draft",
     "prNo": 26,
     "markdownPath": "https://raw.githubusercontent.com/Eikix/RIPs/refs/heads/rip_7667/RIPS/rip-7724.md",
-    "timestamp": "2025-08-05T07:41:40.897Z"
+    "timestamp": "2025-08-13T10:32:42.717Z"
   },
   "7728": {
     "title": "Precompile for L1SLOAD",
@@ -95,7 +95,7 @@
     "status": "Draft",
     "prNo": 40,
     "markdownPath": "https://raw.githubusercontent.com/polymerdao/RIPs/refs/heads/bo/cross-contigency/RIPS/rip-7789.md",
-    "timestamp": "2025-08-05T07:41:40.796Z"
+    "timestamp": "2025-08-13T10:32:42.160Z"
   },
   "7810": {
     "title": "RIP Purpose and Guidelines",
@@ -130,6 +130,12 @@
       "7560"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7953.md"
+  },
+  "7993": {
+    "title": "Rollup Interoperable Gas Interface Declaration",
+    "status": "Draft",
+    "requires": [],
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7993.md"
   },
   "0000": {
     "title": "Native Account Abstraction RPC methods",

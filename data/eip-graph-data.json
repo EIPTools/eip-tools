@@ -5058,7 +5058,7 @@
       "id": "eip-7519",
       "eipNo": "7519",
       "title": "Atomic Storage Operations SCREDIT and SDEBIT",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6444,7 +6444,7 @@
       "id": "eip-7808",
       "eipNo": "7808",
       "title": "Reserve Tx-Type Range for RIPs",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7193,7 +7193,7 @@
       "id": "eip-7932",
       "eipNo": "7932",
       "title": "Secondary Signature Algorithms",
-      "status": "Review",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -7351,6 +7351,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7998",
+      "eipNo": "7998",
+      "title": "Turn `randao_reveal` into a VRF",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7957",
       "eipNo": "7957",
       "title": "EVM64 - EOF support",
@@ -7451,7 +7458,7 @@
     {
       "id": "eip-7971",
       "eipNo": "7971",
-      "title": "Hard limit and cost reduction for transient storage allocation",
+      "title": "Hard Limits for Transient Storage",
       "status": "Draft",
       "isERC": false
     },
@@ -7603,11 +7610,39 @@
       "isERC": true
     },
     {
-      "id": "eip-7998",
-      "eipNo": "7998",
-      "title": "Turn `randao_reveal` into a VRF",
+      "id": "eip-7997",
+      "eipNo": "7997",
+      "title": "Deterministic Factory Predeploy",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-7999",
+      "eipNo": "7999",
+      "title": "Unified multidimensional fee market",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8000",
+      "eipNo": "8000",
+      "title": "Operator contract for non delegated EOAs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8001",
+      "eipNo": "8001",
+      "title": "Agent Coordination Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8002",
+      "eipNo": "8002",
+      "title": "Simplified Payment Verification Gateway",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-9819",
@@ -12649,19 +12684,15 @@
     },
     {
       "source": "eip-7932",
-      "target": "eip-1559"
+      "target": "eip-6404"
     },
     {
       "source": "eip-7932",
-      "target": "eip-2718"
+      "target": "eip-6466"
     },
     {
       "source": "eip-7932",
-      "target": "eip-2930"
-    },
-    {
-      "source": "eip-7932",
-      "target": "eip-4844"
+      "target": "eip-7495"
     },
     {
       "source": "eip-7932",
@@ -12706,6 +12737,10 @@
     {
       "source": "eip-7955",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-7956",
+      "target": "eip-7998"
     },
     {
       "source": "eip-7957",
@@ -12874,6 +12909,58 @@
     {
       "source": "eip-7996",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-7997",
+      "target": "eip-211"
+    },
+    {
+      "source": "eip-7997",
+      "target": "eip-1014"
+    },
+    {
+      "source": "eip-7999",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-7999",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-7999",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-7999",
+      "target": "eip-7516"
+    },
+    {
+      "source": "eip-7999",
+      "target": "eip-7691"
+    },
+    {
+      "source": "eip-7999",
+      "target": "eip-7840"
+    },
+    {
+      "source": "eip-7999",
+      "target": "eip-7918"
+    },
+    {
+      "source": "eip-8000",
+      "target": "eip-1153"
+    },
+    {
+      "source": "eip-8000",
+      "target": "eip-2771"
+    },
+    {
+      "source": "eip-8001",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8001",
+      "target": "eip-2612"
     },
     {
       "source": "eip-9819",
