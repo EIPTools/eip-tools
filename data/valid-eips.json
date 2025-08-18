@@ -9496,12 +9496,11 @@
   "7979": {
     "title": "Call and Return Opcodes for the EVM",
     "status": "Draft",
-    "prNo": 9914,
-    "markdownPath": "https://raw.githubusercontent.com/gcolvin/EIPs/refs/heads/master/EIPS/eip-7979.md",
     "requires": [
       "3541"
     ],
-    "timestamp": "2025-08-13T10:33:03.897Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7979.md"
   },
   "7980": {
     "title": "Ed25519 transaction support",
@@ -9582,7 +9581,7 @@
     "isERC": true,
     "prNo": 1118,
     "markdownPath": "https://raw.githubusercontent.com/MostafaS/ERCs/refs/heads/masw-erc/ERCS/erc-7988.md",
-    "timestamp": "2025-08-13T10:33:50.824Z"
+    "timestamp": "2025-08-18T05:51:24.812Z"
   },
   "7989": {
     "title": "Ethereum Intent URI (EIURI)",
@@ -9690,6 +9689,14 @@
     "markdownPath": "https://raw.githubusercontent.com/Hrom131/ERCs/refs/heads/master/ERCS/erc-8002.md",
     "timestamp": "2025-08-13T10:33:43.950Z"
   },
+  "8004": {
+    "title": "Trustless Agents",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1170,
+    "markdownPath": "https://raw.githubusercontent.com/dcrapis/ERCs/refs/heads/master/ERCS/erc-8004.md",
+    "timestamp": "2025-08-18T05:51:17.713Z"
+  },
   "9819": {
     "title": "EVM64 - EOF support",
     "status": "Draft",
@@ -9779,7 +9786,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-08-08T10:03:40.840Z"
+    "timestamp": "2025-08-18T05:51:33.806Z"
   },
   "0000": {
     "title": "Unified multidimensional fee market",
