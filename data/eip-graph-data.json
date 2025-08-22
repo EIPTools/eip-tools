@@ -2230,7 +2230,7 @@
       "id": "eip-2938",
       "eipNo": "2938",
       "title": "Account Abstraction",
-      "status": "Stagnant",
+      "status": "Withdrawn",
       "isERC": false
     },
     {
@@ -6297,7 +6297,7 @@
       "id": "eip-7786",
       "eipNo": "7786",
       "title": "Cross-Chain Messaging Gateway",
-      "status": "Draft",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7652,6 +7652,20 @@
       "isERC": true
     },
     {
+      "id": "eip-8005",
+      "eipNo": "8005",
+      "title": "Encrypted Transaction Envelope (ETE)",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8006",
+      "eipNo": "8006",
+      "title": "Universal Policy Engine",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -7724,7 +7738,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Unified multidimensional fee market",
+      "title": "Glamstardam Gas Repricings",
       "status": "Draft",
       "isERC": false
     },
@@ -11598,10 +11612,6 @@
       "target": "eip-4337"
     },
     {
-      "source": "eip-7656",
-      "target": "eip-6551"
-    },
-    {
       "source": "eip-7661",
       "target": "eip-165"
     },
@@ -12699,11 +12709,19 @@
     },
     {
       "source": "eip-7932",
+      "target": "eip-6493"
+    },
+    {
+      "source": "eip-7932",
       "target": "eip-7495"
     },
     {
       "source": "eip-7932",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-7932",
+      "target": "eip-7916"
     },
     {
       "source": "eip-7933",
@@ -12967,7 +12985,23 @@
     },
     {
       "source": "eip-8001",
-      "target": "eip-2612"
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8001",
+      "target": "eip-2098"
+    },
+    {
+      "source": "eip-8001",
+      "target": "eip-5267"
+    },
+    {
+      "source": "eip-8005",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8005",
+      "target": "eip-2718"
     },
     {
       "source": "eip-9819",
@@ -13008,34 +13042,6 @@
     {
       "source": "eip-undefined",
       "target": "eip-20"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-1559"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-2718"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-4844"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-7516"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-7691"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-7840"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-7918"
     }
   ]
 }
