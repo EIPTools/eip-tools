@@ -2818,14 +2818,7 @@
       "id": "eip-4337",
       "eipNo": "4337",
       "title": "Account Abstraction Using Alt Mempool",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7562",
-      "eipNo": "7562",
-      "title": "Account Abstraction Validation Scope Rules",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -5223,6 +5216,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7562",
+      "eipNo": "7562",
+      "title": "Account Abstraction Validation Scope Rules",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7564",
       "eipNo": "7564",
       "title": "Contract wallet management NFT",
@@ -6535,7 +6535,7 @@
       "id": "eip-7823",
       "eipNo": "7823",
       "title": "Set upper bounds for MODEXP",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7603,6 +7603,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7994",
+      "eipNo": "7994",
+      "title": "Purpose-Bound ERC20 with Multi-Condition Unlocking",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7996",
       "eipNo": "7996",
       "title": "Contract Feature Detection",
@@ -7664,6 +7671,34 @@
       "title": "Universal Policy Engine",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8007",
+      "eipNo": "8007",
+      "title": "Glamstardam Gas Repricings",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8009",
+      "eipNo": "8009",
+      "title": "Proxy Clear Signing",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8010",
+      "eipNo": "8010",
+      "title": "Pre-delegated Signature Verification",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8013",
+      "eipNo": "8013",
+      "title": "Static relative jumps and calls for the EVM",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-9819",
@@ -7738,7 +7773,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Glamstardam Gas Repricings",
+      "title": "Multidimensional Gas Metering",
       "status": "Draft",
       "isERC": false
     },
@@ -8962,10 +8997,6 @@
     {
       "source": "eip-4337",
       "target": "eip-712"
-    },
-    {
-      "source": "eip-4337",
-      "target": "eip-7562"
     },
     {
       "source": "eip-4353",
@@ -12924,6 +12955,10 @@
       "target": "eip-7201"
     },
     {
+      "source": "eip-7988",
+      "target": "eip-7702"
+    },
+    {
       "source": "eip-7989",
       "target": "eip-681"
     },
@@ -13002,6 +13037,18 @@
     {
       "source": "eip-8005",
       "target": "eip-2718"
+    },
+    {
+      "source": "eip-8010",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8010",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8013",
+      "target": "eip-7979"
     },
     {
       "source": "eip-9819",
