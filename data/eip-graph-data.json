@@ -5842,7 +5842,7 @@
       "id": "eip-7703",
       "eipNo": "7703",
       "title": "Increase calldata cost",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6562,7 +6562,7 @@
     {
       "id": "eip-7827",
       "eipNo": "7827",
-      "title": "JSON Smart Contract with Value Version Control",
+      "title": "JSON Contract with Value Version Control",
       "status": "Draft",
       "isERC": true
     },
@@ -7549,7 +7549,7 @@
     {
       "id": "eip-7984",
       "eipNo": "7984",
-      "title": "Confidential Fungible Token Interface",
+      "title": "Confidential Fungible Token",
       "status": "Draft",
       "isERC": true
     },
@@ -7675,7 +7675,7 @@
     {
       "id": "eip-8007",
       "eipNo": "8007",
-      "title": "Glamstardam Gas Repricings",
+      "title": "Glamsterdam Gas Repricings",
       "status": "Draft",
       "isERC": false
     },
@@ -7694,9 +7694,37 @@
       "isERC": true
     },
     {
+      "id": "eip-8011",
+      "eipNo": "8011",
+      "title": "Multidimensional Gas Metering",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8012",
+      "eipNo": "8012",
+      "title": "Generalized consolidation requests",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8013",
       "eipNo": "8013",
       "title": "Static relative jumps and calls for the EVM",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8014",
+      "eipNo": "8014",
+      "title": "Builder generalized consolidation requests",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8016",
+      "eipNo": "8016",
+      "title": "SSZ CompatibleUnion",
       "status": "Draft",
       "isERC": false
     },
@@ -13044,11 +13072,31 @@
     },
     {
       "source": "eip-8010",
+      "target": "eip-6492"
+    },
+    {
+      "source": "eip-8010",
       "target": "eip-7702"
     },
     {
       "source": "eip-8013",
       "target": "eip-7979"
+    },
+    {
+      "source": "eip-8014",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8014",
+      "target": "eip-8012"
+    },
+    {
+      "source": "eip-8016",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-8016",
+      "target": "eip-7916"
     },
     {
       "source": "eip-9819",
