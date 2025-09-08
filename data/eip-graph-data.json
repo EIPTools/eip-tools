@@ -2146,7 +2146,7 @@
       "id": "eip-2780",
       "eipNo": "2780",
       "title": "Reduce intrinsic transaction gas",
-      "status": "Withdrawn",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -4222,6 +4222,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8016",
+      "eipNo": "8016",
+      "title": "SSZ CompatibleUnion",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-6454",
       "eipNo": "6454",
       "title": "Minimal Transferable NFT detection interface",
@@ -4467,6 +4474,13 @@
       "isERC": false
     },
     {
+      "id": "eip-6884",
+      "eipNo": "6884",
+      "title": "Delegatable Utility Tokens for NFTs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-6888",
       "eipNo": "6888",
       "title": "Arithmetic verification at EVM level",
@@ -4484,7 +4498,7 @@
       "id": "eip-6909",
       "eipNo": "6909",
       "title": "Minimal Multi-Token Interface",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -5548,7 +5562,7 @@
       "id": "eip-7639",
       "eipNo": "7639",
       "title": "eth/70 - Cease serving history before PoS",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6247,7 +6261,7 @@
     {
       "id": "eip-7778",
       "eipNo": "7778",
-      "title": "Block Gas Limit Accounting without Refunds",
+      "title": "Block Gas Accounting without Refunds",
       "status": "Draft",
       "isERC": false
     },
@@ -6535,7 +6549,7 @@
       "id": "eip-7823",
       "eipNo": "7823",
       "title": "Set upper bounds for MODEXP",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7493,7 +7507,7 @@
     {
       "id": "eip-7976",
       "eipNo": "7976",
-      "title": "Further increase calldata cost",
+      "title": "Increase Calldata Floor Cost",
       "status": "Draft",
       "isERC": false
     },
@@ -7605,7 +7619,7 @@
     {
       "id": "eip-7994",
       "eipNo": "7994",
-      "title": "Purpose-Bound ERC20 with Multi-Condition Unlocking",
+      "title": "Purpose-Bound ERC-20 with Conditional Unlock",
       "status": "Draft",
       "isERC": true
     },
@@ -7722,11 +7736,18 @@
       "isERC": false
     },
     {
-      "id": "eip-8016",
-      "eipNo": "8016",
-      "title": "SSZ CompatibleUnion",
+      "id": "eip-8017",
+      "eipNo": "8017",
+      "title": "Payout Race",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
+    },
+    {
+      "id": "eip-8019",
+      "eipNo": "8019",
+      "title": "Minimal Wallet-Managed Auto-Login for SIWE",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-9819",
@@ -7801,9 +7822,9 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Multidimensional Gas Metering",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-0288",
@@ -8741,6 +8762,22 @@
     {
       "source": "eip-2770",
       "target": "eip-2771"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-2930"
     },
     {
       "source": "eip-2786",
@@ -10363,6 +10400,10 @@
       "target": "eip-7916"
     },
     {
+      "source": "eip-6404",
+      "target": "eip-8016"
+    },
+    {
       "source": "eip-6454",
       "target": "eip-165"
     },
@@ -10421,6 +10462,10 @@
     {
       "source": "eip-6466",
       "target": "eip-7916"
+    },
+    {
+      "source": "eip-6466",
+      "target": "eip-8016"
     },
     {
       "source": "eip-6492",
@@ -10612,6 +10657,14 @@
     },
     {
       "source": "eip-6865",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-6884",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-6884",
       "target": "eip-712"
     },
     {
@@ -13099,6 +13152,14 @@
       "target": "eip-7916"
     },
     {
+      "source": "eip-8017",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8019",
+      "target": "eip-4361"
+    },
+    {
       "source": "eip-9819",
       "target": "eip-3540"
     },
@@ -13137,6 +13198,14 @@
     {
       "source": "eip-undefined",
       "target": "eip-20"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
