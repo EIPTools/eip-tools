@@ -5209,6 +5209,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7551",
+      "eipNo": "7551",
+      "title": "Crypto Security Token Interface",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7555",
       "eipNo": "7555",
       "title": "Single Sign-On for Account Discovery",
@@ -5480,6 +5487,13 @@
       "title": "Content encoding in ERC-5219 mode Web3 URL",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-7619",
+      "eipNo": "7619",
+      "title": "Precompile Falcon512 generic verifier",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-7620",
@@ -6290,7 +6304,7 @@
       "id": "eip-7783",
       "eipNo": "7783",
       "title": "Add Controlled Gas Limit Increase Strategy",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6591,7 +6605,7 @@
       "id": "eip-7829",
       "eipNo": "7829",
       "title": "Data Asset NFT",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6745,14 +6759,14 @@
       "id": "eip-7857",
       "eipNo": "7857",
       "title": "AI Agents NFT with Private Metadata",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-7858",
       "eipNo": "7858",
       "title": "Expirable NFTs and SBTs",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6864,7 +6878,7 @@
       "id": "eip-7878",
       "eipNo": "7878",
       "title": "Bequeathable Contracts",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7060,7 +7074,7 @@
       "id": "eip-7908",
       "eipNo": "7908",
       "title": "HD wallet In Treasury Management",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7458,7 +7472,7 @@
     {
       "id": "eip-7969",
       "eipNo": "7969",
-      "title": "DKIM Registry for DKIM Verification",
+      "title": "DomainKeys Identified Mail (DKIM) Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -7624,6 +7638,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7995",
+      "eipNo": "7995",
+      "title": "Encrypted Data",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7996",
       "eipNo": "7996",
       "title": "Contract Feature Detection",
@@ -7736,6 +7757,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8015",
+      "eipNo": "8015",
+      "title": "Remove `deposit` and `eth1data` fields",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8017",
       "eipNo": "8017",
       "title": "Payout Race",
@@ -7748,6 +7776,13 @@
       "title": "Minimal Wallet-Managed Auto-Login for SIWE",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8024",
+      "eipNo": "8024",
+      "title": "Backward compatible SWAPN, DUPN, EXCHANGE",
+      "status": "Review",
+      "isERC": false
     },
     {
       "id": "eip-9819",
@@ -7815,7 +7850,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Encrypted Data",
       "status": "Draft",
       "isERC": true
     },
@@ -13048,6 +13083,10 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-7995",
+      "target": "eip-712"
+    },
+    {
       "source": "eip-7996",
       "target": "eip-165"
     },
@@ -13144,6 +13183,14 @@
       "target": "eip-8012"
     },
     {
+      "source": "eip-8015",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-8015",
+      "target": "eip-7732"
+    },
+    {
       "source": "eip-8016",
       "target": "eip-7495"
     },
@@ -13197,7 +13244,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-712"
     },
     {
       "source": "eip-0000",
