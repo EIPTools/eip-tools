@@ -1768,7 +1768,7 @@
       "id": "eip-3670",
       "eipNo": "3670",
       "title": "EOF - Code Validation",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4498,7 +4498,7 @@
       "id": "eip-6909",
       "eipNo": "6909",
       "title": "Minimal Multi-Token Interface",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6577,7 +6577,7 @@
       "id": "eip-7825",
       "eipNo": "7825",
       "title": "Transaction Gas Limit Cap",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -6731,7 +6731,7 @@
       "id": "eip-7851",
       "eipNo": "7851",
       "title": "Deactivate/Reactivate a Delegated EOA's Key",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6759,7 +6759,7 @@
       "id": "eip-7857",
       "eipNo": "7857",
       "title": "AI Agents NFT with Private Metadata",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6913,7 +6913,7 @@
       "id": "eip-7883",
       "eipNo": "7883",
       "title": "ModExp Gas Cost Increase",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -6976,7 +6976,7 @@
       "id": "eip-7892",
       "eipNo": "7892",
       "title": "Blob Parameter Only Hardforks",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7130,7 +7130,7 @@
       "id": "eip-7917",
       "eipNo": "7917",
       "title": "Deterministic proposer lookahead",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7235,13 +7235,13 @@
       "id": "eip-7934",
       "eipNo": "7934",
       "title": "RLP Execution Block Size Limit",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
       "id": "eip-7935",
       "eipNo": "7935",
-      "title": "Set default gas limit to XX0M",
+      "title": "Set default gas limit to 60M",
       "status": "Draft",
       "isERC": false
     },
@@ -7347,8 +7347,8 @@
       "id": "eip-7950",
       "eipNo": "7950",
       "title": "Encode chain id with transaction hash",
-      "status": "Review",
-      "isERC": false
+      "status": "Last Call",
+      "isERC": true
     },
     {
       "id": "eip-7951",
@@ -7550,7 +7550,7 @@
       "id": "eip-7980",
       "eipNo": "7980",
       "title": "Ed25519 transaction support",
-      "status": "Draft",
+      "status": "Withdrawn",
       "isERC": false
     },
     {
@@ -7778,10 +7778,59 @@
       "isERC": true
     },
     {
+      "id": "eip-8021",
+      "eipNo": "8021",
+      "title": "Transaction Attribution",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8023",
+      "eipNo": "8023",
+      "title": "Multi-step Contract Ownership",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8024",
       "eipNo": "8024",
       "title": "Backward compatible SWAPN, DUPN, EXCHANGE",
       "status": "Review",
+      "isERC": false
+    },
+    {
+      "id": "eip-8025",
+      "eipNo": "8025",
+      "title": "Optional Execution Proofs",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8026",
+      "eipNo": "8026",
+      "title": "Data Callback Capability",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8027",
+      "eipNo": "8027",
+      "title": "Manual & Recurring Subscription NFTs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8028",
+      "eipNo": "8028",
+      "title": "Data Anchoring Token (DAT)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8030",
+      "eipNo": "8030",
+      "title": "P256 transaction support",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -13159,6 +13208,34 @@
       "target": "eip-2718"
     },
     {
+      "source": "eip-8007",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-7667"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-7778"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-7904"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-7923"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-7976"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-7981"
+    },
+    {
       "source": "eip-8010",
       "target": "eip-1271"
     },
@@ -13205,6 +13282,26 @@
     {
       "source": "eip-8019",
       "target": "eip-4361"
+    },
+    {
+      "source": "eip-8021",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8021",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8026",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8027",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8030",
+      "target": "eip-7932"
     },
     {
       "source": "eip-9819",

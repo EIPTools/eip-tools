@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-09-17T09:42:07.249Z"
+    "timestamp": "2025-09-24T03:27:27.047Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-09-17T09:42:07.315Z"
+    "timestamp": "2025-09-24T03:27:27.228Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-09-17T09:42:05.014Z"
+    "timestamp": "2025-09-24T03:27:25.371Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-09-17T09:42:04.640Z"
+    "timestamp": "2025-09-24T03:27:25.025Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-09-17T09:42:03.818Z"
+    "timestamp": "2025-09-24T03:27:24.446Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-09-17T09:42:02.067Z"
+    "timestamp": "2025-09-24T03:27:23.105Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -354,7 +354,7 @@
       "275",
       "372"
     ],
-    "timestamp": "2025-09-17T09:42:01.964Z"
+    "timestamp": "2025-09-24T03:27:22.749Z"
   },
   "285": {
     "title": "JSON-RPC Method for Revoking Session Authorizations",
@@ -382,7 +382,7 @@
       "282",
       "372"
     ],
-    "timestamp": "2025-09-17T09:42:02.775Z"
+    "timestamp": "2025-09-24T03:27:23.290Z"
   },
   "295": {
     "title": "Browser Wallet Messaging for Iframes",
@@ -395,7 +395,7 @@
       "282",
       "372"
     ],
-    "timestamp": "2025-09-17T09:42:03.328Z"
+    "timestamp": "2025-09-24T03:27:23.801Z"
   },
   "311": {
     "title": "JSON-RPC Event for Session Authorization Updates",
@@ -468,7 +468,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-09-17T09:42:00.017Z"
+    "timestamp": "2025-09-24T03:27:21.369Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -521,14 +521,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-09-17T09:41:58.097Z"
+    "timestamp": "2025-09-24T03:27:20.125Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-09-17T09:41:56.834Z"
+    "timestamp": "2025-09-24T03:27:18.753Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -549,7 +549,7 @@
       "171",
       "217"
     ],
-    "timestamp": "2025-09-17T09:41:56.838Z"
+    "timestamp": "2025-09-24T03:27:18.899Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
