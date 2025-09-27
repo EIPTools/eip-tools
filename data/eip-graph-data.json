@@ -5436,7 +5436,7 @@
       "id": "eip-7607",
       "eipNo": "7607",
       "title": "Hardfork Meta - Fusaka",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7088,7 +7088,7 @@
       "id": "eip-7910",
       "eipNo": "7910",
       "title": "eth_config JSON-RPC Method",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7242,7 +7242,7 @@
       "id": "eip-7935",
       "eipNo": "7935",
       "title": "Set default gas limit to 60M",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7354,7 +7354,7 @@
       "id": "eip-7951",
       "eipNo": "7951",
       "title": "Precompile for secp256r1 Curve Support",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7899,7 +7899,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Encrypted Data",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -13341,7 +13341,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-712"
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",

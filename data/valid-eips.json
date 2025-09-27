@@ -6761,7 +6761,7 @@
   },
   "7607": {
     "title": "Hardfork Meta - Fusaka",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "7600"
     ],
@@ -8941,7 +8941,7 @@
   },
   "7910": {
     "title": "eth_config JSON-RPC Method",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7910.md"
@@ -9149,7 +9149,7 @@
   },
   "7935": {
     "title": "Set default gas limit to 60M",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7935.md"
@@ -9273,7 +9273,7 @@
   },
   "7951": {
     "title": "Precompile for secp256r1 Curve Support",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7951.md"
@@ -10032,15 +10032,15 @@
     "timestamp": "2025-09-24T03:28:40.624Z"
   },
   "undefined": {
-    "title": "Encrypted Data",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1143,
-    "markdownPath": "https://raw.githubusercontent.com/immortal-tofu/ERCs/refs/heads/add-encrypted-types/ERCS/erc-7995.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "712"
+      "20"
     ],
-    "timestamp": "2025-09-17T09:44:18.453Z"
+    "timestamp": "2025-09-27T05:53:14.677Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
