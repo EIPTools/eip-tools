@@ -6680,7 +6680,7 @@
   },
   "7594": {
     "title": "PeerDAS - Peer Data Availability Sampling",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "4844"
     ],
@@ -8262,7 +8262,7 @@
   },
   "7823": {
     "title": "Set upper bounds for MODEXP",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "198"
     ],
@@ -8279,7 +8279,7 @@
   },
   "7825": {
     "title": "Transaction Gas Limit Cap",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7825.md"
@@ -8993,14 +8993,14 @@
   },
   "7917": {
     "title": "Deterministic proposer lookahead",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7917.md"
   },
   "7918": {
     "title": "Blob base fee bounded by execution cost",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "4844",
       "7840"
@@ -9142,14 +9142,14 @@
   },
   "7934": {
     "title": "RLP Execution Block Size Limit",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7934.md"
   },
   "7935": {
     "title": "Set default gas limit to 60M",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7935.md"
@@ -9177,7 +9177,7 @@
   },
   "7939": {
     "title": "Count leading zeros (CLZ) opcode",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7939.md"
@@ -9273,7 +9273,7 @@
   },
   "7951": {
     "title": "Precompile for secp256r1 Curve Support",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7951.md"
@@ -9611,7 +9611,7 @@
     "requires": [
       "7702"
     ],
-    "timestamp": "2025-09-29T08:26:33.553Z"
+    "timestamp": "2025-10-02T12:50:09.648Z"
   },
   "7989": {
     "title": "Ethereum Intent URI (EIURI)",
@@ -9951,6 +9951,25 @@
     ],
     "timestamp": "2025-09-29T08:24:46.813Z"
   },
+  "8032": {
+    "title": "Tree-Depth-Based Storage Gas Pricing",
+    "status": "Draft",
+    "prNo": 10451,
+    "markdownPath": "https://raw.githubusercontent.com/gballet/EIPs/refs/heads/add-tree-depth-sstore-gas-pricing/EIPS/eip-8032.md",
+    "timestamp": "2025-10-02T12:48:38.150Z"
+  },
+  "8034": {
+    "title": "Referable NFT Royalties",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1227,
+    "markdownPath": "https://raw.githubusercontent.com/richard-620/ERCs/refs/heads/master/ERCS/erc-8034.md",
+    "requires": [
+      "165",
+      "5521"
+    ],
+    "timestamp": "2025-10-02T12:49:59.019Z"
+  },
   "9819": {
     "title": "EVM64 - EOF support",
     "status": "Draft",
@@ -9997,11 +10016,11 @@
     "timestamp": "2025-06-14T01:14:40.433Z"
   },
   "9999": {
-    "title": "ERC-9999",
-    "isERC": true,
-    "prNo": 1129,
-    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
-    "timestamp": "2025-09-29T08:26:32.158Z"
+    "title": "Calldata run-length encoding scheme",
+    "status": "Draft",
+    "prNo": 10335,
+    "markdownPath": "https://raw.githubusercontent.com/Vectorized/EIPs/refs/heads/eip-cdrle/EIPS/eip-9999.md",
+    "timestamp": "2025-10-02T12:48:48.670Z"
   },
   "99999": {
     "title": "CALL_GAS_SPLIT opcode",
@@ -10040,7 +10059,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-09-27T05:53:14.677Z"
+    "timestamp": "2025-10-02T12:50:20.052Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

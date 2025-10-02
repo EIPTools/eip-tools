@@ -5373,7 +5373,7 @@
       "id": "eip-7594",
       "eipNo": "7594",
       "title": "PeerDAS - Peer Data Availability Sampling",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -6563,7 +6563,7 @@
       "id": "eip-7823",
       "eipNo": "7823",
       "title": "Set upper bounds for MODEXP",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -6577,7 +6577,7 @@
       "id": "eip-7825",
       "eipNo": "7825",
       "title": "Transaction Gas Limit Cap",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7130,14 +7130,14 @@
       "id": "eip-7917",
       "eipNo": "7917",
       "title": "Deterministic proposer lookahead",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-7918",
       "eipNo": "7918",
       "title": "Blob base fee bounded by execution cost",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7235,14 +7235,14 @@
       "id": "eip-7934",
       "eipNo": "7934",
       "title": "RLP Execution Block Size Limit",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-7935",
       "eipNo": "7935",
       "title": "Set default gas limit to 60M",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7270,7 +7270,7 @@
       "id": "eip-7939",
       "eipNo": "7939",
       "title": "Count leading zeros (CLZ) opcode",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7354,7 +7354,7 @@
       "id": "eip-7951",
       "eipNo": "7951",
       "title": "Precompile for secp256r1 Curve Support",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7834,6 +7834,20 @@
       "isERC": false
     },
     {
+      "id": "eip-8032",
+      "eipNo": "8032",
+      "title": "Tree-Depth-Based Storage Gas Pricing",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8034",
+      "eipNo": "8034",
+      "title": "Referable NFT Royalties",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -7864,9 +7878,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Calldata run-length encoding scheme",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-99999",
@@ -13302,6 +13316,14 @@
     {
       "source": "eip-8030",
       "target": "eip-7932"
+    },
+    {
+      "source": "eip-8034",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8034",
+      "target": "eip-5521"
     },
     {
       "source": "eip-9819",

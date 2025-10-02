@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-09-24T03:27:23.105Z"
+    "timestamp": "2025-10-02T12:48:35.834Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -468,7 +468,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-09-29T08:24:33.579Z"
+    "timestamp": "2025-10-02T12:48:34.418Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -561,10 +561,14 @@
     ]
   },
   "undefined": {
-    "title": "Web of Trust Primitives",
+    "title": "Account Address for the Hive namespace",
     "status": "Draft",
-    "prNo": 271,
-    "markdownPath": "https://raw.githubusercontent.com/dayksx/CAIPs/refs/heads/community-powered-trust-assessment/CAIPs/caip-261.md",
-    "timestamp": "2025-09-29T08:24:33.580Z"
+    "prNo": 95,
+    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
+    "requires": [
+      "10",
+      "94"
+    ],
+    "timestamp": "2025-10-02T12:48:36.724Z"
   }
 }
