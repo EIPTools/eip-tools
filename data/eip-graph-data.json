@@ -2307,7 +2307,7 @@
       "id": "eip-3009",
       "eipNo": "3009",
       "title": "Transfer With Authorization",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": true
     },
     {
@@ -3203,7 +3203,7 @@
       "id": "eip-5003",
       "eipNo": "5003",
       "title": "Insert Code into EOAs with AUTHUSURP",
-      "status": "Stagnant",
+      "status": "Withdrawn",
       "isERC": false
     },
     {
@@ -4799,7 +4799,7 @@
       "id": "eip-7291",
       "eipNo": "7291",
       "title": "Purpose bound money",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -5436,7 +5436,7 @@
       "id": "eip-7607",
       "eipNo": "7607",
       "title": "Hardfork Meta - Fusaka",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -5653,7 +5653,7 @@
       "id": "eip-7656",
       "eipNo": "7656",
       "title": "Generalized Contract-Linked Services",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -6598,7 +6598,7 @@
       "id": "eip-7828",
       "eipNo": "7828",
       "title": "Readable Interoperable Addresses using ENS",
-      "status": "Draft",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7088,7 +7088,7 @@
       "id": "eip-7910",
       "eipNo": "7910",
       "title": "eth_config JSON-RPC Method",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7347,7 +7347,7 @@
       "id": "eip-7950",
       "eipNo": "7950",
       "title": "Encode chain id with transaction hash",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7676,7 +7676,7 @@
       "id": "eip-8001",
       "eipNo": "8001",
       "title": "Agent Coordination Framework",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7690,7 +7690,7 @@
       "id": "eip-8004",
       "eipNo": "8004",
       "title": "Trustless Agents",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7711,6 +7711,27 @@
       "id": "eip-8007",
       "eipNo": "8007",
       "title": "Glamsterdam Gas Repricings",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8032",
+      "eipNo": "8032",
+      "title": "Tree-Depth-Based Storage Gas Pricing",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8037",
+      "eipNo": "8037",
+      "title": "State Creation Gas Cost Increase",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8038",
+      "eipNo": "8038",
+      "title": "State-access gas cost increase",
       "status": "Draft",
       "isERC": false
     },
@@ -7785,6 +7806,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8022",
+      "eipNo": "8022",
+      "title": "Calldata run-length encoding scheme",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8023",
       "eipNo": "8023",
       "title": "Multi-step Contract Ownership",
@@ -7834,13 +7862,6 @@
       "isERC": false
     },
     {
-      "id": "eip-8032",
-      "eipNo": "8032",
-      "title": "Tree-Depth-Based Storage Gas Pricing",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-8033",
       "eipNo": "8033",
       "title": "Agent Council Oracles",
@@ -7865,6 +7886,20 @@
       "id": "eip-8036",
       "eipNo": "8036",
       "title": "ZK Presentation Interface for MTC",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8039",
+      "eipNo": "8039",
+      "title": "ZK Proof Verification",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8041",
+      "eipNo": "8041",
+      "title": "Fixed-Supply Agent NFT Collections",
       "status": "Draft",
       "isERC": true
     },
@@ -13271,6 +13306,18 @@
       "target": "eip-7981"
     },
     {
+      "source": "eip-8007",
+      "target": "eip-8032"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-8038"
+    },
+    {
       "source": "eip-8010",
       "target": "eip-1271"
     },
@@ -13349,6 +13396,30 @@
     {
       "source": "eip-8036",
       "target": "eip-8035"
+    },
+    {
+      "source": "eip-8037",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8038",
+      "target": "eip-2926"
+    },
+    {
+      "source": "eip-8038",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8038",
+      "target": "eip-8032"
+    },
+    {
+      "source": "eip-8039",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8041",
+      "target": "eip-8004"
     },
     {
       "source": "eip-9819",

@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-10-06T18:16:01.637Z"
+    "timestamp": "2025-10-11T23:08:14.681Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-10-06T18:16:01.904Z"
+    "timestamp": "2025-10-11T23:08:14.725Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-10-06T18:15:59.579Z"
+    "timestamp": "2025-10-11T23:08:12.353Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-10-06T18:15:59.068Z"
+    "timestamp": "2025-10-11T23:08:12.694Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-10-06T18:15:58.479Z"
+    "timestamp": "2025-10-11T23:08:11.824Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-10-02T12:48:35.834Z"
+    "timestamp": "2025-10-11T23:08:11.063Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -345,8 +345,6 @@
   "282": {
     "title": "Browser Wallet Discovery Interface",
     "status": "Draft",
-    "prNo": 282,
-    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/browser-wallet-messaging-interface/CAIPs/caip-282.md",
     "requires": [
       "25",
       "27",
@@ -354,7 +352,7 @@
       "275",
       "372"
     ],
-    "timestamp": "2025-10-06T18:15:56.915Z"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-282.md"
   },
   "285": {
     "title": "JSON-RPC Method for Revoking Session Authorizations",
@@ -374,28 +372,24 @@
   "294": {
     "title": "Browser Wallet Messaging for Extensions",
     "status": "Draft",
-    "prNo": 282,
-    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/browser-wallet-messaging-interface/CAIPs/caip-294.md",
     "requires": [
       "25",
       "27",
       "282",
       "372"
     ],
-    "timestamp": "2025-10-06T18:15:57.456Z"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-294.md"
   },
   "295": {
     "title": "Browser Wallet Messaging for Iframes",
     "status": "Draft",
-    "prNo": 282,
-    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/browser-wallet-messaging-interface/CAIPs/caip-295.md",
     "requires": [
       "25",
       "27",
       "282",
       "372"
     ],
-    "timestamp": "2025-10-06T18:15:58.053Z"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-295.md"
   },
   "311": {
     "title": "JSON-RPC Event for Session Authorization Updates",
@@ -468,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-10-06T18:15:55.317Z"
+    "timestamp": "2025-10-11T23:08:09.616Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -508,8 +502,8 @@
     "title": "Chain ID Wildcard",
     "status": "Draft",
     "requires": [
-      "CAIP-2",
-      "CAIP-10"
+      "2",
+      "10"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-363.md"
   },
@@ -521,14 +515,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-10-06T18:15:53.701Z"
+    "timestamp": "2025-10-11T23:08:07.795Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-10-06T18:15:52.420Z"
+    "timestamp": "2025-10-11T23:08:07.346Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -542,14 +536,12 @@
   "375": {
     "title": "Wallet Sign Message",
     "status": "Review",
-    "prNo": 375,
-    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip375-wallet-signmessage/CAIPs/caip-375.md",
     "requires": [
       "10",
       "171",
       "217"
     ],
-    "timestamp": "2025-10-06T18:15:52.624Z"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-375.md"
   },
   "380": {
     "title": "Portable Proof",
@@ -560,7 +552,7 @@
       "[2",
       "10]"
     ],
-    "timestamp": "2025-10-06T18:15:51.315Z"
+    "timestamp": "2025-10-11T23:08:06.933Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
