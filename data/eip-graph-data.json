@@ -949,7 +949,7 @@
       "id": "eip-1202",
       "eipNo": "1202",
       "title": "Voting Interface",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -1740,7 +1740,7 @@
       "id": "eip-2294",
       "eipNo": "2294",
       "title": "Explicit bound to Chain ID size",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -1803,21 +1803,21 @@
       "id": "eip-2333",
       "eipNo": "2333",
       "title": "BLS12-381 Key Generation",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-2334",
       "eipNo": "2334",
       "title": "BLS12-381 Deterministic Account Hierarchy",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-2335",
       "eipNo": "2335",
       "title": "BLS12-381 Keystore",
-      "status": "Stagnant",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -4218,7 +4218,7 @@
       "id": "eip-7916",
       "eipNo": "7916",
       "title": "SSZ ProgressiveList",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -4967,7 +4967,7 @@
       "id": "eip-7503",
       "eipNo": "7503",
       "title": "Zero-Knowledge Wormholes",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6080,7 +6080,7 @@
       "id": "eip-7745",
       "eipNo": "7745",
       "title": "Light client and DHT friendly log index",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6598,7 +6598,7 @@
       "id": "eip-7828",
       "eipNo": "7828",
       "title": "Readable Interoperable Addresses using ENS",
-      "status": "Last Call",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6955,7 +6955,7 @@
       "id": "eip-7889",
       "eipNo": "7889",
       "title": "Emit log on revert",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7046,7 +7046,7 @@
       "id": "eip-7903",
       "eipNo": "7903",
       "title": "Remove Initcode Size Limit",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7123,7 +7123,7 @@
       "id": "eip-7915",
       "eipNo": "7915",
       "title": "Adaptive mean reversion blob pricing",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7249,7 +7249,7 @@
       "id": "eip-7936",
       "eipNo": "7936",
       "title": "Versioned Proxy Contract Interface",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7731,7 +7731,7 @@
     {
       "id": "eip-8038",
       "eipNo": "8038",
-      "title": "State-access gas cost increase",
+      "title": "State-access gas cost update",
       "status": "Draft",
       "isERC": false
     },
@@ -7897,11 +7897,116 @@
       "isERC": true
     },
     {
+      "id": "eip-8040",
+      "eipNo": "8040",
+      "title": "ESG Tokenization Protocol",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8041",
       "eipNo": "8041",
       "title": "Fixed-Supply Agent NFT Collections",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8042",
+      "eipNo": "8042",
+      "title": "Diamond Storage",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8043",
+      "eipNo": "8043",
+      "title": "Enable Mode for modules in ERC-7579 accounts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8045",
+      "eipNo": "8045",
+      "title": "Exclude slashed validators from proposing",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8046",
+      "eipNo": "8046",
+      "title": "FOCIL with ranked transactions (FOCILR)",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8047",
+      "eipNo": "8047",
+      "title": "Forensic Token (Forest)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8048",
+      "eipNo": "8048",
+      "title": "Onchain Metadata for Token Registries",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8049",
+      "eipNo": "8049",
+      "title": "Contract-Level Onchain Metadata",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8051",
+      "eipNo": "8051",
+      "title": "Precompile for ML-DSA signature verification",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8053",
+      "eipNo": "8053",
+      "title": "Milli-gas Counter for High-precision Gas Metering",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8054",
+      "eipNo": "8054",
+      "title": "Forkable [ERC-20](./eip-20.md) Token",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8056",
+      "eipNo": "8056",
+      "title": "Scaled UI Amount Extension for ERC-20 Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8057",
+      "eipNo": "8057",
+      "title": "Inter-Block Temporal Locality Gas Discounts",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8058",
+      "eipNo": "8058",
+      "title": "Contract Bytecode Deduplication Discount",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8059",
+      "eipNo": "8059",
+      "title": "Gas Rebase for High-precision Gas Metering",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-9819",
@@ -7969,7 +8074,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Referable NFT Royalties",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -12967,6 +13072,10 @@
     },
     {
       "source": "eip-7932",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-7932",
       "target": "eip-6404"
     },
     {
@@ -13418,8 +13527,88 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8040",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8040",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8040",
+      "target": "eip-1155"
+    },
+    {
       "source": "eip-8041",
       "target": "eip-8004"
+    },
+    {
+      "source": "eip-8041",
+      "target": "eip-7572"
+    },
+    {
+      "source": "eip-8042",
+      "target": "eip-7201"
+    },
+    {
+      "source": "eip-8043",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8043",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8043",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8043",
+      "target": "eip-7579"
+    },
+    {
+      "source": "eip-8045",
+      "target": "eip-7917"
+    },
+    {
+      "source": "eip-8046",
+      "target": "eip-7805"
+    },
+    {
+      "source": "eip-8047",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8047",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8047",
+      "target": "eip-3525"
+    },
+    {
+      "source": "eip-8049",
+      "target": "eip-8042"
+    },
+    {
+      "source": "eip-8054",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8056",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8057",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8057",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8058",
+      "target": "eip-2930"
     },
     {
       "source": "eip-9819",
@@ -13459,11 +13648,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-5521"
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",

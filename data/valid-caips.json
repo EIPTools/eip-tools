@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-10-11T23:08:14.681Z"
+    "timestamp": "2025-10-24T14:34:33.576Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-10-11T23:08:14.725Z"
+    "timestamp": "2025-10-24T14:34:34.086Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-10-11T23:08:12.353Z"
+    "timestamp": "2025-10-24T14:34:31.104Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-10-11T23:08:12.694Z"
+    "timestamp": "2025-10-24T14:34:30.665Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-10-11T23:08:11.824Z"
+    "timestamp": "2025-10-24T14:34:30.315Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-10-11T23:08:11.063Z"
+    "timestamp": "2025-10-24T14:34:29.359Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-10-11T23:08:09.616Z"
+    "timestamp": "2025-10-24T14:34:27.938Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -515,14 +515,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-10-11T23:08:07.795Z"
+    "timestamp": "2025-10-24T14:34:26.075Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-10-11T23:08:07.346Z"
+    "timestamp": "2025-10-24T14:34:25.463Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -552,7 +552,7 @@
       "[2",
       "10]"
     ],
-    "timestamp": "2025-10-11T23:08:06.933Z"
+    "timestamp": "2025-10-24T14:34:25.689Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
@@ -564,13 +564,14 @@
     ]
   },
   "undefined": {
-    "title": "Community-Powered Assessment of Trust in Discrete Resources",
+    "title": "Account Address for the Hive namespace",
     "status": "Draft",
-    "prNo": 271,
-    "markdownPath": "https://raw.githubusercontent.com/dayksx/CAIPs/refs/heads/community-powered-trust-assessment/CAIPs/caip-271.md",
+    "prNo": 95,
+    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
     "requires": [
-      "CAIP-261"
+      "10",
+      "94"
     ],
-    "timestamp": "2025-10-06T18:15:55.317Z"
+    "timestamp": "2025-10-13T06:27:55.136Z"
   }
 }
