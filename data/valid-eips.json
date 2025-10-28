@@ -7445,7 +7445,7 @@
   },
   "7709": {
     "title": "Read BLOCKHASH from storage and update cost",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "2935"
     ],
@@ -7771,7 +7771,7 @@
   },
   "7761": {
     "title": "EXTCODETYPE instruction",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       "3540",
       "7692"
@@ -9038,7 +9038,7 @@
   },
   "7921": {
     "title": "Skip `JUMPDEST` immediate argument check",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7921.md"
@@ -9611,7 +9611,7 @@
     "requires": [
       "7702"
     ],
-    "timestamp": "2025-10-24T14:36:44.364Z"
+    "timestamp": "2025-10-27T11:29:00.025Z"
   },
   "7989": {
     "title": "Ethereum Intent URI (EIURI)",
@@ -9961,7 +9961,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8030.md"
   },
   "8032": {
-    "title": "Tree-Depth-Based Storage Gas Pricing",
+    "title": "Size-Based Storage Gas Pricing",
     "status": "Draft",
     "requires": [],
     "isERC": false,
@@ -10245,11 +10245,10 @@
     "timestamp": "2025-06-14T01:14:40.433Z"
   },
   "9999": {
-    "title": "ERC-9999",
-    "isERC": true,
-    "prNo": 1129,
-    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
-    "timestamp": "2025-10-24T14:36:42.189Z"
+    "title": "EIP-9999",
+    "prNo": 10623,
+    "markdownPath": "https://raw.githubusercontent.com/fradamt/EIPs/refs/heads/master/EIPS/eip-9999.md",
+    "timestamp": "2025-10-27T11:27:20.995Z"
   },
   "99999": {
     "title": "CALL_GAS_SPLIT opcode",
@@ -10288,7 +10287,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-10-13T06:29:54.097Z"
+    "timestamp": "2025-10-27T11:29:12.205Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

@@ -5905,7 +5905,7 @@
       "id": "eip-7709",
       "eipNo": "7709",
       "title": "Read BLOCKHASH from storage and update cost",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6164,7 +6164,7 @@
       "id": "eip-7761",
       "eipNo": "7761",
       "title": "EXTCODETYPE instruction",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7158,7 +7158,7 @@
       "id": "eip-7921",
       "eipNo": "7921",
       "title": "Skip `JUMPDEST` immediate argument check",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7717,7 +7717,7 @@
     {
       "id": "eip-8032",
       "eipNo": "8032",
-      "title": "Tree-Depth-Based Storage Gas Pricing",
+      "title": "Size-Based Storage Gas Pricing",
       "status": "Draft",
       "isERC": false
     },
@@ -8039,9 +8039,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "EIP-9999",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-99999",
