@@ -7687,6 +7687,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8003",
+      "eipNo": "8003",
+      "title": "ERC-20 Pre-initialization (Sentinel Storage)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8004",
       "eipNo": "8004",
       "title": "Trustless Agents",
@@ -7715,6 +7722,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8011",
+      "eipNo": "8011",
+      "title": "Multidimensional Gas Metering",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8032",
       "eipNo": "8032",
       "title": "Size-Based Storage Gas Pricing",
@@ -7736,6 +7750,34 @@
       "isERC": false
     },
     {
+      "id": "eip-8053",
+      "eipNo": "8053",
+      "title": "Milli-gas for High-precision Gas Metering",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8057",
+      "eipNo": "8057",
+      "title": "Inter-Block Temporal Locality Gas Discounts",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8058",
+      "eipNo": "8058",
+      "title": "Contract Bytecode Deduplication Discount",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8059",
+      "eipNo": "8059",
+      "title": "Gas Units Rebase for High-precision Metering",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8009",
       "eipNo": "8009",
       "title": "Proxy Clear Signing",
@@ -7748,13 +7790,6 @@
       "title": "Pre-delegated Signature Verification",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-8011",
-      "eipNo": "8011",
-      "title": "Multidimensional Gas Metering",
-      "status": "Draft",
-      "isERC": false
     },
     {
       "id": "eip-8012",
@@ -7967,9 +8002,9 @@
       "isERC": false
     },
     {
-      "id": "eip-8053",
-      "eipNo": "8053",
-      "title": "Milli-gas Counter for High-precision Gas Metering",
+      "id": "eip-8052",
+      "eipNo": "8052",
+      "title": "Precompile for Falcon support",
       "status": "Draft",
       "isERC": false
     },
@@ -7988,23 +8023,72 @@
       "isERC": true
     },
     {
-      "id": "eip-8057",
-      "eipNo": "8057",
-      "title": "Inter-Block Temporal Locality Gas Discounts",
+      "id": "eip-8060",
+      "eipNo": "8060",
+      "title": "Native ETH embedding in NFTs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8061",
+      "eipNo": "8061",
+      "title": "Increase churn limits",
       "status": "Draft",
       "isERC": false
     },
     {
-      "id": "eip-8058",
-      "eipNo": "8058",
-      "title": "Contract Bytecode Deduplication Discount",
+      "id": "eip-8062",
+      "eipNo": "8062",
+      "title": "Add sweep withdrawal fee for 0x01 validators",
       "status": "Draft",
       "isERC": false
     },
     {
-      "id": "eip-8059",
-      "eipNo": "8059",
-      "title": "Gas Rebase for High-precision Gas Metering",
+      "id": "eip-8063",
+      "eipNo": "8063",
+      "title": "Groups - Multi-Member Containers",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8064",
+      "eipNo": "8064",
+      "title": "Management Token Permit",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8065",
+      "eipNo": "8065",
+      "title": "Zero Knowledge Token Wrapper",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8066",
+      "eipNo": "8066",
+      "title": "Upgrade Mascots",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8067",
+      "eipNo": "8067",
+      "title": "Management NFT Permit",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8068",
+      "eipNo": "8068",
+      "title": "Neutral effective balance design",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8070",
+      "eipNo": "8070",
+      "title": "Sparse Blobpool",
       "status": "Draft",
       "isERC": false
     },
@@ -8039,9 +8123,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "EIP-9999",
+      "title": "ERC-9999",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-99999",
@@ -13379,6 +13463,10 @@
       "target": "eip-5267"
     },
     {
+      "source": "eip-8003",
+      "target": "eip-20"
+    },
+    {
       "source": "eip-8005",
       "target": "eip-1559"
     },
@@ -13392,7 +13480,7 @@
     },
     {
       "source": "eip-8007",
-      "target": "eip-7667"
+      "target": "eip-2926"
     },
     {
       "source": "eip-8007",
@@ -13408,11 +13496,19 @@
     },
     {
       "source": "eip-8007",
+      "target": "eip-7971"
+    },
+    {
+      "source": "eip-8007",
       "target": "eip-7976"
     },
     {
       "source": "eip-8007",
       "target": "eip-7981"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-8011"
     },
     {
       "source": "eip-8007",
@@ -13425,6 +13521,22 @@
     {
       "source": "eip-8007",
       "target": "eip-8038"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-8053"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-8057"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-8058"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-8059"
     },
     {
       "source": "eip-8010",
@@ -13587,10 +13699,6 @@
       "target": "eip-3525"
     },
     {
-      "source": "eip-8049",
-      "target": "eip-8042"
-    },
-    {
       "source": "eip-8054",
       "target": "eip-20"
     },
@@ -13609,6 +13717,74 @@
     {
       "source": "eip-8058",
       "target": "eip-2930"
+    },
+    {
+      "source": "eip-8060",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8061",
+      "target": "eip-7521"
+    },
+    {
+      "source": "eip-8062",
+      "target": "eip-4895"
+    },
+    {
+      "source": "eip-8062",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-8063",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8064",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8064",
+      "target": "eip-7204"
+    },
+    {
+      "source": "eip-8065",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8065",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8065",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8065",
+      "target": "eip-6909"
+    },
+    {
+      "source": "eip-8067",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8067",
+      "target": "eip-7564"
+    },
+    {
+      "source": "eip-8068",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-8070",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8070",
+      "target": "eip-7594"
+    },
+    {
+      "source": "eip-8070",
+      "target": "eip-7870"
     },
     {
       "source": "eip-9819",
