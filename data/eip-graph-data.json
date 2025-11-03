@@ -7165,7 +7165,7 @@
       "id": "eip-7922",
       "eipNo": "7922",
       "title": "Dynamic exit queue rate limit",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -8093,6 +8093,27 @@
       "isERC": false
     },
     {
+      "id": "eip-8071",
+      "eipNo": "8071",
+      "title": "Prevent using consolidations as withdrawals",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8074",
+      "eipNo": "8074",
+      "title": "Self-Describing Bytes via EIP-712 Selectors",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-9431",
+      "eipNo": "9431",
+      "title": "Cross-Token Exchange Protocol",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9819",
       "eipNo": "9819",
       "title": "EVM64 - EOF support",
@@ -8165,9 +8186,9 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Prevent consolidation overflow withdrawals",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-0288",
@@ -13787,6 +13808,14 @@
       "target": "eip-7870"
     },
     {
+      "source": "eip-8074",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-9431",
+      "target": "eip-20"
+    },
+    {
       "source": "eip-9819",
       "target": "eip-3540"
     },
@@ -13828,11 +13857,7 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7251"
     }
   ]
 }

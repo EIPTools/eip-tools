@@ -9045,7 +9045,7 @@
   },
   "7922": {
     "title": "Dynamic exit queue rate limit",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7922.md"
@@ -9610,7 +9610,7 @@
     "requires": [
       "7702"
     ],
-    "timestamp": "2025-11-01T15:54:15.677Z"
+    "timestamp": "2025-11-03T21:50:30.941Z"
   },
   "7989": {
     "title": "Ethereum Intent URI (EIURI)",
@@ -10057,14 +10057,14 @@
     "title": "ESG Tokenization Protocol",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1313,
-    "markdownPath": "https://raw.githubusercontent.com/agronetlabs/ERCs/refs/heads/patch-1/ERCs/erc-8040.md",
+    "prNo": 1246,
+    "markdownPath": "https://raw.githubusercontent.com/agronetlabs/ERCs/refs/heads/agrocrypto-quantum-erc/ERCS/erc-8040.md",
     "requires": [
       "20",
       "721",
       "1155"
     ],
-    "timestamp": "2025-11-01T15:53:44.079Z"
+    "timestamp": "2025-11-03T21:50:20.047Z"
   },
   "8041": {
     "title": "Fixed-Supply Agent NFT Collections",
@@ -10323,6 +10323,35 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8070.md"
   },
+  "8071": {
+    "title": "Prevent using consolidations as withdrawals",
+    "status": "Draft",
+    "prNo": 10656,
+    "markdownPath": "https://raw.githubusercontent.com/mkalinin/EIPs/refs/heads/consolidations-arent-withdrawals/EIPS/eip-8071.md",
+    "timestamp": "2025-11-03T21:48:40.986Z"
+  },
+  "8074": {
+    "title": "Self-Describing Bytes via EIP-712 Selectors",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1334,
+    "markdownPath": "https://raw.githubusercontent.com/awrichar/ERCs/refs/heads/erc-standardized-bytes-data-encoding/ERCS/erc-8074.md",
+    "requires": [
+      "712"
+    ],
+    "timestamp": "2025-11-03T21:50:10.654Z"
+  },
+  "9431": {
+    "title": "Cross-Token Exchange Protocol",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1337,
+    "markdownPath": "https://raw.githubusercontent.com/GaoYiRu/ERCs/refs/heads/master/ERCS/erc-9431.md",
+    "requires": [
+      "20"
+    ],
+    "timestamp": "2025-11-03T21:50:11.354Z"
+  },
   "9819": {
     "title": "EVM64 - EOF support",
     "status": "Draft",
@@ -10412,19 +10441,17 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-10-27T11:29:12.205Z"
+    "timestamp": "2025-11-03T21:50:40.947Z"
   },
   "0000": {
-    "title": "Ethereum Interoperability Layer Wallet Usage",
+    "title": "Prevent consolidation overflow withdrawals",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1195,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/refs/heads/erc-eil-wallet/ERCS/erc-0000.md",
+    "prNo": 10654,
+    "markdownPath": "https://raw.githubusercontent.com/anderselowsson/EIPs/refs/heads/prevent-overflow-consolidations-v2/EIPS/eip-0000.md",
     "requires": [
-      "4337",
-      "5792"
+      "7251"
     ],
-    "timestamp": "2025-11-01T15:54:03.334Z"
+    "timestamp": "2025-11-03T21:48:41.819Z"
   },
   "0288": {
     "title": "Secure Intents for Agent Coordination",
