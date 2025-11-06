@@ -6079,8 +6079,8 @@
     {
       "id": "eip-7745",
       "eipNo": "7745",
-      "title": "Light client and DHT friendly log index",
-      "status": "Stagnant",
+      "title": "Trustless log index",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -6759,7 +6759,7 @@
       "id": "eip-7857",
       "eipNo": "7857",
       "title": "AI Agents NFT with Private Metadata",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7074,7 +7074,7 @@
       "id": "eip-7908",
       "eipNo": "7908",
       "title": "HD wallet In Treasury Management",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7936,7 +7936,7 @@
       "eipNo": "8040",
       "title": "ESG Tokenization Protocol",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8041",
@@ -8100,11 +8100,25 @@
       "isERC": false
     },
     {
+      "id": "eip-8072",
+      "eipNo": "8072",
+      "title": "Transaction Inclusion Subscription",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8074",
       "eipNo": "8074",
       "title": "Self-Describing Bytes via EIP-712 Selectors",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8075",
+      "eipNo": "8075",
+      "title": "Adaptive state cost to cap growth & scale L1",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-9431",
@@ -8179,16 +8193,16 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "ESG Tokenization Protocol",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Prevent consolidation overflow withdrawals",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-0288",
@@ -13181,27 +13195,7 @@
     },
     {
       "source": "eip-7932",
-      "target": "eip-6404"
-    },
-    {
-      "source": "eip-7932",
-      "target": "eip-6466"
-    },
-    {
-      "source": "eip-7932",
-      "target": "eip-6493"
-    },
-    {
-      "source": "eip-7932",
-      "target": "eip-7495"
-    },
-    {
-      "source": "eip-7932",
       "target": "eip-7702"
-    },
-    {
-      "source": "eip-7932",
-      "target": "eip-7916"
     },
     {
       "source": "eip-7933",
@@ -13812,6 +13806,18 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-8075",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8075",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8075",
+      "target": "eip-8037"
+    },
+    {
       "source": "eip-9431",
       "target": "eip-20"
     },
@@ -13856,8 +13862,20 @@
       "target": "eip-20"
     },
     {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-1155"
+    },
+    {
       "source": "eip-0000",
-      "target": "eip-7251"
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
