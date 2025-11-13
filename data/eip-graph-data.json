@@ -3,7 +3,7 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "Minimal Avatar Smart Wallet (MASW)",
+      "title": "ZKMeta Metadata Interface",
       "status": "Draft",
       "isERC": true
     },
@@ -4204,7 +4204,7 @@
       "id": "eip-7495",
       "eipNo": "7495",
       "title": "SSZ ProgressiveContainer",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -5821,7 +5821,7 @@
       "id": "eip-7692",
       "eipNo": "7692",
       "title": "EVM Object Format (EOFv1) Meta",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6822,7 +6822,7 @@
       "id": "eip-7867",
       "eipNo": "7867",
       "title": "Flow Control Wallet Call Capability",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7172,7 +7172,7 @@
       "id": "eip-7923",
       "eipNo": "7923",
       "title": "Linear, Page-Based Memory Costing",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7430,7 +7430,7 @@
     {
       "id": "eip-7963",
       "eipNo": "7963",
-      "title": "Oracle-Permissioned ERC-20 with ZK-Verified ISO 20022 Payment Instructions",
+      "title": "Oracle-Permissioned ERC-20 with ZK Proofs",
       "status": "Draft",
       "isERC": true
     },
@@ -7936,7 +7936,7 @@
       "eipNo": "8040",
       "title": "ESG Tokenization Protocol",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8041",
@@ -7949,7 +7949,7 @@
       "id": "eip-8042",
       "eipNo": "8042",
       "title": "Diamond Storage",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8032,7 +8032,7 @@
     {
       "id": "eip-8061",
       "eipNo": "8061",
-      "title": "Increase churn limits",
+      "title": "Increase exit and consolidation churn",
       "status": "Draft",
       "isERC": false
     },
@@ -8117,6 +8117,27 @@
       "id": "eip-8075",
       "eipNo": "8075",
       "title": "Adaptive state cost to cap growth & scale L1",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8076",
+      "eipNo": "8076",
+      "title": "Based Custodial Cross-Token Protocol",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8077",
+      "eipNo": "8077",
+      "title": "eth/XX - announce transactions with nonce",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8078",
+      "eipNo": "8078",
+      "title": "Hardfork Meta - Heka/Bogota",
       "status": "Draft",
       "isERC": false
     },
@@ -13298,6 +13319,10 @@
       "target": "eip-5564"
     },
     {
+      "source": "eip-7963",
+      "target": "eip-20"
+    },
+    {
       "source": "eip-7964",
       "target": "eip-712"
     },
@@ -13711,7 +13736,7 @@
     },
     {
       "source": "eip-8047",
-      "target": "eip-3525"
+      "target": "eip-5615"
     },
     {
       "source": "eip-8054",
@@ -13816,6 +13841,22 @@
     {
       "source": "eip-8075",
       "target": "eip-8037"
+    },
+    {
+      "source": "eip-8076",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8077",
+      "target": "eip-7642"
+    },
+    {
+      "source": "eip-8078",
+      "target": "eip-7723"
+    },
+    {
+      "source": "eip-8078",
+      "target": "eip-7773"
     },
     {
       "source": "eip-9431",

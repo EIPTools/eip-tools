@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-11-06T22:16:50.892Z"
+    "timestamp": "2025-11-13T21:23:52.552Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-11-06T22:16:52.296Z"
+    "timestamp": "2025-11-13T21:23:52.626Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-11-06T22:16:49.493Z"
+    "timestamp": "2025-11-13T21:23:51.353Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-11-06T22:16:46.509Z"
+    "timestamp": "2025-11-13T21:23:51.121Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-11-06T22:16:44.430Z"
+    "timestamp": "2025-11-13T21:23:50.797Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-11-06T22:16:40.485Z"
+    "timestamp": "2025-11-13T21:23:49.960Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-11-06T22:16:38.201Z"
+    "timestamp": "2025-11-13T21:23:49.494Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -515,14 +515,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-11-06T22:16:36.810Z"
+    "timestamp": "2025-11-13T21:23:48.616Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-11-06T22:16:36.218Z"
+    "timestamp": "2025-11-13T21:23:48.439Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -546,13 +546,11 @@
   "380": {
     "title": "Portable Proof",
     "status": "Draft",
-    "prNo": 380,
-    "markdownPath": "https://raw.githubusercontent.com/cl34l/caip-portable-proof/refs/heads/caip-portable-proof/CAIPs/caip-380.md",
     "requires": [
       "[2",
       "10]"
     ],
-    "timestamp": "2025-11-06T22:16:34.593Z"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-380.md"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",
