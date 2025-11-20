@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-11-13T21:23:52.552Z"
+    "timestamp": "2025-11-20T13:52:31.035Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-11-13T21:23:52.626Z"
+    "timestamp": "2025-11-20T13:52:31.044Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-11-13T21:23:51.353Z"
+    "timestamp": "2025-11-20T13:52:29.506Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-11-13T21:23:51.121Z"
+    "timestamp": "2025-11-20T13:52:29.105Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-11-13T21:23:50.797Z"
+    "timestamp": "2025-11-20T13:52:29.206Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-11-13T21:23:49.960Z"
+    "timestamp": "2025-11-20T13:52:28.276Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-11-13T21:23:49.494Z"
+    "timestamp": "2025-11-20T13:52:27.587Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -493,7 +493,6 @@
     "status": "Draft",
     "requires": [
       "2",
-      "10",
       "19"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-358.md"
@@ -515,14 +514,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-11-13T21:23:48.616Z"
+    "timestamp": "2025-11-20T13:52:26.683Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-11-13T21:23:48.439Z"
+    "timestamp": "2025-11-20T13:52:26.169Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",

@@ -5,7 +5,7 @@
       "eipNo": "0",
       "title": "ZKMeta Metadata Interface",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-1",
@@ -5226,7 +5226,7 @@
       "id": "eip-7557",
       "eipNo": "7557",
       "title": "Block-level Warming with fair cost savings",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6871,7 +6871,7 @@
       "id": "eip-7877",
       "eipNo": "7877",
       "title": "Enhanced RETURN opcodes",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7193,7 +7193,7 @@
       "id": "eip-7927",
       "eipNo": "7927",
       "title": "History Expiry Meta",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -8140,6 +8140,48 @@
       "title": "Hardfork Meta - Heka/Bogota",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8079",
+      "eipNo": "8079",
+      "title": "Native rollups",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8080",
+      "eipNo": "8080",
+      "title": "Let exits use the consolidation queue",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8083",
+      "eipNo": "8083",
+      "title": "Time-Bound Access Control",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8084",
+      "eipNo": "8084",
+      "title": "Zero-knowledge proof metadata",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8099",
+      "eipNo": "8099",
+      "title": "Native Privacy Token Interface",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8820",
+      "eipNo": "8820",
+      "title": "Dual-Mode Fungible Tokens",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-9431",
@@ -13411,6 +13453,10 @@
       "target": "eip-4804"
     },
     {
+      "source": "eip-7984",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-7985",
       "target": "eip-7786"
     },
@@ -13857,6 +13903,14 @@
     {
       "source": "eip-8078",
       "target": "eip-7773"
+    },
+    {
+      "source": "eip-8083",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8820",
+      "target": "eip-20"
     },
     {
       "source": "eip-9431",
