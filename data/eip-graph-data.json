@@ -7936,7 +7936,7 @@
       "eipNo": "8040",
       "title": "ESG Tokenization Protocol",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8041",
@@ -7949,7 +7949,7 @@
       "id": "eip-8042",
       "eipNo": "8042",
       "title": "Diamond Storage",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -8156,6 +8156,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8082",
+      "eipNo": "8082",
+      "title": "Contract Event Subscription",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8083",
       "eipNo": "8083",
       "title": "Time-Bound Access Control",
@@ -8256,7 +8263,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "ESG Tokenization Protocol",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -13955,14 +13962,6 @@
     {
       "source": "eip-undefined",
       "target": "eip-20"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-1155"
     },
     {
       "source": "eip-0000",

@@ -9565,13 +9565,11 @@
   "7984": {
     "title": "Confidential Fungible Token",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1113,
-    "markdownPath": "https://raw.githubusercontent.com/arr00/ERCs/refs/heads/add-confidential-tokens-erc/ERCS/erc-7984.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2025-11-20T13:54:17.201Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7984.md"
   },
   "7985": {
     "title": "Gateway Attributes for Message Control",
@@ -9604,13 +9602,11 @@
   "7988": {
     "title": "Minimal Avatar Smart Wallet (MASW)",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1118,
-    "markdownPath": "https://raw.githubusercontent.com/MostafaS/ERCs/refs/heads/masw-erc/ERCS/erc-7988.md",
     "requires": [
       "7702"
     ],
-    "timestamp": "2025-11-20T13:54:17.472Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7988.md"
   },
   "7989": {
     "title": "Ethereum Intent URI (EIURI)",
@@ -10052,15 +10048,14 @@
   "8040": {
     "title": "ESG Tokenization Protocol",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1246,
-    "markdownPath": "https://raw.githubusercontent.com/agronetlabs/ERCs/refs/heads/agrocrypto-quantum-erc/ERCS/erc-8040.md",
+    "prNo": 10682,
+    "markdownPath": "https://raw.githubusercontent.com/agronetlabs/Ethereum-EIPs/refs/heads/eip-agrocrypto-quantum/EIPS/eip-8040.md",
     "requires": [
       "20",
       "721",
       "1155"
     ],
-    "timestamp": "2025-11-20T13:54:02.182Z"
+    "timestamp": "2025-11-22T03:11:47.917Z"
   },
   "8041": {
     "title": "Fixed-Supply Agent NFT Collections",
@@ -10076,7 +10071,7 @@
   },
   "8042": {
     "title": "Diamond Storage",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "7201"
     ],
@@ -10400,6 +10395,13 @@
     "markdownPath": "https://raw.githubusercontent.com/fradamt/EIPs/refs/heads/master/EIPS/eip-8080.md",
     "timestamp": "2025-11-20T13:52:33.944Z"
   },
+  "8082": {
+    "title": "Contract Event Subscription",
+    "status": "Draft",
+    "prNo": 10807,
+    "markdownPath": "https://raw.githubusercontent.com/bitcoinbrisbane/EIPs/refs/heads/master/EIPS/eip-8082.md",
+    "timestamp": "2025-11-22T03:11:35.848Z"
+  },
   "8083": {
     "title": "Time-Bound Access Control",
     "status": "Draft",
@@ -10530,17 +10532,15 @@
     "timestamp": "2025-11-20T13:53:45.770Z"
   },
   "undefined": {
-    "title": "ESG Tokenization Protocol",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1246,
-    "markdownPath": "https://raw.githubusercontent.com/agronetlabs/ERCs/refs/heads/agrocrypto-quantum-erc/ERCS/erc-8040.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "20",
-      "721",
-      "1155"
+      "20"
     ],
-    "timestamp": "2025-11-06T22:19:19.373Z"
+    "timestamp": "2025-11-22T03:12:57.258Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
