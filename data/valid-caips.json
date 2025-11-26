@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-11-20T13:52:31.035Z"
+    "timestamp": "2025-11-26T15:00:58.409Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-11-20T13:52:31.044Z"
+    "timestamp": "2025-11-26T15:00:58.353Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-11-20T13:52:29.506Z"
+    "timestamp": "2025-11-26T15:00:56.019Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-11-20T13:52:29.105Z"
+    "timestamp": "2025-11-26T15:00:55.358Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-11-20T13:52:29.206Z"
+    "timestamp": "2025-11-26T15:00:55.281Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-11-20T13:52:28.276Z"
+    "timestamp": "2025-11-26T15:00:53.779Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-11-22T03:11:32.540Z"
+    "timestamp": "2025-11-26T15:00:52.286Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -514,14 +514,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-11-20T13:52:26.683Z"
+    "timestamp": "2025-11-26T15:00:50.934Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-11-20T13:52:26.169Z"
+    "timestamp": "2025-11-26T15:00:51.932Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -569,6 +569,6 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-11-24T03:43:40.885Z"
+    "timestamp": "2025-11-25T00:02:14.558Z"
   }
 }

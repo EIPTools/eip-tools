@@ -410,7 +410,7 @@
       "id": "eip-663",
       "eipNo": "663",
       "title": "SWAPN, DUPN and EXCHANGE instructions",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -424,7 +424,7 @@
       "id": "eip-5450",
       "eipNo": "5450",
       "title": "EOF - Stack Validation",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -1775,7 +1775,7 @@
       "id": "eip-4200",
       "eipNo": "4200",
       "title": "EOF - Static relative jumps",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -2993,7 +2993,7 @@
       "id": "eip-4750",
       "eipNo": "4750",
       "title": "EOF - Functions",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4092,7 +4092,7 @@
       "id": "eip-6206",
       "eipNo": "6206",
       "title": "EOF - JUMPF and non-returning functions",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4659,7 +4659,7 @@
       "id": "eip-7069",
       "eipNo": "7069",
       "title": "Revamped CALL instructions",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4932,7 +4932,7 @@
       "id": "eip-7480",
       "eipNo": "7480",
       "title": "EOF - Data section access instructions",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -5499,7 +5499,7 @@
       "id": "eip-7620",
       "eipNo": "7620",
       "title": "EOF Contract Creation",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6857,7 +6857,7 @@
       "id": "eip-7873",
       "eipNo": "7873",
       "title": "EOF - TXCREATE and InitcodeTransaction type",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7102,7 +7102,7 @@
       "id": "eip-7912",
       "eipNo": "7912",
       "title": "Pragmatic stack manipulation tools",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7263,7 +7263,7 @@
       "id": "eip-7938",
       "eipNo": "7938",
       "title": "Exponential Gas Limit Increase",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7936,7 +7936,7 @@
       "eipNo": "8040",
       "title": "ESG Tokenization Protocol",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8041",
@@ -8177,6 +8177,48 @@
       "isERC": true
     },
     {
+      "id": "eip-8085",
+      "eipNo": "8085",
+      "title": "Dual-Mode Fungible Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8086",
+      "eipNo": "8086",
+      "title": "Privacy Token",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8087",
+      "eipNo": "8087",
+      "title": "Encrypted Hashed Arguments and Calls",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8089",
+      "eipNo": "8089",
+      "title": "Smart Contract Development Lifecycle Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8090",
+      "eipNo": "8090",
+      "title": "Relayer-Protected Gasless Swaps",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8091",
+      "eipNo": "8091",
+      "title": "Privacy Address Format",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8099",
       "eipNo": "8099",
       "title": "Native Privacy Token Interface",
@@ -8263,7 +8305,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Smart Contract Development Lifecycle Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -13488,6 +13530,14 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-7994",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-7994",
+      "target": "eip-7291"
+    },
+    {
       "source": "eip-7995",
       "target": "eip-712"
     },
@@ -13916,6 +13966,18 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8085",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8087",
+      "target": "eip-7573"
+    },
+    {
+      "source": "eip-8090",
+      "target": "eip-712"
+    },
+    {
       "source": "eip-8820",
       "target": "eip-20"
     },
@@ -13958,10 +14020,6 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-20"
     },
     {
       "source": "eip-0000",
