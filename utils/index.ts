@@ -145,3 +145,24 @@ export const getBaseUrl = () => {
     return `https://${vercelUrl}`;
   }
 };
+
+export const getReferencedByEIPs = (
+  eipNo: string,
+  graphData: any
+): string[] => {
+  const targetId = `eip-${eipNo}`;
+  const referencedBy: string[] = [];
+
+  // Find all links where current EIP is the target
+  if (graphData.links) {
+    for (const link of graphData.links) {
+      if (link.target === targetId) {
+        // Extract EIP number from source (remove "eip-" prefix)
+        const sourceEipNo = link.source.replace("eip-", "");
+        referencedBy.push(sourceEipNo);
+      }
+    }
+  }
+
+  return referencedBy.sort((a, b) => parseInt(a) - parseInt(b));
+};

@@ -39,13 +39,16 @@ import {
   convertMetadataToJson,
   extractEipNumber,
   extractMetadata,
+  getReferencedByEIPs,
 } from "@/utils";
 import { EIPType } from "@/types";
 import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EipMetadataJson } from "@/types";
+import { eipGraphData } from "@/data/eipGraphData";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { CopyToClipboard } from "@/components/CopyToClipboard";
+import { EIPDependencyGraph } from "@/components/EIPDependencyGraph";
 
 const EIP = ({
   params: { eipOrNo },
@@ -76,6 +79,11 @@ const EIP = ({
     isOpen: aiSummaryIsOpen,
     onOpen: aiSummaryOnOpen,
     onToggle: aiSummaryOnToggle,
+  } = useDisclosure();
+
+  const {
+    isOpen: dependencyGraphIsOpen,
+    onToggle: dependencyGraphOnToggle,
   } = useDisclosure();
 
   const handlePrevEIP = () => {
@@ -358,8 +366,18 @@ const EIP = ({
             {isERC ? "ERC" : "EIP"}-{eipNo}: {metadataJson.title}
           </Heading>
           <Text size="md">{metadataJson.description}</Text>
-          <Box overflowX={"auto"}>
-            <Table variant="simple">
+          
+          {/* Metadata Section Container */}
+          <Box
+            mt={6}
+            p={6}
+            bg="blackAlpha.300"
+            border="1px solid"
+            borderColor="whiteAlpha.200"
+            borderRadius="xl"
+          >
+            <Box overflowX={"auto"}>
+              <Table variant="simple">
               {metadataJson.author && (
                 <Tr>
                   <Th>Authors</Th>
@@ -426,6 +444,28 @@ const EIP = ({
                   </Td>
                 </Tr>
               )}
+              {(() => {
+                const referencedBy = getReferencedByEIPs(eipNo, eipGraphData);
+                return referencedBy.length > 0 && (
+                  <Tr>
+                    <Th>Referenced by</Th>
+                    <Td>
+                      <HStack wrap="wrap">
+                        {referencedBy.map((refEipNo, i) => (
+                          <NLink key={i} href={`/eip/${refEipNo}`}>
+                            <Text
+                              color={"blue.400"}
+                              _hover={{ textDecor: "underline" }}
+                            >
+                              {validEIPs[refEipNo]?.isERC ? "ERC" : "EIP"}-{refEipNo}
+                            </Text>
+                          </NLink>
+                        ))}
+                      </HStack>
+                    </Td>
+                  </Tr>
+                );
+              })()}
               {markdownFileURL && (
                 <Tr>
                   <Th>
@@ -453,13 +493,54 @@ const EIP = ({
                   </Td>
                 </Tr>
               )}
-            </Table>
+              </Table>
+            </Box>
+            
+            {/* EIP Dependency Graph */}
+            <Box mt={6}>
+              {(() => {
+                const requiredEips = metadataJson.requires?.length || 0;
+                const referencedBy = getReferencedByEIPs(eipNo, eipGraphData);
+                const totalConnections = requiredEips + referencedBy.length;
+                
+                if (totalConnections === 0) return null;
+                
+                return (
+                  <>
+                    <Button
+                      onClick={dependencyGraphOnToggle}
+                      variant="ghost"
+                      leftIcon={dependencyGraphIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                      size="md"
+                      color="gray.300"
+                      _hover={{ color: "white", bg: "whiteAlpha.100" }}
+                      mb={3}
+                      fontWeight="600"
+                      justifyContent="flex-start"
+                      w="100%"
+                    >
+                      <Text>EIP Dependency Graph</Text>
+                      <Text ml={2} fontSize="sm" color="gray.400">
+                        ({totalConnections} connection{totalConnections !== 1 ? 's' : ''})
+                      </Text>
+                    </Button>
+                    <Collapse in={dependencyGraphIsOpen} animateOpacity>
+                      <EIPDependencyGraph currentEipNo={eipNo} />
+                    </Collapse>
+                  </>
+                );
+              })()}
+            </Box>
           </Box>
-          {markdown === "404: Not Found" ? (
-            <Center mt={20}>{markdown}</Center>
-          ) : (
-            <Markdown md={markdown} markdownFileURL={markdownFileURL} />
-          )}
+
+          {/* Main EIP Content */}
+          <Box mt={8}>
+            {markdown === "404: Not Found" ? (
+              <Center mt={20}>{markdown}</Center>
+            ) : (
+              <Markdown md={markdown} markdownFileURL={markdownFileURL} />
+            )}
+          </Box>
         </Container>
       )}
       <ScrollToTopButton />
