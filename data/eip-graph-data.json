@@ -3559,7 +3559,7 @@
     {
       "id": "eip-5485",
       "eipNo": "5485",
-      "title": "Legitimacy, Jurisdiction and Sovereignty",
+      "title": "Jurisdiction, Accreditation, and Enforcement",
       "status": "Draft",
       "isERC": true
     },
@@ -4219,6 +4219,13 @@
       "eipNo": "7916",
       "title": "SSZ ProgressiveList",
       "status": "Review",
+      "isERC": false
+    },
+    {
+      "id": "eip-7932",
+      "eipNo": "7932",
+      "title": "Secondary Signature Algorithms",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -7218,13 +7225,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7932",
-      "eipNo": "7932",
-      "title": "Secondary Signature Algorithms",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-7933",
       "eipNo": "7933",
       "title": "Ethereum Intent URI (EIURI)",
@@ -8215,6 +8215,13 @@
       "id": "eip-8091",
       "eipNo": "8091",
       "title": "Privacy Address Format",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8093",
+      "eipNo": "8093",
+      "title": "Private ERC-20",
       "status": "Draft",
       "isERC": true
     },
@@ -10251,10 +10258,6 @@
     },
     {
       "source": "eip-5485",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-5485",
       "target": "eip-5247"
     },
     {
@@ -10888,6 +10891,10 @@
     {
       "source": "eip-6404",
       "target": "eip-7916"
+    },
+    {
+      "source": "eip-6404",
+      "target": "eip-7932"
     },
     {
       "source": "eip-6404",
@@ -13970,12 +13977,24 @@
       "target": "eip-20"
     },
     {
+      "source": "eip-8085",
+      "target": "eip-8086"
+    },
+    {
       "source": "eip-8087",
       "target": "eip-7573"
     },
     {
       "source": "eip-8090",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8093",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8093",
+      "target": "eip-7503"
     },
     {
       "source": "eip-8820",
