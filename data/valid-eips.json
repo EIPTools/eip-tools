@@ -4275,7 +4275,7 @@
   },
   "5485": {
     "title": "Jurisdiction, Accreditation, and Enforcement",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "5247"
     ],
@@ -5846,7 +5846,7 @@
   },
   "7246": {
     "title": "Encumber - Splitting Ownership & Guarantees",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "20"
     ],
@@ -6255,7 +6255,7 @@
   },
   "7518": {
     "title": "Dynamic Compliant Interop Security Token",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "165",
       "1155"
@@ -6726,6 +6726,7 @@
       "7002",
       "7251",
       "7549",
+      "7569",
       "7623",
       "7685",
       "7691",
@@ -6762,7 +6763,8 @@
     "title": "Hardfork Meta - Fusaka",
     "status": "Last Call",
     "requires": [
-      "7600"
+      "7600",
+      "7723"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7607.md"
@@ -6914,7 +6916,7 @@
   },
   "7634": {
     "title": "Limited Transfer Count NFT",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "165",
       "721"
@@ -7272,7 +7274,7 @@
   },
   "7688": {
     "title": "Forward compatible consensus data structures",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "6110",
       "7002",
@@ -7666,7 +7668,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7744.md"
   },
   "7745": {
-    "title": "Trustless log index",
+    "title": "Trustless log and transaction index",
     "status": "Draft",
     "requires": [
       "7916"
@@ -9352,9 +9354,6 @@
   "7962": {
     "title": "Key Hash Based Tokens",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1061,
-    "markdownPath": "https://raw.githubusercontent.com/dugubuyan/ERCs/refs/heads/master/ERCS/erc-7962.md",
     "requires": [
       "20",
       "712",
@@ -9362,7 +9361,8 @@
       "2612",
       "5564"
     ],
-    "timestamp": "2025-12-01T16:01:50.338Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7962.md"
   },
   "7963": {
     "title": "Oracle-Permissioned ERC-20 with ZK Proofs",
@@ -9376,11 +9376,10 @@
     "timestamp": "2025-12-01T16:01:50.276Z"
   },
   "7964": {
-    "title": "Cross-Chain EIP-712 Signing Domains",
+    "title": "Cross-Chain EIP-712 Signatures",
     "status": "Draft",
     "requires": [
-      "712",
-      "7803"
+      "712"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7964.md"
@@ -9638,7 +9637,7 @@
   },
   "7994": {
     "title": "Purpose-Bound ERC-20 with Conditional Unlock",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "20",
       "7291"
@@ -9660,13 +9659,11 @@
   "7996": {
     "title": "Contract Feature Detection",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1146,
-    "markdownPath": "https://raw.githubusercontent.com/adraffy/ethereum-ercs/refs/heads/contract-features/ERCS/erc-7996.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2025-12-01T16:01:46.042Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7996.md"
   },
   "7997": {
     "title": "Deterministic Factory Predeploy",
@@ -9712,7 +9709,7 @@
   },
   "8001": {
     "title": "Agent Coordination Framework",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "712",
       "1271",
@@ -9972,10 +9969,11 @@
   "8033": {
     "title": "Agent Council Oracles",
     "status": "Draft",
+    "requires": [
+      "20"
+    ],
     "isERC": true,
-    "prNo": 1226,
-    "markdownPath": "https://raw.githubusercontent.com/phiraml/ERCs/refs/heads/master/ERCS/erc-8033.md",
-    "timestamp": "2025-12-01T16:01:39.996Z"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8033.md"
   },
   "8034": {
     "title": "Referable NFT Royalties",
@@ -10169,13 +10167,11 @@
   "8056": {
     "title": "Scaled UI Amount Extension for ERC-20 Tokens",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1283,
-    "markdownPath": "https://raw.githubusercontent.com/superstateinc/ERCs/refs/heads/add/scaled-ui/ERCS/erc-8056.md",
     "requires": [
       "20"
     ],
-    "timestamp": "2025-12-01T16:01:30.928Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8056.md"
   },
   "8057": {
     "title": "Inter-Block Temporal Locality Gas Discounts",
@@ -10390,6 +10386,16 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8080.md"
   },
+  "8081": {
+    "title": "Hardfork Meta - Heka/Bogotá",
+    "status": "Draft",
+    "requires": [
+      "7723",
+      "7773"
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8081.md"
+  },
   "8082": {
     "title": "Contract Event Subscription",
     "status": "Draft",
@@ -10447,6 +10453,18 @@
     ],
     "timestamp": "2025-12-01T16:01:25.270Z"
   },
+  "8088": {
+    "title": "Cross-Chain Tracking",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1362,
+    "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/Cross-Chain-Tracking-Standard/ERCS/erc-8088.md",
+    "requires": [
+      "EIP-155",
+      "EIP-172"
+    ],
+    "timestamp": "2025-12-05T15:39:30.398Z"
+  },
   "8089": {
     "title": "Smart Contract Development Lifecycle Registry",
     "status": "Draft",
@@ -10474,6 +10492,20 @@
     "markdownPath": "https://raw.githubusercontent.com/0xRowan/ERCs/refs/heads/erc-privacy-address-format/ERCS/erc-8091.md",
     "timestamp": "2025-12-01T16:01:24.378Z"
   },
+  "8092": {
+    "title": "Associated Accounts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1377,
+    "markdownPath": "https://raw.githubusercontent.com/stevieraykatz/ERCs/refs/heads/erc-associated-accounts/ERCS/erc-8092.md",
+    "requires": [
+      "712",
+      "1271",
+      "6492",
+      "7930"
+    ],
+    "timestamp": "2025-12-05T15:39:29.561Z"
+  },
   "8093": {
     "title": "Private ERC-20",
     "status": "Draft",
@@ -10486,13 +10518,54 @@
     ],
     "timestamp": "2025-12-01T16:01:23.493Z"
   },
-  "8099": {
-    "title": "Native Privacy Token Interface",
+  "8094": {
+    "title": "eth/vhash - Blob-Aware Mempool",
+    "status": "Draft",
+    "prNo": 10853,
+    "markdownPath": "https://raw.githubusercontent.com/cskiraly/EIPs/refs/heads/dev2p-eth-vhash/EIPS/eip-8094.md",
+    "requires": [
+      "7642"
+    ],
+    "timestamp": "2025-12-05T15:38:06.860Z"
+  },
+  "8095": {
+    "title": "Directory of certified smart-contracts",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1359,
-    "markdownPath": "https://raw.githubusercontent.com/0xRowan/ERCs/refs/heads/erc-native-privacy-token/ERCS/erc-8099.md",
-    "timestamp": "2025-11-20T13:53:52.271Z"
+    "prNo": 1384,
+    "markdownPath": "https://raw.githubusercontent.com/joseluu/ERCs/refs/heads/master/ERCS/erc-8095.md",
+    "timestamp": "2025-12-05T15:39:29.441Z"
+  },
+  "8096": {
+    "title": "Increase Gas Cost of Point Evaluation",
+    "status": "Draft",
+    "prNo": 10864,
+    "markdownPath": "https://raw.githubusercontent.com/marcindsobczak/EIPs/refs/heads/master/EIPS/eip-8096.md",
+    "requires": [
+      "4844"
+    ],
+    "timestamp": "2025-12-05T15:38:05.513Z"
+  },
+  "8097": {
+    "title": "In-Ground Asset Token",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1387,
+    "markdownPath": "https://raw.githubusercontent.com/solomonashok/ERCs/refs/heads/erc-iga/ERCS/erc-8097.md",
+    "requires": [
+      "20",
+      "721",
+      "1155",
+      "3643"
+    ],
+    "timestamp": "2025-12-05T15:39:28.532Z"
+  },
+  "8099": {
+    "title": "MEVless Protocol",
+    "status": "Draft",
+    "prNo": 10855,
+    "markdownPath": "https://raw.githubusercontent.com/Lawliet-Chan/EIPs/refs/heads/mevless/EIPS/eip-8099.md",
+    "timestamp": "2025-12-05T15:38:06.475Z"
   },
   "8820": {
     "title": "Dual-Mode Fungible Tokens",
@@ -10597,12 +10670,15 @@
     "timestamp": "2025-12-01T16:01:15.638Z"
   },
   "undefined": {
-    "title": "Smart Contract Development Lifecycle Registry",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1363,
-    "markdownPath": "https://raw.githubusercontent.com/kennyk10/ERCs/refs/heads/smart-contract-development-lifecycle-registry/ERCS/erc-8089.md",
-    "timestamp": "2025-11-26T15:02:50.645Z"
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
+    "requires": [
+      "20"
+    ],
+    "timestamp": "2025-12-05T16:00:54.707Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
