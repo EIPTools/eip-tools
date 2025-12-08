@@ -7949,7 +7949,7 @@
       "id": "eip-8042",
       "eipNo": "8042",
       "title": "Diamond Storage",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8282,6 +8282,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8100",
+      "eipNo": "8100",
+      "title": "Representable Contract State",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8820",
       "eipNo": "8820",
       "title": "Dual-Mode Fungible Tokens",
@@ -8361,7 +8368,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Cross-Chain Tracking",
       "status": "Draft",
       "isERC": true
     },
@@ -14144,10 +14151,6 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-20"
     },
     {
       "source": "eip-0000",

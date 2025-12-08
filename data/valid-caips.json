@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-12-01T16:00:01.915Z"
+    "timestamp": "2025-12-08T10:57:29.520Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-12-01T16:00:02.059Z"
+    "timestamp": "2025-12-08T10:57:29.667Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-12-01T16:00:00.331Z"
+    "timestamp": "2025-12-08T10:57:26.891Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-12-01T16:00:00.351Z"
+    "timestamp": "2025-12-08T10:57:26.551Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-12-01T15:59:59.837Z"
+    "timestamp": "2025-12-08T10:57:26.209Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-12-01T15:59:59.089Z"
+    "timestamp": "2025-12-08T10:57:24.575Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-12-05T15:38:00.338Z"
+    "timestamp": "2025-12-08T10:57:23.326Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -514,14 +514,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-12-01T15:59:57.230Z"
+    "timestamp": "2025-12-08T10:57:22.009Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-12-01T15:59:57.006Z"
+    "timestamp": "2025-12-08T10:57:21.152Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
