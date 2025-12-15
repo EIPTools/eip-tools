@@ -3641,6 +3641,13 @@
       "isERC": true
     },
     {
+      "id": "eip-5555",
+      "eipNo": "5555",
+      "title": "Ethereum Virtual Machine File System",
+      "status": "New",
+      "isERC": false
+    },
+    {
       "id": "eip-5559",
       "eipNo": "5559",
       "title": "Cross Chain Write Deferral Protocol",
@@ -7081,7 +7088,7 @@
       "id": "eip-7908",
       "eipNo": "7908",
       "title": "HD wallet In Treasury Management",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7969,7 +7976,7 @@
     {
       "id": "eip-8046",
       "eipNo": "8046",
-      "title": "FOCIL with ranked transactions (FOCILR)",
+      "title": "Uniform price auction over inclusion lists",
       "status": "Draft",
       "isERC": false
     },
@@ -8285,6 +8292,27 @@
       "id": "eip-8100",
       "eipNo": "8100",
       "title": "Representable Contract State",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8101",
+      "eipNo": "8101",
+      "title": "Payload Chunking with Chunk Access Lists",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8102",
+      "eipNo": "8102",
+      "title": "Permissioned Pull",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8103",
+      "eipNo": "8103",
+      "title": "Permissioned Authorization Object (PPO)",
       "status": "Draft",
       "isERC": true
     },
@@ -14107,6 +14135,34 @@
     {
       "source": "eip-8097",
       "target": "eip-3643"
+    },
+    {
+      "source": "eip-8101",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8101",
+      "target": "eip-4895"
+    },
+    {
+      "source": "eip-8101",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8101",
+      "target": "eip-7825"
+    },
+    {
+      "source": "eip-8101",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8102",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8103",
+      "target": "eip-712"
     },
     {
       "source": "eip-8820",
