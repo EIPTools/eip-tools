@@ -6877,7 +6877,7 @@
   },
   "7627": {
     "title": "Secure Messaging Protocol",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7627.md"
@@ -8969,7 +8969,7 @@
   },
   "7913": {
     "title": "Signature Verifiers",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7913.md"
@@ -9000,7 +9000,7 @@
   },
   "7917": {
     "title": "Deterministic proposer lookahead",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7917.md"
@@ -9125,11 +9125,7 @@
   "7932": {
     "title": "Secondary Signature Algorithms",
     "status": "Draft",
-    "requires": [
-      "155",
-      "2718",
-      "7702"
-    ],
+    "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7932.md"
   },
@@ -9644,7 +9640,7 @@
   },
   "7994": {
     "title": "Purpose-Bound ERC-20 with Conditional Unlock",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "20",
       "7291"
@@ -9716,7 +9712,7 @@
   },
   "8001": {
     "title": "Agent Coordination Framework",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "712",
       "1271",
@@ -9958,7 +9954,7 @@
     "timestamp": "2025-12-15T06:03:34.976Z"
   },
   "8030": {
-    "title": "P256 transaction support",
+    "title": "P256 algorithm support",
     "status": "Draft",
     "requires": [
       "7932"
@@ -10142,9 +10138,11 @@
   "8051": {
     "title": "Precompile for ML-DSA signature verification",
     "status": "Draft",
-    "prNo": 10557,
-    "markdownPath": "https://raw.githubusercontent.com/ZKNoxHQ/EIPs/refs/heads/eip/dilithium/EIPS/eip-8051.md",
-    "timestamp": "2025-12-15T06:01:47.386Z"
+    "requires": [
+      "7932"
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8051.md"
   },
   "8052": {
     "title": "Precompile for Falcon support",
@@ -10617,6 +10615,31 @@
     ],
     "timestamp": "2025-12-15T06:03:07.380Z"
   },
+  "8106": {
+    "title": "RWA Event-based Compliance Framework",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1411,
+    "markdownPath": "https://raw.githubusercontent.com/wz14/ERCs/refs/heads/event_based_framework/ERCS/erc-8106.md",
+    "requires": [
+      "20"
+    ],
+    "timestamp": "2025-12-18T20:35:44.093Z"
+  },
+  "8107": {
+    "title": "ENS Trust Registry for Agent Coordination",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1412,
+    "markdownPath": "https://raw.githubusercontent.com/KBryan/ERCs/refs/heads/erc-8001-trust-module/ERCS/erc-8107.md",
+    "requires": [
+      "137",
+      "712",
+      "1271",
+      "8001"
+    ],
+    "timestamp": "2025-12-18T20:35:43.541Z"
+  },
   "8820": {
     "title": "Dual-Mode Fungible Tokens",
     "status": "Draft",
@@ -10720,16 +10743,15 @@
     "timestamp": "2025-12-15T06:02:59.068Z"
   },
   "undefined": {
-    "title": "Cross-Chain Tracking",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1362,
-    "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/Cross-Chain-Tracking-Standard/ERCS/erc-8088.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "EIP-155",
-      "EIP-172"
+      "20"
     ],
-    "timestamp": "2025-12-08T10:59:33.302Z"
+    "timestamp": "2025-12-18T20:36:12.952Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

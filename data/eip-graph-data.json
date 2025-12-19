@@ -5534,7 +5534,7 @@
       "id": "eip-7627",
       "eipNo": "7627",
       "title": "Secure Messaging Protocol",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7123,7 +7123,7 @@
       "id": "eip-7913",
       "eipNo": "7913",
       "title": "Signature Verifiers",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7144,7 +7144,7 @@
       "id": "eip-7917",
       "eipNo": "7917",
       "title": "Deterministic proposer lookahead",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -7641,7 +7641,7 @@
       "id": "eip-7994",
       "eipNo": "7994",
       "title": "Purpose-Bound ERC-20 with Conditional Unlock",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7683,7 +7683,7 @@
       "id": "eip-8001",
       "eipNo": "8001",
       "title": "Agent Coordination Framework",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7899,7 +7899,7 @@
     {
       "id": "eip-8030",
       "eipNo": "8030",
-      "title": "P256 transaction support",
+      "title": "P256 algorithm support",
       "status": "Draft",
       "isERC": false
     },
@@ -8317,6 +8317,20 @@
       "isERC": true
     },
     {
+      "id": "eip-8106",
+      "eipNo": "8106",
+      "title": "RWA Event-based Compliance Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8107",
+      "eipNo": "8107",
+      "title": "ENS Trust Registry for Agent Coordination",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8820",
       "eipNo": "8820",
       "title": "Dual-Mode Fungible Tokens",
@@ -8396,7 +8410,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Cross-Chain Tracking",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -13397,18 +13411,6 @@
       "target": "eip-721"
     },
     {
-      "source": "eip-7932",
-      "target": "eip-155"
-    },
-    {
-      "source": "eip-7932",
-      "target": "eip-2718"
-    },
-    {
-      "source": "eip-7932",
-      "target": "eip-7702"
-    },
-    {
       "source": "eip-7933",
       "target": "eip-681"
     },
@@ -13941,6 +13943,10 @@
       "target": "eip-5615"
     },
     {
+      "source": "eip-8051",
+      "target": "eip-7932"
+    },
+    {
       "source": "eip-8054",
       "target": "eip-20"
     },
@@ -14165,6 +14171,26 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-8106",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8107",
+      "target": "eip-137"
+    },
+    {
+      "source": "eip-8107",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8107",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8107",
+      "target": "eip-8001"
+    },
+    {
       "source": "eip-8820",
       "target": "eip-20"
     },
@@ -14207,6 +14233,10 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",
