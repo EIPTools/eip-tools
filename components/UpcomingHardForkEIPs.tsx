@@ -5,30 +5,33 @@ import { validEIPs } from "@/data/validEIPs";
 import { EIPGridItem } from "./TrendingEIPs";
 import { EIPStatus } from "@/utils";
 
-export const PectraEIPs = () => {
-  const pectraHardForkMetaEIPNo = "7600";
-  const pectraHardForkStatus = validEIPs[pectraHardForkMetaEIPNo].status!;
-  const pectraEIPsArray = [
-    pectraHardForkMetaEIPNo,
-    ...validEIPs[pectraHardForkMetaEIPNo].requires!,
+export const UpcomingHardForkEIPs = () => {
+  const upcomingHardForkName = "Glamsterdam";
+  const upcomingHardForkMetaEIPNo = "7773";
+  const upcomingHardForkStatus = validEIPs[upcomingHardForkMetaEIPNo].status!;
+  const upcomingHardForkEIPsArray = [
+    upcomingHardForkMetaEIPNo,
+    // ...validEIPs[upcomingHardForkMetaEIPNo].requires!, // not upto date for Glamsterdam
+    "7732",
+    "7928",
   ];
 
   return (
     <Box mt={10} px={10}>
       <Box>
         <HStack>
-          <Heading>🍴 Pectra Hardfork</Heading>
+          <Heading>🍴 {upcomingHardForkName} Hardfork</Heading>
           <Badge
             p={1}
-            bg={EIPStatus[pectraHardForkStatus]?.bg ?? "cyan.500"}
+            bg={EIPStatus[upcomingHardForkStatus]?.bg ?? "cyan.500"}
             fontWeight={700}
             rounded="md"
           >
-            {EIPStatus[pectraHardForkStatus]?.prefix} {pectraHardForkStatus}
+            {EIPStatus[upcomingHardForkStatus]?.prefix} {upcomingHardForkStatus}
           </Badge>
         </HStack>
         <Text fontSize={"md"} fontWeight={200}>
-          (EIPs scheduled for inclusion in the Prague-Electra Hardfork)
+          (EIPs scheduled for inclusion in the {upcomingHardForkName} Hardfork)
         </Text>
       </Box>
       <Box
@@ -49,7 +52,7 @@ export const PectraEIPs = () => {
         }}
       >
         <Flex direction="row" minW="max-content" pb="2">
-          {pectraEIPsArray.map((eipNo) => (
+          {upcomingHardForkEIPsArray.map((eipNo) => (
             <EIPGridItem key={eipNo} eipNo={eipNo} />
           ))}
         </Flex>

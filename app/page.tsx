@@ -3,7 +3,7 @@ import { getMetadata } from "@/utils";
 import { EIPOfTheDay } from "@/components/EIPOfTheDay";
 import { Layout } from "@/components/Layout";
 import { TrendingEIPs } from "@/components/TrendingEIPs";
-import { PectraEIPs } from "@/components/PectraEIPs";
+import { UpcomingHardForkEIPs } from "@/components/UpcomingHardForkEIPs";
 import { EIPGraphSection } from "@/components/EIPGraphSection";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <Layout>
       <TrendingEIPs />
-      <PectraEIPs />
+      <UpcomingHardForkEIPs />
       <EIPGraphSection />
       <EIPOfTheDay />
     </Layout>
