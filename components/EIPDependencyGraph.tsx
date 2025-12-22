@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback, useMemo, useRef } from "react";
+import React, { useState, useCallback, useMemo, useRef, useEffect } from "react";
 import {
   Box,
   VStack,
@@ -29,6 +29,7 @@ import { validEIPs } from "@/data/validEIPs";
 
 interface EIPDependencyGraphProps {
   currentEipNo: string;
+  isExpanded?: boolean;
 }
 
 interface PositionedNode extends GraphNode {
@@ -38,6 +39,7 @@ interface PositionedNode extends GraphNode {
 
 export const EIPDependencyGraph: React.FC<EIPDependencyGraphProps> = ({
   currentEipNo,
+  isExpanded = false,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
@@ -103,6 +105,22 @@ export const EIPDependencyGraph: React.FC<EIPDependencyGraphProps> = ({
   const handleResetZoom = useCallback(() => {
     setZoom(1);
   }, []);
+
+  // Center graph when expanded
+  useEffect(() => {
+    if (isExpanded) {
+      // Small delay to ensure the DOM is fully rendered after collapse animation
+      const timer = setTimeout(() => {
+        if (scrollContainerRef.current) {
+          const container = scrollContainerRef.current;
+          const scrollWidth = container.scrollWidth;
+          const clientWidth = container.clientWidth;
+          container.scrollLeft = (scrollWidth - clientWidth) / 2;
+        }
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [isExpanded]);
 
   // Get current EIP data
   const currentEip = useMemo(() => {

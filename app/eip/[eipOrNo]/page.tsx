@@ -580,7 +580,7 @@ const EIP = ({
                       </Button>
                     </HStack>
                     <Collapse in={dependencyGraphIsOpen} animateOpacity>
-                      <EIPDependencyGraph currentEipNo={eipNo} />
+                      <EIPDependencyGraph currentEipNo={eipNo} isExpanded={dependencyGraphIsOpen} />
                     </Collapse>
                   </>
                 );
