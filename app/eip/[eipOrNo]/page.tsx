@@ -1,7 +1,7 @@
 "use client";
 
 import NLink from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { Markdown } from "@/components/Markdown";
 import {
   Container,
@@ -84,7 +84,39 @@ const EIP = ({
   const {
     isOpen: dependencyGraphIsOpen,
     onToggle: dependencyGraphOnToggle,
+    onOpen: dependencyGraphOnOpen,
   } = useDisclosure();
+
+  const dependencyGraphRef = useRef<HTMLDivElement>(null);
+  const [copiedAnchor, setCopiedAnchor] = useState(false);
+
+  const handleCopyAnchorLink = useCallback(() => {
+    const url = `${window.location.origin}${window.location.pathname}#dependency-graph`;
+    // Update browser URL with hash
+    window.history.pushState(null, "", "#dependency-graph");
+    // Copy to clipboard
+    navigator.clipboard.writeText(url);
+    setCopiedAnchor(true);
+    setTimeout(() => setCopiedAnchor(false), 2000);
+  }, []);
+
+  // Handle hash navigation on page load
+  useEffect(() => {
+    if (typeof window !== "undefined" && metadataJson) {
+      const hash = window.location.hash;
+      if (hash === "#dependency-graph") {
+        // Open the collapse
+        dependencyGraphOnOpen();
+        // Scroll to the section after a short delay to ensure DOM is ready
+        setTimeout(() => {
+          dependencyGraphRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }, 100);
+      }
+    }
+  }, [metadataJson, dependencyGraphOnOpen]);
 
   const handlePrevEIP = () => {
     if (currentEIPArrayIndex > 0) {
@@ -376,8 +408,8 @@ const EIP = ({
             borderColor="whiteAlpha.200"
             borderRadius="xl"
           >
-            <Box overflowX={"auto"}>
-              <Table variant="simple">
+          <Box overflowX={"auto"}>
+            <Table variant="simple">
               {metadataJson.author && (
                 <Tr>
                   <Th>Authors</Th>
@@ -493,11 +525,11 @@ const EIP = ({
                   </Td>
                 </Tr>
               )}
-              </Table>
-            </Box>
+            </Table>
+          </Box>
             
             {/* EIP Dependency Graph */}
-            <Box mt={6}>
+            <Box mt={6} ref={dependencyGraphRef} id="dependency-graph">
               {(() => {
                 const requiredEips = metadataJson.requires?.length || 0;
                 const referencedBy = getReferencedByEIPs(eipNo, eipGraphData);
@@ -507,23 +539,46 @@ const EIP = ({
                 
                 return (
                   <>
-                    <Button
-                      onClick={dependencyGraphOnToggle}
-                      variant="ghost"
-                      leftIcon={dependencyGraphIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
-                      size="md"
-                      color="gray.300"
-                      _hover={{ color: "white", bg: "whiteAlpha.100" }}
-                      mb={3}
-                      fontWeight="600"
-                      justifyContent="flex-start"
-                      w="100%"
-                    >
-                      <Text>EIP Dependency Graph</Text>
-                      <Text ml={2} fontSize="sm" color="gray.400">
-                        ({totalConnections} connection{totalConnections !== 1 ? 's' : ''})
-                      </Text>
-                    </Button>
+                    <HStack w="100%" spacing={0}>
+                      <Tooltip 
+                        label={copiedAnchor ? "Copied!" : "Copy link to section"} 
+                        hasArrow
+                        closeOnClick={false}
+                      >
+                        <IconButton
+                          aria-label="Copy anchor link"
+                          icon={<Text fontWeight="bold">#</Text>}
+                          variant="ghost"
+                          size="sm"
+                          color={copiedAnchor ? "green.400" : "gray.500"}
+                          _hover={{ color: "blue.400", bg: "transparent" }}
+                          onClick={handleCopyAnchorLink}
+                          mb={3}
+                          minW="auto"
+                          h="auto"
+                          p={0}
+                          mr={1}
+                        />
+                      </Tooltip>
+                      <Button
+                        onClick={dependencyGraphOnToggle}
+                        variant="ghost"
+                        leftIcon={dependencyGraphIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                        size="md"
+                        color="gray.300"
+                        _hover={{ color: "white", bg: "whiteAlpha.100" }}
+                        mb={3}
+                        fontWeight="600"
+                        justifyContent="flex-start"
+                        flex="1"
+                        pl={1}
+                      >
+                        <Text>EIP Dependency Graph</Text>
+                        <Text ml={2} fontSize="sm" color="gray.400">
+                          ({totalConnections} connection{totalConnections !== 1 ? 's' : ''})
+                        </Text>
+                      </Button>
+                    </HStack>
                     <Collapse in={dependencyGraphIsOpen} animateOpacity>
                       <EIPDependencyGraph currentEipNo={eipNo} />
                     </Collapse>
@@ -535,11 +590,11 @@ const EIP = ({
 
           {/* Main EIP Content */}
           <Box mt={8}>
-            {markdown === "404: Not Found" ? (
-              <Center mt={20}>{markdown}</Center>
-            ) : (
-              <Markdown md={markdown} markdownFileURL={markdownFileURL} />
-            )}
+          {markdown === "404: Not Found" ? (
+            <Center mt={20}>{markdown}</Center>
+          ) : (
+            <Markdown md={markdown} markdownFileURL={markdownFileURL} />
+          )}
           </Box>
         </Container>
       )}

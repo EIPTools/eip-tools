@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback, useMemo } from "react";
+import React, { useState, useCallback, useMemo, useRef } from "react";
 import {
   Box,
   VStack,
@@ -21,7 +21,7 @@ import {
   Flex,
   Divider,
 } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon, RepeatIcon, AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { GraphNode } from "@/types";
 import { eipGraphData } from "@/data/eipGraphData";
 import { EIPStatus, getReferencedByEIPs } from "@/utils";
@@ -41,6 +41,68 @@ export const EIPDependencyGraph: React.FC<EIPDependencyGraphProps> = ({
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
+  const [zoom, setZoom] = useState(1);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const minZoom = 0.1;
+  const maxZoom = 1.5;
+  const zoomStep = 0.1;
+
+  const handleRecenter = useCallback(() => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const scrollWidth = container.scrollWidth;
+      const clientWidth = container.clientWidth;
+      // Scroll to center
+      container.scrollTo({
+        left: (scrollWidth - clientWidth) / 2,
+        behavior: "smooth",
+      });
+    }
+  }, []);
+
+  const zoomAtCenter = useCallback((newZoom: number) => {
+    if (!scrollContainerRef.current) {
+      setZoom(newZoom);
+      return;
+    }
+
+    const container = scrollContainerRef.current;
+    const oldZoom = zoom;
+    
+    // Get current scroll position and viewport size
+    const scrollLeft = container.scrollLeft;
+    const clientWidth = container.clientWidth;
+    
+    // Calculate the center point in the current view (in graph coordinates)
+    const centerXInView = scrollLeft + clientWidth / 2;
+    const centerXInGraph = centerXInView / oldZoom;
+    
+    // Calculate new scroll position to keep the same graph point centered
+    const newCenterXInView = centerXInGraph * newZoom;
+    const newScrollLeft = newCenterXInView - clientWidth / 2;
+    
+    setZoom(newZoom);
+    
+    // Use requestAnimationFrame to ensure the DOM has updated with new zoom
+    requestAnimationFrame(() => {
+      container.scrollLeft = Math.max(0, newScrollLeft);
+    });
+  }, [zoom]);
+
+  const handleZoomIn = useCallback(() => {
+    const newZoom = Math.min(zoom + zoomStep, maxZoom);
+    zoomAtCenter(newZoom);
+  }, [zoom, zoomAtCenter]);
+
+  const handleZoomOut = useCallback(() => {
+    const newZoom = Math.max(zoom - zoomStep, minZoom);
+    zoomAtCenter(newZoom);
+  }, [zoom, zoomAtCenter]);
+
+  const handleResetZoom = useCallback(() => {
+    setZoom(1);
+  }, []);
 
   // Get current EIP data
   const currentEip = useMemo(() => {
@@ -70,46 +132,77 @@ export const EIPDependencyGraph: React.FC<EIPDependencyGraphProps> = ({
     required: PositionedNode[];
     current: PositionedNode | null;
     referencedBy: PositionedNode[];
+    graphHeight: number;
+    graphWidth: number;
   } => {
-    const graphWidth = 1000;
-    const graphHeight = 400;
     const minNodeSpacing = 140;
-    const rowHeight = 130;
+    const rowHeight = 120;
+    const nodeRadius = 28;
+    const currentNodeRadius = 35;
+    const titleHeight = 25; // Space for title text below nodes
+    const padding = 20;
 
-    // Position required EIPs (top row)
+    // Calculate required width for each row
+    const requiredWidth = requiredEips.length > 0 
+      ? (requiredEips.length - 1) * minNodeSpacing + 200
+      : 0;
+    
+    const referencedByWidth = referencedByEips.length > 0
+      ? (referencedByEips.length - 1) * minNodeSpacing + 200
+      : 0;
+
+    // Calculate total graph width (minimum 1000px for the container)
+    const graphWidth = Math.max(1000, requiredWidth, referencedByWidth);
+
+    // Calculate number of rows needed
+    const hasRequired = requiredEips.length > 0;
+    const hasReferencedBy = referencedByEips.length > 0;
+    const numRows = 1 + (hasRequired ? 1 : 0) + (hasReferencedBy ? 1 : 0);
+
+    // Calculate total content height
+    const contentHeight = numRows * rowHeight + titleHeight;
+    const graphHeight = contentHeight + padding * 2;
+
+    // Calculate starting Y to center content vertically
+    let currentRow = 0;
+    
+    // Position required EIPs (top row if they exist)
+    const requiredY = hasRequired ? padding + nodeRadius + 10 : 0;
     const required: PositionedNode[] = requiredEips.map((node, index) => {
-      const nodeSpacing = Math.max(minNodeSpacing, 900 / Math.max(requiredEips.length, 1));
-      const totalWidth = (requiredEips.length - 1) * nodeSpacing;
+      const totalWidth = (requiredEips.length - 1) * minNodeSpacing;
       const startX = (graphWidth - totalWidth) / 2;
       return {
         ...node,
-        x: startX + index * nodeSpacing,
-        y: 60,
+        x: startX + index * minNodeSpacing,
+        y: requiredY,
       };
     });
+    if (hasRequired) currentRow++;
 
     // Position current EIP (middle)
+    const currentY = padding + currentNodeRadius + 10 + (currentRow * rowHeight);
     const current: PositionedNode | null = currentEip
       ? {
           ...currentEip,
           x: graphWidth / 2,
-          y: 60 + rowHeight,
+          y: currentY,
         }
       : null;
+    currentRow++;
 
-    // Position referenced-by EIPs (bottom row)
+    // Position referenced-by EIPs (bottom row if they exist)
+    const referencedByY = padding + nodeRadius + 10 + (currentRow * rowHeight);
     const referencedBy: PositionedNode[] = referencedByEips.map((node, index) => {
-      const nodeSpacing = Math.max(minNodeSpacing, 900 / Math.max(referencedByEips.length, 1));
-      const totalWidth = (referencedByEips.length - 1) * nodeSpacing;
+      const totalWidth = (referencedByEips.length - 1) * minNodeSpacing;
       const startX = (graphWidth - totalWidth) / 2;
       return {
         ...node,
-        x: startX + index * nodeSpacing,
-        y: 60 + 2 * rowHeight,
+        x: startX + index * minNodeSpacing,
+        y: referencedByY,
       };
     });
 
-    return { required, current, referencedBy };
+    return { required, current, referencedBy, graphHeight, graphWidth };
   }, [requiredEips, currentEip, referencedByEips]);
 
   const getStatusColor = useCallback((status: string) => {
@@ -254,38 +347,56 @@ export const EIPDependencyGraph: React.FC<EIPDependencyGraphProps> = ({
     from,
     to,
   }) => {
-    const arrowLength = 12;
-    const angle = Math.atan2(to.y - from.y, to.x - from.x);
-    
-    // Adjust start and end points to account for node radius
     const fromRadius = from === positionedNodes.current ? 35 : 28;
     const toRadius = to === positionedNodes.current ? 35 : 28;
-    
-    const startX = from.x + Math.cos(angle) * (fromRadius + 5);
-    const startY = from.y + Math.sin(angle) * (fromRadius + 5);
-    const endX = to.x - Math.cos(angle) * (toRadius + 5);
-    const endY = to.y - Math.sin(angle) * (toRadius + 5);
-    
-    const arrowX1 = endX - Math.cos(angle - Math.PI / 6) * arrowLength;
-    const arrowY1 = endY - Math.sin(angle - Math.PI / 6) * arrowLength;
-    const arrowX2 = endX - Math.cos(angle + Math.PI / 6) * arrowLength;
-    const arrowY2 = endY - Math.sin(angle + Math.PI / 6) * arrowLength;
+    const arrowSize = 8;
+
+    // Create 90-degree flowchart-style arrows
+    const startX = from.x;
+    const startY = from.y + fromRadius + 3; // Start from bottom of source node
+    const endX = to.x;
+    const endY = to.y - toRadius - 3; // End at top of target node
+
+    // Calculate midpoint for the 90-degree bend
+    const midY = startY + (endY - startY) / 2;
 
     return (
       <g>
+        {/* Vertical line from source node */}
         <line
           x1={startX}
           y1={startY}
-          x2={endX}
-          y2={endY}
-          stroke="#888888"
-          strokeWidth="2"
+          x2={startX}
+          y2={midY}
+          stroke="#666666"
+          strokeWidth="1.5"
           opacity="0.8"
         />
-        <polygon
-          points={`${endX},${endY} ${arrowX1},${arrowY1} ${arrowX2},${arrowY2}`}
-          fill="#888888"
+        {/* Horizontal line */}
+        <line
+          x1={startX}
+          y1={midY}
+          x2={endX}
+          y2={midY}
+          stroke="#666666"
+          strokeWidth="1.5"
           opacity="0.8"
+        />
+        {/* Vertical line to target node (stop before arrow head) */}
+        <line
+          x1={endX}
+          y1={midY}
+          x2={endX}
+          y2={endY - arrowSize}
+          stroke="#666666"
+          strokeWidth="1.5"
+          opacity="0.8"
+        />
+        {/* Arrow head - triangle pointing down */}
+        <path
+          d={`M ${endX} ${endY} L ${endX - arrowSize} ${endY - arrowSize * 1.5} L ${endX + arrowSize} ${endY - arrowSize * 1.5} Z`}
+          fill="#666666"
+          opacity="0.9"
         />
       </g>
     );
@@ -315,74 +426,173 @@ export const EIPDependencyGraph: React.FC<EIPDependencyGraphProps> = ({
         border="1px solid"
         borderColor="gray.600"
         borderRadius="lg"
-        p={6}
         bg="gray.900"
         boxShadow="lg"
+        position="relative"
       >
-        <svg
-          width="100%"
-          height="400"
-          viewBox="0 0 1000 400"
-          style={{ overflow: "visible" }}
+        <Box
+          ref={scrollContainerRef}
+          p={6}
+          pb={16}
+          overflowX="auto"
+          overflowY="hidden"
+          sx={{
+            "::-webkit-scrollbar": {
+              height: "8px",
+            },
+            "::-webkit-scrollbar-track": {
+              bg: "gray.800",
+              borderRadius: "md",
+            },
+            "::-webkit-scrollbar-thumb": {
+              bg: "gray.600",
+              borderRadius: "md",
+              _hover: {
+                bg: "gray.500",
+              },
+            },
+          }}
         >
-          <defs>
-            <marker
-              id="arrowhead"
-              markerWidth="10"
-              markerHeight="7"
-              refX="9"
-              refY="3.5"
-              orient="auto"
+          <Box
+            minWidth={`${positionedNodes.graphWidth * zoom}px`}
+            width={`${positionedNodes.graphWidth * zoom}px`}
+            minHeight={`${positionedNodes.graphHeight}px`}
+            height={`${Math.max(positionedNodes.graphHeight, positionedNodes.graphHeight * zoom)}px`}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <svg
+              width={positionedNodes.graphWidth * zoom}
+              height={positionedNodes.graphHeight * zoom}
+              viewBox={`0 0 ${positionedNodes.graphWidth} ${positionedNodes.graphHeight}`}
+              style={{ display: "block" }}
             >
-              <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
-            </marker>
-          </defs>
+              <defs>
+                <marker
+                  id="arrowhead"
+                  markerWidth="10"
+                  markerHeight="7"
+                  refX="9"
+                  refY="3.5"
+                  orient="auto"
+                >
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+                </marker>
+              </defs>
 
-          {/* Render arrows from required EIPs to current EIP */}
-          {positionedNodes.current &&
-            positionedNodes.required.map((node, index) => (
-              <Arrow key={`req-${index}`} from={node} to={positionedNodes.current!} />
-            ))}
+              {/* Render arrows from required EIPs to current EIP */}
+              {positionedNodes.current &&
+                positionedNodes.required.map((node, index) => (
+                  <Arrow key={`req-${index}`} from={node} to={positionedNodes.current!} />
+                ))}
 
-          {/* Render arrows from current EIP to referenced-by EIPs */}
-          {positionedNodes.current &&
-            positionedNodes.referencedBy.map((node, index) => (
-              <Arrow key={`ref-${index}`} from={positionedNodes.current!} to={node} />
-            ))}
+              {/* Render arrows from current EIP to referenced-by EIPs */}
+              {positionedNodes.current &&
+                positionedNodes.referencedBy.map((node, index) => (
+                  <Arrow key={`ref-${index}`} from={positionedNodes.current!} to={node} />
+                ))}
 
-          {/* Render required EIP nodes */}
-          {positionedNodes.required.map((node, index) => (
-            <EIPNode key={`req-${node.eipNo}`} node={node} />
-          ))}
+              {/* Render required EIP nodes */}
+              {positionedNodes.required.map((node, index) => (
+                <EIPNode key={`req-${node.eipNo}`} node={node} />
+              ))}
 
-          {/* Render current EIP node */}
-          {positionedNodes.current && (
-            <EIPNode node={positionedNodes.current} isCurrent />
-          )}
+              {/* Render current EIP node */}
+              {positionedNodes.current && (
+                <EIPNode node={positionedNodes.current} isCurrent />
+              )}
 
-          {/* Render referenced-by EIP nodes */}
-          {positionedNodes.referencedBy.map((node, index) => (
-            <EIPNode key={`ref-${node.eipNo}`} node={node} />
-          ))}
-        </svg>
+              {/* Render referenced-by EIP nodes */}
+              {positionedNodes.referencedBy.map((node, index) => (
+                <EIPNode key={`ref-${node.eipNo}`} node={node} />
+              ))}
+            </svg>
+          </Box>
+        </Box>
 
-        <Flex mt={4} justify="space-between" align="center">
-          <Text fontSize="sm" color="gray.300">
-            Click on any node to see details, or open in new tab
-          </Text>
-          <HStack spacing={4}>
-            {requiredEips.length > 0 && (
-              <Text fontSize="xs" color="gray.400" fontWeight="500">
-                ↑ Dependencies ({requiredEips.length})
+        {/* Fixed info bar at bottom */}
+        <Box
+          position="absolute"
+          bottom={0}
+          left={0}
+          right={0}
+          bg="rgba(26, 32, 44, 0.95)"
+          backdropFilter="blur(10px)"
+          borderTop="1px solid"
+          borderColor="whiteAlpha.200"
+          borderBottomRadius="lg"
+          p={4}
+        >
+          <Flex justify="space-between" align="center" wrap="wrap" gap={2}>
+            <HStack spacing={3}>
+              <Text fontSize="sm" color="gray.300">
+                Click on any node to see details
               </Text>
-            )}
-            {referencedByEips.length > 0 && (
-              <Text fontSize="xs" color="gray.400" fontWeight="500">
-                ↓ Dependents ({referencedByEips.length})
-              </Text>
-            )}
-          </HStack>
-        </Flex>
+              <HStack spacing={1} bg="whiteAlpha.100" borderRadius="md" p={1}>
+                <Tooltip label="Zoom out" hasArrow placement="top">
+                  <Button
+                    size="xs"
+                    variant="ghost"
+                    onClick={handleZoomOut}
+                    isDisabled={zoom <= minZoom}
+                    color="gray.300"
+                    _hover={{ bg: "whiteAlpha.200" }}
+                    _disabled={{ opacity: 0.4, cursor: "not-allowed" }}
+                    px={2}
+                  >
+                    <MinusIcon boxSize={3} />
+                  </Button>
+                </Tooltip>
+                <Text fontSize="xs" color="gray.400" minW="35px" textAlign="center" fontWeight="500">
+                  {Math.round(zoom * 100)}%
+                </Text>
+                <Tooltip label="Zoom in" hasArrow placement="top">
+                  <Button
+                    size="xs"
+                    variant="ghost"
+                    onClick={handleZoomIn}
+                    isDisabled={zoom >= maxZoom}
+                    color="gray.300"
+                    _hover={{ bg: "whiteAlpha.200" }}
+                    _disabled={{ opacity: 0.4, cursor: "not-allowed" }}
+                    px={2}
+                  >
+                    <AddIcon boxSize={3} />
+                  </Button>
+                </Tooltip>
+              </HStack>
+              {(positionedNodes.graphWidth > 1000 || zoom !== 1) && (
+                <Button
+                  size="xs"
+                  variant="outline"
+                  leftIcon={<RepeatIcon />}
+                  onClick={() => {
+                    handleResetZoom();
+                    handleRecenter();
+                  }}
+                  color="gray.300"
+                  borderColor="gray.600"
+                  _hover={{ bg: "whiteAlpha.100", borderColor: "gray.500" }}
+                >
+                  {zoom !== 1 ? "Reset Zoom" : "Recenter"}
+                </Button>
+              )}
+            </HStack>
+            <HStack spacing={4}>
+              {requiredEips.length > 0 && (
+                <Text fontSize="xs" color="gray.400" fontWeight="500">
+                  ↑ Dependencies ({requiredEips.length})
+                </Text>
+              )}
+              {referencedByEips.length > 0 && (
+                <Text fontSize="xs" color="gray.400" fontWeight="500">
+                  ↓ Dependents ({referencedByEips.length})
+                </Text>
+              )}
+            </HStack>
+          </Flex>
+        </Box>
       </Box>
 
       {/* Metadata Modal */}
