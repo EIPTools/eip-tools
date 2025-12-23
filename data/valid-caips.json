@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-12-15T06:01:04.640Z"
+    "timestamp": "2025-12-23T14:15:23.103Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-12-15T06:01:04.644Z"
+    "timestamp": "2025-12-23T14:15:23.185Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-12-15T06:01:02.246Z"
+    "timestamp": "2025-12-23T14:15:20.451Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-12-15T06:01:01.735Z"
+    "timestamp": "2025-12-23T14:15:20.786Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-12-15T06:01:01.646Z"
+    "timestamp": "2025-12-23T14:15:20.204Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-12-15T06:01:00.409Z"
+    "timestamp": "2025-12-23T14:15:19.022Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2025-12-18T20:33:36.573Z"
+    "timestamp": "2025-12-23T14:15:17.202Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -514,14 +514,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-12-15T06:00:57.854Z"
+    "timestamp": "2025-12-23T14:15:16.017Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-12-15T06:00:57.431Z"
+    "timestamp": "2025-12-23T14:15:15.799Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -550,6 +550,17 @@
       "10]"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-380.md"
+  },
+  "390": {
+    "title": "Minimal Cross-Chain Asset Metadata Standard",
+    "status": "Draft",
+    "prNo": 390,
+    "markdownPath": "https://raw.githubusercontent.com/ldclabs/CAIPs/refs/heads/main/CAIPs/caip-390.md",
+    "requires": [
+      "2",
+      "19"
+    ],
+    "timestamp": "2025-12-23T14:15:14.369Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",

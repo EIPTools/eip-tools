@@ -3144,6 +3144,13 @@
       "isERC": false
     },
     {
+      "id": "eip-4942",
+      "eipNo": "4942",
+      "title": "Stateless Block Witnesses with Verkle Proofs",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-4944",
       "eipNo": "4944",
       "title": "Contract with Exactly One Non-fungible Token",
@@ -7444,7 +7451,7 @@
     {
       "id": "eip-7964",
       "eipNo": "7964",
-      "title": "Cross-Chain EIP-712 Signatures",
+      "title": "Crosschain EIP-712 Signatures",
       "status": "Draft",
       "isERC": true
     },
@@ -8165,7 +8172,7 @@
     {
       "id": "eip-8081",
       "eipNo": "8081",
-      "title": "Hardfork Meta - Heka/Bogotá",
+      "title": "Hardfork Meta - Hegotá",
       "status": "Draft",
       "isERC": false
     },
@@ -8317,6 +8324,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8105",
+      "eipNo": "8105",
+      "title": "Universal Enshrined Encrypted Mempool",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8106",
       "eipNo": "8106",
       "title": "RWA Event-based Compliance Framework",
@@ -8327,6 +8341,20 @@
       "id": "eip-8107",
       "eipNo": "8107",
       "title": "ENS Trust Registry for Agent Coordination",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8109",
+      "eipNo": "8109",
+      "title": "Diamonds, Simplified",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8110",
+      "eipNo": "8110",
+      "title": "Domain-centric Architecture for Diamonds",
       "status": "Draft",
       "isERC": true
     },
@@ -8410,7 +8438,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "RWA Event-based Compliance Framework",
       "status": "Draft",
       "isERC": true
     },
@@ -9877,6 +9905,10 @@
     {
       "source": "eip-4938",
       "target": "eip-2481"
+    },
+    {
+      "source": "eip-4942",
+      "target": "eip-4762"
     },
     {
       "source": "eip-4944",
@@ -13519,6 +13551,14 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7964",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-7964",
+      "target": "eip-5267"
+    },
+    {
       "source": "eip-7965",
       "target": "eip-7786"
     },
@@ -14171,6 +14211,10 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-8105",
+      "target": "eip-7732"
+    },
+    {
       "source": "eip-8106",
       "target": "eip-20"
     },
@@ -14189,6 +14233,14 @@
     {
       "source": "eip-8107",
       "target": "eip-8001"
+    },
+    {
+      "source": "eip-8110",
+      "target": "eip-2535"
+    },
+    {
+      "source": "eip-8110",
+      "target": "eip-8042"
     },
     {
       "source": "eip-8820",
