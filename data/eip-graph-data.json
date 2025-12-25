@@ -8341,7 +8341,7 @@
       "id": "eip-8107",
       "eipNo": "8107",
       "title": "ENS Trust Registry for Agent Coordination",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8355,6 +8355,27 @@
       "id": "eip-8110",
       "eipNo": "8110",
       "title": "Domain-centric Architecture for Diamonds",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8111",
+      "eipNo": "8111",
+      "title": "Bound Signatures",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8188",
+      "eipNo": "8188",
+      "title": "Token Transfer With Signature",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8189",
+      "eipNo": "8189",
+      "title": "NFT Transfer With Signature",
       "status": "Draft",
       "isERC": true
     },
@@ -8438,7 +8459,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "RWA Event-based Compliance Framework",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -14241,6 +14262,22 @@
     {
       "source": "eip-8110",
       "target": "eip-8042"
+    },
+    {
+      "source": "eip-8188",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8188",
+      "target": "eip-7204"
+    },
+    {
+      "source": "eip-8189",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8189",
+      "target": "eip-7564"
     },
     {
       "source": "eip-8820",

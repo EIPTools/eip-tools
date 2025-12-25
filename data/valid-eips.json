@@ -10555,12 +10555,11 @@
   "8096": {
     "title": "Increase Gas Cost of Point Evaluation",
     "status": "Draft",
-    "prNo": 10864,
-    "markdownPath": "https://raw.githubusercontent.com/marcindsobczak/EIPs/refs/heads/master/EIPS/eip-8096.md",
     "requires": [
       "4844"
     ],
-    "timestamp": "2025-12-23T14:15:46.137Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8096.md"
   },
   "8097": {
     "title": "In-Ground Asset Token",
@@ -10646,11 +10645,11 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-12-18T20:35:44.093Z"
+    "timestamp": "2025-12-25T13:45:46.348Z"
   },
   "8107": {
     "title": "ENS Trust Registry for Agent Coordination",
-    "status": "Draft",
+    "status": "Review",
     "isERC": true,
     "prNo": 1412,
     "markdownPath": "https://raw.githubusercontent.com/KBryan/ERCs/refs/heads/erc-8001-trust-module/ERCS/erc-8107.md",
@@ -10660,7 +10659,7 @@
       "1271",
       "8001"
     ],
-    "timestamp": "2025-12-18T20:35:43.541Z"
+    "timestamp": "2025-12-25T13:45:45.780Z"
   },
   "8109": {
     "title": "Diamonds, Simplified",
@@ -10681,6 +10680,38 @@
       "8042"
     ],
     "timestamp": "2025-12-23T14:17:36.449Z"
+  },
+  "8111": {
+    "title": "Bound Signatures",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1427,
+    "markdownPath": "https://raw.githubusercontent.com/wjmelements/ERCs/refs/heads/bound-signatures/ERCS/erc-8111.md",
+    "timestamp": "2025-12-25T13:45:43.106Z"
+  },
+  "8188": {
+    "title": "Token Transfer With Signature",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1428,
+    "markdownPath": "https://raw.githubusercontent.com/mossdapp/ERCs/refs/heads/feat/tokentransfer-auth/ERCS/erc-8188.md",
+    "requires": [
+      "712",
+      "7204"
+    ],
+    "timestamp": "2025-12-25T13:45:42.591Z"
+  },
+  "8189": {
+    "title": "NFT Transfer With Signature",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1430,
+    "markdownPath": "https://raw.githubusercontent.com/mossdapp/ERCs/refs/heads/feat/nfttransfer-sig/ERCS/erc-8189.md",
+    "requires": [
+      "712",
+      "7564"
+    ],
+    "timestamp": "2025-12-25T13:45:42.242Z"
   },
   "8820": {
     "title": "Dual-Mode Fungible Tokens",
@@ -10785,15 +10816,15 @@
     "timestamp": "2025-12-23T14:17:28.951Z"
   },
   "undefined": {
-    "title": "RWA Event-based Compliance Framework",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1411,
-    "markdownPath": "https://raw.githubusercontent.com/wz14/ERCs/refs/heads/event_based_framework/ERCS/erc-8106.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
       "20"
     ],
-    "timestamp": "2025-12-23T14:17:36.688Z"
+    "timestamp": "2025-12-25T13:46:11.103Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
