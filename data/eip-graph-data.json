@@ -5891,7 +5891,7 @@
       "id": "eip-7701",
       "eipNo": "7701",
       "title": "Native Account Abstraction",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6402,7 +6402,7 @@
       "id": "eip-7843",
       "eipNo": "7843",
       "title": "SLOTNUM opcode",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -8354,7 +8354,7 @@
     {
       "id": "eip-8110",
       "eipNo": "8110",
-      "title": "Domain-centric Architecture for Diamonds",
+      "title": "Domain Architecture for Diamonds",
       "status": "Draft",
       "isERC": true
     },
@@ -8362,6 +8362,27 @@
       "id": "eip-8111",
       "eipNo": "8111",
       "title": "Bound Signatures",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8112",
+      "eipNo": "8112",
+      "title": "Token Transfer With Signature",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8113",
+      "eipNo": "8113",
+      "title": "Series Accounting for Incentivized Vaults",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8114",
+      "eipNo": "8114",
+      "title": "NFT Transfer With Signature",
       "status": "Draft",
       "isERC": true
     },
@@ -14262,6 +14283,30 @@
     {
       "source": "eip-8110",
       "target": "eip-8042"
+    },
+    {
+      "source": "eip-8110",
+      "target": "eip-8109"
+    },
+    {
+      "source": "eip-8112",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8112",
+      "target": "eip-7204"
+    },
+    {
+      "source": "eip-8113",
+      "target": "eip-7540"
+    },
+    {
+      "source": "eip-8114",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8114",
+      "target": "eip-7564"
     },
     {
       "source": "eip-8188",
