@@ -6955,7 +6955,7 @@
       "id": "eip-7886",
       "eipNo": "7886",
       "title": "Delayed execution",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -8383,6 +8383,13 @@
       "id": "eip-8114",
       "eipNo": "8114",
       "title": "NFT Transfer With Signature",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8117",
+      "eipNo": "8117",
+      "title": "Compressed Display Format for Addresses",
       "status": "Draft",
       "isERC": true
     },
@@ -14307,6 +14314,10 @@
     {
       "source": "eip-8114",
       "target": "eip-7564"
+    },
+    {
+      "source": "eip-8117",
+      "target": "eip-55"
     },
     {
       "source": "eip-8188",

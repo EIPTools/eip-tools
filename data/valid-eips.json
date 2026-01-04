@@ -8752,7 +8752,7 @@
   },
   "7886": {
     "title": "Delayed execution",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "1559",
       "2930",
@@ -10671,15 +10671,13 @@
   "8110": {
     "title": "Domain Architecture for Diamonds",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1418,
-    "markdownPath": "https://raw.githubusercontent.com/0x76agabond/ERCs/refs/heads/main/ERCS/erc-8110.md",
     "requires": [
       "2535",
       "8042",
       "8109"
     ],
-    "timestamp": "2025-12-30T18:53:03.060Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8110.md"
   },
   "8111": {
     "title": "Bound Signatures",
@@ -10723,6 +10721,17 @@
       "7564"
     ],
     "timestamp": "2025-12-30T18:53:00.660Z"
+  },
+  "8117": {
+    "title": "Compressed Display Format for Addresses",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1438,
+    "markdownPath": "https://raw.githubusercontent.com/xinbenlv/ERCs/refs/heads/erc-compressed-address-display/ERCS/erc-8117.md",
+    "requires": [
+      "55"
+    ],
+    "timestamp": "2026-01-04T12:45:57.773Z"
   },
   "8188": {
     "title": "Token Transfer With Signature",
@@ -10859,7 +10868,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2025-12-25T13:46:11.103Z"
+    "timestamp": "2026-01-04T12:46:18.760Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
