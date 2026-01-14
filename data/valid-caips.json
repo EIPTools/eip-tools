@@ -115,7 +115,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2025-12-30T18:51:12.260Z"
+    "timestamp": "2026-01-14T10:29:52.138Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -207,7 +207,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2025-12-30T18:51:12.257Z"
+    "timestamp": "2026-01-14T10:29:53.443Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -287,7 +287,7 @@
     "requires": [
       "196"
     ],
-    "timestamp": "2025-12-30T18:51:10.110Z"
+    "timestamp": "2026-01-14T10:29:49.420Z"
   },
   "220": {
     "title": "Block Addressing",
@@ -297,7 +297,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-12-30T18:51:09.768Z"
+    "timestamp": "2026-01-14T10:29:49.478Z"
   },
   "221": {
     "title": "Transaction Object Addressing",
@@ -307,7 +307,7 @@
     "requires": [
       "2"
     ],
-    "timestamp": "2025-12-30T18:51:09.438Z"
+    "timestamp": "2026-01-14T10:29:49.091Z"
   },
   "222": {
     "title": "Wallet Authenticate JSON-RPC Method",
@@ -334,7 +334,7 @@
     "requires": [
       "CAIP-261"
     ],
-    "timestamp": "2025-12-30T18:51:08.502Z"
+    "timestamp": "2026-01-14T10:29:46.451Z"
   },
   "275": {
     "title": "Domain Wallet Authentication",
@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2026-01-04T12:44:10.077Z"
+    "timestamp": "2026-01-14T10:29:44.592Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -514,14 +514,14 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2025-12-30T18:51:06.427Z"
+    "timestamp": "2026-01-14T10:29:43.229Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
     "status": "Draft",
     "prNo": 372,
     "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2025-12-30T18:51:05.725Z"
+    "timestamp": "2026-01-14T10:29:43.023Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -560,7 +560,7 @@
       "2",
       "19"
     ],
-    "timestamp": "2025-12-30T18:51:04.458Z"
+    "timestamp": "2026-01-14T10:29:41.666Z"
   },
   "000": {
     "title": "Binary serialization of blockchain IDs and addresses",

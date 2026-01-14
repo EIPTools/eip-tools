@@ -5765,7 +5765,7 @@
       "id": "eip-7674",
       "eipNo": "7674",
       "title": "Temporary Approval Extension for ERC-20",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6836,7 +6836,7 @@
       "id": "eip-7866",
       "eipNo": "7866",
       "title": "Decentralised User Profiles",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7004,7 +7004,7 @@
       "id": "eip-7893",
       "eipNo": "7893",
       "title": "DeFi Protocol Solvency Proof Mechanism",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7312,7 +7312,7 @@
       "id": "eip-7943",
       "eipNo": "7943",
       "title": "uRWA - Universal Real World Asset Interface",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7416,9 +7416,9 @@
     {
       "id": "eip-7959",
       "eipNo": "7959",
-      "title": "RPC Provider Discovery & Capacity API",
+      "title": "ERC-7959",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-7960",
@@ -7711,7 +7711,7 @@
       "id": "eip-8004",
       "eipNo": "8004",
       "title": "Trustless Agents",
-      "status": "Review",
+      "status": "Draft",
       "isERC": true
     },
     {
@@ -8341,7 +8341,7 @@
       "id": "eip-8107",
       "eipNo": "8107",
       "title": "ENS Trust Registry for Agent Coordination",
-      "status": "Review",
+      "status": "Draft",
       "isERC": true
     },
     {
@@ -8387,11 +8387,67 @@
       "isERC": true
     },
     {
+      "id": "eip-8115",
+      "eipNo": "8115",
+      "title": "Batch priority fees at end of block",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8116",
+      "eipNo": "8116",
+      "title": "Replace cumulative receipt fields",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8117",
       "eipNo": "8117",
       "title": "Compressed Display Format for Addresses",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8118",
+      "eipNo": "8118",
+      "title": "Agent Authorization",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8119",
+      "eipNo": "8119",
+      "title": "Parameterized Storage Keys",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8120",
+      "eipNo": "8120",
+      "title": "MLOAD8 and CALLDATALOAD8 Opcodes",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8121",
+      "eipNo": "8121",
+      "title": "Cross-Chain Function Calls via Hooks",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8122",
+      "eipNo": "8122",
+      "title": "Minimal Agent Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8123",
+      "eipNo": "8123",
+      "title": "RPC Method for Transaction Gas Limit Cap",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8188",
@@ -13796,6 +13852,22 @@
       "target": "eip-20"
     },
     {
+      "source": "eip-8004",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8004",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8004",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8004",
+      "target": "eip-1271"
+    },
+    {
       "source": "eip-8005",
       "target": "eip-1559"
     },
@@ -13929,6 +14001,10 @@
     },
     {
       "source": "eip-8027",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8027",
       "target": "eip-721"
     },
     {
@@ -13942,6 +14018,10 @@
     {
       "source": "eip-8034",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8034",
+      "target": "eip-712"
     },
     {
       "source": "eip-8034",
@@ -13985,11 +14065,11 @@
     },
     {
       "source": "eip-8041",
-      "target": "eip-8004"
+      "target": "eip-7572"
     },
     {
       "source": "eip-8041",
-      "target": "eip-7572"
+      "target": "eip-8004"
     },
     {
       "source": "eip-8042",
@@ -14086,6 +14166,10 @@
     {
       "source": "eip-8065",
       "target": "eip-20"
+    },
+    {
+      "source": "eip-8065",
+      "target": "eip-165"
     },
     {
       "source": "eip-8065",
@@ -14316,8 +14400,60 @@
       "target": "eip-7564"
     },
     {
+      "source": "eip-8115",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8115",
+      "target": "eip-4895"
+    },
+    {
       "source": "eip-8117",
       "target": "eip-55"
+    },
+    {
+      "source": "eip-8118",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8118",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8118",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8121",
+      "target": "eip-3668"
+    },
+    {
+      "source": "eip-8121",
+      "target": "eip-7930"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-6909"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-7930"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-8048"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-8049"
+    },
+    {
+      "source": "eip-8123",
+      "target": "eip-1474"
+    },
+    {
+      "source": "eip-8123",
+      "target": "eip-7825"
     },
     {
       "source": "eip-8188",
