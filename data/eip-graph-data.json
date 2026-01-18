@@ -3938,7 +3938,7 @@
       "id": "eip-5920",
       "eipNo": "5920",
       "title": "PAY opcode",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -4274,6 +4274,20 @@
       "id": "eip-6466",
       "eipNo": "6466",
       "title": "SSZ receipts",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7668",
+      "eipNo": "7668",
+      "title": "Remove bloom filters",
+      "status": "Stagnant",
+      "isERC": false
+    },
+    {
+      "id": "eip-8116",
+      "eipNo": "8116",
+      "title": "Replace cumulative receipt fields",
       "status": "Draft",
       "isERC": false
     },
@@ -5734,13 +5748,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7668",
-      "eipNo": "7668",
-      "title": "Remove bloom filters",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
       "id": "eip-7669",
       "eipNo": "7669",
       "title": "Hardfork Meta - Dencun",
@@ -5960,7 +5967,7 @@
     {
       "id": "eip-7715",
       "eipNo": "7715",
-      "title": "Grant Permissions from Wallets",
+      "title": "Request Permissions from Wallets",
       "status": "Draft",
       "isERC": true
     },
@@ -6441,6 +6448,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8115",
+      "eipNo": "8115",
+      "title": "Batch priority fees at end of block",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7801",
       "eipNo": "7801",
       "title": "etha - Sharded Blocks Subprotocol",
@@ -6618,8 +6632,8 @@
     {
       "id": "eip-7828",
       "eipNo": "7828",
-      "title": "Readable Interoperable Addresses using ENS",
-      "status": "Review",
+      "title": "Interoperable Names",
+      "status": "Draft",
       "isERC": true
     },
     {
@@ -7375,7 +7389,7 @@
       "id": "eip-7954",
       "eipNo": "7954",
       "title": "Increase Maximum Contract Size",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7410,7 +7424,7 @@
       "id": "eip-7958",
       "eipNo": "7958",
       "title": "EVM64 - Little endian opcodes",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -8009,6 +8023,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8050",
+      "eipNo": "8050",
+      "title": "Compressed RPC Link Format",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8051",
       "eipNo": "8051",
       "title": "Precompile for ML-DSA signature verification",
@@ -8387,20 +8408,6 @@
       "isERC": true
     },
     {
-      "id": "eip-8115",
-      "eipNo": "8115",
-      "title": "Batch priority fees at end of block",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-8116",
-      "eipNo": "8116",
-      "title": "Replace cumulative receipt fields",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-8117",
       "eipNo": "8117",
       "title": "Compressed Display Format for Addresses",
@@ -8448,6 +8455,20 @@
       "title": "RPC Method for Transaction Gas Limit Cap",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8125",
+      "eipNo": "8125",
+      "title": "Temporary Contract Storage",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8127",
+      "eipNo": "8127",
+      "title": "Human Readable Token Identifiers",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8188",
@@ -11189,6 +11210,10 @@
     },
     {
       "source": "eip-6466",
+      "target": "eip-7668"
+    },
+    {
+      "source": "eip-6466",
       "target": "eip-7702"
     },
     {
@@ -11198,6 +11223,10 @@
     {
       "source": "eip-6466",
       "target": "eip-8016"
+    },
+    {
+      "source": "eip-6466",
+      "target": "eip-8116"
     },
     {
       "source": "eip-6492",
@@ -12773,14 +12802,6 @@
     },
     {
       "source": "eip-7715",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-7715",
-      "target": "eip-7679"
-    },
-    {
-      "source": "eip-7715",
       "target": "eip-7710"
     },
     {
@@ -13041,10 +13062,6 @@
     },
     {
       "source": "eip-7799",
-      "target": "eip-1559"
-    },
-    {
-      "source": "eip-7799",
       "target": "eip-4895"
     },
     {
@@ -13058,6 +13075,10 @@
     {
       "source": "eip-7799",
       "target": "eip-7916"
+    },
+    {
+      "source": "eip-7799",
+      "target": "eip-8115"
     },
     {
       "source": "eip-7801",
@@ -14112,6 +14133,18 @@
       "target": "eip-5615"
     },
     {
+      "source": "eip-8050",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8050",
+      "target": "eip-7871"
+    },
+    {
+      "source": "eip-8050",
+      "target": "eip-8026"
+    },
+    {
       "source": "eip-8051",
       "target": "eip-7932"
     },
@@ -14454,6 +14487,18 @@
     {
       "source": "eip-8123",
       "target": "eip-7825"
+    },
+    {
+      "source": "eip-8125",
+      "target": "eip-2200"
+    },
+    {
+      "source": "eip-8125",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8127",
+      "target": "eip-7930"
     },
     {
       "source": "eip-8188",

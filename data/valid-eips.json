@@ -4800,7 +4800,7 @@
   },
   "5920": {
     "title": "PAY opcode",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       "214",
       "2929",
@@ -5205,9 +5205,11 @@
       "2718",
       "6404",
       "7495",
+      "7668",
       "7702",
       "7916",
-      "8016"
+      "8016",
+      "8116"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-6466.md"
@@ -7501,12 +7503,10 @@
     "timestamp": "2025-07-30T03:13:16.164Z"
   },
   "7715": {
-    "title": "Grant Permissions from Wallets",
+    "title": "Request Permissions from Wallets",
     "status": "Draft",
     "requires": [
       "4337",
-      "5792",
-      "7679",
       "7710"
     ],
     "isERC": true,
@@ -8093,11 +8093,11 @@
     "title": "System logs",
     "status": "Draft",
     "requires": [
-      "1559",
       "4895",
       "6466",
       "7708",
-      "7916"
+      "7916",
+      "8115"
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7799.md"
@@ -8321,8 +8321,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7827.md"
   },
   "7828": {
-    "title": "Readable Interoperable Addresses using ENS",
-    "status": "Review",
+    "title": "Interoperable Names",
+    "status": "Draft",
     "requires": [
       "155",
       "7930"
@@ -8439,10 +8439,9 @@
   "7841": {
     "title": "Cross-chain Message Format and Mailbox",
     "status": "Draft",
+    "requires": [],
     "isERC": true,
-    "prNo": 766,
-    "markdownPath": "https://raw.githubusercontent.com/elliedavidson/ERCs/refs/heads/master/ERCS/erc-7841.md",
-    "timestamp": "2026-01-14T10:33:54.652Z"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7841.md"
   },
   "7843": {
     "title": "SLOTNUM opcode",
@@ -9287,7 +9286,7 @@
   },
   "7954": {
     "title": "Increase Maximum Contract Size",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "170",
       "3860"
@@ -9328,7 +9327,7 @@
   },
   "7958": {
     "title": "EVM64 - Little endian opcodes",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "7937"
     ],
@@ -9640,13 +9639,11 @@
   "7992": {
     "title": "Verifiable ML Model Inference (ZKML)",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1133,
-    "markdownPath": "https://raw.githubusercontent.com/aryaethn/ERCs/refs/heads/master/ERCS/erc-7992.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-01-14T10:33:27.166Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7992.md"
   },
   "7994": {
     "title": "Purpose-Bound ERC-20 with Conditional Unlock",
@@ -10150,6 +10147,19 @@
     "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/contract-metadata-erc/ERCS/erc-8049.md",
     "timestamp": "2026-01-14T10:33:03.456Z"
   },
+  "8050": {
+    "title": "Compressed RPC Link Format",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1261,
+    "markdownPath": "https://raw.githubusercontent.com/brunobar79/ERCs/refs/heads/patch-1/ERCS/erc-8050.md",
+    "requires": [
+      "5792",
+      "7871",
+      "8026"
+    ],
+    "timestamp": "2026-01-18T08:16:08.506Z"
+  },
   "8051": {
     "title": "Precompile for ML-DSA signature verification",
     "status": "Draft",
@@ -10341,13 +10351,11 @@
   "8074": {
     "title": "Self-Describing Bytes via EIP-712 Selectors",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1334,
-    "markdownPath": "https://raw.githubusercontent.com/awrichar/ERCs/refs/heads/erc-standardized-bytes-data-encoding/ERCS/erc-8074.md",
     "requires": [
       "712"
     ],
-    "timestamp": "2026-01-14T10:32:58.064Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8074.md"
   },
   "8075": {
     "title": "Adaptive state cost to cap growth & scale L1",
@@ -10724,20 +10732,19 @@
   "8115": {
     "title": "Batch priority fees at end of block",
     "status": "Draft",
-    "prNo": 10997,
-    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/refs/heads/7799-split/EIPS/eip-8115.md",
     "requires": [
       "1559",
       "4895"
     ],
-    "timestamp": "2026-01-14T10:30:07.360Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8115.md"
   },
   "8116": {
     "title": "Replace cumulative receipt fields",
     "status": "Draft",
-    "prNo": 10998,
-    "markdownPath": "https://raw.githubusercontent.com/etan-status/EIPs/refs/heads/6466-split/EIPS/eip-8116.md",
-    "timestamp": "2026-01-14T10:30:06.890Z"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8116.md"
   },
   "8117": {
     "title": "Compressed Display Format for Addresses",
@@ -10805,13 +10812,34 @@
   "8123": {
     "title": "RPC Method for Transaction Gas Limit Cap",
     "status": "Draft",
-    "prNo": 11061,
-    "markdownPath": "https://raw.githubusercontent.com/PaulRBerg/EIPs/refs/heads/json-rpc-tx-gas-limit-cap/EIPS/eip-8123.md",
     "requires": [
       "1474",
       "7825"
     ],
-    "timestamp": "2026-01-14T10:29:50.977Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8123.md"
+  },
+  "8125": {
+    "title": "Temporary Contract Storage",
+    "status": "Draft",
+    "prNo": 11081,
+    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/temp-contract-storage/EIPS/eip-8125.md",
+    "requires": [
+      "2200",
+      "2929"
+    ],
+    "timestamp": "2026-01-18T08:13:37.805Z"
+  },
+  "8127": {
+    "title": "Human Readable Token Identifiers",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1476,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/token-id/ERCS/erc-8127.md",
+    "requires": [
+      "7930"
+    ],
+    "timestamp": "2026-01-18T08:15:58.557Z"
   },
   "8188": {
     "title": "Token Transfer With Signature",
@@ -10948,7 +10976,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-01-04T12:46:18.760Z"
+    "timestamp": "2026-01-18T08:16:24.931Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
