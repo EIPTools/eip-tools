@@ -8046,7 +8046,7 @@
     {
       "id": "eip-8054",
       "eipNo": "8054",
-      "title": "Forkable [ERC-20](./eip-20.md) Token",
+      "title": "Forkable ERC-20 Token",
       "status": "Draft",
       "isERC": true
     },
@@ -8564,7 +8564,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Compressed RPC Link Format",
       "status": "Draft",
       "isERC": true
     },
@@ -14562,7 +14562,15 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7871"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-8026"
     },
     {
       "source": "eip-0000",
