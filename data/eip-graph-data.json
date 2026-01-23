@@ -3609,7 +3609,7 @@
       "id": "eip-5516",
       "eipNo": "5516",
       "title": "Soulbound Multi-owner Tokens",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": true
     },
     {
@@ -5009,7 +5009,7 @@
       "id": "eip-7708",
       "eipNo": "7708",
       "title": "ETH transfers emit a log",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -5590,7 +5590,7 @@
       "id": "eip-7634",
       "eipNo": "7634",
       "title": "Limited Transfer Count NFT",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6409,7 +6409,7 @@
       "id": "eip-7843",
       "eipNo": "7843",
       "title": "SLOTNUM opcode",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -6598,7 +6598,7 @@
       "id": "eip-7823",
       "eipNo": "7823",
       "title": "Set upper bounds for MODEXP",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -6612,7 +6612,7 @@
       "id": "eip-7825",
       "eipNo": "7825",
       "title": "Transaction Gas Limit Cap",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -6948,7 +6948,7 @@
       "id": "eip-7883",
       "eipNo": "7883",
       "title": "ModExp Gas Cost Increase",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -7011,7 +7011,7 @@
       "id": "eip-7892",
       "eipNo": "7892",
       "title": "Blob Parameter Only Hardforks",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -7123,7 +7123,7 @@
       "id": "eip-7910",
       "eipNo": "7910",
       "title": "eth_config JSON-RPC Method",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -7207,7 +7207,7 @@
       "id": "eip-7923",
       "eipNo": "7923",
       "title": "Linear, Page-Based Memory Costing",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -7263,14 +7263,14 @@
       "id": "eip-7934",
       "eipNo": "7934",
       "title": "RLP Execution Block Size Limit",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-7935",
       "eipNo": "7935",
       "title": "Set default gas limit to 60M",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -7298,7 +7298,7 @@
       "id": "eip-7939",
       "eipNo": "7939",
       "title": "Count leading zeros (CLZ) opcode",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -7382,14 +7382,14 @@
       "id": "eip-7951",
       "eipNo": "7951",
       "title": "Precompile for secp256r1 Curve Support",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-7954",
       "eipNo": "7954",
       "title": "Increase Maximum Contract Size",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -7584,7 +7584,7 @@
     {
       "id": "eip-7981",
       "eipNo": "7981",
-      "title": "Increase access list cost",
+      "title": "Increase Access List Cost",
       "status": "Draft",
       "isERC": false
     },
@@ -7662,7 +7662,7 @@
       "id": "eip-7994",
       "eipNo": "7994",
       "title": "Purpose-Bound ERC-20 with Conditional Unlock",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8345,6 +8345,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8104",
+      "eipNo": "8104",
+      "title": "ERC-20 RWA Disclosure URI Extension",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8105",
       "eipNo": "8105",
       "title": "Universal Enshrined Encrypted Mempool",
@@ -8471,6 +8478,41 @@
       "isERC": true
     },
     {
+      "id": "eip-8128",
+      "eipNo": "8128",
+      "title": "Signed HTTP Requests with Ethereum",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8129",
+      "eipNo": "8129",
+      "title": "Non-Transferable Token",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8130",
+      "eipNo": "8130",
+      "title": "Account Abstraction by Account Configuration",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8131",
+      "eipNo": "8131",
+      "title": "Add Auth Data to EIP-7623 Floor",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8132",
+      "eipNo": "8132",
+      "title": "Wallet Call Gas Limit Override Capability",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8188",
       "eipNo": "8188",
       "title": "Token Transfer With Signature",
@@ -8564,7 +8606,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Compressed RPC Link Format",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -10567,10 +10609,6 @@
     {
       "source": "eip-5516",
       "target": "eip-165"
-    },
-    {
-      "source": "eip-5516",
-      "target": "eip-1155"
     },
     {
       "source": "eip-5521",
@@ -13757,6 +13795,10 @@
       "target": "eip-2930"
     },
     {
+      "source": "eip-7981",
+      "target": "eip-7623"
+    },
+    {
       "source": "eip-7982",
       "target": "eip-3668"
     },
@@ -13906,6 +13948,10 @@
     },
     {
       "source": "eip-8007",
+      "target": "eip-7686"
+    },
+    {
+      "source": "eip-8007",
       "target": "eip-7778"
     },
     {
@@ -13919,6 +13965,10 @@
     {
       "source": "eip-8007",
       "target": "eip-7971"
+    },
+    {
+      "source": "eip-8007",
+      "target": "eip-7973"
     },
     {
       "source": "eip-8007",
@@ -14501,6 +14551,50 @@
       "target": "eip-7930"
     },
     {
+      "source": "eip-8128",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8128",
+      "target": "eip-191"
+    },
+    {
+      "source": "eip-8128",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8129",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8129",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8131",
+      "target": "eip-7623"
+    },
+    {
+      "source": "eip-8131",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8132",
+      "target": "eip-5792"
+    },
+    {
       "source": "eip-8188",
       "target": "eip-712"
     },
@@ -14562,15 +14656,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7871"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-8026"
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",
