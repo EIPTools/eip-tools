@@ -6402,7 +6402,7 @@
       "id": "eip-7793",
       "eipNo": "7793",
       "title": "Conditional Transactions",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7935,7 +7935,7 @@
       "id": "eip-8034",
       "eipNo": "8034",
       "title": "Referable NFT Royalties",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7948,7 +7948,7 @@
     {
       "id": "eip-8036",
       "eipNo": "8036",
-      "title": "ZK Presentation Interface for MTC",
+      "title": "MultiTrustCredential (MTC) ZK Presentation",
       "status": "Draft",
       "isERC": true
     },
@@ -8457,6 +8457,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8127",
+      "eipNo": "8127",
+      "title": "Human Readable Token Identifiers",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8123",
       "eipNo": "8123",
       "title": "RPC Method for Transaction Gas Limit Cap",
@@ -8469,13 +8476,6 @@
       "title": "Temporary Contract Storage",
       "status": "Draft",
       "isERC": false
-    },
-    {
-      "id": "eip-8127",
-      "eipNo": "8127",
-      "title": "Human Readable Token Identifiers",
-      "status": "Draft",
-      "isERC": true
     },
     {
       "id": "eip-8128",
@@ -8513,6 +8513,41 @@
       "isERC": true
     },
     {
+      "id": "eip-8133",
+      "eipNo": "8133",
+      "title": "Upgrade Nomenclature",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8134",
+      "eipNo": "8134",
+      "title": "Hardfork Meta - BPO1",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8135",
+      "eipNo": "8135",
+      "title": "Hardfork Meta - BPO2",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8136",
+      "eipNo": "8136",
+      "title": "Cell-Level Deltas for Data Column Broadcast",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8139",
+      "eipNo": "8139",
+      "title": "Authorization Objects (AO)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8188",
       "eipNo": "8188",
       "title": "Token Transfer With Signature",
@@ -8530,6 +8565,13 @@
       "id": "eip-8820",
       "eipNo": "8820",
       "title": "Dual-Mode Fungible Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8888",
+      "eipNo": "8888",
+      "title": "WeissChannels - Cross-Chain Execution for ERC-4337 Accounts",
       "status": "Draft",
       "isERC": true
     },
@@ -8606,7 +8648,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Compressed RPC Link Format",
       "status": "Draft",
       "isERC": true
     },
@@ -14083,6 +14125,10 @@
       "target": "eip-7932"
     },
     {
+      "source": "eip-8030",
+      "target": "eip-7951"
+    },
+    {
       "source": "eip-8033",
       "target": "eip-20"
     },
@@ -14097,6 +14143,14 @@
     {
       "source": "eip-8034",
       "target": "eip-5521"
+    },
+    {
+      "source": "eip-8035",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8036",
+      "target": "eip-165"
     },
     {
       "source": "eip-8036",
@@ -14472,6 +14526,10 @@
     },
     {
       "source": "eip-8113",
+      "target": "eip-4626"
+    },
+    {
+      "source": "eip-8113",
       "target": "eip-7540"
     },
     {
@@ -14529,6 +14587,10 @@
     {
       "source": "eip-8122",
       "target": "eip-8049"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-8127"
     },
     {
       "source": "eip-8123",
@@ -14595,6 +14657,22 @@
       "target": "eip-5792"
     },
     {
+      "source": "eip-8134",
+      "target": "eip-7892"
+    },
+    {
+      "source": "eip-8135",
+      "target": "eip-8134"
+    },
+    {
+      "source": "eip-8136",
+      "target": "eip-7594"
+    },
+    {
+      "source": "eip-8139",
+      "target": "eip-712"
+    },
+    {
       "source": "eip-8188",
       "target": "eip-712"
     },
@@ -14613,6 +14691,10 @@
     {
       "source": "eip-8820",
       "target": "eip-20"
+    },
+    {
+      "source": "eip-8888",
+      "target": "eip-4337"
     },
     {
       "source": "eip-9431",
@@ -14656,7 +14738,15 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7871"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-8026"
     },
     {
       "source": "eip-0000",
