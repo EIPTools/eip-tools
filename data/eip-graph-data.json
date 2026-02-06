@@ -5328,6 +5328,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7574",
+      "eipNo": "7574",
+      "title": "Authentication SBT using Credential",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7577",
       "eipNo": "7577",
       "title": "Versioning Scheme for EIPs",
@@ -5408,7 +5415,7 @@
       "id": "eip-7594",
       "eipNo": "7594",
       "title": "PeerDAS - Peer Data Availability Sampling",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -5471,14 +5478,84 @@
       "id": "eip-7607",
       "eipNo": "7607",
       "title": "Hardfork Meta - Fusaka",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
-      "id": "eip-7723",
-      "eipNo": "7723",
-      "title": "Network Upgrade Inclusion Stages",
-      "status": "Last Call",
+      "id": "eip-7823",
+      "eipNo": "7823",
+      "title": "Set upper bounds for MODEXP",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7825",
+      "eipNo": "7825",
+      "title": "Transaction Gas Limit Cap",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7883",
+      "eipNo": "7883",
+      "title": "ModExp Gas Cost Increase",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7892",
+      "eipNo": "7892",
+      "title": "Blob Parameter Only Hardforks",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7910",
+      "eipNo": "7910",
+      "title": "eth_config JSON-RPC Method",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7917",
+      "eipNo": "7917",
+      "title": "Deterministic proposer lookahead",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7918",
+      "eipNo": "7918",
+      "title": "Blob base fee bounded by execution cost",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7934",
+      "eipNo": "7934",
+      "title": "RLP Execution Block Size Limit",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7935",
+      "eipNo": "7935",
+      "title": "Set default gas limit to 60M",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7939",
+      "eipNo": "7939",
+      "title": "Count leading zeros (CLZ) opcode",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7951",
+      "eipNo": "7951",
+      "title": "Precompile for secp256r1 Curve Support",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -5499,7 +5576,7 @@
       "id": "eip-7612",
       "eipNo": "7612",
       "title": "Verkle state transition via an overlay tree",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -5695,7 +5772,7 @@
       "id": "eip-7656",
       "eipNo": "7656",
       "title": "Generalized Contract-Linked Services",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6012,6 +6089,13 @@
       "title": "Opaque Token",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-7723",
+      "eipNo": "7723",
+      "title": "Network Upgrade Inclusion Stages",
+      "status": "Last Call",
+      "isERC": false
     },
     {
       "id": "eip-7726",
@@ -6595,25 +6679,11 @@
       "isERC": true
     },
     {
-      "id": "eip-7823",
-      "eipNo": "7823",
-      "title": "Set upper bounds for MODEXP",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7824",
       "eipNo": "7824",
       "title": "Nitrolite State Channels",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-7825",
-      "eipNo": "7825",
-      "title": "Transaction Gas Limit Cap",
-      "status": "Final",
-      "isERC": false
     },
     {
       "id": "eip-7826",
@@ -6945,13 +7015,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7883",
-      "eipNo": "7883",
-      "title": "ModExp Gas Cost Increase",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7884",
       "eipNo": "7884",
       "title": "Operation Router",
@@ -7006,13 +7069,6 @@
       "title": "Splitting and Merging of NFTs",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-7892",
-      "eipNo": "7892",
-      "title": "Blob Parameter Only Hardforks",
-      "status": "Final",
-      "isERC": false
     },
     {
       "id": "eip-7893",
@@ -7120,13 +7176,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7910",
-      "eipNo": "7910",
-      "title": "eth_config JSON-RPC Method",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7911",
       "eipNo": "7911",
       "title": "Scaling Ethereum with a Perceptron Tree ZKP",
@@ -7159,20 +7208,6 @@
       "eipNo": "7915",
       "title": "Adaptive mean reversion blob pricing",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7917",
-      "eipNo": "7917",
-      "title": "Deterministic proposer lookahead",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7918",
-      "eipNo": "7918",
-      "title": "Blob base fee bounded by execution cost",
-      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7260,20 +7295,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7934",
-      "eipNo": "7934",
-      "title": "RLP Execution Block Size Limit",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7935",
-      "eipNo": "7935",
-      "title": "Set default gas limit to 60M",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7936",
       "eipNo": "7936",
       "title": "Versioned Proxy Contract Interface",
@@ -7292,13 +7313,6 @@
       "eipNo": "7938",
       "title": "Exponential Gas Limit Increase",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7939",
-      "eipNo": "7939",
-      "title": "Count leading zeros (CLZ) opcode",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -7377,13 +7391,6 @@
       "title": "Encode chain id with transaction hash",
       "status": "Final",
       "isERC": true
-    },
-    {
-      "id": "eip-7951",
-      "eipNo": "7951",
-      "title": "Precompile for secp256r1 Curve Support",
-      "status": "Final",
-      "isERC": false
     },
     {
       "id": "eip-7954",
@@ -7906,7 +7913,7 @@
     {
       "id": "eip-8027",
       "eipNo": "8027",
-      "title": "Manual & Recurring Subscription NFTs",
+      "title": "Recurring Subscription NFT",
       "status": "Draft",
       "isERC": true
     },
@@ -7935,7 +7942,7 @@
       "id": "eip-8034",
       "eipNo": "8034",
       "title": "Referable NFT Royalties",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -8249,7 +8256,7 @@
     {
       "id": "eip-8089",
       "eipNo": "8089",
-      "title": "Smart Contract Development Lifecycle Registry",
+      "title": "Smart Contract Lifecycle Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -8478,6 +8485,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8126",
+      "eipNo": "8126",
+      "title": "AI Agent Registration and Verification",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8128",
       "eipNo": "8128",
       "title": "Signed HTTP Requests with Ethereum",
@@ -8541,9 +8555,72 @@
       "isERC": false
     },
     {
+      "id": "eip-8138",
+      "eipNo": "8138",
+      "title": "Hardfork Meta - BPO3",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8139",
       "eipNo": "8139",
       "title": "Authorization Objects (AO)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8140",
+      "eipNo": "8140",
+      "title": "Token Gas Payments for EIP-8130",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8141",
+      "eipNo": "8141",
+      "title": "Frame Transaction",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8142",
+      "eipNo": "8142",
+      "title": "Block-in-Blobs (BiB)",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8143",
+      "eipNo": "8143",
+      "title": "Smart Credential Resolution Interface",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8144",
+      "eipNo": "8144",
+      "title": "Multi-Chain GS1 Product Identifier Resolver",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8148",
+      "eipNo": "8148",
+      "title": "Custom sweep threshold for validators",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8149",
+      "eipNo": "8149",
+      "title": "Multi KZG Point Evaluation Precompile",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8150",
+      "eipNo": "8150",
+      "title": "Zero-Knowledge Agent Payment Verification",
       "status": "Draft",
       "isERC": true
     },
@@ -12185,6 +12262,18 @@
       "target": "eip-7568"
     },
     {
+      "source": "eip-7574",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-7574",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-7574",
+      "target": "eip-5192"
+    },
+    {
       "source": "eip-7575",
       "target": "eip-20"
     },
@@ -12378,11 +12467,59 @@
     },
     {
       "source": "eip-7607",
+      "target": "eip-7594"
+    },
+    {
+      "source": "eip-7607",
       "target": "eip-7600"
     },
     {
       "source": "eip-7607",
-      "target": "eip-7723"
+      "target": "eip-7642"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7823"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7825"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7883"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7892"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7910"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7917"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7918"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7934"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7935"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7939"
+    },
+    {
+      "source": "eip-7607",
+      "target": "eip-7951"
     },
     {
       "source": "eip-7609",
@@ -12857,6 +12994,18 @@
       "target": "eip-2930"
     },
     {
+      "source": "eip-7708",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-7708",
+      "target": "eip-4788"
+    },
+    {
+      "source": "eip-7708",
+      "target": "eip-6780"
+    },
+    {
       "source": "eip-7709",
       "target": "eip-2935"
     },
@@ -13195,10 +13344,6 @@
     {
       "source": "eip-7807",
       "target": "eip-7495"
-    },
-    {
-      "source": "eip-7807",
-      "target": "eip-7706"
     },
     {
       "source": "eip-7807",
@@ -14065,6 +14210,10 @@
       "target": "eip-7702"
     },
     {
+      "source": "eip-8011",
+      "target": "eip-1559"
+    },
+    {
       "source": "eip-8013",
       "target": "eip-7979"
     },
@@ -14161,6 +14310,18 @@
       "target": "eip-2780"
     },
     {
+      "source": "eip-8037",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8037",
+      "target": "eip-7825"
+    },
+    {
+      "source": "eip-8037",
+      "target": "eip-8011"
+    },
+    {
       "source": "eip-8038",
       "target": "eip-2926"
     },
@@ -14253,12 +14414,20 @@
       "target": "eip-7932"
     },
     {
+      "source": "eip-8052",
+      "target": "eip-7932"
+    },
+    {
       "source": "eip-8054",
       "target": "eip-20"
     },
     {
       "source": "eip-8056",
       "target": "eip-20"
+    },
+    {
+      "source": "eip-8056",
+      "target": "eip-165"
     },
     {
       "source": "eip-8057",
@@ -14399,6 +14568,10 @@
     {
       "source": "eip-8087",
       "target": "eip-7573"
+    },
+    {
+      "source": "eip-8088",
+      "target": "eip-155"
     },
     {
       "source": "eip-8090",
@@ -14594,10 +14767,6 @@
     },
     {
       "source": "eip-8123",
-      "target": "eip-1474"
-    },
-    {
-      "source": "eip-8123",
       "target": "eip-7825"
     },
     {
@@ -14607,6 +14776,22 @@
     {
       "source": "eip-8125",
       "target": "eip-2929"
+    },
+    {
+      "source": "eip-8126",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8126",
+      "target": "eip-191"
+    },
+    {
+      "source": "eip-8126",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8126",
+      "target": "eip-3009"
     },
     {
       "source": "eip-8127",
@@ -14657,7 +14842,79 @@
       "target": "eip-5792"
     },
     {
+      "source": "eip-8133",
+      "target": "eip-150"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-606"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-607"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-608"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-609"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-779"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-1013"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-1283"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-1679"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-1716"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-2387"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-4345"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-5133"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-7569"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-7600"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-7609"
+    },
+    {
+      "source": "eip-8133",
+      "target": "eip-7892"
+    },
+    {
       "source": "eip-8134",
+      "target": "eip-7892"
+    },
+    {
+      "source": "eip-8135",
       "target": "eip-7892"
     },
     {
@@ -14669,7 +14926,71 @@
       "target": "eip-7594"
     },
     {
+      "source": "eip-8138",
+      "target": "eip-7892"
+    },
+    {
+      "source": "eip-8138",
+      "target": "eip-8135"
+    },
+    {
       "source": "eip-8139",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8140",
+      "target": "eip-8140"
+    },
+    {
+      "source": "eip-8141",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8141",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8142",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8142",
+      "target": "eip-7594"
+    },
+    {
+      "source": "eip-8142",
+      "target": "eip-7892"
+    },
+    {
+      "source": "eip-8142",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8143",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8143",
+      "target": "eip-3668"
+    },
+    {
+      "source": "eip-8148",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-8148",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-8148",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8149",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8150",
       "target": "eip-712"
     },
     {
