@@ -3069,7 +3069,7 @@
   },
   "3540": {
     "title": "EOF - EVM Object Format v1",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       "3541",
       "3860"
@@ -7827,7 +7827,7 @@
   },
   "7762": {
     "title": "Increase MIN_BASE_FEE_PER_BLOB_GAS",
-    "status": "Review",
+    "status": "Stagnant",
     "requires": [
       "4844"
     ],
@@ -8932,7 +8932,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7903.md"
   },
   "7904": {
-    "title": "General Repricing",
+    "title": "Compute Gas Cost Increase",
     "status": "Draft",
     "requires": [
       "7883"
@@ -10833,19 +10833,12 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8121.md"
   },
   "8122": {
-    "title": "Minimal Agent Registry",
+    "title": "Content-Addressable Logic Modules (CALM)",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1463,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/agent-registry/ERCS/erc-8122.md",
-    "requires": [
-      "6909",
-      "7930",
-      "8048",
-      "8049",
-      "8127"
-    ],
-    "timestamp": "2026-02-06T19:48:21.305Z"
+    "prNo": 1521,
+    "markdownPath": "https://raw.githubusercontent.com/radeksvarz/ERCs/refs/heads/master/ERCS/erc-8122.md",
+    "timestamp": "2026-02-09T22:16:11.256Z"
   },
   "8123": {
     "title": "RPC Method for Transaction Gas Limit Cap",
@@ -11060,16 +11053,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8142.md"
   },
   "8143": {
-    "title": "Smart Credential Resolution Interface",
+    "title": "Block Access List Sidecars",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1504,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/smart-credentials/ERCS/erc-8143.md",
+    "prNo": 11254,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/eip-8143/EIPS/eip-8143.md",
     "requires": [
-      "165",
-      "3668"
+      "7732",
+      "7928"
     ],
-    "timestamp": "2026-02-06T19:48:14.167Z"
+    "timestamp": "2026-02-09T22:13:24.397Z"
   },
   "8144": {
     "title": "Multi-Chain GS1 Product Identifier Resolver",
@@ -11078,6 +11070,14 @@
     "prNo": 1508,
     "markdownPath": "https://raw.githubusercontent.com/Apriloracle/ERCs/refs/heads/master/ERCS/erc-8144.md",
     "timestamp": "2026-02-06T19:48:12.882Z"
+  },
+  "8147": {
+    "title": "Locality-Preserving Storage Layout for Binary Trie",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1510,
+    "markdownPath": "https://raw.githubusercontent.com/weiihann/ERCs/refs/heads/locality-bt/ERCS/erc-8147.md",
+    "timestamp": "2026-02-09T22:16:12.301Z"
   },
   "8148": {
     "title": "Custom sweep threshold for validators",
@@ -11111,6 +11111,16 @@
       "712"
     ],
     "timestamp": "2026-02-06T19:48:10.332Z"
+  },
+  "8151": {
+    "title": "Private Key Deactivation Aware ecRecover",
+    "status": "Draft",
+    "prNo": 11288,
+    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/refs/heads/add-eip/EIPS/eip-8151.md",
+    "requires": [
+      "7851"
+    ],
+    "timestamp": "2026-02-09T22:13:14.873Z"
   },
   "8188": {
     "title": "Token Transfer With Signature",
@@ -11222,11 +11232,16 @@
     "timestamp": "2026-02-06T19:49:01.485Z"
   },
   "99999": {
-    "title": "CALL_GAS_SPLIT opcode",
+    "title": "Kernel-Orchestrated Modular Contracts",
     "status": "Draft",
-    "prNo": 9558,
-    "markdownPath": "https://raw.githubusercontent.com/rakita/EIPs/refs/heads/rakita/call_gas_split/EIPS/eip-99999.md",
-    "timestamp": "2026-02-06T19:47:48.436Z"
+    "isERC": true,
+    "prNo": 1528,
+    "markdownPath": "https://raw.githubusercontent.com/zakaryaeboudittv/ERCs/refs/heads/add-valence-framework-erc/ERCS/erc-99999.md",
+    "requires": [
+      "2535",
+      "7201"
+    ],
+    "timestamp": "2026-02-09T22:16:10.612Z"
   },
   "217191": {
     "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
@@ -11250,17 +11265,15 @@
     "timestamp": "2026-02-06T19:48:01.257Z"
   },
   "undefined": {
-    "title": "Compressed RPC Link Format",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1261,
-    "markdownPath": "https://raw.githubusercontent.com/brunobar79/ERCs/refs/heads/patch-1/ERCS/erc-8050.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "5792",
-      "7871",
-      "8026"
+      "20"
     ],
-    "timestamp": "2026-01-28T05:50:29.450Z"
+    "timestamp": "2026-02-09T22:16:36.101Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

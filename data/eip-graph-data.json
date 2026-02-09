@@ -417,7 +417,7 @@
       "id": "eip-3540",
       "eipNo": "3540",
       "title": "EOF - EVM Object Format v1",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -6283,7 +6283,7 @@
       "id": "eip-7762",
       "eipNo": "7762",
       "title": "Increase MIN_BASE_FEE_PER_BLOB_GAS",
-      "status": "Review",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7143,7 +7143,7 @@
     {
       "id": "eip-7904",
       "eipNo": "7904",
-      "title": "General Repricing",
+      "title": "Compute Gas Cost Increase",
       "status": "Draft",
       "isERC": false
     },
@@ -8459,14 +8459,7 @@
     {
       "id": "eip-8122",
       "eipNo": "8122",
-      "title": "Minimal Agent Registry",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-8127",
-      "eipNo": "8127",
-      "title": "Human Readable Token Identifiers",
+      "title": "Content-Addressable Logic Modules (CALM)",
       "status": "Draft",
       "isERC": true
     },
@@ -8488,6 +8481,13 @@
       "id": "eip-8126",
       "eipNo": "8126",
       "title": "AI Agent Registration and Verification",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8127",
+      "eipNo": "8127",
+      "title": "Human Readable Token Identifiers",
       "status": "Draft",
       "isERC": true
     },
@@ -8592,14 +8592,21 @@
     {
       "id": "eip-8143",
       "eipNo": "8143",
-      "title": "Smart Credential Resolution Interface",
+      "title": "Block Access List Sidecars",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8144",
       "eipNo": "8144",
       "title": "Multi-Chain GS1 Product Identifier Resolver",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8147",
+      "eipNo": "8147",
+      "title": "Locality-Preserving Storage Layout for Binary Trie",
       "status": "Draft",
       "isERC": true
     },
@@ -8623,6 +8630,13 @@
       "title": "Zero-Knowledge Agent Payment Verification",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8151",
+      "eipNo": "8151",
+      "title": "Private Key Deactivation Aware ecRecover",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8188",
@@ -8697,9 +8711,9 @@
     {
       "id": "eip-99999",
       "eipNo": "99999",
-      "title": "CALL_GAS_SPLIT opcode",
+      "title": "Kernel-Orchestrated Modular Contracts",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-217191",
@@ -8725,7 +8739,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Compressed RPC Link Format",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -14746,26 +14760,6 @@
       "target": "eip-7930"
     },
     {
-      "source": "eip-8122",
-      "target": "eip-6909"
-    },
-    {
-      "source": "eip-8122",
-      "target": "eip-7930"
-    },
-    {
-      "source": "eip-8122",
-      "target": "eip-8048"
-    },
-    {
-      "source": "eip-8122",
-      "target": "eip-8049"
-    },
-    {
-      "source": "eip-8122",
-      "target": "eip-8127"
-    },
-    {
       "source": "eip-8123",
       "target": "eip-7825"
     },
@@ -14967,11 +14961,11 @@
     },
     {
       "source": "eip-8143",
-      "target": "eip-165"
+      "target": "eip-7732"
     },
     {
       "source": "eip-8143",
-      "target": "eip-3668"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8148",
@@ -14992,6 +14986,10 @@
     {
       "source": "eip-8150",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8151",
+      "target": "eip-7851"
     },
     {
       "source": "eip-8188",
@@ -15058,16 +15056,16 @@
       "target": "eip-9834"
     },
     {
-      "source": "eip-undefined",
-      "target": "eip-5792"
+      "source": "eip-99999",
+      "target": "eip-2535"
+    },
+    {
+      "source": "eip-99999",
+      "target": "eip-7201"
     },
     {
       "source": "eip-undefined",
-      "target": "eip-7871"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-8026"
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",
