@@ -5008,7 +5008,7 @@
     {
       "id": "eip-7708",
       "eipNo": "7708",
-      "title": "ETH transfers emit a log",
+      "title": "ETH transfers and burns emit a log",
       "status": "Draft",
       "isERC": false
     },
@@ -7074,7 +7074,7 @@
       "id": "eip-7893",
       "eipNo": "7893",
       "title": "DeFi Protocol Solvency Proof Mechanism",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -7865,7 +7865,7 @@
       "id": "eip-8019",
       "eipNo": "8019",
       "title": "Minimal Wallet-Managed Auto-Login for SIWE",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7962,7 +7962,7 @@
     {
       "id": "eip-8039",
       "eipNo": "8039",
-      "title": "ZK Proof Verification",
+      "title": "ZK Proof Verification for Smart Accounts",
       "status": "Draft",
       "isERC": true
     },
@@ -8088,8 +8088,8 @@
     {
       "id": "eip-8063",
       "eipNo": "8063",
-      "title": "Groups - Multi-Member Containers",
-      "status": "Draft",
+      "title": "Groups - Membership Tokens",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8397,7 +8397,7 @@
       "id": "eip-8111",
       "eipNo": "8111",
       "title": "Bound Signatures",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8459,7 +8459,14 @@
     {
       "id": "eip-8122",
       "eipNo": "8122",
-      "title": "Content-Addressable Logic Modules (CALM)",
+      "title": "Minimal Agent Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8127",
+      "eipNo": "8127",
+      "title": "Human Readable Token Identifiers",
       "status": "Draft",
       "isERC": true
     },
@@ -8481,13 +8488,6 @@
       "id": "eip-8126",
       "eipNo": "8126",
       "title": "AI Agent Registration and Verification",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-8127",
-      "eipNo": "8127",
-      "title": "Human Readable Token Identifiers",
       "status": "Draft",
       "isERC": true
     },
@@ -8592,9 +8592,9 @@
     {
       "id": "eip-8143",
       "eipNo": "8143",
-      "title": "Block Access List Sidecars",
+      "title": "Smart Credential Resolution Interface",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8144",
@@ -8637,6 +8637,34 @@
       "title": "Private Key Deactivation Aware ecRecover",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8153",
+      "eipNo": "8153",
+      "title": "Facet-Based Diamonds",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8158",
+      "eipNo": "8158",
+      "title": "Invariant Layout Guard Opcode",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8159",
+      "eipNo": "8159",
+      "title": "eth/71 - Block Access List Exchange",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8160",
+      "eipNo": "8160",
+      "title": "Primary Agent Registry",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8188",
@@ -8711,9 +8739,9 @@
     {
       "id": "eip-99999",
       "eipNo": "99999",
-      "title": "Kernel-Orchestrated Modular Contracts",
+      "title": "CALL_GAS_SPLIT opcode",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-217191",
@@ -8739,7 +8767,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Locality-Preserving Storage Layout for Binary Trie",
       "status": "Draft",
       "isERC": true
     },
@@ -14348,10 +14376,6 @@
       "target": "eip-8032"
     },
     {
-      "source": "eip-8039",
-      "target": "eip-165"
-    },
-    {
       "source": "eip-8040",
       "target": "eip-20"
     },
@@ -14412,6 +14436,10 @@
       "target": "eip-5615"
     },
     {
+      "source": "eip-8048",
+      "target": "eip-8042"
+    },
+    {
       "source": "eip-8050",
       "target": "eip-5792"
     },
@@ -14470,6 +14498,10 @@
     {
       "source": "eip-8062",
       "target": "eip-7251"
+    },
+    {
+      "source": "eip-8063",
+      "target": "eip-20"
     },
     {
       "source": "eip-8063",
@@ -14664,6 +14696,10 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-8102",
+      "target": "eip-8103"
+    },
+    {
       "source": "eip-8103",
       "target": "eip-712"
     },
@@ -14760,6 +14796,26 @@
       "target": "eip-7930"
     },
     {
+      "source": "eip-8122",
+      "target": "eip-6909"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-7930"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-8048"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-8049"
+    },
+    {
+      "source": "eip-8122",
+      "target": "eip-8127"
+    },
+    {
       "source": "eip-8123",
       "target": "eip-7825"
     },
@@ -14814,14 +14870,6 @@
     {
       "source": "eip-8130",
       "target": "eip-2718"
-    },
-    {
-      "source": "eip-8130",
-      "target": "eip-2930"
-    },
-    {
-      "source": "eip-8130",
-      "target": "eip-7702"
     },
     {
       "source": "eip-8131",
@@ -14953,6 +15001,10 @@
     },
     {
       "source": "eip-8142",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8142",
       "target": "eip-7892"
     },
     {
@@ -14961,11 +15013,11 @@
     },
     {
       "source": "eip-8143",
-      "target": "eip-7732"
+      "target": "eip-165"
     },
     {
       "source": "eip-8143",
-      "target": "eip-7928"
+      "target": "eip-3668"
     },
     {
       "source": "eip-8148",
@@ -14990,6 +15042,18 @@
     {
       "source": "eip-8151",
       "target": "eip-7851"
+    },
+    {
+      "source": "eip-8153",
+      "target": "eip-2535"
+    },
+    {
+      "source": "eip-8159",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-1271"
     },
     {
       "source": "eip-8188",
@@ -15054,18 +15118,6 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
-    },
-    {
-      "source": "eip-99999",
-      "target": "eip-2535"
-    },
-    {
-      "source": "eip-99999",
-      "target": "eip-7201"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-20"
     },
     {
       "source": "eip-0000",
