@@ -8383,7 +8383,7 @@
       "id": "eip-8109",
       "eipNo": "8109",
       "title": "Diamonds, Simplified",
-      "status": "Draft",
+      "status": "Withdrawn",
       "isERC": true
     },
     {
@@ -8592,9 +8592,9 @@
     {
       "id": "eip-8143",
       "eipNo": "8143",
-      "title": "Smart Credential Resolution Interface",
+      "title": "Block Access List Sidecars",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8144",
@@ -8639,9 +8639,23 @@
       "isERC": false
     },
     {
+      "id": "eip-8152",
+      "eipNo": "8152",
+      "title": "Content-Addressable Logic Modules (CALM)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8153",
       "eipNo": "8153",
       "title": "Facet-Based Diamonds",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8155",
+      "eipNo": "8155",
+      "title": "Kernel-Orchestrated Modular Contracts",
       "status": "Draft",
       "isERC": true
     },
@@ -8667,6 +8681,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8161",
+      "eipNo": "8161",
+      "title": "Transferable Tokenized Vault Requests",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8188",
       "eipNo": "8188",
       "title": "Token Transfer With Signature",
@@ -8677,6 +8698,13 @@
       "id": "eip-8189",
       "eipNo": "8189",
       "title": "NFT Transfer With Signature",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8402",
+      "eipNo": "8402",
+      "title": "Agent Subscription Protocol",
       "status": "Draft",
       "isERC": true
     },
@@ -8767,7 +8795,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Locality-Preserving Storage Layout for Binary Trie",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -15013,11 +15041,11 @@
     },
     {
       "source": "eip-8143",
-      "target": "eip-165"
+      "target": "eip-7732"
     },
     {
       "source": "eip-8143",
-      "target": "eip-3668"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8148",
@@ -15048,12 +15076,32 @@
       "target": "eip-2535"
     },
     {
+      "source": "eip-8155",
+      "target": "eip-2535"
+    },
+    {
+      "source": "eip-8155",
+      "target": "eip-7201"
+    },
+    {
       "source": "eip-8159",
       "target": "eip-7928"
     },
     {
+      "source": "eip-8159",
+      "target": "eip-7975"
+    },
+    {
       "source": "eip-8160",
       "target": "eip-1271"
+    },
+    {
+      "source": "eip-8161",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8161",
+      "target": "eip-7540"
     },
     {
       "source": "eip-8188",
@@ -15070,6 +15118,22 @@
     {
       "source": "eip-8189",
       "target": "eip-7564"
+    },
+    {
+      "source": "eip-8402",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8402",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8402",
+      "target": "eip-2612"
+    },
+    {
+      "source": "eip-8402",
+      "target": "eip-8004"
     },
     {
       "source": "eip-8820",
@@ -15118,6 +15182,10 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",

@@ -10714,7 +10714,7 @@
   },
   "8109": {
     "title": "Diamonds, Simplified",
-    "status": "Draft",
+    "status": "Withdrawn",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8109.md"
@@ -11059,16 +11059,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8142.md"
   },
   "8143": {
-    "title": "Smart Credential Resolution Interface",
+    "title": "Block Access List Sidecars",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1504,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/smart-credentials/ERCS/erc-8143.md",
+    "prNo": 11254,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/eip-8143/EIPS/eip-8143.md",
     "requires": [
-      "165",
-      "3668"
+      "7732",
+      "7928"
     ],
-    "timestamp": "2026-02-14T05:33:32.964Z"
+    "timestamp": "2026-02-17T06:32:18.212Z"
   },
   "8144": {
     "title": "Multi-Chain GS1 Product Identifier Resolver",
@@ -11084,7 +11083,7 @@
     "isERC": true,
     "prNo": 1510,
     "markdownPath": "https://raw.githubusercontent.com/weiihann/ERCs/refs/heads/locality-bt/ERCS/erc-8147.md",
-    "timestamp": "2026-02-09T22:16:12.301Z"
+    "timestamp": "2026-02-17T06:34:27.601Z"
   },
   "8148": {
     "title": "Custom sweep threshold for validators",
@@ -11125,18 +11124,35 @@
     "requires": [
       "7851"
     ],
-    "timestamp": "2026-02-09T22:13:14.873Z"
+    "timestamp": "2026-02-17T06:32:12.051Z"
+  },
+  "8152": {
+    "title": "Content-Addressable Logic Modules (CALM)",
+    "status": "Draft",
+    "requires": [],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8152.md"
   },
   "8153": {
     "title": "Facet-Based Diamonds",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1524,
-    "markdownPath": "https://raw.githubusercontent.com/mudgen/ERCs/refs/heads/master/ERCS/erc-8153.md",
     "requires": [
       "2535"
     ],
-    "timestamp": "2026-02-14T05:33:30.390Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8153.md"
+  },
+  "8155": {
+    "title": "Kernel-Orchestrated Modular Contracts",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1528,
+    "markdownPath": "https://raw.githubusercontent.com/zakaryaeboudittv/ERCs/refs/heads/add-valence-framework-erc/ERCS/erc-8155.md",
+    "requires": [
+      "2535",
+      "7201"
+    ],
+    "timestamp": "2026-02-17T06:34:26.847Z"
   },
   "8158": {
     "title": "Invariant Layout Guard Opcode",
@@ -11148,12 +11164,12 @@
   "8159": {
     "title": "eth/71 - Block Access List Exchange",
     "status": "Draft",
-    "prNo": 11307,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/eth71/EIPS/eip-8159.md",
     "requires": [
-      "7928"
+      "7928",
+      "7975"
     ],
-    "timestamp": "2026-02-14T05:30:25.608Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
     "title": "Primary Agent Registry",
@@ -11165,6 +11181,18 @@
       "1271"
     ],
     "timestamp": "2026-02-14T05:33:27.906Z"
+  },
+  "8161": {
+    "title": "Transferable Tokenized Vault Requests",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1544,
+    "markdownPath": "https://raw.githubusercontent.com/ERC4626-Alliance/ERCs/refs/heads/master/ERCS/erc-8161.md",
+    "requires": [
+      "165",
+      "7540"
+    ],
+    "timestamp": "2026-02-17T06:34:23.577Z"
   },
   "8188": {
     "title": "Token Transfer With Signature",
@@ -11189,6 +11217,20 @@
       "7564"
     ],
     "timestamp": "2025-12-25T13:45:42.242Z"
+  },
+  "8402": {
+    "title": "Agent Subscription Protocol",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1545,
+    "markdownPath": "https://raw.githubusercontent.com/warden-protocol/ERCs/refs/heads/master/ERCS/erc-8402.md",
+    "requires": [
+      "20",
+      "712",
+      "2612",
+      "8004"
+    ],
+    "timestamp": "2026-02-17T06:34:23.409Z"
   },
   "8820": {
     "title": "Dual-Mode Fungible Tokens",
@@ -11304,12 +11346,15 @@
     "timestamp": "2026-02-14T05:33:17.674Z"
   },
   "undefined": {
-    "title": "Locality-Preserving Storage Layout for Binary Trie",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1510,
-    "markdownPath": "https://raw.githubusercontent.com/weiihann/ERCs/refs/heads/locality-bt/ERCS/erc-8147.md",
-    "timestamp": "2026-02-14T05:33:30.391Z"
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
+    "requires": [
+      "20"
+    ],
+    "timestamp": "2026-02-17T06:34:46.015Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
