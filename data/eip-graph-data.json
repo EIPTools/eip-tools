@@ -1534,6 +1534,13 @@
       "isERC": false
     },
     {
+      "id": "eip-2004",
+      "eipNo": "2004",
+      "title": "Agent-Readable Smart Contract Documentation Layer (Intent Spec)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-2009",
       "eipNo": "2009",
       "title": "Compliance Service",
@@ -7074,7 +7081,7 @@
       "id": "eip-7893",
       "eipNo": "7893",
       "title": "DeFi Protocol Solvency Proof Mechanism",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8478,6 +8485,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8124",
+      "eipNo": "8124",
+      "title": "ERC-20 Alias Metadata Extension",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8125",
       "eipNo": "8125",
       "title": "Temporary Contract Storage",
@@ -8592,9 +8606,9 @@
     {
       "id": "eip-8143",
       "eipNo": "8143",
-      "title": "Block Access List Sidecars",
+      "title": "Smart Credential Resolution Interface",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8144",
@@ -8604,9 +8618,16 @@
       "isERC": true
     },
     {
+      "id": "eip-8146",
+      "eipNo": "8146",
+      "title": "Block Access List Sidecars",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8147",
       "eipNo": "8147",
-      "title": "Locality-Preserving Storage Layout for Binary Trie",
+      "title": "Locality-Preserving Layout for Binary Trie",
       "status": "Draft",
       "isERC": true
     },
@@ -8684,6 +8705,62 @@
       "id": "eip-8161",
       "eipNo": "8161",
       "title": "Transferable Tokenized Vault Requests",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8162",
+      "eipNo": "8162",
+      "title": "Agent Subscription",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8163",
+      "eipNo": "8163",
+      "title": "Reserve `EXTENSION (0xae)` opcode",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8164",
+      "eipNo": "8164",
+      "title": "Native Key Delegation for EOAs",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8165",
+      "eipNo": "8165",
+      "title": "Agentic Onchain Operations",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8166",
+      "eipNo": "8166",
+      "title": "Shared Sequencer Interface for Agent L2s",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8167",
+      "eipNo": "8167",
+      "title": "Modular Dispatch Proxies",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8169",
+      "eipNo": "8169",
+      "title": "Historical Ownership Extension for ERC-721",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8172",
+      "eipNo": "8172",
+      "title": "Delayed Metadata Update Extension",
       "status": "Draft",
       "isERC": true
     },
@@ -9410,6 +9487,10 @@
     {
       "source": "eip-2003",
       "target": "eip-1352"
+    },
+    {
+      "source": "eip-2004",
+      "target": "eip-165"
     },
     {
       "source": "eip-2009",
@@ -14392,18 +14473,6 @@
       "target": "eip-8011"
     },
     {
-      "source": "eip-8038",
-      "target": "eip-2926"
-    },
-    {
-      "source": "eip-8038",
-      "target": "eip-7928"
-    },
-    {
-      "source": "eip-8038",
-      "target": "eip-8032"
-    },
-    {
       "source": "eip-8040",
       "target": "eip-20"
     },
@@ -14700,6 +14769,10 @@
       "target": "eip-3643"
     },
     {
+      "source": "eip-8100",
+      "target": "eip-155"
+    },
+    {
       "source": "eip-8101",
       "target": "eip-4844"
     },
@@ -14762,10 +14835,6 @@
     {
       "source": "eip-8110",
       "target": "eip-8042"
-    },
-    {
-      "source": "eip-8110",
-      "target": "eip-8109"
     },
     {
       "source": "eip-8112",
@@ -14897,6 +14966,10 @@
     },
     {
       "source": "eip-8130",
+      "target": "eip-1153"
+    },
+    {
+      "source": "eip-8130",
       "target": "eip-2718"
     },
     {
@@ -15009,7 +15082,7 @@
     },
     {
       "source": "eip-8140",
-      "target": "eip-8140"
+      "target": "eip-8130"
     },
     {
       "source": "eip-8141",
@@ -15041,10 +15114,18 @@
     },
     {
       "source": "eip-8143",
-      "target": "eip-7732"
+      "target": "eip-165"
     },
     {
       "source": "eip-8143",
+      "target": "eip-3668"
+    },
+    {
+      "source": "eip-8146",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8146",
       "target": "eip-7928"
     },
     {
@@ -15102,6 +15183,82 @@
     {
       "source": "eip-8161",
       "target": "eip-7540"
+    },
+    {
+      "source": "eip-8162",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8162",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8162",
+      "target": "eip-2612"
+    },
+    {
+      "source": "eip-8162",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8163",
+      "target": "eip-141"
+    },
+    {
+      "source": "eip-8164",
+      "target": "eip-2"
+    },
+    {
+      "source": "eip-8164",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8164",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8164",
+      "target": "eip-3541"
+    },
+    {
+      "source": "eip-8164",
+      "target": "eip-3607"
+    },
+    {
+      "source": "eip-8164",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8164",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8165",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8165",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8165",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8169",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8169",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8172",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8172",
+      "target": "eip-8004"
     },
     {
       "source": "eip-8188",
