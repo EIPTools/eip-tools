@@ -8528,8 +8528,8 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7848.md"
   },
   "7851": {
-    "title": "Deactivate/Reactivate a Delegated EOA's Key",
-    "status": "Stagnant",
+    "title": "Deactivate a Delegated EOA's Key",
+    "status": "Draft",
     "requires": [
       "7702"
     ],
@@ -9342,7 +9342,7 @@
   },
   "7956": {
     "title": "Tx Ordering via Block-level Randomness",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "7998"
     ],
@@ -9351,7 +9351,7 @@
   },
   "7957": {
     "title": "EVM64 - EOF support",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [
       "3540",
       "3670",
@@ -10930,13 +10930,12 @@
   "8130": {
     "title": "Account Abstraction by Account Configuration",
     "status": "Draft",
-    "prNo": 11186,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/EIPs/refs/heads/eip-8130-coinbase/EIPS/eip-8130.md",
     "requires": [
       "1153",
       "2718"
     ],
-    "timestamp": "2026-02-26T09:29:20.459Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8130.md"
   },
   "8131": {
     "title": "Add Auth Data to EIP-7623 Floor",
@@ -11007,12 +11006,11 @@
   "8136": {
     "title": "Cell-Level Deltas for Data Column Broadcast",
     "status": "Draft",
-    "prNo": 11176,
-    "markdownPath": "https://raw.githubusercontent.com/MarcoPolo/EIPs/refs/heads/cell-level-deltas/EIPS/eip-8136.md",
     "requires": [
       "7594"
     ],
-    "timestamp": "2026-02-26T09:29:21.980Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8136.md"
   },
   "8138": {
     "title": "Hardfork Meta - BPO3",
@@ -11140,12 +11138,11 @@
   "8151": {
     "title": "Private Key Deactivation Aware ecRecover",
     "status": "Draft",
-    "prNo": 11288,
-    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/refs/heads/add-eip/EIPS/eip-8151.md",
     "requires": [
       "7851"
     ],
-    "timestamp": "2026-02-26T09:29:06.833Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8151.md"
   },
   "8152": {
     "title": "Content-Addressable Logic Modules (CALM)",
@@ -11193,15 +11190,17 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-02-26T09:32:05.549Z"
+    "timestamp": "2026-03-02T08:22:45.703Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11306,6 +11305,52 @@
     ],
     "timestamp": "2026-02-26T09:31:58.670Z"
   },
+  "8175": {
+    "title": "Composable Transaction",
+    "status": "Draft",
+    "prNo": 11355,
+    "markdownPath": "https://raw.githubusercontent.com/rakita/EIPs/refs/heads/eip-extensible-tx-type/EIPS/eip-8175.md",
+    "requires": [
+      "2",
+      "1559",
+      "2718"
+    ],
+    "timestamp": "2026-03-02T08:20:07.717Z"
+  },
+  "8176": {
+    "title": "Integrity Verification for ERC-7730",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1576,
+    "markdownPath": "https://raw.githubusercontent.com/llbartekll/ERCs/refs/heads/add-erc-7730-integrity/ERCS/erc-8176.md",
+    "requires": [
+      "7730"
+    ],
+    "timestamp": "2026-03-02T08:22:42.521Z"
+  },
+  "8177": {
+    "title": "Blob Space Segments",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1577,
+    "markdownPath": "https://raw.githubusercontent.com/defi-wonderland/ERCs/refs/heads/add-erc-bss/ERCS/erc-8177.md",
+    "requires": [
+      "4844"
+    ],
+    "timestamp": "2026-03-02T08:22:40.065Z"
+  },
+  "8178": {
+    "title": "Blob Authenticated Messaging",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1578,
+    "markdownPath": "https://raw.githubusercontent.com/defi-wonderland/ERCs/refs/heads/add-erc-bam/ERCS/erc-8178.md",
+    "requires": [
+      "4844",
+      "8177"
+    ],
+    "timestamp": "2026-03-02T08:22:40.177Z"
+  },
   "8188": {
     "title": "Token Transfer With Signature",
     "status": "Draft",
@@ -11329,6 +11374,19 @@
       "7564"
     ],
     "timestamp": "2025-12-25T13:45:42.242Z"
+  },
+  "8200": {
+    "title": "Self-Sovereign Agent NFTs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1579,
+    "markdownPath": "https://raw.githubusercontent.com/Cyan-Society/ERCs/refs/heads/add-erc-self-sovereign-agent/ERCS/erc-8200.md",
+    "requires": [
+      "165",
+      "721",
+      "6551"
+    ],
+    "timestamp": "2026-03-02T08:22:39.857Z"
   },
   "8402": {
     "title": "Agent Subscription Protocol",
@@ -11466,7 +11524,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-02-17T06:34:46.015Z"
+    "timestamp": "2026-03-02T08:23:09.612Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
