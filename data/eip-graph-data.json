@@ -6738,7 +6738,7 @@
       "id": "eip-7832",
       "eipNo": "7832",
       "title": "Sustainable collaborative NFT collections",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -7949,7 +7949,7 @@
       "id": "eip-8034",
       "eipNo": "8034",
       "title": "Referable NFT Royalties",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7997,7 +7997,7 @@
     {
       "id": "eip-8043",
       "eipNo": "8043",
-      "title": "Enable Mode for modules in ERC-7579 accounts",
+      "title": "Atomic ERC-7579 Module Install and Execute",
       "status": "Draft",
       "isERC": true
     },
@@ -8102,7 +8102,7 @@
     {
       "id": "eip-8064",
       "eipNo": "8064",
-      "title": "Management Token Permit",
+      "title": "Permit Extension for Smart Wallet",
       "status": "Draft",
       "isERC": true
     },
@@ -8123,7 +8123,7 @@
     {
       "id": "eip-8067",
       "eipNo": "8067",
-      "title": "Management NFT Permit",
+      "title": "NFT Permit Extension for Smart Wallet",
       "status": "Draft",
       "isERC": true
     },
@@ -8551,14 +8551,14 @@
       "id": "eip-8134",
       "eipNo": "8134",
       "title": "Hardfork Meta - BPO1",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
       "id": "eip-8135",
       "eipNo": "8135",
       "title": "Hardfork Meta - BPO2",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -8697,7 +8697,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -8758,9 +8758,30 @@
       "isERC": true
     },
     {
+      "id": "eip-8170",
+      "eipNo": "8170",
+      "title": "AI-Native NFT (AINFT)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8172",
       "eipNo": "8172",
       "title": "Delayed Metadata Update Extension",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8173",
+      "eipNo": "8173",
+      "title": "Static Control Flow for the EVM",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8174",
+      "eipNo": "8174",
+      "title": "Intent spec for contracts",
       "status": "Draft",
       "isERC": true
     },
@@ -8781,14 +8802,28 @@
     {
       "id": "eip-8177",
       "eipNo": "8177",
-      "title": "Blob Space Segments",
+      "title": "Engine API Communication Channels",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8178",
       "eipNo": "8178",
-      "title": "Blob Authenticated Messaging",
+      "title": "SSZ-REST Engine API Transport",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8182",
+      "eipNo": "8182",
+      "title": "Off-Chain Entity Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8183",
+      "eipNo": "8183",
+      "title": "Claimable Escrow",
       "status": "Draft",
       "isERC": true
     },
@@ -8907,7 +8942,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -14641,7 +14676,15 @@
     },
     {
       "source": "eip-8064",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8064",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8064",
+      "target": "eip-1271"
     },
     {
       "source": "eip-8064",
@@ -14669,7 +14712,15 @@
     },
     {
       "source": "eip-8067",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8067",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8067",
+      "target": "eip-1271"
     },
     {
       "source": "eip-8067",
@@ -14873,7 +14924,15 @@
     },
     {
       "source": "eip-8112",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8112",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8112",
+      "target": "eip-1271"
     },
     {
       "source": "eip-8112",
@@ -14889,7 +14948,15 @@
     },
     {
       "source": "eip-8114",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8114",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8114",
+      "target": "eip-1271"
     },
     {
       "source": "eip-8114",
@@ -15006,6 +15073,10 @@
     {
       "source": "eip-8130",
       "target": "eip-2718"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-7702"
     },
     {
       "source": "eip-8131",
@@ -15209,15 +15280,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -15296,12 +15359,24 @@
       "target": "eip-721"
     },
     {
+      "source": "eip-8170",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8170",
+      "target": "eip-6551"
+    },
+    {
       "source": "eip-8172",
       "target": "eip-721"
     },
     {
       "source": "eip-8172",
       "target": "eip-8004"
+    },
+    {
+      "source": "eip-8174",
+      "target": "eip-165"
     },
     {
       "source": "eip-8175",
@@ -15320,16 +15395,8 @@
       "target": "eip-7730"
     },
     {
-      "source": "eip-8177",
-      "target": "eip-4844"
-    },
-    {
-      "source": "eip-8178",
-      "target": "eip-4844"
-    },
-    {
-      "source": "eip-8178",
-      "target": "eip-8177"
+      "source": "eip-8183",
+      "target": "eip-8182"
     },
     {
       "source": "eip-8188",
@@ -15425,7 +15492,15 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-8130"
     },
     {
       "source": "eip-0000",
