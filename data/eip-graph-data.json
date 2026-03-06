@@ -6444,7 +6444,7 @@
       "id": "eip-7786",
       "eipNo": "7786",
       "title": "Cross-Chain Messaging Gateway",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7988,6 +7988,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8119",
+      "eipNo": "8119",
+      "title": "Parameterized Storage Keys",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8042",
       "eipNo": "8042",
       "title": "Diamond Storage",
@@ -8443,13 +8450,6 @@
       "isERC": true
     },
     {
-      "id": "eip-8119",
-      "eipNo": "8119",
-      "title": "Parameterized Storage Keys",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-8120",
       "eipNo": "8120",
       "title": "MLOAD8 and CALLDATALOAD8 Opcodes",
@@ -8814,15 +8814,43 @@
       "isERC": false
     },
     {
-      "id": "eip-8182",
-      "eipNo": "8182",
-      "title": "Off-Chain Entity Registry",
+      "id": "eip-8179",
+      "eipNo": "8179",
+      "title": "Blob Space Segments",
       "status": "Draft",
       "isERC": true
     },
     {
+      "id": "eip-8180",
+      "eipNo": "8180",
+      "title": "Blob Authenticated Messaging",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8181",
+      "eipNo": "8181",
+      "title": "Self-Sovereign Agent NFTs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8182",
+      "eipNo": "8182",
+      "title": "Protocol-Enshrined Privacy Pool",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8183",
       "eipNo": "8183",
+      "title": "Agentic Commerce",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8186",
+      "eipNo": "8186",
       "title": "Claimable Escrow",
       "status": "Draft",
       "isERC": true
@@ -8942,16 +8970,16 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Payer Web Service Capability",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "LUCID encrypted mempool",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-0288",
@@ -14563,6 +14591,10 @@
       "target": "eip-8004"
     },
     {
+      "source": "eip-8041",
+      "target": "eip-8119"
+    },
+    {
       "source": "eip-8042",
       "target": "eip-7201"
     },
@@ -15395,8 +15427,52 @@
       "target": "eip-7730"
     },
     {
+      "source": "eip-8179",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8180",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8180",
+      "target": "eip-8179"
+    },
+    {
+      "source": "eip-8181",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8181",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8181",
+      "target": "eip-6551"
+    },
+    {
+      "source": "eip-8181",
+      "target": "eip-7857"
+    },
+    {
+      "source": "eip-8182",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8182",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8182",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8182",
+      "target": "eip-2718"
+    },
+    {
       "source": "eip-8183",
-      "target": "eip-8182"
+      "target": "eip-20"
     },
     {
       "source": "eip-8188",
@@ -15492,23 +15568,15 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-8130"
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",
-      "target": "eip-4337"
+      "target": "eip-2718"
     },
     {
       "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7805"
     }
   ]
 }

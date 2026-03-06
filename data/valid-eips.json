@@ -8034,7 +8034,7 @@
   },
   "7786": {
     "title": "Cross-Chain Messaging Gateway",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "7930"
     ],
@@ -10112,7 +10112,8 @@
     "status": "Draft",
     "requires": [
       "7572",
-      "8004"
+      "8004",
+      "8119"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8041.md"
@@ -11339,7 +11340,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-03-04T17:02:34.130Z"
+    "timestamp": "2026-03-09T11:20:17.902Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11351,7 +11352,7 @@
       "1559",
       "2718"
     ],
-    "timestamp": "2026-03-02T08:20:07.717Z"
+    "timestamp": "2026-03-09T11:17:51.153Z"
   },
   "8176": {
     "title": "Integrity Verification for ERC-7730",
@@ -11362,7 +11363,7 @@
     "requires": [
       "7730"
     ],
-    "timestamp": "2026-03-02T08:22:42.521Z"
+    "timestamp": "2026-03-09T11:20:13.933Z"
   },
   "8177": {
     "title": "Engine API Communication Channels",
@@ -11378,24 +11379,75 @@
     "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/refs/heads/eip-xxxx-ssz-rest/EIPS/eip-8178.md",
     "timestamp": "2026-03-04T16:58:05.963Z"
   },
-  "8182": {
-    "title": "Off-Chain Entity Registry",
+  "8179": {
+    "title": "Blob Space Segments",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1580,
-    "markdownPath": "https://raw.githubusercontent.com/carlbarrdahl/ERCs/refs/heads/erc-offchain-entity-registry/ERCS/erc-8182.md",
-    "timestamp": "2026-03-04T17:02:29.849Z"
+    "prNo": 1577,
+    "markdownPath": "https://raw.githubusercontent.com/defi-wonderland/ERCs/refs/heads/add-erc-bss/ERCS/erc-8179.md",
+    "requires": [
+      "4844"
+    ],
+    "timestamp": "2026-03-09T11:20:13.788Z"
+  },
+  "8180": {
+    "title": "Blob Authenticated Messaging",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1578,
+    "markdownPath": "https://raw.githubusercontent.com/defi-wonderland/ERCs/refs/heads/add-erc-bam/ERCS/erc-8180.md",
+    "requires": [
+      "4844",
+      "8179"
+    ],
+    "timestamp": "2026-03-09T11:20:12.412Z"
+  },
+  "8181": {
+    "title": "Self-Sovereign Agent NFTs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1579,
+    "markdownPath": "https://raw.githubusercontent.com/Cyan-Society/ERCs/refs/heads/add-erc-self-sovereign-agent/ERCS/erc-8181.md",
+    "requires": [
+      "165",
+      "721",
+      "6551",
+      "7857"
+    ],
+    "timestamp": "2026-03-09T11:20:11.845Z"
+  },
+  "8182": {
+    "title": "Protocol-Enshrined Privacy Pool",
+    "status": "Draft",
+    "prNo": 11373,
+    "markdownPath": "https://raw.githubusercontent.com/RogerPodacter/EIPs/refs/heads/add_draft_privacy_pool/EIPS/eip-8182.md",
+    "requires": [
+      "20",
+      "712",
+      "1559",
+      "2718"
+    ],
+    "timestamp": "2026-03-09T11:17:49.582Z"
   },
   "8183": {
+    "title": "Agentic Commerce",
+    "status": "Draft",
+    "requires": [
+      "20"
+    ],
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8183.md"
+  },
+  "8186": {
     "title": "Claimable Escrow",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1580,
-    "markdownPath": "https://raw.githubusercontent.com/carlbarrdahl/ERCs/refs/heads/erc-offchain-entity-registry/ERCS/erc-8183.md",
+    "prNo": 1582,
+    "markdownPath": "https://raw.githubusercontent.com/carlbarrdahl/ERCs/refs/heads/erc-claimable-escrow/ERCS/erc-8186.md",
     "requires": [
-      "8182"
+      "8185"
     ],
-    "timestamp": "2026-03-04T17:02:30.353Z"
+    "timestamp": "2026-03-09T11:20:11.839Z"
   },
   "8188": {
     "title": "Token Transfer With Signature",
@@ -11562,29 +11614,26 @@
     "timestamp": "2026-03-04T17:02:20.975Z"
   },
   "undefined": {
-    "title": "Payer Web Service Capability",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "5792",
-      "7836",
-      "8130"
+      "20"
     ],
-    "timestamp": "2026-03-04T17:02:33.552Z"
+    "timestamp": "2026-03-09T11:20:41.374Z"
   },
   "0000": {
-    "title": "Ethereum Interoperability Layer Wallet Usage",
+    "title": "LUCID encrypted mempool",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1195,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/refs/heads/erc-eil-wallet/ERCS/erc-0000.md",
+    "prNo": 11376,
+    "markdownPath": "https://raw.githubusercontent.com/anderselowsson/EIPs/refs/heads/LUCID/EIPS/eip-0000.md",
     "requires": [
-      "4337",
-      "5792"
+      "2718",
+      "7805"
     ],
-    "timestamp": "2026-03-04T17:03:17.309Z"
+    "timestamp": "2026-03-09T11:17:48.901Z"
   },
   "0288": {
     "title": "Secure Intents for Agent Coordination",
