@@ -13,18 +13,25 @@ const dirs = [
   { dir: path.join(__dirname, "../submodules/CAIPs/CAIPs"), prefix: "caip" },
 ];
 
+interface Proposal {
+  number: string;
+  prefix: string;
+  status: string;
+}
+
 interface AuthorEntry {
   handle: string;
   count: number;
   finalCount: number;
   type: "handle" | "email";
+  proposals: Proposal[];
   github?: string;
   twitter?: string;
 }
 
-const authorCounts: Record<
+const authorData: Record<
   string,
-  { count: number; finalCount: number; type: "handle" | "email" }
+  { count: number; finalCount: number; type: "handle" | "email"; proposals: Proposal[] }
 > = {};
 
 for (const { dir, prefix } of dirs) {
@@ -41,36 +48,41 @@ for (const { dir, prefix } of dirs) {
 
     if (!json.author) continue;
 
-    const isFinal = json.status === "Final";
+    const status = json.status || "Draft";
+    const isFinal = status === "Final";
+    const proposal: Proposal = { number: match[1], prefix, status };
 
     for (const authorEntry of json.author) {
       // Match (@handle) in parens first
       const handleMatch = authorEntry.match(/\(@(\w[\w-]*)\)/);
       if (handleMatch) {
         const handle = handleMatch[1];
-        authorCounts[handle] = authorCounts[handle] || { count: 0, finalCount: 0, type: "handle" };
-        authorCounts[handle].count++;
-        if (isFinal) authorCounts[handle].finalCount++;
+        authorData[handle] = authorData[handle] || { count: 0, finalCount: 0, type: "handle", proposals: [] };
+        authorData[handle].count++;
+        authorData[handle].proposals.push(proposal);
+        if (isFinal) authorData[handle].finalCount++;
       } else {
         // Fall back to email address
         const emailMatch = authorEntry.match(/<([^>]+@[^>]+)>/);
         if (emailMatch) {
           const email = emailMatch[1];
-          authorCounts[email] = authorCounts[email] || { count: 0, finalCount: 0, type: "email" };
-          authorCounts[email].count++;
-          if (isFinal) authorCounts[email].finalCount++;
+          authorData[email] = authorData[email] || { count: 0, finalCount: 0, type: "email", proposals: [] };
+          authorData[email].count++;
+          authorData[email].proposals.push(proposal);
+          if (isFinal) authorData[email].finalCount++;
         }
       }
     }
   }
 }
 
-const authors: AuthorEntry[] = Object.entries(authorCounts)
-  .map(([handle, { count, finalCount, type }]) => ({
+const authors: AuthorEntry[] = Object.entries(authorData)
+  .map(([handle, { count, finalCount, type, proposals }]) => ({
     handle,
     count,
     finalCount,
     type,
+    proposals,
     ...(type === "handle"
       ? { github: `https://github.com/${handle}`, twitter: `https://x.com/${handle}` }
       : {}),

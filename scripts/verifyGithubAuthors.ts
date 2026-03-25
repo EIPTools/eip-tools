@@ -7,7 +7,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const authorsPath = path.join(__dirname, "../data/authors/authors.json");
+const cachePath = path.join(__dirname, "../data/authors/github-cache.json");
 const authors = JSON.parse(fs.readFileSync(authorsPath, "utf-8"));
+
+// Load cache of previously verified handles
+// Format: { [handle]: { github: bool, twitter?: string } }
+let cache: Record<string, { github: boolean; twitter?: string }> = {};
+if (fs.existsSync(cachePath)) {
+  cache = JSON.parse(fs.readFileSync(cachePath, "utf-8"));
+}
 
 // Get token from gh CLI so we don't hardcode it
 const GITHUB_TOKEN = execSync("gh auth token", { encoding: "utf-8" }).trim();
@@ -34,7 +42,10 @@ const checkGithubUser = async (
     }
     if (res.status === 200) {
       const data = await res.json();
-      return { exists: true, twitterUsername: data.twitter_username || undefined };
+      return {
+        exists: true,
+        twitterUsername: data.twitter_username || undefined,
+      };
     }
     return { exists: false };
   } catch {
@@ -45,47 +56,90 @@ const checkGithubUser = async (
 const main = async () => {
   const handleAuthors = authors.filter((a: any) => a.type === "handle");
   const emailAuthors = authors.filter((a: any) => a.type === "email");
-  const total = handleAuthors.length;
+
+  // Split into cached and uncached
+  const uncached = handleAuthors.filter((a: any) => !(a.handle in cache));
+  const cached = handleAuthors.filter((a: any) => a.handle in cache);
+
+  // Apply cached results immediately
   let verified = 0;
   let notFound = 0;
   let withTwitter = 0;
 
-  console.log(`Checking ${total} GitHub handles (${CONCURRENCY} concurrent)...`);
-
-  for (let i = 0; i < handleAuthors.length; i += CONCURRENCY) {
-    const batch = handleAuthors.slice(i, i + CONCURRENCY);
-
-    const results = await Promise.all(
-      batch.map(async (author: any) => {
-        const result = await checkGithubUser(author.handle);
-        return { author, ...result };
-      })
-    );
-
-    for (const { author, exists, twitterUsername } of results) {
-      if (!exists) {
-        delete author.github;
-        notFound++;
+  for (const author of cached) {
+    const entry = cache[author.handle];
+    if (!entry.github) {
+      delete author.github;
+      notFound++;
+    } else {
+      verified++;
+      if (entry.twitter) {
+        author.twitter = `https://x.com/${entry.twitter}`;
+        withTwitter++;
       } else {
-        verified++;
-        if (twitterUsername) {
-          author.twitter = `https://x.com/${twitterUsername}`;
-          withTwitter++;
-        } else {
-          delete author.twitter;
-        }
+        delete author.twitter;
       }
     }
-
-    const done = Math.min(i + CONCURRENCY, total);
-    if (done % 50 === 0 || done === total) {
-      console.log(`  ${done}/${total} checked (${verified} valid, ${notFound} not found)`);
-    }
-
-    await sleep(DELAY_BETWEEN_BATCHES_MS);
   }
 
-  console.log(`\nDone: ${verified} valid GitHub, ${withTwitter} with Twitter linked, ${notFound} not found`);
+  console.log(
+    `${cached.length} cached, ${uncached.length} new handles to check`
+  );
+
+  if (uncached.length > 0) {
+    console.log(
+      `Checking ${uncached.length} GitHub handles (${CONCURRENCY} concurrent)...`
+    );
+
+    for (let i = 0; i < uncached.length; i += CONCURRENCY) {
+      const batch = uncached.slice(i, i + CONCURRENCY);
+
+      const results = await Promise.all(
+        batch.map(async (author: any) => {
+          const result = await checkGithubUser(author.handle);
+          return { author, ...result };
+        })
+      );
+
+      for (const { author, exists, twitterUsername } of results) {
+        // Update cache
+        cache[author.handle] = {
+          github: exists,
+          twitter: twitterUsername,
+        };
+
+        if (!exists) {
+          delete author.github;
+          notFound++;
+        } else {
+          verified++;
+          if (twitterUsername) {
+            author.twitter = `https://x.com/${twitterUsername}`;
+            withTwitter++;
+          } else {
+            delete author.twitter;
+          }
+        }
+      }
+
+      const done = Math.min(i + CONCURRENCY, uncached.length);
+      if (done % 50 === 0 || done === uncached.length) {
+        console.log(
+          `  ${done}/${uncached.length} checked (${verified} valid, ${notFound} not found)`
+        );
+      }
+
+      await sleep(DELAY_BETWEEN_BATCHES_MS);
+    }
+  }
+
+  console.log(
+    `\nDone: ${verified} valid GitHub, ${withTwitter} with Twitter linked, ${notFound} not found`
+  );
+
+  // Save cache
+  fs.writeFileSync(cachePath, JSON.stringify(cache, null, 2));
+  console.log(`Cache saved (${Object.keys(cache).length} entries)`);
 
   const result = [...handleAuthors, ...emailAuthors].sort(
     (a: any, b: any) => b.count - a.count

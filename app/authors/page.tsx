@@ -24,6 +24,15 @@ import {
   VStack,
   Checkbox,
   Progress,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  Wrap,
+  WrapItem,
+  useDisclosure,
   useToast,
 } from "@chakra-ui/react";
 import { Layout } from "@/components/Layout";
@@ -39,12 +48,21 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import authorsData from "@/data/authors/authors.json";
 import miladyHandles from "@/data/authors/milady-authors.json";
 import customAuthors from "@/data/authors/custom-authors.json";
+import { EIPGridItem } from "@/components/TrendingEIPs";
+import { EIPType } from "@/types";
+
+interface Proposal {
+  number: string;
+  prefix: string;
+  status: string;
+}
 
 interface Author {
   handle: string;
   count: number;
   finalCount: number;
   type: "handle" | "email";
+  proposals: Proposal[];
   github?: string;
   twitter?: string;
 }
@@ -72,6 +90,7 @@ function processAuthors(raw: Author[]): Author[] {
       const existing = merged.get(primary)!;
       existing.count += author.count;
       existing.finalCount += author.finalCount;
+      existing.proposals = existing.proposals.concat(author.proposals);
       // Keep github/twitter from whichever entry has them
       if (!existing.github && author.github) existing.github = author.github;
       if (!existing.twitter && author.twitter) existing.twitter = author.twitter;
@@ -276,6 +295,25 @@ function MiladyAuthorsContent() {
     [isEditMode]
   );
 
+  // Modal for viewing author proposals
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedAuthor, setSelectedAuthor] = useState<Author | null>(null);
+
+  const openAuthorModal = useCallback(
+    (author: Author) => {
+      setSelectedAuthor(author);
+      onOpen();
+    },
+    [onOpen]
+  );
+
+  const selectedProposals = useMemo(() => {
+    if (!selectedAuthor) return [];
+    const proposals = selectedAuthor.proposals;
+    if (onlyFinal) return proposals.filter((p) => p.status === "Final");
+    return proposals;
+  }, [selectedAuthor, onlyFinal]);
+
   const exportMilady = useCallback(() => {
     const miladyAuthors = allAuthors
       .filter((a) => miladySet.has(a.handle.toLowerCase()))
@@ -418,13 +456,36 @@ function MiladyAuthorsContent() {
                       <Td>
                         <LazyAvatarGroup author={author} />
                       </Td>
-                      <Td fontWeight="medium">
-                        {author.type === "handle"
-                          ? `@${author.handle}`
-                          : author.handle}
+                      <Td
+                        fontWeight="medium"
+                        cursor="pointer"
+                        onClick={() => openAuthorModal(author)}
+                        role="group"
+                      >
+                        <HStack spacing={2}>
+                          <Text _groupHover={{ textDecoration: "underline" }}>
+                            {author.type === "handle"
+                              ? `@${author.handle}`
+                              : author.handle}
+                          </Text>
+                          <Text
+                            fontSize="xs"
+                            color="blue.300"
+                            opacity={0}
+                            _groupHover={{ opacity: 1 }}
+                            transition="opacity 0.15s"
+                          >
+                            View Proposals
+                          </Text>
+                        </HStack>
                       </Td>
                       <Td isNumeric>
-                        <Badge colorScheme="purple">
+                        <Badge
+                          colorScheme="purple"
+                          cursor="pointer"
+                          _hover={{ opacity: 0.8 }}
+                          onClick={() => openAuthorModal(author)}
+                        >
                           {getCount(author)}
                         </Badge>
                       </Td>
@@ -463,6 +524,48 @@ function MiladyAuthorsContent() {
           </Box>
         </VStack>
       </Container>
+
+      <Modal isOpen={isOpen} onClose={onClose} size="4xl" scrollBehavior="inside">
+        <ModalOverlay />
+        <ModalContent bg="bg.800">
+          <ModalHeader>
+            {selectedAuthor && (
+              <HStack>
+                <Text>
+                  {selectedAuthor.type === "handle"
+                    ? `@${selectedAuthor.handle}`
+                    : selectedAuthor.handle}
+                </Text>
+                <Badge colorScheme="purple">
+                  {selectedProposals.length} proposal
+                  {selectedProposals.length !== 1 ? "s" : ""}
+                </Badge>
+                {onlyFinal && (
+                  <Badge colorScheme="green">Final only</Badge>
+                )}
+              </HStack>
+            )}
+          </ModalHeader>
+          <ModalCloseButton />
+          <ModalBody pb={6}>
+            <Wrap spacing={3}>
+              {selectedProposals.map((p) => {
+                const eipType =
+                  p.prefix === "rip"
+                    ? EIPType.RIP
+                    : p.prefix === "caip"
+                      ? EIPType.CAIP
+                      : EIPType.EIP;
+                return (
+                  <WrapItem key={`${p.prefix}-${p.number}`}>
+                    <EIPGridItem eipNo={p.number} type={eipType} />
+                  </WrapItem>
+                );
+              })}
+            </Wrap>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </Layout>
   );
 }
