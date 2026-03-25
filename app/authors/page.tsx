@@ -264,6 +264,35 @@ function MiladyAuthorsContent() {
     [onlyFinal]
   );
 
+  // Use allAuthorsRaw (unfiltered by "Only Final") so stats are always complete
+  const stats = useMemo(() => {
+    const miladyAuthors = allAuthorsRaw.filter((a) =>
+      miladySet.has(a.handle.toLowerCase())
+    );
+    const nonMiladyAuthors = allAuthorsRaw.filter(
+      (a) => !miladySet.has(a.handle.toLowerCase())
+    );
+
+    const sum = (arr: Author[], key: "count" | "finalCount") =>
+      arr.reduce((s, a) => s + a[key], 0);
+
+    const totalAll = sum(allAuthorsRaw, "count");
+    const finalAll = sum(allAuthorsRaw, "finalCount");
+    const totalMilady = sum(miladyAuthors, "count");
+    const finalMilady = sum(miladyAuthors, "finalCount");
+    const totalOther = sum(nonMiladyAuthors, "count");
+    const finalOther = sum(nonMiladyAuthors, "finalCount");
+
+    const rate = (final: number, total: number) =>
+      total > 0 ? (final / total) * 100 : 0;
+
+    return {
+      overall: { total: totalAll, final: finalAll, rate: rate(finalAll, totalAll) },
+      milady: { total: totalMilady, final: finalMilady, rate: rate(finalMilady, totalMilady) },
+      other: { total: totalOther, final: finalOther, rate: rate(finalOther, totalOther) },
+    };
+  }, [allAuthorsRaw, miladySet]);
+
   const { totalProposals, miladyProposals, miladyPercent } = useMemo(() => {
     const total = allAuthors.reduce((sum, a) => sum + getCount(a), 0);
     const milady = allAuthors
@@ -377,6 +406,43 @@ function MiladyAuthorsContent() {
             </Text>
           </HStack>
 
+          {/* Acceptance Rate Leaderboard */}
+          <Box
+            bg="bg.800"
+            borderRadius="lg"
+            border="1px"
+            borderColor="whiteAlpha.200"
+            p={4}
+          >
+            <Text fontSize="sm" fontWeight="semibold" mb={4}>
+              Acceptance Rate (Final / Proposed)
+            </Text>
+            <VStack spacing={3} align="stretch">
+              {[
+                { label: "Milady Authors", ...stats.milady, color: "purple" },
+                { label: "Other Authors", ...stats.other, color: "gray" },
+                { label: "Overall", ...stats.overall, color: "blue" },
+              ].map((row) => (
+                <Box key={row.label}>
+                  <HStack justify="space-between" mb={1}>
+                    <Text fontSize="sm">{row.label}</Text>
+                    <Text fontSize="sm" color="whiteAlpha.700">
+                      {row.final} / {row.total} ({row.rate.toFixed(1)}%)
+                    </Text>
+                  </HStack>
+                  <Progress
+                    value={row.rate}
+                    colorScheme={row.color}
+                    borderRadius="full"
+                    size="sm"
+                    bg="whiteAlpha.200"
+                  />
+                </Box>
+              ))}
+            </VStack>
+          </Box>
+
+          {/* Milady share of proposals */}
           <Box
             bg="bg.800"
             borderRadius="lg"
