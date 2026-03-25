@@ -16,12 +16,16 @@ const dirs = [
 interface AuthorEntry {
   handle: string;
   count: number;
+  finalCount: number;
   type: "handle" | "email";
   github?: string;
   twitter?: string;
 }
 
-const authorCounts: Record<string, { count: number; type: "handle" | "email" }> = {};
+const authorCounts: Record<
+  string,
+  { count: number; finalCount: number; type: "handle" | "email" }
+> = {};
 
 for (const { dir, prefix } of dirs) {
   if (!fs.existsSync(dir)) continue;
@@ -37,20 +41,24 @@ for (const { dir, prefix } of dirs) {
 
     if (!json.author) continue;
 
+    const isFinal = json.status === "Final";
+
     for (const authorEntry of json.author) {
       // Match (@handle) in parens first
       const handleMatch = authorEntry.match(/\(@(\w[\w-]*)\)/);
       if (handleMatch) {
         const handle = handleMatch[1];
-        authorCounts[handle] = authorCounts[handle] || { count: 0, type: "handle" };
+        authorCounts[handle] = authorCounts[handle] || { count: 0, finalCount: 0, type: "handle" };
         authorCounts[handle].count++;
+        if (isFinal) authorCounts[handle].finalCount++;
       } else {
         // Fall back to email address
         const emailMatch = authorEntry.match(/<([^>]+@[^>]+)>/);
         if (emailMatch) {
           const email = emailMatch[1];
-          authorCounts[email] = authorCounts[email] || { count: 0, type: "email" };
+          authorCounts[email] = authorCounts[email] || { count: 0, finalCount: 0, type: "email" };
           authorCounts[email].count++;
+          if (isFinal) authorCounts[email].finalCount++;
         }
       }
     }
@@ -58,9 +66,10 @@ for (const { dir, prefix } of dirs) {
 }
 
 const authors: AuthorEntry[] = Object.entries(authorCounts)
-  .map(([handle, { count, type }]) => ({
+  .map(([handle, { count, finalCount, type }]) => ({
     handle,
     count,
+    finalCount,
     type,
     ...(type === "handle"
       ? { github: `https://github.com/${handle}`, twitter: `https://x.com/${handle}` }

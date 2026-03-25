@@ -43,6 +43,7 @@ import customAuthors from "@/data/authors/custom-authors.json";
 interface Author {
   handle: string;
   count: number;
+  finalCount: number;
   type: "handle" | "email";
   github?: string;
   twitter?: string;
@@ -70,6 +71,7 @@ function processAuthors(raw: Author[]): Author[] {
     if (merged.has(primary)) {
       const existing = merged.get(primary)!;
       existing.count += author.count;
+      existing.finalCount += author.finalCount;
       // Keep github/twitter from whichever entry has them
       if (!existing.github && author.github) existing.github = author.github;
       if (!existing.twitter && author.twitter) existing.twitter = author.twitter;
@@ -153,16 +155,25 @@ function MiladyAuthorsContent() {
   const [activeFilter, setActiveFilter] = useState<Filter>(
     searchParams.get("filter") === "milady" ? "milady" : "all"
   );
+  const [onlyFinal, setOnlyFinal] = useState(
+    searchParams.get("status") === "final"
+  );
 
-  // Sync filter to/from URL search params
-  const updateFilter = useCallback(
-    (filter: Filter) => {
+  // Sync filters to/from URL search params
+  const updateParams = useCallback(
+    (filter: Filter, final: boolean) => {
       setActiveFilter(filter);
+      setOnlyFinal(final);
       const params = new URLSearchParams(searchParams.toString());
       if (filter === "milady") {
         params.set("filter", "milady");
       } else {
         params.delete("filter");
+      }
+      if (final) {
+        params.set("status", "final");
+      } else {
+        params.delete("status");
       }
       router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     },
@@ -216,22 +227,35 @@ function MiladyAuthorsContent() {
   // The active milady set depends on mode
   const miladySet = isEditMode ? editMiladySet : jsonMiladySet;
 
-  const allAuthors = useMemo(
+  const allAuthorsRaw = useMemo(
     () => processAuthors(authorsData as Author[]),
     []
   );
 
+  // When "Only Final" is on, filter out authors with 0 final proposals and re-sort
+  const allAuthors = useMemo(() => {
+    if (!onlyFinal) return allAuthorsRaw;
+    return allAuthorsRaw
+      .filter((a) => a.finalCount > 0)
+      .sort((a, b) => b.finalCount - a.finalCount);
+  }, [allAuthorsRaw, onlyFinal]);
+
+  const getCount = useCallback(
+    (a: Author) => (onlyFinal ? a.finalCount : a.count),
+    [onlyFinal]
+  );
+
   const { totalProposals, miladyProposals, miladyPercent } = useMemo(() => {
-    const total = allAuthors.reduce((sum, a) => sum + a.count, 0);
+    const total = allAuthors.reduce((sum, a) => sum + getCount(a), 0);
     const milady = allAuthors
       .filter((a) => miladySet.has(a.handle.toLowerCase()))
-      .reduce((sum, a) => sum + a.count, 0);
+      .reduce((sum, a) => sum + getCount(a), 0);
     return {
       totalProposals: total,
       miladyProposals: milady,
       miladyPercent: total > 0 ? (milady / total) * 100 : 0,
     };
-  }, [allAuthors, miladySet]);
+  }, [allAuthors, miladySet, getCount]);
 
   const filteredAuthors = useMemo(() => {
     if (activeFilter === "all") return allAuthors;
@@ -276,12 +300,12 @@ function MiladyAuthorsContent() {
             </Text>
           </Box>
 
-          <HStack spacing={2}>
+          <HStack spacing={2} flexWrap="wrap">
             <Button
               size="sm"
               variant={activeFilter === "all" ? "solid" : "outline"}
               colorScheme={activeFilter === "all" ? "blue" : "gray"}
-              onClick={() => updateFilter("all")}
+              onClick={() => updateParams("all", onlyFinal)}
             >
               All
             </Button>
@@ -289,9 +313,18 @@ function MiladyAuthorsContent() {
               size="sm"
               variant={activeFilter === "milady" ? "solid" : "outline"}
               colorScheme={activeFilter === "milady" ? "purple" : "gray"}
-              onClick={() => updateFilter("milady")}
+              onClick={() => updateParams("milady", onlyFinal)}
             >
               Only Milady
+            </Button>
+            <Box borderLeft="1px" borderColor="whiteAlpha.300" h="24px" />
+            <Button
+              size="sm"
+              variant={onlyFinal ? "solid" : "outline"}
+              colorScheme={onlyFinal ? "green" : "gray"}
+              onClick={() => updateParams(activeFilter, !onlyFinal)}
+            >
+              Only Final
             </Button>
           </HStack>
 
@@ -391,7 +424,9 @@ function MiladyAuthorsContent() {
                           : author.handle}
                       </Td>
                       <Td isNumeric>
-                        <Badge colorScheme="purple">{author.count}</Badge>
+                        <Badge colorScheme="purple">
+                          {getCount(author)}
+                        </Badge>
                       </Td>
                       <Td>
                         {author.github && (
