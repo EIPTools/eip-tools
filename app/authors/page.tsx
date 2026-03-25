@@ -23,6 +23,9 @@ import {
   HStack,
   VStack,
   Checkbox,
+  Input,
+  InputGroup,
+  InputLeftElement,
   Progress,
   Modal,
   ModalOverlay,
@@ -68,6 +71,7 @@ interface Author {
 }
 
 type Filter = "all" | "milady";
+type SortBy = "proposals" | "acceptance";
 
 const STORAGE_KEY = "milady-authors";
 
@@ -177,26 +181,43 @@ function MiladyAuthorsContent() {
   const [onlyFinal, setOnlyFinal] = useState(
     searchParams.get("status") === "final"
   );
+  const [sortBy, setSortBy] = useState<SortBy>(
+    searchParams.get("sort") === "acceptance" ? "acceptance" : "proposals"
+  );
+  const [searchQuery, setSearchQuery] = useState("");
+  const [minProposals, setMinProposals] = useState(
+    parseInt(searchParams.get("min") || "1") || 1
+  );
 
-  // Sync filters to/from URL search params
-  const updateParams = useCallback(
-    (filter: Filter, final: boolean) => {
-      setActiveFilter(filter);
-      setOnlyFinal(final);
+  // Build URL params from current state
+  const syncUrl = useCallback(
+    (overrides?: { filter?: Filter; final?: boolean; sort?: SortBy; min?: number }) => {
+      const filter = overrides?.filter ?? activeFilter;
+      const final = overrides?.final ?? onlyFinal;
+      const sort = overrides?.sort ?? sortBy;
+      const min = overrides?.min ?? minProposals;
+
+      if (overrides?.filter !== undefined) setActiveFilter(filter);
+      if (overrides?.final !== undefined) setOnlyFinal(final);
+      if (overrides?.sort !== undefined) setSortBy(sort);
+      if (overrides?.min !== undefined) setMinProposals(min);
+
       const params = new URLSearchParams(searchParams.toString());
-      if (filter === "milady") {
-        params.set("filter", "milady");
-      } else {
-        params.delete("filter");
-      }
-      if (final) {
-        params.set("status", "final");
-      } else {
-        params.delete("status");
-      }
+      filter === "milady" ? params.set("filter", "milady") : params.delete("filter");
+      final ? params.set("status", "final") : params.delete("status");
+      sort === "acceptance" ? params.set("sort", "acceptance") : params.delete("sort");
+      min > 1 ? params.set("min", String(min)) : params.delete("min");
       router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     },
-    [searchParams, router, pathname]
+    [searchParams, router, pathname, activeFilter, onlyFinal, sortBy, minProposals]
+  );
+
+  // Backwards-compatible wrapper
+  const updateParams = useCallback(
+    (filter: Filter, final: boolean, sort?: SortBy) => {
+      syncUrl({ filter, final, ...(sort !== undefined ? { sort } : {}) });
+    },
+    [syncUrl]
   );
 
   // Base set from the JSON file, resolving aliases to primary handles
@@ -264,6 +285,11 @@ function MiladyAuthorsContent() {
     [onlyFinal]
   );
 
+  const getAcceptanceRate = useCallback(
+    (a: Author) => (a.count > 0 ? (a.finalCount / a.count) * 100 : 0),
+    []
+  );
+
   // Use allAuthorsRaw (unfiltered by "Only Final") so stats are always complete
   const stats = useMemo(() => {
     const miladyAuthors = allAuthorsRaw.filter((a) =>
@@ -306,9 +332,24 @@ function MiladyAuthorsContent() {
   }, [allAuthors, miladySet, getCount]);
 
   const filteredAuthors = useMemo(() => {
-    if (activeFilter === "all") return allAuthors;
-    return allAuthors.filter((a) => miladySet.has(a.handle.toLowerCase()));
-  }, [activeFilter, allAuthors, miladySet]);
+    let result =
+      activeFilter === "all"
+        ? [...allAuthors]
+        : allAuthors.filter((a) => miladySet.has(a.handle.toLowerCase()));
+    if (minProposals > 1) {
+      result = result.filter((a) => getCount(a) >= minProposals);
+    }
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      result = result.filter((a) => a.handle.toLowerCase().includes(q));
+    }
+    if (sortBy === "acceptance") {
+      result = [...result].sort(
+        (a, b) => getAcceptanceRate(b) - getAcceptanceRate(a) || b.finalCount - a.finalCount
+      );
+    }
+    return result;
+  }, [activeFilter, allAuthors, miladySet, sortBy, getAcceptanceRate, searchQuery, minProposals, getCount]);
 
   const toggleMilady = useCallback(
     (handle: string, checked: boolean) => {
@@ -478,13 +519,80 @@ function MiladyAuthorsContent() {
             <Table variant="simple" size="sm">
               <Thead>
                 <Tr>
-                  <Th w="80px" textAlign="center">
-                    Is Milady?
+                  <Th w="80px" textAlign="center" whiteSpace="nowrap">
+                    Milady?
                   </Th>
                   <Th w="50px">#</Th>
                   <Th w="80px"></Th>
-                  <Th>Handle</Th>
-                  <Th isNumeric>Proposals</Th>
+                  <Th>
+                    <HStack spacing={3}>
+                      <Text>Handle</Text>
+                      <InputGroup size="xs" maxW="160px">
+                        <InputLeftElement pointerEvents="none" color="whiteAlpha.400">
+                          🔍
+                        </InputLeftElement>
+                        <Input
+                          placeholder="Search..."
+                          value={searchQuery}
+                          onChange={(e) => setSearchQuery(e.target.value)}
+                          variant="flushed"
+                          borderColor="whiteAlpha.300"
+                          _focus={{ borderColor: "blue.300" }}
+                          fontWeight="normal"
+                          textTransform="none"
+                        />
+                      </InputGroup>
+                    </HStack>
+                  </Th>
+                  <Th
+                    isNumeric
+                    whiteSpace="nowrap"
+                  >
+                    <VStack spacing={1} align="flex-end">
+                      <Text
+                        cursor="pointer"
+                        _hover={{ color: "white" }}
+                        onClick={() =>
+                          updateParams(activeFilter, onlyFinal, "proposals")
+                        }
+                      >
+                        Proposals {sortBy === "proposals" ? "▼" : ""}
+                      </Text>
+                      <HStack spacing={1}>
+                        <Text fontSize="xs" fontWeight="normal" textTransform="none" color="whiteAlpha.500">
+                          min:
+                        </Text>
+                        <Input
+                          size="xs"
+                          type="number"
+                          min={1}
+                          value={minProposals}
+                          onChange={(e) => {
+                            const val = Math.max(1, parseInt(e.target.value) || 1);
+                            syncUrl({ min: val });
+                          }}
+                          w="40px"
+                          textAlign="center"
+                          variant="flushed"
+                          borderColor="whiteAlpha.300"
+                          _focus={{ borderColor: "blue.300" }}
+                          fontWeight="normal"
+                          textTransform="none"
+                        />
+                      </HStack>
+                    </VStack>
+                  </Th>
+                  <Th
+                    isNumeric
+                    cursor="pointer"
+                    whiteSpace="nowrap"
+                    _hover={{ color: "white" }}
+                    onClick={() =>
+                      updateParams(activeFilter, onlyFinal, "acceptance")
+                    }
+                  >
+                    Acceptance {sortBy === "acceptance" ? "▼" : ""}
+                  </Th>
                   <Th>GitHub</Th>
                   <Th>Twitter / X</Th>
                 </Tr>
@@ -554,6 +662,12 @@ function MiladyAuthorsContent() {
                         >
                           {getCount(author)}
                         </Badge>
+                      </Td>
+                      <Td isNumeric>
+                        <Text fontSize="sm" color="whiteAlpha.700">
+                          {author.finalCount}/{author.count}{" "}
+                          ({getAcceptanceRate(author).toFixed(0)}%)
+                        </Text>
                       </Td>
                       <Td>
                         {author.github && (
