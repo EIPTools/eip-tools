@@ -6245,9 +6245,23 @@
       "isERC": true
     },
     {
+      "id": "eip-7753",
+      "eipNo": "7753",
+      "title": "Proof-Based Escrow V2 Standard",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7754",
       "eipNo": "7754",
       "title": "Tamperproof Extension Wallets API (TWIST)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7755",
+      "eipNo": "7755",
+      "title": "Kinetic Agent Reputation Score Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -8886,7 +8900,7 @@
     {
       "id": "eip-8188",
       "eipNo": "8188",
-      "title": "Token Transfer With Signature",
+      "title": "Physical Commodity-Backed Token",
       "status": "Draft",
       "isERC": true
     },
@@ -8896,6 +8910,13 @@
       "title": "snap/2 - BAL-Based State Healing",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8190",
+      "eipNo": "8190",
+      "title": "Payment Channels with Signed Vouchers",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8191",
@@ -8956,9 +8977,9 @@
     {
       "id": "eip-8200",
       "eipNo": "8200",
-      "title": "Agent Conditional Settlement Interface",
+      "title": "EVMification",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8201",
@@ -8975,9 +8996,51 @@
       "isERC": false
     },
     {
+      "id": "eip-8203",
+      "eipNo": "8203",
+      "title": "Agent Offchain Conditional Settlement",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8204",
       "eipNo": "8204",
       "title": "Token Payments",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8205",
+      "eipNo": "8205",
+      "title": "Withdrawal credentials preregistration",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8208",
+      "eipNo": "8208",
+      "title": "Increase Maximum Contract Size to 64KiB",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8209",
+      "eipNo": "8209",
+      "title": "Commit-Reveal Transaction Frames",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8210",
+      "eipNo": "8210",
+      "title": "Agent Assurance",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8213",
+      "eipNo": "8213",
+      "title": "Wallet Signature and Calldata Digest Display",
       "status": "Draft",
       "isERC": true
     },
@@ -9001,6 +9064,13 @@
       "title": "WeissChannels - Cross-Chain Execution for ERC-4337 Accounts",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-9000",
+      "eipNo": "9000",
+      "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-9431",
@@ -13484,8 +13554,16 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7753",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-7754",
       "target": "eip-1193"
+    },
+    {
+      "source": "eip-7755",
+      "target": "eip-165"
     },
     {
       "source": "eip-7756",
@@ -14344,6 +14422,10 @@
       "target": "eip-7623"
     },
     {
+      "source": "eip-7981",
+      "target": "eip-7976"
+    },
+    {
       "source": "eip-7982",
       "target": "eip-3668"
     },
@@ -15100,10 +15182,6 @@
       "target": "eip-1271"
     },
     {
-      "source": "eip-8114",
-      "target": "eip-7564"
-    },
-    {
       "source": "eip-8115",
       "target": "eip-1559"
     },
@@ -15621,15 +15699,31 @@
     },
     {
       "source": "eip-8188",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8188",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8188",
       "target": "eip-712"
     },
     {
       "source": "eip-8188",
-      "target": "eip-7204"
+      "target": "eip-721"
     },
     {
       "source": "eip-8189",
       "target": "eip-7928"
+    },
+    {
+      "source": "eip-8190",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8190",
+      "target": "eip-712"
     },
     {
       "source": "eip-8191",
@@ -15716,16 +15810,16 @@
       "target": "eip-4844"
     },
     {
-      "source": "eip-8200",
-      "target": "eip-165"
+      "source": "eip-8198",
+      "target": "eip-7892"
     },
     {
       "source": "eip-8200",
-      "target": "eip-712"
+      "target": "eip-2537"
     },
     {
       "source": "eip-8200",
-      "target": "eip-1271"
+      "target": "eip-7666"
     },
     {
       "source": "eip-8201",
@@ -15753,11 +15847,67 @@
     },
     {
       "source": "eip-8202",
-      "target": "eip-7951"
+      "target": "eip-7976"
     },
     {
-      "source": "eip-8202",
-      "target": "eip-7976"
+      "source": "eip-8203",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8203",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8203",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8203",
+      "target": "eip-5267"
+    },
+    {
+      "source": "eip-8205",
+      "target": "eip-4788"
+    },
+    {
+      "source": "eip-8205",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-8205",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-8205",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8208",
+      "target": "eip-170"
+    },
+    {
+      "source": "eip-8208",
+      "target": "eip-3860"
+    },
+    {
+      "source": "eip-8208",
+      "target": "eip-7954"
+    },
+    {
+      "source": "eip-8209",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8210",
+      "target": "eip-8183"
+    },
+    {
+      "source": "eip-8213",
+      "target": "eip-191"
+    },
+    {
+      "source": "eip-8213",
+      "target": "eip-712"
     },
     {
       "source": "eip-8402",
