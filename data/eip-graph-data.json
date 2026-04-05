@@ -6240,7 +6240,7 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "Lot-based Token",
+      "title": "0G Cross-Chain Bridge Intent Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -7235,7 +7235,7 @@
       "id": "eip-7919",
       "eipNo": "7919",
       "title": "Pureth Meta",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -7872,7 +7872,7 @@
       "id": "eip-8015",
       "eipNo": "8015",
       "title": "Remove `deposit` and `eth1data` fields",
-      "status": "Draft",
+      "status": "Stagnant",
       "isERC": false
     },
     {
@@ -8117,7 +8117,7 @@
       "id": "eip-8063",
       "eipNo": "8063",
       "title": "Groups - Membership Tokens",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8565,14 +8565,14 @@
       "id": "eip-8134",
       "eipNo": "8134",
       "title": "Hardfork Meta - BPO1",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-8135",
       "eipNo": "8135",
       "title": "Hardfork Meta - BPO2",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -8711,7 +8711,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -8977,9 +8977,9 @@
     {
       "id": "eip-8200",
       "eipNo": "8200",
-      "title": "EVMification",
+      "title": "Agent QUIC/HTTP3 Transport Endpoint Registry",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8201",
@@ -9038,11 +9038,32 @@
       "isERC": true
     },
     {
+      "id": "eip-8212",
+      "eipNo": "8212",
+      "title": "Block-scoped transient storage opcodes",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8213",
       "eipNo": "8213",
       "title": "Wallet Signature and Calldata Digest Display",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8214",
+      "eipNo": "8214",
+      "title": "Buy Now Pay Later (BNPL)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8215",
+      "eipNo": "8215",
+      "title": "Hash-Committed Account",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8402",
@@ -13554,6 +13575,10 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7752",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-7753",
       "target": "eip-165"
     },
@@ -15503,7 +15528,15 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -15815,11 +15848,7 @@
     },
     {
       "source": "eip-8200",
-      "target": "eip-2537"
-    },
-    {
-      "source": "eip-8200",
-      "target": "eip-7666"
+      "target": "eip-165"
     },
     {
       "source": "eip-8201",
@@ -15902,12 +15931,40 @@
       "target": "eip-8183"
     },
     {
+      "source": "eip-8212",
+      "target": "eip-1153"
+    },
+    {
+      "source": "eip-8212",
+      "target": "eip-2200"
+    },
+    {
       "source": "eip-8213",
       "target": "eip-191"
     },
     {
       "source": "eip-8213",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8214",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8214",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8214",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8214",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8215",
+      "target": "eip-2718"
     },
     {
       "source": "eip-8402",
