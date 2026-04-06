@@ -23,6 +23,29 @@ export interface EipMetadataJson {
   requires: string[];
 }
 
+export interface AuthorDirectoryEntry {
+  handle: string;
+  count: number;
+  finalCount: number;
+  type: "handle" | "email";
+  proposals: {
+    number: string;
+    prefix: string;
+    status: string;
+  }[];
+  github?: string;
+  twitter?: string;
+}
+
+export interface ProposalAuthorProfile {
+  raw: string;
+  displayName: string;
+  handle?: string;
+  github?: string;
+  twitter?: string;
+  avatarUrl?: string;
+}
+
 export enum EIPType {
   EIP = "EIP",
   RIP = "RIP",

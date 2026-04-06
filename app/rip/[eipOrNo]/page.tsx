@@ -45,6 +45,7 @@ import { validRIPs, validRIPsArray } from "@/data/validRIPs";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
+import { AuthorsMetadata } from "@/components/AuthorsMetadata";
 
 const RIP = ({
   params: { eipOrNo },
@@ -355,26 +356,7 @@ const RIP = ({
                 <Tr>
                   <Th>Authors</Th>
                   <Td>
-                    <Box
-                      maxH="10rem"
-                      overflowY={"auto"}
-                      p="2px"
-                      sx={{
-                        "::-webkit-scrollbar": {
-                          w: "10px",
-                        },
-                        "::-webkit-scrollbar-track ": {
-                          bg: "gray.400",
-                          rounded: "md",
-                        },
-                        "::-webkit-scrollbar-thumb": {
-                          bg: "gray.500",
-                          rounded: "md",
-                        },
-                      }}
-                    >
-                      {metadataJson.author.join(", ")}
-                    </Box>
+                    <AuthorsMetadata authors={metadataJson.author} />
                   </Td>
                 </Tr>
               )}

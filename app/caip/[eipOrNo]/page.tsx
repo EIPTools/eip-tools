@@ -45,6 +45,7 @@ import { validCAIPs, validCAIPsArray } from "@/data/validCAIPs";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
+import { AuthorsMetadata } from "@/components/AuthorsMetadata";
 
 const CAIP = ({
   params: { eipOrNo },
@@ -356,26 +357,7 @@ const CAIP = ({
                 <Tr>
                   <Th>Authors</Th>
                   <Td>
-                    <Box
-                      maxH="10rem"
-                      overflowY={"auto"}
-                      p="2px"
-                      sx={{
-                        "::-webkit-scrollbar": {
-                          w: "10px",
-                        },
-                        "::-webkit-scrollbar-track ": {
-                          bg: "gray.400",
-                          rounded: "md",
-                        },
-                        "::-webkit-scrollbar-thumb": {
-                          bg: "gray.500",
-                          rounded: "md",
-                        },
-                      }}
-                    >
-                      {metadataJson.author.join(", ")}
-                    </Box>
+                    <AuthorsMetadata authors={metadataJson.author} />
                   </Td>
                 </Tr>
               )}

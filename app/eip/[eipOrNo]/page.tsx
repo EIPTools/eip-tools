@@ -49,6 +49,7 @@ import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { CopyToClipboard } from "@/components/CopyToClipboard";
 import { EIPDependencyGraph } from "@/components/EIPDependencyGraph";
+import { AuthorsMetadata } from "@/components/AuthorsMetadata";
 
 const EIP = ({
   params: { eipOrNo },
@@ -402,7 +403,9 @@ const EIP = ({
           {/* Metadata Section Container */}
           <Box
             mt={6}
-            p={6}
+            px={6}
+            pt={0}
+            pb={6}
             bg="blackAlpha.300"
             border="1px solid"
             borderColor="whiteAlpha.200"
@@ -414,26 +417,7 @@ const EIP = ({
                 <Tr>
                   <Th>Authors</Th>
                   <Td>
-                    <Box
-                      maxH="10rem"
-                      overflowY={"auto"}
-                      p="2px"
-                      sx={{
-                        "::-webkit-scrollbar": {
-                          w: "10px",
-                        },
-                        "::-webkit-scrollbar-track ": {
-                          bg: "gray.400",
-                          rounded: "md",
-                        },
-                        "::-webkit-scrollbar-thumb": {
-                          bg: "gray.500",
-                          rounded: "md",
-                        },
-                      }}
-                    >
-                      {metadataJson.author.join(", ")}
-                    </Box>
+                    <AuthorsMetadata authors={metadataJson.author} />
                   </Td>
                 </Tr>
               )}

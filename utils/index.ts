@@ -1,5 +1,71 @@
 import { Metadata } from "next";
-import { EipMetadataJson } from "@/types";
+import authorsData from "@/data/authors/authors.json";
+import customAuthors from "@/data/authors/custom-authors.json";
+import {
+  AuthorDirectoryEntry,
+  EipMetadataJson,
+  ProposalAuthorProfile,
+} from "@/types";
+
+const aliasMap = new Map<string, string>();
+for (const entry of customAuthors.aliases) {
+  for (const alias of entry.aliases) {
+    aliasMap.set(alias.toLowerCase(), entry.primary);
+  }
+}
+
+const authorDirectory = new Map<string, AuthorDirectoryEntry>();
+for (const author of authorsData as AuthorDirectoryEntry[]) {
+  const primary = aliasMap.get(author.handle.toLowerCase()) ?? author.handle;
+  const key = primary.toLowerCase();
+  const existing = authorDirectory.get(key);
+
+  if (existing) {
+    if (!existing.github && author.github) {
+      existing.github = author.github;
+    }
+    if (!existing.twitter && author.twitter) {
+      existing.twitter = author.twitter;
+    }
+    continue;
+  }
+
+  authorDirectory.set(key, {
+    ...author,
+    handle: primary,
+    github: author.github || undefined,
+    twitter: author.twitter || undefined,
+  });
+}
+
+for (const [handle, twitterHandle] of Object.entries(customAuthors.twitterOverrides)) {
+  const author = authorDirectory.get(handle.toLowerCase());
+  if (author) {
+    author.twitter = `https://x.com/${twitterHandle}`;
+  }
+}
+
+const getGithubAvatarUrl = (githubUrl?: string) => {
+  if (!githubUrl) return undefined;
+
+  const handle = githubUrl.split("/").pop();
+  return handle ? `https://github.com/${handle}.png?size=96` : undefined;
+};
+
+const getTwitterAvatarUrl = (twitterUrl?: string) => {
+  if (!twitterUrl) return undefined;
+
+  const handle = twitterUrl.split("/").pop();
+  return handle ? `https://unavatar.io/x/${handle}` : undefined;
+};
+
+const parseAuthor = (author: string) => {
+  const handleMatch = author.match(/\(@([^)]+)\)/);
+  const handle = handleMatch?.[1];
+  const displayName = author.replace(/\s*\(@[^)]+\)/, "").trim() || author.trim();
+
+  return { displayName, handle };
+};
 
 export const extractEipNumber = (eipOrNo: string, prefix: string): string => {
   const match = eipOrNo.match(
@@ -56,6 +122,31 @@ export const convertMetadataToJson = (
   });
 
   return jsonObject as EipMetadataJson;
+};
+
+export const getProposalAuthorProfiles = (
+  authors: string[] = []
+): ProposalAuthorProfile[] => {
+  return authors.map((raw) => {
+    const { displayName, handle } = parseAuthor(raw);
+    const author = handle
+      ? authorDirectory.get(
+          (aliasMap.get(handle.toLowerCase()) ?? handle).toLowerCase()
+        )
+      : undefined;
+
+    const github = author?.github;
+    const twitter = author?.twitter;
+
+    return {
+      raw,
+      displayName,
+      handle: author?.handle ?? handle,
+      github,
+      twitter,
+      avatarUrl: getGithubAvatarUrl(github) ?? getTwitterAvatarUrl(twitter),
+    };
+  });
 };
 
 export const STATUS_COLORS = {

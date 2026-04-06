@@ -23,6 +23,7 @@ import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EIPStatus, convertMetadataToJson, extractMetadata } from "@/utils";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
+import { AuthorsMetadata } from "@/components/AuthorsMetadata";
 
 const getValueBasedOnDate = <T,>(values: T[]): T => {
   const today = new Date();
@@ -193,26 +194,10 @@ export const EIPOfTheDay = () => {
                       <Tr>
                         <Th>Authors</Th>
                         <Td>
-                          <Box
-                            maxH="4rem"
-                            overflowY={"auto"}
-                            p="2px"
-                            sx={{
-                              "::-webkit-scrollbar": {
-                                w: "10px",
-                              },
-                              "::-webkit-scrollbar-track ": {
-                                bg: "gray.400",
-                                rounded: "md",
-                              },
-                              "::-webkit-scrollbar-thumb": {
-                                bg: "gray.500",
-                                rounded: "md",
-                              },
-                            }}
-                          >
-                            {metadataJson.author.join(", ")}
-                          </Box>
+                          <AuthorsMetadata
+                            authors={metadataJson.author}
+                            maxHeight="4rem"
+                          />
                         </Td>
                       </Tr>
                     )}
