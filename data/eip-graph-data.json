@@ -1275,6 +1275,13 @@
       "isERC": true
     },
     {
+      "id": "eip-1656",
+      "eipNo": "1656",
+      "title": "On-Chain AI Governance Interface",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-1679",
       "eipNo": "1679",
       "title": "\"Hardfork Meta: Istanbul\"",
@@ -2153,6 +2160,13 @@
       "id": "eip-2780",
       "eipNo": "2780",
       "title": "Reduce intrinsic transaction gas",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7708",
+      "eipNo": "7708",
+      "title": "ETH transfers and burns emit a log",
       "status": "Draft",
       "isERC": false
     },
@@ -5013,13 +5027,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7708",
-      "eipNo": "7708",
-      "title": "ETH transfers and burns emit a log",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-7506",
       "eipNo": "7506",
       "title": "Trusted Hint Registry",
@@ -5849,7 +5856,7 @@
       "id": "eip-7673",
       "eipNo": "7673",
       "title": "Distinguishable base256emoji Addresses",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6240,14 +6247,14 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "0G Cross-Chain Bridge Intent Standard",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-7753",
       "eipNo": "7753",
-      "title": "Proof-Based Escrow V2 Standard",
+      "title": "Proof-Based Escrow V2",
       "status": "Draft",
       "isERC": true
     },
@@ -6261,7 +6268,7 @@
     {
       "id": "eip-7755",
       "eipNo": "7755",
-      "title": "Kinetic Agent Reputation Score Standard",
+      "title": "Kinetic Agent Reputation Score",
       "status": "Draft",
       "isERC": true
     },
@@ -6275,7 +6282,7 @@
     {
       "id": "eip-7757",
       "eipNo": "7757",
-      "title": "Instinct-Based Automatic Transactions",
+      "title": "H3 Geospatial Agent Routing",
       "status": "Draft",
       "isERC": true
     },
@@ -8711,7 +8718,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -8977,9 +8984,9 @@
     {
       "id": "eip-8200",
       "eipNo": "8200",
-      "title": "Agent QUIC/HTTP3 Transport Endpoint Registry",
+      "title": "EVMification",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8201",
@@ -9038,6 +9045,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8211",
+      "eipNo": "8211",
+      "title": "Smart Batching",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8212",
       "eipNo": "8212",
       "title": "Block-scoped transient storage opcodes",
@@ -9064,6 +9078,34 @@
       "title": "Hash-Committed Account",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8216",
+      "eipNo": "8216",
+      "title": "Slot-Based Equipment for ERC-6551 Accounts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8218",
+      "eipNo": "8218",
+      "title": "Builder Discovery",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8219",
+      "eipNo": "8219",
+      "title": "Checked Arithmetic Opcodes",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8221",
+      "eipNo": "8221",
+      "title": "Wallet Title Deeds",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8402",
@@ -9166,7 +9208,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9645,6 +9687,10 @@
     {
       "source": "eip-1633",
       "target": "eip-721"
+    },
+    {
+      "source": "eip-1656",
+      "target": "eip-165"
     },
     {
       "source": "eip-1679",
@@ -10133,6 +10179,10 @@
     {
       "source": "eip-2780",
       "target": "eip-2930"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-7708"
     },
     {
       "source": "eip-2786",
@@ -13575,10 +13625,6 @@
       "target": "eip-712"
     },
     {
-      "source": "eip-7752",
-      "target": "eip-165"
-    },
-    {
       "source": "eip-7753",
       "target": "eip-165"
     },
@@ -13597,6 +13643,10 @@
     {
       "source": "eip-7756",
       "target": "eip-4750"
+    },
+    {
+      "source": "eip-7757",
+      "target": "eip-165"
     },
     {
       "source": "eip-7758",
@@ -15183,10 +15233,6 @@
       "target": "eip-1271"
     },
     {
-      "source": "eip-8112",
-      "target": "eip-7204"
-    },
-    {
       "source": "eip-8113",
       "target": "eip-4626"
     },
@@ -15440,6 +15486,10 @@
     },
     {
       "source": "eip-8141",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8141",
       "target": "eip-2718"
     },
     {
@@ -15528,15 +15578,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -15843,12 +15885,32 @@
       "target": "eip-4844"
     },
     {
+      "source": "eip-8197",
+      "target": "eip-7702"
+    },
+    {
       "source": "eip-8198",
       "target": "eip-7892"
     },
     {
-      "source": "eip-8200",
+      "source": "eip-8199",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8199",
+      "target": "eip-173"
+    },
+    {
+      "source": "eip-8199",
+      "target": "eip-8023"
+    },
+    {
+      "source": "eip-8200",
+      "target": "eip-2537"
+    },
+    {
+      "source": "eip-8200",
+      "target": "eip-7666"
     },
     {
       "source": "eip-8201",
@@ -15967,6 +16029,62 @@
       "target": "eip-2718"
     },
     {
+      "source": "eip-8216",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8216",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8216",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8216",
+      "target": "eip-6551"
+    },
+    {
+      "source": "eip-8218",
+      "target": "eip-2537"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-4906"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-5192"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-5267"
+    },
+    {
+      "source": "eip-8221",
+      "target": "eip-7739"
+    },
+    {
       "source": "eip-8402",
       "target": "eip-20"
     },
@@ -16032,7 +16150,15 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-8130"
     },
     {
       "source": "eip-0000",
