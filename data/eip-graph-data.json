@@ -7382,7 +7382,7 @@
       "id": "eip-7945",
       "eipNo": "7945",
       "title": "Confidential Transactions Supported Token",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8165,7 +8165,14 @@
     {
       "id": "eip-8070",
       "eipNo": "8070",
-      "title": "Sparse Blobpool",
+      "title": "eth/72 - Sparse Blobpool",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8159",
+      "eipNo": "8159",
+      "title": "eth/71 - Block Access List Exchange",
       "status": "Draft",
       "isERC": false
     },
@@ -8522,8 +8529,8 @@
     {
       "id": "eip-8126",
       "eipNo": "8126",
-      "title": "AI Agent Registration and Verification",
-      "status": "Draft",
+      "title": "AI Agent Verification",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8709,13 +8716,6 @@
       "isERC": false
     },
     {
-      "id": "eip-8159",
-      "eipNo": "8159",
-      "title": "eth/71 - Block Access List Exchange",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-8160",
       "eipNo": "8160",
       "title": "Primary Agent Registry",
@@ -8726,7 +8726,7 @@
       "id": "eip-8161",
       "eipNo": "8161",
       "title": "Transferable Tokenized Vault Requests",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8768,7 +8768,7 @@
       "id": "eip-8167",
       "eipNo": "8167",
       "title": "Modular Dispatch Proxies",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8802,7 +8802,7 @@
     {
       "id": "eip-8173",
       "eipNo": "8173",
-      "title": "Static Control Flow for the EVM",
+      "title": "Foundations of EVM Control Flow",
       "status": "Draft",
       "isERC": false
     },
@@ -9101,9 +9101,93 @@
       "isERC": false
     },
     {
+      "id": "eip-8220",
+      "eipNo": "8220",
+      "title": "Onchain AI Governance",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8221",
       "eipNo": "8221",
       "title": "Wallet Title Deeds",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8222",
+      "eipNo": "8222",
+      "title": "Lean Staking",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8223",
+      "eipNo": "8223",
+      "title": "Contract Payer Transaction",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8224",
+      "eipNo": "8224",
+      "title": "Counterfactual Transaction",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8226",
+      "eipNo": "8226",
+      "title": "Regulated Agent Mandate",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8227",
+      "eipNo": "8227",
+      "title": "Encrypted Token",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8228",
+      "eipNo": "8228",
+      "title": "Cryptographic Amnesia",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8229",
+      "eipNo": "8229",
+      "title": "FHE Computation Verification",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8230",
+      "eipNo": "8230",
+      "title": "Self-Explanatory Smart Contract Instruction",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8231",
+      "eipNo": "8231",
+      "title": "Post-Quantum Key Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8232",
+      "eipNo": "8232",
+      "title": "Onchain Agency for Represented RWAs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8233",
+      "eipNo": "8233",
+      "title": "Warden - Secure Token Custody Contract",
       "status": "Draft",
       "isERC": true
     },
@@ -14902,7 +14986,11 @@
     },
     {
       "source": "eip-8048",
-      "target": "eip-8042"
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8049",
+      "target": "eip-165"
     },
     {
       "source": "eip-8050",
@@ -15039,6 +15127,10 @@
     {
       "source": "eip-8070",
       "target": "eip-7870"
+    },
+    {
+      "source": "eip-8070",
+      "target": "eip-8159"
     },
     {
       "source": "eip-8074",
@@ -15338,7 +15430,15 @@
     },
     {
       "source": "eip-8126",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8126",
       "target": "eip-3009"
+    },
+    {
+      "source": "eip-8126",
+      "target": "eip-8004"
     },
     {
       "source": "eip-8127",
@@ -15367,10 +15467,6 @@
     {
       "source": "eip-8130",
       "target": "eip-2718"
-    },
-    {
-      "source": "eip-8130",
-      "target": "eip-7702"
     },
     {
       "source": "eip-8131",
@@ -15495,6 +15591,10 @@
     {
       "source": "eip-8141",
       "target": "eip-4844"
+    },
+    {
+      "source": "eip-8141",
+      "target": "eip-7997"
     },
     {
       "source": "eip-8142",
@@ -15869,6 +15969,10 @@
       "target": "eip-8004"
     },
     {
+      "source": "eip-8196",
+      "target": "eip-8126"
+    },
+    {
       "source": "eip-8197",
       "target": "eip-1559"
     },
@@ -15906,11 +16010,23 @@
     },
     {
       "source": "eip-8200",
+      "target": "eip-152"
+    },
+    {
+      "source": "eip-8200",
       "target": "eip-2537"
     },
     {
       "source": "eip-8200",
       "target": "eip-7666"
+    },
+    {
+      "source": "eip-8200",
+      "target": "eip-7823"
+    },
+    {
+      "source": "eip-8200",
+      "target": "eip-7883"
     },
     {
       "source": "eip-8201",
@@ -16049,6 +16165,10 @@
       "target": "eip-2537"
     },
     {
+      "source": "eip-8220",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8221",
       "target": "eip-165"
     },
@@ -16083,6 +16203,114 @@
     {
       "source": "eip-8221",
       "target": "eip-7739"
+    },
+    {
+      "source": "eip-8222",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-8222",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-8222",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8223",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8223",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8223",
+      "target": "eip-7708"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-196"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-197"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-3529"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-4788"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-6780"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-7708"
+    },
+    {
+      "source": "eip-8224",
+      "target": "eip-7904"
+    },
+    {
+      "source": "eip-8226",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8227",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8227",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8228",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8229",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8231",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8232",
+      "target": "eip-3643"
+    },
+    {
+      "source": "eip-8232",
+      "target": "eip-7943"
+    },
+    {
+      "source": "eip-8232",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8232",
+      "target": "eip-8183"
+    },
+    {
+      "source": "eip-8233",
+      "target": "eip-20"
     },
     {
       "source": "eip-8402",
