@@ -6247,14 +6247,14 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "Lot-based Token",
+      "title": "0G Cross-Chain Bridge Intent Standard",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-7753",
       "eipNo": "7753",
-      "title": "Proof-Based Escrow V2",
+      "title": "Proof-Based Escrow V2 Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -6268,7 +6268,7 @@
     {
       "id": "eip-7755",
       "eipNo": "7755",
-      "title": "Kinetic Agent Reputation Score",
+      "title": "Kinetic Agent Reputation Score Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -8718,7 +8718,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -8907,9 +8907,9 @@
     {
       "id": "eip-8188",
       "eipNo": "8188",
-      "title": "Physical Commodity-Backed Token",
+      "title": "State Tiering by Write Age",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8189",
@@ -9192,6 +9192,27 @@
       "isERC": true
     },
     {
+      "id": "eip-8234",
+      "eipNo": "8234",
+      "title": "Referable NFTs Authorization",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8235",
+      "eipNo": "8235",
+      "title": "EIP tagging",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8236",
+      "eipNo": "8236",
+      "title": "Deferred-Settlement Fungible Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8402",
       "eipNo": "8402",
       "title": "Agent Subscription Protocol",
@@ -9292,7 +9313,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Payer Web Service Capability",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -13709,6 +13730,10 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7752",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-7753",
       "target": "eip-165"
     },
@@ -15678,7 +15703,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -15874,19 +15911,11 @@
     },
     {
       "source": "eip-8188",
-      "target": "eip-20"
+      "target": "eip-2929"
     },
     {
       "source": "eip-8188",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-8188",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8188",
-      "target": "eip-721"
+      "target": "eip-2930"
     },
     {
       "source": "eip-8189",
@@ -16313,6 +16342,38 @@
       "target": "eip-20"
     },
     {
+      "source": "eip-8234",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8234",
+      "target": "eip-191"
+    },
+    {
+      "source": "eip-8234",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8234",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8234",
+      "target": "eip-5521"
+    },
+    {
+      "source": "eip-8235",
+      "target": "eip-1"
+    },
+    {
+      "source": "eip-8236",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8236",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8402",
       "target": "eip-20"
     },
@@ -16378,15 +16439,7 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-8130"
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",

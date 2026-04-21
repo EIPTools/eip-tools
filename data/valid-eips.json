@@ -7786,23 +7786,26 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
   },
   "7752": {
-    "title": "Lot-based Token",
+    "title": "0G Cross-Chain Bridge Intent Standard",
     "status": "Draft",
     "isERC": true,
-    "prNo": 579,
-    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-04-18T01:55:26.246Z"
-  },
-  "7753": {
-    "title": "Proof-Based Escrow V2",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 1627,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7753.md",
+    "prNo": 1628,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7752-zerog-bridge/ERCS/erc-7752.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-18T01:54:01.788Z"
+    "timestamp": "2026-04-21T07:00:42.518Z"
+  },
+  "7753": {
+    "title": "Proof-Based Escrow V2 Standard",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1629,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7753-escrow-v2/ERCS/erc-7753.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-04-21T07:00:42.385Z"
   },
   "7754": {
     "title": "Tamperproof Extension Wallets API (TWIST)",
@@ -7814,15 +7817,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7754.md"
   },
   "7755": {
-    "title": "Kinetic Agent Reputation Score",
+    "title": "Kinetic Agent Reputation Score Standard",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1627,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7755.md",
+    "prNo": 1631,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7755-kinetic-score/ERCS/erc-7755.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-18T01:54:02.252Z"
+    "timestamp": "2026-04-21T07:00:41.435Z"
   },
   "7756": {
     "title": "EOF/EVM Trace Specification",
@@ -11241,15 +11244,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-04-18T01:54:20.423Z"
+    "timestamp": "2026-04-21T07:00:46.268Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11392,7 +11398,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-18T01:54:16.851Z"
+    "timestamp": "2026-04-21T07:00:45.730Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11530,18 +11536,15 @@
     "timestamp": "2026-04-18T01:54:10.134Z"
   },
   "8188": {
-    "title": "Physical Commodity-Backed Token",
+    "title": "State Tiering by Write Age",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1624,
-    "markdownPath": "https://raw.githubusercontent.com/EdisonTKPcom/ERCs/refs/heads/add-erc-8188-pcbt/ERCS/erc-8188.md",
+    "prNo": 11390,
+    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/tiered-state/EIPS/eip-8188.md",
     "requires": [
-      "20",
-      "165",
-      "712",
-      "721"
+      "2929",
+      "2930"
     ],
-    "timestamp": "2026-04-18T01:54:02.352Z"
+    "timestamp": "2026-04-21T06:58:44.555Z"
   },
   "8189": {
     "title": "snap/2 - BAL-Based State Healing",
@@ -11866,7 +11869,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-18T01:53:52.860Z"
+    "timestamp": "2026-04-21T07:00:39.091Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12019,6 +12022,43 @@
     ],
     "timestamp": "2026-04-18T01:53:47.538Z"
   },
+  "8234": {
+    "title": "Referable NFTs Authorization",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1688,
+    "markdownPath": "https://raw.githubusercontent.com/richard-620/ERCs/refs/heads/master/ERCS/erc-8234.md",
+    "requires": [
+      "165",
+      "191",
+      "712",
+      "721",
+      "5521"
+    ],
+    "timestamp": "2026-04-21T07:00:37.831Z"
+  },
+  "8235": {
+    "title": "EIP tagging",
+    "status": "Draft",
+    "prNo": 11545,
+    "markdownPath": "https://raw.githubusercontent.com/SirSpudlington/EIPs/refs/heads/eip-tagging/EIPS/eip-8235.md",
+    "requires": [
+      "1"
+    ],
+    "timestamp": "2026-04-21T06:58:32.505Z"
+  },
+  "8236": {
+    "title": "Deferred-Settlement Fungible Tokens",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1693,
+    "markdownPath": "https://raw.githubusercontent.com/LevanIlashvili/ERCs/refs/heads/erc-draft-deferred-settlement/ERCS/erc-8236.md",
+    "requires": [
+      "20",
+      "165"
+    ],
+    "timestamp": "2026-04-21T07:00:36.934Z"
+  },
   "8402": {
     "title": "Agent Subscription Protocol",
     "status": "Draft",
@@ -12154,17 +12194,15 @@
     "timestamp": "2026-03-04T17:02:20.975Z"
   },
   "undefined": {
-    "title": "Payer Web Service Capability",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
     "requires": [
-      "5792",
-      "7836",
-      "8130"
+      "20"
     ],
-    "timestamp": "2026-04-09T23:43:24.625Z"
+    "timestamp": "2026-04-21T07:01:04.040Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
