@@ -6247,14 +6247,14 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "Lot-based Token",
+      "title": "H3-Indexed Cross-Chain Bridge Intent",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-7753",
       "eipNo": "7753",
-      "title": "Proof-Based Escrow V2 Standard",
+      "title": "Proof-Based Escrow V2",
       "status": "Draft",
       "isERC": true
     },
@@ -6268,7 +6268,7 @@
     {
       "id": "eip-7755",
       "eipNo": "7755",
-      "title": "Kinetic Agent Reputation Score Standard",
+      "title": "Kinetic Agent Reputation Score",
       "status": "Draft",
       "isERC": true
     },
@@ -8718,7 +8718,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -13730,6 +13730,10 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7752",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-7753",
       "target": "eip-165"
     },
@@ -15699,7 +15703,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",

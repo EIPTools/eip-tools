@@ -7786,23 +7786,26 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
   },
   "7752": {
-    "title": "Lot-based Token",
+    "title": "H3-Indexed Cross-Chain Bridge Intent",
     "status": "Draft",
     "isERC": true,
-    "prNo": 579,
-    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-04-22T06:56:31.229Z"
-  },
-  "7753": {
-    "title": "Proof-Based Escrow V2 Standard",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 1629,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7753-escrow-v2/ERCS/erc-7753.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7752.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:56:18.210Z"
+    "timestamp": "2026-04-22T07:00:22.043Z"
+  },
+  "7753": {
+    "title": "Proof-Based Escrow V2",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7753.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-04-22T07:00:22.144Z"
   },
   "7754": {
     "title": "Tamperproof Extension Wallets API (TWIST)",
@@ -7814,15 +7817,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7754.md"
   },
   "7755": {
-    "title": "Kinetic Agent Reputation Score Standard",
+    "title": "Kinetic Agent Reputation Score",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1631,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7755-kinetic-score/ERCS/erc-7755.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7755.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:56:17.564Z"
+    "timestamp": "2026-04-22T07:00:22.246Z"
   },
   "7756": {
     "title": "EOF/EVM Trace Specification",
@@ -7838,12 +7841,12 @@
     "title": "H3 Geospatial Agent Routing",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1697,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc/7757-h3-agent-routing/ERCS/erc-7757.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7757.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:56:14.949Z"
+    "timestamp": "2026-04-22T07:00:22.444Z"
   },
   "7758": {
     "title": "Transfer With Authorization",
@@ -11241,15 +11244,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-04-22T06:56:20.877Z"
+    "timestamp": "2026-04-22T07:00:24.548Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11392,7 +11398,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:56:20.318Z"
+    "timestamp": "2026-04-22T07:00:24.501Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11863,7 +11869,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:56:16.265Z"
+    "timestamp": "2026-04-22T07:00:20.107Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12196,7 +12202,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-22T06:56:30.884Z"
+    "timestamp": "2026-04-22T07:00:35.626Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
