@@ -7786,24 +7786,26 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
   },
   "7752": {
-    "title": "Lot-based Token",
+    "title": "H3-Indexed Cross-Chain Bridge Intent",
     "status": "Draft",
     "isERC": true,
-    "prNo": 579,
-    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-04-22T06:44:50.476Z"
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7752.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-04-22T06:52:54.357Z"
   },
   "7753": {
     "title": "Proof-Based Escrow V2",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1636,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7753-proof-escrow/ERCS/erc-7753.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7753.md",
     "requires": [
-      "20",
       "165"
     ],
-    "timestamp": "2026-04-22T06:44:36.827Z"
+    "timestamp": "2026-04-22T06:52:54.470Z"
   },
   "7754": {
     "title": "Tamperproof Extension Wallets API (TWIST)",
@@ -7815,15 +7817,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7754.md"
   },
   "7755": {
-    "title": "Kinetic Agent Reputation Score Standard",
+    "title": "Kinetic Agent Reputation Score",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1631,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7755-kinetic-score/ERCS/erc-7755.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7755.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-21T07:00:41.435Z"
+    "timestamp": "2026-04-22T06:52:54.607Z"
   },
   "7756": {
     "title": "EOF/EVM Trace Specification",
@@ -7839,12 +7841,12 @@
     "title": "H3 Geospatial Agent Routing",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1697,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc/7757-h3-agent-routing/ERCS/erc-7757.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7757.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:44:34.568Z"
+    "timestamp": "2026-04-22T06:52:54.886Z"
   },
   "7758": {
     "title": "Transfer With Authorization",
@@ -11242,15 +11244,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-04-22T06:44:39.786Z"
+    "timestamp": "2026-04-22T06:52:56.895Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11393,7 +11398,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:44:39.173Z"
+    "timestamp": "2026-04-22T06:52:56.532Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11864,7 +11869,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T06:44:35.822Z"
+    "timestamp": "2026-04-22T06:52:52.406Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12197,7 +12202,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-22T06:44:49.869Z"
+    "timestamp": "2026-04-22T06:53:08.204Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
