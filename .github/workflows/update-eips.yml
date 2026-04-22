@@ -66,6 +66,15 @@ jobs:
       - name: Mirror changes to public repo
         if: steps.commit.outputs.changed == 'true' && env.PUBLIC_REPO_PUSH_TOKEN != ''
         run: |
-          git config --local --unset-all http.https://github.com/.extraheader || true
-          git remote add public-sync "https://x-access-token:${PUBLIC_REPO_PUSH_TOKEN}@github.com/EIPTools/eip-tools.git"
-          git push public-sync HEAD:master
+          git clone "https://x-access-token:${PUBLIC_REPO_PUSH_TOKEN}@github.com/EIPTools/eip-tools.git" ../public-sync
+          rsync -a --delete \
+            --exclude ".git/" \
+            --exclude ".github/workflows/update-eips.yml" \
+            ./ ../public-sync/
+          cd ../public-sync
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: sync from private repo"
+          git push origin HEAD:master
