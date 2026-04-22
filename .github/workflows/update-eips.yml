@@ -66,5 +66,6 @@ jobs:
       - name: Mirror changes to public repo
         if: steps.commit.outputs.changed == 'true' && env.PUBLIC_REPO_PUSH_TOKEN != ''
         run: |
+          git config --local --unset-all http.https://github.com/.extraheader || true
           git remote add public-sync "https://x-access-token:${PUBLIC_REPO_PUSH_TOKEN}@github.com/EIPTools/eip-tools.git"
           git push public-sync HEAD:master
