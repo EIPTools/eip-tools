@@ -7797,23 +7797,26 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7751.md"
   },
   "7752": {
-    "title": "Lot-based Token",
+    "title": "H3-Indexed Cross-Chain Bridge Intent",
     "status": "Draft",
     "isERC": true,
-    "prNo": 579,
-    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-04-22T12:16:49.892Z"
-  },
-  "7753": {
-    "title": "Proof-Based Escrow V2 Standard",
-    "status": "Draft",
-    "isERC": true,
-    "prNo": 1629,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7753-escrow-v2/ERCS/erc-7753.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7752.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T12:16:33.943Z"
+    "timestamp": "2026-04-23T00:15:33.640Z"
+  },
+  "7753": {
+    "title": "Proof-Based Escrow V2",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7753.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-04-23T00:15:33.885Z"
   },
   "7754": {
     "title": "Tamperproof Extension Wallets API (TWIST)",
@@ -7825,15 +7828,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7754.md"
   },
   "7755": {
-    "title": "Kinetic Agent Reputation Score Standard",
+    "title": "Kinetic Agent Reputation Score",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1631,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7755-kinetic-score/ERCS/erc-7755.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7755.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T12:16:33.372Z"
+    "timestamp": "2026-04-23T00:15:34.071Z"
   },
   "7756": {
     "title": "EOF/EVM Trace Specification",
@@ -7849,12 +7852,12 @@
     "title": "H3 Geospatial Agent Routing",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1697,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc/7757-h3-agent-routing/ERCS/erc-7757.md",
+    "prNo": 1627,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7751-h3-routing/ERCS/erc-7757.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T12:16:29.948Z"
+    "timestamp": "2026-04-23T00:15:34.569Z"
   },
   "7758": {
     "title": "Transfer With Authorization",
@@ -11252,15 +11255,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-04-22T12:16:37.174Z"
+    "timestamp": "2026-04-23T00:15:36.426Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11390,9 +11396,9 @@
   "8173": {
     "title": "Foundations of EVM Control Flow",
     "status": "Draft",
-    "prNo": 11353,
-    "markdownPath": "https://raw.githubusercontent.com/gcolvin/EIPs/refs/heads/patch-2/EIPS/eip-8173.md",
-    "timestamp": "2026-04-18T01:51:13.712Z"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8173.md"
   },
   "8174": {
     "title": "Intent spec for contracts",
@@ -11403,7 +11409,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T12:16:36.429Z"
+    "timestamp": "2026-04-23T00:15:35.958Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11627,9 +11633,6 @@
   "8196": {
     "title": "AI Agent Authenticated Wallet",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1606,
-    "markdownPath": "https://raw.githubusercontent.com/Cybercentry/ERCs/refs/heads/eip-XXXX/ERCS/erc-8196.md",
     "requires": [
       "155",
       "191",
@@ -11638,7 +11641,8 @@
       "8004",
       "8126"
     ],
-    "timestamp": "2026-04-18T01:54:05.367Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8196.md"
   },
   "8197": {
     "title": "Cryptographically Agile Transactions",
@@ -11700,9 +11704,9 @@
   "8202": {
     "title": "Scheme-Agile Transactions",
     "status": "Draft",
-    "prNo": 11438,
-    "markdownPath": "https://raw.githubusercontent.com/Giulio2002/EIPs/refs/heads/eip-schemedtransaction/EIPS/eip-8202.md",
     "requires": [
+      "2",
+      "155",
       "1559",
       "2718",
       "2780",
@@ -11710,7 +11714,8 @@
       "7702",
       "7976"
     ],
-    "timestamp": "2026-04-18T01:51:08.196Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8202.md"
   },
   "8203": {
     "title": "Agent Offchain Conditional Settlement",
@@ -11874,7 +11879,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-22T12:16:31.654Z"
+    "timestamp": "2026-04-23T00:15:31.651Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12171,11 +12176,14 @@
     "timestamp": "2026-04-18T01:55:02.823Z"
   },
   "99999": {
-    "title": "CALL_GAS_SPLIT opcode",
+    "title": "Independent CL/EL Sync",
     "status": "Draft",
-    "prNo": 9558,
-    "markdownPath": "https://raw.githubusercontent.com/rakita/EIPs/refs/heads/rakita/call_gas_split/EIPS/eip-99999.md",
-    "timestamp": "2026-04-18T01:53:27.496Z"
+    "prNo": 11557,
+    "markdownPath": "https://raw.githubusercontent.com/potuz/EIPs/refs/heads/gloas_sync/EIPS/eip-99999.md",
+    "requires": [
+      "7732"
+    ],
+    "timestamp": "2026-04-23T00:14:06.753Z"
   },
   "217191": {
     "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
@@ -12207,7 +12215,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-22T12:16:49.058Z"
+    "timestamp": "2026-04-23T00:15:47.076Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
