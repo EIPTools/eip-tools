@@ -6254,14 +6254,14 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "H3-Indexed Cross-Chain Bridge Intent",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-7753",
       "eipNo": "7753",
-      "title": "Proof-Based Escrow V2",
+      "title": "Proof-Based Escrow V2 Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -6275,7 +6275,7 @@
     {
       "id": "eip-7755",
       "eipNo": "7755",
-      "title": "Kinetic Agent Reputation Score",
+      "title": "Kinetic Agent Reputation Score Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -8725,7 +8725,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -8830,7 +8830,7 @@
     {
       "id": "eip-8176",
       "eipNo": "8176",
-      "title": "Integrity Verification for ERC-7730",
+      "title": "Descriptor Attestations for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -9292,7 +9292,7 @@
     {
       "id": "eip-99999",
       "eipNo": "99999",
-      "title": "Independent CL/EL Sync",
+      "title": "CALL_GAS_SPLIT opcode",
       "status": "Draft",
       "isERC": false
     },
@@ -9320,7 +9320,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Sovereign Bridged Token",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -13741,10 +13741,6 @@
       "target": "eip-712"
     },
     {
-      "source": "eip-7752",
-      "target": "eip-165"
-    },
-    {
       "source": "eip-7753",
       "target": "eip-165"
     },
@@ -15714,19 +15710,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16161,6 +16145,10 @@
       "target": "eip-8183"
     },
     {
+      "source": "eip-8211",
+      "target": "eip-7964"
+    },
+    {
       "source": "eip-8212",
       "target": "eip-1153"
     },
@@ -16461,12 +16449,20 @@
       "target": "eip-9834"
     },
     {
-      "source": "eip-99999",
-      "target": "eip-7732"
+      "source": "eip-undefined",
+      "target": "eip-5792"
     },
     {
       "source": "eip-undefined",
-      "target": "eip-20"
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-8130"
     },
     {
       "source": "eip-0000",
