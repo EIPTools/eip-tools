@@ -1338,6 +1338,13 @@
       "isERC": false
     },
     {
+      "id": "eip-1705",
+      "eipNo": "1705",
+      "title": "Trust Infrastructure for Agents and Assets",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-1706",
       "eipNo": "1706",
       "title": "Disable SSTORE with gasleft lower than call stipend",
@@ -6254,14 +6261,14 @@
     {
       "id": "eip-7752",
       "eipNo": "7752",
-      "title": "H3-Indexed Cross-Chain Bridge Intent",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-7753",
       "eipNo": "7753",
-      "title": "Proof-Based Escrow V2",
+      "title": "Proof-Based Escrow V2 Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -6275,7 +6282,7 @@
     {
       "id": "eip-7755",
       "eipNo": "7755",
-      "title": "Kinetic Agent Reputation Score",
+      "title": "Kinetic Agent Reputation Score Standard",
       "status": "Draft",
       "isERC": true
     },
@@ -8725,7 +8732,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9232,6 +9239,13 @@
       "title": "Independent CL/EL Sync",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8239",
+      "eipNo": "8239",
+      "title": "Agent Skill Registry",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8300",
@@ -9856,6 +9870,10 @@
     {
       "source": "eip-1679",
       "target": "eip-2200"
+    },
+    {
+      "source": "eip-1705",
+      "target": "eip-165"
     },
     {
       "source": "eip-1706",
@@ -13762,10 +13780,6 @@
       "target": "eip-712"
     },
     {
-      "source": "eip-7752",
-      "target": "eip-165"
-    },
-    {
       "source": "eip-7753",
       "target": "eip-165"
     },
@@ -15735,7 +15749,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16420,6 +16446,18 @@
     {
       "source": "eip-8237",
       "target": "eip-7732"
+    },
+    {
+      "source": "eip-8239",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8239",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8239",
+      "target": "eip-8183"
     },
     {
       "source": "eip-8300",
