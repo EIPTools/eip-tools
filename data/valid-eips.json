@@ -11263,18 +11263,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-04-25T12:08:58.853Z"
+    "timestamp": "2026-04-26T00:11:53.048Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11417,7 +11414,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-25T12:08:58.545Z"
+    "timestamp": "2026-04-26T00:11:52.536Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11890,7 +11887,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-25T12:08:55.769Z"
+    "timestamp": "2026-04-26T00:11:49.661Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12270,7 +12267,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-25T12:09:08.518Z"
+    "timestamp": "2026-04-26T00:12:02.904Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
