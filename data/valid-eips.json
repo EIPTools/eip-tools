@@ -9934,7 +9934,7 @@
   },
   "8012": {
     "title": "Generalized consolidation requests",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8012.md"
@@ -10032,7 +10032,7 @@
   },
   "8025": {
     "title": "Optional Execution Proofs",
-    "status": "Draft",
+    "status": "Stagnant",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8025.md"
@@ -11263,15 +11263,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-04-26T00:11:53.048Z"
+    "timestamp": "2026-04-26T12:10:28.660Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11414,7 +11417,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-26T00:11:52.536Z"
+    "timestamp": "2026-04-26T12:10:28.436Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11887,7 +11890,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-26T00:11:49.661Z"
+    "timestamp": "2026-04-26T12:10:24.976Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12064,7 +12067,7 @@
       "721",
       "5521"
     ],
-    "timestamp": "2026-04-21T07:00:37.831Z"
+    "timestamp": "2026-04-26T12:10:24.075Z"
   },
   "8235": {
     "title": "EIP tagging",
@@ -12074,7 +12077,7 @@
     "requires": [
       "1"
     ],
-    "timestamp": "2026-04-21T06:58:32.505Z"
+    "timestamp": "2026-04-26T12:08:58.339Z"
   },
   "8236": {
     "title": "Deferred-Settlement Fungible Tokens",
@@ -12086,7 +12089,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-04-21T07:00:36.934Z"
+    "timestamp": "2026-04-26T12:10:23.275Z"
   },
   "8237": {
     "title": "Independent CL/EL Sync",
@@ -12267,7 +12270,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-26T00:12:02.904Z"
+    "timestamp": "2026-04-26T12:10:39.827Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
