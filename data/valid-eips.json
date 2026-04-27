@@ -1193,7 +1193,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-22T12:16:29.173Z"
+    "timestamp": "2026-04-27T12:26:26.895Z"
   },
   "1417": {
     "title": "Poll Standard",
@@ -11263,15 +11263,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-04-27T00:12:37.994Z"
+    "timestamp": "2026-04-27T12:26:32.458Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11414,7 +11417,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-27T00:12:37.585Z"
+    "timestamp": "2026-04-27T12:26:32.190Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11887,7 +11890,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-27T00:12:34.536Z"
+    "timestamp": "2026-04-27T12:26:28.415Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12111,6 +12114,17 @@
     ],
     "timestamp": "2026-04-24T12:15:57.730Z"
   },
+  "8241": {
+    "title": "Protocol Control Disclosure",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1706,
+    "markdownPath": "https://raw.githubusercontent.com/chegecjay-rgb/ERCs/refs/heads/add-protocol-control-disclosure-core/ERCS/erc-8241.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-04-27T12:26:26.840Z"
+  },
   "8300": {
     "title": "Coercion-Resistant Vault",
     "status": "Draft",
@@ -12267,7 +12281,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-27T00:12:47.385Z"
+    "timestamp": "2026-04-27T12:26:45.082Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
