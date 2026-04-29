@@ -8732,7 +8732,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9255,9 +9255,23 @@
       "isERC": true
     },
     {
+      "id": "eip-8240",
+      "eipNo": "8240",
+      "title": "Trust Infrastructure for Agents and Assets",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8241",
       "eipNo": "8241",
       "title": "Protocol Control Disclosure",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8242",
+      "eipNo": "8242",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
       "isERC": true
     },
@@ -15763,7 +15777,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16474,7 +16500,15 @@
       "target": "eip-8183"
     },
     {
+      "source": "eip-8240",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8241",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8242",
       "target": "eip-165"
     },
     {

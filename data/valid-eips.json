@@ -11263,15 +11263,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-04-29T00:17:35.757Z"
+    "timestamp": "2026-04-29T12:26:24.309Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11414,7 +11417,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-29T00:17:35.159Z"
+    "timestamp": "2026-04-29T12:26:24.039Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11887,7 +11890,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-29T00:17:32.220Z"
+    "timestamp": "2026-04-29T12:26:20.164Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12121,7 +12124,18 @@
       "8004",
       "8183"
     ],
-    "timestamp": "2026-04-24T12:15:57.730Z"
+    "timestamp": "2026-04-29T12:26:18.636Z"
+  },
+  "8240": {
+    "title": "Trust Infrastructure for Agents and Assets",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1705,
+    "markdownPath": "https://raw.githubusercontent.com/nicobernad/ERCs/refs/heads/add-erc-trust-infrastructure/ERCS/erc-8240.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-04-29T12:26:18.570Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12133,6 +12147,17 @@
       "165"
     ],
     "timestamp": "2026-04-27T12:26:26.840Z"
+  },
+  "8242": {
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-04-29T12:26:21.628Z"
   },
   "8300": {
     "title": "Coercion-Resistant Vault",
@@ -12290,7 +12315,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-29T00:17:46.087Z"
+    "timestamp": "2026-04-29T12:26:36.699Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
