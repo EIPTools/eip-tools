@@ -6486,7 +6486,7 @@
       "id": "eip-7930",
       "eipNo": "7930",
       "title": "Interoperable Addresses",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6745,7 +6745,7 @@
       "id": "eip-7828",
       "eipNo": "7828",
       "title": "Interoperable Names",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -8732,7 +8732,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9241,6 +9241,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8238",
+      "eipNo": "8238",
+      "title": "Coercion-Resistant Vault",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8239",
       "eipNo": "8239",
       "title": "Agent Skill Registry",
@@ -9362,7 +9369,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Lot-based Token",
+      "title": "Sovereign Bridged Token",
       "status": "Draft",
       "isERC": true
     },
@@ -15756,19 +15763,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16455,6 +16450,18 @@
       "target": "eip-7732"
     },
     {
+      "source": "eip-8238",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8238",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8238",
+      "target": "eip-4337"
+    },
+    {
       "source": "eip-8239",
       "target": "eip-721"
     },
@@ -16545,6 +16552,10 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-20"
     },
     {
       "source": "eip-0000",

@@ -8420,7 +8420,7 @@
   },
   "7828": {
     "title": "Interoperable Names",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "155",
       "7930"
@@ -9214,7 +9214,7 @@
   },
   "7930": {
     "title": "Interoperable Addresses",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7930.md"
@@ -11263,18 +11263,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-04-28T12:30:20.090Z"
+    "timestamp": "2026-04-29T00:17:35.757Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11417,7 +11414,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-28T12:30:19.448Z"
+    "timestamp": "2026-04-29T00:17:35.159Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11890,7 +11887,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-28T12:30:07.209Z"
+    "timestamp": "2026-04-29T00:17:32.220Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -11963,7 +11960,7 @@
       "2929",
       "8164"
     ],
-    "timestamp": "2026-04-24T00:13:37.662Z"
+    "timestamp": "2026-04-29T00:16:15.706Z"
   },
   "8226": {
     "title": "Regulated Agent Mandate",
@@ -12099,6 +12096,19 @@
     ],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8237.md"
+  },
+  "8238": {
+    "title": "Coercion-Resistant Vault",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1703,
+    "markdownPath": "https://raw.githubusercontent.com/DeFiRe-business/ERCs/refs/heads/erc-coercion-resistant-vault/ERCS/erc-8238.md",
+    "requires": [
+      "20",
+      "165",
+      "4337"
+    ],
+    "timestamp": "2026-04-29T00:17:30.958Z"
   },
   "8239": {
     "title": "Agent Skill Registry",
@@ -12272,12 +12282,15 @@
     "timestamp": "2026-03-04T17:02:20.975Z"
   },
   "undefined": {
-    "title": "Lot-based Token",
+    "title": "Sovereign Bridged Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 579,
-    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-04-28T12:30:59.637Z"
+    "prNo": 89,
+    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
+    "requires": [
+      "20"
+    ],
+    "timestamp": "2026-04-29T00:17:46.087Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
