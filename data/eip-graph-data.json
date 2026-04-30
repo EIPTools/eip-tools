@@ -7879,7 +7879,7 @@
       "id": "eip-8013",
       "eipNo": "8013",
       "title": "Static relative jumps and calls for the EVM",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -8732,7 +8732,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -15692,10 +15692,6 @@
       "target": "eip-4844"
     },
     {
-      "source": "eip-8141",
-      "target": "eip-7997"
-    },
-    {
       "source": "eip-8142",
       "target": "eip-4844"
     },
@@ -15777,7 +15773,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
