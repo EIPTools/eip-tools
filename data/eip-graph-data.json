@@ -1359,6 +1359,13 @@
       "isERC": true
     },
     {
+      "id": "eip-1713",
+      "eipNo": "1713",
+      "title": "Permissioned Vault Registrar Interface",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-1753",
       "eipNo": "1753",
       "title": "Smart Contract Interface for Licences",
@@ -8732,7 +8739,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9910,6 +9917,18 @@
     {
       "source": "eip-1710",
       "target": "eip-155"
+    },
+    {
+      "source": "eip-1713",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-1713",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-1713",
+      "target": "eip-1271"
     },
     {
       "source": "eip-1716",
@@ -15773,19 +15792,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
