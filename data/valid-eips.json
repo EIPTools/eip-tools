@@ -1193,7 +1193,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-04-27T12:26:26.895Z"
+    "timestamp": "2026-05-03T00:14:39.758Z"
   },
   "1417": {
     "title": "Poll Standard",
@@ -11275,18 +11275,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-02T12:13:21.722Z"
+    "timestamp": "2026-05-03T00:14:43.868Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11429,7 +11426,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-02T12:13:21.480Z"
+    "timestamp": "2026-05-03T00:14:43.666Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11902,7 +11899,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-02T12:13:18.861Z"
+    "timestamp": "2026-05-03T00:14:40.925Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12147,7 +12144,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-02T12:13:17.636Z"
+    "timestamp": "2026-05-03T00:14:39.681Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12158,7 +12155,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-04-27T12:26:26.840Z"
+    "timestamp": "2026-05-03T00:14:39.236Z"
   },
   "8242": {
     "title": "H3 Spatial Identity Extension for On-Chain Agents",
@@ -12327,7 +12324,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-02T12:13:31.013Z"
+    "timestamp": "2026-05-03T00:14:53.193Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
