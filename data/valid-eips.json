@@ -1444,6 +1444,19 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-1682.md"
   },
+  "1696": {
+    "title": "TARS - Verifiable Framework for Autonomous Agent Compliance via ERC-8004 and ZK-Proofs",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1719,
+    "markdownPath": "https://raw.githubusercontent.com/wscdcm/ERCs/refs/heads/erc-1696-tars-framework/ERCS/ERC-1696.md",
+    "requires": [
+      "8004",
+      "4337",
+      "4844"
+    ],
+    "timestamp": "2026-05-05T00:17:14.073Z"
+  },
   "1702": {
     "title": "Generalized Account Versioning Scheme",
     "status": "Stagnant",
@@ -11278,18 +11291,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-04T12:27:07.173Z"
+    "timestamp": "2026-05-05T00:17:19.380Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11432,7 +11442,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-04T12:27:07.694Z"
+    "timestamp": "2026-05-05T00:17:18.825Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11905,7 +11915,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-04T12:27:03.010Z"
+    "timestamp": "2026-05-05T00:17:16.147Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12150,7 +12160,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-04T12:27:00.789Z"
+    "timestamp": "2026-05-05T00:17:14.729Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12164,15 +12174,14 @@
     "timestamp": "2026-05-03T00:14:39.236Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-04T12:27:04.294Z"
+    "timestamp": "2026-05-05T00:15:54.886Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12184,6 +12193,19 @@
       "6780"
     ],
     "timestamp": "2026-05-04T12:25:23.281Z"
+  },
+  "8248": {
+    "title": "Keyed Transfer With Authorization",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1715,
+    "markdownPath": "https://raw.githubusercontent.com/BrianBland/ERCs/refs/heads/brianbland/keyed-transfer-authorization/ERCS/erc-8248.md",
+    "requires": [
+      "20",
+      "712",
+      "1271"
+    ],
+    "timestamp": "2026-05-05T00:17:13.998Z"
   },
   "8300": {
     "title": "Coercion-Resistant Vault",
@@ -12305,14 +12327,11 @@
     "timestamp": "2026-05-04T00:16:39.708Z"
   },
   "99999": {
-    "title": "Keyed Nonces for Frame Transactions",
+    "title": "CALL_GAS_SPLIT opcode",
     "status": "Draft",
-    "prNo": 11598,
-    "markdownPath": "https://raw.githubusercontent.com/soispoke/EIPs/refs/heads/soispoke/EIPS/eip-99999.md",
-    "requires": [
-      "8141"
-    ],
-    "timestamp": "2026-05-04T12:25:23.258Z"
+    "prNo": 9558,
+    "markdownPath": "https://raw.githubusercontent.com/rakita/EIPs/refs/heads/rakita/call_gas_split/EIPS/eip-99999.md",
+    "timestamp": "2026-05-05T00:17:06.987Z"
   },
   "217191": {
     "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
@@ -12344,7 +12363,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-04T12:27:19.400Z"
+    "timestamp": "2026-05-05T00:17:29.893Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

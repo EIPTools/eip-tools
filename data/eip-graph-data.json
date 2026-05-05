@@ -1331,6 +1331,34 @@
       "isERC": false
     },
     {
+      "id": "eip-1696",
+      "eipNo": "1696",
+      "title": "TARS - Verifiable Framework for Autonomous Agent Compliance via ERC-8004 and ZK-Proofs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8004",
+      "eipNo": "8004",
+      "title": "Trustless Agents",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-4337",
+      "eipNo": "4337",
+      "title": "Account Abstraction Using Alt Mempool",
+      "status": "Review",
+      "isERC": true
+    },
+    {
+      "id": "eip-4844",
+      "eipNo": "4844",
+      "title": "Shard Blob Transactions",
+      "status": "Final",
+      "isERC": false
+    },
+    {
       "id": "eip-1702",
       "eipNo": "1702",
       "title": "Generalized Account Versioning Scheme",
@@ -2857,13 +2885,6 @@
       "isERC": false
     },
     {
-      "id": "eip-4337",
-      "eipNo": "4337",
-      "title": "Account Abstraction Using Alt Mempool",
-      "status": "Review",
-      "isERC": true
-    },
-    {
       "id": "eip-4341",
       "eipNo": "4341",
       "title": "Ordered NFT Batch Standard",
@@ -3100,13 +3121,6 @@
       "title": "Hierarchical Domains",
       "status": "Final",
       "isERC": true
-    },
-    {
-      "id": "eip-4844",
-      "eipNo": "4844",
-      "title": "Shard Blob Transactions",
-      "status": "Final",
-      "isERC": false
     },
     {
       "id": "eip-4895",
@@ -7778,13 +7792,6 @@
       "isERC": true
     },
     {
-      "id": "eip-8004",
-      "eipNo": "8004",
-      "title": "Trustless Agents",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-8005",
       "eipNo": "8005",
       "title": "Encrypted Transaction Envelope (ETE)",
@@ -8739,7 +8746,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9278,9 +9285,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8246",
@@ -9288,6 +9295,13 @@
       "title": "Remove SELFDESTRUCT Burn",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8248",
+      "eipNo": "8248",
+      "title": "Keyed Transfer With Authorization",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8300",
@@ -9369,7 +9383,7 @@
     {
       "id": "eip-99999",
       "eipNo": "99999",
-      "title": "Keyed Nonces for Frame Transactions",
+      "title": "CALL_GAS_SPLIT opcode",
       "status": "Draft",
       "isERC": false
     },
@@ -9912,6 +9926,18 @@
     {
       "source": "eip-1679",
       "target": "eip-2200"
+    },
+    {
+      "source": "eip-1696",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-1696",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-1696",
+      "target": "eip-4844"
     },
     {
       "source": "eip-1705",
@@ -15811,19 +15837,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16543,7 +16557,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8246",
@@ -16552,6 +16566,18 @@
     {
       "source": "eip-8246",
       "target": "eip-6780"
+    },
+    {
+      "source": "eip-8248",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8248",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8248",
+      "target": "eip-1271"
     },
     {
       "source": "eip-8300",
@@ -16628,10 +16654,6 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
-    },
-    {
-      "source": "eip-99999",
-      "target": "eip-8141"
     },
     {
       "source": "eip-undefined",
