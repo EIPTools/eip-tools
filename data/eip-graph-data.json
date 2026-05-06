@@ -7403,7 +7403,7 @@
       "id": "eip-7943",
       "eipNo": "7943",
       "title": "uRWA - Universal Real World Asset Interface",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8746,7 +8746,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9285,9 +9285,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8246",
@@ -15767,6 +15767,10 @@
     },
     {
       "source": "eip-8141",
+      "target": "eip-3607"
+    },
+    {
+      "source": "eip-8141",
       "target": "eip-4844"
     },
     {
@@ -15851,19 +15855,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16583,7 +16575,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8246",

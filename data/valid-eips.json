@@ -7839,7 +7839,7 @@
     "isERC": true,
     "prNo": 579,
     "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-04-30T12:27:09.134Z"
+    "timestamp": "2026-05-06T00:16:45.941Z"
   },
   "7753": {
     "title": "Proof-Based Escrow V2",
@@ -9336,7 +9336,7 @@
   },
   "7943": {
     "title": "uRWA - Universal Real World Asset Interface",
-    "status": "Last Call",
+    "status": "Final",
     "requires": [
       "165"
     ],
@@ -11149,6 +11149,7 @@
     "requires": [
       "1559",
       "2718",
+      "3607",
       "4844"
     ],
     "isERC": false,
@@ -11291,18 +11292,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-05T12:19:45.246Z"
+    "timestamp": "2026-05-06T00:16:34.810Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11445,7 +11443,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-05T12:19:44.805Z"
+    "timestamp": "2026-05-06T00:16:34.325Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11683,8 +11681,6 @@
   "8197": {
     "title": "Cryptographically Agile Transactions",
     "status": "Draft",
-    "prNo": 11413,
-    "markdownPath": "https://raw.githubusercontent.com/shemnon/EIPs/refs/heads/shemnon/catx-eip-draft/EIPS/eip-8197.md",
     "requires": [
       "1559",
       "2718",
@@ -11692,7 +11688,8 @@
       "4844",
       "7702"
     ],
-    "timestamp": "2026-05-04T00:14:46.075Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8197.md"
   },
   "8198": {
     "title": "Quick Slots",
@@ -11918,7 +11915,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-05T12:19:41.455Z"
+    "timestamp": "2026-05-06T00:16:31.221Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12163,7 +12160,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-05T12:19:39.911Z"
+    "timestamp": "2026-05-06T00:16:29.852Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12177,15 +12174,14 @@
     "timestamp": "2026-05-03T00:14:39.236Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-05T12:19:42.458Z"
+    "timestamp": "2026-05-06T00:15:00.671Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12385,7 +12381,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-05T12:19:57.139Z"
+    "timestamp": "2026-05-06T00:16:45.671Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
