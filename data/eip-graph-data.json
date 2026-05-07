@@ -8746,7 +8746,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9285,9 +9285,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8245",
@@ -9325,6 +9325,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8252",
+      "eipNo": "8252",
+      "title": "Execution-Layer Reorg State Retention Window",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8253",
       "eipNo": "8253",
       "title": "Bump nonce of zero-nonce non-empty-storage accounts",
@@ -9342,6 +9349,13 @@
       "id": "eip-8255",
       "eipNo": "8255",
       "title": "Expiring Token Approvals",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8257",
+      "eipNo": "8257",
+      "title": "Agent Tool Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -15682,6 +15696,10 @@
       "target": "eip-7702"
     },
     {
+      "source": "eip-8131",
+      "target": "eip-7976"
+    },
+    {
       "source": "eip-8132",
       "target": "eip-5792"
     },
@@ -15883,7 +15901,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16603,7 +16633,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -16664,6 +16694,10 @@
     {
       "source": "eip-8255",
       "target": "eip-2612"
+    },
+    {
+      "source": "eip-8257",
+      "target": "eip-165"
     },
     {
       "source": "eip-8300",
