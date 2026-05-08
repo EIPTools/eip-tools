@@ -1193,7 +1193,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-03T00:14:39.758Z"
+    "timestamp": "2026-05-08T00:17:44.437Z"
   },
   "1417": {
     "title": "Poll Standard",
@@ -11293,18 +11293,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-07T12:31:35.836Z"
+    "timestamp": "2026-05-08T00:17:49.406Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11447,7 +11444,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-07T12:31:35.586Z"
+    "timestamp": "2026-05-08T00:17:48.823Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11919,7 +11916,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-07T12:31:32.227Z"
+    "timestamp": "2026-05-08T00:17:45.837Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12164,7 +12161,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-07T12:31:30.933Z"
+    "timestamp": "2026-05-08T00:17:44.106Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12175,18 +12172,17 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-03T00:14:39.236Z"
+    "timestamp": "2026-05-08T00:17:43.769Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-07T12:31:33.247Z"
+    "timestamp": "2026-05-08T00:16:14.688Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12199,7 +12195,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-07T12:31:30.289Z"
+    "timestamp": "2026-05-08T00:17:43.147Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12448,7 +12444,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-07T12:31:47.839Z"
+    "timestamp": "2026-05-08T00:18:00.442Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
