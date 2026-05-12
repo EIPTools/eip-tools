@@ -11295,15 +11295,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-05-12T00:19:31.250Z"
+    "timestamp": "2026-05-12T12:34:18.265Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11446,7 +11449,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-12T00:19:30.503Z"
+    "timestamp": "2026-05-12T12:34:17.474Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11918,7 +11921,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-12T00:19:28.271Z"
+    "timestamp": "2026-05-12T12:34:13.818Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12163,7 +12166,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-12T00:19:27.030Z"
+    "timestamp": "2026-05-12T12:34:12.140Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12177,14 +12180,15 @@
     "timestamp": "2026-05-08T00:17:43.769Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-05-12T00:18:10.853Z"
+    "timestamp": "2026-05-12T12:34:15.058Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12197,7 +12201,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-12T00:19:26.690Z"
+    "timestamp": "2026-05-12T12:34:11.925Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12241,10 +12245,10 @@
   },
   "8252": {
     "title": "Execution-Layer Reorg State Retention Window",
-    "status": "Draft",
+    "status": "Living",
     "prNo": 11601,
     "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/retention/EIPS/eip-8252.md",
-    "timestamp": "2026-05-07T12:29:55.296Z"
+    "timestamp": "2026-05-12T12:32:39.389Z"
   },
   "8253": {
     "title": "Remove pre-Spurious-Dragon accounts",
@@ -12287,7 +12291,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-07T12:31:29.569Z"
+    "timestamp": "2026-05-12T12:34:11.313Z"
   },
   "8259": {
     "title": "AI Agent Identity & Threat Registry",
@@ -12312,6 +12316,18 @@
       "165"
     ],
     "timestamp": "2026-05-12T00:19:25.160Z"
+  },
+  "8261": {
+    "title": "Gas Limit Schedule",
+    "status": "Draft",
+    "prNo": 11644,
+    "markdownPath": "https://raw.githubusercontent.com/barnabasbusa/EIPs/refs/heads/bbusa/eip-gas-limit-schedule/EIPS/eip-8261.md",
+    "requires": [
+      "1559",
+      "7840",
+      "7892"
+    ],
+    "timestamp": "2026-05-12T12:32:34.667Z"
   },
   "8300": {
     "title": "Coercion-Resistant Vault",
@@ -12469,7 +12485,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-12T00:19:40.434Z"
+    "timestamp": "2026-05-12T12:34:32.447Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
