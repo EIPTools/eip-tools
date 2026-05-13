@@ -11296,15 +11296,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-05-13T00:20:35.824Z"
+    "timestamp": "2026-05-13T12:37:28.455Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11447,7 +11450,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-13T00:20:34.543Z"
+    "timestamp": "2026-05-13T12:37:27.627Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11919,7 +11922,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-13T00:20:31.725Z"
+    "timestamp": "2026-05-13T12:37:24.712Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12162,7 +12165,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-13T00:20:29.863Z"
+    "timestamp": "2026-05-13T12:37:23.077Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12176,14 +12179,15 @@
     "timestamp": "2026-05-13T00:20:29.517Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-05-13T00:18:56.019Z"
+    "timestamp": "2026-05-13T12:37:25.690Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12196,7 +12200,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-13T00:20:29.255Z"
+    "timestamp": "2026-05-13T12:37:22.609Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12299,7 +12303,7 @@
       "721",
       "1155"
     ],
-    "timestamp": "2026-05-08T12:22:32.853Z"
+    "timestamp": "2026-05-13T12:37:21.527Z"
   },
   "8260": {
     "title": "Dive Log",
@@ -12363,15 +12367,11 @@
     "timestamp": "2025-11-20T13:53:52.700Z"
   },
   "8888": {
-    "title": "WeissChannels - Cross-Chain Execution for ERC-4337 Accounts",
+    "title": "On-Chain Proof Layer for AI Agents",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1486,
-    "markdownPath": "https://raw.githubusercontent.com/eil-docbot/ERCs/refs/heads/master/ERCS/erc-8888.md",
-    "requires": [
-      "4337"
-    ],
-    "timestamp": "2026-01-28T05:50:08.935Z"
+    "prNo": 11646,
+    "markdownPath": "https://raw.githubusercontent.com/TruthAnchor-AI/EIPs/refs/heads/add-eip-truthanchor-agent-proof/EIPS/eip-8888.md",
+    "timestamp": "2026-05-13T12:35:50.212Z"
   },
   "9000": {
     "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -12480,7 +12480,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-13T00:20:47.350Z"
+    "timestamp": "2026-05-13T12:37:40.606Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
