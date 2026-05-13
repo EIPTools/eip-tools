@@ -1193,7 +1193,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-08T00:17:44.437Z"
+    "timestamp": "2026-05-13T00:20:30.200Z"
   },
   "1417": {
     "title": "Poll Standard",
@@ -3353,9 +3353,10 @@
   },
   "4337": {
     "title": "Account Abstraction Using Alt Mempool",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
-      "712"
+      "712",
+      "7702"
     ],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-4337.md"
@@ -8614,7 +8615,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7848.md"
   },
   "7851": {
-    "title": "Deactivate a Delegated EOA's Key",
+    "title": "Disable ECDSA Authority for Delegated EOAs",
     "status": "Draft",
     "requires": [
       "7702"
@@ -10983,7 +10984,7 @@
   },
   "8126": {
     "title": "AI Agent Verification",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [
       "155",
       "191",
@@ -11241,7 +11242,7 @@
     "timestamp": "2026-05-09T00:18:51.469Z"
   },
   "8151": {
-    "title": "Private Key Deactivation Aware ecRecover",
+    "title": "ECDSA Authority Deactivation Aware ecRecover",
     "status": "Draft",
     "requires": [
       "7851"
@@ -11295,18 +11296,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-12T12:34:18.265Z"
+    "timestamp": "2026-05-13T00:20:35.824Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11449,7 +11447,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-12T12:34:17.474Z"
+    "timestamp": "2026-05-13T00:20:34.543Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11921,7 +11919,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-12T12:34:13.818Z"
+    "timestamp": "2026-05-13T00:20:31.725Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -11999,13 +11997,11 @@
   "8226": {
     "title": "Regulated Agent Mandate",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1679,
-    "markdownPath": "https://raw.githubusercontent.com/thamerdridi/ERCs/refs/heads/add-erc-rams/ERCS/erc-8226.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-09T00:18:40.468Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8226.md"
   },
   "8227": {
     "title": "Encrypted Token",
@@ -12166,7 +12162,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-12T12:34:12.140Z"
+    "timestamp": "2026-05-13T00:20:29.863Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12177,18 +12173,17 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-08T00:17:43.769Z"
+    "timestamp": "2026-05-13T00:20:29.517Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-12T12:34:15.058Z"
+    "timestamp": "2026-05-13T00:18:56.019Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12201,7 +12196,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-12T12:34:11.925Z"
+    "timestamp": "2026-05-13T00:20:29.255Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12485,7 +12480,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-12T12:34:32.447Z"
+    "timestamp": "2026-05-13T00:20:47.350Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

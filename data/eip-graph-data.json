@@ -1348,7 +1348,7 @@
       "id": "eip-4337",
       "eipNo": "4337",
       "title": "Account Abstraction Using Alt Mempool",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -2885,6 +2885,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7702",
+      "eipNo": "7702",
+      "title": "Set Code for EOAs",
+      "status": "Final",
+      "isERC": false
+    },
+    {
       "id": "eip-4341",
       "eipNo": "4341",
       "title": "Ordered NFT Batch Standard",
@@ -4275,13 +4282,6 @@
       "eipNo": "7495",
       "title": "SSZ ProgressiveContainer",
       "status": "Review",
-      "isERC": false
-    },
-    {
-      "id": "eip-7702",
-      "eipNo": "7702",
-      "title": "Set Code for EOAs",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -6898,7 +6898,7 @@
     {
       "id": "eip-7851",
       "eipNo": "7851",
-      "title": "Deactivate a Delegated EOA's Key",
+      "title": "Disable ECDSA Authority for Delegated EOAs",
       "status": "Draft",
       "isERC": false
     },
@@ -8558,7 +8558,7 @@
       "id": "eip-8126",
       "eipNo": "8126",
       "title": "AI Agent Verification",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -8711,7 +8711,7 @@
     {
       "id": "eip-8151",
       "eipNo": "8151",
-      "title": "Private Key Deactivation Aware ecRecover",
+      "title": "ECDSA Authority Deactivation Aware ecRecover",
       "status": "Draft",
       "isERC": false
     },
@@ -8746,7 +8746,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9285,9 +9285,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8245",
@@ -10779,6 +10779,10 @@
     {
       "source": "eip-4337",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-4337",
+      "target": "eip-7702"
     },
     {
       "source": "eip-4353",
@@ -15930,19 +15934,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16662,7 +16654,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
