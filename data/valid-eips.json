@@ -11304,18 +11304,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-14T12:31:22.932Z"
+    "timestamp": "2026-05-15T00:19:07.299Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11458,7 +11455,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-14T12:31:22.380Z"
+    "timestamp": "2026-05-15T00:19:06.627Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11930,7 +11927,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-14T12:31:19.383Z"
+    "timestamp": "2026-05-15T00:19:04.217Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12003,7 +12000,7 @@
       "2929",
       "8164"
     ],
-    "timestamp": "2026-05-10T00:15:07.679Z"
+    "timestamp": "2026-05-15T00:17:41.289Z"
   },
   "8226": {
     "title": "Regulated Agent Mandate",
@@ -12149,7 +12146,7 @@
       "165",
       "4337"
     ],
-    "timestamp": "2026-05-10T00:16:19.210Z"
+    "timestamp": "2026-05-15T00:19:02.764Z"
   },
   "8239": {
     "title": "Agent Skill Registry",
@@ -12162,7 +12159,7 @@
       "8004",
       "8183"
     ],
-    "timestamp": "2026-05-10T00:16:18.707Z"
+    "timestamp": "2026-05-15T00:19:02.868Z"
   },
   "8240": {
     "title": "Trust Infrastructure for Agents and Assets",
@@ -12173,7 +12170,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-14T12:31:18.027Z"
+    "timestamp": "2026-05-15T00:19:02.107Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12187,15 +12184,14 @@
     "timestamp": "2026-05-13T00:20:29.517Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-14T12:31:20.628Z"
+    "timestamp": "2026-05-15T00:17:37.644Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12208,7 +12204,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-14T12:31:17.916Z"
+    "timestamp": "2026-05-15T00:19:02.048Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12488,7 +12484,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-14T12:31:33.811Z"
+    "timestamp": "2026-05-15T00:19:17.860Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
