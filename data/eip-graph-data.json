@@ -8746,7 +8746,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9285,9 +9285,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8245",
@@ -9351,6 +9351,13 @@
       "title": "Expiring Token Approvals",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8256",
+      "eipNo": "8256",
+      "title": "Blob Streaming",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8257",
@@ -15958,7 +15965,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16678,7 +16697,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -16739,6 +16758,30 @@
     {
       "source": "eip-8255",
       "target": "eip-2612"
+    },
+    {
+      "source": "eip-8256",
+      "target": "eip-4788"
+    },
+    {
+      "source": "eip-8256",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8256",
+      "target": "eip-7002"
+    },
+    {
+      "source": "eip-8256",
+      "target": "eip-7594"
+    },
+    {
+      "source": "eip-8256",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8256",
+      "target": "eip-7918"
     },
     {
       "source": "eip-8257",
