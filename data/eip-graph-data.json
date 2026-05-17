@@ -2215,7 +2215,7 @@
     {
       "id": "eip-7708",
       "eipNo": "7708",
-      "title": "ETH transfers and burns emit a log",
+      "title": "ETH transfers emit a log",
       "status": "Draft",
       "isERC": false
     },
@@ -6070,6 +6070,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8246",
+      "eipNo": "8246",
+      "title": "Remove SELFDESTRUCT Burn",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7709",
       "eipNo": "7709",
       "title": "Read BLOCKHASH from storage and update cost",
@@ -8746,7 +8753,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9285,9 +9292,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8245",
@@ -9295,13 +9302,6 @@
       "title": "Permissioned Vault Registrar",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-8246",
-      "eipNo": "8246",
-      "title": "Remove SELFDESTRUCT Burn",
-      "status": "Draft",
-      "isERC": false
     },
     {
       "id": "eip-8248",
@@ -9334,7 +9334,7 @@
     {
       "id": "eip-8253",
       "eipNo": "8253",
-      "title": "Remove pre-Spurious-Dragon accounts",
+      "title": "Upgrade pre-Spurious-Dragon accounts",
       "status": "Draft",
       "isERC": false
     },
@@ -9418,9 +9418,9 @@
     {
       "id": "eip-8888",
       "eipNo": "8888",
-      "title": "On-Chain Proof Layer for AI Agents",
+      "title": "TruthAnchor — On-Chain Proof Layer for AI Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-9000",
@@ -13839,6 +13839,10 @@
       "target": "eip-6780"
     },
     {
+      "source": "eip-7708",
+      "target": "eip-8246"
+    },
+    {
       "source": "eip-7709",
       "target": "eip-2935"
     },
@@ -15972,19 +15976,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16704,7 +16696,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
