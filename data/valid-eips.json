@@ -11305,18 +11305,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-17T12:14:39.100Z"
+    "timestamp": "2026-05-18T00:18:50.510Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11459,7 +11456,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-17T12:14:38.753Z"
+    "timestamp": "2026-05-18T00:18:50.014Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11931,7 +11928,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-17T12:14:36.294Z"
+    "timestamp": "2026-05-18T00:18:47.729Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12174,7 +12171,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-17T12:14:35.039Z"
+    "timestamp": "2026-05-18T00:18:46.566Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12188,15 +12185,14 @@
     "timestamp": "2026-05-13T00:20:29.517Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-17T12:14:37.048Z"
+    "timestamp": "2026-05-18T00:17:30.493Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12209,7 +12205,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-17T12:14:34.762Z"
+    "timestamp": "2026-05-18T00:18:46.229Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12314,7 +12310,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-12T12:34:11.313Z"
+    "timestamp": "2026-05-18T00:18:45.880Z"
   },
   "8259": {
     "title": "AI Agent Identity & Threat Registry",
@@ -12350,7 +12346,7 @@
       "7840",
       "7892"
     ],
-    "timestamp": "2026-05-12T12:32:34.667Z"
+    "timestamp": "2026-05-18T00:17:28.071Z"
   },
   "8300": {
     "title": "Coercion-Resistant Vault",
@@ -12516,7 +12512,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-17T12:14:48.458Z"
+    "timestamp": "2026-05-18T00:18:59.633Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
