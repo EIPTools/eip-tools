@@ -7402,12 +7402,8 @@
     "title": "Forward compatible consensus data structures",
     "status": "Review",
     "requires": [
-      "6110",
-      "7002",
-      "7251",
       "7495",
-      "7549",
-      "7569",
+      "7607",
       "7916"
     ],
     "isERC": false,
@@ -11313,18 +11309,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-19T12:57:49.676Z"
+    "timestamp": "2026-05-20T00:23:21.281Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11467,7 +11460,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-19T12:57:49.208Z"
+    "timestamp": "2026-05-20T00:23:20.820Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11935,7 +11928,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-19T12:57:44.705Z"
+    "timestamp": "2026-05-20T00:23:18.402Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12008,7 +12001,7 @@
       "2929",
       "8164"
     ],
-    "timestamp": "2026-05-15T00:17:41.289Z"
+    "timestamp": "2026-05-20T00:21:56.960Z"
   },
   "8226": {
     "title": "Regulated Agent Mandate",
@@ -12154,7 +12147,7 @@
       "165",
       "4337"
     ],
-    "timestamp": "2026-05-15T00:19:02.764Z"
+    "timestamp": "2026-05-20T00:23:17.666Z"
   },
   "8239": {
     "title": "Agent Skill Registry",
@@ -12167,7 +12160,7 @@
       "8004",
       "8183"
     ],
-    "timestamp": "2026-05-15T00:19:02.868Z"
+    "timestamp": "2026-05-20T00:23:16.631Z"
   },
   "8240": {
     "title": "Trust Infrastructure for Agents and Assets",
@@ -12178,7 +12171,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-19T12:57:42.651Z"
+    "timestamp": "2026-05-20T00:23:16.190Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12192,15 +12185,14 @@
     "timestamp": "2026-05-18T13:04:34.581Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-19T12:57:46.347Z"
+    "timestamp": "2026-05-20T00:21:53.704Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12213,7 +12205,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-19T12:57:42.243Z"
+    "timestamp": "2026-05-20T00:23:15.920Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12490,14 +12482,11 @@
     "timestamp": "2025-06-14T01:14:40.433Z"
   },
   "9999": {
-    "title": "Expiring Nonces for Frame Transactions",
-    "status": "Draft",
-    "prNo": 11692,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/expiring-nonces/EIPS/eip-9999.md",
-    "requires": [
-      "8141"
-    ],
-    "timestamp": "2026-05-19T12:55:28.340Z"
+    "title": "ERC-9999",
+    "isERC": true,
+    "prNo": 1129,
+    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
+    "timestamp": "2026-05-20T00:23:28.052Z"
   },
   "99999": {
     "title": "CALL_GAS_SPLIT opcode",
@@ -12536,7 +12525,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-19T12:58:05.204Z"
+    "timestamp": "2026-05-20T00:23:32.406Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
