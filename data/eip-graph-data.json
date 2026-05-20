@@ -8760,7 +8760,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9299,9 +9299,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8245",
@@ -9402,6 +9402,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8266",
+      "eipNo": "8266",
+      "title": "Expiring Nonces for Frame Transactions",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8300",
       "eipNo": "8300",
       "title": "Coercion-Resistant Vault",
@@ -9481,7 +9488,7 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Agent Identity, Capability and Reputation",
       "status": "Draft",
       "isERC": true
     },
@@ -15974,7 +15981,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16694,7 +16713,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -16825,6 +16844,10 @@
       "target": "eip-6492"
     },
     {
+      "source": "eip-8266",
+      "target": "eip-8141"
+    },
+    {
       "source": "eip-8300",
       "target": "eip-20"
     },
@@ -16899,6 +16922,14 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-725"
     },
     {
       "source": "eip-undefined",
