@@ -8760,7 +8760,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9299,9 +9299,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8245",
@@ -9397,7 +9397,14 @@
     {
       "id": "eip-8262",
       "eipNo": "8262",
-      "title": "Prepared Transaction Envelope",
+      "title": "Zero-Knowledge Compliance Oracle",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8264",
+      "eipNo": "8264",
+      "title": "AI Agent Memory Access Rights",
       "status": "Draft",
       "isERC": true
     },
@@ -9405,6 +9412,20 @@
       "id": "eip-8266",
       "eipNo": "8266",
       "title": "Expiring Nonces for Frame Transactions",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8267",
+      "eipNo": "8267",
+      "title": "Agent Identity, Capability and Reputation",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8268",
+      "eipNo": "8268",
+      "title": "Storage Roots in Block Access Lists",
       "status": "Draft",
       "isERC": false
     },
@@ -15981,7 +16002,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16701,7 +16734,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -16789,7 +16822,19 @@
     },
     {
       "source": "eip-8257",
+      "target": "eip-150"
+    },
+    {
+      "source": "eip-8257",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8257",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8257",
+      "target": "eip-1967"
     },
     {
       "source": "eip-8259",
@@ -16821,19 +16866,27 @@
     },
     {
       "source": "eip-8262",
-      "target": "eip-712"
+      "target": "eip-165"
     },
     {
-      "source": "eip-8262",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8262",
-      "target": "eip-6492"
+      "source": "eip-8264",
+      "target": "eip-165"
     },
     {
       "source": "eip-8266",
       "target": "eip-8141"
+    },
+    {
+      "source": "eip-8267",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8267",
+      "target": "eip-725"
+    },
+    {
+      "source": "eip-8268",
+      "target": "eip-7928"
     },
     {
       "source": "eip-8300",
