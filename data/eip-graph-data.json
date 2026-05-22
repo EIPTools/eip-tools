@@ -6080,7 +6080,7 @@
       "id": "eip-8246",
       "eipNo": "8246",
       "title": "Remove SELFDESTRUCT Burn",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -8760,7 +8760,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9299,9 +9299,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8245",
@@ -9341,7 +9341,7 @@
     {
       "id": "eip-8253",
       "eipNo": "8253",
-      "title": "Upgrade pre-Spurious-Dragon accounts",
+      "title": "Bump nonce of zero-nonce storage accounts",
       "status": "Draft",
       "isERC": false
     },
@@ -9402,9 +9402,23 @@
       "isERC": true
     },
     {
+      "id": "eip-8263",
+      "eipNo": "8263",
+      "title": "Onchain Proof Layer for AI Agents",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8264",
       "eipNo": "8264",
       "title": "AI Agent Memory Access Rights",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8265",
+      "eipNo": "8265",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -16002,19 +16016,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16734,7 +16736,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -16871,6 +16873,18 @@
     {
       "source": "eip-8264",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",

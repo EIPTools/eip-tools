@@ -11309,18 +11309,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-21T12:58:03.385Z"
+    "timestamp": "2026-05-22T00:21:41.744Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11463,7 +11460,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-21T12:58:02.710Z"
+    "timestamp": "2026-05-22T00:21:41.321Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11931,7 +11928,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-21T12:57:59.443Z"
+    "timestamp": "2026-05-22T00:21:38.938Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12106,7 +12103,7 @@
       "721",
       "5521"
     ],
-    "timestamp": "2026-05-17T00:17:35.480Z"
+    "timestamp": "2026-05-22T00:21:37.822Z"
   },
   "8235": {
     "title": "EIP tagging",
@@ -12116,7 +12113,7 @@
     "requires": [
       "1"
     ],
-    "timestamp": "2026-05-17T00:16:17.939Z"
+    "timestamp": "2026-05-22T00:20:17.334Z"
   },
   "8236": {
     "title": "Deferred-Settlement Fungible Tokens",
@@ -12128,7 +12125,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-05-17T00:17:34.648Z"
+    "timestamp": "2026-05-22T00:21:37.087Z"
   },
   "8237": {
     "title": "Independent CL/EL Sync",
@@ -12174,7 +12171,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-21T12:57:57.882Z"
+    "timestamp": "2026-05-22T00:21:36.807Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12188,15 +12185,14 @@
     "timestamp": "2026-05-18T13:04:34.581Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-21T12:58:00.438Z"
+    "timestamp": "2026-05-22T00:20:15.023Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12209,11 +12205,11 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-21T12:57:57.360Z"
+    "timestamp": "2026-05-22T00:21:36.426Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "161",
       "6780"
@@ -12259,7 +12255,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8252.md"
   },
   "8253": {
-    "title": "Upgrade pre-Spurious-Dragon accounts",
+    "title": "Bump nonce of zero-nonce storage accounts",
     "status": "Draft",
     "requires": [
       "161",
@@ -12277,7 +12273,7 @@
       "6110",
       "7685"
     ],
-    "timestamp": "2026-05-17T00:16:14.885Z"
+    "timestamp": "2026-05-22T00:20:14.488Z"
   },
   "8255": {
     "title": "Expiring Token Approvals",
@@ -12363,6 +12359,14 @@
     ],
     "timestamp": "2026-05-21T12:57:55.007Z"
   },
+  "8263": {
+    "title": "Onchain Proof Layer for AI Agents",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1748,
+    "markdownPath": "https://raw.githubusercontent.com/TruthAnchor-AI/ERCs/refs/heads/master/ERCS/erc-8263.md",
+    "timestamp": "2026-05-22T00:21:33.898Z"
+  },
   "8264": {
     "title": "AI Agent Memory Access Rights",
     "status": "Draft",
@@ -12373,6 +12377,19 @@
       "165"
     ],
     "timestamp": "2026-05-21T12:57:53.382Z"
+  },
+  "8265": {
+    "title": "Prepared Transaction Envelope",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1753,
+    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
+    "requires": [
+      "712",
+      "5792",
+      "6492"
+    ],
+    "timestamp": "2026-05-22T00:21:33.254Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12570,7 +12587,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-21T12:58:16.644Z"
+    "timestamp": "2026-05-22T00:21:52.714Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
