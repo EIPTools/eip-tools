@@ -11309,18 +11309,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-22T12:43:41.600Z"
+    "timestamp": "2026-05-23T00:21:18.156Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11348,7 +11345,7 @@
   },
   "8163": {
     "title": "Reserve `EXTENSION (0xae)` opcode",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "141"
     ],
@@ -11463,7 +11460,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-22T12:43:41.279Z"
+    "timestamp": "2026-05-23T00:21:17.681Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11931,7 +11928,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-22T12:43:38.249Z"
+    "timestamp": "2026-05-23T00:21:15.042Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12174,7 +12171,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-22T12:43:36.765Z"
+    "timestamp": "2026-05-23T00:21:13.710Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12188,15 +12185,14 @@
     "timestamp": "2026-05-18T13:04:34.581Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-22T12:43:39.141Z"
+    "timestamp": "2026-05-23T00:19:48.558Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12209,7 +12205,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-22T12:43:36.429Z"
+    "timestamp": "2026-05-23T00:21:12.987Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12269,15 +12265,13 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8253.md"
   },
   "8254": {
-    "title": "Cap deposit requests per block",
+    "title": "Cap Deposit Requests Per Block",
     "status": "Draft",
-    "prNo": 11607,
-    "markdownPath": "https://raw.githubusercontent.com/barnabasbusa/EIPs/refs/heads/bbusa/eip-cap-deposit-requests-per-block/EIPS/eip-8254.md",
     "requires": [
-      "6110",
-      "7685"
+      "6110"
     ],
-    "timestamp": "2026-05-22T00:20:14.488Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8254.md"
   },
   "8255": {
     "title": "Expiring Token Approvals",
@@ -12343,14 +12337,13 @@
   "8261": {
     "title": "Gas Limit Schedule",
     "status": "Draft",
-    "prNo": 11644,
-    "markdownPath": "https://raw.githubusercontent.com/barnabasbusa/EIPs/refs/heads/bbusa/eip-gas-limit-schedule/EIPS/eip-8261.md",
     "requires": [
       "1559",
       "7840",
       "7892"
     ],
-    "timestamp": "2026-05-18T00:17:28.071Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8261.md"
   },
   "8262": {
     "title": "Zero-Knowledge Compliance Oracle",
@@ -12398,12 +12391,11 @@
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
     "status": "Draft",
-    "prNo": 11692,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/expiring-nonces/EIPS/eip-8266.md",
     "requires": [
       "8141"
     ],
-    "timestamp": "2026-05-20T12:44:24.959Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8266.md"
   },
   "8267": {
     "title": "Agent Identity, Capability and Reputation",
@@ -12420,12 +12412,11 @@
   "8268": {
     "title": "Storage Roots in Block Access Lists",
     "status": "Draft",
-    "prNo": 11716,
-    "markdownPath": "https://raw.githubusercontent.com/CPerezz/EIPs/refs/heads/eip-bal-storage-roots/EIPS/eip-8268.md",
     "requires": [
       "7928"
     ],
-    "timestamp": "2026-05-21T12:56:36.352Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8268.md"
   },
   "8300": {
     "title": "Coercion-Resistant Vault",
@@ -12591,7 +12582,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-22T12:43:52.805Z"
+    "timestamp": "2026-05-23T00:21:29.005Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

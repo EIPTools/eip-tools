@@ -8760,7 +8760,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -8782,7 +8782,7 @@
       "id": "eip-8163",
       "eipNo": "8163",
       "title": "Reserve `EXTENSION (0xae)` opcode",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9299,9 +9299,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8245",
@@ -9348,7 +9348,7 @@
     {
       "id": "eip-8254",
       "eipNo": "8254",
-      "title": "Cap deposit requests per block",
+      "title": "Cap Deposit Requests Per Block",
       "status": "Draft",
       "isERC": false
     },
@@ -16016,19 +16016,7 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16748,7 +16736,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -16797,10 +16785,6 @@
     {
       "source": "eip-8254",
       "target": "eip-6110"
-    },
-    {
-      "source": "eip-8254",
-      "target": "eip-7685"
     },
     {
       "source": "eip-8255",
