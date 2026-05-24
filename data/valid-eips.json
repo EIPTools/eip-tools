@@ -1193,7 +1193,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-18T13:04:35.053Z"
+    "timestamp": "2026-05-24T00:19:56.491Z"
   },
   "1417": {
     "title": "Poll Standard",
@@ -1410,7 +1410,7 @@
     "isERC": true,
     "prNo": 1754,
     "markdownPath": "https://raw.githubusercontent.com/rya-sge/ERCs/refs/heads/ERC-1643/ERCS/erc-1643.md",
-    "timestamp": "2026-05-18T13:04:29.691Z"
+    "timestamp": "2026-05-24T00:19:52.490Z"
   },
   "1656": {
     "title": "On-Chain AI Governance Interface",
@@ -11320,18 +11320,15 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "8130 Payer Web Service Capability",
+    "title": "Primary Agent Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1555,
-    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
+    "prNo": 1536,
+    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
     "requires": [
-      "5792",
-      "7677",
-      "7836",
-      "8130"
+      "1271"
     ],
-    "timestamp": "2026-05-23T12:15:16.822Z"
+    "timestamp": "2026-05-24T00:20:00.581Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11474,7 +11471,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-23T12:15:16.530Z"
+    "timestamp": "2026-05-24T00:20:00.152Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11942,7 +11939,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-23T12:15:13.907Z"
+    "timestamp": "2026-05-24T00:19:57.700Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12185,7 +12182,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-23T12:15:12.536Z"
+    "timestamp": "2026-05-24T00:19:56.341Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12196,18 +12193,17 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-18T13:04:34.581Z"
+    "timestamp": "2026-05-24T00:19:55.959Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-05-23T12:15:14.662Z"
+    "timestamp": "2026-05-24T00:18:37.729Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12220,7 +12216,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-23T12:15:12.026Z"
+    "timestamp": "2026-05-24T00:19:55.839Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12336,7 +12332,7 @@
       "721",
       "1155"
     ],
-    "timestamp": "2026-05-18T13:04:32.730Z"
+    "timestamp": "2026-05-24T00:19:54.795Z"
   },
   "8260": {
     "title": "Dive Log",
@@ -12391,15 +12387,17 @@
     "timestamp": "2026-05-21T12:57:53.382Z"
   },
   "8265": {
-    "title": "Body Lease and Credential Broker",
+    "title": "Prepared Transaction Envelope",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1763,
-    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
+    "prNo": 1753,
+    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
     "requires": [
-      "8264"
+      "712",
+      "5792",
+      "6492"
     ],
-    "timestamp": "2026-05-23T12:15:07.750Z"
+    "timestamp": "2026-05-24T00:19:52.886Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12595,7 +12593,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-23T12:15:29.573Z"
+    "timestamp": "2026-05-24T00:20:10.277Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
