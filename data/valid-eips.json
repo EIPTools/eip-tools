@@ -7858,7 +7858,7 @@
     "isERC": true,
     "prNo": 579,
     "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-05-21T00:23:46.033Z"
+    "timestamp": "2026-05-26T12:52:42.929Z"
   },
   "7753": {
     "title": "Proof-Based Escrow V2",
@@ -11319,16 +11319,18 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8159.md"
   },
   "8160": {
-    "title": "Primary Agent Registry",
+    "title": "8130 Payer Web Service Capability",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1536,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/primary-agent/ERCS/erc-8160.md",
+    "prNo": 1555,
+    "markdownPath": "https://raw.githubusercontent.com/chunter-cb/ERCs/refs/heads/erc-payer-web-service/ERCS/erc-8160.md",
     "requires": [
-      "191",
-      "1271"
+      "5792",
+      "7677",
+      "7836",
+      "8130"
     ],
-    "timestamp": "2026-05-26T00:21:06.697Z"
+    "timestamp": "2026-05-26T12:52:30.873Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11471,7 +11473,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-26T00:21:06.279Z"
+    "timestamp": "2026-05-26T12:52:30.254Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11939,7 +11941,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-26T00:21:03.945Z"
+    "timestamp": "2026-05-26T12:52:27.438Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12182,7 +12184,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-05-26T00:21:02.683Z"
+    "timestamp": "2026-05-26T12:52:25.958Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12196,14 +12198,15 @@
     "timestamp": "2026-05-24T00:19:55.959Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-05-26T00:19:40.638Z"
+    "timestamp": "2026-05-26T12:52:28.262Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12223,7 +12226,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-05-26T00:21:02.204Z"
+    "timestamp": "2026-05-26T12:52:25.360Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12254,7 +12257,7 @@
     "isERC": true,
     "prNo": 1716,
     "markdownPath": "https://raw.githubusercontent.com/seansing/ERCs/refs/heads/erc-generic-relayer-architecture-for-smart-accounts/ERCS/erc-8249.md",
-    "timestamp": "2026-05-21T00:23:29.304Z"
+    "timestamp": "2026-05-26T12:52:25.204Z"
   },
   "8250": {
     "title": "Keyed Nonces for Frame Transactions",
@@ -12394,17 +12397,15 @@
     "timestamp": "2026-05-21T12:57:53.382Z"
   },
   "8265": {
-    "title": "Prepared Transaction Envelope",
+    "title": "Body Lease and Credential Broker",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1753,
-    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
+    "prNo": 1763,
+    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
     "requires": [
-      "712",
-      "5792",
-      "6492"
+      "8264"
     ],
-    "timestamp": "2026-05-26T00:20:59.695Z"
+    "timestamp": "2026-05-26T12:52:21.912Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12449,18 +12450,39 @@
     ],
     "timestamp": "2026-05-25T13:02:27.149Z"
   },
-  "8300": {
-    "title": "Coercion-Resistant Vault",
+  "8272": {
+    "title": "Recent Roots for Frame Transactions",
+    "status": "Draft",
+    "prNo": 11726,
+    "markdownPath": "https://raw.githubusercontent.com/soispoke/EIPs/refs/heads/codex/propose-recent-root-references-upstream/EIPS/eip-8272.md",
+    "requires": [
+      "7843",
+      "8141"
+    ],
+    "timestamp": "2026-05-26T12:50:45.766Z"
+  },
+  "8288": {
+    "title": "AI Inference Proof Verification Interfaces",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1703,
-    "markdownPath": "https://raw.githubusercontent.com/DeFiRe-business/ERCs/refs/heads/erc-coercion-resistant-vault/ERCS/erc-8300.md",
+    "prNo": 1771,
+    "markdownPath": "https://raw.githubusercontent.com/JimmyShi22/ERCs/refs/heads/master/ERCS/erc-8288.md",
     "requires": [
-      "20",
-      "165",
-      "4337"
+      "165"
     ],
-    "timestamp": "2026-04-24T00:14:51.401Z"
+    "timestamp": "2026-05-26T12:52:20.479Z"
+  },
+  "8300": {
+    "title": "Attestation-Gated Agentic Actions",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1770,
+    "markdownPath": "https://raw.githubusercontent.com/xrqin/ERCs/refs/heads/add-erc-8300-attestation-gated-agentic-actions/ERCS/erc-8300.md",
+    "requires": [
+      "165",
+      "1153"
+    ],
+    "timestamp": "2026-05-26T12:52:20.534Z"
   },
   "8338": {
     "title": "Zero-Knowledge Compliance Oracle",
@@ -12613,7 +12635,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-05-26T00:21:17.026Z"
+    "timestamp": "2026-05-26T12:52:42.194Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
