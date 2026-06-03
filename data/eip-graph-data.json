@@ -1355,7 +1355,7 @@
       "id": "eip-4337",
       "eipNo": "4337",
       "title": "Account Abstraction Using Alt Mempool",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -6045,7 +6045,7 @@
       "id": "eip-7701",
       "eipNo": "7701",
       "title": "Native Account Abstraction",
-      "status": "Stagnant",
+      "status": "Withdrawn",
       "isERC": false
     },
     {
@@ -6598,7 +6598,7 @@
       "id": "eip-7796",
       "eipNo": "7796",
       "title": "Conditional send transaction RPC",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -6703,7 +6703,7 @@
       "id": "eip-7813",
       "eipNo": "7813",
       "title": "Store, Table-Based Introspectable Storage",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -8579,7 +8579,7 @@
       "id": "eip-8126",
       "eipNo": "8126",
       "title": "AI Agent Verification",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8620,8 +8620,8 @@
     {
       "id": "eip-8133",
       "eipNo": "8133",
-      "title": "Upgrade Nomenclature",
-      "status": "Draft",
+      "title": "Network Upgrade Naming",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -8767,7 +8767,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -8775,7 +8775,7 @@
       "id": "eip-8161",
       "eipNo": "8161",
       "title": "Transferable Tokenized Vault Requests",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -9136,6 +9136,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8217",
+      "eipNo": "8217",
+      "title": "Agent NFT Identity Bindings",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8218",
       "eipNo": "8218",
       "title": "Builder Discovery",
@@ -9306,9 +9313,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9432,7 +9439,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -15865,6 +15872,10 @@
     },
     {
       "source": "eip-8130",
+      "target": "eip-170"
+    },
+    {
+      "source": "eip-8130",
       "target": "eip-2718"
     },
     {
@@ -15945,7 +15956,7 @@
     },
     {
       "source": "eip-8133",
-      "target": "eip-7609"
+      "target": "eip-7607"
     },
     {
       "source": "eip-8133",
@@ -16056,10 +16067,6 @@
       "target": "eip-7685"
     },
     {
-      "source": "eip-8148",
-      "target": "eip-7732"
-    },
-    {
       "source": "eip-8149",
       "target": "eip-4844"
     },
@@ -16093,19 +16100,11 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
+      "target": "eip-191"
     },
     {
       "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16596,6 +16595,10 @@
       "target": "eip-6551"
     },
     {
+      "source": "eip-8217",
+      "target": "eip-8004"
+    },
+    {
       "source": "eip-8218",
       "target": "eip-2537"
     },
@@ -16825,7 +16828,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -16965,7 +16968,15 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
