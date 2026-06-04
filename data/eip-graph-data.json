@@ -5538,6 +5538,13 @@
       "isERC": true
     },
     {
+      "id": "eip-7605",
+      "eipNo": "7605",
+      "title": "Privacy-Native Fungible Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-7607",
       "eipNo": "7607",
       "title": "Hardfork Meta - Fusaka",
@@ -8767,7 +8774,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9313,9 +9320,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9446,7 +9453,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Prepared Transaction Envelope",
+      "title": "Body Lease and Credential Broker",
       "status": "Draft",
       "isERC": true
     },
@@ -9538,6 +9545,27 @@
       "id": "eip-8281",
       "eipNo": "8281",
       "title": "Observation Commitment Protocol",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8282",
+      "eipNo": "8282",
+      "title": "Builder Execution Requests",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8284",
+      "eipNo": "8284",
+      "title": "Wallet-Scoped Token Pull Execution",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8285",
+      "eipNo": "8285",
+      "title": "Wallet-Scoped NFT Pull Execution",
       "status": "Draft",
       "isERC": true
     },
@@ -16121,11 +16149,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-191"
+      "target": "eip-5792"
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16849,7 +16885,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -16997,15 +17033,7 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-6492"
+      "target": "eip-8264"
     },
     {
       "source": "eip-8266",
@@ -17118,6 +17146,30 @@
     {
       "source": "eip-8280",
       "target": "eip-7201"
+    },
+    {
+      "source": "eip-8282",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-8282",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8284",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8284",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8285",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8285",
+      "target": "eip-721"
     },
     {
       "source": "eip-8288",
