@@ -6409,7 +6409,7 @@
       "id": "eip-7766",
       "eipNo": "7766",
       "title": "Signature Aggregation for ERC-4337",
-      "status": "Draft",
+      "status": "Withdrawn",
       "isERC": true
     },
     {
@@ -8774,7 +8774,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "8130 Payer Web Service Capability",
+      "title": "Primary Agent Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9320,9 +9320,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9453,7 +9453,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9556,6 +9556,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8283",
+      "eipNo": "8283",
+      "title": "Clear signing descriptors onchain registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8284",
       "eipNo": "8284",
       "title": "Wallet-Scoped Token Pull Execution",
@@ -9579,7 +9586,7 @@
     {
       "id": "eip-8288",
       "eipNo": "8288",
-      "title": "AI Inference Proof Verification Interfaces",
+      "title": "SIWE-Gated NFT Media URI",
       "status": "Draft",
       "isERC": true
     },
@@ -9663,9 +9670,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Frame type for PQ sig and STARK aggregation",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-99999",
@@ -16156,19 +16163,11 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-5792"
+      "target": "eip-191"
     },
     {
       "source": "eip-8160",
-      "target": "eip-7677"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8160",
-      "target": "eip-8130"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8161",
@@ -16892,7 +16891,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17040,7 +17039,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17163,6 +17182,18 @@
       "target": "eip-7732"
     },
     {
+      "source": "eip-8283",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8283",
+      "target": "eip-7730"
+    },
+    {
+      "source": "eip-8283",
+      "target": "eip-8176"
+    },
+    {
       "source": "eip-8284",
       "target": "eip-20"
     },
@@ -17180,7 +17211,19 @@
     },
     {
       "source": "eip-8288",
-      "target": "eip-165"
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8288",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8288",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8288",
+      "target": "eip-4361"
     },
     {
       "source": "eip-8300",
@@ -17253,6 +17296,26 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-8141"
     },
     {
       "source": "eip-undefined",
