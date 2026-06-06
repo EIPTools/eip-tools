@@ -8774,7 +8774,7 @@
     {
       "id": "eip-8160",
       "eipNo": "8160",
-      "title": "Primary Agent Registry",
+      "title": "8130 Payer Web Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9320,9 +9320,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9453,7 +9453,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Prepared Transaction Envelope",
+      "title": "Body Lease and Credential Broker",
       "status": "Draft",
       "isERC": true
     },
@@ -9670,9 +9670,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Frame type for PQ sig and STARK aggregation",
+      "title": "ERC-9999",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-99999",
@@ -16163,11 +16163,19 @@
     },
     {
       "source": "eip-8160",
-      "target": "eip-191"
+      "target": "eip-5792"
     },
     {
       "source": "eip-8160",
-      "target": "eip-1271"
+      "target": "eip-7677"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-7836"
+    },
+    {
+      "source": "eip-8160",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8161",
@@ -16891,7 +16899,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17039,27 +17047,7 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-155"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4361"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-6492"
+      "target": "eip-8264"
     },
     {
       "source": "eip-8266",
@@ -17296,26 +17284,6 @@
     {
       "source": "eip-9835",
       "target": "eip-9834"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-2718"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-2929"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-2930"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7702"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-8141"
     },
     {
       "source": "eip-undefined",
