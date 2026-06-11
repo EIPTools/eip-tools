@@ -8977,7 +8977,7 @@
     {
       "id": "eip-8188",
       "eipNo": "8188",
-      "title": "State Tiering by Write Age",
+      "title": "Last-Written Block for Accounts and Slots",
       "status": "Draft",
       "isERC": false
     },
@@ -9334,9 +9334,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9467,7 +9467,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9626,6 +9626,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8291",
+      "eipNo": "8291",
+      "title": "SIWE-Gated NFT Media URI",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8292",
       "eipNo": "8292",
       "title": "Lean Consensus Aggregators",
@@ -9726,9 +9733,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Frame type for PQ sig and STARK aggregation",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-99999",
@@ -16431,14 +16438,6 @@
     },
     {
       "source": "eip-8188",
-      "target": "eip-2929"
-    },
-    {
-      "source": "eip-8188",
-      "target": "eip-2930"
-    },
-    {
-      "source": "eip-8188",
       "target": "eip-8037"
     },
     {
@@ -16955,7 +16954,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17103,7 +17102,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17290,6 +17309,22 @@
       "target": "eip-7928"
     },
     {
+      "source": "eip-8291",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8291",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8291",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8291",
+      "target": "eip-4361"
+    },
+    {
       "source": "eip-8300",
       "target": "eip-165"
     },
@@ -17364,6 +17399,26 @@
     {
       "source": "eip-9998",
       "target": "eip-8188"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-8141"
     },
     {
       "source": "eip-undefined",
