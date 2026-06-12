@@ -1130,8 +1130,15 @@
     {
       "id": "eip-1450",
       "eipNo": "1450",
-      "title": "ERC-1450 A compatible security token for issuing and trading SEC-compliant securities",
-      "status": "Stagnant",
+      "title": "RTA-Controlled Security Token",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-6093",
+      "eipNo": "6093",
+      "title": "Custom errors for commonly-used tokens",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -4092,13 +4099,6 @@
       "id": "eip-6066",
       "eipNo": "6066",
       "title": "Signature Validation Method for NFTs",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-6093",
-      "eipNo": "6093",
-      "title": "Custom errors for commonly-used tokens",
       "status": "Final",
       "isERC": true
     },
@@ -9334,9 +9334,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9467,7 +9467,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9740,9 +9740,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Frame type for PQ sig and STARK aggregation",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-11796",
@@ -10213,6 +10213,18 @@
     {
       "source": "eip-1418",
       "target": "eip-1559"
+    },
+    {
+      "source": "eip-1450",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-1450",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-1450",
+      "target": "eip-6093"
     },
     {
       "source": "eip-1459",
@@ -16968,7 +16980,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17116,7 +17128,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17397,6 +17429,26 @@
     {
       "source": "eip-9998",
       "target": "eip-8188"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-8141"
     },
     {
       "source": "eip-11796",
