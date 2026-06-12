@@ -1230,7 +1230,7 @@
   },
   "1450": {
     "title": "RTA-Controlled Security Token",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "20",
       "165",
@@ -11430,13 +11430,13 @@
     "title": "Historical Ownership Extension for ERC-721",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1807,
-    "markdownPath": "https://raw.githubusercontent.com/emilianosolazzi/ERCs/refs/heads/eip-ifr-pETH-token/ERCS/erc-8169.md",
+    "prNo": 1556,
+    "markdownPath": "https://raw.githubusercontent.com/emilianosolazzi/ERCs/refs/heads/master/ERCS/erc-8169.md",
     "requires": [
       "165",
       "721"
     ],
-    "timestamp": "2026-06-12T00:28:37.394Z"
+    "timestamp": "2026-06-12T13:00:35.493Z"
   },
   "8170": {
     "title": "AI-Native NFT (AINFT)",
@@ -11491,7 +11491,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-12T00:28:48.508Z"
+    "timestamp": "2026-06-12T13:00:34.877Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11963,7 +11963,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-12T00:28:45.895Z"
+    "timestamp": "2026-06-12T13:00:32.146Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12206,7 +12206,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-12T00:28:44.429Z"
+    "timestamp": "2026-06-12T13:00:31.371Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12220,14 +12220,15 @@
     "timestamp": "2026-06-08T13:21:12.575Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-06-12T00:27:18.206Z"
+    "timestamp": "2026-06-12T13:00:32.979Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12247,7 +12248,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-06-12T00:28:44.286Z"
+    "timestamp": "2026-06-12T13:00:30.692Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12430,20 +12431,15 @@
     "timestamp": "2026-06-12T00:28:40.955Z"
   },
   "8265": {
-    "title": "Prepared Transaction Envelope",
+    "title": "Body Lease and Credential Broker",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1753,
-    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
+    "prNo": 1763,
+    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
     "requires": [
-      "155",
-      "712",
-      "4337",
-      "4361",
-      "5792",
-      "6492"
+      "8264"
     ],
-    "timestamp": "2026-06-12T00:28:40.754Z"
+    "timestamp": "2026-06-12T13:00:27.752Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12527,7 +12523,7 @@
     "isERC": true,
     "prNo": 1774,
     "markdownPath": "https://raw.githubusercontent.com/Brooks1003/ERCs/refs/heads/erc-8267/ERCS/erc-8275.md",
-    "timestamp": "2026-06-07T12:27:27.383Z"
+    "timestamp": "2026-06-12T13:00:27.383Z"
   },
   "8276": {
     "title": "Non-Fungible Multi-Token ownerOf",
@@ -12650,7 +12646,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-06-12T00:28:38.688Z"
+    "timestamp": "2026-06-12T13:00:26.051Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12705,7 +12701,7 @@
       "1271",
       "4361"
     ],
-    "timestamp": "2026-06-12T00:28:37.956Z"
+    "timestamp": "2026-06-12T13:00:24.819Z"
   },
   "8292": {
     "title": "Lean Consensus Aggregators",
@@ -12731,6 +12727,20 @@
       "8188"
     ],
     "timestamp": "2026-06-11T13:07:11.218Z"
+  },
+  "8297": {
+    "title": "Partitioned Binary Tree",
+    "status": "Draft",
+    "prNo": 11799,
+    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/pbt/EIPS/eip-8297.md",
+    "timestamp": "2026-06-12T12:58:55.372Z"
+  },
+  "8298": {
+    "title": "SETCODEFROM Code Reuse Instruction",
+    "status": "Draft",
+    "prNo": 11800,
+    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/refs/heads/add-SETCODEFROM/EIPS/eip-8298.md",
+    "timestamp": "2026-06-12T12:58:55.298Z"
   },
   "8300": {
     "title": "Attestation-Gated Agentic Actions",
@@ -12862,18 +12872,11 @@
     "timestamp": "2026-06-10T12:59:36.442Z"
   },
   "9999": {
-    "title": "Frame type for PQ sig and STARK aggregation",
-    "status": "Draft",
-    "prNo": 11772,
-    "markdownPath": "https://raw.githubusercontent.com/vbuterin/EIPs/refs/heads/patch-3/EIPS/eip-9999.md",
-    "requires": [
-      "2718",
-      "2929",
-      "2930",
-      "7702",
-      "8141"
-    ],
-    "timestamp": "2026-06-12T00:27:12.531Z"
+    "title": "ERC-9999",
+    "isERC": true,
+    "prNo": 1129,
+    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
+    "timestamp": "2026-06-12T13:00:42.642Z"
   },
   "11796": {
     "title": "WYRIWE — What You Read Is What You Execute",
@@ -12924,7 +12927,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-06-12T00:28:59.002Z"
+    "timestamp": "2026-06-12T13:00:46.120Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
