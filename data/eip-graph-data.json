@@ -7241,7 +7241,7 @@
     {
       "id": "eip-7904",
       "eipNo": "7904",
-      "title": "Compute Gas Cost Increase",
+      "title": "Compute Gas Cost Analysis",
       "status": "Draft",
       "isERC": false
     },
@@ -9334,9 +9334,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9467,7 +9467,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9754,9 +9754,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Frame type for PQ sig and STARK aggregation",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-11796",
@@ -14829,10 +14829,6 @@
       "target": "eip-3860"
     },
     {
-      "source": "eip-7904",
-      "target": "eip-7883"
-    },
-    {
       "source": "eip-7907",
       "target": "eip-170"
     },
@@ -16994,7 +16990,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17142,7 +17138,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17423,6 +17439,26 @@
     {
       "source": "eip-9998",
       "target": "eip-8188"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-8141"
     },
     {
       "source": "eip-11796",
