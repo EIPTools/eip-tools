@@ -9334,9 +9334,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9467,7 +9467,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Prepared Transaction Envelope",
+      "title": "Body Lease and Credential Broker",
       "status": "Draft",
       "isERC": true
     },
@@ -9614,9 +9614,9 @@
     {
       "id": "eip-8289",
       "eipNo": "8289",
-      "title": "Multi-block Access List Warming",
+      "title": "Private Fungible Tokens",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8290",
@@ -9677,9 +9677,16 @@
     {
       "id": "eip-8298",
       "eipNo": "8298",
-      "title": "SETCODEFROM Code Reuse Instruction",
+      "title": "AI Agent Workflow Execution Interface",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
+    },
+    {
+      "id": "eip-8299",
+      "eipNo": "8299",
+      "title": "WYRIWE — Input Provenance for AI Inference",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8300",
@@ -17008,7 +17015,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17156,27 +17163,7 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-155"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4361"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-6492"
+      "target": "eip-8264"
     },
     {
       "source": "eip-8266",
@@ -17375,18 +17362,6 @@
       "target": "eip-8141"
     },
     {
-      "source": "eip-8289",
-      "target": "eip-2929"
-    },
-    {
-      "source": "eip-8289",
-      "target": "eip-2930"
-    },
-    {
-      "source": "eip-8289",
-      "target": "eip-7928"
-    },
-    {
       "source": "eip-8291",
       "target": "eip-721"
     },
@@ -17412,6 +17387,22 @@
     },
     {
       "source": "eip-8295",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8295",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-8295",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-8295",
+      "target": "eip-8038"
+    },
+    {
+      "source": "eip-8295",
       "target": "eip-8188"
     },
     {
@@ -17429,6 +17420,18 @@
     {
       "source": "eip-8296",
       "target": "eip-8188"
+    },
+    {
+      "source": "eip-8298",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8299",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8299",
+      "target": "eip-8004"
     },
     {
       "source": "eip-8300",
