@@ -11490,7 +11490,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-16T13:32:42.254Z"
+    "timestamp": "2026-06-17T00:27:48.609Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11707,7 +11707,7 @@
   },
   "8196": {
     "title": "AI Agent Authenticated Wallet",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "155",
       "191",
@@ -11962,7 +11962,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-16T13:32:39.375Z"
+    "timestamp": "2026-06-17T00:27:46.789Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12205,7 +12205,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-16T13:32:38.812Z"
+    "timestamp": "2026-06-17T00:27:45.654Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12219,15 +12219,14 @@
     "timestamp": "2026-06-14T00:25:21.790Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-06-16T13:32:39.950Z"
+    "timestamp": "2026-06-17T00:26:25.483Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12247,7 +12246,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-06-16T13:32:38.295Z"
+    "timestamp": "2026-06-17T00:27:45.531Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12430,15 +12429,20 @@
     "timestamp": "2026-06-12T00:28:40.955Z"
   },
   "8265": {
-    "title": "Body Lease and Credential Broker",
+    "title": "Prepared Transaction Envelope",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1763,
-    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
+    "prNo": 1753,
+    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
     "requires": [
-      "8264"
+      "155",
+      "712",
+      "4337",
+      "4361",
+      "5792",
+      "6492"
     ],
-    "timestamp": "2026-06-16T13:32:35.552Z"
+    "timestamp": "2026-06-17T00:27:43.055Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12650,7 +12654,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-06-16T13:32:33.278Z"
+    "timestamp": "2026-06-17T00:27:41.396Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12675,12 +12679,16 @@
     "timestamp": "2026-06-16T00:31:19.816Z"
   },
   "8289": {
-    "title": "Private Fungible Tokens",
+    "title": "Multi-block Access List Warming",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1817,
-    "markdownPath": "https://raw.githubusercontent.com/Cyimon/ERCs/refs/heads/master/ERCS/erc-8289.md",
-    "timestamp": "2026-06-16T13:32:30.498Z"
+    "prNo": 11776,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/bal-warming/EIPS/eip-8289.md",
+    "requires": [
+      "2929",
+      "2930",
+      "7928"
+    ],
+    "timestamp": "2026-06-17T00:26:20.937Z"
   },
   "8290": {
     "title": "Shielded Note Teleportation",
@@ -12728,7 +12736,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-06-16T13:32:31.460Z"
+    "timestamp": "2026-06-17T00:27:40.356Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12765,15 +12773,11 @@
     "timestamp": "2026-06-12T12:58:55.372Z"
   },
   "8298": {
-    "title": "AI Agent Workflow Execution Interface",
+    "title": "SETCODEFROM Code Reuse Instruction",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1815,
-    "markdownPath": "https://raw.githubusercontent.com/JimmyShi22/ERCs/refs/heads/erc-agent-execution/ERCS/erc-8298.md",
-    "requires": [
-      "165"
-    ],
-    "timestamp": "2026-06-16T13:32:30.560Z"
+    "prNo": 11800,
+    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/refs/heads/add-SETCODEFROM/EIPS/eip-8298.md",
+    "timestamp": "2026-06-17T00:26:19.491Z"
   },
   "8299": {
     "title": "WYRIWE — Input Provenance for AI Inference",
@@ -12972,7 +12976,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-06-16T13:32:53.782Z"
+    "timestamp": "2026-06-17T00:27:57.645Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
