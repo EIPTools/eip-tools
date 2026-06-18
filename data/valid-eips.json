@@ -11493,7 +11493,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-17T13:12:52.122Z"
+    "timestamp": "2026-06-18T00:28:53.714Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11965,7 +11965,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-17T13:12:42.676Z"
+    "timestamp": "2026-06-18T00:28:51.341Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12208,7 +12208,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-17T13:12:29.783Z"
+    "timestamp": "2026-06-18T00:28:50.270Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12222,15 +12222,14 @@
     "timestamp": "2026-06-14T00:25:21.790Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-06-17T13:12:36.034Z"
+    "timestamp": "2026-06-18T00:27:22.006Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12250,7 +12249,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-06-17T13:12:31.484Z"
+    "timestamp": "2026-06-18T00:28:50.152Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12433,15 +12432,20 @@
     "timestamp": "2026-06-17T13:12:08.065Z"
   },
   "8265": {
-    "title": "Body Lease and Credential Broker",
+    "title": "Prepared Transaction Envelope",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1763,
-    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
+    "prNo": 1753,
+    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
     "requires": [
-      "8264"
+      "155",
+      "712",
+      "4337",
+      "4361",
+      "5792",
+      "6492"
     ],
-    "timestamp": "2026-06-17T13:12:06.361Z"
+    "timestamp": "2026-06-18T00:28:47.572Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12661,7 +12665,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-06-17T13:12:05.790Z"
+    "timestamp": "2026-06-18T00:28:45.323Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12686,12 +12690,16 @@
     "timestamp": "2026-06-16T00:31:19.816Z"
   },
   "8289": {
-    "title": "Private Fungible Tokens",
+    "title": "Multi-block Access List Warming",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1817,
-    "markdownPath": "https://raw.githubusercontent.com/Cyimon/ERCs/refs/heads/master/ERCS/erc-8289.md",
-    "timestamp": "2026-06-17T13:12:00.716Z"
+    "prNo": 11776,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/bal-warming/EIPS/eip-8289.md",
+    "requires": [
+      "2929",
+      "2930",
+      "7928"
+    ],
+    "timestamp": "2026-06-18T00:27:17.664Z"
   },
   "8290": {
     "title": "Shielded Note Teleportation",
@@ -12739,7 +12747,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-06-17T13:11:58.853Z"
+    "timestamp": "2026-06-18T00:28:44.598Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12943,11 +12951,11 @@
     "timestamp": "2026-06-10T12:59:36.442Z"
   },
   "9999": {
-    "title": "ERC-9999",
-    "isERC": true,
-    "prNo": 1129,
-    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
-    "timestamp": "2026-06-15T14:02:04.732Z"
+    "title": "Trustless log and transaction index",
+    "status": "Draft",
+    "prNo": 11811,
+    "markdownPath": "https://raw.githubusercontent.com/zsfelfoldi/EIPs/refs/heads/patch-7/EIPS/eip-9999.md",
+    "timestamp": "2026-06-18T00:27:14.691Z"
   },
   "11796": {
     "title": "WYRIWE — What You Read Is What You Execute",
@@ -12990,15 +12998,17 @@
     "timestamp": "2026-03-04T17:02:20.975Z"
   },
   "undefined": {
-    "title": "Sovereign Bridged Token",
+    "title": "Named NFT",
     "status": "Draft",
     "isERC": true,
-    "prNo": 89,
-    "markdownPath": "https://raw.githubusercontent.com/connext/ERCs/refs/heads/ERC-7281/ERCS/erc-7281.md",
+    "prNo": 320,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/heads/xinbenlv-patch-1/ERCS/erc-7653.md",
     "requires": [
-      "20"
+      "165",
+      "721",
+      "7632"
     ],
-    "timestamp": "2026-06-17T13:13:28.361Z"
+    "timestamp": "2026-06-18T00:29:03.521Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
