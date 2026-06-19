@@ -2236,14 +2236,56 @@
     {
       "id": "eip-2780",
       "eipNo": "2780",
-      "title": "Reduce intrinsic transaction gas",
+      "title": "Resource-based intrinsic transaction gas",
       "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-6780",
+      "eipNo": "6780",
+      "title": "SELFDESTRUCT only in same transaction",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-7702",
+      "eipNo": "7702",
+      "title": "Set Code for EOAs",
+      "status": "Final",
       "isERC": false
     },
     {
       "id": "eip-7708",
       "eipNo": "7708",
       "title": "ETH transfers emit a log",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7904",
+      "eipNo": "7904",
+      "title": "Compute Gas Cost Analysis",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7928",
+      "eipNo": "7928",
+      "title": "Block-Level Access Lists",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8037",
+      "eipNo": "8037",
+      "title": "State Creation Gas Cost Increase",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8038",
+      "eipNo": "8038",
+      "title": "State-access gas cost update",
       "status": "Draft",
       "isERC": false
     },
@@ -2910,13 +2952,6 @@
       "eipNo": "3978",
       "title": "Gas refunds on reverts",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7702",
-      "eipNo": "7702",
-      "title": "Set Code for EOAs",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -4465,13 +4500,6 @@
       "title": "L2 Aliasing of EVM-based Addresses",
       "status": "Review",
       "isERC": true
-    },
-    {
-      "id": "eip-6780",
-      "eipNo": "6780",
-      "title": "SELFDESTRUCT only in same transaction",
-      "status": "Final",
-      "isERC": false
     },
     {
       "id": "eip-6785",
@@ -7239,13 +7267,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7904",
-      "eipNo": "7904",
-      "title": "Compute Gas Cost Analysis",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-7906",
       "eipNo": "7906",
       "title": "Transaction Assertions via State Diff Opcode",
@@ -7362,13 +7383,6 @@
       "eipNo": "7927",
       "title": "History Expiry Meta",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7928",
-      "eipNo": "7928",
-      "title": "Block-Level Access Lists",
-      "status": "Draft",
       "isERC": false
     },
     {
@@ -7858,20 +7872,6 @@
       "id": "eip-8032",
       "eipNo": "8032",
       "title": "Size-Based Storage Gas Pricing",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-8037",
-      "eipNo": "8037",
-      "title": "State Creation Gas Cost Increase",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-8038",
-      "eipNo": "8038",
-      "title": "State-access gas cost update",
       "status": "Draft",
       "isERC": false
     },
@@ -9334,9 +9334,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9467,7 +9467,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9717,6 +9717,41 @@
       "isERC": true
     },
     {
+      "id": "eip-8304",
+      "eipNo": "8304",
+      "title": "Trustless log and transaction index",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8305",
+      "eipNo": "8305",
+      "title": "Time-Delayed Access Control",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8306",
+      "eipNo": "8306",
+      "title": "Role-Based Timelock Operation",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8307",
+      "eipNo": "8307",
+      "title": "Smart Contract Emergency State",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8308",
+      "eipNo": "8308",
+      "title": "Smart Contract Emergency Response",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8338",
       "eipNo": "8338",
       "title": "Zero-Knowledge Compliance Oracle",
@@ -9838,7 +9873,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Named NFT",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
@@ -10852,7 +10887,7 @@
     },
     {
       "source": "eip-2780",
-      "target": "eip-1559"
+      "target": "eip-161"
     },
     {
       "source": "eip-2780",
@@ -10868,7 +10903,31 @@
     },
     {
       "source": "eip-2780",
+      "target": "eip-6780"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-2780",
       "target": "eip-7708"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-7904"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-8038"
     },
     {
       "source": "eip-2786",
@@ -16871,10 +16930,6 @@
       "target": "eip-7251"
     },
     {
-      "source": "eip-8222",
-      "target": "eip-8141"
-    },
-    {
       "source": "eip-8223",
       "target": "eip-1559"
     },
@@ -17048,7 +17103,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17196,7 +17251,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17511,6 +17586,22 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8305",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8306",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8307",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8308",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8338",
       "target": "eip-165"
     },
@@ -17585,18 +17676,6 @@
     {
       "source": "eip-11796",
       "target": "eip-8004"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
