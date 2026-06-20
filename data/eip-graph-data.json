@@ -9334,9 +9334,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9467,7 +9467,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Prepared Transaction Envelope",
+      "title": "Body Lease and Credential Broker",
       "status": "Draft",
       "isERC": true
     },
@@ -9850,6 +9850,13 @@
       "isERC": true
     },
     {
+      "id": "eip-11820",
+      "eipNo": "11820",
+      "title": "Post-Quantum Keystore for Stateful Keys",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-99999",
       "eipNo": "99999",
       "title": "CALL_GAS_SPLIT opcode",
@@ -9887,9 +9894,9 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Increase Calldata Floor Cost to 96",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-0288",
@@ -17110,7 +17117,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17258,27 +17265,7 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-155"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4361"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-6492"
+      "target": "eip-8264"
     },
     {
       "source": "eip-8266",
@@ -17693,6 +17680,14 @@
       "target": "eip-3668"
     },
     {
+      "source": "eip-11820",
+      "target": "eip-2335"
+    },
+    {
+      "source": "eip-11820",
+      "target": "eip-3076"
+    },
+    {
       "source": "eip-undefined",
       "target": "eip-165"
     },
@@ -17706,11 +17701,11 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-4337"
+      "target": "eip-7623"
     },
     {
       "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7976"
     }
   ]
 }
