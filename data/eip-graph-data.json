@@ -1131,7 +1131,7 @@
       "id": "eip-1450",
       "eipNo": "1450",
       "title": "RTA-Controlled Security Token",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -1476,6 +1476,13 @@
       "title": "Precompile for Elliptic Curve Linear Combinations",
       "status": "Stagnant",
       "isERC": false
+    },
+    {
+      "id": "eip-1833",
+      "eipNo": "1833",
+      "title": "Bounded Agent Actions",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-1844",
@@ -3735,7 +3742,7 @@
       "id": "eip-5516",
       "eipNo": "5516",
       "title": "Soulbound Multi-owner Tokens",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -9334,9 +9341,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9467,7 +9474,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9894,9 +9901,9 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Increase Calldata Floor Cost to 96",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-0288",
@@ -10490,6 +10497,10 @@
     {
       "source": "eip-1820",
       "target": "eip-214"
+    },
+    {
+      "source": "eip-1833",
+      "target": "eip-165"
     },
     {
       "source": "eip-1844",
@@ -17125,7 +17136,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17273,7 +17284,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17705,11 +17736,11 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-7623"
+      "target": "eip-4337"
     },
     {
       "source": "eip-0000",
-      "target": "eip-7976"
+      "target": "eip-5792"
     }
   ]
 }
