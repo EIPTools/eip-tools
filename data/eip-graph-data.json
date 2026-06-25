@@ -7281,6 +7281,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8141",
+      "eipNo": "8141",
+      "title": "Frame Transaction",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-7907",
       "eipNo": "7907",
       "title": "Meter Contract Code Size And Increase Limit",
@@ -8688,13 +8695,6 @@
       "isERC": false
     },
     {
-      "id": "eip-8141",
-      "eipNo": "8141",
-      "title": "Frame Transaction",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-8142",
       "eipNo": "8142",
       "title": "Block-in-Blobs (BiB)",
@@ -9068,9 +9068,9 @@
     {
       "id": "eip-8201",
       "eipNo": "8201",
-      "title": "Pre-Ingestion Timestamp Verification",
+      "title": "Contract Role Semantics Standard",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8202",
@@ -9341,9 +9341,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9474,7 +9474,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9642,7 +9642,7 @@
     {
       "id": "eip-8291",
       "eipNo": "8291",
-      "title": "SIWE-Gated NFT Media URI",
+      "title": "Protocol Interaction Manifest",
       "status": "Draft",
       "isERC": true
     },
@@ -9755,6 +9755,13 @@
       "id": "eip-8308",
       "eipNo": "8308",
       "title": "Smart Contract Emergency Response",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8309",
+      "eipNo": "8309",
+      "title": "Gateway Mesh Sync Protocol for CCIP-Read",
       "status": "Draft",
       "isERC": true
     },
@@ -9894,16 +9901,16 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Lot-based Token",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Increase Calldata Floor Cost to 96",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-0288",
@@ -14955,6 +14962,10 @@
       "target": "eip-3860"
     },
     {
+      "source": "eip-7906",
+      "target": "eip-8141"
+    },
+    {
       "source": "eip-7907",
       "target": "eip-170"
     },
@@ -16771,6 +16782,10 @@
       "target": "eip-7883"
     },
     {
+      "source": "eip-8201",
+      "target": "eip-5982"
+    },
+    {
       "source": "eip-8202",
       "target": "eip-2"
     },
@@ -17140,7 +17155,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17288,7 +17303,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17523,22 +17558,6 @@
       "target": "eip-7928"
     },
     {
-      "source": "eip-8291",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-8291",
-      "target": "eip-1155"
-    },
-    {
-      "source": "eip-8291",
-      "target": "eip-1271"
-    },
-    {
-      "source": "eip-8291",
-      "target": "eip-4361"
-    },
-    {
       "source": "eip-8294",
       "target": "eip-712"
     },
@@ -17613,6 +17632,14 @@
     {
       "source": "eip-8308",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8309",
+      "target": "eip-191"
+    },
+    {
+      "source": "eip-8309",
+      "target": "eip-3668"
     },
     {
       "source": "eip-8338",
@@ -17707,12 +17734,24 @@
       "target": "eip-3076"
     },
     {
-      "source": "eip-0000",
-      "target": "eip-7623"
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
-      "target": "eip-7976"
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
