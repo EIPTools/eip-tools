@@ -2255,6 +2255,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7523",
+      "eipNo": "7523",
+      "title": "Empty accounts deprecation",
+      "status": "Last Call",
+      "isERC": false
+    },
+    {
       "id": "eip-7702",
       "eipNo": "7702",
       "title": "Set Code for EOAs",
@@ -4072,13 +4079,6 @@
       "eipNo": "5920",
       "title": "PAY opcode",
       "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7523",
-      "eipNo": "7523",
-      "title": "Empty accounts deprecation",
-      "status": "Last Call",
       "isERC": false
     },
     {
@@ -9341,9 +9341,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9474,7 +9474,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Prepared Transaction Envelope",
+      "title": "Body Lease and Credential Broker",
       "status": "Draft",
       "isERC": true
     },
@@ -9642,7 +9642,7 @@
     {
       "id": "eip-8291",
       "eipNo": "8291",
-      "title": "Protocol Interaction Manifest",
+      "title": "SIWE-Gated NFT Media URI",
       "status": "Draft",
       "isERC": true
     },
@@ -9764,6 +9764,20 @@
       "title": "Gateway Mesh Sync Protocol for CCIP-Read",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8310",
+      "eipNo": "8310",
+      "title": "Post-Quantum Keystore for Stateful Keys",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8311",
+      "eipNo": "8311",
+      "title": "Increase Calldata Floor Cost to 96",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8338",
@@ -10919,10 +10933,6 @@
     },
     {
       "source": "eip-2780",
-      "target": "eip-161"
-    },
-    {
-      "source": "eip-2780",
       "target": "eip-2718"
     },
     {
@@ -10936,6 +10946,10 @@
     {
       "source": "eip-2780",
       "target": "eip-6780"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-7523"
     },
     {
       "source": "eip-2780",
@@ -17155,7 +17169,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17303,27 +17317,7 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-155"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4361"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-6492"
+      "target": "eip-8264"
     },
     {
       "source": "eip-8266",
@@ -17558,6 +17552,22 @@
       "target": "eip-7928"
     },
     {
+      "source": "eip-8291",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8291",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8291",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8291",
+      "target": "eip-4361"
+    },
+    {
       "source": "eip-8294",
       "target": "eip-712"
     },
@@ -17640,6 +17650,22 @@
     {
       "source": "eip-8309",
       "target": "eip-3668"
+    },
+    {
+      "source": "eip-8310",
+      "target": "eip-2335"
+    },
+    {
+      "source": "eip-8310",
+      "target": "eip-3076"
+    },
+    {
+      "source": "eip-8311",
+      "target": "eip-7623"
+    },
+    {
+      "source": "eip-8311",
+      "target": "eip-7976"
     },
     {
       "source": "eip-8338",
