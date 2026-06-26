@@ -2262,6 +2262,13 @@
       "isERC": false
     },
     {
+      "id": "eip-7623",
+      "eipNo": "7623",
+      "title": "Increase calldata cost",
+      "status": "Final",
+      "isERC": false
+    },
+    {
       "id": "eip-7702",
       "eipNo": "7702",
       "title": "Set Code for EOAs",
@@ -5548,13 +5555,6 @@
       "id": "eip-7600",
       "eipNo": "7600",
       "title": "Hardfork Meta - Pectra",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-7623",
-      "eipNo": "7623",
-      "title": "Increase calldata cost",
       "status": "Final",
       "isERC": false
     },
@@ -9341,9 +9341,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9474,7 +9474,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9778,6 +9778,13 @@
       "title": "Increase Calldata Floor Cost to 96",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8313",
+      "eipNo": "8313",
+      "title": "Protocol Interaction Manifest",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8338",
@@ -10950,6 +10957,10 @@
     {
       "source": "eip-2780",
       "target": "eip-7523"
+    },
+    {
+      "source": "eip-2780",
+      "target": "eip-7623"
     },
     {
       "source": "eip-2780",
@@ -16521,10 +16532,6 @@
     },
     {
       "source": "eip-8168",
-      "target": "eip-7836"
-    },
-    {
-      "source": "eip-8168",
       "target": "eip-8130"
     },
     {
@@ -17169,7 +17176,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17317,7 +17324,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
