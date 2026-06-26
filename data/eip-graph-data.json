@@ -9341,9 +9341,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9474,7 +9474,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Prepared Transaction Envelope",
+      "title": "Body Lease and Credential Broker",
       "status": "Draft",
       "isERC": true
     },
@@ -9783,6 +9783,13 @@
       "id": "eip-8313",
       "eipNo": "8313",
       "title": "Protocol Interaction Manifest",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8317",
+      "eipNo": "8317",
+      "title": "Contract Storage Layout Descriptor Format",
       "status": "Draft",
       "isERC": true
     },
@@ -17176,7 +17183,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17324,27 +17331,7 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-155"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-4361"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-5792"
-    },
-    {
-      "source": "eip-8265",
-      "target": "eip-6492"
+      "target": "eip-8264"
     },
     {
       "source": "eip-8266",
@@ -17693,6 +17680,18 @@
     {
       "source": "eip-8311",
       "target": "eip-7976"
+    },
+    {
+      "source": "eip-8317",
+      "target": "eip-7201"
+    },
+    {
+      "source": "eip-8317",
+      "target": "eip-7730"
+    },
+    {
+      "source": "eip-8317",
+      "target": "eip-8042"
     },
     {
       "source": "eip-8338",
