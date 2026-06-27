@@ -9341,9 +9341,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9474,7 +9474,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9783,6 +9783,13 @@
       "id": "eip-8313",
       "eipNo": "8313",
       "title": "Protocol Interaction Manifest",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8316",
+      "eipNo": "8316",
+      "title": "Programmable Settlement Locks",
       "status": "Draft",
       "isERC": true
     },
@@ -17183,7 +17190,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17331,7 +17338,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
