@@ -11515,7 +11515,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-28T00:22:09.711Z"
+    "timestamp": "2026-06-28T12:23:36.365Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11991,7 +11991,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-28T00:22:07.058Z"
+    "timestamp": "2026-06-28T12:23:33.462Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12232,7 +12232,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-06-28T00:22:05.566Z"
+    "timestamp": "2026-06-28T12:23:32.031Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12246,14 +12246,15 @@
     "timestamp": "2026-06-24T12:40:08.940Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-06-28T00:20:32.156Z"
+    "timestamp": "2026-06-28T12:23:34.237Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12273,7 +12274,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-06-28T00:22:04.936Z"
+    "timestamp": "2026-06-28T12:23:31.885Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12456,20 +12457,15 @@
     "timestamp": "2026-06-28T00:22:01.260Z"
   },
   "8265": {
-    "title": "Prepared Transaction Envelope",
+    "title": "Body Lease and Credential Broker",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1753,
-    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
+    "prNo": 1763,
+    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
     "requires": [
-      "155",
-      "712",
-      "4337",
-      "4361",
-      "5792",
-      "6492"
+      "8264"
     ],
-    "timestamp": "2026-06-28T00:22:01.023Z"
+    "timestamp": "2026-06-28T12:23:28.452Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12688,7 +12684,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-06-28T00:21:58.906Z"
+    "timestamp": "2026-06-28T12:23:26.719Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12770,7 +12766,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-06-28T00:21:57.752Z"
+    "timestamp": "2026-06-28T12:23:26.102Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13173,7 +13169,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-06-28T00:22:21.024Z"
+    "timestamp": "2026-06-28T12:23:47.579Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
