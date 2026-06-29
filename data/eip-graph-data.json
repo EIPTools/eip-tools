@@ -9341,9 +9341,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9474,7 +9474,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9778,6 +9778,13 @@
       "title": "Increase Calldata Floor Cost to 96",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8312",
+      "eipNo": "8312",
+      "title": "Bounded Agent Actions",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8313",
@@ -17190,7 +17197,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17338,7 +17345,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17570,6 +17597,10 @@
     },
     {
       "source": "eip-8289",
+      "target": "eip-2935"
+    },
+    {
+      "source": "eip-8289",
       "target": "eip-7928"
     },
     {
@@ -17687,6 +17718,10 @@
     {
       "source": "eip-8311",
       "target": "eip-7976"
+    },
+    {
+      "source": "eip-8312",
+      "target": "eip-165"
     },
     {
       "source": "eip-8317",
