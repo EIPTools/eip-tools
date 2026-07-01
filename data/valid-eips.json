@@ -7897,7 +7897,7 @@
     "isERC": true,
     "prNo": 579,
     "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-06-26T12:37:42.093Z"
+    "timestamp": "2026-07-01T12:53:11.110Z"
   },
   "7753": {
     "title": "Proof-Based Escrow V2",
@@ -11449,7 +11449,7 @@
       "7677",
       "8130"
     ],
-    "timestamp": "2026-06-26T00:26:04.315Z"
+    "timestamp": "2026-07-01T12:52:57.326Z"
   },
   "8169": {
     "title": "Historical Ownership Extension for ERC-721",
@@ -11516,7 +11516,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T00:25:03.422Z"
+    "timestamp": "2026-07-01T12:52:56.687Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11991,7 +11991,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T00:25:00.833Z"
+    "timestamp": "2026-07-01T12:52:53.074Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12234,7 +12234,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T00:24:59.476Z"
+    "timestamp": "2026-07-01T12:52:52.088Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12248,14 +12248,15 @@
     "timestamp": "2026-06-29T13:20:45.034Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-01T00:23:24.067Z"
+    "timestamp": "2026-07-01T12:52:54.106Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12275,7 +12276,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-01T00:24:58.906Z"
+    "timestamp": "2026-07-01T12:52:51.719Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12306,7 +12307,7 @@
     "isERC": true,
     "prNo": 1716,
     "markdownPath": "https://raw.githubusercontent.com/seansing/ERCs/refs/heads/erc-generic-relayer-architecture-for-smart-accounts/ERCS/erc-8249.md",
-    "timestamp": "2026-06-26T12:37:24.306Z"
+    "timestamp": "2026-07-01T12:52:50.940Z"
   },
   "8250": {
     "title": "Keyed Nonces for Frame Transactions",
@@ -12458,20 +12459,15 @@
     "timestamp": "2026-06-28T00:22:01.260Z"
   },
   "8265": {
-    "title": "Prepared Transaction Envelope",
+    "title": "Body Lease and Credential Broker",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1753,
-    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
+    "prNo": 1763,
+    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
     "requires": [
-      "155",
-      "712",
-      "4337",
-      "4361",
-      "5792",
-      "6492"
+      "8264"
     ],
-    "timestamp": "2026-07-01T00:24:55.683Z"
+    "timestamp": "2026-07-01T12:52:47.455Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12546,7 +12542,7 @@
       "165",
       "712"
     ],
-    "timestamp": "2026-06-26T12:37:20.551Z"
+    "timestamp": "2026-07-01T12:52:46.617Z"
   },
   "8275": {
     "title": "Agent Service Discovery and Escrow Payments",
@@ -12655,7 +12651,7 @@
       "7730",
       "8176"
     ],
-    "timestamp": "2026-06-26T12:37:19.007Z"
+    "timestamp": "2026-07-01T12:52:44.782Z"
   },
   "8284": {
     "title": "Wallet-Scoped Token Pull Execution",
@@ -12691,7 +12687,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-01T00:24:52.548Z"
+    "timestamp": "2026-07-01T12:52:44.777Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12713,7 +12709,7 @@
       "7702",
       "8141"
     ],
-    "timestamp": "2026-06-26T12:35:41.664Z"
+    "timestamp": "2026-07-01T12:50:53.779Z"
   },
   "8289": {
     "title": "Multi-block Access List Warming",
@@ -12774,7 +12770,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-01T00:24:51.229Z"
+    "timestamp": "2026-07-01T12:52:43.401Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12801,7 +12797,7 @@
       "8038",
       "8188"
     ],
-    "timestamp": "2026-06-26T00:24:21.832Z"
+    "timestamp": "2026-07-01T12:50:52.046Z"
   },
   "8297": {
     "title": "Partitioned Binary Tree",
@@ -12931,24 +12927,23 @@
   "8310": {
     "title": "Post-Quantum Keystore for Stateful Keys",
     "status": "Draft",
-    "prNo": 11820,
-    "markdownPath": "https://raw.githubusercontent.com/ch4r10t33r/EIPs/refs/heads/eip-pq-keystore-leansig-2to32/EIPS/eip-8310.md",
     "requires": [
       "2335",
       "3076"
     ],
-    "timestamp": "2026-07-01T00:23:18.442Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8310.md"
   },
   "8311": {
     "title": "Increase Calldata Floor Cost to 96",
     "status": "Draft",
-    "prNo": 11821,
-    "markdownPath": "https://raw.githubusercontent.com/misilva73/EIPs/refs/heads/add-calldata-floor-increase-eip/EIPS/eip-8311.md",
     "requires": [
+      "3860",
       "7623",
       "7976"
     ],
-    "timestamp": "2026-07-01T00:23:18.248Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8311.md"
   },
   "8312": {
     "title": "Bounded Agent Actions",
@@ -12959,7 +12954,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T00:24:49.960Z"
+    "timestamp": "2026-07-01T12:52:41.958Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -12967,7 +12962,7 @@
     "isERC": true,
     "prNo": 1836,
     "markdownPath": "https://raw.githubusercontent.com/Cointrol-Limited/ERCs/refs/heads/add-pim/ERCS/erc-8313.md",
-    "timestamp": "2026-06-26T00:25:52.604Z"
+    "timestamp": "2026-07-01T12:52:42.119Z"
   },
   "8316": {
     "title": "Programmable Settlement Locks",
@@ -12988,7 +12983,18 @@
       "7730",
       "8042"
     ],
-    "timestamp": "2026-06-26T12:37:15.889Z"
+    "timestamp": "2026-07-01T12:52:40.894Z"
+  },
+  "8318": {
+    "title": "Tokenized fund lifecycle metadata",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1845,
+    "markdownPath": "https://raw.githubusercontent.com/praveensparkout/ERCs/refs/heads/erc-ufund/ERCS/erc-8318.md",
+    "requires": [
+      "165"
+    ],
+    "timestamp": "2026-07-01T12:52:40.906Z"
   },
   "8338": {
     "title": "Zero-Knowledge Compliance Oracle",
@@ -13188,7 +13194,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-01T00:25:15.430Z"
+    "timestamp": "2026-07-01T12:53:10.169Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
