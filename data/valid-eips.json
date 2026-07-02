@@ -11516,7 +11516,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-02T00:24:23.621Z"
+    "timestamp": "2026-07-02T13:26:03.829Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11991,7 +11991,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-02T00:24:20.918Z"
+    "timestamp": "2026-07-02T13:26:00.345Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12234,7 +12234,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-02T00:24:20.137Z"
+    "timestamp": "2026-07-02T13:25:59.332Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12248,14 +12248,15 @@
     "timestamp": "2026-06-29T13:20:45.034Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-02T00:22:49.896Z"
+    "timestamp": "2026-07-02T13:26:01.367Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12275,7 +12276,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-02T00:24:20.012Z"
+    "timestamp": "2026-07-02T13:25:58.605Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12458,20 +12459,15 @@
     "timestamp": "2026-06-28T00:22:01.260Z"
   },
   "8265": {
-    "title": "Prepared Transaction Envelope",
+    "title": "Body Lease and Credential Broker",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1753,
-    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
+    "prNo": 1763,
+    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
     "requires": [
-      "155",
-      "712",
-      "4337",
-      "4361",
-      "5792",
-      "6492"
+      "8264"
     ],
-    "timestamp": "2026-07-02T00:24:17.203Z"
+    "timestamp": "2026-07-02T13:25:54.950Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12691,7 +12687,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-02T00:24:15.045Z"
+    "timestamp": "2026-07-02T13:25:52.952Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12774,7 +12770,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-02T00:24:14.180Z"
+    "timestamp": "2026-07-02T13:25:51.518Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12808,9 +12804,11 @@
   "8297": {
     "title": "Partitioned Binary Tree",
     "status": "Draft",
-    "prNo": 11799,
-    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/pbt/EIPS/eip-8297.md",
-    "timestamp": "2026-06-28T00:20:27.302Z"
+    "requires": [
+      "7612"
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8297.md"
   },
   "8298": {
     "title": "SETCODEFROM Code Reuse Instruction",
@@ -12834,7 +12832,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-06-27T12:22:46.880Z"
+    "timestamp": "2026-07-02T13:25:51.358Z"
   },
   "8300": {
     "title": "Invariant-First Reserve Receipt Token",
@@ -12964,7 +12962,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-02T00:24:13.398Z"
+    "timestamp": "2026-07-02T13:25:50.509Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -12973,6 +12971,28 @@
     "prNo": 1836,
     "markdownPath": "https://raw.githubusercontent.com/Cointrol-Limited/ERCs/refs/heads/add-pim/ERCS/erc-8313.md",
     "timestamp": "2026-07-01T12:52:42.119Z"
+  },
+  "8314": {
+    "title": "Contract Role Naming",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1846,
+    "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/ERC-8314-Contract-Role-Naming/ERCS/erc-8314.md",
+    "requires": [
+      "7820"
+    ],
+    "timestamp": "2026-07-02T13:25:49.464Z"
+  },
+  "8315": {
+    "title": "Contract Role Semantics",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1847,
+    "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/EIP-8315-Contract-Role-Semantics/ERCS/erc-8315.md",
+    "requires": [
+      "5982"
+    ],
+    "timestamp": "2026-07-02T13:25:49.417Z"
   },
   "8316": {
     "title": "Programmable Settlement Locks",
@@ -13204,7 +13224,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-02T00:24:34.105Z"
+    "timestamp": "2026-07-02T13:26:17.179Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
