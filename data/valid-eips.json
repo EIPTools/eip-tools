@@ -11516,7 +11516,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:56.687Z"
+    "timestamp": "2026-07-02T00:24:23.621Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11589,7 +11589,7 @@
   },
   "8182": {
     "title": "Private ETH and ERC-20 Transfers",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "20"
     ],
@@ -11991,7 +11991,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:53.074Z"
+    "timestamp": "2026-07-02T00:24:20.918Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12234,7 +12234,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:52.088Z"
+    "timestamp": "2026-07-02T00:24:20.137Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12248,15 +12248,14 @@
     "timestamp": "2026-06-29T13:20:45.034Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-01T12:52:54.106Z"
+    "timestamp": "2026-07-02T00:22:49.896Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12276,7 +12275,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-01T12:52:51.719Z"
+    "timestamp": "2026-07-02T00:24:20.012Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12459,15 +12458,20 @@
     "timestamp": "2026-06-28T00:22:01.260Z"
   },
   "8265": {
-    "title": "Body Lease and Credential Broker",
+    "title": "Prepared Transaction Envelope",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1763,
-    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
+    "prNo": 1753,
+    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
     "requires": [
-      "8264"
+      "155",
+      "712",
+      "4337",
+      "4361",
+      "5792",
+      "6492"
     ],
-    "timestamp": "2026-07-01T12:52:47.455Z"
+    "timestamp": "2026-07-02T00:24:17.203Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12687,7 +12691,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-01T12:52:44.777Z"
+    "timestamp": "2026-07-02T00:24:15.045Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12770,34 +12774,36 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-01T12:52:43.401Z"
+    "timestamp": "2026-07-02T00:24:14.180Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
     "status": "Draft",
-    "prNo": 11788,
-    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/eip-9999-state-tiering-gas/EIPS/eip-8295.md",
     "requires": [
       "2929",
       "2930",
+      "7702",
+      "7825",
       "8037",
       "8038",
       "8188"
     ],
-    "timestamp": "2026-06-27T12:21:03.955Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8295.md"
   },
   "8296": {
     "title": "Fixed-Cutoff State Tiering",
     "status": "Draft",
-    "prNo": 11790,
-    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/eip-state-inactivity-cutoff/EIPS/eip-8296.md",
     "requires": [
       "2929",
+      "7702",
+      "7825",
       "8037",
       "8038",
       "8188"
     ],
-    "timestamp": "2026-07-01T12:50:52.046Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8296.md"
   },
   "8297": {
     "title": "Partitioned Binary Tree",
@@ -12809,9 +12815,14 @@
   "8298": {
     "title": "SETCODEFROM Code Reuse Instruction",
     "status": "Draft",
-    "prNo": 11800,
-    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/refs/heads/add-SETCODEFROM/EIPS/eip-8298.md",
-    "timestamp": "2026-06-28T00:20:27.169Z"
+    "requires": [
+      "2200",
+      "2929",
+      "3607",
+      "7702"
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8298.md"
   },
   "8299": {
     "title": "WYRIWE — Input Provenance for AI Inference",
@@ -12826,16 +12837,15 @@
     "timestamp": "2026-06-27T12:22:46.880Z"
   },
   "8300": {
-    "title": "Attestation-Gated Agentic Actions",
+    "title": "Invariant-First Reserve Receipt Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1770,
-    "markdownPath": "https://raw.githubusercontent.com/xrqin/ERCs/refs/heads/add-erc-8300-attestation-gated-agentic-actions/ERCS/erc-8300.md",
+    "prNo": 1813,
+    "markdownPath": "https://raw.githubusercontent.com/emilianosolazzi/ERCs/refs/heads/ifr-pETH-Token/ERCS/erc-8300.md",
     "requires": [
-      "165",
-      "1153"
+      "20"
     ],
-    "timestamp": "2026-05-26T12:52:20.534Z"
+    "timestamp": "2026-07-02T00:24:14.187Z"
   },
   "8301": {
     "title": "AI Agent Execution",
@@ -12954,7 +12964,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:41.958Z"
+    "timestamp": "2026-07-02T00:24:13.398Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -12970,7 +12980,7 @@
     "isERC": true,
     "prNo": 1840,
     "markdownPath": "https://raw.githubusercontent.com/awrichar/ERCs/refs/heads/erc-settlement-locks/ERCS/erc-8316.md",
-    "timestamp": "2026-06-27T00:24:09.466Z"
+    "timestamp": "2026-07-02T00:24:12.710Z"
   },
   "8317": {
     "title": "Contract Storage Layout Descriptor Format",
@@ -13194,7 +13204,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-01T12:53:10.169Z"
+    "timestamp": "2026-07-02T00:24:34.105Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
