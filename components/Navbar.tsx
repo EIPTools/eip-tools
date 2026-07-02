@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   VStack,
   Flex,
@@ -44,6 +45,8 @@ export const Navbar = () => {
     status?: string;
   }
   const router = useTopLoaderRouter();
+  const pathname = usePathname();
+  const isProposalPage = /^\/(eip|rip|caip)\/[^/]+/.test(pathname);
   const {
     isOpen: isModalOpen,
     onOpen: openModal,
@@ -121,20 +124,69 @@ export const Navbar = () => {
       .catch((error) => console.error("Failed to copy link:", error));
   };
 
+  const shareableLink = isModalOpen ? generateShareableLink() : "";
+  const bookmarkCountText = `${bookmarks.length} ${
+    bookmarks.length === 1 ? "proposal" : "proposals"
+  }`;
+
   return (
     <VStack w="100%" spacing={0}>
-      <Flex w="100%" justify="center" position="relative" p={4}>
-        <Center>
-          <Heading color="custom.pale">
-            <Link href={"/"}>
-              <HStack spacing={"4"}>
-                <Image w="1.5rem" alt="icon" src="/eth.png" rounded={"lg"} />
-                <Text>EIP.tools</Text>
-              </HStack>
-            </Link>
-          </Heading>
-        </Center>
-        <Button onClick={openDrawer} position="absolute" right="4" top="4">
+      <Flex
+        w="100%"
+        py={3}
+        px={{ base: 4, md: 6 }}
+        alignItems="center"
+        justifyContent="space-between"
+        gap={{ base: 3, lg: 6 }}
+        flexWrap={{ base: isProposalPage ? "wrap" : "nowrap", lg: "nowrap" }}
+        borderBottom="1px solid"
+        borderColor="border.subtle"
+        bg="bg.base"
+      >
+        <Link
+          href={"/"}
+          _hover={{ textDecoration: "none" }}
+          flexShrink={0}
+        >
+          <HStack spacing={{ base: 2, sm: 3 }}>
+            <Image
+              alt="EIP.tools"
+              src="/eth.png"
+              h={{ base: "2rem", sm: "2.25rem" }}
+              w="auto"
+              objectFit="contain"
+              flexShrink={0}
+              rounded="md"
+            />
+            <Heading
+              color="text.primary"
+              fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
+              fontWeight="semibold"
+              letterSpacing="-0.02em"
+            >
+              EIP.tools
+            </Heading>
+          </HStack>
+        </Link>
+        {isProposalPage && (
+          <Box
+            order={{ base: 3, lg: 2 }}
+            flex={{ base: "0 0 100%", lg: "1" }}
+            display="flex"
+            justifyContent="center"
+            minW={0}
+          >
+            <Searchbox />
+          </Box>
+        )}
+        <Button
+          order={{ base: 2, lg: 3 }}
+          onClick={openDrawer}
+          variant="ghost"
+          color="text.secondary"
+          flexShrink={0}
+          _hover={{ color: "text.primary", bg: "bg.emphasis" }}
+        >
           <HStack spacing={2}>
             <FaBook />
             <Text display={{ base: "none", md: "inline" }}>Reading List</Text>
@@ -142,18 +194,34 @@ export const Navbar = () => {
         </Button>
       </Flex>
       <NotificationBar />
-      <Center mt={2}>
-        <Searchbox />
-      </Center>
+      {!isProposalPage && (
+        <Box
+          w="100%"
+          py={{ base: 5, md: 6 }}
+          px={4}
+          borderBottom="1px solid"
+          borderColor="border.subtle"
+          bg="bg.base"
+        >
+          <Center>
+            <Searchbox />
+          </Center>
+        </Box>
+      )}
 
       <Drawer isOpen={isDrawerOpen} onClose={closeDrawer} placement="right">
-        <DrawerOverlay />
-        <DrawerContent bg="bg.900">
+        <DrawerOverlay backdropFilter="blur(8px)" bg="blackAlpha.600" />
+        <DrawerContent bg="bg.base" maxW="360px">
           <DrawerCloseButton />
-          <DrawerHeader>
-            <HStack>
+          <DrawerHeader borderBottom="1px solid" borderColor="border.subtle">
+            <HStack spacing={3}>
               {bookmarks.length > 0 && (
-                <Button onClick={openModal} size="sm">
+                <Button
+                  onClick={openModal}
+                  size="sm"
+                  variant="secondary"
+                  aria-label="Share reading list"
+                >
                   <FaShareAlt />
                 </Button>
               )}
@@ -178,17 +246,16 @@ export const Navbar = () => {
                       p="3"
                       mb={2}
                       border="1px solid"
-                      borderColor="gray.500"
-                      bg="white"
-                      color="black"
+                      borderColor="border.default"
+                      bg="bg.subtle"
+                      color="text.primary"
                       fontSize="sm"
                       cursor="pointer"
                       position="relative"
-                      transition="all 0.1s ease-in-out"
+                      transition="background-color 0.2s ease, border-color 0.2s ease"
                       _hover={{
-                        bg: "gray.600",
-                        color: "white",
-                        borderColor: "blue.300",
+                        bg: "bg.muted",
+                        borderColor: "primary.500",
                       }}
                       onClick={() => {
                         router.push(
@@ -210,15 +277,17 @@ export const Navbar = () => {
                         top="2"
                         right="2"
                         size="sm"
-                        color="red.500"
-                        _hover={{ color: "red.300" }}
+                        variant="ghost"
+                        color="error.text"
+                        _hover={{ color: "error.solid", bg: "whiteAlpha.100" }}
                         onClick={(e) => {
                           e.stopPropagation();
                           removeBookmark(bookmark.eipNo, bookmark.type);
                         }}
                       />
                       <Badge
-                        p={1}
+                        px={2.5}
+                        py={1}
                         bg={
                           bookmark.status
                             ? EIPStatus[bookmark.status]?.bg
@@ -227,6 +296,7 @@ export const Navbar = () => {
                         fontWeight={600}
                         rounded="md"
                         fontSize="xs"
+                        color="white"
                       >
                         {bookmark.status
                           ? `${EIPStatus[bookmark.status]?.prefix} ${
@@ -237,57 +307,92 @@ export const Navbar = () => {
                       <Heading mt={1} fontSize="md">
                         {eipTypeLabel}-{bookmark.eipNo}
                       </Heading>
-                      <Text fontSize="sm">{bookmark.title}</Text>
+                      <Text color="text.secondary" fontSize="sm">
+                        {bookmark.title}
+                      </Text>
                     </Box>
                   );
                 })}
               </>
             ) : (
-              <Text>No bookmarks yet.</Text>
+              <Text color="text.secondary">No bookmarks yet.</Text>
             )}
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ModalOverlay />
-        <ModalContent bg="bg.900">
-          <ModalHeader>Share Reading List</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <VStack pb="4" spacing={4}>
-              <Link href={generateShareableLink()} w="full" cursor={"pointer"}>
-                <Input
-                  value={generateShareableLink()}
-                  isReadOnly
-                  variant="filled"
-                  color="blue.100"
-                  size="sm"
-                  overflow="auto"
-                  whiteSpace="nowrap"
-                  cursor={"pointer"}
-                  sx={{
-                    "::-webkit-scrollbar": {
-                      height: "6px",
-                    },
-                    "::-webkit-scrollbar-thumb": {
-                      background: "#888",
-                      borderRadius: "4px",
-                    },
-                    "::-webkit-scrollbar-thumb:hover": {
-                      background: "#555",
-                    },
-                  }}
-                  rounded="lg"
-                />
-              </Link>
-              <Button
-                leftIcon={<FaCopy />}
-                onClick={handleCopy}
-                isDisabled={isCopied}
-                size={"sm"}
+      <Modal isOpen={isModalOpen} onClose={closeModal} isCentered>
+        <ModalOverlay backdropFilter="blur(10px)" bg="blackAlpha.700" />
+        <ModalContent
+          mx={4}
+          maxW="36rem"
+          bg="bg.base"
+          border="1px solid"
+          borderColor="border.default"
+          boxShadow="dark-lg"
+          overflow="hidden"
+        >
+          <ModalHeader
+            px={6}
+            pt={6}
+            pb={4}
+            borderBottom="1px solid"
+            borderColor="border.subtle"
+          >
+            <VStack align="flex-start" spacing={1} pr={8}>
+              <Box>Share Reading List</Box>
+              <Text color="text.tertiary" fontSize="sm" fontWeight="normal">
+                {bookmarkCountText}
+              </Text>
+            </VStack>
+          </ModalHeader>
+          <ModalCloseButton top={4} right={4} />
+          <ModalBody px={6} py={5}>
+            <VStack align="stretch" spacing={3}>
+              <Text
+                color="text.tertiary"
+                fontSize="xs"
+                fontWeight="medium"
               >
-                {isCopied ? "Copied!" : "Copy Link"}
-              </Button>
+                Share link
+              </Text>
+              <Input
+                value={shareableLink}
+                isReadOnly
+                aria-label="Share reading list link"
+                variant="filled"
+                bg="bg.subtle"
+                color="text.primary"
+                fontFamily="mono"
+                fontSize="sm"
+                size="md"
+                overflow="auto"
+                whiteSpace="nowrap"
+                cursor="text"
+                sx={{
+                  "::-webkit-scrollbar": {
+                    height: "6px",
+                  },
+                  "::-webkit-scrollbar-thumb": {
+                    bg: "border.strong",
+                    borderRadius: "full",
+                  },
+                  "::-webkit-scrollbar-thumb:hover": {
+                    bg: "text.tertiary",
+                  },
+                }}
+                rounded="lg"
+              />
+              <HStack justify="flex-end">
+                <Button
+                  leftIcon={<FaCopy />}
+                  onClick={handleCopy}
+                  isDisabled={isCopied}
+                  size="md"
+                  variant="primary"
+                >
+                  {isCopied ? "Copied" : "Copy link"}
+                </Button>
+              </HStack>
             </VStack>
           </ModalBody>
         </ModalContent>

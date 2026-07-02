@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from "react";
 import {
   Badge,
   Box,
-  Center,
   HStack,
   Heading,
   Text,
@@ -16,14 +15,14 @@ import {
   Link,
   Stack,
   Button,
-  VStack,
-  Spacer,
 } from "@chakra-ui/react";
+import { FiShuffle, FiSun } from "react-icons/fi";
 import { validEIPs, validEIPsArray } from "@/data/validEIPs";
 import { EIPStatus, convertMetadataToJson, extractMetadata } from "@/utils";
 import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { AuthorsMetadata } from "@/components/AuthorsMetadata";
+import { SectionHeading } from "@/components/SectionHeading";
 
 const getValueBasedOnDate = <T,>(values: T[]): T => {
   const today = new Date();
@@ -108,29 +107,23 @@ export const EIPOfTheDay = () => {
   }, [metadataJson]);
 
   return (
-    <Box mt={10} px={10}>
-      <Box>
-        <Heading>
-          <Stack direction={["column", "row"]} spacing={4}>
-            <Text>☀️ EIP of the Day</Text>
-          </Stack>
-        </Heading>
-        <Text pl={2} fontSize={"md"} fontWeight={200}>
-          Random EIP every day! (UTC)
+    <Box as="section" mt={10} px={{ base: 4, md: 6, lg: 10 }}>
+      <Box maxW="container.xl" mx="auto">
+        <SectionHeading icon={FiSun}>EIP of the day</SectionHeading>
+        <Text mt={1} color="text.secondary" fontSize="sm">
+          A deterministic daily proposal, selected in UTC.
         </Text>
       </Box>
       {metadataJson && (
-        <Center mt={4} flexDir={"column"}>
-          <Box
-            position="relative"
-            mx="auto"
-            maxW={{ base: "80vw", lg: "100%" }}
-          >
+        <Box mt={4} maxW="container.xl" mx="auto">
+          <Box position="relative">
             <Button
               position="absolute"
-              top={0}
-              right={0}
+              top={4}
+              right={4}
               size="sm"
+              variant="secondary"
+              leftIcon={<FiShuffle />}
               isLoading={isRandomBtnLoading}
               onClick={() => {
                 // random element from validEIPsArray
@@ -142,16 +135,21 @@ export const EIPOfTheDay = () => {
                 setEipNo(randomEIPNo);
               }}
             >
-              🔀 Random EIP
+              Random EIP
             </Button>
             <Box
-              p={8}
-              border={"1px solid white"}
+              p={{ base: 5, md: 8 }}
+              pt={{ base: 16, md: 8 }}
+              border="1px solid"
+              borderColor="border.default"
+              bg="bg.subtle"
               rounded="lg"
               cursor={"pointer"}
               _hover={{
-                bg: "whiteAlpha.100",
+                bg: "bg.muted",
+                borderColor: "primary.500",
               }}
+              transition="background-color 0.2s ease, border-color 0.2s ease"
               onClick={() => {
                 router.push(`/eip/${eipNo}`);
               }}
@@ -163,11 +161,13 @@ export const EIPOfTheDay = () => {
                 <Stack direction={{ base: "column", sm: "row" }}>
                   <Tooltip label={EIPStatus[metadataJson.status]?.description}>
                     <Badge
-                      p={1}
+                      px={2.5}
+                      py={1}
                       bg={EIPStatus[metadataJson.status]?.bg ?? "cyan.500"}
-                      fontWeight={700}
+                      fontWeight={600}
                       rounded="md"
                       alignSelf="flex-start"
+                      color="white"
                     >
                       {EIPStatus[metadataJson.status]?.prefix}{" "}
                       {metadataJson.status}
@@ -175,19 +175,22 @@ export const EIPOfTheDay = () => {
                   </Tooltip>
                   <Badge
                     p={1}
-                    bg={"blue.500"}
-                    fontWeight={"bold"}
+                    bg="primary.500"
+                    fontWeight="600"
                     rounded="md"
                     alignSelf="flex-start"
+                    color="white"
                   >
                     {metadataJson.type}: {metadataJson.category}
                   </Badge>
                 </Stack>
 
-                <Heading>
+                <Heading mt={4} size="xl" pr={{ base: 0, md: 32 }}>
                   {isERC ? "ERC" : "EIP"}-{eipNo}: {metadataJson.title}
                 </Heading>
-                <Text size="md">{metadataJson.description}</Text>
+                <Text mt={2} color="text.secondary" fontSize="sm">
+                  {metadataJson.description}
+                </Text>
                 <Box overflowX={"auto"}>
                   <Table variant="simple">
                     {metadataJson.author && (
@@ -212,7 +215,7 @@ export const EIPOfTheDay = () => {
                         <Th>Discussion Link</Th>
                         <Td>
                           <Link
-                            color={"blue.400"}
+                            color="primary.400"
                             onClick={(e) => {
                               e.stopPropagation();
                               // open in new tab
@@ -237,14 +240,14 @@ export const EIPOfTheDay = () => {
                                 <Link
                                   key={i}
                                   onClick={(e) => {
-                                    e.stopPropagation();
-                                    router.push(`/eip/${req}`);
-                                  }}
-                                >
-                                  <Text
-                                    color={"blue.400"}
-                                    _hover={{ textDecor: "underline" }}
-                                  >
+                            e.stopPropagation();
+                            router.push(`/eip/${req}`);
+                          }}
+                        >
+                          <Text
+                                    color="primary.400"
+                            _hover={{ textDecor: "underline" }}
+                          >
                                     {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
                                   </Text>
                                 </Link>
@@ -258,7 +261,7 @@ export const EIPOfTheDay = () => {
               </Box>
             </Box>
           </Box>
-        </Center>
+        </Box>
       )}
     </Box>
   );

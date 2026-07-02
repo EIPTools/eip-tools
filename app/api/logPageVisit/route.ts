@@ -18,7 +18,11 @@ export const POST = async (request: Request) => {
   const eipNo = body.eipNo;
   const type = body.type;
 
-  await mongoose.connect(process.env.MONGODB_URL!);
+  if (!process.env.MONGODB_URL) {
+    return new Response(null, { status: 204 });
+  }
+
+  await mongoose.connect(process.env.MONGODB_URL);
 
   const pageVisit = new PageVisit({
     eipNo,

@@ -22,11 +22,11 @@ const scrollbarStyles = {
     w: "10px",
   },
   "::-webkit-scrollbar-track ": {
-    bg: "gray.400",
+    bg: "bg.muted",
     rounded: "md",
   },
   "::-webkit-scrollbar-thumb": {
-    bg: "gray.500",
+    bg: "border.strong",
     rounded: "md",
   },
 };
@@ -56,16 +56,17 @@ export const AuthorsMetadata = ({
                 py={2}
                 position="relative"
                 role="group"
-                bg={hasProfiles ? "whiteAlpha.50" : "transparent"}
-                borderWidth={hasProfiles ? "1px" : "0"}
-                borderColor="whiteAlpha.200"
+                minH="3.25rem"
+                bg="whiteAlpha.50"
+                borderWidth="1px"
+                borderColor="border.default"
                 borderRadius="md"
                 transition="background-color 0.15s ease, border-color 0.15s ease"
                 _hover={
                   hasProfiles
                     ? {
                         bg: "whiteAlpha.100",
-                        borderColor: "whiteAlpha.300",
+                        borderColor: "border.strong",
                       }
                     : undefined
                 }
@@ -74,7 +75,11 @@ export const AuthorsMetadata = ({
                   <LinkOverlay href={singleProfileUrl} isExternal />
                 )}
                 <Box>
-                  <HStack align="center" spacing={2.5}>
+                  <HStack
+                    align="center"
+                    spacing={2.5}
+                    minH={author.handle ? undefined : "2.25rem"}
+                  >
                     {author.avatarUrl && (
                       <Avatar
                         size="xs"
@@ -93,7 +98,7 @@ export const AuthorsMetadata = ({
                       </Text>
                       {author.handle && (
                         <Text
-                          color="gray.400"
+                          color="text.tertiary"
                           fontSize="xs"
                           lineHeight="short"
                           noOfLines={1}
@@ -121,7 +126,7 @@ export const AuthorsMetadata = ({
                         {author.github && (
                           <Link
                             href={author.github}
-                            color="blue.300"
+                            color="primary.400"
                             display="inline-flex"
                             alignItems="center"
                             gap={1}
@@ -137,7 +142,7 @@ export const AuthorsMetadata = ({
                         {author.twitter && (
                           <Link
                             href={author.twitter}
-                            color="blue.300"
+                            color="primary.400"
                             display="inline-flex"
                             alignItems="center"
                             gap={1}

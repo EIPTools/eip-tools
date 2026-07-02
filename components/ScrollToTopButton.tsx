@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { IconButton } from "@chakra-ui/react";
+import { ArrowUpIcon } from "@chakra-ui/icons";
 
 export const ScrollToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,39 +28,20 @@ export const ScrollToTopButton: React.FC = () => {
   }, []);
 
   return (
-    <div className="scroll-to-top">
-      <button
-        onClick={scrollToTop}
-        className={`scroll-to-top-button ${isVisible ? "visible" : ""}`}
-      >
-        ↑
-      </button>
-      <style jsx>{`
-        .scroll-to-top {
-          position: fixed;
-          bottom: 30px;
-          right: 30px;
-        }
-        .scroll-to-top-button {
-          background-color: #0070f3;
-          color: white;
-          border: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 20px;
-          opacity: 0;
-          visibility: hidden;
-          transition: opacity 0.1s ease-in-out, visibility 0.5s ease-in-out;
-        }
-        .scroll-to-top-button.visible {
-          opacity: 1;
-          visibility: visible;
-        }
-        .scroll-to-top-button:hover {
-          background-color: #005bb5;
-        }
-      `}</style>
-    </div>
+    <IconButton
+      aria-label="Scroll to top"
+      icon={<ArrowUpIcon />}
+      position="fixed"
+      bottom="30px"
+      right="30px"
+      zIndex={20}
+      size="md"
+      variant="secondary"
+      opacity={isVisible ? 1 : 0}
+      visibility={isVisible ? "visible" : "hidden"}
+      transition="opacity 0.2s ease, visibility 0.2s ease"
+      pointerEvents={isVisible ? "auto" : "none"}
+      onClick={scrollToTop}
+    />
   );
 };

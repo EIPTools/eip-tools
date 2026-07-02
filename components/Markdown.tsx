@@ -26,8 +26,8 @@ import rehypeRaw from "rehype-raw";
 import rehypeKatex from "rehype-katex";
 // import ChakraUIRenderer from "chakra-ui-markdown-renderer"; // throwing error for <chakra.pre> and chakra factory not working, so borrowing its logic here
 import { CodeBlock } from "./CodeBlock";
-import { extractEipNumber } from "@/utils";
 import { validEIPs } from "@/data/validEIPs";
+import { getCanonicalProposalHref } from "@/utils/proposalLinks";
 import "katex/dist/katex.min.css";
 
 const isRelativeURL = (url: string) => {
@@ -185,7 +185,11 @@ export const Markdown = ({
       components={{
         p: (props) => {
           const { children } = props;
-          return <Text mb={2}>{children}</Text>;
+          return (
+            <Text mb={4} color="text.secondary" lineHeight="tall">
+              {children}
+            </Text>
+          );
         },
         em: (props) => {
           const { children } = props;
@@ -194,7 +198,18 @@ export const Markdown = ({
         blockquote: (props) => {
           const { children } = props;
           return (
-            <Code as="blockquote" p={2} rounded={"lg"}>
+            <Code
+              as="blockquote"
+              display="block"
+              p={4}
+              my={4}
+              rounded="lg"
+              bg="bg.subtle"
+              borderLeft="3px solid"
+              borderColor="primary.500"
+              color="text.secondary"
+              whiteSpace="normal"
+            >
               {children}
             </Code>
           );
@@ -206,7 +221,15 @@ export const Markdown = ({
 
           if (!isMultiLine) {
             return (
-              <Code mt={1} p={1} rounded={"lg"}>
+              <Code
+                mt={1}
+                px={1.5}
+                py={0.5}
+                rounded="md"
+                bg="bg.muted"
+                color="text.primary"
+                fontSize="code"
+              >
                 {children}
               </Code>
             );
@@ -227,20 +250,12 @@ export const Markdown = ({
         },
         a: (props) => {
           const url = props.href ?? "";
+          const canonicalProposalHref = getCanonicalProposalHref(url);
 
-          let isEIPLink = false;
-          try {
-            const split = url.split("/");
-            const eipPath = split.pop();
-            // TODO: Add support for RIPs & CAIPs
-            extractEipNumber(eipPath ? eipPath : "", "eip");
-            isEIPLink = true;
-          } catch {}
-
-          if (isEIPLink) {
+          if (canonicalProposalHref) {
             return (
-              <NLink href={url}>
-                <Text as={"span"} color="blue.500" textDecor={"underline"}>
+              <NLink href={canonicalProposalHref}>
+                <Text as="span" color="primary.400" textDecor="underline">
                   {props.children}
                 </Text>
               </NLink>
@@ -250,7 +265,7 @@ export const Markdown = ({
               <Link
                 {...props}
                 href={resolveURL(markdownFileURL, url)}
-                color="blue.500"
+                color="primary.400"
                 isExternal
               />
             );
@@ -285,6 +300,9 @@ export const Markdown = ({
             <Image
               alt={alt as string}
               src={src}
+              rounded="lg"
+              border="1px solid"
+              borderColor="border.default"
               float={floatValue}
               display={display}
               ml={marginLeft}
@@ -307,6 +325,7 @@ export const Markdown = ({
               as="ul"
               styleType="disc"
               pl={4}
+              color="text.secondary"
               {...attrs}
             >
               {children}
@@ -322,6 +341,7 @@ export const Markdown = ({
               as="ol"
               styleType="decimal"
               pl={4}
+              color="text.secondary"
               {...attrs}
             >
               {children}
@@ -380,10 +400,16 @@ export const Markdown = ({
         },
         pre: (props) => {
           const { children } = props;
-          return <Code {...getCoreProps(props)}>{children}</Code>;
+          return <Box {...getCoreProps(props)}>{children}</Box>;
         },
         table: (props) => (
-          <Box overflowX={"auto"}>
+          <Box
+            my={6}
+            overflowX="auto"
+            border="1px solid"
+            borderColor="border.default"
+            rounded="lg"
+          >
             <Table variant="simple">{props.children}</Table>
           </Box>
         ),
@@ -391,12 +417,12 @@ export const Markdown = ({
         tbody: Tbody,
         tr: (props) => <Tr>{props.children}</Tr>,
         td: (props) => (
-          <Td borderRight="1px solid" borderColor="gray.500">
+          <Td borderColor="border.subtle" color="text.secondary" py={3}>
             {props.children}
           </Td>
         ),
         th: (props) => (
-          <Th borderRight="1px solid" borderColor="gray.500">
+          <Th borderColor="border.subtle" color="text.primary" py={3}>
             {props.children}
           </Th>
         ),

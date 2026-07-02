@@ -129,8 +129,10 @@ const SharedListContent = () => {
 
   return (
     <Container>
-      <HStack mt="10" mb="3">
-        <Heading size="lg">Shared Reading List</Heading>
+      <HStack mt="10" mb="5" align="center" spacing={4} wrap="wrap">
+        <Heading size={{ base: "2xl", md: "3xl" }}>
+          Shared Reading List
+        </Heading>
         <Spacer />
         <Button onClick={addToReadingList} leftIcon={<FaRegBookmark />}>
           Bookmark all
@@ -140,7 +142,11 @@ const SharedListContent = () => {
         <>
           {parsedItems.map((item, index) => (
             <Box w="100%" key={index} p="1" m="2">
-              <EIPGridItem eipNo={item.eipNo} type={item.type} />
+              <EIPGridItem
+                eipNo={item.eipNo}
+                type={item.type}
+                titleSize={{ base: "2xl", md: "3xl" }}
+              />
             </Box>
           ))}
         </>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import {
   Badge,
   Box,
@@ -25,12 +25,122 @@ interface TrendingEIP {
   count: number;
 }
 
+const TRENDING_EIPS_CACHE_KEY = "eip-tools:trending-proposals:v1";
+
+let trendingEIPsMemoryCache: TrendingEIP[] | undefined;
+
+const useIsomorphicLayoutEffect =
+  typeof window === "undefined" ? useEffect : useLayoutEffect;
+
+const removeCachedTrendingEIPs = () => {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  try {
+    window.localStorage.removeItem(TRENDING_EIPS_CACHE_KEY);
+  } catch {}
+};
+
+const normalizeEIPType = (type: unknown): EIPType | undefined => {
+  if (type === EIPType.EIP || type === EIPType.RIP || type === EIPType.CAIP) {
+    return type;
+  }
+
+  return undefined;
+};
+
+const normalizeTrendingEIPs = (data: unknown): TrendingEIP[] => {
+  if (!Array.isArray(data)) {
+    return [];
+  }
+
+  return data.flatMap((item) => {
+    if (!item || typeof item !== "object") {
+      return [];
+    }
+
+    const record = item as Record<string, unknown>;
+    const eipNo =
+      typeof record._id === "string" || typeof record._id === "number"
+        ? String(record._id)
+        : "";
+
+    if (!eipNo) {
+      return [];
+    }
+
+    const count =
+      typeof record.count === "number"
+        ? record.count
+        : Number(record.count ?? 0);
+
+    return [
+      {
+        _id: eipNo,
+        count: Number.isFinite(count) ? count : 0,
+        type: normalizeEIPType(record.type),
+      },
+    ];
+  });
+};
+
+const readCachedTrendingEIPs = () => {
+  if (trendingEIPsMemoryCache?.length) {
+    return trendingEIPsMemoryCache;
+  }
+
+  if (typeof window === "undefined") {
+    return [];
+  }
+
+  try {
+    const cachedValue = window.localStorage.getItem(TRENDING_EIPS_CACHE_KEY);
+    if (!cachedValue) {
+      return [];
+    }
+
+    const parsedValue = JSON.parse(cachedValue) as { items?: unknown };
+    const items = normalizeTrendingEIPs(parsedValue.items);
+
+    if (!items.length) {
+      removeCachedTrendingEIPs();
+      return [];
+    }
+
+    trendingEIPsMemoryCache = items;
+    return items;
+  } catch {
+    removeCachedTrendingEIPs();
+    return [];
+  }
+};
+
+const writeCachedTrendingEIPs = (items: TrendingEIP[]) => {
+  if (!items.length || typeof window === "undefined") {
+    return;
+  }
+
+  trendingEIPsMemoryCache = items;
+  try {
+    window.localStorage.setItem(
+      TRENDING_EIPS_CACHE_KEY,
+      JSON.stringify({
+        updatedAt: Date.now(),
+        items,
+      })
+    );
+  } catch {}
+};
+
 export const EIPGridItem = ({
   eipNo,
   type,
+  titleSize = "xl",
 }: {
   eipNo: string;
   type?: EIPType;
+  titleSize?: string | { base?: string; md?: string };
 }) => {
   const router = useTopLoaderRouter();
 
@@ -83,21 +193,20 @@ export const EIPGridItem = ({
   return (
     <Box
       flex={1}
-      minW="15rem"
-      minH="5rem"
-      p="4"
-      mr={"2"}
-      border="2px solid"
-      borderColor={"gray.500"}
-      bg={"white"}
-      color={"black"}
+      minW={{ base: "17rem", md: "19rem" }}
+      minH="8.5rem"
+      p={4}
+      mr={3}
+      border="1px solid"
+      borderColor="border.default"
+      bg="bg.subtle"
+      color="text.primary"
       cursor={"pointer"}
       position="relative"
-      transition="all 0.1s ease-in-out"
+      transition="background-color 0.2s ease, border-color 0.2s ease"
       _hover={{
-        bgColor: "gray.600",
-        color: "white",
-        borderColor: "blue.300",
+        bg: "bg.muted",
+        borderColor: "primary.500",
       }}
       onClick={() => {
         router.push(
@@ -114,8 +223,10 @@ export const EIPGridItem = ({
         position="absolute"
         top="2"
         right="2"
-        color={isBookmarked ? "blue.500" : "gray.500"}
-        _hover={{ color: isBookmarked ? "blue.400" : "gray.400" }}
+        size="sm"
+        variant="ghost"
+        color={isBookmarked ? "primary.400" : "text.tertiary"}
+        _hover={{ color: "primary.300", bg: "whiteAlpha.100" }}
         onClick={(e) => {
           e.stopPropagation();
           toggleBookmark();
@@ -125,15 +236,17 @@ export const EIPGridItem = ({
         <>
           {eip.status && (
             <Badge
-              p={1}
+              px={2.5}
+              py={1}
               bg={EIPStatus[eip.status]?.bg ?? "cyan.500"}
-              fontWeight={700}
+              fontWeight={600}
               rounded="md"
+              color="white"
             >
               {EIPStatus[eip.status]?.prefix} {eip.status}
             </Badge>
           )}
-          <Heading mt={2} fontSize={{ sm: "25", md: "30", lg: "30" }}>
+          <Heading mt={3} pr={8} fontSize={titleSize}>
             {type === "RIP"
               ? "RIP"
               : type === "CAIP"
@@ -143,10 +256,12 @@ export const EIPGridItem = ({
                   : "EIP"}
             -{eipNo}
           </Heading>
-          <Text>{eip.title}</Text>
+          <Text mt={1} color="text.secondary" fontSize="sm" noOfLines={2}>
+            {eip.title}
+          </Text>
         </>
       ) : (
-        <Heading mt={2} fontSize={{ sm: "25", lg: "30" }}>
+        <Heading mt={2} fontSize={titleSize}>
           EIP-{eipNo}
         </Heading>
       )}
@@ -155,40 +270,82 @@ export const EIPGridItem = ({
 };
 
 export const TrendingEIPs = () => {
-  const [trendingEIPs, setTrendingEIPs] = useState<TrendingEIP[]>([]);
+  const [trendingEIPs, setTrendingEIPs] = useState<TrendingEIP[]>(
+    () => trendingEIPsMemoryCache ?? []
+  );
+
+  useIsomorphicLayoutEffect(() => {
+    const cachedTrendingEIPs = readCachedTrendingEIPs();
+    if (cachedTrendingEIPs.length) {
+      setTrendingEIPs(cachedTrendingEIPs);
+    }
+  }, []);
 
   useEffect(() => {
+    let isMounted = true;
+
     const fetchTrendingPages = async () => {
-      const response = await fetch("/api/getTrendingEIPs");
-      const data = await response.json();
-      setTrendingEIPs(data);
+      try {
+        const response = await fetch("/api/getTrendingEIPs", {
+          cache: "no-store",
+        });
+
+        if (!response.ok) {
+          return;
+        }
+
+        const data = await response.json();
+        const latestTrendingEIPs = normalizeTrendingEIPs(data);
+
+        if (!latestTrendingEIPs.length) {
+          return;
+        }
+
+        writeCachedTrendingEIPs(latestTrendingEIPs);
+
+        if (isMounted) {
+          setTrendingEIPs(latestTrendingEIPs);
+        }
+      } catch {
+        // Keep cached trending proposals visible if the background refresh fails.
+      }
     };
 
     fetchTrendingPages();
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (
-    <Box mt={10} px={10}>
-      <Box>
-        <Heading>Trending EIPs 💹</Heading>
-        <Text fontSize={"md"} fontWeight={200}>
-          (Most viewed: Last 7 days)
+    <Box as="section" mt={10} px={{ base: 4, md: 6, lg: 10 }}>
+      <Box maxW="container.xl" mx="auto">
+        <Heading size={{ base: "xl", md: "2xl" }}>Trending proposals</Heading>
+        <Text mt={1} color="text.secondary" fontSize="sm">
+          Most viewed over the last 7 days
         </Text>
       </Box>
       <Box
+        maxW="container.xl"
+        mx="auto"
         mt={4}
         overflowX="auto"
         sx={{
+          scrollbarWidth: "thin",
+          scrollbarColor: "rgba(255,255,255,0.18) transparent",
           "::-webkit-scrollbar": {
-            h: "12px",
+            h: "4px",
           },
           "::-webkit-scrollbar-track ": {
-            bg: "gray.400",
-            rounded: "md",
+            bg: "transparent",
           },
           "::-webkit-scrollbar-thumb": {
-            bg: "gray.500",
-            rounded: "md",
+            bg: "rgba(255,255,255,0.18)",
+            rounded: "full",
+          },
+          "::-webkit-scrollbar-thumb:hover": {
+            bg: "rgba(255,255,255,0.28)",
           },
         }}
       >
@@ -201,11 +358,13 @@ export const TrendingEIPs = () => {
                 <Skeleton
                   key={i}
                   flex={1}
-                  minW="20rem"
-                  h="10rem"
+                  minW="19rem"
+                  h="8.5rem"
                   p="4"
-                  mr={"2"}
+                  mr={3}
                   rounded="lg"
+                  startColor="bg.subtle"
+                  endColor="bg.muted"
                 />
               ))}
         </Flex>

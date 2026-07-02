@@ -154,18 +154,29 @@ export const Searchbox = () => {
     setSelectedIndex(-1); // Reset selected index when search suggestions change
   }, [searchSuggestions]);
 
+  const hasVisibleSuggestions = searchSuggestions.length > 0 && !hideSuggestions;
+  const searchWidth = hasVisibleSuggestions
+    ? {
+        base: "min(calc(100vw - 2rem), 24rem)",
+        sm: "34rem",
+        md: "40rem",
+        lg: "50rem",
+      }
+    : {
+        base: "min(calc(100vw - 2rem), 20rem)",
+        sm: "22rem",
+        md: "26rem",
+        lg: "30rem",
+      };
+  const searchOuterRadius = "12px";
+  const searchInset = "4px";
+  const searchInnerRadius = `calc(${searchOuterRadius} - ${searchInset})`;
+
   return (
-    <Box position="relative" ref={searchRef}>
-      <InputGroup
-        w={{
-          base: userInput.length ? "22rem" : "20rem",
-          sm: userInput.length ? "40rem" : "30rem",
-          md: userInput.length ? "40rem" : "30rem",
-          lg: userInput.length ? "50rem" : "30rem",
-        }}
-        transition="width 0.2s ease-in-out"
-      >
+    <Box position="relative" ref={searchRef} w={searchWidth} maxW="100%">
+      <InputGroup w="100%">
         <Input
+          borderRadius={searchOuterRadius}
           placeholder="EIP / ERC / RIP / CAIP No. or title"
           value={userInput}
           onChange={(e) => {
@@ -202,14 +213,23 @@ export const Searchbox = () => {
           }}
           isInvalid={isInvalid}
         />
-        <InputRightElement w="4rem">
+        <InputRightElement
+          h="100%"
+          w="4rem"
+          justifyContent="flex-end"
+          pr={searchInset}
+        >
           <Button
-            mr="0.5rem"
-            w="100%"
+            h="2rem"
+            w="3.5rem"
+            minW="3.5rem"
+            p={0}
             size="sm"
-            colorScheme={isInvalid ? "red" : "blue"}
+            variant={isInvalid ? "secondary" : "primary"}
+            borderRadius={searchInnerRadius}
             onClick={() => {}}
             isLoading={isLoading}
+            aria-label="Search proposals"
           >
             <SearchIcon />
           </Button>
@@ -219,10 +239,10 @@ export const Searchbox = () => {
         <List
           ref={listRef}
           mt={2}
-          border="1px"
-          borderColor="gray.200"
-          borderRadius="md"
-          bg="white"
+          border="1px solid"
+          borderColor="border.default"
+          borderRadius="lg"
+          bg="bg.subtle"
           zIndex={9999}
           position="absolute"
           width="100%"
@@ -233,11 +253,11 @@ export const Searchbox = () => {
               h: "12px",
             },
             "::-webkit-scrollbar-track ": {
-              bg: "gray.400",
+              bg: "bg.muted",
               rounded: "md",
             },
             "::-webkit-scrollbar-thumb": {
-              bg: "gray.500",
+              bg: "border.strong",
               rounded: "md",
             },
           }}
@@ -249,13 +269,15 @@ export const Searchbox = () => {
             return (
               <ListItem
                 key={index}
-                color={"black"}
+                color="text.primary"
                 px={4}
-                py={2}
-                _hover={{ bg: "gray.100" }}
-                bg={selectedIndex === index ? "gray.200" : "white"}
+                py={3}
+                _hover={{ bg: "bg.emphasis" }}
+                bg={selectedIndex === index ? "bg.muted" : "transparent"}
                 cursor={"pointer"}
-                rounded="lg"
+                borderBottom="1px solid"
+                borderColor="border.subtle"
+                _last={{ borderBottom: 0 }}
                 onClick={() => {
                   setIsLoading(true);
                   handleSearch(suggestion);
@@ -266,10 +288,12 @@ export const Searchbox = () => {
                   <Spacer />
                   {status && (
                     <Badge
-                      p={1}
+                      px={2.5}
+                      py={1}
                       bg={EIPStatus[status]?.bg ?? "cyan.500"}
                       fontWeight={700}
                       rounded="md"
+                      color="white"
                     >
                       {EIPStatus[status]?.prefix} {status}
                     </Badge>

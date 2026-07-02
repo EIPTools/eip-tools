@@ -10,7 +10,7 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <CacheProvider>
       <ChakraProvider theme={theme}>
-        <NextTopLoader />
+        <NextTopLoader color="#3B82F6" showSpinner={false} />
         {children}
       </ChakraProvider>
     </CacheProvider>

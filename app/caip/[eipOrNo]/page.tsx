@@ -23,7 +23,6 @@ import {
   SkeletonText,
   useDisclosure,
   Collapse,
-  IconButton,
 } from "@chakra-ui/react";
 import {
   ChevronLeftIcon,
@@ -61,8 +60,6 @@ const CAIP = ({
   const [markdownFileURL, setMarkdownFileURL] = useState<string>("");
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
-  const [isERC, setIsERC] = useState<boolean>(true);
-
   const [bookmarks, setBookmarks] = useLocalStorage<
     { eipNo: string; title: string; type?: EIPType; status?: string }[]
   >("eip-bookmarks", []);
@@ -71,30 +68,38 @@ const CAIP = ({
   const [aiSummary, setAiSummary] = useState<string>("");
 
   const currentEIPArrayIndex = validCAIPsArray.indexOf(eipNo);
+  const previousCAIPNo =
+    currentEIPArrayIndex > 0
+      ? validCAIPsArray[currentEIPArrayIndex - 1]
+      : undefined;
+  const nextCAIPNo =
+    currentEIPArrayIndex < validCAIPsArray.length - 1
+      ? validCAIPsArray[currentEIPArrayIndex + 1]
+      : undefined;
+  const previousCAIPLabel = previousCAIPNo ? `CAIP-${previousCAIPNo}` : "";
+  const nextCAIPLabel = nextCAIPNo ? `CAIP-${nextCAIPNo}` : "";
 
   const {
     isOpen: aiSummaryIsOpen,
-    onOpen: aiSummaryOnOpen,
     onToggle: aiSummaryOnToggle,
   } = useDisclosure();
 
   const handlePrevEIP = () => {
-    if (currentEIPArrayIndex > 0) {
+    if (previousCAIPNo) {
       setMetadataJson(undefined);
-      router.push(`/caip/${validCAIPsArray[currentEIPArrayIndex - 1]}`);
+      router.push(`/caip/${previousCAIPNo}`);
     }
   };
 
   const handleNextEIP = () => {
-    if (currentEIPArrayIndex < validCAIPsArray.length - 1) {
+    if (nextCAIPNo) {
       setMetadataJson(undefined);
-      router.push(`/caip/${validCAIPsArray[currentEIPArrayIndex + 1]}`);
+      router.push(`/caip/${nextCAIPNo}`);
     }
   };
 
   const fetchEIPData = useCallback(async () => {
     const validEIPData = validCAIPs[parseInt(eipNo)];
-    let _isERC = true;
 
     let _markdownFileURL = "";
     let eipMarkdownRes = "";
@@ -115,7 +120,6 @@ const CAIP = ({
     const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
     setMetadataJson(convertMetadataToJson(metadata));
     setMarkdown(_markdown);
-    setIsERC(_isERC);
 
     // only add to trending if it's a valid EIP
     if (
@@ -155,7 +159,7 @@ const CAIP = ({
     if (aiSummaryIsOpen && !aiSummary) {
       fetchAISummary();
     }
-  }, [aiSummaryIsOpen, aiSummary]);
+  }, [aiSummaryIsOpen, aiSummary, fetchAISummary]);
 
   useEffect(() => {
     setIsBookmarked(bookmarks.some((item) => item.eipNo === eipNo));
@@ -180,7 +184,7 @@ const CAIP = ({
   };
 
   return (
-    <Center flexDir={"column"}>
+    <Center flexDir="column" w="100%" px={{ base: 4, md: 6 }}>
       {!metadataJson && (
         <>
           <HStack
@@ -193,17 +197,17 @@ const CAIP = ({
               lg: "60rem",
             }}
           >
-            {currentEIPArrayIndex > 0 && (
-              <Tooltip label="Previous EIP" placement="top">
-                <Button size="sm" onClick={() => handlePrevEIP()}>
+            {previousCAIPNo && (
+              <Tooltip label={`Previous ${previousCAIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handlePrevEIP()}>
                   <ChevronLeftIcon />
                 </Button>
               </Tooltip>
             )}
             <Spacer />
-            {currentEIPArrayIndex < validCAIPsArray.length - 1 && (
-              <Tooltip label="Next EIP" placement="top">
-                <Button size="sm" onClick={() => handleNextEIP()}>
+            {nextCAIPNo && (
+              <Tooltip label={`Next ${nextCAIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handleNextEIP()}>
                   <ChevronRightIcon />
                 </Button>
               </Tooltip>
@@ -211,12 +215,8 @@ const CAIP = ({
           </HStack>
           <Container
             mt={4}
-            mx={"10rem"}
-            minW={{
-              sm: "100%",
-              md: "45rem",
-              lg: "60rem",
-            }}
+            maxW="container.lg"
+            w="100%"
           >
             <HStack>
               <Skeleton>
@@ -225,7 +225,7 @@ const CAIP = ({
                 </Badge>
               </Skeleton>
               <Skeleton>
-                <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
+                <Badge p={1} bg="primary.500" color="white" fontWeight="600" rounded="md">
                   Standards Track: ERC
                 </Badge>
               </Skeleton>
@@ -241,86 +241,44 @@ const CAIP = ({
       )}
       {metadataJson && (
         <Container
-          mt={4}
-          mx={"10rem"}
-          minW={{
-            sm: "100%",
-            md: "45rem",
-            lg: "60rem",
-          }}
+          mt={6}
+          maxW="container.lg"
+          w="100%"
+          px={0}
         >
           {/* Navigation Arrows */}
           <HStack mb={2}>
-            {currentEIPArrayIndex > 0 && (
-              <Tooltip label="Previous EIP" placement="top">
-                <Button size="sm" onClick={() => handlePrevEIP()}>
+            {previousCAIPNo && (
+              <Tooltip label={`Previous ${previousCAIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handlePrevEIP()}>
                   <ChevronLeftIcon />
                 </Button>
               </Tooltip>
             )}
             <Spacer />
-            {currentEIPArrayIndex < validCAIPsArray.length - 1 && (
-              <Tooltip label="Next EIP" placement="top">
-                <Button size="sm" onClick={() => handleNextEIP()}>
+            {nextCAIPNo && (
+              <Tooltip label={`Next ${nextCAIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handleNextEIP()}>
                   <ChevronRightIcon />
                 </Button>
               </Tooltip>
             )}
           </HStack>
-          {/* AI Summary */}
-          <Box
-            px={4}
-            py={2}
-            mb={2}
-            border="solid"
-            borderWidth="2px"
-            borderColor={"yellow.500"}
-            rounded={"lg"}
-            maxH={{ base: "10rem", md: "100vh" }}
-            overflowY={"auto"}
-            color="yellow.400"
-            _hover={{
-              bg: "yellow.800",
-              color: "white",
-            }}
-          >
-            <HStack cursor={"pointer"} onClick={aiSummaryOnToggle}>
-              <Text>💡 EIP-GPT:</Text>
-              <Spacer />
-              <Text fontSize={"xl"}>
-                {aiSummaryIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
-              </Text>
-            </HStack>
-            <Collapse in={aiSummaryIsOpen} animateOpacity>
-              {aiSummary ? (
-                <Box color="white">
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter.typeString(`${aiSummary}`).start();
-                    }}
-                    options={{
-                      delay: 5,
-                    }}
-                  />
-                </Box>
-              ) : (
-                <SkeletonText />
-              )}
-            </Collapse>
-          </Box>
           {/* Metadata Badges */}
           <HStack>
             <Tooltip label={EIPStatus[metadataJson.status]?.description}>
               <Badge
-                p={1}
+                px={2.5}
+                py={1}
                 bg={EIPStatus[metadataJson.status]?.bg ?? "cyan.500"}
-                fontWeight={700}
+                fontWeight={600}
                 rounded="md"
+                color="white"
               >
                 {EIPStatus[metadataJson.status]?.prefix} {metadataJson.status}
               </Badge>
             </Tooltip>
-            <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
+            <Badge p={1} bg="primary.500" color="white" fontWeight="600" rounded="md">
               {metadataJson.type}: {metadataJson.category}
             </Badge>
             <Button
@@ -328,8 +286,8 @@ const CAIP = ({
                 e.stopPropagation();
                 toggleBookmark();
               }}
-              color={isBookmarked ? "blue.500" : "gray.500"}
-              _hover={{ color: isBookmarked ? "blue.400" : "gray.400" }}
+              color={isBookmarked ? "primary.400" : "text.tertiary"}
+              _hover={{ color: "primary.300", bg: "bg.emphasis" }}
               variant="ghost"
               size="lg"
               ml="auto"
@@ -347,11 +305,48 @@ const CAIP = ({
             </Button>
           </HStack>
 
-          <Heading>
+          <Heading mt={3} size="2xl">
             CAIP-{eipNo}: {metadataJson.title}
           </Heading>
-          <Text size="md">{metadataJson.description}</Text>
-          <Box overflowX={"auto"}>
+          <Text mt={2} color="text.secondary" fontSize="md" lineHeight="tall">
+            {metadataJson.description}
+          </Text>
+          <Box
+            mt={6}
+            px={6}
+            pt={2}
+            pb={6}
+            bg="bg.subtle"
+            border="1px solid"
+            borderColor="border.default"
+            borderRadius="lg"
+          >
+          <Box
+            overflowX="auto"
+            sx={{
+              "@media (max-width: 48em)": {
+                table: { display: "block" },
+                tbody: { display: "block" },
+                tr: {
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  py: 3,
+                },
+                th: {
+                  display: "block",
+                  width: "100%",
+                  borderBottom: 0,
+                  pb: 1,
+                },
+                td: {
+                  display: "block",
+                  width: "100%",
+                  pt: 0,
+                  overflowWrap: "anywhere",
+                },
+              },
+            }}
+          >
             <Table variant="simple">
               {metadataJson.author && (
                 <Tr>
@@ -373,7 +368,7 @@ const CAIP = ({
                   <Td>
                     <Link
                       href={metadataJson["discussions-to"]}
-                      color={"blue.400"}
+                      color="primary.400"
                       isExternal
                     >
                       {metadataJson["discussions-to"]}
@@ -389,7 +384,7 @@ const CAIP = ({
                       {metadataJson.requires.map((req, i) => (
                         <NLink key={i} href={`/caip/${req}`}>
                           <Text
-                            color={"blue.400"}
+                            color="primary.400"
                             _hover={{ textDecor: "underline" }}
                           >
                             CAIP-{req}
@@ -402,11 +397,57 @@ const CAIP = ({
               )}
             </Table>
           </Box>
-          {markdown === "404: Not Found" ? (
-            <Center mt={20}>{markdown}</Center>
-          ) : (
-            <Markdown md={markdown} markdownFileURL={markdownFileURL} />
-          )}
+          </Box>
+          {/* AI Summary */}
+          <Box
+            px={4}
+            py={3}
+            mt={4}
+            border="1px solid"
+            borderColor="warning.border"
+            bg="warning.bg"
+            rounded="lg"
+            maxH={{ base: "10rem", md: "100vh" }}
+            overflowY={"auto"}
+            color="warning.text"
+            _hover={{
+              borderColor: "warning.solid",
+            }}
+          >
+            <HStack cursor={"pointer"} onClick={aiSummaryOnToggle}>
+              <Text color="warning.text" fontWeight="medium">
+                EIP-GPT summary
+              </Text>
+              <Spacer />
+              <Text color="warning.text" fontSize="xl">
+                {aiSummaryIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Text>
+            </HStack>
+            <Collapse in={aiSummaryIsOpen} animateOpacity>
+              {aiSummary ? (
+                <Box color="text.primary" pt={3}>
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter.typeString(`${aiSummary}`).start();
+                    }}
+                    options={{
+                      delay: 5,
+                    }}
+                  />
+                </Box>
+              ) : (
+                <SkeletonText />
+              )}
+            </Collapse>
+          </Box>
+
+          <Box mt={8} w="100%">
+            {markdown === "404: Not Found" ? (
+              <Center mt={20}>{markdown}</Center>
+            ) : (
+              <Markdown md={markdown} markdownFileURL={markdownFileURL} />
+            )}
+          </Box>
         </Container>
       )}
       <ScrollToTopButton />

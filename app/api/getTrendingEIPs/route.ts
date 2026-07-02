@@ -1,13 +1,16 @@
 // add this to prevent the build command from static generating this page
 export const dynamic = "force-dynamic";
 
-import { NextRequest } from "next/server";
 import mongoose from "mongoose";
 import { subDays } from "date-fns";
 import { PageVisit } from "@/models/pageVisit";
 
-export const GET = async (req: NextRequest) => {
-  await mongoose.connect(process.env.MONGODB_URL!);
+export const GET = async () => {
+  if (!process.env.MONGODB_URL) {
+    return Response.json([]);
+  }
+
+  await mongoose.connect(process.env.MONGODB_URL);
 
   const sevenDaysAgo = subDays(new Date(), 7);
   const trendingCount = 5;
@@ -33,7 +36,5 @@ export const GET = async (req: NextRequest) => {
     },
   ]);
 
-  return new Response(JSON.stringify(topPages), {
-    status: 200,
-  });
+  return Response.json(topPages);
 };

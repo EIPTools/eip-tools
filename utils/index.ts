@@ -150,10 +150,10 @@ export const getProposalAuthorProfiles = (
 };
 
 export const STATUS_COLORS = {
-  Draft: "#D69E2E", // yellow.500 (using # values so it works for the metaimg generation)
-  Review: "#F1C40F", // yellow.500
-  "Last Call": "#38A169", // green.500
-  Final: "#2ECC71", // green.500
+  Draft: "#9A5A18", // burnt amber (using # values so it works for the metaimg generation)
+  Review: "#9A6D16", // antique gold
+  "Last Call": "#2F7D5A", // muted green
+  Final: "#287D49", // deep emerald
   Stagnant: "#E53E3E", // red.500
   Withdrawn: "#95A5A6", // gray.500
 };

@@ -75,10 +75,25 @@ const EIP = ({
   const [aiSummary, setAiSummary] = useState<string>("");
 
   const currentEIPArrayIndex = validEIPsArray.indexOf(eipNo);
+  const previousEIPNo =
+    currentEIPArrayIndex > 0
+      ? validEIPsArray[currentEIPArrayIndex - 1]
+      : undefined;
+  const nextEIPNo =
+    currentEIPArrayIndex < validEIPsArray.length - 1
+      ? validEIPsArray[currentEIPArrayIndex + 1]
+      : undefined;
+  const getEIPDisplayLabel = (proposalNo: string) => {
+    const proposal = validEIPs[parseInt(proposalNo)];
+    return `${proposal?.isERC ? "ERC" : "EIP"}-${proposalNo}`;
+  };
+  const previousEIPLabel = previousEIPNo
+    ? getEIPDisplayLabel(previousEIPNo)
+    : "";
+  const nextEIPLabel = nextEIPNo ? getEIPDisplayLabel(nextEIPNo) : "";
 
   const {
     isOpen: aiSummaryIsOpen,
-    onOpen: aiSummaryOnOpen,
     onToggle: aiSummaryOnToggle,
   } = useDisclosure();
 
@@ -120,16 +135,16 @@ const EIP = ({
   }, [metadataJson, dependencyGraphOnOpen]);
 
   const handlePrevEIP = () => {
-    if (currentEIPArrayIndex > 0) {
+    if (previousEIPNo) {
       setMetadataJson(undefined);
-      router.push(`/eip/${validEIPsArray[currentEIPArrayIndex - 1]}`);
+      router.push(`/eip/${previousEIPNo}`);
     }
   };
 
   const handleNextEIP = () => {
-    if (currentEIPArrayIndex < validEIPsArray.length - 1) {
+    if (nextEIPNo) {
       setMetadataJson(undefined);
-      router.push(`/eip/${validEIPsArray[currentEIPArrayIndex + 1]}`);
+      router.push(`/eip/${nextEIPNo}`);
     }
   };
 
@@ -205,7 +220,7 @@ const EIP = ({
     if (aiSummaryIsOpen && !aiSummary) {
       fetchAISummary();
     }
-  }, [aiSummaryIsOpen, aiSummary]);
+  }, [aiSummaryIsOpen, aiSummary, fetchAISummary]);
 
   useEffect(() => {
     setIsBookmarked(bookmarks.some((item) => item.eipNo === eipNo));
@@ -229,7 +244,7 @@ const EIP = ({
   };
 
   return (
-    <Center flexDir={"column"}>
+    <Center flexDir="column" w="100%" px={{ base: 4, md: 6 }}>
       {!metadataJson && (
         <>
           <HStack
@@ -242,17 +257,17 @@ const EIP = ({
               lg: "60rem",
             }}
           >
-            {currentEIPArrayIndex > 0 && (
-              <Tooltip label="Previous EIP" placement="top">
-                <Button size="sm" onClick={() => handlePrevEIP()}>
+            {previousEIPNo && (
+              <Tooltip label={`Previous ${previousEIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handlePrevEIP()}>
                   <ChevronLeftIcon />
                 </Button>
               </Tooltip>
             )}
             <Spacer />
-            {currentEIPArrayIndex < validEIPsArray.length - 1 && (
-              <Tooltip label="Next EIP" placement="top">
-                <Button size="sm" onClick={() => handleNextEIP()}>
+            {nextEIPNo && (
+              <Tooltip label={`Next ${nextEIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handleNextEIP()}>
                   <ChevronRightIcon />
                 </Button>
               </Tooltip>
@@ -260,12 +275,8 @@ const EIP = ({
           </HStack>
           <Container
             mt={4}
-            mx={"10rem"}
-            minW={{
-              sm: "100%",
-              md: "45rem",
-              lg: "60rem",
-            }}
+            maxW="container.lg"
+            w="100%"
           >
             <HStack>
               <Skeleton>
@@ -274,7 +285,7 @@ const EIP = ({
                 </Badge>
               </Skeleton>
               <Skeleton>
-                <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
+                <Badge p={1} bg="primary.500" color="white" fontWeight="600" rounded="md">
                   Standards Track: ERC
                 </Badge>
               </Skeleton>
@@ -290,86 +301,44 @@ const EIP = ({
       )}
       {metadataJson && (
         <Container
-          mt={4}
-          mx={"10rem"}
-          minW={{
-            sm: "100%",
-            md: "45rem",
-            lg: "60rem",
-          }}
+          mt={6}
+          maxW="container.lg"
+          w="100%"
+          px={0}
         >
           {/* Navigation Arrows */}
           <HStack mb={2}>
-            {currentEIPArrayIndex > 0 && (
-              <Tooltip label="Previous EIP" placement="top">
-                <Button size="sm" onClick={() => handlePrevEIP()}>
+            {previousEIPNo && (
+              <Tooltip label={`Previous ${previousEIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handlePrevEIP()}>
                   <ChevronLeftIcon />
                 </Button>
               </Tooltip>
             )}
             <Spacer />
-            {currentEIPArrayIndex < validEIPsArray.length - 1 && (
-              <Tooltip label="Next EIP" placement="top">
-                <Button size="sm" onClick={() => handleNextEIP()}>
+            {nextEIPNo && (
+              <Tooltip label={`Next ${nextEIPLabel}`} placement="top">
+                <Button size="sm" variant="secondary" onClick={() => handleNextEIP()}>
                   <ChevronRightIcon />
                 </Button>
               </Tooltip>
             )}
           </HStack>
-          {/* AI Summary */}
-          <Box
-            px={4}
-            py={2}
-            mb={2}
-            border="solid"
-            borderWidth="2px"
-            borderColor={"yellow.500"}
-            rounded={"lg"}
-            maxH={{ base: "10rem", md: "100vh" }}
-            overflowY={"auto"}
-            color="yellow.400"
-            _hover={{
-              bg: "yellow.800",
-              color: "white",
-            }}
-          >
-            <HStack cursor={"pointer"} onClick={aiSummaryOnToggle}>
-              <Text>💡 EIP-GPT:</Text>
-              <Spacer />
-              <Text fontSize={"xl"}>
-                {aiSummaryIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
-              </Text>
-            </HStack>
-            <Collapse in={aiSummaryIsOpen} animateOpacity>
-              {aiSummary ? (
-                <Box color="white">
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter.typeString(`${aiSummary}`).start();
-                    }}
-                    options={{
-                      delay: 5,
-                    }}
-                  />
-                </Box>
-              ) : (
-                <SkeletonText />
-              )}
-            </Collapse>
-          </Box>
           {/* Metadata Badges */}
           <HStack>
             <Tooltip label={EIPStatus[metadataJson.status]?.description}>
               <Badge
-                p={1}
+                px={2.5}
+                py={1}
                 bg={EIPStatus[metadataJson.status]?.bg ?? "cyan.500"}
-                fontWeight={700}
+                fontWeight={600}
                 rounded="md"
+                color="white"
               >
                 {EIPStatus[metadataJson.status]?.prefix} {metadataJson.status}
               </Badge>
             </Tooltip>
-            <Badge p={1} bg={"blue.500"} fontWeight={"bold"} rounded="md">
+            <Badge p={1} bg="primary.500" color="white" fontWeight="600" rounded="md">
               {metadataJson.type}: {metadataJson.category}
             </Badge>
             <Button
@@ -377,8 +346,8 @@ const EIP = ({
                 e.stopPropagation();
                 toggleBookmark();
               }}
-              color={isBookmarked ? "blue.500" : "gray.500"}
-              _hover={{ color: isBookmarked ? "blue.400" : "gray.400" }}
+              color={isBookmarked ? "primary.400" : "text.tertiary"}
+              _hover={{ color: "primary.300", bg: "bg.emphasis" }}
               variant="ghost"
               size="lg"
               ml="auto"
@@ -395,23 +364,50 @@ const EIP = ({
               </HStack>
             </Button>
           </HStack>
-          <Heading>
+          <Heading mt={3} size="2xl">
             {isERC ? "ERC" : "EIP"}-{eipNo}: {metadataJson.title}
           </Heading>
-          <Text size="md">{metadataJson.description}</Text>
+          <Text mt={2} color="text.secondary" fontSize="md" lineHeight="tall">
+            {metadataJson.description}
+          </Text>
           
           {/* Metadata Section Container */}
           <Box
             mt={6}
             px={6}
-            pt={0}
+            pt={2}
             pb={6}
-            bg="blackAlpha.300"
+            bg="bg.subtle"
             border="1px solid"
-            borderColor="whiteAlpha.200"
-            borderRadius="xl"
+            borderColor="border.default"
+            borderRadius="lg"
           >
-          <Box overflowX={"auto"}>
+          <Box
+            overflowX="auto"
+            sx={{
+              "@media (max-width: 48em)": {
+                table: { display: "block" },
+                tbody: { display: "block" },
+                tr: {
+                  display: "grid",
+                  gridTemplateColumns: "1fr",
+                  py: 3,
+                },
+                th: {
+                  display: "block",
+                  width: "100%",
+                  borderBottom: 0,
+                  pb: 1,
+                },
+                td: {
+                  display: "block",
+                  width: "100%",
+                  pt: 0,
+                  overflowWrap: "anywhere",
+                },
+              },
+            }}
+          >
             <Table variant="simple">
               {metadataJson.author && (
                 <Tr>
@@ -433,7 +429,7 @@ const EIP = ({
                   <Td>
                     <Link
                       href={metadataJson["discussions-to"]}
-                      color={"blue.400"}
+                      color="primary.400"
                       isExternal
                     >
                       {metadataJson["discussions-to"]}
@@ -449,7 +445,7 @@ const EIP = ({
                       {metadataJson.requires.map((req, i) => (
                         <NLink key={i} href={`/eip/${req}`}>
                           <Text
-                            color={"blue.400"}
+                            color="primary.400"
                             _hover={{ textDecor: "underline" }}
                           >
                             {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
@@ -470,7 +466,7 @@ const EIP = ({
                         {referencedBy.map((refEipNo, i) => (
                           <NLink key={i} href={`/eip/${refEipNo}`}>
                             <Text
-                              color={"blue.400"}
+                              color="primary.400"
                               _hover={{ textDecor: "underline" }}
                             >
                               {validEIPs[refEipNo]?.isERC ? "ERC" : "EIP"}-{refEipNo}
@@ -498,7 +494,7 @@ const EIP = ({
                     <Tooltip label={markdownFileURL}>
                       <Link
                         href={markdownFileURL}
-                        color={"blue.400"}
+                        color="primary.400"
                         isExternal
                       >
                         {markdownFileURL.length > 50
@@ -534,8 +530,8 @@ const EIP = ({
                           icon={<Text fontWeight="bold">#</Text>}
                           variant="ghost"
                           size="sm"
-                          color={copiedAnchor ? "green.400" : "gray.500"}
-                          _hover={{ color: "blue.400", bg: "transparent" }}
+                          color={copiedAnchor ? "success.text" : "text.tertiary"}
+                          _hover={{ color: "primary.400", bg: "transparent" }}
                           onClick={handleCopyAnchorLink}
                           mb={3}
                           minW="auto"
@@ -549,8 +545,8 @@ const EIP = ({
                         variant="ghost"
                         leftIcon={dependencyGraphIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
                         size="md"
-                        color="gray.300"
-                        _hover={{ color: "white", bg: "whiteAlpha.100" }}
+                        color="text.secondary"
+                        _hover={{ color: "text.primary", bg: "whiteAlpha.100" }}
                         mb={3}
                         fontWeight="600"
                         justifyContent="flex-start"
@@ -558,7 +554,7 @@ const EIP = ({
                         pl={1}
                       >
                         <Text>EIP Dependency Graph</Text>
-                        <Text ml={2} fontSize="sm" color="gray.400">
+                        <Text ml={2} fontSize="sm" color="text.tertiary">
                           ({totalConnections} connection{totalConnections !== 1 ? 's' : ''})
                         </Text>
                       </Button>
@@ -572,13 +568,56 @@ const EIP = ({
             </Box>
           </Box>
 
+          {/* AI Summary */}
+          <Box
+            px={4}
+            py={3}
+            mt={4}
+            border="1px solid"
+            borderColor="warning.border"
+            bg="warning.bg"
+            rounded="lg"
+            maxH={{ base: "10rem", md: "100vh" }}
+            overflowY={"auto"}
+            color="warning.text"
+            _hover={{
+              borderColor: "warning.solid",
+            }}
+          >
+            <HStack cursor={"pointer"} onClick={aiSummaryOnToggle}>
+              <Text color="warning.text" fontWeight="medium">
+                EIP-GPT summary
+              </Text>
+              <Spacer />
+              <Text color="warning.text" fontSize="xl">
+                {aiSummaryIsOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </Text>
+            </HStack>
+            <Collapse in={aiSummaryIsOpen} animateOpacity>
+              {aiSummary ? (
+                <Box color="text.primary" pt={3}>
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter.typeString(`${aiSummary}`).start();
+                    }}
+                    options={{
+                      delay: 5,
+                    }}
+                  />
+                </Box>
+              ) : (
+                <SkeletonText />
+              )}
+            </Collapse>
+          </Box>
+
           {/* Main EIP Content */}
-          <Box mt={8}>
-          {markdown === "404: Not Found" ? (
-            <Center mt={20}>{markdown}</Center>
-          ) : (
-            <Markdown md={markdown} markdownFileURL={markdownFileURL} />
-          )}
+          <Box mt={8} w="100%">
+            {markdown === "404: Not Found" ? (
+              <Center mt={20}>{markdown}</Center>
+            ) : (
+              <Markdown md={markdown} markdownFileURL={markdownFileURL} />
+            )}
           </Box>
         </Container>
       )}

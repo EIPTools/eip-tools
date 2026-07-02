@@ -1,4 +1,4 @@
-import { poppins } from "./fonts";
+import { inter, jetbrainsMono } from "./fonts";
 import { Providers } from "./providers";
 import { Analytics } from "@/components/Analytics";
 
@@ -8,8 +8,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className={inter.className}>
         <Analytics />
         <Providers>{children}</Providers>
       </body>

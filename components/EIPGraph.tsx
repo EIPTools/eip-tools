@@ -29,7 +29,7 @@ import * as THREE from "three";
 import { GraphNode } from "@/types";
 import { eipGraphData } from "@/data/eipGraphData";
 import { EIPStatus, STATUS_COLORS } from "@/utils";
-import { poppins } from "@/app/fonts";
+import { inter } from "@/app/fonts";
 
 const EIPGraph = ({
   isEmbedded = false,
@@ -57,9 +57,9 @@ const EIPGraph = ({
 
   const [showResetZoom, setShowResetZoom] = useState(false);
 
-  const tooltipBg = "bg.800";
-  const textColor = "gray.300";
-  const subTextColor = "gray.400";
+  const tooltipBg = "bg.subtle";
+  const textColor = "text.secondary";
+  const subTextColor = "text.tertiary";
 
   const handleNodeClick = useCallback((node: GraphNode) => {
     // Using dynamic imports to ensure this only runs on client side
@@ -212,7 +212,7 @@ const EIPGraph = ({
       const textSize = getNodeTextSize(node) * (isEmbedded ? 0.5 : 1);
       sprite.textHeight = textSize;
       sprite.fontWeight = "bold";
-      sprite.fontFace = poppins.style.fontFamily;
+      sprite.fontFace = inter.style.fontFamily;
       sprite.renderOrder = 1;
       sprite.material.depthTest = false;
       sprite.material.depthWrite = false;
@@ -309,6 +309,10 @@ const EIPGraph = ({
     setSearchSelectedIndex(-1); // Reset selected index when search suggestions change
   }, [searchSuggestions]);
 
+  const searchOuterRadius = "12px";
+  const searchInset = "4px";
+  const searchInnerRadius = `calc(${searchOuterRadius} - ${searchInset})`;
+
   return (
     <Box
       position={isEmbedded ? "relative" : "relative"}
@@ -346,8 +350,9 @@ const EIPGraph = ({
       <Box position="absolute" top={4} left={4} zIndex={10} ref={searchRef}>
         <InputGroup w={{ base: "18rem", md: "24rem" }}>
           <Input
+            borderRadius={searchOuterRadius}
             placeholder="Search EIP/ERC number or title"
-            bg="bg.900"
+            bg="bg.subtle"
             value={searchInput}
             onChange={(e) => {
               setSearchInput(e.target.value);
@@ -357,8 +362,22 @@ const EIPGraph = ({
             onKeyDown={handleKeyDown}
             onFocus={() => setHideSuggestions(false)}
           />
-          <InputRightElement w="4rem">
-            <Button size="sm" colorScheme="blue">
+          <InputRightElement
+            h="100%"
+            w="4rem"
+            justifyContent="flex-end"
+            pr={searchInset}
+          >
+            <Button
+              h="2rem"
+              w="3.5rem"
+              minW="3.5rem"
+              p={0}
+              size="sm"
+              variant="primary"
+              borderRadius={searchInnerRadius}
+              aria-label="Search graph"
+            >
               <SearchIcon />
             </Button>
           </InputRightElement>
@@ -367,10 +386,10 @@ const EIPGraph = ({
         {searchSuggestions.length > 0 && !hideSuggestions && (
           <List
             mt={2}
-            border="1px"
-            borderColor="gray.200"
-            borderRadius="md"
-            bg="white"
+            border="1px solid"
+            borderColor="border.default"
+            borderRadius="lg"
+            bg="bg.subtle"
             zIndex={9999}
             position="absolute"
             width="100%"
@@ -381,11 +400,11 @@ const EIPGraph = ({
                 h: "12px",
               },
               "::-webkit-scrollbar-track ": {
-                bg: "gray.400",
+                bg: "bg.muted",
                 rounded: "md",
               },
               "::-webkit-scrollbar-thumb": {
-                bg: "gray.500",
+                bg: "border.strong",
                 rounded: "md",
               },
             }}
@@ -395,10 +414,13 @@ const EIPGraph = ({
               <ListItem
                 key={index}
                 px={4}
-                py={2}
-                _hover={{ bg: "bg.800" }}
-                bg={searchSelectedIndex === index ? "bg.800" : "bg.900"}
+                py={3}
+                _hover={{ bg: "bg.emphasis" }}
+                bg={searchSelectedIndex === index ? "bg.muted" : "transparent"}
                 cursor="pointer"
+                borderBottom="1px solid"
+                borderColor="border.subtle"
+                _last={{ borderBottom: 0 }}
                 onClick={() => {
                   focusNode(node);
                   setSearchInput("");
@@ -413,7 +435,8 @@ const EIPGraph = ({
                   <Spacer />
                   {node.status && (
                     <Badge
-                      p={1}
+                      px={2.5}
+                      py={1}
                       bg={EIPStatus[node.status]?.bg ?? "cyan.500"}
                       color="white"
                       fontWeight={700}
@@ -502,14 +525,14 @@ const EIPGraph = ({
 
       <ForceGraph3D
         ref={graphRef}
-        backgroundColor="#111"
+        backgroundColor="#0A0A0B"
         graphData={graphData}
         nodeId="id"
         nodeLabel={(node) =>
           `${node.isERC ? "ERC" : "EIP"}-${node.eipNo}: ${node.title}`
         }
         nodeThreeObject={createNodeObject}
-        linkColor={(link) => (highlightLinks.has(link) ? "#ff6b6b" : "#d3d3d3")}
+        linkColor={(link) => (highlightLinks.has(link) ? "#60A5FA" : "rgba(255,255,255,0.35)")}
         linkWidth={(link) => (highlightLinks.has(link) ? 3 : 1)}
         onNodeClick={handleNodeClick}
         linkDirectionalParticles={2}
