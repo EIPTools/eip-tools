@@ -11516,7 +11516,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:56.687Z"
+    "timestamp": "2026-07-02T13:26:03.829Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11589,7 +11589,7 @@
   },
   "8182": {
     "title": "Private ETH and ERC-20 Transfers",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "20"
     ],
@@ -11991,7 +11991,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:53.074Z"
+    "timestamp": "2026-07-02T13:26:00.345Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12234,7 +12234,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:52.088Z"
+    "timestamp": "2026-07-02T13:25:59.332Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12256,7 +12256,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:54.106Z"
+    "timestamp": "2026-07-02T13:26:01.367Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12276,7 +12276,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-01T12:52:51.719Z"
+    "timestamp": "2026-07-02T13:25:58.605Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12467,7 +12467,7 @@
     "requires": [
       "8264"
     ],
-    "timestamp": "2026-07-01T12:52:47.455Z"
+    "timestamp": "2026-07-02T13:25:54.950Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12687,7 +12687,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-01T12:52:44.777Z"
+    "timestamp": "2026-07-02T13:25:52.952Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12770,48 +12770,57 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-01T12:52:43.401Z"
+    "timestamp": "2026-07-02T13:25:51.518Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
     "status": "Draft",
-    "prNo": 11788,
-    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/eip-9999-state-tiering-gas/EIPS/eip-8295.md",
     "requires": [
       "2929",
       "2930",
+      "7702",
+      "7825",
       "8037",
       "8038",
       "8188"
     ],
-    "timestamp": "2026-06-27T12:21:03.955Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8295.md"
   },
   "8296": {
     "title": "Fixed-Cutoff State Tiering",
     "status": "Draft",
-    "prNo": 11790,
-    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/eip-state-inactivity-cutoff/EIPS/eip-8296.md",
     "requires": [
       "2929",
+      "7702",
+      "7825",
       "8037",
       "8038",
       "8188"
     ],
-    "timestamp": "2026-07-01T12:50:52.046Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8296.md"
   },
   "8297": {
     "title": "Partitioned Binary Tree",
     "status": "Draft",
-    "prNo": 11799,
-    "markdownPath": "https://raw.githubusercontent.com/weiihann/EIPs/refs/heads/pbt/EIPS/eip-8297.md",
-    "timestamp": "2026-06-28T00:20:27.302Z"
+    "requires": [
+      "7612"
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8297.md"
   },
   "8298": {
     "title": "SETCODEFROM Code Reuse Instruction",
     "status": "Draft",
-    "prNo": 11800,
-    "markdownPath": "https://raw.githubusercontent.com/colinlyguo/EIPs/refs/heads/add-SETCODEFROM/EIPS/eip-8298.md",
-    "timestamp": "2026-06-28T00:20:27.169Z"
+    "requires": [
+      "2200",
+      "2929",
+      "3607",
+      "7702"
+    ],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8298.md"
   },
   "8299": {
     "title": "WYRIWE — Input Provenance for AI Inference",
@@ -12823,19 +12832,18 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-06-27T12:22:46.880Z"
+    "timestamp": "2026-07-02T13:25:51.358Z"
   },
   "8300": {
-    "title": "Attestation-Gated Agentic Actions",
+    "title": "Invariant-First Reserve Receipt Token",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1770,
-    "markdownPath": "https://raw.githubusercontent.com/xrqin/ERCs/refs/heads/add-erc-8300-attestation-gated-agentic-actions/ERCS/erc-8300.md",
+    "prNo": 1813,
+    "markdownPath": "https://raw.githubusercontent.com/emilianosolazzi/ERCs/refs/heads/ifr-pETH-Token/ERCS/erc-8300.md",
     "requires": [
-      "165",
-      "1153"
+      "20"
     ],
-    "timestamp": "2026-05-26T12:52:20.534Z"
+    "timestamp": "2026-07-02T00:24:14.187Z"
   },
   "8301": {
     "title": "AI Agent Execution",
@@ -12954,7 +12962,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-01T12:52:41.958Z"
+    "timestamp": "2026-07-02T13:25:50.509Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -12964,13 +12972,35 @@
     "markdownPath": "https://raw.githubusercontent.com/Cointrol-Limited/ERCs/refs/heads/add-pim/ERCS/erc-8313.md",
     "timestamp": "2026-07-01T12:52:42.119Z"
   },
+  "8314": {
+    "title": "Contract Role Naming",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1846,
+    "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/ERC-8314-Contract-Role-Naming/ERCS/erc-8314.md",
+    "requires": [
+      "7820"
+    ],
+    "timestamp": "2026-07-02T13:25:49.464Z"
+  },
+  "8315": {
+    "title": "Contract Role Semantics",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1847,
+    "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/EIP-8315-Contract-Role-Semantics/ERCS/erc-8315.md",
+    "requires": [
+      "5982"
+    ],
+    "timestamp": "2026-07-02T13:25:49.417Z"
+  },
   "8316": {
     "title": "Programmable Settlement Locks",
     "status": "Draft",
     "isERC": true,
     "prNo": 1840,
     "markdownPath": "https://raw.githubusercontent.com/awrichar/ERCs/refs/heads/erc-settlement-locks/ERCS/erc-8316.md",
-    "timestamp": "2026-06-27T00:24:09.466Z"
+    "timestamp": "2026-07-02T00:24:12.710Z"
   },
   "8317": {
     "title": "Contract Storage Layout Descriptor Format",
@@ -13194,7 +13224,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-01T12:53:10.169Z"
+    "timestamp": "2026-07-02T13:26:17.179Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
