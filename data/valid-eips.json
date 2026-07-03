@@ -1644,6 +1644,14 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-1844.md"
   },
+  "1848": {
+    "title": "Regulatory Compliance Protocol",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1848,
+    "markdownPath": "https://raw.githubusercontent.com/jay-oraclizer/ERCs/refs/heads/rcp-informational/ERCS/erc-1848.md",
+    "timestamp": "2026-07-03T13:28:47.490Z"
+  },
   "1872": {
     "title": "Ethereum Network Upgrade Windows",
     "status": "Stagnant",
@@ -11527,7 +11535,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-03T01:28:57.453Z"
+    "timestamp": "2026-07-03T13:29:00.122Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12002,7 +12010,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-03T01:28:54.896Z"
+    "timestamp": "2026-07-03T13:28:56.706Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12245,7 +12253,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-03T01:28:53.568Z"
+    "timestamp": "2026-07-03T13:28:55.833Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12259,14 +12267,15 @@
     "timestamp": "2026-06-29T13:20:45.034Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-03T01:27:18.202Z"
+    "timestamp": "2026-07-03T13:28:57.650Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12286,7 +12295,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-03T01:28:53.197Z"
+    "timestamp": "2026-07-03T13:28:55.837Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12469,20 +12478,15 @@
     "timestamp": "2026-07-03T01:28:49.622Z"
   },
   "8265": {
-    "title": "Prepared Transaction Envelope",
+    "title": "Body Lease and Credential Broker",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1753,
-    "markdownPath": "https://raw.githubusercontent.com/mike-diamond/ERCs/refs/heads/add-erc-prepared-transaction-envelope/ERCS/erc-8265.md",
+    "prNo": 1763,
+    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8265.md",
     "requires": [
-      "155",
-      "712",
-      "4337",
-      "4361",
-      "5792",
-      "6492"
+      "8264"
     ],
-    "timestamp": "2026-07-03T01:28:49.371Z"
+    "timestamp": "2026-07-03T13:28:52.037Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12701,7 +12705,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-03T01:28:46.986Z"
+    "timestamp": "2026-07-03T13:28:50.365Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12785,7 +12789,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-03T01:28:46.112Z"
+    "timestamp": "2026-07-03T13:28:49.405Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12977,7 +12981,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-03T01:28:44.780Z"
+    "timestamp": "2026-07-03T13:28:48.475Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13040,6 +13044,19 @@
       "165"
     ],
     "timestamp": "2026-07-01T12:52:40.906Z"
+  },
+  "8320": {
+    "title": "Regulated Asset Claim",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1849,
+    "markdownPath": "https://raw.githubusercontent.com/thamerdridi/ERCs/refs/heads/add-erc-regulated-asset-claim/ERCS/erc-8320.md",
+    "requires": [
+      "165",
+      "712",
+      "1271"
+    ],
+    "timestamp": "2026-07-03T13:28:47.524Z"
   },
   "8338": {
     "title": "Zero-Knowledge Compliance Oracle",
@@ -13239,7 +13256,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-03T01:29:07.996Z"
+    "timestamp": "2026-07-03T13:29:11.800Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
