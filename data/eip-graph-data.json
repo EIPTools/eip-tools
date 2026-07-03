@@ -8779,6 +8779,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8156",
+      "eipNo": "8156",
+      "title": "Agent Onchain Metadata",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8158",
       "eipNo": "8158",
       "title": "Invariant Layout Guard Opcode",
@@ -9341,9 +9348,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9474,7 +9481,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -16485,6 +16492,10 @@
       "target": "eip-7201"
     },
     {
+      "source": "eip-8156",
+      "target": "eip-8004"
+    },
+    {
       "source": "eip-8159",
       "target": "eip-7928"
     },
@@ -17226,7 +17237,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17374,7 +17385,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17611,6 +17642,14 @@
     {
       "source": "eip-8289",
       "target": "eip-2935"
+    },
+    {
+      "source": "eip-8289",
+      "target": "eip-3651"
+    },
+    {
+      "source": "eip-8289",
+      "target": "eip-7702"
     },
     {
       "source": "eip-8289",
