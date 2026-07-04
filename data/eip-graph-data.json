@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9488,7 +9488,7 @@
     {
       "id": "eip-8265",
       "eipNo": "8265",
-      "title": "Body Lease and Credential Broker",
+      "title": "Prepared Transaction Envelope",
       "status": "Draft",
       "isERC": true
     },
@@ -9846,6 +9846,20 @@
       "id": "eip-8320",
       "eipNo": "8320",
       "title": "Regulated Asset Claim",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8330",
+      "eipNo": "8330",
+      "title": "Source-Token Agent Binding for ERC-8004",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8331",
+      "eipNo": "8331",
+      "title": "Priority Update Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -17251,7 +17265,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17399,7 +17413,27 @@
     },
     {
       "source": "eip-8265",
-      "target": "eip-8264"
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-4361"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8265",
+      "target": "eip-6492"
     },
     {
       "source": "eip-8266",
@@ -17839,6 +17873,26 @@
     },
     {
       "source": "eip-8320",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8330",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8330",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8330",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8331",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8331",
       "target": "eip-1271"
     },
     {
