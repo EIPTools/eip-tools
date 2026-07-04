@@ -45,6 +45,8 @@ import { EipMetadataJson } from "@/types";
 import { useTopLoaderRouter } from "@/hooks/useTopLoaderRouter";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { AuthorsMetadata } from "@/components/AuthorsMetadata";
+import { CopyToClipboard } from "@/components/CopyToClipboard";
+import { getProposalDetails, getProposalPrUrl } from "@/utils/proposals";
 
 const CAIP = ({
   params: { eipOrNo },
@@ -60,6 +62,8 @@ const CAIP = ({
   const [markdownFileURL, setMarkdownFileURL] = useState<string>("");
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
+  const [proposalPrUrl, setProposalPrUrl] = useState<string>();
+  const [proposalPrNo, setProposalPrNo] = useState<number>();
   const [bookmarks, setBookmarks] = useLocalStorage<
     { eipNo: string; title: string; type?: EIPType; status?: string }[]
   >("eip-bookmarks", []);
@@ -99,7 +103,7 @@ const CAIP = ({
   };
 
   const fetchEIPData = useCallback(async () => {
-    const validEIPData = validCAIPs[parseInt(eipNo)];
+    const validEIPData = getProposalDetails(validCAIPs, eipNo);
 
     let _markdownFileURL = "";
     let eipMarkdownRes = "";
@@ -109,11 +113,15 @@ const CAIP = ({
       eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
         response.text()
       );
+      setProposalPrNo(validEIPData.prNo);
+      setProposalPrUrl(getProposalPrUrl("caip", validEIPData));
     } else {
       _markdownFileURL = `https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-${eipNo}.md`;
       eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
         response.text()
       );
+      setProposalPrNo(undefined);
+      setProposalPrUrl(undefined);
     }
     setMarkdownFileURL(_markdownFileURL);
 
@@ -347,7 +355,14 @@ const CAIP = ({
               },
             }}
           >
-            <Table variant="simple">
+            <Table
+              variant="simple"
+              sx={{
+                "tr:last-of-type > th, tr:last-of-type > td": {
+                  borderBottom: 0,
+                },
+              }}
+            >
               {metadataJson.author && (
                 <Tr>
                   <Th>Authors</Th>
@@ -392,6 +407,43 @@ const CAIP = ({
                         </NLink>
                       ))}
                     </HStack>
+                  </Td>
+                </Tr>
+              )}
+              {markdownFileURL && (
+                <Tr>
+                  <Th>
+                    <HStack>
+                      <Text>Markdown</Text>
+                      <CopyToClipboard
+                        textToCopy={markdownFileURL}
+                        labelText=""
+                        size={"xs"}
+                      />
+                    </HStack>
+                  </Th>
+                  <Td>
+                    <Tooltip label={markdownFileURL}>
+                      <Link
+                        href={markdownFileURL}
+                        color="primary.400"
+                        isExternal
+                      >
+                        {markdownFileURL.length > 50
+                          ? `${markdownFileURL.substring(0, 50)}...`
+                          : markdownFileURL}
+                      </Link>
+                    </Tooltip>
+                  </Td>
+                </Tr>
+              )}
+              {proposalPrNo && proposalPrUrl && (
+                <Tr>
+                  <Th>Pull Request</Th>
+                  <Td>
+                    <Link href={proposalPrUrl} color="primary.400" isExternal>
+                      #{proposalPrNo}
+                    </Link>
                   </Td>
                 </Tr>
               )}

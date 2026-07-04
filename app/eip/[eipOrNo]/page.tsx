@@ -50,6 +50,7 @@ import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { CopyToClipboard } from "@/components/CopyToClipboard";
 import { EIPDependencyGraph } from "@/components/EIPDependencyGraph";
 import { AuthorsMetadata } from "@/components/AuthorsMetadata";
+import { getProposalDetails, getProposalPrUrl } from "@/utils/proposals";
 
 const EIP = ({
   params: { eipOrNo },
@@ -66,6 +67,8 @@ const EIP = ({
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
   const [isERC, setIsERC] = useState<boolean>(true);
+  const [proposalPrUrl, setProposalPrUrl] = useState<string>();
+  const [proposalPrNo, setProposalPrNo] = useState<number>();
 
   const [bookmarks, setBookmarks] = useLocalStorage<
     { eipNo: string; title: string; type?: EIPType; status?: string }[]
@@ -84,7 +87,7 @@ const EIP = ({
       ? validEIPsArray[currentEIPArrayIndex + 1]
       : undefined;
   const getEIPDisplayLabel = (proposalNo: string) => {
-    const proposal = validEIPs[parseInt(proposalNo)];
+    const proposal = getProposalDetails(validEIPs, proposalNo);
     return `${proposal?.isERC ? "ERC" : "EIP"}-${proposalNo}`;
   };
   const previousEIPLabel = previousEIPNo
@@ -149,7 +152,7 @@ const EIP = ({
   };
 
   const fetchEIPData = useCallback(async () => {
-    const validEIPData = validEIPs[parseInt(eipNo)];
+    const validEIPData = getProposalDetails(validEIPs, eipNo);
     let _isERC = true;
 
     let _markdownFileURL = "";
@@ -161,6 +164,10 @@ const EIP = ({
         response.text()
       );
       _isERC = validEIPData.isERC ?? false;
+      setProposalPrNo(validEIPData.prNo);
+      setProposalPrUrl(
+        getProposalPrUrl(validEIPData.isERC ? "erc" : "eip", validEIPData)
+      );
     } else {
       _markdownFileURL = `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`;
       eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
@@ -174,11 +181,26 @@ const EIP = ({
         );
         _isERC = false;
       }
+      setProposalPrNo(undefined);
+      setProposalPrUrl(undefined);
     }
     setMarkdownFileURL(_markdownFileURL);
 
     const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
-    setMetadataJson(convertMetadataToJson(metadata));
+    const parsedMetadata = convertMetadataToJson(metadata);
+    setMetadataJson({
+      ...parsedMetadata,
+      title: parsedMetadata.title || validEIPData?.title || "",
+      status: parsedMetadata.status || validEIPData?.status || "",
+      type: parsedMetadata.type || "Standards Track",
+      category:
+        parsedMetadata.category ||
+        (validEIPData?.isERC || _isERC ? "ERC" : "Core"),
+      description:
+        parsedMetadata.description ||
+        "The indexed markdown source for this proposal is unavailable.",
+      requires: parsedMetadata.requires || validEIPData?.requires || [],
+    });
     setMarkdown(_markdown);
     setIsERC(_isERC);
 
@@ -408,7 +430,14 @@ const EIP = ({
               },
             }}
           >
-            <Table variant="simple">
+            <Table
+              variant="simple"
+              sx={{
+                "tr:last-of-type > th, tr:last-of-type > td": {
+                  borderBottom: 0,
+                },
+              }}
+            >
               {metadataJson.author && (
                 <Tr>
                   <Th>Authors</Th>
@@ -448,7 +477,7 @@ const EIP = ({
                             color="primary.400"
                             _hover={{ textDecor: "underline" }}
                           >
-                            {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
+                            {validEIPs[req]?.isERC ? "ERC" : "EIP"}-{req}
                           </Text>
                         </NLink>
                       ))}
@@ -505,20 +534,30 @@ const EIP = ({
                   </Td>
                 </Tr>
               )}
+              {proposalPrNo && proposalPrUrl && (
+                <Tr>
+                  <Th>Pull Request</Th>
+                  <Td>
+                    <Link href={proposalPrUrl} color="primary.400" isExternal>
+                      #{proposalPrNo}
+                    </Link>
+                  </Td>
+                </Tr>
+              )}
             </Table>
           </Box>
             
             {/* EIP Dependency Graph */}
-            <Box mt={6} ref={dependencyGraphRef} id="dependency-graph">
-              {(() => {
-                const requiredEips = metadataJson.requires?.length || 0;
-                const referencedBy = getReferencedByEIPs(eipNo, eipGraphData);
-                const totalConnections = requiredEips + referencedBy.length;
-                
-                if (totalConnections === 0) return null;
-                
-                return (
-                  <>
+            {(() => {
+              const requiredEips = metadataJson.requires?.length || 0;
+              const referencedBy = getReferencedByEIPs(eipNo, eipGraphData);
+              const totalConnections = requiredEips + referencedBy.length;
+
+              if (totalConnections === 0) return null;
+
+              return (
+                <Box mt={6} ref={dependencyGraphRef} id="dependency-graph">
+                  <Box>
                     <HStack w="100%" spacing={0}>
                       <Tooltip 
                         label={copiedAnchor ? "Copied!" : "Copy link to section"} 
@@ -562,10 +601,10 @@ const EIP = ({
                     <Collapse in={dependencyGraphIsOpen} animateOpacity>
                       <EIPDependencyGraph currentEipNo={eipNo} isExpanded={dependencyGraphIsOpen} />
                     </Collapse>
-                  </>
-                );
-              })()}
-            </Box>
+                  </Box>
+                </Box>
+              );
+            })()}
           </Box>
 
           {/* AI Summary */}

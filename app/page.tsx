@@ -5,6 +5,7 @@ import { Layout } from "@/components/Layout";
 import { TrendingEIPs } from "@/components/TrendingEIPs";
 import { UpcomingHardForkEIPs } from "@/components/UpcomingHardForkEIPs";
 import { EIPGraphSection } from "@/components/EIPGraphSection";
+import { ProposalDirectoryPills } from "@/components/ProposalDirectoryPills";
 
 export async function generateMetadata(): Promise<Metadata> {
   const imageUrl = `${process.env["HOST"]}/og/index.png?date=${Date.now()}`;
@@ -37,6 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Home() {
   return (
     <Layout>
+      <ProposalDirectoryPills />
       <TrendingEIPs />
       <UpcomingHardForkEIPs />
       <EIPGraphSection />

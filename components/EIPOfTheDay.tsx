@@ -240,15 +240,16 @@ export const EIPOfTheDay = () => {
                                 <Link
                                   key={i}
                                   onClick={(e) => {
-                            e.stopPropagation();
-                            router.push(`/eip/${req}`);
-                          }}
-                        >
-                          <Text
+                                    e.stopPropagation();
+                                    router.push(`/eip/${req}`);
+                                  }}
+                                >
+                                  <Text
                                     color="primary.400"
-                            _hover={{ textDecor: "underline" }}
-                          >
-                                    {validEIPs[req].isERC ? "ERC" : "EIP"}-{req}
+                                    _hover={{ textDecor: "underline" }}
+                                  >
+                                    {validEIPs[req]?.isERC ? "ERC" : "EIP"}-
+                                    {req}
                                   </Text>
                                 </Link>
                               ))}

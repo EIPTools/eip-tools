@@ -12,10 +12,17 @@ export const UpcomingHardForkEIPs = () => {
   const upcomingHardForkMetaEIPNo = "7773";
   const upcomingHardForkStatus = validEIPs[upcomingHardForkMetaEIPNo].status!;
   const upcomingHardForkEIPsArray = [
-    upcomingHardForkMetaEIPNo,
-    // ...validEIPs[upcomingHardForkMetaEIPNo].requires!, // not upto date for Glamsterdam
+    // EIPs Scheduled for Inclusion in EIP-7773.
+    "7708",
     "7732",
+    "7778",
+    "7843",
     "7928",
+    "7954",
+    "7976",
+    "7981",
+    "8024",
+    "8037",
   ];
 
   return (

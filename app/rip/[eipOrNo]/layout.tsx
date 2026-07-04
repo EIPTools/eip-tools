@@ -6,6 +6,7 @@ import {
   getMetadata,
 } from "@/utils";
 import { validRIPs } from "@/data/validRIPs";
+import { getProposalDetails } from "@/utils/proposals";
 
 export async function generateMetadata({
   params: { eipOrNo },
@@ -13,7 +14,7 @@ export async function generateMetadata({
   params: { eipOrNo: string };
 }) {
   const eipNo = extractEipNumber(eipOrNo, "rip");
-  const validEIPData = validRIPs[parseInt(eipNo)];
+  const validEIPData = getProposalDetails(validRIPs, eipNo);
 
   if (!validEIPData) {
     return;
