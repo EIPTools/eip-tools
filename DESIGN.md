@@ -146,6 +146,15 @@
 
 ## Changelog
 
+- 2026-07-04: Added a dynamic proposal table of contents to markdown pages, with section-scoped desktop pinning below the EIP-GPT summary, vertical/diagonal trace geometry, a compact mobile contents disclosure, scroll-synced blue active state, and stable heading anchors.
+- 2026-07-04: Tightened the pinned proposal table-of-contents offset so it sits near the viewport top after the page header has scrolled away.
+- 2026-07-04: Clamped the proposal table of contents to the markdown section bottom so it no longer overlaps the footer at the end of a proposal.
+- 2026-07-04: Matched the active proposal table-of-contents label color to the blue trace segment.
+- 2026-07-04: Expanded the proposal table of contents into the unused left viewport margin on wide screens and tightened the trace gutter so longer headings remain readable.
+- 2026-07-04: Scoped proposal table-of-contents active-item auto-scroll to the TOC panel so it cannot shift the main document scroll near the footer.
+- 2026-07-04: Extended the left-edge proposal table-of-contents layout down to normal laptop widths with a responsive TOC column.
+- 2026-07-04: Slimmed the laptop proposal table-of-contents column and reserved a wider right gutter so markdown content no longer feels pushed to the viewport edge.
+- 2026-07-04: Kept the proposal table-of-contents title sticky at the top of its own scroll panel while the heading list scrolls underneath.
 - 2026-07-02: Cached homepage trending proposals in localStorage and revalidated them in the background so repeat visits keep showing cards instead of skeletons.
 - 2026-07-02: Reworked proposal-page dependency graphs from bright circular nodes into compact dark proposal tags with muted status fills, thin technical traces, and tool-like controls.
 - 2026-07-02: Vertically centered single-line author names inside metadata chips when no social handle is available.
