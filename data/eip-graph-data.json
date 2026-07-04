@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9512,6 +9512,13 @@
       "title": "Storage Roots in Block Access Lists",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8269",
+      "eipNo": "8269",
+      "title": "Body Lease and Credential Broker",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8270",
@@ -17265,7 +17272,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17450,6 +17457,10 @@
     {
       "source": "eip-8268",
       "target": "eip-7928"
+    },
+    {
+      "source": "eip-8269",
+      "target": "eip-8264"
     },
     {
       "source": "eip-8270",

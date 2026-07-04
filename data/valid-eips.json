@@ -11535,7 +11535,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-04T01:28:23.930Z"
+    "timestamp": "2026-07-04T12:54:42.632Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12010,7 +12010,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-04T01:28:21.336Z"
+    "timestamp": "2026-07-04T12:54:39.911Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12253,7 +12253,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-04T01:28:20.530Z"
+    "timestamp": "2026-07-04T12:54:39.055Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12267,14 +12267,15 @@
     "timestamp": "2026-06-29T13:20:45.034Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-04T01:26:46.309Z"
+    "timestamp": "2026-07-04T12:54:40.744Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12294,7 +12295,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-04T01:28:20.341Z"
+    "timestamp": "2026-07-04T12:54:38.555Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12522,6 +12523,17 @@
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8268.md"
   },
+  "8269": {
+    "title": "Body Lease and Credential Broker",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1763,
+    "markdownPath": "https://raw.githubusercontent.com/clavote-boop/ERCs/refs/heads/add-erc-portable-agent-memory-capsule/ERCS/erc-8269.md",
+    "requires": [
+      "8264"
+    ],
+    "timestamp": "2026-07-04T12:54:35.214Z"
+  },
   "8270": {
     "title": "Canonical Validator Wrapper",
     "status": "Draft",
@@ -12709,7 +12721,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-04T01:28:15.582Z"
+    "timestamp": "2026-07-04T12:54:33.649Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12793,7 +12805,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-04T01:28:14.767Z"
+    "timestamp": "2026-07-04T12:54:32.846Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12985,7 +12997,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-04T01:28:13.594Z"
+    "timestamp": "2026-07-04T12:54:32.193Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13285,7 +13297,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-04T01:28:34.738Z"
+    "timestamp": "2026-07-04T12:54:53.198Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
