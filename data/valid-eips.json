@@ -11243,14 +11243,12 @@
   "8143": {
     "title": "Smart Credential Resolution Interface",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1504,
-    "markdownPath": "https://raw.githubusercontent.com/nxt3d/ERCs/refs/heads/smart-credentials/ERCS/erc-8143.md",
     "requires": [
       "165",
       "3668"
     ],
-    "timestamp": "2026-07-05T01:43:53.884Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8143.md"
   },
   "8144": {
     "title": "Multi-Chain GS1 Product Identifier Resolver",
@@ -11539,7 +11537,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-06T14:51:21.634Z"
+    "timestamp": "2026-07-07T01:46:42.657Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12014,7 +12012,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-06T14:51:18.592Z"
+    "timestamp": "2026-07-07T01:46:39.614Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12257,7 +12255,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-06T14:51:17.756Z"
+    "timestamp": "2026-07-07T01:46:38.658Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12271,15 +12269,14 @@
     "timestamp": "2026-07-05T01:43:38.841Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-06T14:51:19.473Z"
+    "timestamp": "2026-07-07T01:44:53.566Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12299,7 +12296,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-06T14:51:16.922Z"
+    "timestamp": "2026-07-07T01:46:38.165Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12725,7 +12722,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-06T14:51:11.134Z"
+    "timestamp": "2026-07-07T01:46:33.151Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12809,7 +12806,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-06T14:51:10.294Z"
+    "timestamp": "2026-07-07T01:46:32.108Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12882,7 +12879,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-07-02T00:24:14.187Z"
+    "timestamp": "2026-07-07T01:46:31.896Z"
   },
   "8301": {
     "title": "AI Agent Execution",
@@ -13004,7 +13001,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-06T14:51:09.399Z"
+    "timestamp": "2026-07-07T01:46:30.946Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13042,7 +13039,7 @@
     "isERC": true,
     "prNo": 1840,
     "markdownPath": "https://raw.githubusercontent.com/awrichar/ERCs/refs/heads/erc-settlement-locks/ERCS/erc-8316.md",
-    "timestamp": "2026-07-02T00:24:12.710Z"
+    "timestamp": "2026-07-07T01:46:29.946Z"
   },
   "8317": {
     "title": "Contract Storage Layout Descriptor Format",
@@ -13224,11 +13221,11 @@
     "timestamp": "2026-06-10T12:59:36.442Z"
   },
   "9999": {
-    "title": "Hash-Chain RANDAO",
-    "status": "Draft",
-    "prNo": 11861,
-    "markdownPath": "https://raw.githubusercontent.com/kevaundray/EIPs/refs/heads/kw/hash-chain-randao/EIPS/eip-9999.md",
-    "timestamp": "2026-07-06T14:49:18.847Z"
+    "title": "ERC-9999",
+    "isERC": true,
+    "prNo": 1129,
+    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
+    "timestamp": "2026-07-07T01:46:50.681Z"
   },
   "11796": {
     "title": "WYRIWE — What You Read Is What You Execute",
@@ -13304,7 +13301,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-06T14:51:33.614Z"
+    "timestamp": "2026-07-07T01:46:54.618Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
