@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -16543,7 +16543,15 @@
     },
     {
       "source": "eip-8156",
+      "target": "eip-7930"
+    },
+    {
+      "source": "eip-8156",
       "target": "eip-8004"
+    },
+    {
+      "source": "eip-8156",
+      "target": "eip-8048"
     },
     {
       "source": "eip-8159",
@@ -17287,7 +17295,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
