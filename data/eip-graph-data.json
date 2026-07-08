@@ -2300,7 +2300,7 @@
       "id": "eip-7928",
       "eipNo": "7928",
       "title": "Block-Level Access Lists",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7529,7 +7529,7 @@
       "id": "eip-7954",
       "eipNo": "7954",
       "title": "Increase Maximum Contract Size",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7690,7 +7690,7 @@
       "id": "eip-7976",
       "eipNo": "7976",
       "title": "Increase Calldata Floor Cost",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7725,7 +7725,7 @@
       "id": "eip-7981",
       "eipNo": "7981",
       "title": "Increase Access List Cost",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7823,7 +7823,7 @@
       "id": "eip-7997",
       "eipNo": "7997",
       "title": "Deterministic Factory Contract",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -17287,7 +17287,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
