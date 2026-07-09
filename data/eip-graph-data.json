@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9871,6 +9871,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8323",
+      "eipNo": "8323",
+      "title": "Source-Token Agent Binding for ERC-8004",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8326",
       "eipNo": "8326",
       "title": "Canonical Document Bundle Anchor",
@@ -9894,7 +9901,7 @@
     {
       "id": "eip-8331",
       "eipNo": "8331",
-      "title": "Role-Grouped Operation Restriction Policy",
+      "title": "Priority Update Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -17323,7 +17330,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17942,6 +17949,18 @@
       "target": "eip-1271"
     },
     {
+      "source": "eip-8323",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8323",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8323",
+      "target": "eip-8004"
+    },
+    {
       "source": "eip-8326",
       "target": "eip-165"
     },
@@ -17963,11 +17982,11 @@
     },
     {
       "source": "eip-8331",
-      "target": "eip-8305"
+      "target": "eip-712"
     },
     {
       "source": "eip-8331",
-      "target": "eip-8306"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8332",
