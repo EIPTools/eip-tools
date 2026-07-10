@@ -2286,7 +2286,7 @@
       "id": "eip-7708",
       "eipNo": "7708",
       "title": "ETH transfers emit a log",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9670,7 +9670,7 @@
     {
       "id": "eip-8292",
       "eipNo": "8292",
-      "title": "Post-Quantum(PQ) Attestation Aggregators",
+      "title": "Post-Quantum Attestation Aggregators",
       "status": "Draft",
       "isERC": false
     },
@@ -9878,9 +9878,30 @@
       "isERC": true
     },
     {
+      "id": "eip-8324",
+      "eipNo": "8324",
+      "title": "Priority Update Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8325",
+      "eipNo": "8325",
+      "title": "Asset Anchor Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8326",
       "eipNo": "8326",
       "title": "Canonical Document Bundle Anchor",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8327",
+      "eipNo": "8327",
+      "title": "Directional Transfer Domain Registry",
       "status": "Draft",
       "isERC": true
     },
@@ -9892,9 +9913,16 @@
       "isERC": true
     },
     {
+      "id": "eip-8329",
+      "eipNo": "8329",
+      "title": "Subject-Linked Impact Snapshot Log",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8330",
       "eipNo": "8330",
-      "title": "Source-Token Agent Binding for ERC-8004",
+      "title": "Subject-Linked NAV Snapshot Oracle",
       "status": "Draft",
       "isERC": true
     },
@@ -9909,6 +9937,13 @@
       "id": "eip-8332",
       "eipNo": "8332",
       "title": "Physical Reserve Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8335",
+      "eipNo": "8335",
+      "title": "Account-Level Transfer With Authorization",
       "status": "Draft",
       "isERC": true
     },
@@ -10048,7 +10083,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Named NFT",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
@@ -17326,7 +17361,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -17957,7 +17992,23 @@
       "target": "eip-8004"
     },
     {
+      "source": "eip-8324",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8324",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8325",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8326",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8327",
       "target": "eip-165"
     },
     {
@@ -17965,16 +18016,12 @@
       "target": "eip-165"
     },
     {
-      "source": "eip-8330",
+      "source": "eip-8329",
       "target": "eip-165"
     },
     {
       "source": "eip-8330",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-8330",
-      "target": "eip-8004"
+      "target": "eip-165"
     },
     {
       "source": "eip-8331",
@@ -17987,6 +18034,34 @@
     {
       "source": "eip-8332",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8335",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8335",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8335",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8335",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8335",
+      "target": "eip-3009"
+    },
+    {
+      "source": "eip-8335",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8335",
+      "target": "eip-7528"
     },
     {
       "source": "eip-8338",
@@ -18079,18 +18154,6 @@
     {
       "source": "eip-11820",
       "target": "eip-3076"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
