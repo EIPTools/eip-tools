@@ -2290,13 +2290,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7904",
-      "eipNo": "7904",
-      "title": "Compute Gas Cost Analysis",
-      "status": "Review",
-      "isERC": false
-    },
-    {
       "id": "eip-7928",
       "eipNo": "7928",
       "title": "Block-Level Access Lists",
@@ -6535,7 +6528,7 @@
       "id": "eip-7778",
       "eipNo": "7778",
       "title": "Block Gas Accounting without Refunds",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -7278,6 +7271,13 @@
       "eipNo": "7903",
       "title": "Remove Initcode Size Limit",
       "status": "Stagnant",
+      "isERC": false
+    },
+    {
+      "id": "eip-7904",
+      "eipNo": "7904",
+      "title": "Compute Gas Cost Analysis",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9901,7 +9901,7 @@
     {
       "id": "eip-8331",
       "eipNo": "8331",
-      "title": "Priority Update Registry",
+      "title": "Role-Grouped Operation Restriction Policy",
       "status": "Draft",
       "isERC": true
     },
@@ -11091,10 +11091,6 @@
     {
       "source": "eip-2780",
       "target": "eip-7708"
-    },
-    {
-      "source": "eip-2780",
-      "target": "eip-7904"
     },
     {
       "source": "eip-2780",
@@ -17330,7 +17326,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -17982,11 +17978,11 @@
     },
     {
       "source": "eip-8331",
-      "target": "eip-712"
+      "target": "eip-8305"
     },
     {
       "source": "eip-8331",
-      "target": "eip-1271"
+      "target": "eip-8306"
     },
     {
       "source": "eip-8332",

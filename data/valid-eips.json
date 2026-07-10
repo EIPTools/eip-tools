@@ -2578,7 +2578,6 @@
       "7623",
       "7702",
       "7708",
-      "7904",
       "7928",
       "8037",
       "8038"
@@ -8124,7 +8123,7 @@
   },
   "7778": {
     "title": "Block Gas Accounting without Refunds",
-    "status": "Draft",
+    "status": "Review",
     "requires": [],
     "isERC": false,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7778.md"
@@ -11539,7 +11538,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-09T14:24:38.722Z"
+    "timestamp": "2026-07-10T01:25:18.041Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12014,7 +12013,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-09T14:24:35.494Z"
+    "timestamp": "2026-07-10T01:25:15.374Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12257,7 +12256,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-09T14:24:34.288Z"
+    "timestamp": "2026-07-10T01:25:14.296Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12271,15 +12270,14 @@
     "timestamp": "2026-07-05T01:43:38.841Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-09T14:24:36.360Z"
+    "timestamp": "2026-07-10T01:23:29.498Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12299,7 +12297,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-09T14:24:34.026Z"
+    "timestamp": "2026-07-10T01:25:13.912Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12725,7 +12723,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-09T14:24:27.676Z"
+    "timestamp": "2026-07-10T01:25:08.659Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12809,7 +12807,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-09T14:24:26.607Z"
+    "timestamp": "2026-07-10T01:25:07.772Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13004,7 +13002,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-09T14:24:25.530Z"
+    "timestamp": "2026-07-10T01:25:06.885Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13145,16 +13143,16 @@
     "timestamp": "2026-07-04T01:28:12.756Z"
   },
   "8331": {
-    "title": "Priority Update Registry",
+    "title": "Role-Grouped Operation Restriction Policy",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1852,
-    "markdownPath": "https://raw.githubusercontent.com/quintuskilbourn/ERCs/refs/heads/add-erc-priority-update-registry/ERCS/erc-8331.md",
+    "prNo": 1861,
+    "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/Role-Grouped-Operation-Restriction-Policy/ERCS/erc-8331.md",
     "requires": [
-      "712",
-      "1271"
+      "8305",
+      "8306"
     ],
-    "timestamp": "2026-07-09T14:24:24.133Z"
+    "timestamp": "2026-07-10T01:25:05.224Z"
   },
   "8332": {
     "title": "Physical Reserve Registry",
@@ -13365,7 +13363,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-09T14:24:51.947Z"
+    "timestamp": "2026-07-10T01:25:29.834Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
