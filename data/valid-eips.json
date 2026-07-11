@@ -11538,7 +11538,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:51:10.694Z"
+    "timestamp": "2026-07-11T01:18:56.621Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12013,7 +12013,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:51:00.527Z"
+    "timestamp": "2026-07-11T01:18:54.188Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12256,7 +12256,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:50:57.258Z"
+    "timestamp": "2026-07-11T01:18:53.292Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12270,15 +12270,14 @@
     "timestamp": "2026-07-10T13:50:56.923Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-10T13:51:02.951Z"
+    "timestamp": "2026-07-11T01:17:12.873Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12298,7 +12297,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-10T13:50:56.361Z"
+    "timestamp": "2026-07-11T01:18:52.617Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12724,7 +12723,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-10T13:50:50.181Z"
+    "timestamp": "2026-07-11T01:18:47.936Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12808,7 +12807,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-10T13:50:49.014Z"
+    "timestamp": "2026-07-11T01:18:47.019Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13003,7 +13002,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:50:47.262Z"
+    "timestamp": "2026-07-11T01:18:46.235Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13414,12 +13413,17 @@
     "timestamp": "2026-03-04T17:02:20.975Z"
   },
   "undefined": {
-    "title": "Lot-based Token",
+    "title": "Named NFT",
     "status": "Draft",
     "isERC": true,
-    "prNo": 579,
-    "markdownPath": "https://raw.githubusercontent.com/capsign/ERCs/refs/heads/eip-equity-token/ERCS/erc-7752.md",
-    "timestamp": "2026-07-10T13:51:43.926Z"
+    "prNo": 320,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/heads/xinbenlv-patch-1/ERCS/erc-7653.md",
+    "requires": [
+      "165",
+      "721",
+      "7632"
+    ],
+    "timestamp": "2026-07-11T01:19:07.862Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

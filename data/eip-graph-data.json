@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -10083,7 +10083,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Lot-based Token",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
@@ -17361,7 +17361,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -18154,6 +18154,18 @@
     {
       "source": "eip-11820",
       "target": "eip-3076"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
