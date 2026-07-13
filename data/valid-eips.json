@@ -11354,7 +11354,7 @@
       "8004",
       "8048"
     ],
-    "timestamp": "2026-07-08T13:23:49.155Z"
+    "timestamp": "2026-07-13T13:56:14.280Z"
   },
   "8158": {
     "title": "Invariant Layout Guard Opcode",
@@ -11539,7 +11539,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T01:22:01.064Z"
+    "timestamp": "2026-07-13T13:56:12.536Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12014,7 +12014,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T01:21:58.680Z"
+    "timestamp": "2026-07-13T13:56:08.724Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12189,7 +12189,7 @@
       "721",
       "5521"
     ],
-    "timestamp": "2026-07-08T13:23:43.045Z"
+    "timestamp": "2026-07-13T13:56:07.566Z"
   },
   "8235": {
     "title": "EIP tagging",
@@ -12199,7 +12199,7 @@
     "requires": [
       "1"
     ],
-    "timestamp": "2026-07-08T13:21:45.988Z"
+    "timestamp": "2026-07-13T13:54:12.455Z"
   },
   "8236": {
     "title": "Deferred-Settlement Fungible Tokens",
@@ -12211,7 +12211,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-07-08T13:23:42.930Z"
+    "timestamp": "2026-07-13T13:56:07.247Z"
   },
   "8237": {
     "title": "Independent CL/EL Sync",
@@ -12257,7 +12257,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T01:21:58.010Z"
+    "timestamp": "2026-07-13T13:56:06.533Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12271,14 +12271,15 @@
     "timestamp": "2026-07-10T13:50:56.923Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-13T01:20:24.605Z"
+    "timestamp": "2026-07-13T13:56:09.879Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12298,7 +12299,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-13T01:21:57.642Z"
+    "timestamp": "2026-07-13T13:56:06.399Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12437,7 +12438,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-08T13:23:40.385Z"
+    "timestamp": "2026-07-13T13:56:04.532Z"
   },
   "8261": {
     "title": "Gas Limit Schedule",
@@ -12459,7 +12460,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-08T13:23:39.317Z"
+    "timestamp": "2026-07-13T13:56:03.264Z"
   },
   "8263": {
     "title": "Onchain Proof Layer for AI Agents",
@@ -12467,7 +12468,7 @@
     "isERC": true,
     "prNo": 1748,
     "markdownPath": "https://raw.githubusercontent.com/TruthAnchor-AI/ERCs/refs/heads/master/ERCS/erc-8263.md",
-    "timestamp": "2026-07-08T13:23:38.849Z"
+    "timestamp": "2026-07-13T13:56:02.834Z"
   },
   "8264": {
     "title": "AI Agent Memory Access Rights",
@@ -12478,7 +12479,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-08T13:23:37.942Z"
+    "timestamp": "2026-07-13T13:56:01.727Z"
   },
   "8265": {
     "title": "Prepared Transaction Envelope",
@@ -12596,7 +12597,7 @@
       "8281",
       "8299"
     ],
-    "timestamp": "2026-07-08T13:23:36.987Z"
+    "timestamp": "2026-07-13T13:56:00.555Z"
   },
   "8276": {
     "title": "Non-Fungible Multi-Token ownerOf",
@@ -12724,7 +12725,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-13T01:21:53.000Z"
+    "timestamp": "2026-07-13T13:55:59.135Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12786,9 +12787,9 @@
   "8292": {
     "title": "Post-Quantum Attestation Aggregators",
     "status": "Draft",
-    "prNo": 11777,
-    "markdownPath": "https://raw.githubusercontent.com/anshalshukla/EIPs/refs/heads/eip-aggregator-role/EIPS/eip-8292.md",
-    "timestamp": "2026-07-10T13:49:03.170Z"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8292.md"
   },
   "8293": {
     "title": "Counterfactual Rejection Event Log (CREL)",
@@ -12808,7 +12809,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-13T01:21:52.270Z"
+    "timestamp": "2026-07-13T13:55:57.175Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12889,7 +12890,7 @@
     "isERC": true,
     "prNo": 1815,
     "markdownPath": "https://raw.githubusercontent.com/JimmyShi22/ERCs/refs/heads/erc-agent-execution/ERCS/erc-8301.md",
-    "timestamp": "2026-07-08T13:23:33.602Z"
+    "timestamp": "2026-07-13T13:55:57.017Z"
   },
   "8302": {
     "title": "Private Fungible Tokens",
@@ -12905,7 +12906,7 @@
     "isERC": true,
     "prNo": 1819,
     "markdownPath": "https://raw.githubusercontent.com/rya-sge/ERCs/refs/heads/add-contract-version/ERCS/erc-8303.md",
-    "timestamp": "2026-07-08T13:23:33.517Z"
+    "timestamp": "2026-07-13T13:55:56.583Z"
   },
   "8304": {
     "title": "Trustless log and transaction index",
@@ -13003,7 +13004,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T01:21:51.553Z"
+    "timestamp": "2026-07-13T13:55:56.082Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13424,7 +13425,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-13T01:22:10.952Z"
+    "timestamp": "2026-07-13T13:56:25.306Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
