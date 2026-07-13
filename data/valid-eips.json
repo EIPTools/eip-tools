@@ -11539,7 +11539,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-12T12:47:42.246Z"
+    "timestamp": "2026-07-13T01:22:01.064Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12014,7 +12014,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-12T12:47:38.886Z"
+    "timestamp": "2026-07-13T01:21:58.680Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12257,7 +12257,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-12T12:47:38.021Z"
+    "timestamp": "2026-07-13T01:21:58.010Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12271,15 +12271,14 @@
     "timestamp": "2026-07-10T13:50:56.923Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-12T12:47:39.787Z"
+    "timestamp": "2026-07-13T01:20:24.605Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12299,7 +12298,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-12T12:47:37.800Z"
+    "timestamp": "2026-07-13T01:21:57.642Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12725,7 +12724,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-12T12:47:32.674Z"
+    "timestamp": "2026-07-13T01:21:53.000Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12809,7 +12808,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-12T12:47:31.747Z"
+    "timestamp": "2026-07-13T01:21:52.270Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12871,7 +12870,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-07T14:01:49.769Z"
+    "timestamp": "2026-07-13T01:21:51.899Z"
   },
   "8300": {
     "title": "Invariant-First Reserve Receipt Token",
@@ -13004,7 +13003,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-12T12:47:30.760Z"
+    "timestamp": "2026-07-13T01:21:51.553Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13023,7 +13022,7 @@
     "requires": [
       "7820"
     ],
-    "timestamp": "2026-07-07T14:01:48.493Z"
+    "timestamp": "2026-07-13T01:21:50.783Z"
   },
   "8315": {
     "title": "Contract Role Semantics",
@@ -13034,7 +13033,7 @@
     "requires": [
       "5982"
     ],
-    "timestamp": "2026-07-07T14:01:48.404Z"
+    "timestamp": "2026-07-13T01:21:50.505Z"
   },
   "8316": {
     "title": "Programmable Settlement Locks",
@@ -13086,7 +13085,7 @@
     "status": "Draft",
     "prNo": 11861,
     "markdownPath": "https://raw.githubusercontent.com/kevaundray/EIPs/refs/heads/kw/hash-chain-randao/EIPS/eip-8321.md",
-    "timestamp": "2026-07-07T13:59:59.292Z"
+    "timestamp": "2026-07-13T01:20:19.143Z"
   },
   "8322": {
     "title": "Notary-Backed Confidential Token",
@@ -13425,7 +13424,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-12T12:47:54.659Z"
+    "timestamp": "2026-07-13T01:22:10.952Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
