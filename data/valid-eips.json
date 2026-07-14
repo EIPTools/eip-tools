@@ -11539,7 +11539,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T13:56:12.536Z"
+    "timestamp": "2026-07-14T01:11:12.771Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12014,7 +12014,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T13:56:08.724Z"
+    "timestamp": "2026-07-14T01:11:10.468Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12257,7 +12257,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T13:56:06.533Z"
+    "timestamp": "2026-07-14T01:11:09.605Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12271,15 +12271,14 @@
     "timestamp": "2026-07-10T13:50:56.923Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-13T13:56:09.879Z"
+    "timestamp": "2026-07-14T01:09:39.515Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12299,7 +12298,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-13T13:56:06.399Z"
+    "timestamp": "2026-07-14T01:11:08.972Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12725,7 +12724,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-13T13:55:59.135Z"
+    "timestamp": "2026-07-14T01:11:04.944Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12809,7 +12808,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-13T13:55:57.175Z"
+    "timestamp": "2026-07-14T01:11:03.655Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13004,7 +13003,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-13T13:55:56.082Z"
+    "timestamp": "2026-07-14T01:11:03.214Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13209,6 +13208,13 @@
       "165"
     ],
     "timestamp": "2026-07-09T01:27:49.435Z"
+  },
+  "8333": {
+    "title": "Align Checkpoint with Epoch Boundary Block",
+    "status": "Draft",
+    "prNo": 11871,
+    "markdownPath": "https://raw.githubusercontent.com/wemeetagain/EIPs/refs/heads/ffg-target-boundary/EIPS/eip-8333.md",
+    "timestamp": "2026-07-14T01:09:33.974Z"
   },
   "8335": {
     "title": "Account-Level Transfer With Authorization",
@@ -13425,7 +13431,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-13T13:56:25.306Z"
+    "timestamp": "2026-07-14T01:11:23.218Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
