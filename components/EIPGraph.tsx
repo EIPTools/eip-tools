@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback, useRef, useEffect } from "react";
+import React, { useState, useCallback, useRef, useEffect, useMemo } from "react";
 import ForceGraph3D from "react-force-graph-3d";
 import {
   Box,
@@ -40,7 +40,15 @@ const EIPGraph = ({
   height?: number;
   width?: number;
 }) => {
-  const graphData = eipGraphData;
+  // ForceGraph mutates nodes and resolves link endpoints to node objects.
+  // Keep those mutations isolated so other pages can safely use the imported data.
+  const graphData = useMemo(
+    () => ({
+      nodes: eipGraphData.nodes.map((node) => ({ ...node })),
+      links: eipGraphData.links.map((link) => ({ ...link })),
+    }),
+    []
+  );
 
   const [highlightNodes, setHighlightNodes] = useState(new Set());
   const [highlightLinks, setHighlightLinks] = useState(new Set());
