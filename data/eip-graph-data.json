@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9850,6 +9850,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8319",
+      "eipNo": "8319",
+      "title": "Regulatory Compliance Protocol",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8320",
       "eipNo": "8320",
       "title": "Regulated Asset Claim",
@@ -9944,6 +9951,13 @@
       "id": "eip-8333",
       "eipNo": "8333",
       "title": "Align Checkpoint with Epoch Boundary Block",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8334",
+      "eipNo": "8334",
+      "title": "Bundled Attestation Propagation",
       "status": "Draft",
       "isERC": false
     },
@@ -15443,10 +15457,6 @@
       "target": "eip-7579"
     },
     {
-      "source": "eip-7979",
-      "target": "eip-3541"
-    },
-    {
       "source": "eip-7980",
       "target": "eip-7932"
     },
@@ -17372,7 +17382,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
