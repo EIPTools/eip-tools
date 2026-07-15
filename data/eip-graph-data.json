@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -10055,7 +10055,7 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Token-Bound Executable Skills",
+      "title": "ERC-9999",
       "status": "Draft",
       "isERC": true
     },
@@ -17389,7 +17389,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -18052,14 +18052,6 @@
       "target": "eip-165"
     },
     {
-      "source": "eip-8331",
-      "target": "eip-8305"
-    },
-    {
-      "source": "eip-8331",
-      "target": "eip-8306"
-    },
-    {
       "source": "eip-8332",
       "target": "eip-165"
     },
@@ -18166,14 +18158,6 @@
     {
       "source": "eip-9998",
       "target": "eip-8188"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-721"
     },
     {
       "source": "eip-11796",

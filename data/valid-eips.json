@@ -11537,7 +11537,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-15T01:08:44.195Z"
+    "timestamp": "2026-07-15T13:03:54.976Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12012,7 +12012,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-15T01:08:41.246Z"
+    "timestamp": "2026-07-15T13:03:51.912Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12255,7 +12255,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-15T01:08:40.289Z"
+    "timestamp": "2026-07-15T13:03:51.073Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12269,14 +12269,15 @@
     "timestamp": "2026-07-10T13:50:56.923Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-15T01:06:54.893Z"
+    "timestamp": "2026-07-15T13:03:52.748Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12296,7 +12297,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-15T01:08:40.092Z"
+    "timestamp": "2026-07-15T13:03:50.658Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12722,7 +12723,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-15T01:08:34.694Z"
+    "timestamp": "2026-07-15T13:03:46.307Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12806,7 +12807,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-15T01:08:33.223Z"
+    "timestamp": "2026-07-15T13:03:45.169Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13000,7 +13001,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-15T01:08:32.283Z"
+    "timestamp": "2026-07-15T13:03:44.629Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13070,7 +13071,7 @@
     "isERC": true,
     "prNo": 1848,
     "markdownPath": "https://raw.githubusercontent.com/jay-oraclizer/ERCs/refs/heads/rcp-informational/ERCS/erc-8319.md",
-    "timestamp": "2026-07-15T01:08:31.198Z"
+    "timestamp": "2026-07-15T13:03:43.778Z"
   },
   "8320": {
     "title": "Regulated Asset Claim",
@@ -13146,46 +13147,38 @@
   "8327": {
     "title": "Directional Transfer Domain Registry",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1855,
-    "markdownPath": "https://raw.githubusercontent.com/KulaDao/ERCs/refs/heads/erc/transfer-domain-registry/ERCS/erc-8327.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:50:45.697Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8327.md"
   },
   "8328": {
     "title": "Subject-Linked Compliance Event Log",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1856,
-    "markdownPath": "https://raw.githubusercontent.com/KulaDao/ERCs/refs/heads/erc/compliance-event-log/ERCS/erc-8328.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-14T13:00:49.787Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8328.md"
   },
   "8329": {
     "title": "Subject-Linked Impact Snapshot Log",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1857,
-    "markdownPath": "https://raw.githubusercontent.com/KulaDao/ERCs/refs/heads/erc/impact-snapshot-log/ERCS/erc-8329.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:50:45.582Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8329.md"
   },
   "8330": {
     "title": "Subject-Linked NAV Snapshot Oracle",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1858,
-    "markdownPath": "https://raw.githubusercontent.com/KulaDao/ERCs/refs/heads/erc/nav-snapshot-oracle/ERCS/erc-8330.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:50:45.405Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8330.md"
   },
   "8331": {
     "title": "Role-Grouped Operation Restriction Policy",
@@ -13193,11 +13186,7 @@
     "isERC": true,
     "prNo": 1861,
     "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/Role-Grouped-Operation-Restriction-Policy/ERCS/erc-8331.md",
-    "requires": [
-      "8305",
-      "8306"
-    ],
-    "timestamp": "2026-07-10T01:25:05.224Z"
+    "timestamp": "2026-07-15T13:03:43.537Z"
   },
   "8332": {
     "title": "Physical Reserve Registry",
@@ -13370,16 +13359,11 @@
     "timestamp": "2026-06-10T12:59:36.442Z"
   },
   "9999": {
-    "title": "Token-Bound Executable Skills",
-    "status": "Draft",
+    "title": "ERC-9999",
     "isERC": true,
-    "prNo": 1879,
-    "markdownPath": "https://raw.githubusercontent.com/garyyang-finchip/ERCs/refs/heads/master/ERCS/erc-9999.md",
-    "requires": [
-      "165",
-      "721"
-    ],
-    "timestamp": "2026-07-15T01:08:27.899Z"
+    "prNo": 1129,
+    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
+    "timestamp": "2026-07-15T13:04:01.773Z"
   },
   "11796": {
     "title": "WYRIWE — What You Read Is What You Execute",
@@ -13455,7 +13439,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-15T01:08:55.668Z"
+    "timestamp": "2026-07-15T13:04:05.667Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
