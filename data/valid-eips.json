@@ -11537,7 +11537,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-14T13:01:04.697Z"
+    "timestamp": "2026-07-15T01:08:44.195Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12012,7 +12012,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-14T13:01:01.023Z"
+    "timestamp": "2026-07-15T01:08:41.246Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12255,7 +12255,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-14T13:00:59.922Z"
+    "timestamp": "2026-07-15T01:08:40.289Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12269,15 +12269,14 @@
     "timestamp": "2026-07-10T13:50:56.923Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-14T13:01:02.136Z"
+    "timestamp": "2026-07-15T01:06:54.893Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12297,7 +12296,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-14T13:00:59.307Z"
+    "timestamp": "2026-07-15T01:08:40.092Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12493,7 +12492,7 @@
       "5792",
       "6492"
     ],
-    "timestamp": "2026-07-09T14:24:30.439Z"
+    "timestamp": "2026-07-15T01:08:36.791Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12534,7 +12533,7 @@
     "requires": [
       "8264"
     ],
-    "timestamp": "2026-07-09T14:24:29.450Z"
+    "timestamp": "2026-07-15T01:08:35.790Z"
   },
   "8270": {
     "title": "Canonical Validator Wrapper",
@@ -12723,7 +12722,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-14T13:00:54.162Z"
+    "timestamp": "2026-07-15T01:08:34.694Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12807,7 +12806,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-14T13:00:52.746Z"
+    "timestamp": "2026-07-15T01:08:33.223Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12896,7 +12895,7 @@
     "isERC": true,
     "prNo": 1817,
     "markdownPath": "https://raw.githubusercontent.com/Cyimon/ERCs/refs/heads/master/ERCS/erc-8302.md",
-    "timestamp": "2026-07-09T14:24:26.111Z"
+    "timestamp": "2026-07-15T01:08:32.687Z"
   },
   "8303": {
     "title": "Contract Version",
@@ -12909,12 +12908,11 @@
   "8304": {
     "title": "Trustless log and transaction index",
     "status": "Draft",
-    "prNo": 11811,
-    "markdownPath": "https://raw.githubusercontent.com/zsfelfoldi/EIPs/refs/heads/patch-7/EIPS/eip-8304.md",
     "requires": [
       "4788"
     ],
-    "timestamp": "2026-07-10T13:49:01.807Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8304.md"
   },
   "8305": {
     "title": "Time-Delayed Access Control",
@@ -13002,7 +13000,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-14T13:00:52.359Z"
+    "timestamp": "2026-07-15T01:08:32.283Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13072,7 +13070,7 @@
     "isERC": true,
     "prNo": 1848,
     "markdownPath": "https://raw.githubusercontent.com/jay-oraclizer/ERCs/refs/heads/rcp-informational/ERCS/erc-8319.md",
-    "timestamp": "2026-07-14T13:00:51.281Z"
+    "timestamp": "2026-07-15T01:08:31.198Z"
   },
   "8320": {
     "title": "Regulated Asset Claim",
@@ -13113,7 +13111,7 @@
       "721",
       "8004"
     ],
-    "timestamp": "2026-07-09T14:24:24.500Z"
+    "timestamp": "2026-07-15T01:08:31.095Z"
   },
   "8324": {
     "title": "Priority Update Registry",
@@ -13130,24 +13128,20 @@
   "8325": {
     "title": "Asset Anchor Registry",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1853,
-    "markdownPath": "https://raw.githubusercontent.com/KulaDao/ERCs/refs/heads/erc/asset-anchor-registry/ERCS/erc-8325.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-10T13:50:46.233Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8325.md"
   },
   "8326": {
     "title": "Canonical Document Bundle Anchor",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1854,
-    "markdownPath": "https://raw.githubusercontent.com/KulaDao/ERCs/refs/heads/erc/document-bundle-anchor/ERCS/erc-8326.md",
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-14T13:00:50.050Z"
+    "isERC": true,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8326.md"
   },
   "8327": {
     "title": "Directional Transfer Domain Registry",
@@ -13246,6 +13240,17 @@
       "7528"
     ],
     "timestamp": "2026-07-10T13:50:44.010Z"
+  },
+  "8337": {
+    "title": "Validated EVM Code",
+    "status": "Draft",
+    "prNo": 11922,
+    "markdownPath": "https://raw.githubusercontent.com/gcolvin/EIPs/refs/heads/patch-26/EIPS/eip-8337.md",
+    "requires": [
+      "3541",
+      "7979"
+    ],
+    "timestamp": "2026-07-15T01:06:41.155Z"
   },
   "8338": {
     "title": "Zero-Knowledge Compliance Oracle",
@@ -13365,11 +13370,16 @@
     "timestamp": "2026-06-10T12:59:36.442Z"
   },
   "9999": {
-    "title": "ERC-9999",
+    "title": "Token-Bound Executable Skills",
+    "status": "Draft",
     "isERC": true,
-    "prNo": 1129,
-    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
-    "timestamp": "2026-07-12T12:47:50.351Z"
+    "prNo": 1879,
+    "markdownPath": "https://raw.githubusercontent.com/garyyang-finchip/ERCs/refs/heads/master/ERCS/erc-9999.md",
+    "requires": [
+      "165",
+      "721"
+    ],
+    "timestamp": "2026-07-15T01:08:27.899Z"
   },
   "11796": {
     "title": "WYRIWE — What You Read Is What You Execute",
@@ -13445,7 +13455,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-14T13:01:16.806Z"
+    "timestamp": "2026-07-15T01:08:55.668Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

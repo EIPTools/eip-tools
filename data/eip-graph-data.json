@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9969,6 +9969,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8337",
+      "eipNo": "8337",
+      "title": "Validated EVM Code",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8338",
       "eipNo": "8338",
       "title": "Zero-Knowledge Compliance Oracle",
@@ -10048,7 +10055,7 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Token-Bound Executable Skills",
       "status": "Draft",
       "isERC": true
     },
@@ -17382,7 +17389,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -18085,6 +18092,14 @@
       "target": "eip-7528"
     },
     {
+      "source": "eip-8337",
+      "target": "eip-3541"
+    },
+    {
+      "source": "eip-8337",
+      "target": "eip-7979"
+    },
+    {
       "source": "eip-8338",
       "target": "eip-165"
     },
@@ -18151,6 +18166,14 @@
     {
       "source": "eip-9998",
       "target": "eip-8188"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-721"
     },
     {
       "source": "eip-11796",
