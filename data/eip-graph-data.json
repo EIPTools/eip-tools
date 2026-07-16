@@ -1131,7 +1131,7 @@
       "id": "eip-1450",
       "eipNo": "1450",
       "title": "RTA-Controlled Security Token",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8984,7 +8984,7 @@
     {
       "id": "eip-8186",
       "eipNo": "8186",
-      "title": "Identity Account",
+      "title": "Deterministic Accounts for Identifiers",
       "status": "Draft",
       "isERC": true
     },
@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9978,7 +9978,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Zero-Knowledge Compliance Oracle",
+      "title": "Token-Bound Executable Skills",
       "status": "Draft",
       "isERC": true
     },
@@ -10111,7 +10111,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Named NFT",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
@@ -16845,6 +16845,10 @@
     },
     {
       "source": "eip-8186",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8186",
       "target": "eip-8185"
     },
     {
@@ -17389,7 +17393,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -18096,6 +18100,10 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8338",
+      "target": "eip-721"
+    },
+    {
       "source": "eip-8402",
       "target": "eip-20"
     },
@@ -18182,18 +18190,6 @@
     {
       "source": "eip-11820",
       "target": "eip-3076"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
