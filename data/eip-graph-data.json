@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9936,9 +9936,9 @@
     {
       "id": "eip-8331",
       "eipNo": "8331",
-      "title": "Role-Grouped Operation Restriction Policy",
+      "title": "Partial Execution Payload Commitments",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8332",
@@ -9979,6 +9979,13 @@
       "id": "eip-8338",
       "eipNo": "8338",
       "title": "Token-Bound Executable Skills",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8340",
+      "eipNo": "8340",
+      "title": "Transaction Metadata Encoding",
       "status": "Draft",
       "isERC": true
     },
@@ -10111,7 +10118,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Lot-based Token",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
@@ -17393,7 +17400,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -18056,6 +18063,10 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8331",
+      "target": "eip-7732"
+    },
+    {
       "source": "eip-8332",
       "target": "eip-165"
     },
@@ -18102,6 +18113,14 @@
     {
       "source": "eip-8338",
       "target": "eip-721"
+    },
+    {
+      "source": "eip-8340",
+      "target": "eip-5792"
+    },
+    {
+      "source": "eip-8340",
+      "target": "eip-8130"
     },
     {
       "source": "eip-8402",
@@ -18190,6 +18209,18 @@
     {
       "source": "eip-11820",
       "target": "eip-3076"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
