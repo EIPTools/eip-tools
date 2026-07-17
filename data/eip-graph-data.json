@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9936,9 +9936,9 @@
     {
       "id": "eip-8331",
       "eipNo": "8331",
-      "title": "Role-Grouped Operation Restriction Policy",
+      "title": "Partial Execution Payload Commitments",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8332",
@@ -17407,7 +17407,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -18068,6 +18068,10 @@
     {
       "source": "eip-8330",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8331",
+      "target": "eip-7732"
     },
     {
       "source": "eip-8332",
