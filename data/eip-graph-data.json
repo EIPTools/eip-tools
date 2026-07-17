@@ -8858,7 +8858,7 @@
     {
       "id": "eip-8168",
       "eipNo": "8168",
-      "title": "8130 Payer Web Service Capability",
+      "title": "8130 Payer Service Capability",
       "status": "Draft",
       "isERC": true
     },
@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9936,9 +9936,9 @@
     {
       "id": "eip-8331",
       "eipNo": "8331",
-      "title": "Partial Execution Payload Commitments",
+      "title": "Role-Grouped Operation Restriction Policy",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8332",
@@ -9979,6 +9979,13 @@
       "id": "eip-8338",
       "eipNo": "8338",
       "title": "Token-Bound Executable Skills",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8339",
+      "eipNo": "8339",
+      "title": "Two-Phase Asset Transfers",
       "status": "Draft",
       "isERC": true
     },
@@ -17400,7 +17407,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8245",
@@ -18063,10 +18070,6 @@
       "target": "eip-165"
     },
     {
-      "source": "eip-8331",
-      "target": "eip-7732"
-    },
-    {
       "source": "eip-8332",
       "target": "eip-165"
     },
@@ -18113,6 +18116,22 @@
     {
       "source": "eip-8338",
       "target": "eip-721"
+    },
+    {
+      "source": "eip-8339",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8339",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8339",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8339",
+      "target": "eip-1155"
     },
     {
       "source": "eip-8340",
