@@ -11537,7 +11537,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-18T01:13:30.907Z"
+    "timestamp": "2026-07-18T12:44:26.836Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12013,7 +12013,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-18T01:13:27.960Z"
+    "timestamp": "2026-07-18T12:44:24.291Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12256,7 +12256,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-18T01:13:27.108Z"
+    "timestamp": "2026-07-18T12:44:23.532Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12270,14 +12270,15 @@
     "timestamp": "2026-07-16T01:17:21.823Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-18T01:11:48.797Z"
+    "timestamp": "2026-07-18T12:44:25.283Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12297,7 +12298,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-18T01:13:26.328Z"
+    "timestamp": "2026-07-18T12:44:22.995Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12723,7 +12724,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-18T01:13:22.010Z"
+    "timestamp": "2026-07-18T12:44:19.066Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12807,7 +12808,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-18T01:13:20.692Z"
+    "timestamp": "2026-07-18T12:44:18.291Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12869,7 +12870,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-13T01:21:51.899Z"
+    "timestamp": "2026-07-18T12:44:17.440Z"
   },
   "8300": {
     "title": "Invariant-First Reserve Receipt Token",
@@ -13001,7 +13002,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-18T01:13:20.627Z"
+    "timestamp": "2026-07-18T12:44:10.147Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13020,7 +13021,7 @@
     "requires": [
       "7820"
     ],
-    "timestamp": "2026-07-13T01:21:50.783Z"
+    "timestamp": "2026-07-18T12:44:17.262Z"
   },
   "8315": {
     "title": "Contract Role Semantics",
@@ -13031,7 +13032,7 @@
     "requires": [
       "5982"
     ],
-    "timestamp": "2026-07-13T01:21:50.505Z"
+    "timestamp": "2026-07-18T12:44:08.012Z"
   },
   "8316": {
     "title": "Programmable Settlement Locks",
@@ -13071,7 +13072,7 @@
     "isERC": true,
     "prNo": 1848,
     "markdownPath": "https://raw.githubusercontent.com/jay-oraclizer/ERCs/refs/heads/rcp-informational/ERCS/erc-8319.md",
-    "timestamp": "2026-07-18T01:13:19.745Z"
+    "timestamp": "2026-07-18T12:44:17.377Z"
   },
   "8320": {
     "title": "Regulated Asset Claim",
@@ -13091,7 +13092,7 @@
     "status": "Draft",
     "prNo": 11861,
     "markdownPath": "https://raw.githubusercontent.com/kevaundray/EIPs/refs/heads/kw/hash-chain-randao/EIPS/eip-8321.md",
-    "timestamp": "2026-07-13T01:20:19.143Z"
+    "timestamp": "2026-07-18T12:42:41.190Z"
   },
   "8322": {
     "title": "Notary-Backed Confidential Token",
@@ -13278,6 +13279,18 @@
       "8130"
     ],
     "timestamp": "2026-07-16T13:11:24.372Z"
+  },
+  "8341": {
+    "title": "Verifiable Invoice Commitment (VIC)",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1890,
+    "markdownPath": "https://raw.githubusercontent.com/javierpmateos/ERCs/refs/heads/add-erc-vic/ERCS/erc-8341.md",
+    "requires": [
+      "712",
+      "7730"
+    ],
+    "timestamp": "2026-07-18T12:44:05.136Z"
   },
   "8402": {
     "title": "Agent Subscription Protocol",
@@ -13466,7 +13479,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-18T01:13:41.526Z"
+    "timestamp": "2026-07-18T12:44:36.404Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

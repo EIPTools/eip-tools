@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9993,6 +9993,13 @@
       "id": "eip-8340",
       "eipNo": "8340",
       "title": "Transaction Metadata Encoding",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8341",
+      "eipNo": "8341",
+      "title": "Verifiable Invoice Commitment (VIC)",
       "status": "Draft",
       "isERC": true
     },
@@ -17407,7 +17414,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8245",
@@ -18140,6 +18147,14 @@
     {
       "source": "eip-8340",
       "target": "eip-8130"
+    },
+    {
+      "source": "eip-8341",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8341",
+      "target": "eip-7730"
     },
     {
       "source": "eip-8402",
