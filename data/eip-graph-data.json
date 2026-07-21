@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -10006,9 +10006,9 @@
     {
       "id": "eip-8341",
       "eipNo": "8341",
-      "title": "Verifiable Invoice Commitment (VIC)",
+      "title": "Partial Execution Payload Commitments",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8402",
@@ -10139,7 +10139,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Named NFT",
+      "title": "Lot-based Token",
       "status": "Draft",
       "isERC": true
     },
@@ -17421,7 +17421,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18169,11 +18169,7 @@
     },
     {
       "source": "eip-8341",
-      "target": "eip-712"
-    },
-    {
-      "source": "eip-8341",
-      "target": "eip-7730"
+      "target": "eip-7732"
     },
     {
       "source": "eip-8402",
@@ -18262,18 +18258,6 @@
     {
       "source": "eip-11820",
       "target": "eip-3076"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
