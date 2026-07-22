@@ -1264,7 +1264,7 @@
       "id": "eip-1613",
       "eipNo": "1613",
       "title": "Gas stations network",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": true
     },
     {
@@ -3756,7 +3756,7 @@
       "id": "eip-5516",
       "eipNo": "5516",
       "title": "Soulbound Multi-owner Tokens",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -8810,7 +8810,7 @@
       "id": "eip-8161",
       "eipNo": "8161",
       "title": "Transferable Tokenized Vault Requests",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -9048,7 +9048,7 @@
       "id": "eip-8196",
       "eipNo": "8196",
       "title": "AI Agent Authenticated Wallet",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9902,42 +9902,42 @@
       "id": "eip-8325",
       "eipNo": "8325",
       "title": "Asset Anchor Registry",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-8326",
       "eipNo": "8326",
       "title": "Canonical Document Bundle Anchor",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-8327",
       "eipNo": "8327",
       "title": "Directional Transfer Domain Registry",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-8328",
       "eipNo": "8328",
       "title": "Subject-Linked Compliance Event Log",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-8329",
       "eipNo": "8329",
       "title": "Subject-Linked Impact Snapshot Log",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
       "id": "eip-8330",
       "eipNo": "8330",
       "title": "Subject-Linked NAV Snapshot Oracle",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -10617,10 +10617,6 @@
     {
       "source": "eip-1588",
       "target": "eip-1057"
-    },
-    {
-      "source": "eip-1613",
-      "target": "eip-1077"
     },
     {
       "source": "eip-1616",
@@ -17428,7 +17424,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
