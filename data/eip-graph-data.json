@@ -2262,13 +2262,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7523",
-      "eipNo": "7523",
-      "title": "Empty accounts deprecation",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7623",
       "eipNo": "7623",
       "title": "Increase calldata cost",
@@ -4086,6 +4079,13 @@
       "eipNo": "5920",
       "title": "PAY opcode",
       "status": "Stagnant",
+      "isERC": false
+    },
+    {
+      "id": "eip-7523",
+      "eipNo": "7523",
+      "title": "Empty accounts deprecation",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7963,7 +7963,7 @@
       "id": "eip-8015",
       "eipNo": "8015",
       "title": "Remove `deposit` and `eth1data` fields",
-      "status": "Stagnant",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -9355,9 +9355,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -11183,10 +11183,6 @@
     {
       "source": "eip-2780",
       "target": "eip-6780"
-    },
-    {
-      "source": "eip-2780",
-      "target": "eip-7523"
     },
     {
       "source": "eip-2780",
@@ -15770,7 +15766,11 @@
     },
     {
       "source": "eip-8015",
-      "target": "eip-7732"
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-8015",
+      "target": "eip-7773"
     },
     {
       "source": "eip-8016",
@@ -15846,11 +15846,23 @@
     },
     {
       "source": "eip-8037",
+      "target": "eip-161"
+    },
+    {
+      "source": "eip-8037",
+      "target": "eip-684"
+    },
+    {
+      "source": "eip-8037",
       "target": "eip-2780"
     },
     {
       "source": "eip-8037",
       "target": "eip-6780"
+    },
+    {
+      "source": "eip-8037",
+      "target": "eip-7610"
     },
     {
       "source": "eip-8037",
@@ -15866,10 +15878,6 @@
     },
     {
       "source": "eip-8037",
-      "target": "eip-7904"
-    },
-    {
-      "source": "eip-8037",
       "target": "eip-7928"
     },
     {
@@ -15878,15 +15886,7 @@
     },
     {
       "source": "eip-8037",
-      "target": "eip-7981"
-    },
-    {
-      "source": "eip-8037",
       "target": "eip-8038"
-    },
-    {
-      "source": "eip-8038",
-      "target": "eip-7904"
     },
     {
       "source": "eip-8038",
@@ -17438,7 +17438,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -17947,6 +17947,10 @@
     {
       "source": "eip-8296",
       "target": "eip-8188"
+    },
+    {
+      "source": "eip-8297",
+      "target": "eip-4762"
     },
     {
       "source": "eip-8297",
