@@ -11550,7 +11550,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-24T13:12:33.877Z"
+    "timestamp": "2026-07-25T01:20:58.131Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12026,7 +12026,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-24T13:12:31.323Z"
+    "timestamp": "2026-07-25T01:20:56.097Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12269,7 +12269,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-24T13:12:30.715Z"
+    "timestamp": "2026-07-25T01:20:55.408Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12283,15 +12283,14 @@
     "timestamp": "2026-07-21T01:18:40.637Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-07-24T13:12:32.045Z"
+    "timestamp": "2026-07-25T01:19:32.524Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12323,7 +12322,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-24T13:12:30.178Z"
+    "timestamp": "2026-07-25T01:20:55.167Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12750,7 +12749,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-24T13:12:28.357Z"
+    "timestamp": "2026-07-25T01:20:53.356Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12834,7 +12833,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-24T13:12:27.672Z"
+    "timestamp": "2026-07-25T01:20:52.839Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13029,7 +13028,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-24T13:12:27.325Z"
+    "timestamp": "2026-07-25T01:20:52.324Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13099,7 +13098,7 @@
     "isERC": true,
     "prNo": 1848,
     "markdownPath": "https://raw.githubusercontent.com/jay-oraclizer/ERCs/refs/heads/rcp-informational/ERCS/erc-8319.md",
-    "timestamp": "2026-07-24T13:12:26.835Z"
+    "timestamp": "2026-07-25T01:20:52.201Z"
   },
   "8320": {
     "title": "Regulated Asset Claim",
@@ -13365,6 +13364,17 @@
     ],
     "timestamp": "2026-07-23T13:19:22.919Z"
   },
+  "8347": {
+    "title": "Offline state migration to the PBT",
+    "status": "Draft",
+    "prNo": 12006,
+    "markdownPath": "https://raw.githubusercontent.com/misilva73/EIPs/refs/heads/add-eip-pbt-offline-migration/EIPS/eip-8347.md",
+    "requires": [
+      "7928",
+      "8297"
+    ],
+    "timestamp": "2026-07-25T01:19:20.424Z"
+  },
   "8402": {
     "title": "Agent Subscription Protocol",
     "status": "Draft",
@@ -13552,7 +13562,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-24T13:12:45.136Z"
+    "timestamp": "2026-07-25T01:21:07.049Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",

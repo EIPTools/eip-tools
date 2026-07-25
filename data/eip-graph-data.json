@@ -9362,9 +9362,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -10044,6 +10044,13 @@
       "title": "Translation Files for ERC-7730 Descriptors",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8347",
+      "eipNo": "8347",
+      "title": "Offline state migration to the PBT",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8402",
@@ -17472,7 +17479,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18257,6 +18264,14 @@
     {
       "source": "eip-8346",
       "target": "eip-8176"
+    },
+    {
+      "source": "eip-8347",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8347",
+      "target": "eip-8297"
     },
     {
       "source": "eip-8402",
