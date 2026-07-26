@@ -9362,9 +9362,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9985,9 +9985,9 @@
     {
       "id": "eip-8337",
       "eipNo": "8337",
-      "title": "Validated EVM Code",
+      "title": "Agent Memory State Registry",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8338",
@@ -10181,7 +10181,7 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Lot-based Token",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
@@ -17479,7 +17479,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8244",
@@ -18191,11 +18191,11 @@
     },
     {
       "source": "eip-8337",
-      "target": "eip-3541"
+      "target": "eip-712"
     },
     {
       "source": "eip-8337",
-      "target": "eip-7979"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8338",
@@ -18360,6 +18360,18 @@
     {
       "source": "eip-11820",
       "target": "eip-3076"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
