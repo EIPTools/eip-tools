@@ -11237,6 +11237,7 @@
     "requires": [
       "1559",
       "2718",
+      "3529",
       "3607",
       "4844",
       "7594",
@@ -11560,7 +11561,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-28T01:16:24.912Z"
+    "timestamp": "2026-07-28T13:26:03.928Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11692,7 +11693,7 @@
       "5267",
       "6492"
     ],
-    "timestamp": "2026-07-23T01:24:31.887Z"
+    "timestamp": "2026-07-28T13:26:02.726Z"
   },
   "8188": {
     "title": "Last-Written Block for Accounts and Slots",
@@ -12036,7 +12037,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-28T01:16:22.388Z"
+    "timestamp": "2026-07-28T13:26:00.224Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12279,7 +12280,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-28T01:16:21.520Z"
+    "timestamp": "2026-07-28T13:25:59.296Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12293,14 +12294,15 @@
     "timestamp": "2026-07-26T01:24:19.707Z"
   },
   "8242": {
-    "title": "Ancestor-Indexed BALs",
+    "title": "H3 Spatial Identity Extension for On-Chain Agents",
     "status": "Draft",
-    "prNo": 11595,
-    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
+    "isERC": true,
+    "prNo": 1634,
+    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
     "requires": [
-      "7928"
+      "165"
     ],
-    "timestamp": "2026-07-28T01:14:43.606Z"
+    "timestamp": "2026-07-28T13:26:01.195Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12332,7 +12334,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-07-28T01:16:21.137Z"
+    "timestamp": "2026-07-28T13:25:59.027Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12759,7 +12761,7 @@
       "7579",
       "8141"
     ],
-    "timestamp": "2026-07-28T01:16:19.200Z"
+    "timestamp": "2026-07-28T13:25:56.426Z"
   },
   "8287": {
     "title": "Privacy-Native Fungible Tokens",
@@ -12843,7 +12845,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-28T01:16:18.237Z"
+    "timestamp": "2026-07-28T13:25:55.286Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -12906,7 +12908,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-07-23T13:19:26.231Z"
+    "timestamp": "2026-07-28T13:25:54.781Z"
   },
   "8300": {
     "title": "Invariant-First Reserve Receipt Token",
@@ -13038,7 +13040,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-07-28T01:16:17.666Z"
+    "timestamp": "2026-07-28T13:25:54.553Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13057,7 +13059,7 @@
     "requires": [
       "7820"
     ],
-    "timestamp": "2026-07-23T13:19:25.162Z"
+    "timestamp": "2026-07-28T13:25:53.823Z"
   },
   "8315": {
     "title": "Contract Role Semantics",
@@ -13068,7 +13070,7 @@
     "requires": [
       "5982"
     ],
-    "timestamp": "2026-07-23T13:19:25.263Z"
+    "timestamp": "2026-07-28T13:25:53.610Z"
   },
   "8316": {
     "title": "Programmable Settlement Locks",
@@ -13108,7 +13110,7 @@
     "isERC": true,
     "prNo": 1848,
     "markdownPath": "https://raw.githubusercontent.com/jay-oraclizer/ERCs/refs/heads/rcp-informational/ERCS/erc-8319.md",
-    "timestamp": "2026-07-28T01:16:17.391Z"
+    "timestamp": "2026-07-28T13:25:53.493Z"
   },
   "8320": {
     "title": "Regulated Asset Claim",
@@ -13128,7 +13130,10 @@
     "status": "Draft",
     "prNo": 11861,
     "markdownPath": "https://raw.githubusercontent.com/kevaundray/EIPs/refs/heads/kw/hash-chain-randao/EIPS/eip-8321.md",
-    "timestamp": "2026-07-23T13:17:35.204Z"
+    "requires": [
+      "7916"
+    ],
+    "timestamp": "2026-07-28T13:24:00.063Z"
   },
   "8322": {
     "title": "Notary-Backed Confidential Token",
@@ -13223,7 +13228,7 @@
     "isERC": true,
     "prNo": 1861,
     "markdownPath": "https://raw.githubusercontent.com/baishuo13/ERCs/refs/heads/Role-Grouped-Operation-Restriction-Policy/ERCS/erc-8331.md",
-    "timestamp": "2026-07-23T01:24:24.131Z"
+    "timestamp": "2026-07-28T13:25:52.782Z"
   },
   "8332": {
     "title": "Physical Reserve Registry",
@@ -13268,27 +13273,28 @@
     "timestamp": "2026-07-26T01:24:11.952Z"
   },
   "8337": {
-    "title": "Validated EVM Code",
-    "status": "Draft",
-    "prNo": 11922,
-    "markdownPath": "https://raw.githubusercontent.com/gcolvin/EIPs/refs/heads/patch-26/EIPS/eip-8337.md",
-    "requires": [
-      "3541",
-      "7979"
-    ],
-    "timestamp": "2026-07-28T01:14:33.251Z"
-  },
-  "8338": {
-    "title": "Prediction Market CTF Wrapper",
+    "title": "Agent Memory State Registry",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1913,
-    "markdownPath": "https://raw.githubusercontent.com/martchelo-eth/ERCs/refs/heads/ctf-wrapper/ERCS/erc-8338.md",
+    "prNo": 1910,
+    "markdownPath": "https://raw.githubusercontent.com/everest-an/ERCs/refs/heads/agent-memory-state/ERCS/erc-8337.md",
     "requires": [
-      "20",
-      "1155"
+      "712",
+      "1271"
     ],
-    "timestamp": "2026-07-28T01:16:14.169Z"
+    "timestamp": "2026-07-28T13:25:49.244Z"
+  },
+  "8338": {
+    "title": "Token-Bound Executable Skills",
+    "status": "Draft",
+    "isERC": true,
+    "prNo": 1879,
+    "markdownPath": "https://raw.githubusercontent.com/garyyang-finchip/ERCs/refs/heads/master/ERCS/erc-8338.md",
+    "requires": [
+      "165",
+      "721"
+    ],
+    "timestamp": "2026-07-28T13:25:50.496Z"
   },
   "8339": {
     "title": "Two-Phase Asset Transfers",
@@ -13372,7 +13378,7 @@
       "7730",
       "8176"
     ],
-    "timestamp": "2026-07-23T13:19:22.919Z"
+    "timestamp": "2026-07-28T13:25:50.196Z"
   },
   "8347": {
     "title": "Offline state migration to the PBT",
@@ -13572,7 +13578,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-07-28T01:16:35.553Z"
+    "timestamp": "2026-07-28T13:26:16.243Z"
   },
   "0000": {
     "title": "Ethereum Interoperability Layer Wallet Usage",
