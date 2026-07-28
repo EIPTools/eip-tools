@@ -1555,6 +1555,13 @@
       "isERC": true
     },
     {
+      "id": "eip-1914",
+      "eipNo": "1914",
+      "title": "Cross-Chain Event Archive",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-1921",
       "eipNo": "1921",
       "title": "dType Functions Extension",
@@ -9362,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9985,14 +9992,14 @@
     {
       "id": "eip-8337",
       "eipNo": "8337",
-      "title": "Agent Memory State Registry",
+      "title": "Validated EVM Code",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Token-Bound Executable Skills",
+      "title": "Prediction Market CTF Wrapper",
       "status": "Draft",
       "isERC": true
     },
@@ -17487,7 +17494,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18199,19 +18206,19 @@
     },
     {
       "source": "eip-8337",
-      "target": "eip-712"
+      "target": "eip-3541"
     },
     {
       "source": "eip-8337",
-      "target": "eip-1271"
+      "target": "eip-7979"
     },
     {
       "source": "eip-8338",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-8338",
-      "target": "eip-721"
+      "target": "eip-1155"
     },
     {
       "source": "eip-8339",
