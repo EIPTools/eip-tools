@@ -2272,7 +2272,7 @@
       "id": "eip-2780",
       "eipNo": "2780",
       "title": "Resource-based intrinsic transaction gas",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -2314,14 +2314,14 @@
       "id": "eip-8037",
       "eipNo": "8037",
       "title": "State Creation Gas Cost Increase",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
       "id": "eip-8038",
       "eipNo": "8038",
       "title": "State-access gas cost update",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9369,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9999,7 +9999,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Prediction Market CTF Wrapper",
+      "title": "Token-Bound Executable Skills",
       "status": "Draft",
       "isERC": true
     },
@@ -10055,7 +10055,7 @@
     {
       "id": "eip-8347",
       "eipNo": "8347",
-      "title": "Offline state migration to the PBT",
+      "title": "Offline State Migration to the PBT",
       "status": "Draft",
       "isERC": false
     },
@@ -10084,6 +10084,13 @@
       "id": "eip-8353",
       "eipNo": "8353",
       "title": "Staked Weighted Verification Gate",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8354",
+      "eipNo": "8354",
+      "title": "Confidential Agent Policy Verdicts",
       "status": "Draft",
       "isERC": true
     },
@@ -17522,7 +17529,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8244",
@@ -18250,11 +18257,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-20"
+      "target": "eip-165"
     },
     {
       "source": "eip-8338",
-      "target": "eip-1155"
+      "target": "eip-721"
     },
     {
       "source": "eip-8339",
@@ -18322,6 +18329,10 @@
     },
     {
       "source": "eip-8347",
+      "target": "eip-8159"
+    },
+    {
+      "source": "eip-8347",
       "target": "eip-8297"
     },
     {
@@ -18347,6 +18358,18 @@
     {
       "source": "eip-8350",
       "target": "eip-1271"
+    },
+    {
+      "source": "eip-8354",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8354",
+      "target": "eip-7812"
+    },
+    {
+      "source": "eip-8354",
+      "target": "eip-8004"
     },
     {
       "source": "eip-8402",
