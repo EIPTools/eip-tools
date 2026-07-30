@@ -6269,7 +6269,7 @@
       "id": "eip-7732",
       "eipNo": "7732",
       "title": "Enshrined Proposer-Builder Separation",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -8131,7 +8131,7 @@
       "id": "eip-8045",
       "eipNo": "8045",
       "title": "Exclude slashed validators from proposing",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9369,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9999,7 +9999,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Token-Bound Executable Skills",
+      "title": "Prediction Market CTF Wrapper",
       "status": "Draft",
       "isERC": true
     },
@@ -10063,6 +10063,13 @@
       "id": "eip-8348",
       "eipNo": "8348",
       "title": "Financial Lease",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8349",
+      "eipNo": "8349",
+      "title": "Index-Based Multi-Facet Proxy",
       "status": "Draft",
       "isERC": true
     },
@@ -17123,10 +17130,6 @@
     },
     {
       "source": "eip-8200",
-      "target": "eip-2537"
-    },
-    {
-      "source": "eip-8200",
       "target": "eip-7666"
     },
     {
@@ -17519,7 +17522,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18247,11 +18250,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-8338",
-      "target": "eip-721"
+      "target": "eip-1155"
     },
     {
       "source": "eip-8339",
