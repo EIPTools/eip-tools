@@ -9369,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9999,7 +9999,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Token-Bound Executable Skills",
+      "title": "Prediction Market CTF Wrapper",
       "status": "Draft",
       "isERC": true
     },
@@ -10123,6 +10123,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8358",
+      "eipNo": "8358",
+      "title": "Net Gas Metering for Account Changes",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8402",
       "eipNo": "8402",
       "title": "Agent Subscription Protocol",
@@ -10195,9 +10202,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "TCREATE Opcode",
+      "title": "ERC-9999",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-11796",
@@ -10258,7 +10265,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Custom Encoding Layout for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -17593,7 +17600,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18313,11 +18320,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-8338",
-      "target": "eip-721"
+      "target": "eip-1155"
     },
     {
       "source": "eip-8339",
@@ -18408,6 +18415,10 @@
       "target": "eip-4907"
     },
     {
+      "source": "eip-8349",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8350",
       "target": "eip-712"
     },
@@ -18462,6 +18473,42 @@
     {
       "source": "eip-8357",
       "target": "eip-8288"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-161"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-2200"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-3529"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-7708"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-8358",
+      "target": "eip-8038"
     },
     {
       "source": "eip-8402",
@@ -18528,26 +18575,6 @@
       "target": "eip-8188"
     },
     {
-      "source": "eip-9999",
-      "target": "eip-684"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-1014"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-3529"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-8037"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-8038"
-    },
-    {
       "source": "eip-11796",
       "target": "eip-712"
     },
@@ -18585,11 +18612,7 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7730"
     }
   ]
 }
