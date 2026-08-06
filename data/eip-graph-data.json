@@ -9369,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -9999,7 +9999,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Prediction Market CTF Wrapper",
+      "title": "Token-Bound Executable Skills",
       "status": "Draft",
       "isERC": true
     },
@@ -10104,7 +10104,7 @@
     {
       "id": "eip-8355",
       "eipNo": "8355",
-      "title": "Precompiles for ML-DSA verification",
+      "title": "Precompiles for ML-DSA Verification",
       "status": "Draft",
       "isERC": false
     },
@@ -10130,16 +10130,30 @@
       "isERC": false
     },
     {
-      "id": "eip-8360",
-      "eipNo": "8360",
-      "title": "TCREATE Opcode",
+      "id": "eip-8359",
+      "eipNo": "8359",
+      "title": "Beacon Block Reporting Field",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8360",
+      "eipNo": "8360",
+      "title": "Post-Quantum Anchored Key-Binding",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8361",
       "eipNo": "8361",
       "title": "Transaction Validity Proofs",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8363",
+      "eipNo": "8363",
+      "title": "Tapered Issuance Burn",
       "status": "Draft",
       "isERC": false
     },
@@ -10182,6 +10196,20 @@
       "id": "eip-8369",
       "eipNo": "8369",
       "title": "VOPS Profiles for FOCIL Eligibility",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8370",
+      "eipNo": "8370",
+      "title": "Inheritable Agent Mandates",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8371",
+      "eipNo": "8371",
+      "title": "RowDAS - Distributed Blob Reconstruction",
       "status": "Draft",
       "isERC": false
     },
@@ -10321,7 +10349,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Custom Encoding Layout for ERC-7730",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
       "isERC": true
     },
@@ -17664,7 +17692,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8244",
@@ -18384,11 +18412,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-20"
+      "target": "eip-165"
     },
     {
       "source": "eip-8338",
-      "target": "eip-1155"
+      "target": "eip-721"
     },
     {
       "source": "eip-8339",
@@ -18575,30 +18603,6 @@
       "target": "eip-8038"
     },
     {
-      "source": "eip-8360",
-      "target": "eip-684"
-    },
-    {
-      "source": "eip-8360",
-      "target": "eip-1014"
-    },
-    {
-      "source": "eip-8360",
-      "target": "eip-3529"
-    },
-    {
-      "source": "eip-8360",
-      "target": "eip-7610"
-    },
-    {
-      "source": "eip-8360",
-      "target": "eip-8037"
-    },
-    {
-      "source": "eip-8360",
-      "target": "eip-8038"
-    },
-    {
       "source": "eip-8361",
       "target": "eip-8141"
     },
@@ -18681,6 +18685,26 @@
     {
       "source": "eip-8369",
       "target": "eip-8272"
+    },
+    {
+      "source": "eip-8370",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8370",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8370",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8371",
+      "target": "eip-7594"
+    },
+    {
+      "source": "eip-8371",
+      "target": "eip-8136"
     },
     {
       "source": "eip-8402",
@@ -18784,7 +18808,11 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-7730"
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
