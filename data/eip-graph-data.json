@@ -6640,7 +6640,7 @@
       "id": "eip-7843",
       "eipNo": "7843",
       "title": "SLOTNUM opcode",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9369,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9622,7 +9622,7 @@
       "id": "eip-8282",
       "eipNo": "8282",
       "title": "Builder Execution Requests",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9999,7 +9999,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Token-Bound Executable Skills",
+      "title": "Prediction Market CTF Wrapper",
       "status": "Draft",
       "isERC": true
     },
@@ -10139,7 +10139,7 @@
     {
       "id": "eip-8361",
       "eipNo": "8361",
-      "title": "Tapered Issuance Burn",
+      "title": "Transaction Validity Proofs",
       "status": "Draft",
       "isERC": false
     },
@@ -10167,9 +10167,23 @@
     {
       "id": "eip-8367",
       "eipNo": "8367",
-      "title": "Inheritable Agent Mandates",
+      "title": "Balance sunset for retired BLS validators",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
+    },
+    {
+      "id": "eip-8368",
+      "eipNo": "8368",
+      "title": "CPSB Recalibration for New Gas Limit",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8369",
+      "eipNo": "8369",
+      "title": "VOPS Profiles for FOCIL Eligibility",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8402",
@@ -10300,14 +10314,14 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "ERC-9999",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Custom Encoding Layout for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -17650,7 +17664,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18370,11 +18384,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-8338",
-      "target": "eip-721"
+      "target": "eip-1155"
     },
     {
       "source": "eip-8339",
@@ -18585,6 +18599,14 @@
       "target": "eip-8038"
     },
     {
+      "source": "eip-8361",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8361",
+      "target": "eip-8288"
+    },
+    {
       "source": "eip-8365",
       "target": "eip-6110"
     },
@@ -18606,15 +18628,59 @@
     },
     {
       "source": "eip-8367",
-      "target": "eip-165"
+      "target": "eip-8365"
     },
     {
-      "source": "eip-8367",
-      "target": "eip-721"
+      "source": "eip-8368",
+      "target": "eip-8037"
     },
     {
-      "source": "eip-8367",
-      "target": "eip-8004"
+      "source": "eip-8369",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-3607"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-7805"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-8250"
+    },
+    {
+      "source": "eip-8369",
+      "target": "eip-8272"
     },
     {
       "source": "eip-8402",
@@ -18705,12 +18771,20 @@
       "target": "eip-3076"
     },
     {
-      "source": "eip-0000",
-      "target": "eip-4337"
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7730"
     }
   ]
 }
