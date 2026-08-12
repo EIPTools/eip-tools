@@ -6156,8 +6156,8 @@
     {
       "id": "eip-7709",
       "eipNo": "7709",
-      "title": "Read BLOCKHASH from storage and update cost",
-      "status": "Stagnant",
+      "title": "Read BLOCKHASH from Storage and Update Cost",
+      "status": "Draft",
       "isERC": false
     },
     {
@@ -8691,7 +8691,7 @@
       "id": "eip-8136",
       "eipNo": "8136",
       "title": "Cell-Level Deltas for Data Column Broadcast",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9369,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9999,7 +9999,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Token-Bound Executable Skills",
+      "title": "Prediction Market CTF Wrapper",
       "status": "Draft",
       "isERC": true
     },
@@ -10377,7 +10377,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Custom Encoding Layout for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -16716,11 +16716,55 @@
     },
     {
       "source": "eip-8130",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8130",
       "target": "eip-170"
     },
     {
       "source": "eip-8130",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-2028"
+    },
+    {
+      "source": "eip-8130",
       "target": "eip-2718"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-6780"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-7708"
+    },
+    {
+      "source": "eip-8130",
+      "target": "eip-7819"
     },
     {
       "source": "eip-8131",
@@ -17728,7 +17772,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18172,6 +18216,10 @@
     },
     {
       "source": "eip-8291",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8291",
       "target": "eip-721"
     },
     {
@@ -18452,11 +18500,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-8338",
-      "target": "eip-721"
+      "target": "eip-1155"
     },
     {
       "source": "eip-8339",
@@ -18892,11 +18940,7 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7730"
     }
   ]
 }
