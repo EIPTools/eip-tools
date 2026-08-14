@@ -9369,9 +9369,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9482,7 +9482,7 @@
       "id": "eip-8261",
       "eipNo": "8261",
       "title": "Gas Limit Schedule",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9999,7 +9999,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Token-Bound Executable Skills",
+      "title": "Prediction Market CTF Wrapper",
       "status": "Draft",
       "isERC": true
     },
@@ -10223,9 +10223,9 @@
     {
       "id": "eip-8373",
       "eipNo": "8373",
-      "title": "Top-up Sync",
+      "title": "Post-Quantum Anchored Key-Binding",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8374",
@@ -10384,7 +10384,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Custom Encoding Layout for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -16923,6 +16923,10 @@
     },
     {
       "source": "eip-8141",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8141",
       "target": "eip-3529"
     },
     {
@@ -16944,6 +16948,18 @@
     {
       "source": "eip-8141",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-8141",
+      "target": "eip-7708"
+    },
+    {
+      "source": "eip-8141",
+      "target": "eip-7825"
+    },
+    {
+      "source": "eip-8141",
+      "target": "eip-8037"
     },
     {
       "source": "eip-8142",
@@ -17779,7 +17795,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18507,11 +18523,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-8338",
-      "target": "eip-721"
+      "target": "eip-1155"
     },
     {
       "source": "eip-8339",
@@ -18754,6 +18770,10 @@
       "target": "eip-1271"
     },
     {
+      "source": "eip-8367",
+      "target": "eip-8365"
+    },
+    {
       "source": "eip-8368",
       "target": "eip-8037"
     },
@@ -18955,11 +18975,7 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7730"
     }
   ]
 }
