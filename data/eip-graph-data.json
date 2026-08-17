@@ -1597,6 +1597,34 @@
       "isERC": true
     },
     {
+      "id": "eip-1953",
+      "eipNo": "1953",
+      "title": "Unclonable Agent Execution Credentials",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-6900",
+      "eipNo": "6900",
+      "title": "Modular Smart Contract Accounts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-7579",
+      "eipNo": "7579",
+      "title": "Minimal Modular Smart Accounts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-1954",
+      "eipNo": "1954",
+      "title": "AI Agent Security Framework for DeFi",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-1959",
       "eipNo": "1959",
       "title": "New Opcode to check if a chainID is part of the history of chainIDs",
@@ -4656,13 +4684,6 @@
       "isERC": false
     },
     {
-      "id": "eip-6900",
-      "eipNo": "6900",
-      "title": "Modular Smart Contract Accounts",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-6909",
       "eipNo": "6909",
       "title": "Minimal Multi-Token Interface",
@@ -5107,13 +5128,6 @@
       "id": "eip-7484",
       "eipNo": "7484",
       "title": "Registry Extension for ERC-7579",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7579",
-      "eipNo": "7579",
-      "title": "Minimal Modular Smart Accounts",
       "status": "Draft",
       "isERC": true
     },
@@ -9369,9 +9383,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9999,7 +10013,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Token-Bound Executable Skills",
+      "title": "Prediction Market CTF Wrapper",
       "status": "Draft",
       "isERC": true
     },
@@ -10223,9 +10237,9 @@
     {
       "id": "eip-8373",
       "eipNo": "8373",
-      "title": "Top-up Sync",
+      "title": "Post-Quantum Anchored Key-Binding",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8374",
@@ -10391,14 +10405,14 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "ERC-9999",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Custom Encoding Layout for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -11058,6 +11072,18 @@
     {
       "source": "eip-1948",
       "target": "eip-721"
+    },
+    {
+      "source": "eip-1953",
+      "target": "eip-6900"
+    },
+    {
+      "source": "eip-1953",
+      "target": "eip-7579"
+    },
+    {
+      "source": "eip-1953",
+      "target": "eip-8004"
     },
     {
       "source": "eip-1959",
@@ -17809,7 +17835,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18537,11 +18563,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-8338",
-      "target": "eip-721"
+      "target": "eip-1155"
     },
     {
       "source": "eip-8339",
@@ -18784,6 +18810,10 @@
       "target": "eip-1271"
     },
     {
+      "source": "eip-8367",
+      "target": "eip-8365"
+    },
+    {
       "source": "eip-8368",
       "target": "eip-8037"
     },
@@ -18988,12 +19018,20 @@
       "target": "eip-3076"
     },
     {
-      "source": "eip-0000",
-      "target": "eip-4337"
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7730"
     }
   ]
 }
