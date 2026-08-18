@@ -9383,9 +9383,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -10013,7 +10013,7 @@
     {
       "id": "eip-8338",
       "eipNo": "8338",
-      "title": "Prediction Market CTF Wrapper",
+      "title": "Token-Bound Executable Skills",
       "status": "Draft",
       "isERC": true
     },
@@ -10277,6 +10277,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8379",
+      "eipNo": "8379",
+      "title": "Top-up Sync",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8382",
       "eipNo": "8382",
       "title": "Private Referable NFTs",
@@ -10356,9 +10363,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Reduce CL Block Retention Window",
+      "title": "ERC-9999",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-11796",
@@ -10419,7 +10426,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Custom Encoding Layout for ERC-7730",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
       "isERC": true
     },
@@ -17842,7 +17849,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8244",
@@ -18570,11 +18577,11 @@
     },
     {
       "source": "eip-8338",
-      "target": "eip-20"
+      "target": "eip-165"
     },
     {
       "source": "eip-8338",
-      "target": "eip-1155"
+      "target": "eip-721"
     },
     {
       "source": "eip-8339",
@@ -19054,7 +19061,11 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-7730"
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
