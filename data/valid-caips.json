@@ -462,7 +462,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2026-08-18T12:17:47.460Z"
+    "timestamp": "2026-08-19T00:27:18.578Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -482,7 +482,7 @@
   },
   "350": {
     "title": "Binary Serialization of Blockchain IDs and Addresses",
-    "status": "Draft",
+    "status": "Review",
     "requires": [
       "2"
     ],
@@ -578,6 +578,6 @@
       "10",
       "94"
     ],
-    "timestamp": "2026-08-18T12:17:49.348Z"
+    "timestamp": "2026-08-19T00:27:20.343Z"
   }
 }
