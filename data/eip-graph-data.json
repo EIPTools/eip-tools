@@ -9390,9 +9390,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -10095,6 +10095,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8351",
+      "eipNo": "8351",
+      "title": "Prediction Market Conditional Tokens wrapper",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8352",
       "eipNo": "8352",
       "title": "Cross-Chain Event Archive",
@@ -10284,6 +10291,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8380",
+      "eipNo": "8380",
+      "title": "Unclonable Agent Execution Credentials",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8382",
       "eipNo": "8382",
       "title": "Private Referable NFTs",
@@ -10315,6 +10329,13 @@
       "id": "eip-8386",
       "eipNo": "8386",
       "title": "Ephemeral Account Creation",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8388",
+      "eipNo": "8388",
+      "title": "Keystore Signatures for Execution Txs",
       "status": "Draft",
       "isERC": false
     },
@@ -10447,14 +10468,14 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "ERC-9999",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Custom Encoding Layout for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -17897,7 +17918,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -18732,6 +18753,14 @@
       "target": "eip-1271"
     },
     {
+      "source": "eip-8351",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8351",
+      "target": "eip-1155"
+    },
+    {
       "source": "eip-8354",
       "target": "eip-165"
     },
@@ -18996,6 +19025,18 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8380",
+      "target": "eip-6900"
+    },
+    {
+      "source": "eip-8380",
+      "target": "eip-7579"
+    },
+    {
+      "source": "eip-8380",
+      "target": "eip-8004"
+    },
+    {
       "source": "eip-8382",
       "target": "eip-165"
     },
@@ -19013,6 +19054,34 @@
     },
     {
       "source": "eip-8386",
+      "target": "eip-8130"
+    },
+    {
+      "source": "eip-8388",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8388",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8388",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8388",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-8388",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8388",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8388",
       "target": "eip-8130"
     },
     {
@@ -19104,12 +19173,20 @@
       "target": "eip-3076"
     },
     {
-      "source": "eip-0000",
-      "target": "eip-4337"
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
     },
     {
       "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7730"
     }
   ]
 }
