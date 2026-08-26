@@ -3798,7 +3798,7 @@
       "id": "eip-5516",
       "eipNo": "5516",
       "title": "Soulbound Multi-owner Tokens",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -7515,7 +7515,7 @@
       "id": "eip-7945",
       "eipNo": "7945",
       "title": "Confidential Transactions Supported Token",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": true
     },
     {
@@ -9390,9 +9390,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -10433,9 +10433,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Post-quantum-ready deposit contract",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-11796",
@@ -10496,7 +10496,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Ethereum Interoperability Layer Wallet Usage",
+      "title": "Custom Encoding Layout for ERC-7730",
       "status": "Draft",
       "isERC": true
     },
@@ -17943,7 +17943,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -19206,6 +19206,34 @@
       "target": "eip-8188"
     },
     {
+      "source": "eip-9999",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7916"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7997"
+    },
+    {
       "source": "eip-11796",
       "target": "eip-712"
     },
@@ -19243,11 +19271,7 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-4337"
-    },
-    {
-      "source": "eip-0000",
-      "target": "eip-5792"
+      "target": "eip-7730"
     }
   ]
 }
