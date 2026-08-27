@@ -6528,7 +6528,7 @@
       "id": "eip-7773",
       "eipNo": "7773",
       "title": "Hardfork Meta - Glamsterdam",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -9390,9 +9390,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -10356,7 +10356,7 @@
     {
       "id": "eip-8391",
       "eipNo": "8391",
-      "title": "Asset Status Interface for Tokenized Assets",
+      "title": "Execution Delegation Framework",
       "status": "Draft",
       "isERC": true
     },
@@ -10373,6 +10373,34 @@
       "title": "Delegated Signed HTTP Requests",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8397",
+      "eipNo": "8397",
+      "title": "Frame Authenticator Signatures",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8398",
+      "eipNo": "8398",
+      "title": "Portable Account Keystore",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8399",
+      "eipNo": "8399",
+      "title": "Native Account Abstraction Transactions",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8400",
+      "eipNo": "8400",
+      "title": "Advanced Account Controls",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8402",
@@ -10447,9 +10475,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Post-quantum-ready deposit contract",
+      "title": "ERC-9999",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-11796",
@@ -10510,7 +10538,7 @@
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Custom Encoding Layout for ERC-7730",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
       "isERC": true
     },
@@ -17965,7 +17993,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8244",
@@ -19161,11 +19189,11 @@
     },
     {
       "source": "eip-8391",
-      "target": "eip-20"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8391",
-      "target": "eip-165"
+      "target": "eip-5313"
     },
     {
       "source": "eip-8393",
@@ -19202,6 +19230,86 @@
     {
       "source": "eip-8395",
       "target": "eip-8128"
+    },
+    {
+      "source": "eip-8397",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8397",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8397",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8397",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8398",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8398",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8398",
+      "target": "eip-1014"
+    },
+    {
+      "source": "eip-8398",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8398",
+      "target": "eip-6780"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-170"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-2028"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-7708"
+    },
+    {
+      "source": "eip-8399",
+      "target": "eip-8398"
+    },
+    {
+      "source": "eip-8400",
+      "target": "eip-8398"
+    },
+    {
+      "source": "eip-8400",
+      "target": "eip-8399"
     },
     {
       "source": "eip-8402",
@@ -19268,34 +19376,6 @@
       "target": "eip-8188"
     },
     {
-      "source": "eip-9999",
-      "target": "eip-6110"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7251"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7495"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7685"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7688"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7916"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7997"
-    },
-    {
       "source": "eip-11796",
       "target": "eip-712"
     },
@@ -19333,7 +19413,11 @@
     },
     {
       "source": "eip-0000",
-      "target": "eip-7730"
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
