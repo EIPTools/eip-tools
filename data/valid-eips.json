@@ -11550,7 +11550,7 @@
   },
   "8167": {
     "title": "Modular Dispatch Proxies",
-    "status": "Review",
+    "status": "Last Call",
     "requires": [],
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8167.md"
@@ -11633,7 +11633,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-09-01T15:39:29.323Z"
+    "timestamp": "2026-09-02T01:36:01.414Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -12106,7 +12106,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-09-01T15:39:26.583Z"
+    "timestamp": "2026-09-02T01:35:59.140Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12349,7 +12349,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-09-01T15:39:25.857Z"
+    "timestamp": "2026-09-02T01:35:59.115Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12363,15 +12363,14 @@
     "timestamp": "2026-08-31T18:18:11.587Z"
   },
   "8242": {
-    "title": "H3 Spatial Identity Extension for On-Chain Agents",
+    "title": "Ancestor-Indexed BALs",
     "status": "Draft",
-    "isERC": true,
-    "prNo": 1634,
-    "markdownPath": "https://raw.githubusercontent.com/brienteth/ERCs/refs/heads/erc-7756-quic-transport/ERCS/erc-8242.md",
+    "prNo": 11595,
+    "markdownPath": "https://raw.githubusercontent.com/nerolation/EIPs/refs/heads/toni/ref-bal/EIPS/eip-8242.md",
     "requires": [
-      "165"
+      "7928"
     ],
-    "timestamp": "2026-09-01T15:39:27.263Z"
+    "timestamp": "2026-09-02T01:34:34.589Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12403,7 +12402,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-09-01T15:39:25.245Z"
+    "timestamp": "2026-09-02T01:35:58.142Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12913,7 +12912,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-09-01T15:39:22.581Z"
+    "timestamp": "2026-09-02T01:35:55.453Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13107,7 +13106,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-09-01T15:39:22.368Z"
+    "timestamp": "2026-09-02T01:35:55.594Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13176,7 +13175,7 @@
     "isERC": true,
     "prNo": 1848,
     "markdownPath": "https://raw.githubusercontent.com/jay-oraclizer/ERCs/refs/heads/rcp-informational/ERCS/erc-8319.md",
-    "timestamp": "2026-09-01T15:39:22.190Z"
+    "timestamp": "2026-09-02T01:35:55.293Z"
   },
   "8320": {
     "title": "Regulated Asset Claim",
@@ -13465,7 +13464,7 @@
       "721",
       "4907"
     ],
-    "timestamp": "2026-09-01T15:39:20.476Z"
+    "timestamp": "2026-09-02T01:35:53.533Z"
   },
   "8349": {
     "title": "Index-Based Multi-Facet Proxy",
@@ -13507,7 +13506,7 @@
     "isERC": true,
     "prNo": 1914,
     "markdownPath": "https://raw.githubusercontent.com/nicolasassouad/ERCs/refs/heads/erc-cross-chain-event-archive/ERCS/erc-8352.md",
-    "timestamp": "2026-09-01T15:39:19.622Z"
+    "timestamp": "2026-09-02T01:35:53.027Z"
   },
   "8353": {
     "title": "Staked Weighted Verification Gate",
@@ -13534,9 +13533,9 @@
   "8355": {
     "title": "Precompiles for ML-DSA Verification",
     "status": "Draft",
-    "prNo": 12048,
-    "markdownPath": "https://raw.githubusercontent.com/shemnon/EIPs/refs/heads/shemnon/plain-ml-dsa/EIPS/eip-8355.md",
-    "timestamp": "2026-08-28T07:13:43.576Z"
+    "requires": [],
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8355.md"
   },
   "8356": {
     "title": "Purpose-Bound Third-Party Data Consent",
@@ -13679,8 +13678,6 @@
   "8369": {
     "title": "VOPS Profiles for FOCIL Eligibility",
     "status": "Draft",
-    "prNo": 12110,
-    "markdownPath": "https://raw.githubusercontent.com/soispoke/EIPs/refs/heads/codex/vops-profiles-focil/EIPS/eip-8369.md",
     "requires": [
       "1559",
       "2718",
@@ -13696,7 +13693,8 @@
       "8250",
       "8272"
     ],
-    "timestamp": "2026-09-01T15:37:38.985Z"
+    "isERC": false,
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8369.md"
   },
   "8370": {
     "title": "Inheritable Agent Mandates",
@@ -13813,7 +13811,7 @@
       "7579",
       "8004"
     ],
-    "timestamp": "2026-09-01T15:39:18.053Z"
+    "timestamp": "2026-09-02T01:35:51.638Z"
   },
   "8382": {
     "title": "Private Referable NFTs",
@@ -13860,7 +13858,7 @@
     "requires": [
       "8130"
     ],
-    "timestamp": "2026-09-01T15:37:33.377Z"
+    "timestamp": "2026-09-02T01:34:21.909Z"
   },
   "8387": {
     "title": "Stateless Accounts",
@@ -13898,16 +13896,16 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8390.md"
   },
   "8391": {
-    "title": "Execution Delegation Framework",
+    "title": "Asset Status Interface for Tokenized Assets",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1962,
-    "markdownPath": "https://raw.githubusercontent.com/F4ever/ERCs/refs/heads/master/ERCS/erc-8391.md",
+    "prNo": 1964,
+    "markdownPath": "https://raw.githubusercontent.com/econoar/ERCs/refs/heads/add-erc-asset-status/ERCS/erc-8391.md",
     "requires": [
-      "1271",
-      "5313"
+      "20",
+      "165"
     ],
-    "timestamp": "2026-09-01T15:39:16.787Z"
+    "timestamp": "2026-09-02T01:35:50.883Z"
   },
   "8393": {
     "title": "Tokenized Carbon Credits with Retirement",
@@ -13949,7 +13947,7 @@
       "7928",
       "8141"
     ],
-    "timestamp": "2026-08-27T21:21:15.818Z"
+    "timestamp": "2026-09-02T01:34:19.492Z"
   },
   "8398": {
     "title": "Portable Account Keystore",
@@ -13963,7 +13961,7 @@
       "1271",
       "6780"
     ],
-    "timestamp": "2026-08-27T21:21:15.322Z"
+    "timestamp": "2026-09-02T01:34:19.176Z"
   },
   "8399": {
     "title": "Native Account Abstraction Transactions",
@@ -13981,7 +13979,7 @@
       "7708",
       "8398"
     ],
-    "timestamp": "2026-08-27T21:21:15.447Z"
+    "timestamp": "2026-09-02T01:34:19.287Z"
   },
   "8400": {
     "title": "Advanced Account Controls",
@@ -13992,7 +13990,7 @@
       "8398",
       "8399"
     ],
-    "timestamp": "2026-08-27T21:21:15.570Z"
+    "timestamp": "2026-09-02T01:34:19.405Z"
   },
   "8402": {
     "title": "Agent Subscription Protocol",
@@ -14121,11 +14119,20 @@
     "timestamp": "2026-06-10T12:59:36.442Z"
   },
   "9999": {
-    "title": "ERC-9999",
-    "isERC": true,
-    "prNo": 1129,
-    "markdownPath": "https://raw.githubusercontent.com/aethercycle/ERCs/refs/heads/master/ERCS/erc-9999.md",
-    "timestamp": "2026-09-01T15:39:37.314Z"
+    "title": "Post-quantum-ready deposit contract",
+    "status": "Draft",
+    "prNo": 12235,
+    "markdownPath": "https://raw.githubusercontent.com/kevaundray/EIPs/refs/heads/kw/pq-deposit-contract-naive/EIPS/eip-9999.md",
+    "requires": [
+      "6110",
+      "7251",
+      "7495",
+      "7685",
+      "7688",
+      "7916",
+      "7997"
+    ],
+    "timestamp": "2026-09-02T01:34:20.491Z"
   },
   "11796": {
     "title": "WYRIWE — What You Read Is What You Execute",
@@ -14201,19 +14208,18 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-09-01T15:39:40.751Z"
+    "timestamp": "2026-09-02T01:36:12.012Z"
   },
   "0000": {
-    "title": "Ethereum Interoperability Layer Wallet Usage",
+    "title": "Custom Encoding Layout for ERC-7730",
     "status": "Draft",
     "isERC": true,
-    "prNo": 1195,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/ERCs/refs/heads/erc-eil-wallet/ERCS/erc-0000.md",
+    "prNo": 1925,
+    "markdownPath": "https://raw.githubusercontent.com/forshtat/ERCs/refs/heads/ideas-erc7730-non-abi-dispatch/ERCS/erc-0000.md",
     "requires": [
-      "4337",
-      "5792"
+      "7730"
     ],
-    "timestamp": "2026-09-01T15:39:34.281Z"
+    "timestamp": "2026-09-02T01:35:52.636Z"
   },
   "0288": {
     "title": "Secure Intents for Agent Coordination",
