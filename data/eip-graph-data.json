@@ -9404,9 +9404,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "Ancestor-Indexed BALs",
+      "title": "H3 Spatial Identity Extension for On-Chain Agents",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-8243",
@@ -10363,7 +10363,7 @@
     {
       "id": "eip-8391",
       "eipNo": "8391",
-      "title": "Asset Status Interface for Tokenized Assets",
+      "title": "Execution Delegation Framework",
       "status": "Draft",
       "isERC": true
     },
@@ -10587,14 +10587,14 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "ERC-9999",
+      "title": "Named NFT",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Custom Encoding Layout for ERC-7730",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
       "isERC": true
     },
@@ -18057,7 +18057,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-7928"
+      "target": "eip-165"
     },
     {
       "source": "eip-8244",
@@ -19265,11 +19265,11 @@
     },
     {
       "source": "eip-8391",
-      "target": "eip-20"
+      "target": "eip-1271"
     },
     {
       "source": "eip-8391",
-      "target": "eip-165"
+      "target": "eip-5313"
     },
     {
       "source": "eip-8393",
@@ -19544,8 +19544,24 @@
       "target": "eip-3076"
     },
     {
+      "source": "eip-undefined",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-undefined",
+      "target": "eip-7632"
+    },
+    {
       "source": "eip-0000",
-      "target": "eip-7730"
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
