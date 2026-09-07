@@ -69,6 +69,8 @@
 
 ## Components And States
 
+- Graph failure: contain renderer errors within the graph surface. Show a plain-language unavailable state with Browse EIPs and Try again actions; the full-page graph also offers Home. Reuse existing typography, semantic colors, spacing, and native Chakra focus/hover states. No motion or new visual system.
+
 - Buttons: primary filled blue for direct actions, secondary bordered for utility actions, ghost for low-emphasis controls. Hover changes surface or border, focus uses a blue ring.
 - Inputs: filled dark surface, visible border, placeholder subdued, focus ring blue, invalid border uses semantic error.
 - Tables: light row separators, left-aligned text, muted headers, no heavy cell grid.
@@ -145,6 +147,8 @@
 - Accessibility gate: visible focus, dark contrast tokens, native controls, and status text labels are preserved.
 
 ## Changelog
+
+- 2026-09-08: Added a contained graph error state for browsers unable to initialize graphics. Design audit: existing dark workbench styling retained, responsive wrapping actions, text explanation independent of color, keyboard-operable native links and retry button.
 
 - 2026-07-04: Added a dynamic proposal table of contents to markdown pages, with section-scoped desktop pinning below the EIP-GPT summary, vertical/diagonal trace geometry, a compact mobile contents disclosure, scroll-synced blue active state, and stable heading anchors.
 - 2026-07-04: Tightened the pinned proposal table-of-contents offset so it sits near the viewport top after the page header has scrolled away.
