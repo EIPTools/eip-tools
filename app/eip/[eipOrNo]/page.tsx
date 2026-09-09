@@ -1,5 +1,8 @@
 "use client";
 
+import { fetchProposalContent } from "@/utils/proposalContent";
+import { ProposalLoadError } from "@/components/ProposalLoadError";
+
 import NLink from "next/link";
 import { useCallback, useEffect, useState, useRef } from "react";
 import { Markdown } from "@/components/Markdown";
@@ -62,6 +65,9 @@ const EIP = ({
   const router = useTopLoaderRouter();
 
   const eipNo = extractEipNumber(eipOrNo, "eip");
+
+  const requestVersion = useRef(0);
+  const [loadError, setLoadError] = useState(false);
 
   const [markdownFileURL, setMarkdownFileURL] = useState<string>("");
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
@@ -153,69 +159,54 @@ const EIP = ({
 
   const fetchEIPData = useCallback(async () => {
     const validEIPData = getProposalDetails(validEIPs, eipNo);
-    let _isERC = true;
+    const version = ++requestVersion.current;
+    setLoadError(false);
+    setMetadataJson(undefined);
+    setMarkdown("");
+    setAiSummary("");
+    try {
+      const content = await fetchProposalContent("eip", eipNo);
+      if (version !== requestVersion.current) return;
+      const eipMarkdownRes = content.markdown;
+      const _markdownFileURL = content.markdownPath;
+      const _isERC = content.isERC;
+      setProposalPrNo(validEIPData?.prNo);
+      setProposalPrUrl(validEIPData ? getProposalPrUrl(content.isERC ? "erc" : "eip", validEIPData) : undefined);
+      setMarkdownFileURL(_markdownFileURL);
 
-    let _markdownFileURL = "";
-    let eipMarkdownRes = "";
-
-    if (validEIPData) {
-      _markdownFileURL = validEIPData.markdownPath;
-      eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
-        response.text()
-      );
-      _isERC = validEIPData.isERC ?? false;
-      setProposalPrNo(validEIPData.prNo);
-      setProposalPrUrl(
-        getProposalPrUrl(validEIPData.isERC ? "erc" : "eip", validEIPData)
-      );
-    } else {
-      _markdownFileURL = `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`;
-      eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
-        response.text()
-      );
-
-      if (eipMarkdownRes === "404: Not Found") {
-        _markdownFileURL = `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${eipNo}.md`;
-        eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
-          response.text()
-        );
-        _isERC = false;
-      }
-      setProposalPrNo(undefined);
-      setProposalPrUrl(undefined);
-    }
-    setMarkdownFileURL(_markdownFileURL);
-
-    const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
-    const parsedMetadata = convertMetadataToJson(metadata);
-    setMetadataJson({
-      ...parsedMetadata,
-      title: parsedMetadata.title || validEIPData?.title || "",
-      status: parsedMetadata.status || validEIPData?.status || "",
-      type: parsedMetadata.type || "Standards Track",
-      category:
-        parsedMetadata.category ||
-        (validEIPData?.isERC || _isERC ? "ERC" : "Core"),
-      description:
-        parsedMetadata.description ||
-        "The indexed markdown source for this proposal is unavailable.",
-      requires: parsedMetadata.requires || validEIPData?.requires || [],
-    });
-    setMarkdown(_markdown);
-    setIsERC(_isERC);
-
-    // only add to trending if it's a valid EIP
-    if (
-      eipMarkdownRes !== "404: Not Found" &&
-      process.env.NEXT_PUBLIC_DEVELOPMENT !== "true"
-    ) {
-      fetch("/api/logPageVisit", {
-        method: "POST",
-        body: JSON.stringify({ eipNo, type: "EIP" }),
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
+      const parsedMetadata = convertMetadataToJson(metadata);
+      setMetadataJson({
+        ...parsedMetadata,
+        title: parsedMetadata.title || validEIPData?.title || "",
+        status: parsedMetadata.status || validEIPData?.status || "",
+        type: parsedMetadata.type || "Standards Track",
+        category:
+          parsedMetadata.category ||
+          (validEIPData?.isERC || _isERC ? "ERC" : "Core"),
+        description:
+          parsedMetadata.description ||
+          "The indexed markdown source for this proposal is unavailable.",
+        requires: parsedMetadata.requires || validEIPData?.requires || [],
       });
+      setMarkdown(_markdown);
+      setIsERC(_isERC);
+
+      // only add to trending if it's a valid EIP
+      if (
+        eipMarkdownRes !== "404: Not Found" &&
+        process.env.NEXT_PUBLIC_DEVELOPMENT !== "true"
+      ) {
+        fetch("/api/logPageVisit", {
+          method: "POST",
+          body: JSON.stringify({ eipNo, type: "EIP" }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+      }
+    } catch {
+      if (version === requestVersion.current) setLoadError(true);
     }
   }, [eipNo]);
 
@@ -234,7 +225,9 @@ const EIP = ({
   }, [eipNo]);
 
   useEffect(() => {
-    fetchEIPData();
+    void fetchEIPData();
+    const requests = requestVersion;
+    return () => { requests.current++; };
   }, [eipNo, fetchEIPData]);
 
   // Fetch AI Summary when clicked
@@ -264,6 +257,8 @@ const EIP = ({
     }
     setIsBookmarked(!isBookmarked);
   };
+
+  if (loadError) return <ProposalLoadError onRetry={() => void fetchEIPData()} />;
 
   return (
     <Center flexDir="column" w="100%" px={{ base: 4, md: 6 }}>

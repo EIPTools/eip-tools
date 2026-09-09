@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/checkProposalSnapshots.mjs && next build",
     "start": "next start",
     "lint": "next lint",
     "eip": "tsx ./scripts/getWIPEIPsFromPRs.ts && git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts && tsx ./scripts/genEIPDependencyGraph.ts",

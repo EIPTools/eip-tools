@@ -1,3 +1,4 @@
+import { getProposalContent } from "@/utils/proposalContent.server";
 // add this to prevent the build command from static generating this page
 export const dynamic = "force-dynamic";
 
@@ -43,13 +44,15 @@ export const POST = async (request: Request) => {
   }
 
   // If not, then send EIP markdown to chatgpt api
-  const { status, markdownPath } =
+  const { status } =
     type === "RIP"
       ? validRIPs[eipNo]
       : type === "CAIP"
       ? validCAIPs[eipNo]
       : validEIPs[eipNo];
-  const markdown = await fetch(markdownPath).then((res) => res.text());
+  const content = await getProposalContent(type === "RIP" ? "rip" : type === "CAIP" ? "caip" : "eip", eipNo).catch(() => null);
+  if (!content) return Response.json({ error: "Proposal temporarily unavailable" }, { status: 503 });
+  const markdown = content.markdown;
 
   try {
     const stream = await openai.chat.completions.create({

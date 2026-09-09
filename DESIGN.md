@@ -141,12 +141,16 @@
 
 ## Slop Audit
 
+- 2026-09-09: Proposal retry state uses the existing reader surface, Inter typography, neutral semantic tokens, and secondary button. Browser inspection confirmed clear text and a labeled retry action; no raw upstream HTML is displayed.
+
 - Date: 2026-07-02. Result: pass with one accepted reference constraint.
 - Fixed tells: bright white cards, green footer border, emoji section headers, animated gradient notification underline, raw blue buttons, fixed-width detail pages, heavy table borders, old Poppins font, and raw scroll-to-top CSS.
 - Accepted constraint: Inter is retained because the user explicitly requested the same visual system as `~/blockchain/swiss-knife`.
 - Accessibility gate: visible focus, dark contrast tokens, native controls, and status text labels are preserved.
 
 ## Changelog
+
+- 2026-09-09: Added a shared proposal retry state for complete source failures while cached and bundled content keep the normal reader intact.
 
 - 2026-09-08: Added a contained graph error state for browsers unable to initialize graphics. Design audit: existing dark workbench styling retained, responsive wrapping actions, text explanation independent of color, keyboard-operable native links and retry button.
 

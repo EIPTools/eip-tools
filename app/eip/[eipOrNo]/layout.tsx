@@ -1,3 +1,4 @@
+import { getProposalContent } from "@/utils/proposalContent.server";
 import { Layout } from "@/components/Layout";
 import {
   convertMetadataToJson,
@@ -20,9 +21,8 @@ export async function generateMetadata({
     return;
   }
 
-  const eipMarkdownRes = await fetch(validEIPData.markdownPath).then(
-    (response) => response.text()
-  );
+  const content = await getProposalContent("eip", eipNo).catch(() => null);
+  const eipMarkdownRes = content?.markdown ?? "";
   const { metadata } = extractMetadata(eipMarkdownRes);
   const metadataJson = convertMetadataToJson(metadata);
 

@@ -1,7 +1,10 @@
 "use client";
 
+import { fetchProposalContent } from "@/utils/proposalContent";
+import { ProposalLoadError } from "@/components/ProposalLoadError";
+
 import NLink from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { Markdown } from "@/components/Markdown";
 import {
   Container,
@@ -59,6 +62,9 @@ const CAIP = ({
 
   const eipNo = extractEipNumber(eipOrNo, "caip");
 
+  const requestVersion = useRef(0);
+  const [loadError, setLoadError] = useState(false);
+
   const [markdownFileURL, setMarkdownFileURL] = useState<string>("");
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson>();
   const [markdown, setMarkdown] = useState<string>("");
@@ -105,42 +111,39 @@ const CAIP = ({
   const fetchEIPData = useCallback(async () => {
     const validEIPData = getProposalDetails(validCAIPs, eipNo);
 
-    let _markdownFileURL = "";
-    let eipMarkdownRes = "";
+    const version = ++requestVersion.current;
+    setLoadError(false);
+    setMetadataJson(undefined);
+    setMarkdown("");
+    setAiSummary("");
+    try {
+      const content = await fetchProposalContent("caip", eipNo);
+      if (version !== requestVersion.current) return;
+      const eipMarkdownRes = content.markdown;
+      const _markdownFileURL = content.markdownPath;
+      setProposalPrNo(validEIPData?.prNo);
+      setProposalPrUrl(validEIPData ? getProposalPrUrl("caip", validEIPData) : undefined);
+      setMarkdownFileURL(_markdownFileURL);
 
-    if (validEIPData) {
-      _markdownFileURL = validEIPData.markdownPath;
-      eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
-        response.text()
-      );
-      setProposalPrNo(validEIPData.prNo);
-      setProposalPrUrl(getProposalPrUrl("caip", validEIPData));
-    } else {
-      _markdownFileURL = `https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-${eipNo}.md`;
-      eipMarkdownRes = await fetch(_markdownFileURL).then((response) =>
-        response.text()
-      );
-      setProposalPrNo(undefined);
-      setProposalPrUrl(undefined);
-    }
-    setMarkdownFileURL(_markdownFileURL);
+      const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
+      setMetadataJson(convertMetadataToJson(metadata));
+      setMarkdown(_markdown);
 
-    const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
-    setMetadataJson(convertMetadataToJson(metadata));
-    setMarkdown(_markdown);
-
-    // only add to trending if it's a valid EIP
-    if (
-      eipMarkdownRes !== "404: Not Found" &&
-      process.env.NEXT_PUBLIC_DEVELOPMENT !== "true"
-    ) {
-      fetch("/api/logPageVisit", {
-        method: "POST",
-        body: JSON.stringify({ eipNo, type: "CAIP" }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      // only add to trending if it's a valid EIP
+      if (
+        eipMarkdownRes !== "404: Not Found" &&
+        process.env.NEXT_PUBLIC_DEVELOPMENT !== "true"
+      ) {
+        fetch("/api/logPageVisit", {
+          method: "POST",
+          body: JSON.stringify({ eipNo, type: "CAIP" }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+      }
+    } catch {
+      if (version === requestVersion.current) setLoadError(true);
     }
   }, [eipNo]);
 
@@ -159,7 +162,9 @@ const CAIP = ({
   }, [eipNo]);
 
   useEffect(() => {
-    fetchEIPData();
+    void fetchEIPData();
+    const requests = requestVersion;
+    return () => { requests.current++; };
   }, [eipNo, fetchEIPData]);
 
   // Fetch AI Summary when clicked
@@ -190,6 +195,8 @@ const CAIP = ({
     }
     setIsBookmarked(!isBookmarked);
   };
+
+  if (loadError) return <ProposalLoadError onRetry={() => void fetchEIPData()} />;
 
   return (
     <Center flexDir="column" w="100%" px={{ base: 4, md: 6 }}>

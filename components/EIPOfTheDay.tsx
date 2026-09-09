@@ -1,6 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { fetchProposalContent } from "@/utils/proposalContent";
+
+import { useCallback, useEffect, useState, useRef } from "react";
 import {
   Badge,
   Box,
@@ -68,38 +70,32 @@ export const EIPOfTheDay = () => {
   const [markdown, setMarkdown] = useState<string>("");
   const [isERC, setIsERC] = useState<boolean>(true);
 
+  const requestVersion = useRef(0);
+
   const fetchEIPData = useCallback(async () => {
-    const validEIPData = validEIPs[eipNo];
-    let _isERC = true;
+    const version = ++requestVersion.current;
+    setMetadataJson(undefined);
+    try {
+      const content = await fetchProposalContent("eip", eipNo);
+      if (version !== requestVersion.current) return;
+      const eipMarkdownRes = content.markdown;
+      const _isERC = content.isERC;
 
-    let eipMarkdownRes = "";
-
-    if (validEIPData) {
-      eipMarkdownRes = await fetch(validEIPData.markdownPath).then((response) =>
-        response.text()
-      );
-      _isERC = validEIPData.isERC ?? false;
-    } else {
-      eipMarkdownRes = await fetch(
-        `https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-${eipNo}.md`
-      ).then((response) => response.text());
-
-      if (eipMarkdownRes === "404: Not Found") {
-        eipMarkdownRes = await fetch(
-          `https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-${eipNo}.md`
-        ).then((response) => response.text());
-        _isERC = false;
-      }
+      const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
+      setMetadataJson(convertMetadataToJson(metadata));
+      setMarkdown(_markdown);
+      setIsERC(_isERC);
+    } catch {
+      // The homepage remains usable when this optional recommendation fails.
+    } finally {
+      if (version === requestVersion.current) setIsRandomBtnLoading(false);
     }
-
-    const { metadata, markdown: _markdown } = extractMetadata(eipMarkdownRes);
-    setMetadataJson(convertMetadataToJson(metadata));
-    setMarkdown(_markdown);
-    setIsERC(_isERC);
   }, [eipNo]);
 
   useEffect(() => {
-    fetchEIPData();
+    void fetchEIPData();
+    const requests = requestVersion;
+    return () => { requests.current++; };
   }, [eipNo, fetchEIPData]);
 
   useEffect(() => {
