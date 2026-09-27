@@ -3,23 +3,23 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "Wallet Pass Extension for NFTs",
+      "title": "Portable Spend Grants",
       "status": "Draft",
       "isERC": true
     },
     {
-      "id": "eip-165",
-      "eipNo": "165",
-      "title": "Standard Interface Detection",
+      "id": "eip-20",
+      "eipNo": "20",
+      "title": "Token Standard",
       "status": "Final",
       "isERC": true
     },
     {
-      "id": "eip-721",
-      "eipNo": "721",
-      "title": "Non-Fungible Token Standard",
+      "id": "eip-712",
+      "eipNo": "712",
+      "title": "Typed structured data hashing and signing",
       "status": "Final",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-1271",
@@ -29,18 +29,18 @@
       "isERC": true
     },
     {
-      "id": "eip-4361",
-      "eipNo": "4361",
-      "title": "Sign-In with Ethereum",
+      "id": "eip-7528",
+      "eipNo": "7528",
+      "title": "ETH (Native Asset) Address Convention",
       "status": "Final",
       "isERC": true
     },
     {
-      "id": "eip-4907",
-      "eipNo": "4907",
-      "title": "Rental NFT, an Extension of EIP-721",
+      "id": "eip-7702",
+      "eipNo": "7702",
+      "title": "Set Code for EOAs",
       "status": "Final",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-1",
@@ -97,13 +97,6 @@
       "title": "devp2p Forward Compatibility Requirements for Homestead",
       "status": "Final",
       "isERC": false
-    },
-    {
-      "id": "eip-20",
-      "eipNo": "20",
-      "title": "Token Standard",
-      "status": "Final",
-      "isERC": true
     },
     {
       "id": "eip-55",
@@ -221,6 +214,13 @@
       "id": "eip-162",
       "eipNo": "162",
       "title": "Initial ENS Hash Registrar",
+      "status": "Final",
+      "isERC": true
+    },
+    {
+      "id": "eip-165",
+      "eipNo": "165",
+      "title": "Standard Interface Detection",
       "status": "Final",
       "isERC": true
     },
@@ -505,11 +505,11 @@
       "isERC": false
     },
     {
-      "id": "eip-712",
-      "eipNo": "712",
-      "title": "Typed structured data hashing and signing",
+      "id": "eip-721",
+      "eipNo": "721",
+      "title": "Non-Fungible Token Standard",
       "status": "Final",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-725",
@@ -1562,6 +1562,13 @@
       "isERC": true
     },
     {
+      "id": "eip-4907",
+      "eipNo": "4907",
+      "title": "Rental NFT, an Extension of EIP-721",
+      "status": "Final",
+      "isERC": true
+    },
+    {
       "id": "eip-1914",
       "eipNo": "1914",
       "title": "Cross-Chain Event Archive",
@@ -2346,13 +2353,6 @@
       "isERC": false
     },
     {
-      "id": "eip-7702",
-      "eipNo": "7702",
-      "title": "Set Code for EOAs",
-      "status": "Final",
-      "isERC": false
-    },
-    {
       "id": "eip-7708",
       "eipNo": "7708",
       "title": "ETH transfers emit a log",
@@ -3071,6 +3071,13 @@
       "eipNo": "4353",
       "title": "Interface for Staked Tokens in NFTs",
       "status": "Stagnant",
+      "isERC": true
+    },
+    {
+      "id": "eip-4361",
+      "eipNo": "4361",
+      "title": "Sign-In with Ethereum",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -5297,13 +5304,6 @@
       "eipNo": "7527",
       "title": "Token Bound Function Oracle AMM",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-7528",
-      "eipNo": "7528",
-      "title": "ETH (Native Asset) Address Convention",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -9404,9 +9404,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -10363,7 +10363,7 @@
     {
       "id": "eip-8391",
       "eipNo": "8391",
-      "title": "Execution Delegation Framework",
+      "title": "Asset Status Interface for Tokenized Assets",
       "status": "Draft",
       "isERC": true
     },
@@ -10615,9 +10615,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "ERC-9999",
+      "title": "Post-quantum-ready deposit contract",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-11796",
@@ -10671,14 +10671,14 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Named NFT",
+      "title": "ERC-9999",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Custom Encoding Layout for ERC-7730",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
       "isERC": true
     },
@@ -10693,11 +10693,11 @@
   "links": [
     {
       "source": "eip-0",
-      "target": "eip-165"
+      "target": "eip-20"
     },
     {
       "source": "eip-0",
-      "target": "eip-721"
+      "target": "eip-712"
     },
     {
       "source": "eip-0",
@@ -10705,11 +10705,11 @@
     },
     {
       "source": "eip-0",
-      "target": "eip-4361"
+      "target": "eip-7528"
     },
     {
       "source": "eip-0",
-      "target": "eip-4907"
+      "target": "eip-7702"
     },
     {
       "source": "eip-165",
@@ -18137,7 +18137,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -19337,11 +19337,11 @@
     },
     {
       "source": "eip-8391",
-      "target": "eip-1271"
+      "target": "eip-20"
     },
     {
       "source": "eip-8391",
-      "target": "eip-5313"
+      "target": "eip-165"
     },
     {
       "source": "eip-8393",
@@ -19672,6 +19672,34 @@
       "target": "eip-8188"
     },
     {
+      "source": "eip-9999",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7916"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7997"
+    },
+    {
       "source": "eip-11796",
       "target": "eip-712"
     },
@@ -19696,20 +19724,12 @@
       "target": "eip-3076"
     },
     {
-      "source": "eip-undefined",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-undefined",
-      "target": "eip-7632"
+      "source": "eip-0000",
+      "target": "eip-4337"
     },
     {
       "source": "eip-0000",
-      "target": "eip-7730"
+      "target": "eip-5792"
     }
   ]
 }
