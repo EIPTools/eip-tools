@@ -5,6 +5,7 @@ import {
   extractEipNumber,
   extractMetadata,
   getMetadata,
+  getBaseUrl,
 } from "@/utils";
 import { validEIPs } from "@/data/validEIPs";
 import { getProposalDetails } from "@/utils/proposals";
@@ -26,14 +27,15 @@ export async function generateMetadata({
   const { metadata } = extractMetadata(eipMarkdownRes);
   const metadataJson = convertMetadataToJson(metadata);
 
-  const imageUrl = `${process.env["HOST"]}/api/og?eipNo=${eipNo}`;
-  const postUrl = `${process.env["HOST"]}/api/frame/home`;
+  const imageUrl = `${getBaseUrl()}/api/og?eipNo=${eipNo}`;
+  const postUrl = `${getBaseUrl()}/api/frame/home`;
 
   const generated = getMetadata({
     title: `${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}: ${
       validEIPData.title
     } | EIP.tools`,
-    description: metadataJson.description,
+    pathname: `/eip/${eipNo.replace(/^0+(?=\d)/, "")}`,
+    description: metadataJson.description || `${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}: ${validEIPData.title}. Read the proposal, its status and dependencies on EIP.tools.`,
     images: imageUrl,
   });
 
@@ -47,7 +49,7 @@ export async function generateMetadata({
       "fc:frame:button:1": "Search 🔎",
       "fc:frame:button:2": `📙 ${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}`,
       "fc:frame:button:2:action": "link",
-      "fc:frame:button:2:target": `${process.env["HOST"]}/eip/${eipNo}`,
+      "fc:frame:button:2:target": `${getBaseUrl()}/eip/${eipNo}`,
       "of:version": "vNext",
       "of:accepts:anonymous": "true",
       "of:image": imageUrl,
@@ -56,7 +58,7 @@ export async function generateMetadata({
       "of:button:1": "Search 🔎",
       "of:button:2": `📙 ${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}`,
       "of:button:2:action": "link",
-      "of:button:2:target": `${process.env["HOST"]}/eip/${eipNo}`,
+      "of:button:2:target": `${getBaseUrl()}/eip/${eipNo}`,
     },
   };
 }

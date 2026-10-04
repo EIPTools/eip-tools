@@ -1,10 +1,10 @@
 import { Metadata } from "next";
-import { getMetadata } from "@/utils";
+import { getBaseUrl, getMetadata } from "@/utils";
 import { Layout } from "@/components/Layout";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const imageUrl = `${process.env["HOST"]}/og/index.png?date=${Date.now()}`;
-  const postUrl = `${process.env["HOST"]}/api/frame/home`;
+  const imageUrl = `${getBaseUrl()}/og/index.png`;
+  const postUrl = `${getBaseUrl()}/api/frame/home`;
 
   const metadata = getMetadata({
     title: "Shared Bookmarks - EIP.tools",
@@ -14,6 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     ...metadata,
+    robots: { index: false, follow: true },
     other: {
       "fc:frame": "vNext",
       "fc:frame:image": imageUrl,

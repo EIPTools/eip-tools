@@ -52,6 +52,7 @@ export const getProposalListMetadata = (
   const config = proposalListMetadata[kind];
 
   return getMetadata({
+    pathname: `/${kind === "eip" ? "eips" : kind === "erc" ? "ercs" : kind === "rip" ? "rips" : "caips"}`,
     title: config.title,
     description: config.description,
     images: `${getBaseUrl()}/${config.imagePath}`,

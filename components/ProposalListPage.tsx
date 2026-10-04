@@ -41,7 +41,7 @@ export const ProposalListPage = ({
         <Container maxW="container.xl" px={0}>
           <VStack align="stretch" spacing={6}>
             <Box>
-              <Heading size={{ base: "xl", md: "2xl" }}>{title}</Heading>
+              <Heading as="h1" size={{ base: "xl", md: "2xl" }}>{title}</Heading>
               <HStack mt={2} spacing={3} flexWrap="wrap">
                 <Text color="text.secondary" fontSize="sm">
                   {description}

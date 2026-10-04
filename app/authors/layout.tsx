@@ -1,6 +1,7 @@
 import { getMetadata } from "@/utils";
 
 export const metadata = getMetadata({
+  pathname: "/authors",
   title: "Authors | EIP.Tools",
   description:
     "Browse all EIP, ERC, RIP and CAIP authors — see proposal counts, GitHub profiles, and Twitter handles.",

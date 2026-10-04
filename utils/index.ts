@@ -205,36 +205,41 @@ export const getMetadata = (_metadata: {
   title: string;
   description: string;
   images: string;
+  pathname?: string;
 }) => {
+  const baseUrl = getBaseUrl();
+  const url = _metadata.pathname ? new URL(_metadata.pathname, baseUrl).href : undefined;
+  const image = new URL(_metadata.images, baseUrl).href;
   const metadata: Metadata = {
+    metadataBase: new URL(baseUrl),
+    ...(url ? { alternates: { canonical: url } } : {}),
     title: _metadata.title,
     description: _metadata.description,
     twitter: {
       card: "summary_large_image",
       title: _metadata.title,
       description: _metadata.description,
-      images: _metadata.images,
+      images: image,
     },
     openGraph: {
       type: "website",
+      siteName: "EIP.tools",
+      url,
       title: _metadata.title,
       description: _metadata.description,
-      images: _metadata.images,
+      images: image,
     },
-    robots: "index, follow",
   };
 
   return metadata;
 };
 
+/** HOST is the configured public origin; preview deployment URLs are not canonicals. */
 export const getBaseUrl = () => {
-  const vercelUrl = process.env.NEXT_PUBLIC_VERCEL_URL || "eip.tools";
-
-  if (vercelUrl.includes("localhost")) {
-    return `http://${vercelUrl}`;
-  } else {
-    return `https://${vercelUrl}`;
-  }
+  const configured = process.env.HOST || "https://eip.tools";
+  const url = new URL(configured.includes("://") ? configured : `https://${configured}`);
+  if (!["http:", "https:"].includes(url.protocol)) throw new Error("HOST must be an HTTP(S) URL");
+  return url.origin;
 };
 
 export const getReferencedByEIPs = (

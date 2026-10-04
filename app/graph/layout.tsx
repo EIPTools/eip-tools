@@ -1,9 +1,10 @@
 import { getMetadata } from "@/utils";
 
 export const metadata = getMetadata({
+  pathname: "/graph",
   title: "EIP Dependency Graph | EIP.Tools",
   description:
-    "Visualize dependecies between EIPs & ERCs with this interactive graph.",
+    "Visualize dependencies between EIPs & ERCs with this interactive graph.",
   images: "https://eip.tools/og/graph.png",
 });
 

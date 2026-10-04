@@ -7,6 +7,8 @@ import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
 type CodeBlockProps = {
   children: string;
   language: string;
+  id?: string;
+  targetAliasId?: string;
 };
 
 const syntaxTheme = {
@@ -56,7 +58,7 @@ const syntaxTheme = {
   deleted: { color: "#F87171" },
 };
 
-export const CodeBlock: React.FC<CodeBlockProps> = ({ children, language }) => {
+export const CodeBlock: React.FC<CodeBlockProps> = ({ children, language, id, targetAliasId }) => {
   const [copied, setCopied] = useState(false);
   const code = children.replace(/^\n+/, "").replace(/\n+$/, "");
 
@@ -67,6 +69,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ children, language }) => {
 
   return (
     <Box
+      id={id}
       position="relative"
       overflow="hidden"
       rounded="lg"
@@ -98,6 +101,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({ children, language }) => {
         },
       }}
     >
+      {targetAliasId && <span id={targetAliasId} />}
       <CopyToClipboard text={code} onCopy={handleCopy}>
         <IconButton
           size="sm"

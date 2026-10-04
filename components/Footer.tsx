@@ -68,6 +68,12 @@ export const Footer = () => {
           </VStack>
 
           <VStack align={{ base: "flex-start", md: "flex-end" }} spacing={3}>
+            <HStack as="nav" aria-label="Proposal directories" spacing={4} flexWrap="wrap">
+              <Link href="/eips">EIPs</Link>
+              <Link href="/ercs">ERCs</Link>
+              <Link href="/rips">RIPs</Link>
+              <Link href="/caips">CAIPs</Link>
+            </HStack>
             <HStack spacing={4}>
               <Link
                 color="text.secondary"

@@ -5,6 +5,7 @@ import {
   extractEipNumber,
   extractMetadata,
   getMetadata,
+  getBaseUrl,
 } from "@/utils";
 import { validCAIPs } from "@/data/validCAIPs";
 import { getProposalDetails } from "@/utils/proposals";
@@ -26,12 +27,13 @@ export async function generateMetadata({
   const { metadata } = extractMetadata(eipMarkdownRes);
   const metadataJson = convertMetadataToJson(metadata);
 
-  const imageUrl = `${process.env["HOST"]}/api/og?eipNo=${eipNo}&type=CAIP`;
-  const postUrl = `${process.env["HOST"]}/api/frame/home`;
+  const imageUrl = `${getBaseUrl()}/api/og?eipNo=${eipNo}&type=CAIP`;
+  const postUrl = `${getBaseUrl()}/api/frame/home`;
 
   const generated = getMetadata({
     title: `CAIP-${eipNo}: ${validEIPData.title} | EIP.tools`,
-    description: metadataJson.description,
+    pathname: `/caip/${eipNo.replace(/^0+(?=\d)/, "")}`,
+    description: metadataJson.description || `CAIP-${eipNo}: ${validEIPData.title}. Read the proposal, its status and dependencies on EIP.tools.`,
     images: imageUrl,
   });
 
@@ -43,18 +45,18 @@ export async function generateMetadata({
       "fc:frame:post_url": postUrl,
       "fc:frame:input:text": "Enter EIP/ERC No",
       "fc:frame:button:1": "Search 🔎",
-      "fc:frame:button:2": `📙 ${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}`,
+      "fc:frame:button:2": `📙 CAIP-${eipNo}`,
       "fc:frame:button:2:action": "link",
-      "fc:frame:button:2:target": `${process.env["HOST"]}/eip/${eipNo}`,
+      "fc:frame:button:2:target": `${getBaseUrl()}/caip/${eipNo}`,
       "of:version": "vNext",
       "of:accepts:anonymous": "true",
       "of:image": imageUrl,
       "of:post_url": postUrl,
       "of:input:text": "Enter EIP/ERC No",
       "of:button:1": "Search 🔎",
-      "of:button:2": `📙 ${validEIPData.isERC ? "ERC" : "EIP"}-${eipNo}`,
+      "of:button:2": `📙 CAIP-${eipNo}`,
       "of:button:2:action": "link",
-      "of:button:2:target": `${process.env["HOST"]}/eip/${eipNo}`,
+      "of:button:2:target": `${getBaseUrl()}/caip/${eipNo}`,
     },
   };
 }

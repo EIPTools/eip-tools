@@ -8,6 +8,10 @@
     "build": "node scripts/checkProposalSnapshots.mjs && next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "tsx --test scripts/proposalContent.test.ts scripts/seo.test.ts",
+    "test:markdown": "TSX_TSCONFIG_PATH=scripts/tsconfig.markdown-test.json node --import tsx --import ./scripts/register-markdown-test.mjs --test scripts/markdown.ssr.test.tsx",
+    "test:seo": "node --test scripts/seo.rendered.test.mjs scripts/seo.discovery.test.mjs",
+    "test:seo:browser": "node --test scripts/seo.browser.test.mjs scripts/seo.heading.browser.test.mjs scripts/seo.article.browser.test.mjs",
     "eip": "tsx ./scripts/getWIPEIPsFromPRs.ts && git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts && tsx ./scripts/genEIPDependencyGraph.ts",
     "gen-graph": "tsx ./scripts/genEIPDependencyGraph.ts"
   },
@@ -47,6 +51,7 @@
     "react-syntax-highlighter": "^15.6.1",
     "rehype-katex": "^7.0.1",
     "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "three": "^0.172.0",
@@ -57,6 +62,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@types/d3": "^7.4.3",
     "@types/katex": "^0.16.7",
     "@types/node": "^20.17.23",
