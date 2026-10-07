@@ -7,9 +7,12 @@
   },
   "7559": {
     "title": "RIP Purpose and Guidelines",
-    "status": "Living",
     "prNo": 2,
-    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/RIP_1/RIPS/rip-7559.md"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/e0ce6e9614d5bf152df9f34aee361b2456b3c752/RIPS/rip-7559.md",
+    "prState": "closed",
+    "prHeadSha": "e0ce6e9614d5bf152df9f34aee361b2456b3c752",
+    "status": "Living",
+    "timestamp": "2026-10-07T18:01:01.038Z"
   },
   "7560": {
     "title": "Native Account Abstraction",
@@ -49,10 +52,12 @@
   },
   "7724": {
     "title": "Raise gas costs of hash functions",
-    "status": "Draft",
     "prNo": 26,
-    "markdownPath": "https://raw.githubusercontent.com/Eikix/RIPs/refs/heads/rip_7667/RIPS/rip-7724.md",
-    "timestamp": "2026-01-28T05:47:02.247Z"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/a9e645b68d2f2bb740946c8f43b158978cec131d/RIPS/rip-7724.md",
+    "prState": "closed",
+    "prHeadSha": "a9e645b68d2f2bb740946c8f43b158978cec131d",
+    "status": "Draft",
+    "timestamp": "2026-10-07T18:01:01.421Z"
   },
   "7728": {
     "title": "Precompile for L1SLOAD",
@@ -84,18 +89,13 @@
     "requires": [],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-7767.md"
   },
-  "7777": {
-    "title": "Cross Rollup Contingent Transactions",
-    "status": "Draft",
-    "prNo": 40,
-    "markdownPath": "https://raw.githubusercontent.com/polymerdao/RIPs/bo/cross-contigency/RIPS/rip-7777.md"
-  },
   "7789": {
     "title": "Cross Rollup Contingent Transactions",
-    "status": "Draft",
     "prNo": 40,
-    "markdownPath": "https://raw.githubusercontent.com/polymerdao/RIPs/refs/heads/bo/cross-contigency/RIPS/rip-7789.md",
-    "timestamp": "2026-10-07T02:50:36.151Z"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/refs/pull/40/head/RIPS/rip-7789.md",
+    "prState": "open",
+    "status": "Draft",
+    "timestamp": "2026-10-07T18:01:00.656Z"
   },
   "7810": {
     "title": "RIP Purpose and Guidelines",
@@ -139,10 +139,11 @@
   },
   "8031": {
     "title": "MEVless Protocol",
-    "status": "Draft",
     "prNo": 75,
-    "markdownPath": "https://raw.githubusercontent.com/Lawliet-Chan/RIPs/refs/heads/mevless/RIPS/rip-8031.md",
-    "timestamp": "2026-10-07T02:50:35.495Z"
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/refs/pull/75/head/RIPS/rip-8031.md",
+    "prState": "open",
+    "status": "Draft",
+    "timestamp": "2026-10-07T18:01:00.092Z"
   },
   "0000": {
     "title": "Native Account Abstraction RPC methods",
@@ -151,22 +152,5 @@
       "7560"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ethereum/RIPs/master/RIPS/rip-0000.md"
-  },
-  "0001": {
-    "title": "System Events for Native Account Abstraction",
-    "status": "Draft",
-    "prNo": 65,
-    "markdownPath": "https://raw.githubusercontent.com/eth-infinitism/RIPs/refs/heads/create_rip_aa_system_logs/RIPS/rip-0001.md",
-    "requires": [
-      "7560"
-    ],
-    "timestamp": "2025-05-26T04:54:07.503Z"
-  },
-  "undefined": {
-    "title": "MEVless Protocol",
-    "status": "Draft",
-    "prNo": 75,
-    "markdownPath": "https://raw.githubusercontent.com/Lawliet-Chan/RIPs/refs/heads/mevless/RIPS/rip-8031.md",
-    "timestamp": "2026-10-06T17:28:37.252Z"
   }
 }

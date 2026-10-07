@@ -109,13 +109,14 @@
   },
   "24": {
     "title": "Asset Reference for the Cosmos Asset Namespace",
-    "status": "Draft",
     "prNo": 111,
-    "markdownPath": "https://raw.githubusercontent.com/shapeshift/CAIPs/refs/heads/master/CAIPs/caip-24.md",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/pull/111/head/CAIPs/caip-24.md",
+    "prState": "open",
+    "status": "Draft",
     "requires": [
       "19"
     ],
-    "timestamp": "2026-10-07T02:50:40.302Z"
+    "timestamp": "2026-10-07T18:01:04.755Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -200,14 +201,15 @@
   },
   "95": {
     "title": "Account Address for the Hive namespace",
-    "status": "Draft",
     "prNo": 95,
-    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/pull/95/head/CAIPs/caip-95.md",
+    "prState": "open",
+    "status": "Draft",
     "requires": [
       "10",
       "94"
     ],
-    "timestamp": "2026-10-07T02:50:40.351Z"
+    "timestamp": "2026-10-07T18:01:04.706Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -421,12 +423,6 @@
     ],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-316.md"
   },
-  "317": {
-    "title": "URI Scheme for CAIP identifiers",
-    "status": "Draft",
-    "prNo": 322,
-    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/caip317/uri-scheme-caip/CAIPs/caip-317.md"
-  },
   "319": {
     "title": "Wallet Notification JSON-RPC Method",
     "status": "Draft",
@@ -450,9 +446,10 @@
   },
   "322": {
     "title": "URI Scheme for CAIP identifiers",
-    "status": "Draft",
     "prNo": 322,
-    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/heads/caip317/uri-scheme-caip/CAIPs/caip-322.md",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/pull/322/head/CAIPs/caip-322.md",
+    "prState": "open",
+    "status": "Draft",
     "requires": [
       "2",
       "10",
@@ -462,7 +459,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2026-10-07T02:50:37.195Z"
+    "timestamp": "2026-10-07T18:01:01.687Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -508,20 +505,22 @@
   },
   "369": {
     "title": "Wallet Session Property for Personal Information",
-    "status": "Draft",
     "prNo": 369,
-    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/wallet-session-personal-info/CAIPs/caip-369.md",
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/pull/369/head/CAIPs/caip-369.md",
+    "prState": "open",
+    "status": "Draft",
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2026-10-07T02:50:36.557Z"
+    "timestamp": "2026-10-07T18:01:01.060Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
-    "status": "Draft",
     "prNo": 372,
-    "markdownPath": "https://raw.githubusercontent.com/pedrouid/CAIPs/refs/heads/caip372-wallet-info/CAIPs/caip-372.md",
-    "timestamp": "2026-10-07T02:50:36.496Z"
+    "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/pull/372/head/CAIPs/caip-372.md",
+    "prState": "open",
+    "status": "Draft",
+    "timestamp": "2026-10-07T18:01:00.828Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",
@@ -559,25 +558,5 @@
       "19"
     ],
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/main/CAIPs/caip-390.md"
-  },
-  "000": {
-    "title": "Binary serialization of blockchain IDs and addresses",
-    "status": "Draft",
-    "prNo": 350,
-    "markdownPath": "https://raw.githubusercontent.com/0xteddybear/CAIPs/CAIP-X-InteroperableAddress-binary-specification/CAIPs/caip-000.md",
-    "requires": [
-      "2"
-    ]
-  },
-  "undefined": {
-    "title": "Account Address for the Hive namespace",
-    "status": "Draft",
-    "prNo": 95,
-    "markdownPath": "https://raw.githubusercontent.com/stoodkev/CAIPs/refs/heads/hive/account/CAIPs/caip-95.md",
-    "requires": [
-      "10",
-      "94"
-    ],
-    "timestamp": "2026-10-06T17:28:40.793Z"
   }
 }
