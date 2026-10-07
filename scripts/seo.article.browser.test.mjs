@@ -58,10 +58,10 @@ test('/eip/7944: unavailable numeric route never hydrates the renumbered proposa
   try {
     await context.route('**/*', route => new URL(route.request().url()).origin === new URL(origin).origin ? route.continue() : route.abort('failed'));
     const page = await context.newPage();
-    await page.goto(`${origin}/eip/7944`, { waitUntil: 'networkidle', timeout: 120000 });
-    const unavailable = page.getByRole('alert').filter({ hasText: 'This proposal is temporarily unavailable' });
-    await unavailable.waitFor();
-    assert.match(await unavailable.innerText(), /This proposal is temporarily unavailable/);
+    const response = await page.goto(`${origin}/eip/7944`, { waitUntil: 'networkidle', timeout: 120000 });
+    assert.equal(response.status(), 404);
+    assert.match(await page.locator('body').innerText(), /404/);
+    assert.match(await page.locator('meta[name="robots"]').getAttribute('content'), /noindex/);
     assert.equal(await page.locator('article').count(), 0);
     assert.ok(!(await page.locator('body').innerText()).includes('Renumbered to'));
     assert.ok(!(await page.locator('body').innerText()).includes('Proposers and builders can currently permute'));

@@ -8,9 +8,9 @@
     "build": "node scripts/checkProposalSnapshots.mjs && next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "tsx --test scripts/proposalContent.test.ts scripts/seo.test.ts scripts/proposalRedirects.test.ts",
+    "test": "tsx --test scripts/proposalContent.test.ts scripts/seo.test.ts scripts/proposalRedirects.test.ts scripts/proposalReader.test.ts",
     "test:markdown": "TSX_TSCONFIG_PATH=scripts/tsconfig.markdown-test.json node --import tsx --import ./scripts/register-markdown-test.mjs --test scripts/markdown.ssr.test.tsx",
-    "test:seo": "node --test scripts/seo.rendered.test.mjs scripts/seo.discovery.test.mjs scripts/seo.redirects.test.mjs",
+    "test:seo": "node --test scripts/seo.rendered.test.mjs scripts/seo.discovery.test.mjs scripts/seo.redirects.test.mjs scripts/proposalReader.http.test.mjs",
     "test:seo:browser": "node --test scripts/seo.browser.test.mjs scripts/seo.heading.browser.test.mjs scripts/seo.article.browser.test.mjs",
     "eip": "tsx ./scripts/getWIPEIPsFromPRs.ts && git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts && tsx ./scripts/genEIPDependencyGraph.ts",
     "gen-graph": "tsx ./scripts/genEIPDependencyGraph.ts"

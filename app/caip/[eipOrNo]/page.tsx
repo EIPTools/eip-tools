@@ -1,9 +1,8 @@
 import Reader from "./reader";
-import { extractEipNumber } from "@/utils";
-import { getProposalContent } from "@/utils/proposalContent.server";
+import { getProposalContent, requireProposalReader } from "@/utils/proposalContent.server";
 
 export default async function ProposalPage({ params }: { params: { eipOrNo: string } }) {
-  const number = extractEipNumber(params.eipOrNo, "caip");
+  const { number } = requireProposalReader("caip", params.eipOrNo);
   const initialContent = await getProposalContent("caip", number).catch(() => undefined);
   return <Reader key={number} params={params} initialContent={initialContent} />;
 }

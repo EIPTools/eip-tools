@@ -1,11 +1,28 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { unstable_cache } from "next/cache";
+import { notFound } from "next/navigation";
 import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
 import { validCAIPs } from "@/data/validCAIPs";
 import { getProposalDetails } from "@/utils/proposals";
 import { fetchRemoteMarkdown, githubSource, isProposalMarkdown, resolveProposalSource, type ProposalContent, type ProposalKind } from "./proposalContent";
+
+export function getIndexedProposal(kind: ProposalKind, number: string) {
+  if (!/^\d{1,12}$/.test(number)) return undefined;
+  const index = kind === "rip" ? validRIPs : kind === "caip" ? validCAIPs : validEIPs;
+  return getProposalDetails(index, number);
+}
+
+// Decide existence from the checked-in index, never from a failing upstream.
+// Synchronous layout/metadata guards run before any reader content can stream.
+export function requireProposalReader(kind: ProposalKind, identifier: string) {
+  const match = identifier.match(new RegExp(`^(?:${kind}-(\\d{1,12})(?:\\.md)?|(\\d{1,12}))$`));
+  const number = match?.[1] ?? match?.[2];
+  const proposal = number ? getIndexedProposal(kind, number) : undefined;
+  if (!number || !proposal) notFound();
+  return { number, proposal };
+}
 
 // Cache only validated successes. Throwing on refresh failure preserves Next's
 // last successful value; bundled fallbacks never replace fresher cached content.

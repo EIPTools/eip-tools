@@ -31,7 +31,7 @@ test('old numeric route never serves the renumbered proposal', async () => {
   assert.ok(!body.includes('Proposers and builders can currently permute'));
   assert.ok(!body.includes('Renumbered to'));
   const api = await fetch(`${origin}/api/proposals/eip/7944`);
-  assert.equal(api.status, 503);
+  assert.equal(api.status, 404);
 });
 
 test('proposal Markdown is present in the initial HTML, not just the client fetch', async () => {

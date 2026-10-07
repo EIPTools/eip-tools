@@ -1,4 +1,4 @@
-import { getProposalContent } from "@/utils/proposalContent.server";
+import { getProposalContent, getIndexedProposal } from "@/utils/proposalContent.server";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -7,6 +7,9 @@ export async function GET(_request: Request, { params }: { params: { kind: strin
   const { kind, number } = params;
   if (!["eip", "rip", "caip"].includes(kind) || !/^\d{1,12}$/.test(number)) {
     return Response.json({ error: "Invalid proposal" }, { status: 400 });
+  }
+  if (!getIndexedProposal(kind as "eip" | "rip" | "caip", number)) {
+    return Response.json({ error: "Proposal not found" }, { status: 404 });
   }
   try {
     const content = await getProposalContent(kind as "eip" | "rip" | "caip", number);

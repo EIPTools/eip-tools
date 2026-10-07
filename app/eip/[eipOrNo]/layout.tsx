@@ -1,26 +1,18 @@
-import { getProposalContent } from "@/utils/proposalContent.server";
+import { getProposalContent, requireProposalReader } from "@/utils/proposalContent.server";
 import { Layout } from "@/components/Layout";
 import {
   convertMetadataToJson,
-  extractEipNumber,
   extractMetadata,
   getMetadata,
   getBaseUrl,
 } from "@/utils";
-import { validEIPs } from "@/data/validEIPs";
-import { getProposalDetails } from "@/utils/proposals";
 
 export async function generateMetadata({
   params: { eipOrNo },
 }: {
   params: { eipOrNo: string };
 }) {
-  const eipNo = extractEipNumber(eipOrNo, "eip");
-  const validEIPData = getProposalDetails(validEIPs, eipNo);
-
-  if (!validEIPData) {
-    return;
-  }
+  const { number: eipNo, proposal: validEIPData } = requireProposalReader("eip", eipOrNo);
 
   const content = await getProposalContent("eip", eipNo).catch(() => null);
   const eipMarkdownRes = content?.markdown ?? "";
@@ -63,6 +55,7 @@ export async function generateMetadata({
   };
 }
 
-export default function EIPLayout({ children }: { children: React.ReactNode }) {
+export default function EIPLayout({ children, params }: { children: React.ReactNode; params: { eipOrNo: string } }) {
+  requireProposalReader("eip", params.eipOrNo);
   return <Layout>{children}</Layout>;
 }
