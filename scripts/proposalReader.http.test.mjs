@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { readFileSync } from 'node:fs';
+const obsolete = JSON.parse(readFileSync(new URL('./fixtures/obsolete-proposal-index.json', import.meta.url), 'utf8'));
 
 const origin = process.env.SEO_TEST_ORIGIN || 'http://127.0.0.1:4317';
 for (const path of [
-  ...['8401', '363', '7875', '7953', '7559', '7759', '7212', '7944'].map(n => `/eip/${n}`),
+  ...['8401', '363', '7875', '7953', '7559', '7759', '7212', '7944', ...obsolete.map(fixture => fixture.old)].map(n => `/eip/${n}`),
   '/rip/999999999999', '/caip/999999999999',
   '/eip/nope', '/rip/7212junk', '/caip/2junk', '/eip/constructor',
   '/eip/1234567890123', '/eip/eip-8401.md',
@@ -14,7 +16,7 @@ for (const path of [
     assert.match(await response.text(), /<meta name="robots" content="[^"]*noindex/);
   });
 }
-for (const path of ['/eip/4337', '/rip/7212', '/caip/2', '/eip/010101']) {
+for (const path of ['/eip/4337', '/rip/7212', '/caip/2', '/eip/010101', ...obsolete.map(fixture => `/eip/${fixture.new}`)]) {
   test(`${path} remains HTTP 200 with a numeric canonical`, async () => {
     const response = await fetch(`${origin}${path}`);
     assert.equal(response.status, 200);

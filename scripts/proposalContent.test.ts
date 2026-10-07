@@ -3,6 +3,8 @@ import { test } from "node:test";
 import { fetchRemoteMarkdown, githubSource, isProposalMarkdown } from "../utils/proposalContent";
 import * as sources from "../utils/proposalContent";
 import { validEIPs } from "../data/validEIPs";
+import obsoleteFixtures from "./fixtures/obsolete-proposal-index.json";
+import type { ValidEIPs } from "../types";
 import * as generator from "./getWIPEIPsFromPRs";
 import * as indexer from "./fetchValidEIPs";
 import { getProposalContent, readBundledMarkdown } from "../utils/proposalContent.server";
@@ -226,6 +228,98 @@ test("index refresh removes merged old IDs and preserves current official entrie
   assert.deepEqual(merged["7956"], official);
   const reused = { title: "Real reused proposal", markdownPath: url.replace("8130", "7944") };
   assert.deepEqual(indexer.mergeIndexData({ "7944": reused, "7956": official }, generated, removed)["7944"], reused);
+});
+
+test("index refresh removes an obsolete active ID when the sole current file is validated and already indexed for that PR despite a changed title", async () => {
+  const old = { title: "Old title", prNo: 99, markdownPath: url.replace("8130", "8888") };
+  const current = { title: "Keystore Accounts", prNo: 99, markdownPath: url };
+  const removed = new Set<string>();
+  const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+    existing: { "8888": old, "8130": current }, open: async () => [],
+    pr: async () => ({ prData: { state: "open", merged: false } }),
+    files: async () => [{ status: "added", filename: "EIPS/eip-8130.md", patch: "+title: Keystore Accounts" }],
+    markdown: async source => { if (source.endsWith("eip-8888.md")) throw new Error("obsolete file"); return markdown; },
+    onRemove: key => removed.add(key),
+  });
+  assert.deepEqual(Array.from(removed), ["8888"]);
+  const merged = indexer.mergeIndexData({ "8888": old, "8130": current }, generated, removed);
+  assert.equal(merged["8888"], undefined);
+  assert.equal(merged["8130"].title, current.title);
+});
+
+test("index refresh never removes history before replacement Markdown validation", async () => {
+  for (const merged of [false, true]) for (const body of [new Error("offline"), error, markdown.replace("8130", "20")]) {
+    const old = { title: "Keystore Accounts", prNo: 99, markdownPath: url.replace("8130", "8888") };
+    const removed = new Set<string>();
+    const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+      existing: { "8888": old }, open: async () => [],
+      pr: async () => ({ prData: { state: merged ? "closed" : "open", merged } }),
+      files: async () => [{ status: "renamed", previous_filename: "EIPS/eip-8888.md", filename: "EIPS/eip-8130.md" }],
+      markdown: async () => { if (body instanceof Error) throw body; return body; },
+      onRemove: key => removed.add(key),
+    });
+    assert.deepEqual(Array.from(removed), []);
+    assert.deepEqual(indexer.mergeIndexData({ "8888": old }, generated, removed), { "8888": old });
+  }
+});
+
+for (const fixture of obsoleteFixtures) {
+  test(`verified ${fixture.repo} PR #${fixture.pr} retires ${fixture.old} and preserves ${fixture.new}`, async () => {
+    const removed = new Set<string>();
+    const existing = fixture.existing as unknown as ValidEIPs;
+    const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: fixture.repo,
+      folderName: fixture.repo === "ERCs" ? "ERCS" : "EIPS", filePrefix: fixture.repo === "ERCs" ? "erc" : "eip", isERC: fixture.repo === "ERCs" }, {
+      existing, open: async () => [], pr: async () => ({ prData: fixture.prData }), files: async () => fixture.files,
+      markdown: async source => {
+        assert.equal(githubSource(source).file, githubSource(existing[fixture.new].markdownPath).file);
+        return fixture.markdown;
+      },
+      onRemove: key => removed.add(key),
+    });
+    assert.ok(removed.has(fixture.old));
+    const merged = indexer.mergeIndexData(existing, generated, removed);
+    assert.equal(merged[fixture.old], undefined);
+    assert.equal(merged[fixture.new].title, existing[fixture.new].title);
+    if (!existing[fixture.new].prNo) assert.deepEqual(merged[fixture.new], existing[fixture.new]);
+  });
+}
+
+test("checked-in index excludes the 12 verified obsolete IDs and retains their current proposals", () => {
+  for (const fixture of obsoleteFixtures) {
+    assert.equal(validEIPs[fixture.old], undefined, `obsolete ${fixture.old} still indexed`);
+    assert.equal(validEIPs[fixture.new].title, (fixture.existing as unknown as ValidEIPs)[fixture.new].title);
+  }
+});
+
+test("duplicate cleanup declines ambiguous PRs, missing index identity, surviving old files, and unavailable replacement content", async () => {
+  const old = { title: "Old title", prNo: 99, markdownPath: url.replace("8130", "8888") };
+  const current = { title: "Keystore Accounts", prNo: 99, markdownPath: url };
+  const added = { status: "added", filename: "EIPS/eip-8130.md", patch: "+title: Keystore Accounts" };
+  for (const scenario of [
+    { current, files: [added] }, // A still-valid old source is not obsolete.
+    { current, files: [added, { ...added, filename: "EIPS/eip-8131.md", patch: "+title: Other" }] },
+    { current: undefined, files: [added] },
+    { current: { ...current, prNo: 100 }, files: [added] },
+    { current: { ...current, markdownPath: url.replace("EIPs", "ERCs") }, files: [added] },
+    { current: { ...current, prNo: undefined }, files: [added] },
+    { current, files: [added, { status: "modified", filename: "EIPS/eip-8888.md" }] },
+    { current, files: [added], invalid: true },
+    { current, files: [added], unavailable: true },
+    { current, files: [added], lifecycleOutage: true },
+    { current, files: [added], filesOutage: true },
+  ]) {
+    const removed = new Set<string>();
+    await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+      existing: { "8888": old, ...(scenario.current ? { "8130": scenario.current } : {}) }, open: async () => [],
+      pr: async () => { if (scenario.lifecycleOutage) throw new Error("offline"); return { prData: { state: "open", merged: false } }; },
+      files: async () => { if (scenario.filesOutage) throw new Error("offline"); return scenario.files; },
+      markdown: async source => {
+        if (scenario.unavailable) throw new Error("offline");
+        return scenario.invalid ? error : markdown.replace("8130", githubSource(source).file.match(/-(\d+)\.md$/)![1]);
+      }, onRemove: key => removed.add(key),
+    });
+    assert.deepEqual(Array.from(removed), []);
+  }
 });
 
 test("runtime rejects cross-number source resolution before the next index refresh", async () => {

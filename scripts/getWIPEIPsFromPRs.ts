@@ -233,13 +233,16 @@ export async function fetchDataFromPRs({ orgName, repo, folderName, filePrefix, 
       ]);
       const pattern = new RegExp(`^${folderName}/${filePrefix}-(\\d+)\\.md$`);
       const candidates = new Map<string, ValidEIPs[string]>();
+      const pendingRemovals = new Map<string, string>();
+      const validated = new Set<string>();
       for (const [key, proposal] of Object.entries(existing)) {
         if (proposal.prNo !== prNo || githubSource(proposal.markdownPath).repo !== repo) continue;
         const source = proposalSourceFromPR(kind, proposal, prData);
         const reconciled = reconcilePRFile(source, files);
         const finalKey = githubSource(reconciled.markdownPath).file.match(pattern)?.[1];
-        if (source.prState === "merged" || (finalKey && finalKey !== key)) loaders.onRemove?.(key);
-        if (source.prState === "merged" && proposal.prState !== "merged" && !hasPRFileEvidence(source, files)) continue;
+        const proven = hasPRFileEvidence(source, files);
+        if (finalKey && proven && (source.prState === "merged" || finalKey !== key)) pendingRemovals.set(key, finalKey);
+        if (source.prState === "merged" && proposal.prState !== "merged" && !proven) continue;
         if (finalKey) candidates.set(finalKey, reconciled as ValidEIPs[string]);
       }
       for (const file of files) {
@@ -258,8 +261,32 @@ export async function fetchDataFromPRs({ orgName, repo, folderName, filePrefix, 
           if (!isProposalMarkdown(markdown, source.markdownPath)) throw new Error("Invalid PR proposal Markdown");
           const { title, status, requires } = convertMetadataToJson(extractMetadata(markdown).metadata);
           result[key] = { ...source, title, status, requires, timestamp: new Date().toISOString() };
+          validated.add(key);
         } catch (error: any) {
           console.warn(`Could not refresh ${repo} PR #${prNo}, proposal ${key}: ${error.message}`);
+        }
+      }
+      for (const [oldKey, currentKey] of Array.from(pendingRemovals)) {
+        if (validated.has(currentKey)) loaders.onRemove?.(oldKey);
+      }
+      // A changed title is not rename evidence. Retire a duplicate only when
+      // this exact PR has one current proposal file, that file was validated,
+      // and the index already identifies it as this PR's current proposal.
+      const currentFiles = files.filter(file => pattern.test(file.filename) && file.status !== "removed");
+      if (currentFiles.length === 1 && ["added", "renamed"].includes(currentFiles[0].status)) {
+        const file = currentFiles[0].filename;
+        const key = file.match(pattern)![1];
+        const indexed = existing[key];
+        const samePR = indexed?.prNo === prNo && githubSource(indexed.markdownPath).repo === repo;
+        const official = indexed && !indexed.prNo && prData.merged === true &&
+          githubSource(indexed.markdownPath).owner === orgName && githubSource(indexed.markdownPath).repo === repo;
+        if (validated.has(key) && (samePR || official) && githubSource(indexed.markdownPath).file === file) {
+          for (const [oldKey, proposal] of Object.entries(existing)) {
+            if (oldKey !== key && !validated.has(oldKey) && proposal.prNo === prNo && githubSource(proposal.markdownPath).repo === repo &&
+              !files.some(candidate => candidate.filename === githubSource(proposal.markdownPath).file && candidate.status !== "removed")) {
+              loaders.onRemove?.(oldKey);
+            }
+          }
         }
       }
     } catch (error: any) {

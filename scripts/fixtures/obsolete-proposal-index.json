@@ -1,0 +1,578 @@
+[
+  {
+    "old": "8385",
+    "new": "8386",
+    "repo": "EIPs",
+    "pr": 12218,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "740c29b43baddaf7607bb0f5a2c59dca0b96702f"
+      }
+    },
+    "existing": {
+      "8385": {
+        "title": "Transaction Events View",
+        "status": "Draft",
+        "prNo": 12218,
+        "markdownPath": "https://raw.githubusercontent.com/chunter-cb/EIPs/refs/heads/eip-transaction-events-view/EIPS/eip-8385.md",
+        "requires": [
+          "8130"
+        ],
+        "timestamp": "2026-08-21T12:19:13.697Z"
+      },
+      "8386": {
+        "title": "Transaction Events View",
+        "status": "Draft",
+        "prNo": 12218,
+        "markdownPath": "https://raw.githubusercontent.com/chunter-cb/EIPs/refs/heads/eip-transaction-events-view/EIPS/eip-8386.md",
+        "requires": [
+          "8130"
+        ],
+        "timestamp": "2026-10-07T02:50:54.852Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "EIPS/eip-8386.md",
+        "status": "added",
+        "patch": "+title: Transaction Events View"
+      }
+    ],
+    "markdown": "---\neip: 8386\ntitle: Transaction Events View\ndescription: Exposes the current transaction's emitted events through the EIP-8130 Transaction Context precompile, enabling in-phase outcome assertions\nauthor: Chris Hunter (@chunter-cb) <chris.hunter@coinbase.com>\ndiscussions-to: https://ethereum-magicians.org/t/eip-8386-transaction-events-view/29472\nstatus: Draft\ntype: Standards Track\ncategory: Core\ncreated: 2026-08-21\nrequires: 8130\n---\n\n## Abstract\n\nThis proposal extends the [EIP-8130](./eip-8130.md) Transaction Context precompile with read-only views\nover the events emitted so far in the current transaction. Combined with EIP-8130's existing call-phase\natomicity, this enables **outcome assertions**: an ordinary call placed at the end of a protected phase\nreads the transaction's events (and any trusted contract state), and reverts if the outcome violates the\nsigner's expectations, rolling back exactly that phase. No opcodes, transaction fields, statuses, or\nrevert semantics are added; clients expose a list they already maintain for the receipt.\n\n## Motivation\n\nSimulation can be misleading: previews omit runtime effects su"
+  },
+  {
+    "old": "1914",
+    "new": "8352",
+    "repo": "ERCs",
+    "pr": 1914,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "8598e750efda8b51d228b92b66ee79cc8cc6e710"
+      }
+    },
+    "existing": {
+      "1914": {
+        "title": "Cross-Chain Event Archive",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1914,
+        "markdownPath": "https://raw.githubusercontent.com/nicolasassouad/ERCs/refs/heads/erc-cross-chain-event-archive/ERCS/erc-1914.md",
+        "timestamp": "2026-07-28T01:16:14.281Z"
+      },
+      "8352": {
+        "title": "Cross-Chain Event Archive",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1914,
+        "markdownPath": "https://raw.githubusercontent.com/nicolasassouad/ERCs/refs/heads/erc-cross-chain-event-archive/ERCS/erc-8352.md",
+        "timestamp": "2026-10-07T02:52:34.505Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8352.md",
+        "status": "added",
+        "patch": "+title: Cross-Chain Event Archive"
+      },
+      {
+        "filename": "assets/erc-8352/EventArchive.sol",
+        "status": "added",
+        "patch": ""
+      },
+      {
+        "filename": "assets/erc-8352/README.md",
+        "status": "added",
+        "patch": ""
+      },
+      {
+        "filename": "assets/erc-8352/interfaces/IEventArchive.sol",
+        "status": "added",
+        "patch": ""
+      },
+      {
+        "filename": "assets/erc-8352/interfaces/IEventArchiveWriter.sol",
+        "status": "added",
+        "patch": ""
+      }
+    ],
+    "markdown": "---\neip: 8352\ntitle: Cross-Chain Event Archive\ndescription: Minimal envelope for recording, on an EVM chain, events that occurred on another EVM chain.\nauthor: Nicolas Assouad (@nicolasassouad)\ndiscussions-to: https://ethereum-magicians.org/t/erc-8352-cross-chain-event-archive/28271\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-07-27\n---\n\n## Abstract\n\nThis ERC defines a minimal envelope for recording, on an EVM chain, events that occurred on another EVM chain. It standardizes a single `EventArchived` log format carrying a monotonic `version`, an event identifier, and view functions to check whether a given source event has been archived and at which version. Corrections to an erroneous record are expressed as higher-versioned records under the same identifier. One optional extension adds a push-based write function. How archived records are produced, transported, or authorized is out of scope, so a single indexer can ingest cross-chain event history from any conforming contract without knowing its write path.\n\n## Motivation"
+  },
+  {
+    "old": "1713",
+    "new": "8245",
+    "repo": "ERCs",
+    "pr": 1713,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "794e0f3a4067544ad01a1f52f94165c57dfbb5a4"
+      }
+    },
+    "existing": {
+      "1713": {
+        "title": "Permissioned Vault Registrar Interface",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1713,
+        "markdownPath": "https://raw.githubusercontent.com/MiguelSchneider/ERCs/refs/heads/master/ERCS/erc-1713.md",
+        "requires": [
+          "20",
+          "712",
+          "1271"
+        ],
+        "timestamp": "2026-05-01T00:16:53.858Z"
+      },
+      "8245": {
+        "title": "Permissioned Vault Registrar",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1713,
+        "markdownPath": "https://raw.githubusercontent.com/MiguelSchneider/ERCs/refs/heads/master/ERCS/erc-8245.md",
+        "requires": [
+          "20",
+          "712",
+          "1271"
+        ],
+        "timestamp": "2026-10-07T02:52:43.533Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8245.md",
+        "status": "added",
+        "patch": "+title: Permissioned Vault Registrar"
+      }
+    ],
+    "markdown": "---\neip: 8245\ntitle: Permissioned Vault Registrar\ndescription: Interface for registering investor-bound protocol vaults under shared compliance identities via EIP-712 signed authorization.\nauthor: Miguel Schneider (@MiguelSchneider)\ndiscussions-to: https://ethereum-magicians.org/t/erc-8245-permissioned-vault-registrar-interface/27627\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-01-30\nrequires: 20, 712, 1271\n---\n## Abstract\n\nThis ERC introduces a companion contract interface (\"Vault Registrar\") for permissioned [ERC-20] ecosystems. The interface enables third-party protocols to register investor-bound vault contracts under the investor's compliance identity, using explicit, revocable authorization granted by the investor via [EIP-712] signed permissions.\n\nThe ERC is additive to [ERC-20], does not modify the [ERC-20] interface, and intentionally leaves identity and compliance logic implementation-defined.\n\n## Motivation\n\nMany permissioned [ERC-20] tokens (e.g. regulated real-world assets) must maintain investor-level ownership attribution for regulatory compliance, lifecycle events, and corporate ac"
+  },
+  {
+    "old": "8888",
+    "new": "8263",
+    "repo": "ERCs",
+    "pr": 1748,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "c3c0a5686e8bc9fd693f329bf0548dfb92b9b1bf"
+      }
+    },
+    "existing": {
+      "8888": {
+        "title": "TruthAnchor — On-Chain Proof Layer for AI Agents",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1748,
+        "markdownPath": "https://raw.githubusercontent.com/TruthAnchor-AI/ERCs/refs/heads/master/ERCS/erc-8888.md",
+        "timestamp": "2026-05-17T00:17:31.848Z"
+      },
+      "8263": {
+        "title": "Onchain Proof Layer for AI Agents",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1748,
+        "markdownPath": "https://raw.githubusercontent.com/TruthAnchor-AI/ERCs/refs/heads/master/ERCS/erc-8263.md",
+        "timestamp": "2026-10-05T02:34:08.699Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8263.md",
+        "status": "added",
+        "patch": "+title: Onchain Proof Layer for AI Agents"
+      }
+    ],
+    "markdown": "---\neip: 8263\ntitle: Onchain Proof Layer for AI Agents\ndescription: Anchor AI agent actions to Ethereum with cryptographic proofs and verifiable identity registry.\nauthor: Vincent Wu (@TruthAnchor-AI)\ndiscussions-to: https://ethereum-magicians.org/t/erc-8263-onchain-proof-layer-for-ai-agents/28577\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-05-14\n---\n\n## Abstract\n\nThis proposal specifies a minimal on-chain proof layer for AI agents. It allows agents to anchor their actions (decisions, outputs, or state transitions) to the Ethereum blockchain by submitting a cryptographic commitment (typically a SHA-256 or Keccak-256 hash) together with an identity-scheme byte and a 32-byte agent identifier. This creates a verifiable, immutable timeline of agent activity, enabling trustless auditing and reputation systems for autonomous agents.\n\n## Motivation\n\nAs AI agents increasingly perform high-value tasks (e.g., DeFi trading, content creation, governance voting), there is a critical need for a standard way to prove that an agent performed a specific"
+  },
+  {
+    "old": "8258",
+    "new": "8286",
+    "repo": "ERCs",
+    "pr": 1794,
+    "prData": {
+      "state": "closed",
+      "merged": true,
+      "head": {
+        "sha": "c6d4afa28fb1a2817a60e3b038fff8b5caa64d87"
+      }
+    },
+    "existing": {
+      "8258": {
+        "title": "Modular Accounts for Frame Transactions",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1794,
+        "markdownPath": "https://raw.githubusercontent.com/chiranjeev13/ERCs/refs/heads/add-erc-modular-accounts-for-frame-transactions/ERCS/erc-8258.md",
+        "requires": [
+          "165",
+          "8141"
+        ],
+        "timestamp": "2026-06-04T00:32:53.727Z"
+      },
+      "8286": {
+        "title": "Modular Accounts for Frame Transactions",
+        "status": "Draft",
+        "requires": [
+          "7579",
+          "8141"
+        ],
+        "isERC": true,
+        "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-8286.md"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8286.md",
+        "status": "added",
+        "patch": "+title: Modular Accounts for Frame Transactions"
+      },
+      {
+        "filename": "assets/erc-8286/ECDSAFrameValidator.sol",
+        "status": "added",
+        "patch": ""
+      },
+      {
+        "filename": "assets/erc-8286/ERC8286FrameAccount.sol",
+        "status": "added",
+        "patch": ""
+      },
+      {
+        "filename": "assets/erc-8286/IERC8286FrameAccount.sol",
+        "status": "added",
+        "patch": ""
+      },
+      {
+        "filename": "assets/erc-8286/IFrameValidator.sol",
+        "status": "added",
+        "patch": ""
+      }
+    ],
+    "markdown": "---\neip: 8286\ntitle: Modular Accounts for Frame Transactions\ndescription: EIP-8141 native account abstraction validation extension for ERC-7579 modular accounts\nauthor: Chiranjeev Mishra (@chiranjeev13), Pedro Gomes (@pedrouid), Alex Forshtat (@forshtat)\ndiscussions-to: https://ethereum-magicians.org/t/erc-8286-modular-accounts-for-frame-transactions/28695\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-06-04\nrequires: 7579, 8141\n---\n\n## Abstract\n\n[ERC-7579](./eip-7579.md) standardizes a core module system for modular smart accounts: module types, the module lifecycle, installation, and account configuration. This proposal extends that system to [EIP-8141](./eip-8141.md) native account abstraction by defining the validation flow for frame transactions. It reuses ERC-7579's module structure unchanged: a validator returns an *approval mode*, and the account applies it through EIP-8141's `APPROVE` instruction during a `VERIFY` frame. Keeping the module system in ERC-7579 and layering account-abstraction-specific validation flows as extensions lets a single module ecosystem serve accounts across multiple account abstraction"
+  },
+  {
+    "old": "1656",
+    "new": "8220",
+    "repo": "ERCs",
+    "pr": 1656,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "20740fca4dbc08727c869bfb84dd63538c74b5b7"
+      }
+    },
+    "existing": {
+      "1656": {
+        "title": "On-Chain AI Governance Interface",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1656,
+        "markdownPath": "https://raw.githubusercontent.com/xhronos444/ERCs/refs/heads/master/ERCS/erc-1656.md",
+        "requires": [
+          "165"
+        ],
+        "timestamp": "2026-04-09T23:43:02.057Z"
+      },
+      "8220": {
+        "title": "Onchain AI Governance",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1656,
+        "markdownPath": "https://raw.githubusercontent.com/xhronos444/ERCs/refs/heads/master/ERCS/erc-8220.md",
+        "requires": [
+          "165"
+        ],
+        "timestamp": "2026-10-07T02:52:47.270Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8220.md",
+        "status": "added",
+        "patch": "+title: Onchain AI Governance"
+      }
+    ],
+    "markdown": "---\neip: 8220\ntitle: Onchain AI Governance\ndescription: A set of Solidity interfaces for registering, governing, and evaluating AI agent compliance on-chain\nauthor: Hajnalka Dudás (@xhronos444) <contact@ordosaturnium.com>\ndiscussions-to: https://ethereum-magicians.org/t/erc-8220-standard-interface-for-on-chain-ai-governance/28162\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-04-07\nrequires: 165\n---\n\n## Abstract\n\nThis standard defines a minimal interface for on-chain AI governance systems. It specifies how autonomous AI agents are registered, evaluated, and governed through immutable smart contracts on EVM-compatible blockchains. The standard introduces a unified framework for AI compliance, behavioral evaluation, rights codification, and enforcement — entirely on-chain, without reliance on off-chain oracles or centralized authorities for governance logic.\n\nThis ERC establishes the first formal protocol standard for AI governance at the smart contract level, analogous to what [ERC-20](./eip-20.md) achieved for fungible tokens and [ERC-721](./eip-721.md) for non-fungible tokens.\n\n## Mot"
+  },
+  {
+    "old": "1705",
+    "new": "8240",
+    "repo": "ERCs",
+    "pr": 1705,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "c655c5b34a8026dbb30faf0dd7163adf6637b791"
+      }
+    },
+    "existing": {
+      "1705": {
+        "title": "Trust Infrastructure for Agents and Assets",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1705,
+        "markdownPath": "https://raw.githubusercontent.com/nicobernad/ERCs/refs/heads/add-erc-trust-infrastructure/ERCS/erc-1705.md",
+        "requires": [
+          "165"
+        ],
+        "timestamp": "2026-04-24T12:15:57.897Z"
+      },
+      "8240": {
+        "title": "Trust Infrastructure for Agents and Assets",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1705,
+        "markdownPath": "https://raw.githubusercontent.com/nicobernad/ERCs/refs/heads/add-erc-trust-infrastructure/ERCS/erc-8240.md",
+        "requires": [
+          "165"
+        ],
+        "timestamp": "2026-10-07T02:52:44.038Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8240.md",
+        "status": "added",
+        "patch": "+title: Trust Infrastructure for Agents and Assets"
+      }
+    ],
+    "markdown": "---\neip: 8240\ntitle: Trust Infrastructure for Agents and Assets\ndescription: Interfaces for factual attestations, decision trails, accountability, risk signals, and asset passports across chains.\nauthor: Patrick Nicolas Badoux (@nicobernad)\ndiscussions-to: https://ethereum-magicians.org/t/erc-8240-trust-infrastructure-for-agents-and-assets/28322\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-04-22\nrequires: 165\n---\n\n## Abstract\n\nThis ERC defines five composable interfaces for trust infrastructure in autonomous agent economies and tokenized asset markets:\n\n1. **IAttestation** (MUST) — Structured, signed, verifiable factual statements about agents and assets.\n2. **IDecisionTrail** (SHOULD) — Immutable audit trail for agent decisions and actions.\n3. **IAccountability** (SHOULD) — Dispute resolution, liability chains, evaluator scoring, and optional coverage.\n4. **IRiskSignal** (SHOULD) — Cross-chain risk propagation and regime detection.\n5. **IRWAPassport** (MAY) — Machine-readable identity and risk profile for tokenized assets.\n\nThese interfaces are independent of any specific bridge protocol, chain eco"
+  },
+  {
+    "old": "2004",
+    "new": "8174",
+    "repo": "ERCs",
+    "pr": 1557,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "6672ba7f975cfae7b803a00080d9cbfe33a02eb3"
+      }
+    },
+    "existing": {
+      "2004": {
+        "title": "Agent-Readable Smart Contract Documentation Layer (Intent Spec)",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1557,
+        "markdownPath": "https://raw.githubusercontent.com/collinsadi/ERCs/refs/heads/erc-intent-spec/ERCS/erc-2004.md",
+        "requires": [
+          "165"
+        ],
+        "timestamp": "2026-02-26T09:32:00.245Z"
+      },
+      "8174": {
+        "title": "Intent spec for contracts",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1557,
+        "markdownPath": "https://raw.githubusercontent.com/collinsadi/ERCs/refs/heads/erc-intent-spec/ERCS/erc-8174.md",
+        "requires": [
+          "165"
+        ],
+        "timestamp": "2026-10-07T02:52:55.363Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8174.md",
+        "status": "added",
+        "patch": "+title: Intent spec for contracts"
+      }
+    ],
+    "markdown": "---\neip: 8174\ntitle: Intent spec for contracts\ndescription: A machine-verifiable semantic metadata to enable autonomous agent reasoning\nauthor: Collins Adi (@collinsadi)\ndiscussions-to: https://ethereum-magicians.org/t/erc-8174-intent-spec-for-contracts/27869\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-02-11\nrequires: 165\n---\n\n## Abstract\n\nThis proposal defines a standard for attaching machine-readable semantic manifests to Ethereum smart contracts. It specifies:\n\n1. An [ERC-165](./eip-165.md) discoverable interface (`IIntentSpec`) exposing a metadata URI.\n2. A canonical JSON schema describing contract-level and function-level semantic intent.\n\nWhile the Application Binary Interface (ABI) defines how to call a function, it does not define the semantic intent, preconditions, or economic risks associated with execution. This ERC introduces a structured metadata layer to enable automated systems to reason about contract behavior prior to execution.\n\n## Motivation\n\nThis ERC is complementary to [ERC-8004](./eip-8004."
+  },
+  {
+    "old": "8078",
+    "new": "8081",
+    "repo": "EIPs",
+    "pr": 10772,
+    "prData": {
+      "state": "closed",
+      "merged": true,
+      "head": {
+        "sha": "2f66df36094acc9ef4f904e1477aa9ec9dd59f76"
+      }
+    },
+    "existing": {
+      "8078": {
+        "title": "Hardfork Meta - Heka/Bogota",
+        "status": "Draft",
+        "prNo": 10772,
+        "markdownPath": "https://raw.githubusercontent.com/ralexstokes/EIPs/refs/heads/heka-bogota/metaeip/EIPS/eip-8078.md",
+        "requires": [
+          "7723",
+          "7773"
+        ],
+        "timestamp": "2025-12-01T16:00:14.268Z"
+      },
+      "8081": {
+        "title": "Hardfork Meta - Hegotá",
+        "status": "Draft",
+        "requires": [
+          "7723",
+          "7773"
+        ],
+        "isERC": false,
+        "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8081.md"
+      }
+    },
+    "files": [
+      {
+        "filename": "EIPS/eip-8081.md",
+        "status": "added",
+        "patch": "+title: Hardfork Meta - Heka/Bogotá"
+      }
+    ],
+    "markdown": "---\neip: 8081\ntitle: Hardfork Meta - Hegotá\ndescription: EIPs included in the Hegotá Ethereum network upgrade.\nauthor: Tim Beiko (@timbeiko), Alex Stokes (@ralexstokes), Ansgar Dietrichs (@adietrichs), Nixo (@nixorokish), Parithosh Jayanthi (@parithosh)\ndiscussions-to: https://ethereum-magicians.org/t/eip-8081-hegota-network-upgrade-meta-thread/26876\nstatus: Draft\ntype: Meta\ncreated: 2025-11-11\nrequires: 7723, 7773\n---\n\n## Abstract\n\nThis Meta EIP lists the EIPs formally Proposed, Considered, Declined for & Scheduled for Inclusion in the Hegotá network upgrade.\n\n## Specification\n\nDefinitions for `Scheduled for Inclusion`, `Considered for Inclusion`, `Declined for Inclusion` and `Proposed for Inclusion` can be found in [EIP-7723](./eip-7723.md).\n\n### EIPs Scheduled for Inclusion\n\n* [EIP-7805](./eip-7805.md): Fork-choice enforced Inclusion Lists (FOCIL)\n* [EIP-8141](./eip-8141.md): Frame Transaction\n\n### Considered for Inclusion\n\n* [EIP-3298](./eip-3298.md): Remove storage-clear refund and refund cap\n* [EIP-7668](./eip-7668.md): Remove bloom filters\n* [EIP-7906](./eip-7906.md): Transaction Assertions via Sta"
+  },
+  {
+    "old": "8402",
+    "new": "8162",
+    "repo": "ERCs",
+    "pr": 1545,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "a35d7072b69af8c70a77567d53ca07159e5fc149"
+      }
+    },
+    "existing": {
+      "8402": {
+        "title": "Agent Subscription Protocol",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1545,
+        "markdownPath": "https://raw.githubusercontent.com/warden-protocol/ERCs/refs/heads/master/ERCS/erc-8402.md",
+        "requires": [
+          "20",
+          "712",
+          "2612",
+          "8004"
+        ],
+        "timestamp": "2026-02-17T06:34:23.409Z"
+      },
+      "8162": {
+        "title": "Agent Subscription",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1545,
+        "markdownPath": "https://raw.githubusercontent.com/warden-protocol/ERCs/refs/heads/master/ERCS/erc-8162.md",
+        "requires": [
+          "20",
+          "712",
+          "2612",
+          "8004"
+        ],
+        "timestamp": "2026-10-07T02:52:55.821Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8162.md",
+        "status": "added",
+        "patch": "+title: Agent Subscription"
+      }
+    ],
+    "markdown": "---\neip: 8162\ntitle: Agent Subscription\ndescription: An interface for managing subscriptions to onchain AI agent services with cycle-based pricing and direct payment.\nauthor: Andrei Sambra (@deiu) <andrei@wardenprotocol.org>\ndiscussions-to: https://ethereum-magicians.org/t/erc-8162-agent-subscription-protocol/27751\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2026-02-16\nrequires: 20, 712, 2612, 8004\n---\n\n## Abstract\n\nThis proposal defines an interface for managing subscriptions to onchain AI agent services. It enables users (humans or agents) to subscribe to tiered service plans offered by agents registered via [ERC-8004](./eip-8004.md), with payments in [ERC-20](./eip-20.md) tokens. The protocol uses a cycle-based prepaid model where subscribers pay upfront for one or more billing cycles and tokens are transferred directly to the agent owner. The registry contract never holds funds. Subscription state lives entirely onchain, requiring zero offchain billing infrastructure from agent developers. An HTTP 402 access flow using [EIP-712](./eip-712.md) signatures allows subscribers to prove acc"
+  },
+  {
+    "old": "9835",
+    "new": "7961",
+    "repo": "EIPs",
+    "pr": 9835,
+    "prData": {
+      "state": "closed",
+      "merged": true,
+      "head": {
+        "sha": "235975e2f2abf0067a85621ac46145e7ce837d25"
+      }
+    },
+    "existing": {
+      "9835": {
+        "title": "EVM64 - EOF code section",
+        "status": "Draft",
+        "prNo": 9835,
+        "markdownPath": "https://raw.githubusercontent.com/sorpaas/EIPs/refs/heads/sp-evm64-code-section/EIPS/eip-9835.md",
+        "requires": [
+          "3540",
+          "4750",
+          "9834"
+        ],
+        "timestamp": "2025-06-14T01:14:40.433Z"
+      },
+      "7961": {
+        "title": "EVM64 - EOF code section",
+        "status": "Draft",
+        "requires": [
+          "3540",
+          "4750",
+          "7960"
+        ],
+        "isERC": false,
+        "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7961.md"
+      }
+    },
+    "files": [
+      {
+        "filename": "EIPS/eip-7961.md",
+        "status": "added",
+        "patch": "+title: EVM64 - EOF code section"
+      }
+    ],
+    "markdown": "---\neip: 7961\ntitle: EVM64 - EOF code section\ndescription: Define \"pure\" EVM64 mode, as an EOF code section.\nauthor: Wei Tang (@sorpaas)\ndiscussions-to: https://ethereum-magicians.org/t/eip-series-evm64/23794\nstatus: Draft\ntype: Standards Track\ncategory: Core\ncreated: 2025-05-28\nrequires: 3540, 4750, 7960\n---\n\n## Abstract\n\nAn EOF-only specification for EVM64 instruction set. This defines a separate \"EVM64\" type for EOF code section in addition to \"regular EVM\". The interpreter then enters EVM64 mode when entering the code section. This EIP is an alternative to [EIP-7937](./eip-7937.md).\n\n## Motivation\n\nEIP-7937 has maximum compatibility with existing EVM. It implements EVM64 simply as a group of additional opcodes (using a prefix opcode). This EIP defines an alternative method, using EOF container's code section. It has its pros and cons. The code size will obviously become shorter, due to not needing multibyte opcodes any more. On the other hand, interop with EVM system calls become more diffic"
+  },
+  {
+    "old": "9431",
+    "new": "8076",
+    "repo": "ERCs",
+    "pr": 1337,
+    "prData": {
+      "state": "open",
+      "merged": false,
+      "head": {
+        "sha": "98d1e28150ef033a103382f93beff8366a37b45f"
+      }
+    },
+    "existing": {
+      "9431": {
+        "title": "Cross-Token Exchange Protocol",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1337,
+        "markdownPath": "https://raw.githubusercontent.com/GaoYiRu/ERCs/refs/heads/master/ERCS/erc-9431.md",
+        "requires": [
+          "20"
+        ],
+        "timestamp": "2025-11-03T21:50:11.354Z"
+      },
+      "8076": {
+        "title": "Based Custodial Cross-Token Protocol",
+        "status": "Draft",
+        "isERC": true,
+        "prNo": 1337,
+        "markdownPath": "https://raw.githubusercontent.com/GaoYiRu/ERCs/refs/heads/master/ERCS/erc-8076.md",
+        "requires": [
+          "20"
+        ],
+        "timestamp": "2026-10-07T02:53:04.853Z"
+      }
+    },
+    "files": [
+      {
+        "filename": "ERCS/erc-8076.md",
+        "status": "added",
+        "patch": "+title: Based Custodial Cross-Token Protocol"
+      }
+    ],
+    "markdown": "---\neip: 8076\ntitle: Based Custodial Cross-Token Protocol\ndescription: The protocol reduces the complexity and risk of failure inherent in non-custodial solutions.\nauthor: Xiang Gao (@GaoYiRu), Xiaoyu Liu (@elizabethxiaoyu), Hao Zou (@BruceZH0915), Yuxiang Fu (@tmac4096)\ndiscussions-to: https://ethereum-magicians.org/t/erc-8076-custodial-contract-based-cross-token-exchange-protocol/26489\nstatus: Draft\ntype: Standards Track\ncategory: ERC\ncreated: 2025-11-03\nrequires: 20\n---\n\n## Abstract\n\nThis Ethereum Improvement Proposal (EIP) specifies a standardized Escrow Contract framework governing cross-token asset exchanges between Payers and Liquidity Providers.\n\nBy programmatically enforcing settlement logic through smart contract custody mechanisms, the protocol autonomously executes asset transfers or returns according to predefined rules,\neliminating counterparty trust requirements.\n\n## Motivation\n\nWithin decentralized finance ecosystems,\nthe absence of trusted execution environments for direct cross-token exchanges between Payers and Liquidity Providers introduces systemic vulnerabilities:\n\n1. Counterparty Risk: Potential LP non-performance post-fund reception\n2."
+  }
+]
