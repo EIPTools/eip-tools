@@ -1,0 +1,43 @@
+name: Sync Proposal Search
+
+on:
+  workflow_run:
+    workflows: ["Update EIP Data"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: proposal-search-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.repository == 'apoorvlathey/eip-tools-vercel' && (github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    env:
+      MEILISEARCH_HOST: ${{ vars.MEILISEARCH_HOST }}
+      MEILISEARCH_INDEXING_KEY: ${{ secrets.MEILISEARCH_INDEXING_KEY }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          submodules: recursive
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Sync verified proposal text
+        run: pnpm search:sync --allow-partial
+      - name: Preserve source coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: proposal-search-coverage
+          path: .search/coverage.json
+          if-no-files-found: ignore

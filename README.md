@@ -1,5 +1,11 @@
 # eip.tools
 
+### Full-text search service
+
+Meilisearch is hosted on Railway. See [docs/SEARCH.md](docs/SEARCH.md) for the
+deployment, credentials, corpus coverage, indexing command, and sync workflow.
+The existing search UI has not yet been connected to the service.
+
 ### Proposal content resilience
 
 Readers fetch `/api/proposals/{eip|rip|caip}/{number}` instead of contacting

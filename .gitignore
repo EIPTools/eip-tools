@@ -28,6 +28,9 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# Local search coverage reports and generated exports
+/.search/
+
 # vercel
 .vercel
 
