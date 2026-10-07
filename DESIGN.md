@@ -198,3 +198,7 @@
 - 2026-07-02: Slimmed the homepage proposal rail scrollbars to a 4px subtle thumb with a transparent track.
 - 2026-07-02: Fixed EIP.tools logo rendering in the header and footer by preserving the Ethereum mark's natural aspect ratio instead of forcing it into a square box.
 - 2026-07-02: Revamped EIP.tools to the dark minimal ETH.sh-style system from `swiss-knife`; added semantic tokens, Chakra theme, Inter and JetBrains Mono, redesigned nav/search/footer/home sections/detail pages/markdown/graphs, and documented the design contract.
+
+- 2026-10-08: Added proposal section excerpts to the existing search dropdown, keeping number/title matches first, compact status badges, keyboard selection, and loading/error/empty states. Homepage copy remains unchanged.
+
+- 2026-10-08: Search matches use bold primary text on the blue search.matchBg token. Parse full Markdown into inert text before cropping; keep code identifiers and link labels, omit raw HTML, headings, and active snippet controls.

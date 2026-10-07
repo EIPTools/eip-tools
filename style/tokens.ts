@@ -22,6 +22,8 @@ export const colors = {
     strong: "rgba(255,255,255,0.16)",
   },
 
+  search: { matchBg: "rgba(59,130,246,0.24)" },
+
   primary: {
     50: "#EFF6FF",
     100: "#DBEAFE",

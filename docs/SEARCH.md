@@ -1,8 +1,11 @@
 # Proposal search on Railway
 
 Meilisearch stores a searchable copy of proposal text. The checked-in proposal
-indexes and Git submodule snapshots remain the source of truth. The existing
-search UI is unchanged; connecting it to this service is a separate UI change.
+indexes and Git submodule snapshots remain the source of truth. The search box combines immediate number/title matches with debounced full-text
+section results. `/api/search` keeps the search-only key on the server and returns
+plain-text excerpts and local section links. Full Markdown is parsed to inert text
+before cropping around a match; keyword highlights render as React text nodes
+and marks, never upstream HTML. Code identifiers and link labels are preserved.
 
 ## Deployment
 
@@ -54,6 +57,21 @@ It requires index create/get/delete/swap, settings update, document add/get,
 stats get, tasks get, and search permissions. Never expose the sync/master key
 in browser code. The deployed sync key includes `documents.get` to retain the
 last successfully indexed text during partial refreshes.
+
+## Local website
+
+Add `MEILISEARCH_HOST` and `MEILISEARCH_SEARCH_KEY` from the search-specific
+credential file to the app's ignored `.env.local`. Do not use a `NEXT_PUBLIC_`
+prefix or put indexing/master credentials in the app. Restart the dev server
+after changing environment variables.
+
+```sh
+NEXT_PUBLIC_DEVELOPMENT=true pnpm dev --hostname 127.0.0.1 --port 4317
+```
+
+Open http://127.0.0.1:4317 and search for `BASE_FEE_MAX_CHANGE_DENOMINATOR`
+to test a body-only match. Use arrow keys and Enter, or click a result, to open
+the matching section. Exact number/title matches appear first.
 
 ## Indexing
 

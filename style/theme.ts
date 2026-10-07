@@ -22,6 +22,7 @@ export const colors = {
   text: tokenColors.text,
   border: tokenColors.border,
   primary: tokenColors.primary,
+  search: tokenColors.search,
   success: tokenColors.success,
   warning: tokenColors.warning,
   error: tokenColors.error,

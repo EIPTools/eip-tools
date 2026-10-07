@@ -15,7 +15,7 @@
     "eip": "tsx ./scripts/getWIPEIPsFromPRs.ts && git submodule update --remote && tsx ./scripts/fetchValidEIPs.ts && tsx ./scripts/genEIPDependencyGraph.ts",
     "gen-graph": "tsx ./scripts/genEIPDependencyGraph.ts",
     "search:sync": "tsx scripts/syncProposalSearch.ts",
-    "test:search": "node --import tsx --test scripts/proposalSearch.test.ts"
+    "test:search": "node --import tsx --test scripts/proposalSearch.test.ts scripts/searchSnippet.test.ts"
   },
   "dependencies": {
     "@chakra-ui/cli": "^3.8.1",
@@ -56,10 +56,12 @@
     "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
     "three": "^0.172.0",
     "three-spritetext": "^1.9.4",
     "toaster": "^0.1.2",
     "typewriter-effect": "^2.21.0",
+    "unified": "^11.0.5",
     "usehooks-ts": "^3.1.1",
     "zod": "^3.24.2"
   },
