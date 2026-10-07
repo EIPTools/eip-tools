@@ -5,11 +5,11 @@ import axios from "axios";
 import { convertMetadataToJson, extractMetadata } from "@/utils";
 import { ValidEIPs } from "@/types";
 
-import * as fs from "fs";
+import { fetchRemoteMarkdown, githubSource, hasPRFileEvidence, isProposalMarkdown, proposalSourceFromPR, reconcilePRFile, trackedPRNumbers, type PRFile } from "@/utils/proposalContent";
 import * as path from "path";
 import { fileURLToPath } from "url";
 import { updateFileData } from "./fetchValidEIPs";
-import { execSync } from "child_process";
+
 
 // Import existing data for caching
 import { validEIPs as existingEIPs } from "@/data/validEIPs";
@@ -17,17 +17,17 @@ import { validRIPs as existingRIPs } from "@/data/validRIPs";
 import { validCAIPs as existingCAIPs } from "@/data/validCAIPs";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
-const headers = {
-  Authorization: `token ${process.env.GITHUB_TOKEN}`,
-};
+
+const headers: Record<string, string> = process.env.GITHUB_TOKEN ? { Authorization: `token ${process.env.GITHUB_TOKEN}` } : {};
+const readRemoteMarkdown = (url: string) => fetchRemoteMarkdown(url, (input, init) => fetch(input, {
+  ...init, headers: { ...init?.headers, ...(new URL(String(input)).hostname === "api.github.com" ? headers : {}) },
+}));
 
 const MAX_RETRIES = 5;
 // Concurrency control to make fetching faster but not trigger rate limits
 const MAX_CONCURRENT_REQUESTS = 3;
-// Time in hours for which we consider cached data fresh enough
-const CACHE_FRESHNESS_HOURS = 24 * 5;
+
 
 /**
  * Process items with improved concurrency control and error handling
@@ -193,506 +193,131 @@ async function getOpenPRNumbers(
 }
 
 async function getPRData(orgName: string, prNumber: number, repo: string) {
-  const apiUrl = `https://api.github.com/repos/${orgName}/${repo}/pulls/${prNumber}`;
+  const response = await fetchWithRetry(`https://api.github.com/repos/${orgName}/${repo}/pulls/${prNumber}`, { headers });
+  // head.repo can be null after the contributor deletes their fork.
+  return { prData: response.data };
+}
 
-  try {
-    const response = await fetchWithRetry(apiUrl, { headers });
-    const prData = response.data;
-
-    // Instead of using the diffUrl from the API, we'll use local git operations
-    const repoOwnerAndName = prData.head.repo.full_name;
-    const branchName = prData.head.ref;
-    const baseBranch = prData.base.ref;
-    return { repoOwnerAndName, branchName, baseBranch, prData };
-  } catch (error) {
-    console.error(`Failed to fetch PR details: ${error}`);
+async function getPRFileChanges(orgName: string, repo: string, prNumber: number): Promise<PRFile[]> {
+  const files: PRFile[] = [];
+  for (let page = 1; ; page++) {
+    const response = await fetchWithRetry(`https://api.github.com/repos/${orgName}/${repo}/pulls/${prNumber}/files?per_page=100&page=${page}`, { headers });
+    if (!Array.isArray(response.data)) throw new Error("Invalid PR files");
+    files.push(...response.data);
+    if (response.data.length < 100) return files;
+    if (page >= 30) throw new Error("Incomplete PR files");
   }
 }
 
-// Helper function to get the correct repository path
-function getRepoPath(orgName: string, repo: string): string {
-  // The submodules are in the 'submodules' directory
-  return path.resolve(
-    __dirname,
-    "..",
-    "submodules",
-    orgName === "ChainAgnostic" ? "CAIPs" : repo
-  );
+interface PRConfig { orgName: string; repo: string; folderName: string; filePrefix: string; isERC?: boolean }
+interface PRLoaders {
+  existing?: ValidEIPs;
+  open?: typeof getOpenPRNumbers;
+  pr?: typeof getPRData;
+  files?: typeof getPRFileChanges;
+  markdown?: (url: string) => Promise<string>;
+  onRemove?: (key: string) => void;
 }
 
-// Get the default branch name for a repository
-function getDefaultBranch(orgName: string, repo: string): string {
-  // CAIPs uses main, others use master
-  return orgName === "ChainAgnostic" ? "main" : "master";
-}
-
-/**
- * Get the file changes information from a PR
- */
-async function getPRFileChanges(
-  orgName: string,
-  repo: string,
-  prNumber: number
-): Promise<any[]> {
-  const apiUrl = `https://api.github.com/repos/${orgName}/${repo}/pulls/${prNumber}/files`;
-  try {
-    const response = await fetchWithRetry(apiUrl, { headers });
-    return response.data;
-  } catch (error) {
-    console.error(`Failed to fetch PR file changes: ${error}`);
-    return [];
-  }
-}
-
-/**
- * Get the EIP number from a PR by examining the locally cloned repository
- * or falling back to GitHub API if necessary
- */
-async function getEIPNoFromPR(
-  orgName: string,
-  repo: string,
-  prData: any,
-  folderName: string,
-  filePrefix: string,
-  prNumber: number
-): Promise<{ eipNo: string; githubUrl: string; rawGithubUrl: string } | null> {
-  try {
-    const repoPath = getRepoPath(orgName, repo);
-
-    if (!fs.existsSync(repoPath)) {
-      console.error(`Local repository not found at ${repoPath}`);
-      return null;
-    }
-
-    // Try using local git operations first
-    const { branchName, prData: fullPrData } = prData;
-    const defaultBranch = getDefaultBranch(orgName, repo);
-
-    let filesChanged: string[] = [];
-    let localGitSucceeded = false;
-
-    // First try with local git
-    try {
-      // Make sure we have the latest version of the repo
-      execSync(`cd ${repoPath} && git fetch`, { stdio: "pipe" });
-
-      // If the PR is from a fork, we need to add the remote repo
-      const prAuthor = fullPrData.head.repo.owner.login;
-      const isFromFork = prAuthor !== orgName;
-
-      if (isFromFork) {
-        const remoteName = `${prAuthor}-fork`;
-        // Check if remote already exists
-        const remotes = execSync(`cd ${repoPath} && git remote`, {
-          encoding: "utf-8",
-        }).split("\n");
-
-        if (!remotes.includes(remoteName)) {
-          execSync(
-            `cd ${repoPath} && git remote add ${remoteName} https://github.com/${fullPrData.head.repo.full_name}.git`,
-            { stdio: "pipe" }
-          );
-        }
-
-        execSync(`cd ${repoPath} && git fetch ${remoteName} ${branchName}`, {
-          stdio: "pipe",
-        });
-
-        // Get list of files changed
-        const diffCommand = `cd ${repoPath} && git diff --name-status origin/${defaultBranch} ${remoteName}/${branchName}`;
-        const diff = execSync(diffCommand, { encoding: "utf-8" });
-        filesChanged = diff.split("\n");
-      } else {
-        // PR is from the same repo
-        execSync(`cd ${repoPath} && git fetch origin ${branchName}`, {
-          stdio: "pipe",
-        });
-
-        // Get list of files changed
-        const diffCommand = `cd ${repoPath} && git diff --name-status origin/${defaultBranch} origin/${branchName}`;
-        const diff = execSync(diffCommand, { encoding: "utf-8" });
-        filesChanged = diff.split("\n");
-      }
-
-      localGitSucceeded = true;
-    } catch (error) {
-      console.warn(
-        `Warning: Could not get changed files from local git for PR #${prNumber}: ${error}`
-      );
-      localGitSucceeded = false;
-    }
-
-    // If local git failed, use GitHub API
-    if (!localGitSucceeded) {
-      const prFiles = await getPRFileChanges(orgName, repo, prNumber);
-      filesChanged = prFiles.map((file) => {
-        const status =
-          file.status === "added"
-            ? "A"
-            : file.status === "modified"
-              ? "M"
-              : file.status.charAt(0).toUpperCase();
-        return `${status}\t${file.filename}`;
-      });
-    }
-
-    // Look for added files (A) that match the pattern
-    const regex = new RegExp(`^A\\s+${folderName}/${filePrefix}-(\\d+)\\.md$`);
-
-    for (const file of filesChanged) {
-      const match = file.match(regex);
-      if (match && match[1]) {
-        const eipNo = match[1];
-
-        // GitHub URLs for the file
-        const { repoOwnerAndName, branchName } = prData;
-        const githubUrl = `https://github.com/${repoOwnerAndName}/blob/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
-        const rawGithubUrl = `https://raw.githubusercontent.com/${repoOwnerAndName}/refs/heads/${branchName}/${folderName}/${filePrefix}-${eipNo}.md`;
-
-        return {
-          eipNo,
-          githubUrl,
-          rawGithubUrl,
-        };
-      }
-    }
-
-    return null;
-  } catch (error) {
-    console.error(`Failed to get EIP number from PR: ${error}`);
-    return null;
-  }
-}
-
-function extractEIPNumber(
-  filePath: string,
-  folderName: string,
-  filePrefix: string
-): string {
-  // Remove the b/ prefix requirement and make it case insensitive
-  const regex = new RegExp(`${folderName}/${filePrefix}-(\\d+)\\.md$`, "i");
-  const match = filePath.match(regex);
-
-  if (match && match[1]) {
-    return match[1];
-  } else {
-    return "";
-  }
-}
-
-/**
- * Fix GitHub URL to use raw.githubusercontent.com format
- */
-function fixGitHubUrl(url: string): string {
-  if (!url) return url;
-
-  // If already a raw URL, return as is
-  if (url.includes("raw.githubusercontent.com")) {
-    return url;
-  }
-
-  // Convert GitHub blob URL to raw URL with refs/heads/
-  // Example: https://github.com/user/repo/blob/branch/path/file.md -> https://raw.githubusercontent.com/user/repo/refs/heads/branch/path/file.md
-  return url
-    .replace("github.com", "raw.githubusercontent.com")
-    .replace("/blob/", "/refs/heads/");
-}
-
-/**
- * Determines if a cached entry is still valid based on timestamp
- */
-function isCacheValid(cachedEntry: any): boolean {
-  if (!cachedEntry || !cachedEntry.timestamp) return false;
-
-  const now = Date.now();
-  const cacheTime = new Date(cachedEntry.timestamp).getTime();
-  const hoursDiff = (now - cacheTime) / (1000 * 60 * 60);
-
-  return hoursDiff < CACHE_FRESHNESS_HOURS;
-}
-
-/**
- * Get existing cached data for a PR
- */
-function getCachedPRData(prNo: number, repo: string): any {
-  let existingData: any = null;
-
-  if (repo === "EIPs" || repo === "ERCs") {
-    const match = Object.entries(existingEIPs).find(
-      ([_, value]: [string, any]) => value.prNo === prNo
-    );
-    if (match) existingData = match[1];
-  } else if (repo === "RIPs") {
-    const match = Object.entries(existingRIPs).find(
-      ([_, value]: [string, any]) => value.prNo === prNo
-    );
-    if (match) existingData = match[1];
-  } else if (repo === "CAIPs") {
-    const match = Object.entries(existingCAIPs).find(
-      ([_, value]: [string, any]) => value.prNo === prNo
-    );
-    if (match) existingData = match[1];
-  }
-
-  return existingData;
-}
-
-/**
- * Process file changes to find relevant files and handle renames
- */
-function processFileChanges(
-  prFiles: any[],
-  folderName: string,
-  filePrefix: string
-): {
-  addedFiles: any[];
-  renamedFiles: Array<{ oldFile: any; newFile: any }>;
-} {
-  const addedFiles: any[] = [];
-  const renamedFiles: Array<{ oldFile: any; newFile: any }> = [];
-
-  // First pass to collect renamed files
-  const renameMap = new Map<string, any>();
-  prFiles.forEach((file) => {
-    if (file.status === "renamed") {
-      renameMap.set(file.previous_filename, file);
-    }
-  });
-
-  // Second pass to process files
-  prFiles.forEach((file) => {
-    const matchesPattern = (filename: string) =>
-      filename.match(new RegExp(`${folderName}/${filePrefix}-\\d+\\.md$`, "i"));
-
-    if (file.status === "added" && matchesPattern(file.filename)) {
-      addedFiles.push(file);
-    } else if (file.status === "renamed") {
-      const oldMatches = matchesPattern(file.previous_filename);
-      const newMatches = matchesPattern(file.filename);
-
-      // Only process renames where at least one of the filenames matches our pattern
-      if (oldMatches || newMatches) {
-        renamedFiles.push({
-          oldFile: {
-            filename: file.previous_filename,
-            status: "removed",
-          },
-          newFile: {
-            filename: file.filename,
-            status: "added",
-          },
-        });
-      }
-    }
-  });
-
-  return { addedFiles, renamedFiles };
-}
-
-const fetchDataFromOpenPRs = async ({
-  orgName,
-  repo,
-  folderName,
-  filePrefix,
-  isERC,
-}: {
-  orgName: string;
-  repo: string;
-  folderName: string;
-  filePrefix: string;
-  isERC?: boolean;
-}) => {
-  const prNumbers = await getOpenPRNumbers(orgName, repo);
+export async function fetchDataFromPRs({ orgName, repo, folderName, filePrefix, isERC }: PRConfig, loaders: PRLoaders = {}): Promise<ValidEIPs> {
+  const existing = loaders.existing ?? (repo === "RIPs" ? existingRIPs : repo === "CAIPs" ? existingCAIPs : existingEIPs);
+  const kind = repo === "RIPs" ? "rip" : repo === "CAIPs" ? "caip" : "eip";
+  // Refresh lifecycle every run, including previously indexed PRs now closed.
+  const numbers = trackedPRNumbers(repo, await (loaders.open ?? getOpenPRNumbers)(orgName, repo), existing);
   const result: ValidEIPs = {};
-  console.log(`Processing ${prNumbers.length} PRs for ${repo}...`);
-
-  // Process PRs with improved concurrency
-  await processWithConcurrency(
-    prNumbers,
-    async (prNo) => {
-      try {
-        // Check cache first
-        const cachedData = getCachedPRData(prNo, repo);
-        if (cachedData && isCacheValid(cachedData)) {
-          console.log(
-            `Using cached data for PR #${prNo} (${filePrefix}-${cachedData.number || "?"})`
-          );
-          result[cachedData.number || cachedData.id] = {
-            ...cachedData,
-            markdownPath: fixGitHubUrl(cachedData.markdownPath),
-            timestamp: new Date().toISOString(),
-          };
-          return;
-        }
-
-        // Fetch PR data and file changes in parallel
-        const [prData, prFiles] = await Promise.all([
-          getPRData(orgName, prNo, repo),
-          getPRFileChanges(orgName, repo, prNo),
-        ]);
-
-        if (!prData) {
-          console.log(`No PR data found for PR #${prNo}`);
-          return;
-        }
-
-        // Process file changes to find relevant files
-        const { addedFiles, renamedFiles } = processFileChanges(
-          prFiles,
-          folderName,
-          filePrefix
-        );
-
-        // Handle renamed files first to remove old data
-        for (const { oldFile, newFile } of renamedFiles) {
-          const oldEipNo = extractEIPNumber(
-            oldFile.filename,
-            folderName,
-            filePrefix
-          );
-          const newEipNo = extractEIPNumber(
-            newFile.filename,
-            folderName,
-            filePrefix
-          );
-
-          if (oldEipNo) {
-            console.log(
-              `Removing old data for ${filePrefix}-${oldEipNo} due to rename`
-            );
-            delete result[oldEipNo];
-          }
-
-          if (newEipNo) {
-            // Process the new file as if it was added
-            addedFiles.push(newFile);
-          }
-        }
-
-        // Process added files (including renamed files with new EIP numbers)
-        for (const addedFile of addedFiles) {
-          const eipNo = extractEIPNumber(
-            addedFile.filename,
-            folderName,
-            filePrefix
-          );
-          if (!eipNo) continue;
-
-          // Construct GitHub URLs
-          const { repoOwnerAndName, branchName } = prData;
-          const rawGithubUrl = `https://raw.githubusercontent.com/${repoOwnerAndName}/refs/heads/${branchName}/${addedFile.filename}`;
-
-          try {
-            // Try local file first
-            const repoPath = getRepoPath(orgName, repo);
-            const localPath = path.join(repoPath, addedFile.filename);
-
-            let eipMarkdown = "";
-            let useLocalFile = false;
-
-            try {
-              if (fs.existsSync(localPath)) {
-                eipMarkdown = fs.readFileSync(localPath, "utf-8");
-                useLocalFile = true;
-                console.log(`Using local file for ${filePrefix}-${eipNo}`);
-              }
-            } catch (error: any) {
-              console.warn(
-                `Could not read local file, will try GitHub API: ${error.message}`
-              );
-            }
-
-            // Fallback to GitHub API if local file not available
-            if (!useLocalFile) {
-              console.log(
-                `Fetching content from GitHub for ${filePrefix}-${eipNo} from ${rawGithubUrl}`
-              );
-              const eipMarkdownRes = await fetchWithRetry(rawGithubUrl, {
-                headers,
-              });
-              eipMarkdown = eipMarkdownRes.data;
-            }
-
-            const { metadata } = extractMetadata(eipMarkdown);
-            const { title, status, requires } = convertMetadataToJson(metadata);
-
-            console.log(`Found WIP ${filePrefix}: ${eipNo}: ${title}`);
-
-            result[eipNo] = {
-              title: title || `${filePrefix.toUpperCase()}-${eipNo}`,
-              status,
-              isERC,
-              prNo,
-              markdownPath: rawGithubUrl,
-              requires,
-              timestamp: new Date().toISOString(),
-            };
-
-            console.log(`Successfully added ${filePrefix}-${eipNo} to result`);
-          } catch (error: any) {
-            console.warn(
-              `⚠️ Could not read content for ${filePrefix}-${eipNo} from PR #${prNo}: ${error.message}`
-            );
-          }
-        }
-      } catch (error: any) {
-        console.warn(`⚠️ Error processing PR #${prNo}: ${error.message}`);
+  await processWithConcurrency(numbers, async prNo => {
+    try {
+      const [{ prData }, files] = await Promise.all([
+        (loaders.pr ?? getPRData)(orgName, prNo, repo),
+        (loaders.files ?? getPRFileChanges)(orgName, repo, prNo),
+      ]);
+      const pattern = new RegExp(`^${folderName}/${filePrefix}-(\\d+)\\.md$`);
+      const candidates = new Map<string, ValidEIPs[string]>();
+      for (const [key, proposal] of Object.entries(existing)) {
+        if (proposal.prNo !== prNo || githubSource(proposal.markdownPath).repo !== repo) continue;
+        const source = proposalSourceFromPR(kind, proposal, prData);
+        const reconciled = reconcilePRFile(source, files);
+        const finalKey = githubSource(reconciled.markdownPath).file.match(pattern)?.[1];
+        if (source.prState === "merged" || (finalKey && finalKey !== key)) loaders.onRemove?.(key);
+        if (source.prState === "merged" && proposal.prState !== "merged" && !hasPRFileEvidence(source, files)) continue;
+        if (finalKey) candidates.set(finalKey, reconciled as ValidEIPs[string]);
       }
-    },
-    MAX_CONCURRENT_REQUESTS
-  );
-
-  console.log(
-    `Finished processing ${repo}. Found ${Object.keys(result).length} valid entries.`
-  );
+      for (const file of files) {
+        const match = file.filename.match(pattern);
+        if (!match || !["added", "renamed"].includes(file.status)) continue;
+        const source = proposalSourceFromPR(kind, {
+          title: "", isERC, prNo,
+          markdownPath: `https://raw.githubusercontent.com/${orgName}/${repo}/refs/pull/${prNo}/head/${file.filename}`,
+        }, prData);
+        candidates.set(match[1], source as ValidEIPs[string]);
+      }
+      for (const [key, source] of Array.from(candidates)) {
+        try {
+          // The default-branch submodule is never evidence of PR content.
+          const markdown = await (loaders.markdown ?? readRemoteMarkdown)(source.markdownPath);
+          if (!isProposalMarkdown(markdown, source.markdownPath)) throw new Error("Invalid PR proposal Markdown");
+          const { title, status, requires } = convertMetadataToJson(extractMetadata(markdown).metadata);
+          result[key] = { ...source, title, status, requires, timestamp: new Date().toISOString() };
+        } catch (error: any) {
+          console.warn(`Could not refresh ${repo} PR #${prNo}, proposal ${key}: ${error.message}`);
+        }
+      }
+    } catch (error: any) {
+      // A lifecycle/files outage is not evidence for removing PR history.
+      console.warn(`Could not refresh ${repo} PR #${prNo}: ${error.message}`);
+    }
+  }, MAX_CONCURRENT_REQUESTS);
   return result;
-};
+}
 
 const updateEIPData = async () => {
+  const removed = new Set<string>();
   console.log("Updating EIP data...");
-  const resOpenEIPs = await fetchDataFromOpenPRs({
+  const resOpenEIPs = await fetchDataFromPRs({
     orgName: "ethereum",
     repo: "EIPs",
     folderName: "EIPS",
     filePrefix: "eip",
-  });
+  }, { onRemove: key => removed.add(key) });
   console.log("Updating ERC data...");
-  const resOpenERCs = await fetchDataFromOpenPRs({
+  const resOpenERCs = await fetchDataFromPRs({
     orgName: "ethereum",
     repo: "ERCs",
     folderName: "ERCS",
     filePrefix: "erc",
     isERC: true,
-  });
+  }, { onRemove: key => removed.add(key) });
   const result = { ...resOpenEIPs, ...resOpenERCs };
 
-  updateFileData(result, "valid-eips.json");
+  await updateFileData(result, "valid-eips.json", removed);
   console.log("EIP/ERC data updated successfully!");
 };
 
 const updateRIPData = async () => {
+  const removed = new Set<string>();
   console.log("Updating RIP data...");
-  const resOpenRIPs = await fetchDataFromOpenPRs({
+  const resOpenRIPs = await fetchDataFromPRs({
     orgName: "ethereum",
     repo: "RIPs",
     folderName: "RIPS",
     filePrefix: "rip",
-  });
+  }, { onRemove: key => removed.add(key) });
 
-  updateFileData(resOpenRIPs, "valid-rips.json");
+  await updateFileData(resOpenRIPs, "valid-rips.json", removed);
   console.log("RIP data updated successfully!");
 };
 
 const updateCAIPData = async () => {
+  const removed = new Set<string>();
   console.log("Updating CAIP data...");
-  const resOpenCAIPs = await fetchDataFromOpenPRs({
+  const resOpenCAIPs = await fetchDataFromPRs({
     orgName: "ChainAgnostic",
     repo: "CAIPs",
     folderName: "CAIPs",
     filePrefix: "caip",
-  });
+  }, { onRemove: key => removed.add(key) });
 
-  updateFileData(resOpenCAIPs, "valid-caips.json");
+  await updateFileData(resOpenCAIPs, "valid-caips.json", removed);
   console.log("CAIP data updated successfully!");
 };
 
@@ -766,5 +391,5 @@ const main = async () => {
   }
 };
 
-// Execute main function
-main();
+// Importing generation helpers must not mutate indexes or launch network work.
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) main();

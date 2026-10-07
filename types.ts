@@ -4,6 +4,8 @@ export interface ValidEIPs {
     status?: string;
     isERC?: boolean;
     prNo?: number;
+    prState?: "open" | "closed" | "merged";
+    prHeadSha?: string;
     markdownPath: string;
     requires?: string[];
     timestamp?: string;

@@ -48,7 +48,19 @@ const getEIPMetadata = (
   };
 };
 
-export const updateFileData = async (result: ValidEIPs, fileName: string) => {
+export function mergeIndexData(current: ValidEIPs, result: ValidEIPs, removed: Iterable<string> = []): ValidEIPs {
+  const updated = { ...current };
+  // Reconciliation may delete PR history, never a real official proposal that
+  // now occupies the same number.
+  for (const key of Array.from(removed)) if (updated[key]?.prNo) delete updated[key];
+  for (const [key, proposal] of Object.entries(result)) {
+    if (proposal.prNo && updated[key] && !updated[key].prNo) continue;
+    updated[key] = proposal;
+  }
+  return updated;
+}
+
+export const updateFileData = async (result: ValidEIPs, fileName: string, removed: Iterable<string> = []) => {
   let currentData = "{}";
 
   // check if file exists
@@ -60,7 +72,7 @@ export const updateFileData = async (result: ValidEIPs, fileName: string) => {
   }
   const currentDataJSON = JSON.parse(currentData);
 
-  const updatedData = { ...currentDataJSON, ...result };
+  const updatedData = mergeIndexData(currentDataJSON, result, removed);
 
   await fs.promises.writeFile(
     path.join(__dirname, `../data/${fileName}`),
@@ -137,4 +149,4 @@ const main = async () => {
   updateCAIPData();
 };
 
-main();
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) main();

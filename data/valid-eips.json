@@ -9468,13 +9468,6 @@
     "isERC": true,
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/master/ERCS/erc-7943.md"
   },
-  "7944": {
-    "title": "Tx Ordering via Block-level Randomness",
-    "status": "Draft",
-    "prNo": 9813,
-    "markdownPath": "https://raw.githubusercontent.com/aryaethn/EIPs/refs/heads/master/EIPS/eip-7944.md",
-    "timestamp": "2025-06-11T02:47:52.318Z"
-  },
   "7945": {
     "title": "Confidential Transactions Supported Token",
     "status": "Last Call",
@@ -12833,7 +12826,9 @@
     "status": "Draft",
     "isERC": true,
     "prNo": 1796,
-    "markdownPath": "https://raw.githubusercontent.com/Cyimon/ERCs/refs/heads/master/ERCS/erc-8287.md",
+    "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/3347f7f48fe921a7bff9826e40fe7f81a25da3cb/ERCS/erc-8287.md",
+    "prState": "closed",
+    "prHeadSha": "3347f7f48fe921a7bff9826e40fe7f81a25da3cb",
     "timestamp": "2026-06-15T14:01:44.513Z"
   },
   "8288": {

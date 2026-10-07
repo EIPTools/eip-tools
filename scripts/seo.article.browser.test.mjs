@@ -16,7 +16,7 @@ async function isolateArticle(context) {
   });
 }
 
-for (const path of ['/eip/2', '/rip/7993', '/caip/104']) {
+for (const path of ['/eip/2', '/rip/7993', '/caip/104', '/eip/8287', '/eip/7956']) {
   test(`${path}: initial and hydrated real article has only title H1 and working TOC anchors`, async () => {
     const response = await fetch(`${origin}${path}`);
     assert.equal(response.status, 200);
@@ -32,6 +32,8 @@ for (const path of ['/eip/2', '/rip/7993', '/caip/104']) {
       await page.goto(`${origin}${path}`, { waitUntil: 'networkidle', timeout: 120000 });
       assert.equal(await page.locator('h1').count(), 1);
       assert.equal(await page.locator('article h1').count(), 0);
+      if (path === '/eip/8287') assert.ok((await page.locator('body').innerText()).includes('PR closed (unmerged)'));
+      if (path === '/eip/7956') assert.ok((await page.locator('body').innerText()).includes('Stagnant'));
       const tocLinks = page.locator('nav[aria-label="Proposal table of contents"] [data-proposal-toc-id]');
       const targets = await tocLinks.evaluateAll(nodes => nodes.map(node => node.getAttribute('data-proposal-toc-id')));
       assert.ok(targets.length > 0);
@@ -50,6 +52,21 @@ for (const path of ['/eip/2', '/rip/7993', '/caip/104']) {
     }
   });
 }
+
+test('/eip/7944: unavailable numeric route never hydrates the renumbered proposal', async () => {
+  const context = await browser.newContext({ serviceWorkers: 'block' });
+  try {
+    await context.route('**/*', route => new URL(route.request().url()).origin === new URL(origin).origin ? route.continue() : route.abort('failed'));
+    const page = await context.newPage();
+    await page.goto(`${origin}/eip/7944`, { waitUntil: 'networkidle', timeout: 120000 });
+    const unavailable = page.getByRole('alert').filter({ hasText: 'This proposal is temporarily unavailable' });
+    await unavailable.waitFor();
+    assert.match(await unavailable.innerText(), /This proposal is temporarily unavailable/);
+    assert.equal(await page.locator('article').count(), 0);
+    assert.ok(!(await page.locator('body').innerText()).includes('Renumbered to'));
+    assert.ok(!(await page.locator('body').innerText()).includes('Proposers and builders can currently permute'));
+  } finally { await context.close(); }
+});
 
 test('/rip/7759: initial and hydrated named reference targets resolve on fragment clicks', async () => {
   const response = await fetch(`${origin}/rip/7759`);

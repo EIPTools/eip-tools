@@ -3,6 +3,37 @@ import test from 'node:test';
 
 const origin = process.env.SEO_TEST_ORIGIN || 'http://127.0.0.1:4317';
 const paths = ['/', '/eips', '/ercs', '/rips', '/caips', '/graph', '/eip/4337', '/eip/7702', '/rip/7212', '/caip/2'];
+for (const [number, state, source, text, label] of [
+  ['8287', 'closed', 'https://raw.githubusercontent.com/ethereum/ERCs/3347f7f48fe921a7bff9826e40fe7f81a25da3cb/ERCS/erc-8287.md', 'A privacy-native fungible token interface', 'PR closed (unmerged)'],
+  ['7956', undefined, 'https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7956.md', 'Proposers and builders can currently permute', 'Stagnant'],
+]) {
+  test(`/eip/${number} serves verified PR content and lifecycle in initial HTML and API`, async () => {
+    const response = await fetch(`${origin}/eip/${number}`);
+    assert.equal(response.status, 200);
+    const body = (await response.text()).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
+    assert.match(body, /<article\b/);
+    assert.ok(body.includes(text), 'real proposal body missing');
+    assert.ok(body.includes(label), 'PR lifecycle missing before hydration');
+    assert.ok(body.includes(`href="${source}"`), 'evidenced Markdown source link missing');
+
+    const api = await fetch(`${origin}/api/proposals/eip/${number}`);
+    assert.equal(api.status, 200);
+    const data = await api.json();
+    assert.equal(data.prState, state);
+    assert.equal(data.markdownPath, source);
+    assert.ok(data.markdown.includes(text));
+  });
+}
+
+test('old numeric route never serves the renumbered proposal', async () => {
+  const html = await (await fetch(`${origin}/eip/7944`)).text();
+  const body = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
+  assert.ok(!body.includes('Proposers and builders can currently permute'));
+  assert.ok(!body.includes('Renumbered to'));
+  const api = await fetch(`${origin}/api/proposals/eip/7944`);
+  assert.equal(api.status, 503);
+});
+
 test('proposal Markdown is present in the initial HTML, not just the client fetch', async () => {
   const html = await (await fetch(`${origin}/eip/4337`)).text();
   const body = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '');

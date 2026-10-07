@@ -1,11 +1,264 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { fetchRemoteMarkdown, githubSource, isProposalMarkdown } from "../utils/proposalContent";
-import { readBundledMarkdown } from "../utils/proposalContent.server";
+import * as sources from "../utils/proposalContent";
+import { validEIPs } from "../data/validEIPs";
+import * as generator from "./getWIPEIPsFromPRs";
+import * as indexer from "./fetchValidEIPs";
+import { getProposalContent, readBundledMarkdown } from "../utils/proposalContent.server";
 
 const url = "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-8130.md";
 const markdown = "---\neip: 8130\ntitle: Keystore Accounts\n---\n# Abstract\nActual proposal content.";
 const error = "<html>Error 503 Backend.max_conn reached<br>Varnish cache server</html>";
+const draft = { markdownPath: "https://raw.githubusercontent.com/alice/ERCs/refs/heads/feature/accounts/ERCS/erc-8287.md", prNo: 1796, isERC: true };
+
+test("active PRs follow the preserved upstream head, including subsequent revisions", async () => {
+  assert.equal(typeof sources.resolveProposalSource, "function", "PR source resolver missing");
+  for (const sha of ["a".repeat(40), "b".repeat(40)]) {
+    const source = await sources.resolveProposalSource("eip", draft, fakeFetch([
+      Response.json({ state: "open", merged: false, head: { sha } }),
+      Response.json([{ status: "added", filename: "ERCS/erc-8287.md" }]),
+    ]));
+    assert.equal(source.markdownPath, "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1796/head/ERCS/erc-8287.md");
+    assert.equal(source.prState, "open");
+    assert.equal(githubSource(source.markdownPath).ref, "refs/pull/1796/head");
+  }
+});
+
+test("closed unmerged PRs retain their final upstream commit even with a deleted fork", async () => {
+  const sha = "3".repeat(40);
+  const source = await sources.resolveProposalSource("eip", draft, fakeFetch([
+    Response.json({ state: "closed", merged: false, head: { sha, repo: null } }),
+    Response.json([{ status: "added", filename: "ERCS/erc-8287.md" }]),
+  ]));
+  assert.equal(source.markdownPath, `https://raw.githubusercontent.com/ethereum/ERCs/${sha}/ERCS/erc-8287.md`);
+  assert.equal(source.prState, "closed");
+  assert.equal(source.prHeadSha, sha);
+});
+
+test("merged PRs use current official content, never the author's former branch", async () => {
+  const source = await sources.resolveProposalSource("eip", { ...draft, isERC: false,
+    markdownPath: "https://raw.githubusercontent.com/alice/EIPs/refs/heads/dev/EIPS/eip-7944.md", prNo: 9813 },
+    fakeFetch([Response.json({ state: "closed", merged: true }), Response.json([{ status: "added", filename: "EIPS/eip-7944.md" }])]));
+  assert.equal(source.markdownPath, "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7944.md");
+  assert.equal(source.prState, "merged");
+});
+
+test("lifecycle outages recover legacy entries from the upstream pull ref without guessing canonical content", async () => {
+  const source = await sources.resolveProposalSource("eip", draft, fakeFetch([new Response("rate limited", { status: 403 })]));
+  assert.equal(source.markdownPath, "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1796/head/ERCS/erc-8287.md");
+  assert.equal(source.prState, undefined);
+  const closed = { ...draft, prState: "closed" as const, prHeadSha: "c".repeat(40) };
+  assert.equal((await sources.resolveProposalSource("eip", closed, fakeFetch([new Error("offline")]))).markdownPath,
+    `https://raw.githubusercontent.com/ethereum/ERCs/${closed.prHeadSha}/ERCS/erc-8287.md`);
+});
+
+test("runtime repairs checked-in PR sources and exposes lifecycle without replacing failed drafts", async () => {
+  const calls: string[] = [];
+  const result = await getProposalContent("eip", "8287", {
+    resolve: async (kind, proposal) => sources.proposalSourceFromPR(kind, proposal, { state: "closed", merged: false, head: { sha: "3".repeat(40) } }),
+    remote: async (source) => { calls.push(source); return markdown.replace("8130", "8287"); },
+  });
+  assert.match(calls[0], /ethereum\/ERCs\/3333333333333333333333333333333333333333\/ERCS\/erc-8287.md$/);
+  assert.equal(result.prState, "closed");
+  await assert.rejects(getProposalContent("eip", "8287", {
+    resolve: async (kind, proposal) => sources.preservedProposalSource(kind, proposal),
+    remote: async () => { throw new Error("offline"); },
+  }), /unavailable/);
+});
+
+test("validated Markdown must belong to the requested file, not another proposal with the same status", async () => {
+  const wrong = markdown.replace("eip: 8130", "eip: 20");
+  await assert.rejects(fetchRemoteMarkdown(url, fakeFetch([new Response(wrong), new Response(error)])), /unavailable/);
+});
+
+test("merged proposals renumbered in the same PR follow the evidenced final file, not a guessed number", async () => {
+  const source = await sources.resolveProposalSource("eip", { ...draft, isERC: false,
+    title: "Tx Ordering via Block-level Randomness", markdownPath: "https://raw.githubusercontent.com/alice/EIPs/master/EIPS/eip-7944.md", prNo: 9813 },
+    fakeFetch([Response.json({ state: "closed", merged: true }),
+      Response.json([{ status: "added", filename: "EIPS/eip-7956.md", patch: "+title: Tx Ordering via Block-level Randomness" }])]));
+  assert.equal(source.markdownPath, "https://raw.githubusercontent.com/ethereum/EIPs/master/EIPS/eip-7956.md");
+});
+
+test("generation refreshes known closed PRs and never confuses equal PR numbers across repositories", () => {
+  assert.equal(typeof sources.trackedPRNumbers, "function", "tracked PR discovery missing");
+  const entries = {
+    closed: { ...draft, prNo: 9 },
+    other: { ...draft, isERC: false, prNo: 7, markdownPath: url },
+  };
+  assert.deepEqual(sources.trackedPRNumbers("ERCs", [1, 1], entries), [1, 9]);
+  assert.deepEqual(sources.trackedPRNumbers("EIPs", [], entries), [7]);
+});
+
+test("generator reads the preserved PR revision, not a same-number local checkout, and retains closed history", async () => {
+  assert.equal(typeof generator.fetchDataFromPRs, "function", "testable PR generator missing");
+  const calls: string[] = [];
+  const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+    existing: { "8130": { title: "old", ...draft, isERC: false, prNo: 99, markdownPath: url.replace("ethereum", "alice") } },
+    open: async () => [],
+    pr: async () => ({ prData: { state: "closed", merged: false, head: { sha: "c".repeat(40), repo: null } } }),
+    files: async () => [{ status: "added", filename: "EIPS/eip-8130.md" }],
+    markdown: async source => { calls.push(source); return markdown; },
+  });
+  assert.deepEqual(calls, [`https://raw.githubusercontent.com/ethereum/EIPs/${"c".repeat(40)}/EIPS/eip-8130.md`]);
+  assert.equal(generated["8130"].prState, "closed");
+  assert.equal(generated["8130"].title, "Keystore Accounts");
+});
+
+test("lifecycle labels clearly distinguish a closed unmerged draft from proposal status", () => {
+  assert.equal(typeof sources.proposalLifecycleLabel, "function", "lifecycle label missing");
+  assert.equal(sources.proposalLifecycleLabel("closed"), "PR closed (unmerged)");
+  assert.equal(sources.proposalLifecycleLabel("open"), "PR open");
+  assert.equal(sources.proposalLifecycleLabel("merged"), "PR merged");
+  assert.equal(sources.proposalLifecycleLabel(undefined), undefined);
+});
+
+test("checked-in 8287 survives lifecycle API outages without an old-number alias", () => {
+  assert.equal(validEIPs["8287"].markdownPath, "https://raw.githubusercontent.com/ethereum/ERCs/3347f7f48fe921a7bff9826e40fe7f81a25da3cb/ERCS/erc-8287.md");
+  assert.equal(validEIPs["8287"].prState, "closed");
+  assert.equal(validEIPs["7944"], undefined);
+  assert.equal(validEIPs["7956"].prNo, undefined);
+});
+
+test("unproven merged file identity cannot map a fork draft to unrelated same-number official content", async () => {
+  for (const files of [Response.json([{ status: "added", filename: "ERCS/erc-9999.md", patch: "+title: Unrelated" }]), new Response("rate limited", { status: 403 })]) {
+    const source = await sources.resolveProposalSource("eip", draft, fakeFetch([Response.json({ state: "closed", merged: true }), files]));
+    assert.match(source.markdownPath, /refs\/pull\/1796\/head\/ERCS\/erc-8287.md$/);
+  }
+});
+
+test("generation does not persist an unproven merged same-number substitution", async () => {
+  const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+    existing: { "8130": { title: "Keystore Accounts", prNo: 99, markdownPath: url.replace("ethereum", "alice") } },
+    open: async () => [], pr: async () => ({ prData: { state: "closed", merged: true } }),
+    files: async () => [{ status: "added", filename: "EIPS/eip-9999.md", patch: "+title: Unrelated" }],
+    markdown: async source => markdown.replace("8130", source.includes("9999") ? "9999" : "8130"),
+  });
+  assert.equal(generated["8130"], undefined);
+});
+
+test("generator refreshes active content on every run and switches merged PRs to official sources", async () => {
+  const calls: string[] = [];
+  for (const [state, merged, title] of [["open", false, "First revision"], ["open", false, "Updated revision"], ["closed", true, "Official revision"]] as const) {
+    const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+      existing: {}, open: async () => [99],
+      pr: async () => ({ prData: { state, merged } }),
+      files: async () => [{ status: "added", filename: "EIPS/eip-8130.md" }],
+      markdown: async source => { calls.push(source); return markdown.replace("Keystore Accounts", title); },
+    });
+    assert.equal(generated["8130"].title, title);
+  }
+  assert.deepEqual(calls, [url.replace("master", "refs/pull/99/head"), url.replace("master", "refs/pull/99/head"), url]);
+});
+
+test("generator rejects HTTP-error bodies and mismatched Markdown rather than persisting them", async () => {
+  for (const body of [error, "404: Not Found", markdown.replace("8130", "20")]) {
+    const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+      existing: {}, open: async () => [99], pr: async () => ({ prData: { state: "open", merged: false } }),
+      files: async () => [{ status: "added", filename: "EIPS/eip-8130.md" }], markdown: async () => body,
+    });
+    assert.deepEqual(generated, {});
+  }
+});
+
+test("runtime keeps canonical bundled fallback during an upstream outage", async () => {
+  const result = await getProposalContent("eip", "8130", { resolve: async (_kind, proposal) => proposal, remote: async () => { throw new Error("offline"); } });
+  assert.equal(result.source, "bundled");
+  assert.ok(isProposalMarkdown(result.markdown, result.markdownPath));
+});
+
+test("PR file reconciliation uses explicit rename lineage and declines ambiguous or unrelated additions", () => {
+  const rename = { status: "renamed", previous_filename: "ERCS/erc-8287.md", filename: "ERCS/erc-8288.md" };
+  assert.match(sources.reconcilePRFile(draft, [rename]).markdownPath, /ERCS\/erc-8288.md$/);
+  const titled = { ...draft, title: "Draft" };
+  const added = { status: "added", filename: "ERCS/erc-9998.md", patch: "+title: Draft" };
+  assert.equal(sources.reconcilePRFile(titled, [added, { ...added, filename: "ERCS/erc-9999.md" }]), titled);
+  assert.equal(sources.reconcilePRFile(titled, [{ ...added, filename: "EIPS/eip-9998.md" }]), titled);
+});
+
+test("preserved PR heads retain exact API ref and current Markdown through CDN fallback", async () => {
+  const source = "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/99/head/EIPS/eip-8130.md";
+  const calls: string[] = [];
+  assert.equal(await fetchRemoteMarkdown(source, fakeFetch([new Response("404", { status: 404 }), new Response(markdown)], calls)), markdown);
+  assert.equal(calls[1], "https://api.github.com/repos/ethereum/EIPs/contents/EIPS/eip-8130.md?ref=refs%2Fpull%2F99%2Fhead");
+});
+
+test("PR file pagination preserves a renamed path beyond the first 100 files", async () => {
+  const calls: string[] = [];
+  const source = await sources.resolveProposalSource("eip", draft, fakeFetch([
+    Response.json({ state: "open", merged: false }),
+    Response.json(Array.from({ length: 100 }, (_, i) => ({ status: "modified", filename: `assets/${i}.png` }))),
+    Response.json([{ status: "renamed", previous_filename: "ERCS/erc-8287.md", filename: "ERCS/erc-8288.md" }]),
+  ], calls));
+  assert.match(source.markdownPath, /refs\/pull\/1796\/head\/ERCS\/erc-8288.md$/);
+  assert.match(calls[2], /per_page=100&page=2$/);
+});
+
+test("RIP and CAIP PRs use their own upstream repositories and default branches", async () => {
+  for (const [kind, path, upstream, branch] of [
+    ["rip", "RIPS/rip-1.md", "ethereum/RIPs", "master"],
+    ["caip", "CAIPs/caip-1.md", "ChainAgnostic/CAIPs", "main"],
+  ] as const) {
+    const proposal = { prNo: 5, markdownPath: `https://raw.githubusercontent.com/alice/${upstream.split("/")[1]}/refs/heads/feature/nested/${path}` };
+    const source = await sources.resolveProposalSource(kind, proposal, fakeFetch([
+      Response.json({ state: "closed", merged: true }), Response.json([{ status: "added", filename: path }]),
+    ]));
+    assert.equal(source.markdownPath, `https://raw.githubusercontent.com/${upstream}/${branch}/${path}`);
+  }
+});
+
+test("index refresh removes merged old IDs and preserves current official entries including reused IDs", async () => {
+  const old = { title: "Tx Ordering via Block-level Randomness", prNo: 9813, markdownPath: url.replace("8130", "7944") };
+  const official = { title: "Current official revision", markdownPath: url.replace("8130", "7956") };
+  const removed = new Set<string>();
+  const generated = await generator.fetchDataFromPRs({ orgName: "ethereum", repo: "EIPs", folderName: "EIPS", filePrefix: "eip" }, {
+    existing: { "7944": old, "7956": official }, open: async () => [],
+    pr: async () => ({ prData: { state: "closed", merged: true } }),
+    files: async () => [{ status: "added", filename: "EIPS/eip-7956.md", patch: `+title: ${old.title}` }],
+    markdown: async () => markdown.replace("8130", "7956"),
+    onRemove: key => removed.add(key),
+  });
+  assert.equal(generated["7944"], undefined);
+  assert.ok(removed.has("7944"));
+  assert.equal(typeof indexer.mergeIndexData, "function");
+  const merged = indexer.mergeIndexData({ "7944": old, "7956": official }, generated, removed);
+  assert.equal(merged["7944"], undefined);
+  assert.deepEqual(merged["7956"], official);
+  const reused = { title: "Real reused proposal", markdownPath: url.replace("8130", "7944") };
+  assert.deepEqual(indexer.mergeIndexData({ "7944": reused, "7956": official }, generated, removed)["7944"], reused);
+});
+
+test("runtime rejects cross-number source resolution before the next index refresh", async () => {
+  await assert.rejects(getProposalContent("eip", "8287", {
+    resolve: async () => ({ ...draft, markdownPath: url.replace("8130", "7956") }),
+    remote: async () => markdown.replace("8130", "7956"),
+  }), /unavailable/);
+});
+
+test("client rejects an API payload whose source and Markdown agree on the wrong requested ID", async () => {
+  const previous = globalThis.fetch;
+  globalThis.fetch = fakeFetch([Response.json({ markdown: markdown.replace("8130", "7956"), markdownPath: url.replace("8130", "7956"), isERC: false, source: "remote" })]);
+  try { await assert.rejects(sources.fetchProposalContent("eip", "7944"), /Invalid proposal content/); }
+  finally { globalThis.fetch = previous; }
+});
+
+test("a reused old number reads its real official proposal rather than the former PR", async () => {
+  const previous = validEIPs["7944"];
+  const official = { title: "Real reused proposal", markdownPath: url.replace("8130", "7944"), isERC: false };
+  validEIPs["7944"] = official;
+  try {
+    const content = await getProposalContent("eip", "7944", {
+      resolve: async (_kind, proposal) => { assert.equal(proposal.prNo, undefined); return proposal; },
+      remote: async source => { assert.equal(source, official.markdownPath); return markdown.replace("8130", "7944").replace("Keystore Accounts", official.title); },
+    });
+    assert.match(content.markdown, /eip: 7944/);
+    assert.match(content.markdown, /Real reused proposal/);
+    assert.equal(content.prNo, undefined);
+  } finally {
+    if (previous) validEIPs["7944"] = previous;
+    else delete validEIPs["7944"];
+  }
+});
 
 function fakeFetch(responses: (Response | Error)[], calls: string[] = []): typeof fetch {
   return (async (input: string | URL | Request) => {

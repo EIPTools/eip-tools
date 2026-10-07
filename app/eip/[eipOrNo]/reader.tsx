@@ -1,6 +1,6 @@
 "use client";
 
-import { fetchProposalContent, type ProposalContent } from "@/utils/proposalContent";
+import { fetchProposalContent, proposalLifecycleLabel, type ProposalContent } from "@/utils/proposalContent";
 import { ProposalLoadError } from "@/components/ProposalLoadError";
 import { PageHeading } from "@/components/PageHeading";
 
@@ -78,8 +78,9 @@ const EIP = ({
   const [metadataJson, setMetadataJson] = useState<EipMetadataJson | undefined>(() => initialContent ? convertMetadataToJson(extractMetadata(initialContent.markdown).metadata) : undefined);
   const [markdown, setMarkdown] = useState(() => initialContent ? extractMetadata(initialContent.markdown).markdown : "");
   const [isERC, setIsERC] = useState(initialContent?.isERC ?? true);
-  const [proposalPrUrl, setProposalPrUrl] = useState<string>();
-  const [proposalPrNo, setProposalPrNo] = useState<number>();
+  const [proposalPrUrl, setProposalPrUrl] = useState<string | undefined>(() => initialContent?.prNo ? getProposalPrUrl(initialContent.isERC ? "erc" : "eip", { ...initialContent, title: initialContent.title ?? "" }) : undefined);
+  const [proposalPrNo, setProposalPrNo] = useState(initialContent?.prNo);
+  const [proposalPrState, setProposalPrState] = useState(initialContent?.prState);
 
   const [bookmarks, setBookmarks] = useLocalStorage<
     { eipNo: string; title: string; type?: EIPType; status?: string }[]
@@ -182,6 +183,7 @@ const EIP = ({
       const _markdownFileURL = content.markdownPath;
       const _isERC = content.isERC;
       setProposalPrNo(validEIPData?.prNo);
+      setProposalPrState(content.prState);
       setProposalPrUrl(validEIPData ? getProposalPrUrl(content.isERC ? "erc" : "eip", validEIPData) : undefined);
       setMarkdownFileURL(_markdownFileURL);
 
@@ -558,6 +560,8 @@ const EIP = ({
                     <Link href={proposalPrUrl} color="primary.400" isExternal>
                       #{proposalPrNo}
                     </Link>
+                    {proposalPrState && <Badge ml={2}>{proposalLifecycleLabel(proposalPrState)}</Badge>}
+
                   </Td>
                 </Tr>
               )}
