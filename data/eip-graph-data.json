@@ -2321,7 +2321,7 @@
       "id": "eip-2780",
       "eipNo": "2780",
       "title": "Resource-based intrinsic transaction gas",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -2349,28 +2349,28 @@
       "id": "eip-7708",
       "eipNo": "7708",
       "title": "ETH transfers emit a log",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-7928",
       "eipNo": "7928",
       "title": "Block-Level Access Lists",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-8037",
       "eipNo": "8037",
       "title": "State Creation Gas Cost Increase",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-8038",
       "eipNo": "8038",
       "title": "State-access gas cost update",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -2706,7 +2706,7 @@
       "id": "eip-7778",
       "eipNo": "7778",
       "title": "Block Gas Accounting without Refunds",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -6311,7 +6311,7 @@
       "id": "eip-7732",
       "eipNo": "7732",
       "title": "Enshrined Proposer-Builder Separation",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -6675,7 +6675,7 @@
       "id": "eip-7843",
       "eipNo": "7843",
       "title": "SLOTNUM opcode",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7326,7 +7326,7 @@
       "id": "eip-7904",
       "eipNo": "7904",
       "title": "Compute Gas Cost Analysis",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7347,7 +7347,7 @@
       "id": "eip-7954",
       "eipNo": "7954",
       "title": "Increase Maximum Contract Size",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7725,14 +7725,14 @@
       "id": "eip-7975",
       "eipNo": "7975",
       "title": "eth/70 - partial block receipt lists",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-7976",
       "eipNo": "7976",
       "title": "Increase Calldata Floor Cost",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7767,7 +7767,7 @@
       "id": "eip-7981",
       "eipNo": "7981",
       "title": "Increase Access List Cost",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -7865,7 +7865,7 @@
       "id": "eip-7997",
       "eipNo": "7997",
       "title": "Deterministic Factory Contract",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -8047,7 +8047,7 @@
       "id": "eip-8024",
       "eipNo": "8024",
       "title": "Backward compatible SWAPN, DUPN, EXCHANGE",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -8061,7 +8061,7 @@
       "id": "eip-8282",
       "eipNo": "8282",
       "title": "Builder Execution Requests",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -8166,13 +8166,20 @@
       "id": "eip-8045",
       "eipNo": "8045",
       "title": "Exclude slashed validators from proposing",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-8046",
       "eipNo": "8046",
       "title": "Uniform price auction over inclusion lists",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8369",
+      "eipNo": "8369",
+      "title": "VOPS Profiles for FOCIL Eligibility",
       "status": "Draft",
       "isERC": false
     },
@@ -8243,7 +8250,7 @@
       "id": "eip-8061",
       "eipNo": "8061",
       "title": "Increase exit and consolidation churn",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -8278,7 +8285,7 @@
       "id": "eip-8066",
       "eipNo": "8066",
       "title": "Upgrade Mascots",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -8299,14 +8306,14 @@
       "id": "eip-8070",
       "eipNo": "8070",
       "title": "eth/72 - Sparse Blobpool",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
       "id": "eip-8159",
       "eipNo": "8159",
       "title": "eth/71 - Block Access List Exchange",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -8726,7 +8733,7 @@
       "id": "eip-8136",
       "eipNo": "8136",
       "title": "Cell-Level Deltas for Data Column Broadcast",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -9055,7 +9062,7 @@
       "id": "eip-8189",
       "eipNo": "8189",
       "title": "snap/2 - BAL-Based State Healing",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -9404,9 +9411,9 @@
     {
       "id": "eip-8242",
       "eipNo": "8242",
-      "title": "H3 Spatial Identity Extension for On-Chain Agents",
+      "title": "Ancestor-Indexed BALs",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-8243",
@@ -9517,7 +9524,7 @@
       "id": "eip-8261",
       "eipNo": "8261",
       "title": "Gas Limit Schedule",
-      "status": "Review",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -10221,13 +10228,6 @@
       "isERC": false
     },
     {
-      "id": "eip-8369",
-      "eipNo": "8369",
-      "title": "VOPS Profiles for FOCIL Eligibility",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-8370",
       "eipNo": "8370",
       "title": "Inheritable Agent Mandates",
@@ -10363,7 +10363,7 @@
     {
       "id": "eip-8391",
       "eipNo": "8391",
-      "title": "Execution Delegation Framework",
+      "title": "Asset Status Interface for Tokenized Assets",
       "status": "Draft",
       "isERC": true
     },
@@ -10706,9 +10706,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Post-quantum-ready deposit contract",
+      "title": "ERC-9999",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-11796",
@@ -10769,14 +10769,14 @@
     {
       "id": "eip-undefined",
       "eipNo": "undefined",
-      "title": "Named NFT",
+      "title": "Agent Onchain Metadata",
       "status": "Draft",
       "isERC": true
     },
     {
       "id": "eip-0000",
       "eipNo": "0000",
-      "title": "Custom Encoding Layout for ERC-7730",
+      "title": "Ethereum Interoperability Layer Wallet Usage",
       "status": "Draft",
       "isERC": true
     },
@@ -16654,6 +16654,18 @@
       "target": "eip-7805"
     },
     {
+      "source": "eip-8046",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-8046",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8046",
+      "target": "eip-8369"
+    },
+    {
       "source": "eip-8047",
       "target": "eip-165"
     },
@@ -17004,10 +17016,6 @@
     {
       "source": "eip-8107",
       "target": "eip-1271"
-    },
-    {
-      "source": "eip-8107",
-      "target": "eip-3668"
     },
     {
       "source": "eip-8107",
@@ -18227,7 +18235,7 @@
     },
     {
       "source": "eip-8242",
-      "target": "eip-165"
+      "target": "eip-7928"
     },
     {
       "source": "eip-8244",
@@ -19399,6 +19407,10 @@
     },
     {
       "source": "eip-8387",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8387",
       "target": "eip-8130"
     },
     {
@@ -19431,11 +19443,11 @@
     },
     {
       "source": "eip-8391",
-      "target": "eip-1271"
+      "target": "eip-20"
     },
     {
       "source": "eip-8391",
-      "target": "eip-5313"
+      "target": "eip-165"
     },
     {
       "source": "eip-8393",
@@ -19958,34 +19970,6 @@
       "target": "eip-8188"
     },
     {
-      "source": "eip-9999",
-      "target": "eip-6110"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7251"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7495"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7685"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7688"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7916"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7997"
-    },
-    {
       "source": "eip-11796",
       "target": "eip-712"
     },
@@ -20023,19 +20007,23 @@
     },
     {
       "source": "eip-undefined",
-      "target": "eip-165"
+      "target": "eip-7930"
     },
     {
       "source": "eip-undefined",
-      "target": "eip-721"
+      "target": "eip-8004"
     },
     {
       "source": "eip-undefined",
-      "target": "eip-7632"
+      "target": "eip-8048"
     },
     {
       "source": "eip-0000",
-      "target": "eip-7730"
+      "target": "eip-4337"
+    },
+    {
+      "source": "eip-0000",
+      "target": "eip-5792"
     }
   ]
 }
