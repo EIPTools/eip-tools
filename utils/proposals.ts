@@ -120,6 +120,15 @@ export const getProposalDetails = (
     }
   }
 
+  // Some proposal indexes retain filename padding (e.g. 010101), while
+  // sitemap and metadata publish the normalized numeric reader URL.
+  if (/^\d+$/.test(proposalNo)) {
+    const normalized = stripLeadingZeros(proposalNo);
+    const key = Object.keys(proposals).find(
+      key => /^\d+$/.test(key) && stripLeadingZeros(key) === normalized
+    );
+    if (key) return proposals[key];
+  }
   return undefined;
 };
 

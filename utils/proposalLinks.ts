@@ -1,6 +1,7 @@
 import { validCAIPs } from "@/data/validCAIPs";
 import { validEIPs } from "@/data/validEIPs";
 import { validRIPs } from "@/data/validRIPs";
+import { getProposalDetails } from "./proposals";
 
 type ProposalRoute = "eip" | "rip" | "caip";
 type ProposalPrefix = ProposalRoute | "erc";
@@ -31,18 +32,9 @@ const getKnownProposalNo = (
   route: ProposalRoute,
   proposalNo: string
 ): string | undefined => {
-  const proposals = proposalDataByRoute[route];
-
-  if (Object.prototype.hasOwnProperty.call(proposals, proposalNo)) {
-    return proposalNo;
-  }
-
-  const normalizedProposalNo = stripLeadingZeros(proposalNo);
-  if (Object.prototype.hasOwnProperty.call(proposals, normalizedProposalNo)) {
-    return normalizedProposalNo;
-  }
-
-  return undefined;
+  return getProposalDetails(proposalDataByRoute[route], proposalNo)
+    ? stripLeadingZeros(proposalNo)
+    : undefined;
 };
 
 const parseRouteSegment = (
