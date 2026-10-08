@@ -10529,6 +10529,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8437",
+      "eipNo": "8437",
+      "title": "Proof Object Transport over devp2p",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8438",
       "eipNo": "8438",
       "title": "Storage-Aware Beacon Proxies",
@@ -16946,11 +16953,7 @@
     },
     {
       "source": "eip-8130",
-      "target": "eip-2718"
-    },
-    {
-      "source": "eip-8130",
-      "target": "eip-7623"
+      "target": "eip-1014"
     },
     {
       "source": "eip-8131",
@@ -18034,11 +18037,19 @@
     },
     {
       "source": "eip-8250",
-      "target": "eip-7623"
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8250",
+      "target": "eip-7976"
     },
     {
       "source": "eip-8250",
       "target": "eip-8037"
+    },
+    {
+      "source": "eip-8250",
+      "target": "eip-8038"
     },
     {
       "source": "eip-8250",
@@ -19635,6 +19646,14 @@
     {
       "source": "eip-8436",
       "target": "eip-6372"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-2718"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-8288"
     },
     {
       "source": "eip-8438",
