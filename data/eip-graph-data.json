@@ -7452,7 +7452,7 @@
       "id": "eip-7945",
       "eipNo": "7945",
       "title": "Confidential Transactions Supported Token",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -8817,7 +8817,7 @@
       "id": "eip-8167",
       "eipNo": "8167",
       "title": "Modular Dispatch Proxies",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -18343,10 +18343,6 @@
     {
       "source": "eip-8283",
       "target": "eip-712"
-    },
-    {
-      "source": "eip-8283",
-      "target": "eip-1271"
     },
     {
       "source": "eip-8283",
