@@ -10340,6 +10340,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8406",
+      "eipNo": "8406",
+      "title": "Fungible Agent Tokens",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8407",
       "eipNo": "8407",
       "title": "Extensible Contract Metadata",
@@ -10546,6 +10553,13 @@
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-9998",
+      "eipNo": "9998",
+      "title": "Execution Chain Proofs",
       "status": "Draft",
       "isERC": false
     },
@@ -19336,6 +19350,14 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8406",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8406",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8407",
       "target": "eip-165"
     },
@@ -19658,6 +19680,14 @@
     {
       "source": "eip-8438",
       "target": "eip-1967"
+    },
+    {
+      "source": "eip-9998",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-9998",
+      "target": "eip-8025"
     },
     {
       "source": "eip-9999",
