@@ -116,7 +116,7 @@
     "requires": [
       "19"
     ],
-    "timestamp": "2026-10-09T03:14:30.495Z"
+    "timestamp": "2026-10-09T17:35:56.097Z"
   },
   "25": {
     "title": "Wallet Create Session JSON-RPC Method",
@@ -209,7 +209,7 @@
       "10",
       "94"
     ],
-    "timestamp": "2026-10-09T03:14:30.531Z"
+    "timestamp": "2026-10-09T17:35:56.290Z"
   },
   "104": {
     "title": "Namespace Reference Purpose and Guidelines",
@@ -459,7 +459,7 @@
       "22",
       "104"
     ],
-    "timestamp": "2026-10-09T03:14:27.255Z"
+    "timestamp": "2026-10-09T17:35:52.011Z"
   },
   "341": {
     "title": "Extension ID Target Type Specification",
@@ -512,7 +512,7 @@
     "requires": [
       "CAIP-25"
     ],
-    "timestamp": "2026-10-09T03:14:26.579Z"
+    "timestamp": "2026-10-09T17:35:51.302Z"
   },
   "372": {
     "title": "Wallet Information Metadata Standard",
@@ -520,7 +520,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ChainAgnostic/CAIPs/refs/pull/372/head/CAIPs/caip-372.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-09T03:14:26.517Z"
+    "timestamp": "2026-10-09T17:35:51.260Z"
   },
   "373": {
     "title": "EVM Smart Contract Call Reference Specification",

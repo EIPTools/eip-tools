@@ -3,9 +3,23 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "ZKMeta Metadata Interface",
+      "title": "Hybrid post-quantum stealth address scheme",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
+    },
+    {
+      "id": "eip-5564",
+      "eipNo": "5564",
+      "title": "Stealth Addresses",
+      "status": "Final",
+      "isERC": true
+    },
+    {
+      "id": "eip-6538",
+      "eipNo": "6538",
+      "title": "Stealth Meta-Address Registry",
+      "status": "Final",
+      "isERC": true
     },
     {
       "id": "eip-1",
@@ -3795,13 +3809,6 @@
       "isERC": true
     },
     {
-      "id": "eip-5564",
-      "eipNo": "5564",
-      "title": "Stealth Addresses",
-      "status": "Final",
-      "isERC": true
-    },
-    {
       "id": "eip-5570",
       "eipNo": "5570",
       "title": "Digital Receipt Non-Fungible Tokens",
@@ -4429,13 +4436,6 @@
       "eipNo": "6506",
       "title": "P2P Escrowed Governance Incentives",
       "status": "Stagnant",
-      "isERC": true
-    },
-    {
-      "id": "eip-6538",
-      "eipNo": "6538",
-      "title": "Stealth Meta-Address Registry",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -9353,6 +9353,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8247",
+      "eipNo": "8247",
+      "title": "Ancestor-Indexed BALs",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8248",
       "eipNo": "8248",
       "title": "Keyed Transfer With Authorization",
@@ -10333,13 +10340,6 @@
       "isERC": true
     },
     {
-      "id": "eip-8405",
-      "eipNo": "8405",
-      "title": "Fungible Agent Tokens (FAT) Protocol",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-8406",
       "eipNo": "8406",
       "title": "Fungible Agent Tokens",
@@ -10550,16 +10550,16 @@
       "isERC": true
     },
     {
-      "id": "eip-9000",
-      "eipNo": "9000",
-      "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
+      "id": "eip-8440",
+      "eipNo": "8440",
+      "title": "Execution Chain Proofs",
       "status": "Draft",
       "isERC": false
     },
     {
-      "id": "eip-9998",
-      "eipNo": "9998",
-      "title": "Execution Chain Proofs",
+      "id": "eip-9000",
+      "eipNo": "9000",
+      "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
       "status": "Draft",
       "isERC": false
     },
@@ -10621,6 +10621,14 @@
     }
   ],
   "links": [
+    {
+      "source": "eip-0",
+      "target": "eip-5564"
+    },
+    {
+      "source": "eip-0",
+      "target": "eip-6538"
+    },
     {
       "source": "eip-165",
       "target": "eip-214"
@@ -18038,6 +18046,10 @@
       "target": "eip-6780"
     },
     {
+      "source": "eip-8247",
+      "target": "eip-7928"
+    },
+    {
       "source": "eip-8248",
       "target": "eip-20"
     },
@@ -19342,14 +19354,6 @@
       "target": "eip-8272"
     },
     {
-      "source": "eip-8405",
-      "target": "eip-20"
-    },
-    {
-      "source": "eip-8405",
-      "target": "eip-165"
-    },
-    {
       "source": "eip-8406",
       "target": "eip-20"
     },
@@ -19682,11 +19686,11 @@
       "target": "eip-1967"
     },
     {
-      "source": "eip-9998",
+      "source": "eip-8440",
       "target": "eip-7732"
     },
     {
-      "source": "eip-9998",
+      "source": "eip-8440",
       "target": "eip-8025"
     },
     {
