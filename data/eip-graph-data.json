@@ -3,23 +3,9 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "Hybrid post-quantum stealth address scheme",
+      "title": "ZKMeta Metadata Interface",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-5564",
-      "eipNo": "5564",
-      "title": "Stealth Addresses",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-6538",
-      "eipNo": "6538",
-      "title": "Stealth Meta-Address Registry",
-      "status": "Final",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-1",
@@ -3809,6 +3795,13 @@
       "isERC": true
     },
     {
+      "id": "eip-5564",
+      "eipNo": "5564",
+      "title": "Stealth Addresses",
+      "status": "Final",
+      "isERC": true
+    },
+    {
       "id": "eip-5570",
       "eipNo": "5570",
       "title": "Digital Receipt Non-Fungible Tokens",
@@ -4436,6 +4429,13 @@
       "eipNo": "6506",
       "title": "P2P Escrowed Governance Incentives",
       "status": "Stagnant",
+      "isERC": true
+    },
+    {
+      "id": "eip-6538",
+      "eipNo": "6538",
+      "title": "Stealth Meta-Address Registry",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -10557,6 +10557,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8441",
+      "eipNo": "8441",
+      "title": "Hybrid post-quantum stealth address scheme",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -10621,14 +10628,6 @@
     }
   ],
   "links": [
-    {
-      "source": "eip-0",
-      "target": "eip-5564"
-    },
-    {
-      "source": "eip-0",
-      "target": "eip-6538"
-    },
     {
       "source": "eip-165",
       "target": "eip-214"
@@ -15883,11 +15882,7 @@
     },
     {
       "source": "eip-7962",
-      "target": "eip-2612"
-    },
-    {
-      "source": "eip-7962",
-      "target": "eip-5564"
+      "target": "eip-5267"
     },
     {
       "source": "eip-7963",
@@ -19692,6 +19687,14 @@
     {
       "source": "eip-8440",
       "target": "eip-8025"
+    },
+    {
+      "source": "eip-8441",
+      "target": "eip-5564"
+    },
+    {
+      "source": "eip-8441",
+      "target": "eip-6538"
     },
     {
       "source": "eip-9999",
