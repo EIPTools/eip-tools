@@ -8740,7 +8740,7 @@
       "id": "eip-8153",
       "eipNo": "8153",
       "title": "Facet-Based Diamonds",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -10546,6 +10546,13 @@
       "id": "eip-8438",
       "eipNo": "8438",
       "title": "Storage-Aware Beacon Proxies",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8439",
+      "eipNo": "8439",
+      "title": "Settlement-Decoupled Nanopayment Ledger",
       "status": "Draft",
       "isERC": true
     },
@@ -19679,6 +19686,22 @@
     {
       "source": "eip-8438",
       "target": "eip-1967"
+    },
+    {
+      "source": "eip-8439",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8439",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8439",
+      "target": "eip-2098"
+    },
+    {
+      "source": "eip-8439",
+      "target": "eip-5267"
     },
     {
       "source": "eip-8440",
