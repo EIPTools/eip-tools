@@ -5,7 +5,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/10768/head/EIPS/eip-0.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:45.605Z"
+    "timestamp": "2026-10-13T04:04:53.040Z"
   },
   "1": {
     "title": "EIP Purpose and Guidelines",
@@ -1192,7 +1192,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1701/head/ERCS/erc-1404.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:08.894Z"
+    "timestamp": "2026-10-13T04:06:08.190Z"
   },
   "1417": {
     "title": "Poll Standard",
@@ -1412,7 +1412,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1754/head/ERCS/erc-1643.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:04.123Z"
+    "timestamp": "2026-10-13T04:06:03.851Z"
   },
   "1679": {
     "title": "\"Hardfork Meta: Istanbul\"",
@@ -1518,7 +1518,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:48.189Z"
+    "timestamp": "2026-10-13T04:06:44.455Z"
   },
   "1767": {
     "title": "GraphQL interface to Ethereum node data",
@@ -1707,7 +1707,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1954/head/ERCS/erc-1954.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:45.896Z"
+    "timestamp": "2026-10-13T04:05:46.342Z"
   },
   "1959": {
     "title": "New Opcode to check if a chainID is part of the history of chainIDs",
@@ -4488,7 +4488,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/10917/head/EIPS/eip-5555.md",
     "prState": "open",
     "status": "New",
-    "timestamp": "2026-10-12T20:29:35.700Z"
+    "timestamp": "2026-10-13T04:04:44.592Z"
   },
   "5559": {
     "title": "Cross Chain Write Deferral Protocol",
@@ -5603,7 +5603,7 @@
       "165",
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:35.660Z"
+    "timestamp": "2026-10-13T04:06:32.808Z"
   },
   "6888": {
     "title": "Arithmetic verification at EVM level",
@@ -6010,7 +6010,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:48.455Z"
+    "timestamp": "2026-10-13T04:06:44.850Z"
   },
   "7291": {
     "title": "Purpose bound money",
@@ -6559,7 +6559,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1211/head/ERCS/erc-7551.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:35.019Z"
+    "timestamp": "2026-10-13T04:06:32.083Z"
   },
   "7555": {
     "title": "Single Sign-On for Account Discovery",
@@ -6885,7 +6885,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/11762/head/EIPS/eip-7605.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:07.732Z"
+    "timestamp": "2026-10-13T04:04:19.767Z"
   },
   "7607": {
     "title": "Hardfork Meta - Fusaka",
@@ -7190,7 +7190,7 @@
       "721",
       "7632"
     ],
-    "timestamp": "2026-10-12T20:31:47.813Z"
+    "timestamp": "2026-10-13T04:06:44.176Z"
   },
   "7654": {
     "title": "Request Method Types",
@@ -7239,7 +7239,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:31:48.901Z"
+    "timestamp": "2026-10-13T04:06:45.095Z"
   },
   "7662": {
     "title": "AI Agent NFTs",
@@ -7311,7 +7311,7 @@
     "prState": "closed",
     "prHeadSha": "a22d818a19e712de956ffc297e417ad8333de9df",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:49.158Z"
+    "timestamp": "2026-10-13T04:06:45.393Z"
   },
   "7673": {
     "title": "Distinguishable base256emoji Addresses",
@@ -7441,7 +7441,7 @@
     "prState": "closed",
     "prHeadSha": "c16d59ea5f499a2f6d93216d43af8e0743805d35",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:49.171Z"
+    "timestamp": "2026-10-13T04:06:45.448Z"
   },
   "7691": {
     "title": "Blob throughput increase",
@@ -7559,7 +7559,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:49.697Z"
+    "timestamp": "2026-10-13T04:06:45.844Z"
   },
   "7705": {
     "title": "NONREENTRANT and REENTRANT opcodes",
@@ -7638,7 +7638,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:50.048Z"
+    "timestamp": "2026-10-13T04:06:46.069Z"
   },
   "7715": {
     "title": "Request Permissions from Wallets",
@@ -7664,7 +7664,7 @@
     "prState": "closed",
     "prHeadSha": "945eeabe222f0be7b4ff4ba017814f651cbfe7f1",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:23.422Z"
+    "timestamp": "2026-10-13T04:05:25.942Z"
   },
   "7719": {
     "title": "P2P History Network",
@@ -7677,7 +7677,7 @@
       "7643",
       "7718"
     ],
-    "timestamp": "2026-10-12T20:30:23.809Z"
+    "timestamp": "2026-10-13T04:05:26.025Z"
   },
   "7720": {
     "title": "Deferred Token Transfer",
@@ -7886,7 +7886,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:50.292Z"
+    "timestamp": "2026-10-13T04:06:46.200Z"
   },
   "7753": {
     "title": "Proof-Based Escrow V2",
@@ -7899,7 +7899,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:50.397Z"
+    "timestamp": "2026-10-13T04:06:46.295Z"
   },
   "7754": {
     "title": "Tamperproof Extension Wallets API (TWIST)",
@@ -7921,7 +7921,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:50.512Z"
+    "timestamp": "2026-10-13T04:06:46.368Z"
   },
   "7756": {
     "title": "EOF/EVM Trace Specification",
@@ -7944,7 +7944,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:50.616Z"
+    "timestamp": "2026-10-13T04:06:46.433Z"
   },
   "7758": {
     "title": "Transfer With Authorization",
@@ -7995,7 +7995,7 @@
     "requires": [
       "1193"
     ],
-    "timestamp": "2026-10-12T20:31:50.585Z"
+    "timestamp": "2026-10-13T04:06:46.484Z"
   },
   "7764": {
     "title": "Buyer-Seller Negotiable Pricing",
@@ -8005,7 +8005,7 @@
     "prState": "closed",
     "prHeadSha": "5eb48a8a881e7a831e39e3239b49714662640599",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:50.811Z"
+    "timestamp": "2026-10-13T04:06:46.730Z"
   },
   "7765": {
     "title": "Privileged Non-Fungible Tokens Tied To RWA",
@@ -8062,7 +8062,7 @@
     "prState": "closed",
     "prHeadSha": "f89e504bdaf46023a618b6864886ecc916521451",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:51.217Z"
+    "timestamp": "2026-10-13T04:06:47.121Z"
   },
   "7772": {
     "title": "Partial Gas Sponsorship",
@@ -8075,7 +8075,7 @@
     "requires": [
       "4337"
     ],
-    "timestamp": "2026-10-12T20:31:51.413Z"
+    "timestamp": "2026-10-13T04:06:47.140Z"
   },
   "7773": {
     "title": "Hardfork Meta - Glamsterdam",
@@ -8370,7 +8370,7 @@
       "2718",
       "2930"
     ],
-    "timestamp": "2026-10-12T20:30:24.099Z"
+    "timestamp": "2026-10-13T04:05:26.387Z"
   },
   "7811": {
     "title": "Wallet Asset Discovery",
@@ -8405,7 +8405,7 @@
     "prState": "closed",
     "prHeadSha": "4c17e3a5c9082dab779baf819bf2f5731ad64b05",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:24.184Z"
+    "timestamp": "2026-10-13T04:05:26.940Z"
   },
   "7815": {
     "title": "Swap Order Routing Interface",
@@ -8415,7 +8415,7 @@
     "prState": "closed",
     "prHeadSha": "70e96af4539a39ed2bf564ec3559fb45159ff223",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:51.544Z"
+    "timestamp": "2026-10-13T04:06:47.345Z"
   },
   "7816": {
     "title": "Schnorr Signatures for EVM Applications",
@@ -8425,7 +8425,7 @@
     "prState": "closed",
     "prHeadSha": "c7fbc8d34f13be5a5c4d32f274e28d3e0dd2a5a0",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:52.058Z"
+    "timestamp": "2026-10-13T04:06:47.858Z"
   },
   "7817": {
     "title": "dApp Security Policy Standard",
@@ -8435,7 +8435,7 @@
     "prState": "closed",
     "prHeadSha": "7dcb08c67f07fd4437047c5e594e9231fb2b8d33",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:52.067Z"
+    "timestamp": "2026-10-13T04:06:47.756Z"
   },
   "7818": {
     "title": "Expirable ERC-20",
@@ -8487,7 +8487,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/728/head/ERCS/erc-7824.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:47.438Z"
+    "timestamp": "2026-10-13T04:06:43.754Z"
   },
   "7825": {
     "title": "Transaction Gas Limit Cap",
@@ -8507,7 +8507,7 @@
     "requires": [
       "2470"
     ],
-    "timestamp": "2026-10-12T20:31:52.110Z"
+    "timestamp": "2026-10-13T04:06:47.704Z"
   },
   "7827": {
     "title": "JSON Contract with Value Version Control",
@@ -8593,7 +8593,7 @@
     "prState": "closed",
     "prHeadSha": "4d80df3c3e58f2698c587108ac5331e5658007b7",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:52.722Z"
+    "timestamp": "2026-10-13T04:06:48.371Z"
   },
   "7836": {
     "title": "Wallet Call Preparation API",
@@ -8620,7 +8620,7 @@
     "prState": "closed",
     "prHeadSha": "91492da47dc98fb462a7975881e1707bbd84850a",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:52.781Z"
+    "timestamp": "2026-10-13T04:06:48.420Z"
   },
   "7839": {
     "title": "Unified Network Configuration",
@@ -8629,7 +8629,7 @@
     "prState": "closed",
     "prHeadSha": "6f598f5b016072f262ef22e404dfb59322d2a7b2",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:24.660Z"
+    "timestamp": "2026-10-13T04:05:26.767Z"
   },
   "7840": {
     "title": "Add blob schedule to EL config files",
@@ -8659,7 +8659,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/774/head/ERCS/erc-7844.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:47.090Z"
+    "timestamp": "2026-10-13T04:06:43.565Z"
   },
   "7845": {
     "title": "Universal Orchestrator RPC",
@@ -8709,7 +8709,7 @@
     "prState": "closed",
     "prHeadSha": "0f0cf2c1b7a1f110c4347c295611ec62b06e58ea",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:52.875Z"
+    "timestamp": "2026-10-13T04:06:48.568Z"
   },
   "7855": {
     "title": "Fungible Token with gas rebates",
@@ -8754,7 +8754,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:31:46.995Z"
+    "timestamp": "2026-10-13T04:06:43.272Z"
   },
   "7861": {
     "title": "ERC-721 Verifiable Credential Extension",
@@ -8795,7 +8795,7 @@
     "prState": "closed",
     "prHeadSha": "690e20e7650baedf58a81ecaa999e242b440104e",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:53.517Z"
+    "timestamp": "2026-10-13T04:06:48.987Z"
   },
   "7866": {
     "title": "Decentralised User Profiles",
@@ -8822,7 +8822,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/863/head/ERCS/erc-7868.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:46.565Z"
+    "timestamp": "2026-10-13T04:06:43.085Z"
   },
   "7870": {
     "title": "Hardware and Bandwidth Recommendations",
@@ -8921,7 +8921,7 @@
     "requires": [
       "<1559>"
     ],
-    "timestamp": "2026-10-12T20:30:24.837Z"
+    "timestamp": "2026-10-13T04:05:27.222Z"
   },
   "7882": {
     "title": "Wallet Call Simulation API",
@@ -8934,7 +8934,7 @@
       "5792",
       "7836"
     ],
-    "timestamp": "2026-10-12T20:31:45.713Z"
+    "timestamp": "2026-10-13T04:06:42.356Z"
   },
   "7883": {
     "title": "ModExp Gas Cost Increase",
@@ -9006,7 +9006,7 @@
     "requires": [
       "2718"
     ],
-    "timestamp": "2026-10-12T20:30:25.062Z"
+    "timestamp": "2026-10-13T04:05:27.524Z"
   },
   "7891": {
     "title": "Splitting and Merging of NFTs",
@@ -9044,7 +9044,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/924/head/ERCS/erc-7894.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:45.345Z"
+    "timestamp": "2026-10-13T04:06:41.843Z"
   },
   "7895": {
     "title": "API for Hierarchical Accounts",
@@ -9092,7 +9092,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:25.487Z"
+    "timestamp": "2026-10-13T04:05:27.675Z"
   },
   "7901": {
     "title": "Stateless mempool transaction",
@@ -9101,7 +9101,7 @@
     "prState": "closed",
     "prHeadSha": "7770f20e23d15448d4f42ba8997c67bf9f66f479",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:25.605Z"
+    "timestamp": "2026-10-13T04:05:27.895Z"
   },
   "7902": {
     "title": "Wallet Capabilities for Account Abstraction",
@@ -9172,7 +9172,7 @@
       "721",
       "1155"
     ],
-    "timestamp": "2026-10-12T20:31:44.899Z"
+    "timestamp": "2026-10-13T04:06:41.608Z"
   },
   "7910": {
     "title": "eth_config JSON-RPC Method",
@@ -9209,7 +9209,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/987/head/ERCS/erc-7914.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:44.545Z"
+    "timestamp": "2026-10-13T04:06:41.132Z"
   },
   "7915": {
     "title": "Adaptive mean reversion blob pricing",
@@ -9303,7 +9303,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:44.487Z"
+    "timestamp": "2026-10-13T04:06:41.127Z"
   },
   "7925": {
     "title": "Optional RPC Methods `eth_sendBlobs`  and `eth_getBlobsStatus`",
@@ -9311,7 +9311,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/9562/head/EIPS/eip-7925.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:20.004Z"
+    "timestamp": "2026-10-13T04:05:23.158Z"
   },
   "7927": {
     "title": "History Expiry Meta",
@@ -9352,7 +9352,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1016/head/ERCS/erc-7931.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:43.811Z"
+    "timestamp": "2026-10-13T04:06:40.440Z"
   },
   "7932": {
     "title": "Secondary Signature Algorithms",
@@ -9371,7 +9371,7 @@
     "requires": [
       "681"
     ],
-    "timestamp": "2026-10-12T20:30:25.794Z"
+    "timestamp": "2026-10-13T04:05:28.186Z"
   },
   "7934": {
     "title": "RLP Execution Block Size Limit",
@@ -9478,7 +9478,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/9792/head/EIPS/eip-7948.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:15.513Z"
+    "timestamp": "2026-10-13T04:05:19.025Z"
   },
   "7949": {
     "title": "Genesis File Format",
@@ -9640,7 +9640,7 @@
     "requires": [
       "8"
     ],
-    "timestamp": "2026-10-12T20:30:26.305Z"
+    "timestamp": "2026-10-13T04:05:28.333Z"
   },
   "7968": {
     "title": "Owner-Authorized Token Transfer Protocol",
@@ -9668,7 +9668,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:41.718Z"
+    "timestamp": "2026-10-13T04:06:38.500Z"
   },
   "7971": {
     "title": "Hard Limits for Transient Storage",
@@ -9686,7 +9686,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1087/head/ERCS/erc-7972.md",
     "prState": "open",
     "status": "Review",
-    "timestamp": "2026-10-12T20:31:41.206Z"
+    "timestamp": "2026-10-13T04:06:38.036Z"
   },
   "7973": {
     "title": "Warm Account Write Metering",
@@ -9704,7 +9704,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1088/head/ERCS/erc-7974.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:40.908Z"
+    "timestamp": "2026-10-13T04:06:37.866Z"
   },
   "7975": {
     "title": "eth/70 - partial block receipt lists",
@@ -9733,7 +9733,7 @@
     "prState": "closed",
     "prHeadSha": "6b6b55f0243ad54e3fcbbe7055ebfa29e5f5e3eb",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:53.525Z"
+    "timestamp": "2026-10-13T04:06:49.116Z"
   },
   "7978": {
     "title": "Non‑Fungible Account Tokens",
@@ -9749,7 +9749,7 @@
       "4337",
       "7579"
     ],
-    "timestamp": "2026-10-12T20:31:40.726Z"
+    "timestamp": "2026-10-13T04:06:37.789Z"
   },
   "7979": {
     "title": "Call and Return Opcodes for the EVM",
@@ -9789,7 +9789,7 @@
       "3668",
       "4804"
     ],
-    "timestamp": "2026-10-12T20:31:40.344Z"
+    "timestamp": "2026-10-13T04:06:37.194Z"
   },
   "7983": {
     "title": "Granular Transaction Types",
@@ -9798,7 +9798,7 @@
     "prState": "closed",
     "prHeadSha": "7807e5e9b2b4361caa3f9141de22d81eddf71c3c",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:26.284Z"
+    "timestamp": "2026-10-13T04:05:28.630Z"
   },
   "7984": {
     "title": "Confidential Fungible Token",
@@ -9829,7 +9829,7 @@
       "1967",
       "7201"
     ],
-    "timestamp": "2026-10-12T20:31:40.192Z"
+    "timestamp": "2026-10-13T04:06:37.165Z"
   },
   "7987": {
     "title": "Transaction Gas Limit Cap at 16,777,216",
@@ -9838,7 +9838,7 @@
     "prState": "closed",
     "prHeadSha": "cf80ec75c8dbeceeb77d47783864baab7d5936a3",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:26.576Z"
+    "timestamp": "2026-10-13T04:05:28.832Z"
   },
   "7988": {
     "title": "Minimal Avatar Smart Wallet (MASW)",
@@ -9859,7 +9859,7 @@
     "requires": [
       "681"
     ],
-    "timestamp": "2026-10-12T20:31:39.970Z"
+    "timestamp": "2026-10-13T04:06:36.898Z"
   },
   "7990": {
     "title": "Opcode for arbitrary bytecode execution",
@@ -9867,7 +9867,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/10036/head/EIPS/eip-7990.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:10.992Z"
+    "timestamp": "2026-10-13T04:05:15.034Z"
   },
   "7992": {
     "title": "Verifiable ML Model Inference (ZKML)",
@@ -9898,7 +9898,7 @@
     "requires": [
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:38.410Z"
+    "timestamp": "2026-10-13T04:06:35.212Z"
   },
   "7996": {
     "title": "Contract Feature Detection",
@@ -9979,7 +9979,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:38.011Z"
+    "timestamp": "2026-10-13T04:06:35.014Z"
   },
   "8004": {
     "title": "Trustless Agents",
@@ -10003,7 +10003,7 @@
       "1559",
       "2718"
     ],
-    "timestamp": "2026-10-12T20:30:06.040Z"
+    "timestamp": "2026-10-13T04:05:10.591Z"
   },
   "8006": {
     "title": "Universal Policy Engine",
@@ -10012,7 +10012,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1179/head/ERCS/erc-8006.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:37.269Z"
+    "timestamp": "2026-10-13T04:06:34.372Z"
   },
   "8007": {
     "title": "Glamsterdam Gas Repricings",
@@ -10050,7 +10050,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:36.941Z"
+    "timestamp": "2026-10-13T04:06:33.919Z"
   },
   "8010": {
     "title": "Pre-delegated Signature Verification",
@@ -10064,7 +10064,7 @@
       "6492",
       "7702"
     ],
-    "timestamp": "2026-10-12T20:31:36.695Z"
+    "timestamp": "2026-10-13T04:06:33.761Z"
   },
   "8011": {
     "title": "Multidimensional Gas Metering",
@@ -10102,7 +10102,7 @@
       "7732",
       "8012"
     ],
-    "timestamp": "2026-10-12T20:30:27.156Z"
+    "timestamp": "2026-10-13T04:05:29.092Z"
   },
   "8015": {
     "title": "Remove `deposit` and `eth1data` fields",
@@ -10154,7 +10154,7 @@
       "4337",
       "5792"
     ],
-    "timestamp": "2026-10-12T20:31:34.954Z"
+    "timestamp": "2026-10-13T04:06:32.052Z"
   },
   "8022": {
     "title": "Calldata run-length encoding scheme",
@@ -10162,7 +10162,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/10335/head/EIPS/eip-8022.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:59.412Z"
+    "timestamp": "2026-10-13T04:05:05.157Z"
   },
   "8023": {
     "title": "Multi-step Contract Ownership",
@@ -10204,7 +10204,7 @@
     "requires": [
       "5792"
     ],
-    "timestamp": "2026-10-12T20:31:34.143Z"
+    "timestamp": "2026-10-13T04:06:31.419Z"
   },
   "8027": {
     "title": "Recurring Subscription NFT",
@@ -10217,7 +10217,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:31:34.230Z"
+    "timestamp": "2026-10-13T04:06:31.424Z"
   },
   "8028": {
     "title": "Data Anchoring Token (DAT)",
@@ -10226,7 +10226,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1219/head/ERCS/erc-8028.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:33.463Z"
+    "timestamp": "2026-10-13T04:06:30.764Z"
   },
   "8030": {
     "title": "P256 algorithm support",
@@ -10275,7 +10275,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:32.779Z"
+    "timestamp": "2026-10-13T04:06:30.099Z"
   },
   "8036": {
     "title": "MultiTrustCredential (MTC) ZK Presentation",
@@ -10288,7 +10288,7 @@
       "165",
       "8035"
     ],
-    "timestamp": "2026-10-12T20:31:32.717Z"
+    "timestamp": "2026-10-13T04:06:30.019Z"
   },
   "8037": {
     "title": "State Creation Gas Cost Increase",
@@ -10324,7 +10324,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1238/head/ERCS/erc-8039.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:32.545Z"
+    "timestamp": "2026-10-13T04:06:29.965Z"
   },
   "8040": {
     "title": "ESG Tokenization Protocol",
@@ -10370,7 +10370,7 @@
       "4337",
       "7579"
     ],
-    "timestamp": "2026-10-12T20:31:31.969Z"
+    "timestamp": "2026-10-13T04:06:29.426Z"
   },
   "8045": {
     "title": "Exclude slashed validators from proposing",
@@ -10438,7 +10438,7 @@
       "7871",
       "8026"
     ],
-    "timestamp": "2026-10-12T20:31:31.245Z"
+    "timestamp": "2026-10-13T04:06:28.728Z"
   },
   "8051": {
     "title": "Precompile for ML-DSA signature verification",
@@ -10521,7 +10521,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:31:30.558Z"
+    "timestamp": "2026-10-13T04:06:28.151Z"
   },
   "8061": {
     "title": "Increase exit and consolidation churn",
@@ -10565,7 +10565,7 @@
       "1271",
       "7204"
     ],
-    "timestamp": "2026-10-12T20:31:30.504Z"
+    "timestamp": "2026-10-13T04:06:28.140Z"
   },
   "8065": {
     "title": "Zero Knowledge Token Wrapper",
@@ -10600,7 +10600,7 @@
       "1271",
       "7564"
     ],
-    "timestamp": "2026-10-12T20:31:30.095Z"
+    "timestamp": "2026-10-13T04:06:27.778Z"
   },
   "8068": {
     "title": "Neutral effective balance design",
@@ -10667,7 +10667,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:29.651Z"
+    "timestamp": "2026-10-13T04:06:27.453Z"
   },
   "8077": {
     "title": "eth/XX - announce transactions with nonce",
@@ -10708,7 +10708,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/10807/head/EIPS/eip-8082.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:42.671Z"
+    "timestamp": "2026-10-13T04:04:50.533Z"
   },
   "8083": {
     "title": "Time-Bound Access Control",
@@ -10720,7 +10720,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:29.338Z"
+    "timestamp": "2026-10-13T04:06:27.041Z"
   },
   "8084": {
     "title": "Zero-knowledge proof metadata",
@@ -10756,7 +10756,7 @@
     "requires": [
       "7573"
     ],
-    "timestamp": "2026-10-12T20:31:29.068Z"
+    "timestamp": "2026-10-13T04:06:26.780Z"
   },
   "8088": {
     "title": "Cross-Chain Tracking",
@@ -10768,7 +10768,7 @@
     "requires": [
       "155"
     ],
-    "timestamp": "2026-10-12T20:31:28.822Z"
+    "timestamp": "2026-10-13T04:06:26.709Z"
   },
   "8089": {
     "title": "Smart Contract Lifecycle Registry",
@@ -10777,7 +10777,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1363/head/ERCS/erc-8089.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:28.562Z"
+    "timestamp": "2026-10-13T04:06:26.319Z"
   },
   "8090": {
     "title": "Relayer-Protected Gasless Swaps",
@@ -10789,7 +10789,7 @@
     "requires": [
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:28.356Z"
+    "timestamp": "2026-10-13T04:06:26.031Z"
   },
   "8091": {
     "title": "Privacy Address Format",
@@ -10798,7 +10798,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1373/head/ERCS/erc-8091.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:28.140Z"
+    "timestamp": "2026-10-13T04:06:26.034Z"
   },
   "8092": {
     "title": "Associated Accounts",
@@ -10823,7 +10823,7 @@
       "20",
       "7503"
     ],
-    "timestamp": "2026-10-12T20:31:27.844Z"
+    "timestamp": "2026-10-13T04:06:25.608Z"
   },
   "8094": {
     "title": "eth/vhash - Blob-Aware Mempool",
@@ -10841,7 +10841,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1384/head/ERCS/erc-8095.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:27.619Z"
+    "timestamp": "2026-10-13T04:06:25.305Z"
   },
   "8096": {
     "title": "Increase Gas Cost of Point Evaluation",
@@ -10864,7 +10864,7 @@
       "165",
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:27.398Z"
+    "timestamp": "2026-10-13T04:06:25.340Z"
   },
   "8099": {
     "title": "MEVless Protocol",
@@ -10906,7 +10906,7 @@
       "712",
       "8103"
     ],
-    "timestamp": "2026-10-12T20:31:26.981Z"
+    "timestamp": "2026-10-13T04:06:24.776Z"
   },
   "8103": {
     "title": "Permissioned Authorization Object (PPO)",
@@ -10918,7 +10918,7 @@
     "requires": [
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:27.092Z"
+    "timestamp": "2026-10-13T04:06:24.856Z"
   },
   "8104": {
     "title": "Real World Asset (RWA) Disclosure URI",
@@ -10930,7 +10930,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:26.272Z"
+    "timestamp": "2026-10-13T04:06:24.126Z"
   },
   "8105": {
     "title": "Universal Enshrined Encrypted Mempool",
@@ -11000,7 +11000,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:26.182Z"
+    "timestamp": "2026-10-13T04:06:23.989Z"
   },
   "8113": {
     "title": "Series Accounting for Incentivized Vaults",
@@ -11024,7 +11024,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:25.535Z"
+    "timestamp": "2026-10-13T04:06:23.427Z"
   },
   "8115": {
     "title": "Batch priority fees at end of block",
@@ -11065,7 +11065,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:25.479Z"
+    "timestamp": "2026-10-13T04:06:23.509Z"
   },
   "8119": {
     "title": "Parameterized Storage Keys",
@@ -11123,7 +11123,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:25.363Z"
+    "timestamp": "2026-10-13T04:06:23.300Z"
   },
   "8125": {
     "title": "Temporary Contract Storage",
@@ -11172,7 +11172,7 @@
       "6492",
       "7702"
     ],
-    "timestamp": "2026-10-12T20:31:24.688Z"
+    "timestamp": "2026-10-13T04:06:22.710Z"
   },
   "8129": {
     "title": "Non-Transferable Token",
@@ -11185,7 +11185,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:31:24.523Z"
+    "timestamp": "2026-10-13T04:06:22.264Z"
   },
   "8130": {
     "title": "Keystore Accounts",
@@ -11221,7 +11221,7 @@
     "requires": [
       "5792"
     ],
-    "timestamp": "2026-10-12T20:31:23.893Z"
+    "timestamp": "2026-10-13T04:06:22.125Z"
   },
   "8133": {
     "title": "Network Upgrade Naming",
@@ -11299,7 +11299,7 @@
       "2",
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:23.924Z"
+    "timestamp": "2026-10-13T04:06:22.021Z"
   },
   "8140": {
     "title": "Token Gas Payments for EIP-8130",
@@ -11311,7 +11311,7 @@
     "requires": [
       "8130"
     ],
-    "timestamp": "2026-10-12T20:30:27.147Z"
+    "timestamp": "2026-10-13T04:05:29.351Z"
   },
   "8141": {
     "title": "Frame Transaction",
@@ -11364,7 +11364,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1508/head/ERCS/erc-8144.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:23.764Z"
+    "timestamp": "2026-10-13T04:06:21.587Z"
   },
   "8146": {
     "title": "Block Access List Sidecars",
@@ -11383,7 +11383,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1510/head/ERCS/erc-8147.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:23.127Z"
+    "timestamp": "2026-10-13T04:06:21.388Z"
   },
   "8148": {
     "title": "Custom sweep threshold for validators",
@@ -11414,7 +11414,7 @@
     "requires": [
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:23.162Z"
+    "timestamp": "2026-10-13T04:06:21.217Z"
   },
   "8151": {
     "title": "Account Code Restricted ecRecover",
@@ -11454,7 +11454,7 @@
       "2535",
       "7201"
     ],
-    "timestamp": "2026-10-12T20:31:22.441Z"
+    "timestamp": "2026-10-13T04:06:20.603Z"
   },
   "8156": {
     "title": "Agent Onchain Metadata",
@@ -11468,7 +11468,7 @@
       "8004",
       "8048"
     ],
-    "timestamp": "2026-10-12T20:31:22.367Z"
+    "timestamp": "2026-10-13T04:06:20.539Z"
   },
   "8158": {
     "title": "Invariant Layout Guard Opcode",
@@ -11498,7 +11498,7 @@
       "191",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:21.681Z"
+    "timestamp": "2026-10-13T04:06:19.812Z"
   },
   "8161": {
     "title": "Transferable Tokenized Vault Requests",
@@ -11523,7 +11523,7 @@
       "2612",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:31:20.933Z"
+    "timestamp": "2026-10-13T04:06:19.218Z"
   },
   "8163": {
     "title": "Reserve `EXTENSION (0xae)` opcode",
@@ -11561,7 +11561,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:20.906Z"
+    "timestamp": "2026-10-13T04:06:19.145Z"
   },
   "8166": {
     "title": "Shared Sequencer Interface for Agent L2s",
@@ -11592,7 +11592,7 @@
       "8141",
       "8430"
     ],
-    "timestamp": "2026-10-12T20:31:20.768Z"
+    "timestamp": "2026-10-13T04:06:19.081Z"
   },
   "8169": {
     "title": "Historical Ownership Extension for ERC-721",
@@ -11617,7 +11617,7 @@
       "721",
       "6551"
     ],
-    "timestamp": "2026-10-12T20:31:20.142Z"
+    "timestamp": "2026-10-13T04:06:18.385Z"
   },
   "8171": {
     "title": "Token Bound Account (Agent Registry)",
@@ -11631,7 +11631,7 @@
       "721",
       "6551"
     ],
-    "timestamp": "2026-10-12T20:31:19.967Z"
+    "timestamp": "2026-10-13T04:06:18.426Z"
   },
   "8172": {
     "title": "Delayed Metadata Update Extension",
@@ -11644,7 +11644,7 @@
       "721",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:31:19.213Z"
+    "timestamp": "2026-10-13T04:06:17.853Z"
   },
   "8173": {
     "title": "Foundations of EVM Control Flow",
@@ -11663,7 +11663,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:20.128Z"
+    "timestamp": "2026-10-13T04:06:18.577Z"
   },
   "8175": {
     "title": "Composable Transaction",
@@ -11694,7 +11694,7 @@
     "prState": "closed",
     "prHeadSha": "8e4139760bddd58e0f4b1447839488026c0d2dba",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:27.916Z"
+    "timestamp": "2026-10-13T04:05:29.827Z"
   },
   "8178": {
     "title": "Binary SSZ Transport for the Engine API",
@@ -11735,7 +11735,7 @@
       "6551",
       "7857"
     ],
-    "timestamp": "2026-10-12T20:31:18.343Z"
+    "timestamp": "2026-10-13T04:06:17.011Z"
   },
   "8182": {
     "title": "Private ETH and ERC-20 Transfers",
@@ -11772,7 +11772,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1580/head/ERCS/erc-8185.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:17.729Z"
+    "timestamp": "2026-10-13T04:06:16.985Z"
   },
   "8186": {
     "title": "Deterministic Accounts for Identifiers",
@@ -11785,7 +11785,7 @@
       "165",
       "8185"
     ],
-    "timestamp": "2026-10-12T20:31:17.670Z"
+    "timestamp": "2026-10-13T04:06:16.422Z"
   },
   "8187": {
     "title": "Token Puller",
@@ -11830,7 +11830,7 @@
       "20",
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:16.921Z"
+    "timestamp": "2026-10-13T04:06:16.273Z"
   },
   "8191": {
     "title": "Onchain Recurring Payments",
@@ -11842,7 +11842,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:16.959Z"
+    "timestamp": "2026-10-13T04:06:15.590Z"
   },
   "8192": {
     "title": "Mandated Execution for Tokenized Vaults",
@@ -11858,7 +11858,7 @@
       "1271",
       "4626"
     ],
-    "timestamp": "2026-10-12T20:31:16.803Z"
+    "timestamp": "2026-10-13T04:06:15.648Z"
   },
   "8194": {
     "title": "Payment-Gated Transaction Relay (PGTR)",
@@ -11871,7 +11871,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:16.161Z"
+    "timestamp": "2026-10-13T04:06:14.916Z"
   },
   "8195": {
     "title": "Task Market Protocol (TMP)",
@@ -11886,7 +11886,7 @@
       "8004",
       "8194"
     ],
-    "timestamp": "2026-10-12T20:31:16.172Z"
+    "timestamp": "2026-10-13T04:06:14.974Z"
   },
   "8196": {
     "title": "AI Agent Authenticated Wallet",
@@ -11986,7 +11986,7 @@
       "1271",
       "5267"
     ],
-    "timestamp": "2026-10-12T20:31:15.577Z"
+    "timestamp": "2026-10-13T04:06:14.925Z"
   },
   "8204": {
     "title": "Token Payments",
@@ -11995,7 +11995,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1617/head/ERCS/erc-8204.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:15.343Z"
+    "timestamp": "2026-10-13T04:06:14.273Z"
   },
   "8205": {
     "title": "Withdrawal credentials preregistration",
@@ -12019,7 +12019,7 @@
       "3860",
       "7954"
     ],
-    "timestamp": "2026-10-12T20:29:12.337Z"
+    "timestamp": "2026-10-13T04:04:23.907Z"
   },
   "8209": {
     "title": "Commit-Reveal Transaction Frames",
@@ -12040,7 +12040,7 @@
     "requires": [
       "8183"
     ],
-    "timestamp": "2026-10-12T20:31:14.567Z"
+    "timestamp": "2026-10-13T04:06:13.566Z"
   },
   "8211": {
     "title": "Smart Batching",
@@ -12052,7 +12052,7 @@
     "requires": [
       "7964"
     ],
-    "timestamp": "2026-10-12T20:31:14.089Z"
+    "timestamp": "2026-10-13T04:06:13.384Z"
   },
   "8212": {
     "title": "Block-scoped transient storage opcodes",
@@ -12064,7 +12064,7 @@
       "1153",
       "2200"
     ],
-    "timestamp": "2026-10-12T20:29:12.064Z"
+    "timestamp": "2026-10-13T04:04:23.669Z"
   },
   "8213": {
     "title": "Wallet Signature and Calldata Digest Display",
@@ -12077,7 +12077,7 @@
       "191",
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:13.775Z"
+    "timestamp": "2026-10-13T04:06:12.812Z"
   },
   "8214": {
     "title": "Buy Now Pay Later (BNPL)",
@@ -12092,7 +12092,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:13.723Z"
+    "timestamp": "2026-10-13T04:06:12.807Z"
   },
   "8215": {
     "title": "Hash-Committed Account",
@@ -12103,7 +12103,7 @@
     "requires": [
       "2718"
     ],
-    "timestamp": "2026-10-12T20:29:11.537Z"
+    "timestamp": "2026-10-13T04:04:23.248Z"
   },
   "8216": {
     "title": "Slot-Based Equipment for ERC-6551 Accounts",
@@ -12118,7 +12118,7 @@
       "1155",
       "6551"
     ],
-    "timestamp": "2026-10-12T20:31:13.227Z"
+    "timestamp": "2026-10-13T04:06:12.595Z"
   },
   "8217": {
     "title": "Agent NFT Identity Bindings",
@@ -12139,7 +12139,7 @@
     "requires": [
       "2537"
     ],
-    "timestamp": "2026-10-12T20:31:12.939Z"
+    "timestamp": "2026-10-13T04:06:12.086Z"
   },
   "8219": {
     "title": "Checked Arithmetic Opcodes",
@@ -12158,7 +12158,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:12.239Z"
+    "timestamp": "2026-10-13T04:06:11.468Z"
   },
   "8221": {
     "title": "Wallet Title Deeds",
@@ -12178,7 +12178,7 @@
       "5267",
       "7739"
     ],
-    "timestamp": "2026-10-12T20:31:12.129Z"
+    "timestamp": "2026-10-13T04:06:11.420Z"
   },
   "8222": {
     "title": "Lean Staking",
@@ -12201,7 +12201,7 @@
       "2718",
       "7708"
     ],
-    "timestamp": "2026-10-12T20:29:10.076Z"
+    "timestamp": "2026-10-13T04:04:22.168Z"
   },
   "8224": {
     "title": "Counterfactual Transaction",
@@ -12221,7 +12221,7 @@
       "7708",
       "7904"
     ],
-    "timestamp": "2026-10-12T20:29:09.802Z"
+    "timestamp": "2026-10-13T04:04:21.683Z"
   },
   "8225": {
     "title": "ECRECOVER Native Key Awareness",
@@ -12233,7 +12233,7 @@
       "2929",
       "8164"
     ],
-    "timestamp": "2026-10-12T20:29:10.092Z"
+    "timestamp": "2026-10-13T04:04:21.875Z"
   },
   "8226": {
     "title": "Regulated Agent Mandate",
@@ -12257,7 +12257,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:11.390Z"
+    "timestamp": "2026-10-13T04:06:10.656Z"
   },
   "8228": {
     "title": "Cryptographic Amnesia",
@@ -12269,7 +12269,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:11.132Z"
+    "timestamp": "2026-10-13T04:06:10.415Z"
   },
   "8229": {
     "title": "FHE Computation Verification",
@@ -12281,7 +12281,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:11.037Z"
+    "timestamp": "2026-10-13T04:06:10.400Z"
   },
   "8230": {
     "title": "Self-Explanatory Smart Contract Instruction",
@@ -12290,7 +12290,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1683/head/ERCS/erc-8230.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:10.639Z"
+    "timestamp": "2026-10-13T04:06:09.651Z"
   },
   "8231": {
     "title": "Post-Quantum Key Registry",
@@ -12302,7 +12302,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:10.313Z"
+    "timestamp": "2026-10-13T04:06:09.743Z"
   },
   "8232": {
     "title": "Onchain Agency for Represented RWAs",
@@ -12317,7 +12317,7 @@
       "8004",
       "8183"
     ],
-    "timestamp": "2026-10-12T20:31:10.157Z"
+    "timestamp": "2026-10-13T04:06:09.691Z"
   },
   "8233": {
     "title": "Warden - Secure Token Custody Contract",
@@ -12329,7 +12329,7 @@
     "requires": [
       "20"
     ],
-    "timestamp": "2026-10-12T20:31:09.705Z"
+    "timestamp": "2026-10-13T04:06:09.006Z"
   },
   "8234": {
     "title": "Referable NFTs Authorization",
@@ -12345,7 +12345,7 @@
       "721",
       "5521"
     ],
-    "timestamp": "2026-10-12T20:31:09.521Z"
+    "timestamp": "2026-10-13T04:06:08.920Z"
   },
   "8235": {
     "title": "EIP tagging",
@@ -12356,7 +12356,7 @@
     "requires": [
       "1"
     ],
-    "timestamp": "2026-10-12T20:29:09.337Z"
+    "timestamp": "2026-10-13T04:04:21.158Z"
   },
   "8236": {
     "title": "Deferred-Settlement Fungible Tokens",
@@ -12369,7 +12369,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:09.287Z"
+    "timestamp": "2026-10-13T04:06:08.816Z"
   },
   "8237": {
     "title": "Independent CL/EL Sync",
@@ -12392,7 +12392,7 @@
       "165",
       "4337"
     ],
-    "timestamp": "2026-10-12T20:31:08.766Z"
+    "timestamp": "2026-10-13T04:06:08.263Z"
   },
   "8239": {
     "title": "Agent Skill Registry",
@@ -12406,7 +12406,7 @@
       "8004",
       "8183"
     ],
-    "timestamp": "2026-10-12T20:31:08.488Z"
+    "timestamp": "2026-10-13T04:06:07.970Z"
   },
   "8240": {
     "title": "Trust Infrastructure for Agents and Assets",
@@ -12418,7 +12418,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:07.995Z"
+    "timestamp": "2026-10-13T04:06:07.539Z"
   },
   "8241": {
     "title": "Protocol Control Disclosure",
@@ -12430,7 +12430,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:08.052Z"
+    "timestamp": "2026-10-13T04:06:07.395Z"
   },
   "8242": {
     "title": "H3 Spatial Identity Extension for On-Chain Agents",
@@ -12442,7 +12442,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:14.472Z"
+    "timestamp": "2026-10-13T04:06:13.574Z"
   },
   "8243": {
     "title": "Batching Attestations at Source",
@@ -12462,7 +12462,7 @@
       "1193",
       "6963"
     ],
-    "timestamp": "2026-10-12T20:31:07.821Z"
+    "timestamp": "2026-10-13T04:06:07.336Z"
   },
   "8245": {
     "title": "Permissioned Vault Registrar",
@@ -12476,7 +12476,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:07.219Z"
+    "timestamp": "2026-10-13T04:06:06.794Z"
   },
   "8246": {
     "title": "Remove SELFDESTRUCT Burn",
@@ -12509,7 +12509,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:31:07.047Z"
+    "timestamp": "2026-10-13T04:06:06.730Z"
   },
   "8249": {
     "title": "Generic Relayer Architecture for Smart Accounts",
@@ -12607,7 +12607,7 @@
       "721",
       "1155"
     ],
-    "timestamp": "2026-10-12T20:31:06.251Z"
+    "timestamp": "2026-10-13T04:06:05.607Z"
   },
   "8260": {
     "title": "Dive Log",
@@ -12619,7 +12619,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:05.567Z"
+    "timestamp": "2026-10-13T04:06:05.233Z"
   },
   "8261": {
     "title": "Gas Limit Schedule",
@@ -12649,7 +12649,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1748/head/ERCS/erc-8263.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:05.452Z"
+    "timestamp": "2026-10-13T04:06:04.829Z"
   },
   "8264": {
     "title": "AI Agent Memory Access Rights",
@@ -12661,7 +12661,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:04.819Z"
+    "timestamp": "2026-10-13T04:06:04.179Z"
   },
   "8265": {
     "title": "Prepared Transaction Envelope",
@@ -12678,7 +12678,7 @@
       "5792",
       "6492"
     ],
-    "timestamp": "2026-10-12T20:31:04.601Z"
+    "timestamp": "2026-10-13T04:06:04.120Z"
   },
   "8266": {
     "title": "Expiring Nonces for Frame Transactions",
@@ -12701,7 +12701,7 @@
       "165",
       "725"
     ],
-    "timestamp": "2026-10-12T20:31:54.347Z"
+    "timestamp": "2026-10-13T04:06:49.854Z"
   },
   "8268": {
     "title": "Storage Roots in Block Access Lists",
@@ -12722,7 +12722,7 @@
     "requires": [
       "8264"
     ],
-    "timestamp": "2026-10-12T20:31:04.155Z"
+    "timestamp": "2026-10-13T04:06:03.499Z"
   },
   "8270": {
     "title": "Canonical Validator Wrapper",
@@ -12736,7 +12736,7 @@
       "7002",
       "7251"
     ],
-    "timestamp": "2026-10-12T20:31:03.816Z"
+    "timestamp": "2026-10-13T04:06:03.441Z"
   },
   "8272": {
     "title": "Recent Roots for Frame Transactions",
@@ -12769,7 +12769,7 @@
       "165",
       "712"
     ],
-    "timestamp": "2026-10-12T20:31:03.334Z"
+    "timestamp": "2026-10-13T04:06:02.764Z"
   },
   "8275": {
     "title": "Agent Service Discovery and Escrow Payments",
@@ -12786,7 +12786,7 @@
       "8281",
       "8299"
     ],
-    "timestamp": "2026-10-12T20:31:03.076Z"
+    "timestamp": "2026-10-13T04:06:02.711Z"
   },
   "8276": {
     "title": "Non-Fungible Multi-Token ownerOf",
@@ -12803,7 +12803,7 @@
       "5615",
       "6909"
     ],
-    "timestamp": "2026-10-12T20:31:03.369Z"
+    "timestamp": "2026-10-13T04:06:03.066Z"
   },
   "8278": {
     "title": "Service Objects",
@@ -12816,7 +12816,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:31:02.510Z"
+    "timestamp": "2026-10-13T04:06:02.064Z"
   },
   "8279": {
     "title": "Block Access List Byte Floor",
@@ -12843,7 +12843,7 @@
       "165",
       "7201"
     ],
-    "timestamp": "2026-10-12T20:31:01.601Z"
+    "timestamp": "2026-10-13T04:06:01.256Z"
   },
   "8281": {
     "title": "Observation Commitment Protocol",
@@ -12857,7 +12857,7 @@
       "155",
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:01.514Z"
+    "timestamp": "2026-10-13T04:06:01.026Z"
   },
   "8282": {
     "title": "Builder Execution Requests",
@@ -12882,7 +12882,7 @@
       "7730",
       "8176"
     ],
-    "timestamp": "2026-10-12T20:31:01.009Z"
+    "timestamp": "2026-10-13T04:06:00.542Z"
   },
   "8284": {
     "title": "Wallet-Scoped Token Pull Execution",
@@ -12895,7 +12895,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-10-12T20:31:00.858Z"
+    "timestamp": "2026-10-13T04:06:00.529Z"
   },
   "8285": {
     "title": "Wallet-Scoped NFT Pull Execution",
@@ -12908,7 +12908,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:31:00.501Z"
+    "timestamp": "2026-10-13T04:06:00.300Z"
   },
   "8286": {
     "title": "Modular Accounts for Frame Transactions",
@@ -12928,7 +12928,7 @@
     "prState": "closed",
     "prHeadSha": "3347f7f48fe921a7bff9826e40fe7f81a25da3cb",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:31:55.011Z"
+    "timestamp": "2026-10-13T04:06:50.535Z"
   },
   "8288": {
     "title": "In-mempool signature and proof aggregation",
@@ -12975,7 +12975,7 @@
       "1271",
       "4361"
     ],
-    "timestamp": "2026-10-12T20:31:00.270Z"
+    "timestamp": "2026-10-13T04:05:59.779Z"
   },
   "8292": {
     "title": "Post-Quantum Attestation Aggregators",
@@ -12991,7 +12991,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1806/head/ERCS/erc-8293.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:59.735Z"
+    "timestamp": "2026-10-13T04:05:59.585Z"
   },
   "8294": {
     "title": "Validation Network for ERC-8004",
@@ -13004,7 +13004,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:59.737Z"
+    "timestamp": "2026-10-13T04:05:59.495Z"
   },
   "8295": {
     "title": "State Tiering by Periods",
@@ -13067,7 +13067,7 @@
       "712",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:59.517Z"
+    "timestamp": "2026-10-13T04:05:59.060Z"
   },
   "8300": {
     "title": "Invariant-First Reserve Receipt Token",
@@ -13087,7 +13087,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1815/head/ERCS/erc-8301.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:58.979Z"
+    "timestamp": "2026-10-13T04:05:58.973Z"
   },
   "8302": {
     "title": "Private Fungible Tokens",
@@ -13096,7 +13096,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1817/head/ERCS/erc-8302.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:58.904Z"
+    "timestamp": "2026-10-13T04:05:58.811Z"
   },
   "8303": {
     "title": "Contract Version",
@@ -13105,7 +13105,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1819/head/ERCS/erc-8303.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:58.753Z"
+    "timestamp": "2026-10-13T04:05:58.384Z"
   },
   "8304": {
     "title": "Trustless log and transaction index",
@@ -13126,7 +13126,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:58.153Z"
+    "timestamp": "2026-10-13T04:05:58.263Z"
   },
   "8306": {
     "title": "Role-Based Timelock Operation",
@@ -13138,7 +13138,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:58.193Z"
+    "timestamp": "2026-10-13T04:05:58.135Z"
   },
   "8307": {
     "title": "Smart Contract Emergency State",
@@ -13150,7 +13150,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:57.920Z"
+    "timestamp": "2026-10-13T04:05:57.687Z"
   },
   "8308": {
     "title": "Smart Contract Emergency Response",
@@ -13162,7 +13162,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:57.423Z"
+    "timestamp": "2026-10-13T04:05:57.615Z"
   },
   "8309": {
     "title": "Gateway Mesh Sync Protocol for CCIP-Read",
@@ -13175,7 +13175,7 @@
       "191",
       "3668"
     ],
-    "timestamp": "2026-10-12T20:30:57.283Z"
+    "timestamp": "2026-10-13T04:05:57.350Z"
   },
   "8310": {
     "title": "Post-Quantum Keystore for Stateful Keys",
@@ -13208,7 +13208,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:57.003Z"
+    "timestamp": "2026-10-13T04:05:56.967Z"
   },
   "8313": {
     "title": "Protocol Interaction Manifest",
@@ -13217,7 +13217,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1836/head/ERCS/erc-8313.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:56.658Z"
+    "timestamp": "2026-10-13T04:05:56.857Z"
   },
   "8314": {
     "title": "Contract Role Naming",
@@ -13229,7 +13229,7 @@
     "requires": [
       "7820"
     ],
-    "timestamp": "2026-10-12T20:30:55.971Z"
+    "timestamp": "2026-10-13T04:05:56.163Z"
   },
   "8315": {
     "title": "Contract Role Semantics",
@@ -13241,7 +13241,7 @@
     "requires": [
       "5982"
     ],
-    "timestamp": "2026-10-12T20:30:55.518Z"
+    "timestamp": "2026-10-13T04:05:55.921Z"
   },
   "8316": {
     "title": "Programmable Settlement Locks",
@@ -13250,7 +13250,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1840/head/ERCS/erc-8316.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:56.447Z"
+    "timestamp": "2026-10-13T04:05:56.667Z"
   },
   "8317": {
     "title": "Contract Storage Layout Descriptor Format",
@@ -13263,7 +13263,7 @@
       "7730",
       "8042"
     ],
-    "timestamp": "2026-10-12T20:28:52.489Z"
+    "timestamp": "2026-10-13T04:04:05.283Z"
   },
   "8318": {
     "title": "Tokenized fund lifecycle metadata",
@@ -13275,7 +13275,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:56.154Z"
+    "timestamp": "2026-10-13T04:05:56.241Z"
   },
   "8319": {
     "title": "Regulatory Compliance Protocol",
@@ -13284,7 +13284,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1848/head/ERCS/erc-8319.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:55.268Z"
+    "timestamp": "2026-10-13T04:05:55.536Z"
   },
   "8320": {
     "title": "Regulated Asset Claim",
@@ -13313,7 +13313,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1850/head/ERCS/erc-8322.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:54.694Z"
+    "timestamp": "2026-10-13T04:05:55.228Z"
   },
   "8323": {
     "title": "Source-Token Agent Binding for ERC-8004",
@@ -13327,7 +13327,7 @@
       "721",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:54.444Z"
+    "timestamp": "2026-10-13T04:05:54.924Z"
   },
   "8324": {
     "title": "Priority Update Registry",
@@ -13340,7 +13340,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:30:53.934Z"
+    "timestamp": "2026-10-13T04:05:54.424Z"
   },
   "8325": {
     "title": "Asset Anchor Registry",
@@ -13403,7 +13403,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1861/head/ERCS/erc-8331.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:53.736Z"
+    "timestamp": "2026-10-13T04:05:54.221Z"
   },
   "8332": {
     "title": "Physical Reserve Registry",
@@ -13415,7 +13415,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:53.084Z"
+    "timestamp": "2026-10-13T04:05:53.627Z"
   },
   "8333": {
     "title": "Align Checkpoint with Epoch Boundary Block",
@@ -13430,7 +13430,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/11905/head/EIPS/eip-8334.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:05.518Z"
+    "timestamp": "2026-10-13T04:04:17.881Z"
   },
   "8335": {
     "title": "Account-Level Transfer With Authorization",
@@ -13448,7 +13448,7 @@
       "4337",
       "7528"
     ],
-    "timestamp": "2026-10-12T20:30:52.997Z"
+    "timestamp": "2026-10-13T04:05:53.522Z"
   },
   "8337": {
     "title": "Validated EVM Code",
@@ -13471,7 +13471,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:30:51.803Z"
+    "timestamp": "2026-10-13T04:05:52.338Z"
   },
   "8339": {
     "title": "Two-Phase Asset Transfers",
@@ -13486,7 +13486,7 @@
       "721",
       "1155"
     ],
-    "timestamp": "2026-10-12T20:30:51.679Z"
+    "timestamp": "2026-10-13T04:05:52.272Z"
   },
   "8340": {
     "title": "Transaction Metadata Encoding",
@@ -13499,7 +13499,7 @@
       "5792",
       "8130"
     ],
-    "timestamp": "2026-10-12T20:30:51.465Z"
+    "timestamp": "2026-10-13T04:05:51.933Z"
   },
   "8341": {
     "title": "Partial Execution Payload Commitments",
@@ -13510,7 +13510,7 @@
     "requires": [
       "7732"
     ],
-    "timestamp": "2026-10-12T20:29:05.195Z"
+    "timestamp": "2026-10-13T04:04:17.329Z"
   },
   "8342": {
     "title": "Verifiable Invoice Commitment (VIC)",
@@ -13523,7 +13523,7 @@
       "712",
       "7730"
     ],
-    "timestamp": "2026-10-12T20:30:51.165Z"
+    "timestamp": "2026-10-13T04:05:51.710Z"
   },
   "8343": {
     "title": "Contract Deactivation",
@@ -13535,7 +13535,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:50.911Z"
+    "timestamp": "2026-10-13T04:05:51.588Z"
   },
   "8344": {
     "title": "Relational Agent Registry",
@@ -13549,7 +13549,7 @@
       "721",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:50.708Z"
+    "timestamp": "2026-10-13T04:05:51.209Z"
   },
   "8346": {
     "title": "Translation Files for ERC-7730 Descriptors",
@@ -13562,7 +13562,7 @@
       "7730",
       "8176"
     ],
-    "timestamp": "2026-10-12T20:30:50.450Z"
+    "timestamp": "2026-10-13T04:05:50.982Z"
   },
   "8347": {
     "title": "Offline State Migration to the PBT",
@@ -13589,7 +13589,7 @@
       "721",
       "4907"
     ],
-    "timestamp": "2026-10-12T20:30:50.148Z"
+    "timestamp": "2026-10-13T04:05:50.881Z"
   },
   "8349": {
     "title": "Index-Based Multi-Facet Proxy",
@@ -13622,7 +13622,7 @@
       "20",
       "1155"
     ],
-    "timestamp": "2026-10-12T20:30:49.747Z"
+    "timestamp": "2026-10-13T04:05:50.252Z"
   },
   "8352": {
     "title": "Cross-Chain Event Archive",
@@ -13631,7 +13631,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1914/head/ERCS/erc-8352.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:49.513Z"
+    "timestamp": "2026-10-13T04:05:49.695Z"
   },
   "8353": {
     "title": "Staked Weighted Verification Gate",
@@ -13640,7 +13640,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1920/head/ERCS/erc-8353.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:49.312Z"
+    "timestamp": "2026-10-13T04:05:50.489Z"
   },
   "8354": {
     "title": "Confidential Agent Policy Verdicts",
@@ -13675,7 +13675,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:30:48.947Z"
+    "timestamp": "2026-10-13T04:05:49.404Z"
   },
   "8357": {
     "title": "EVM Verification Key Registry",
@@ -13693,7 +13693,7 @@
       "8037",
       "8288"
     ],
-    "timestamp": "2026-10-12T20:29:02.894Z"
+    "timestamp": "2026-10-13T04:04:15.296Z"
   },
   "8358": {
     "title": "Net Gas Metering for Account Changes",
@@ -13712,7 +13712,7 @@
       "8037",
       "8038"
     ],
-    "timestamp": "2026-10-12T20:29:02.526Z"
+    "timestamp": "2026-10-13T04:04:14.728Z"
   },
   "8359": {
     "title": "Beacon Block Reporting Field",
@@ -13720,7 +13720,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/12063/head/EIPS/eip-8359.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:02.368Z"
+    "timestamp": "2026-10-13T04:04:14.749Z"
   },
   "8360": {
     "title": "TCREATE Opcode",
@@ -13748,7 +13748,7 @@
       "8141",
       "8288"
     ],
-    "timestamp": "2026-10-12T20:29:01.780Z"
+    "timestamp": "2026-10-13T04:04:14.114Z"
   },
   "8363": {
     "title": "Tapered Issuance Burn",
@@ -13763,7 +13763,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/12093/head/EIPS/eip-8364.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:01.265Z"
+    "timestamp": "2026-10-13T04:04:13.773Z"
   },
   "8365": {
     "title": "Disallow new 0x00 validators",
@@ -13787,7 +13787,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:30:48.065Z"
+    "timestamp": "2026-10-13T04:05:48.346Z"
   },
   "8367": {
     "title": "Balance sunset for retired BLS validators",
@@ -13798,7 +13798,7 @@
     "requires": [
       "8365"
     ],
-    "timestamp": "2026-10-12T20:29:00.966Z"
+    "timestamp": "2026-10-13T04:04:13.425Z"
   },
   "8368": {
     "title": "CPSB Recalibration for New Gas Limit",
@@ -13842,7 +13842,7 @@
       "721",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:47.753Z"
+    "timestamp": "2026-10-13T04:05:48.238Z"
   },
   "8371": {
     "title": "RowDAS - Distributed Blob Reconstruction",
@@ -13870,7 +13870,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1932/head/ERCS/erc-8373.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:47.614Z"
+    "timestamp": "2026-10-13T04:05:48.098Z"
   },
   "8374": {
     "title": "Persist Warm Access Sets Across Reverts",
@@ -13881,7 +13881,7 @@
     "requires": [
       "2929"
     ],
-    "timestamp": "2026-10-12T20:28:59.015Z"
+    "timestamp": "2026-10-13T04:04:11.622Z"
   },
   "8375": {
     "title": "ePBS Mandatory Burn of Execution Rewards",
@@ -13892,7 +13892,7 @@
     "requires": [
       "7732"
     ],
-    "timestamp": "2026-10-12T20:28:59.105Z"
+    "timestamp": "2026-10-13T04:04:11.646Z"
   },
   "8376": {
     "title": "Token Launch Abuse Detection and Remediation",
@@ -13906,7 +13906,7 @@
       "165",
       "214"
     ],
-    "timestamp": "2026-10-12T20:30:46.986Z"
+    "timestamp": "2026-10-13T04:05:47.518Z"
   },
   "8377": {
     "title": "Reference-Relative Slippage Bounds",
@@ -13929,7 +13929,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:47.353Z"
+    "timestamp": "2026-10-13T04:05:47.731Z"
   },
   "8379": {
     "title": "Top-up Sync",
@@ -13950,7 +13950,7 @@
       "7579",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:46.321Z"
+    "timestamp": "2026-10-13T04:05:46.798Z"
   },
   "8382": {
     "title": "Private Referable NFTs",
@@ -13964,7 +13964,7 @@
       "721",
       "5521"
     ],
-    "timestamp": "2026-10-12T20:30:45.655Z"
+    "timestamp": "2026-10-13T04:05:46.264Z"
   },
   "8383": {
     "title": "Reduce CL Block Retention Window",
@@ -13979,7 +13979,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/12207/head/EIPS/eip-8384.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:28:55.885Z"
+    "timestamp": "2026-10-13T04:04:08.542Z"
   },
   "8386": {
     "title": "Transaction Events View",
@@ -13990,7 +13990,7 @@
     "requires": [
       "8130"
     ],
-    "timestamp": "2026-10-12T20:28:55.022Z"
+    "timestamp": "2026-10-13T04:04:07.786Z"
   },
   "8387": {
     "title": "Stateless Accounts",
@@ -14004,7 +14004,7 @@
       "7702",
       "8130"
     ],
-    "timestamp": "2026-10-12T20:28:54.631Z"
+    "timestamp": "2026-10-13T04:04:07.393Z"
   },
   "8388": {
     "title": "Keystore Signatures for Execution Txs",
@@ -14021,7 +14021,7 @@
       "7702",
       "8130"
     ],
-    "timestamp": "2026-10-12T20:28:54.543Z"
+    "timestamp": "2026-10-13T04:04:07.258Z"
   },
   "8390": {
     "title": "Remove the Sync Committee",
@@ -14041,7 +14041,7 @@
       "1271",
       "5313"
     ],
-    "timestamp": "2026-10-12T20:30:45.560Z"
+    "timestamp": "2026-10-13T04:05:46.141Z"
   },
   "8393": {
     "title": "Tokenized Carbon Credits with Retirement",
@@ -14054,7 +14054,7 @@
       "165",
       "1155"
     ],
-    "timestamp": "2026-10-12T20:30:44.738Z"
+    "timestamp": "2026-10-13T04:05:45.429Z"
   },
   "8395": {
     "title": "Delegated Signed HTTP Requests",
@@ -14072,7 +14072,7 @@
       "7702",
       "8128"
     ],
-    "timestamp": "2026-10-12T20:30:44.614Z"
+    "timestamp": "2026-10-13T04:05:45.386Z"
   },
   "8397": {
     "title": "Frame Authenticator Signatures",
@@ -14086,7 +14086,7 @@
       "7928",
       "8141"
     ],
-    "timestamp": "2026-10-12T20:28:52.568Z"
+    "timestamp": "2026-10-13T04:04:05.439Z"
   },
   "8398": {
     "title": "Native Account Abstraction Transactions",
@@ -14106,7 +14106,7 @@
       "7708",
       "8401"
     ],
-    "timestamp": "2026-10-12T20:30:27.932Z"
+    "timestamp": "2026-10-13T04:05:29.838Z"
   },
   "8401": {
     "title": "Portable Account Keystore",
@@ -14122,7 +14122,7 @@
       "1271",
       "6780"
     ],
-    "timestamp": "2026-10-12T20:30:28.045Z"
+    "timestamp": "2026-10-13T04:05:29.923Z"
   },
   "8402": {
     "title": "Advanced Account Controls",
@@ -14135,7 +14135,7 @@
       "8398",
       "8401"
     ],
-    "timestamp": "2026-10-12T20:30:28.146Z"
+    "timestamp": "2026-10-13T04:05:29.965Z"
   },
   "8403": {
     "title": "Account Authority Lifecycle",
@@ -14149,7 +14149,7 @@
       "8141",
       "8272"
     ],
-    "timestamp": "2026-10-12T20:30:43.353Z"
+    "timestamp": "2026-10-13T04:05:44.073Z"
   },
   "8404": {
     "title": "Recomputable Verification Receipts",
@@ -14158,7 +14158,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/1980/head/ERCS/erc-8404.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:43.209Z"
+    "timestamp": "2026-10-13T04:05:44.009Z"
   },
   "8406": {
     "title": "Fungible Agent Tokens",
@@ -14171,7 +14171,7 @@
       "20",
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:42.724Z"
+    "timestamp": "2026-10-13T04:05:43.484Z"
   },
   "8407": {
     "title": "Extensible Contract Metadata",
@@ -14183,7 +14183,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:42.451Z"
+    "timestamp": "2026-10-13T04:05:43.398Z"
   },
   "8408": {
     "title": "eth/73 - Indexed Cell Requests",
@@ -14194,7 +14194,7 @@
     "requires": [
       "8070"
     ],
-    "timestamp": "2026-10-12T20:28:51.133Z"
+    "timestamp": "2026-10-13T04:04:04.236Z"
   },
   "8409": {
     "title": "Signed Service Payment Quotes",
@@ -14207,7 +14207,7 @@
       "712",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:30:41.887Z"
+    "timestamp": "2026-10-13T04:05:42.764Z"
   },
   "8410": {
     "title": "Portable Execution Plan Artifact",
@@ -14238,7 +14238,7 @@
     "requires": [
       "165"
     ],
-    "timestamp": "2026-10-12T20:30:41.755Z"
+    "timestamp": "2026-10-13T04:05:42.674Z"
   },
   "8413": {
     "title": "Decouple Stake from Validator Registration",
@@ -14249,7 +14249,7 @@
     "requires": [
       "7251"
     ],
-    "timestamp": "2026-10-12T20:28:50.194Z"
+    "timestamp": "2026-10-13T04:04:03.140Z"
   },
   "8414": {
     "title": "Token-Bound Task Tenders",
@@ -14263,7 +14263,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:30:41.225Z"
+    "timestamp": "2026-10-13T04:05:42.169Z"
   },
   "8415": {
     "title": "Asynchronous Register Projection for NFTs",
@@ -14276,7 +14276,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:30:41.023Z"
+    "timestamp": "2026-10-13T04:05:42.026Z"
   },
   "8416": {
     "title": "Epoch-Based Fixed-Rate Vault",
@@ -14292,7 +14292,7 @@
       "7540",
       "7575"
     ],
-    "timestamp": "2026-10-12T20:30:41.043Z"
+    "timestamp": "2026-10-13T04:05:41.921Z"
   },
   "8418": {
     "title": "Itemized Non-Fungible Token",
@@ -14305,7 +14305,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:30:40.489Z"
+    "timestamp": "2026-10-13T04:05:41.485Z"
   },
   "8419": {
     "title": "Know-Your-Agent (KYA) Framework",
@@ -14321,7 +14321,7 @@
       "1271",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:40.309Z"
+    "timestamp": "2026-10-13T04:05:41.323Z"
   },
   "8420": {
     "title": "AA-Compatible Solver",
@@ -14330,7 +14330,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/ERCs/refs/pull/2026/head/ERCS/erc-8420.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:39.739Z"
+    "timestamp": "2026-10-13T04:05:40.792Z"
   },
   "8421": {
     "title": "Frame Transaction Alternative Mempools",
@@ -14347,7 +14347,7 @@
       "8141",
       "8250"
     ],
-    "timestamp": "2026-10-12T20:30:39.105Z"
+    "timestamp": "2026-10-13T04:05:40.140Z"
   },
   "8423": {
     "title": "ERC-721 Burn Record Extension",
@@ -14360,7 +14360,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:30:38.900Z"
+    "timestamp": "2026-10-13T04:05:40.065Z"
   },
   "8424": {
     "title": "Confidential Real World Asset Token",
@@ -14373,7 +14373,7 @@
       "165",
       "7984"
     ],
-    "timestamp": "2026-10-12T20:30:38.883Z"
+    "timestamp": "2026-10-13T04:05:40.073Z"
   },
   "8425": {
     "title": "Quantum Freeze and Account Recovery",
@@ -14381,7 +14381,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/12383/head/EIPS/eip-8425.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:28:45.084Z"
+    "timestamp": "2026-10-13T04:03:58.740Z"
   },
   "8426": {
     "title": "Wallet Pass Extension for NFTs",
@@ -14397,7 +14397,7 @@
       "4361",
       "4907"
     ],
-    "timestamp": "2026-10-12T20:30:38.365Z"
+    "timestamp": "2026-10-13T04:05:39.482Z"
   },
   "8427": {
     "title": "Portable Spend Grants",
@@ -14413,7 +14413,7 @@
       "7528",
       "7702"
     ],
-    "timestamp": "2026-10-12T20:30:38.234Z"
+    "timestamp": "2026-10-13T04:05:39.405Z"
   },
   "8428": {
     "title": "ERC-721 Lineage Registry",
@@ -14426,7 +14426,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:30:38.116Z"
+    "timestamp": "2026-10-13T04:05:39.393Z"
   },
   "8429": {
     "title": "Escalating gas for repeated calls",
@@ -14441,7 +14441,7 @@
       "4788",
       "7002"
     ],
-    "timestamp": "2026-10-12T20:28:45.233Z"
+    "timestamp": "2026-10-13T04:03:58.500Z"
   },
   "8430": {
     "title": "AA Transaction Type",
@@ -14456,7 +14456,7 @@
       "7623",
       "7702"
     ],
-    "timestamp": "2026-10-12T20:28:44.782Z"
+    "timestamp": "2026-10-13T04:03:58.444Z"
   },
   "8431": {
     "title": "Holding-Time Auto Staking for NFTs",
@@ -14469,7 +14469,7 @@
       "165",
       "721"
     ],
-    "timestamp": "2026-10-12T20:30:37.589Z"
+    "timestamp": "2026-10-13T04:05:38.820Z"
   },
   "8432": {
     "title": "Onchain IP Asset and License Registry",
@@ -14484,7 +14484,7 @@
       "721",
       "1271"
     ],
-    "timestamp": "2026-10-12T20:30:37.463Z"
+    "timestamp": "2026-10-13T04:05:38.705Z"
   },
   "8433": {
     "title": "Retire 0x00 validators",
@@ -14496,7 +14496,7 @@
       "7251",
       "8365"
     ],
-    "timestamp": "2026-10-12T20:28:44.375Z"
+    "timestamp": "2026-10-13T04:03:58.119Z"
   },
   "8434": {
     "title": "Agent Identity (AID)",
@@ -14512,7 +14512,7 @@
       "1271",
       "8004"
     ],
-    "timestamp": "2026-10-12T20:30:37.370Z"
+    "timestamp": "2026-10-13T04:05:38.642Z"
   },
   "8435": {
     "title": "Last-Written Block in PBT Leaves",
@@ -14525,7 +14525,7 @@
       "8037",
       "8297"
     ],
-    "timestamp": "2026-10-12T20:28:43.533Z"
+    "timestamp": "2026-10-13T04:03:57.439Z"
   },
   "8436": {
     "title": "Agent Collective Decision Framework",
@@ -14540,7 +14540,7 @@
       "1271",
       "6372"
     ],
-    "timestamp": "2026-10-12T20:30:36.745Z"
+    "timestamp": "2026-10-13T04:05:38.013Z"
   },
   "8437": {
     "title": "Proof Object Transport over devp2p",
@@ -14552,7 +14552,7 @@
       "2718",
       "8288"
     ],
-    "timestamp": "2026-10-12T20:28:43.024Z"
+    "timestamp": "2026-10-13T04:03:56.971Z"
   },
   "8438": {
     "title": "Storage-Aware Beacon Proxies",
@@ -14564,7 +14564,7 @@
     "requires": [
       "1967"
     ],
-    "timestamp": "2026-10-12T20:30:36.614Z"
+    "timestamp": "2026-10-13T04:05:38.115Z"
   },
   "8439": {
     "title": "Settlement-Decoupled Nanopayment Ledger",
@@ -14579,7 +14579,7 @@
       "2098",
       "5267"
     ],
-    "timestamp": "2026-10-12T20:30:35.867Z"
+    "timestamp": "2026-10-13T04:05:37.447Z"
   },
   "8440": {
     "title": "Execution Chain Proofs",
@@ -14591,7 +14591,7 @@
       "7732",
       "8025"
     ],
-    "timestamp": "2026-10-12T20:28:39.831Z"
+    "timestamp": "2026-10-13T04:03:54.722Z"
   },
   "8441": {
     "title": "Hybrid post-quantum stealth address scheme",
@@ -14604,7 +14604,7 @@
       "5564",
       "6538"
     ],
-    "timestamp": "2026-10-12T20:30:34.977Z"
+    "timestamp": "2026-10-13T04:05:36.421Z"
   },
   "9000": {
     "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -14612,7 +14612,7 @@
     "markdownPath": "https://raw.githubusercontent.com/ethereum/EIPs/refs/pull/11456/head/EIPS/eip-9000.md",
     "prState": "open",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:29:12.864Z"
+    "timestamp": "2026-10-13T04:04:24.398Z"
   },
   "9999": {
     "title": "Post-quantum-ready deposit contract",
@@ -14629,7 +14629,7 @@
       "7916",
       "7997"
     ],
-    "timestamp": "2026-10-12T20:28:53.191Z"
+    "timestamp": "2026-10-13T04:04:06.070Z"
   },
   "12384": {
     "title": "Escalating gas for repeated calls",
@@ -14650,7 +14650,7 @@
     "prState": "closed",
     "prHeadSha": "397a5a07f541d1d535b95a7800c0aabeff3135a5",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:27.991Z"
+    "timestamp": "2026-10-13T04:05:29.989Z"
   },
   "217191": {
     "title": "RE-EN Quantum-Resistant Encryption Standard for Ethereum",
@@ -14673,7 +14673,7 @@
     "prState": "closed",
     "prHeadSha": "4c4a5843976d32dfaabc89409e5cd528fed192c0",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:28.693Z"
+    "timestamp": "2026-10-13T04:05:30.497Z"
   },
   "0000": {
     "title": "Custom Encoding Layout for ERC-7730",
@@ -14685,7 +14685,7 @@
     "requires": [
       "7730"
     ],
-    "timestamp": "2026-10-12T20:30:48.583Z"
+    "timestamp": "2026-10-13T04:05:48.898Z"
   },
   "0288": {
     "title": "Secure Intents for Agent Coordination",
@@ -14694,6 +14694,6 @@
     "prState": "closed",
     "prHeadSha": "51ec293408b6e11ebeddd25c9c3471518d144ebc",
     "status": "Draft",
-    "timestamp": "2026-10-12T20:30:28.843Z"
+    "timestamp": "2026-10-13T04:05:30.708Z"
   }
 }
