@@ -3,9 +3,9 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "ZKMeta Metadata Interface",
+      "title": "Quantum Bridge Shield",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-1",
@@ -1263,8 +1263,15 @@
     {
       "id": "eip-1613",
       "eipNo": "1613",
-      "title": "Gas stations network",
+      "title": "Gas Stations Network",
       "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-2771",
+      "eipNo": "2771",
+      "title": "Secure Protocol for Native Meta Transactions",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -2217,13 +2224,6 @@
       "eipNo": "2770",
       "title": "Meta-Transactions Forwarder Contract",
       "status": "Withdrawn",
-      "isERC": true
-    },
-    {
-      "id": "eip-2771",
-      "eipNo": "2771",
-      "title": "Secure Protocol for Native Meta Transactions",
-      "status": "Final",
       "isERC": true
     },
     {
@@ -8866,7 +8866,7 @@
       "id": "eip-8173",
       "eipNo": "8173",
       "title": "Foundations of EVM Control Flow",
-      "status": "Draft",
+      "status": "Review",
       "isERC": false
     },
     {
@@ -11086,6 +11086,14 @@
     {
       "source": "eip-1588",
       "target": "eip-1057"
+    },
+    {
+      "source": "eip-1613",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-1613",
+      "target": "eip-2771"
     },
     {
       "source": "eip-1616",
@@ -18148,18 +18156,6 @@
       "target": "eip-1967"
     },
     {
-      "source": "eip-8259",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-8259",
-      "target": "eip-721"
-    },
-    {
-      "source": "eip-8259",
-      "target": "eip-1155"
-    },
-    {
       "source": "eip-8260",
       "target": "eip-165"
     },
@@ -18902,6 +18898,10 @@
     {
       "source": "eip-8357",
       "target": "eip-161"
+    },
+    {
+      "source": "eip-8357",
+      "target": "eip-1014"
     },
     {
       "source": "eip-8357",
