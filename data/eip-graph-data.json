@@ -10578,6 +10578,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8444",
+      "eipNo": "8444",
+      "title": "Agentic Resource Discovery (ARD) Onchain",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -10587,9 +10594,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Agentic Resource Discovery (ARD) Onchain",
+      "title": "Post-quantum-ready deposit contract",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-12384",
@@ -18850,6 +18857,10 @@
       "target": "eip-4907"
     },
     {
+      "source": "eip-8348",
+      "target": "eip-8325"
+    },
+    {
       "source": "eip-8349",
       "target": "eip-165"
     },
@@ -19734,16 +19745,44 @@
       "target": "eip-6538"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8444",
       "target": "eip-165"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8444",
       "target": "eip-712"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8444",
       "target": "eip-1271"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7916"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7997"
     },
     {
       "source": "eip-12384",
