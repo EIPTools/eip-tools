@@ -18798,6 +18798,10 @@
     },
     {
       "source": "eip-8342",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8342",
       "target": "eip-712"
     },
     {
@@ -19710,10 +19714,6 @@
     },
     {
       "source": "eip-8437",
-      "target": "eip-2464"
-    },
-    {
-      "source": "eip-8437",
       "target": "eip-2481"
     },
     {
@@ -19723,10 +19723,6 @@
     {
       "source": "eip-8437",
       "target": "eip-5793"
-    },
-    {
-      "source": "eip-8437",
-      "target": "eip-7642"
     },
     {
       "source": "eip-8437",
