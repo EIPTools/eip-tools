@@ -9542,6 +9542,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8294",
+      "eipNo": "8294",
+      "title": "Validation Network for ERC-8004",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8299",
       "eipNo": "8299",
       "title": "WYRIWE — Input Provenance for AI Inference",
@@ -9650,13 +9657,6 @@
       "id": "eip-8293",
       "eipNo": "8293",
       "title": "Counterfactual Rejection Event Log (CREL)",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-8294",
-      "eipNo": "8294",
-      "title": "Validation Network for ERC-8004",
       "status": "Draft",
       "isERC": true
     },
@@ -10538,7 +10538,7 @@
     {
       "id": "eip-8437",
       "eipNo": "8437",
-      "title": "Proof Object Transport over devp2p",
+      "title": "eth/73 - Proof wrapper propagation",
       "status": "Draft",
       "isERC": false
     },
@@ -10569,6 +10569,13 @@
       "title": "Hybrid post-quantum stealth address scheme",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8442",
+      "eipNo": "8442",
+      "title": "64-bit Opcodes for the EVM",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8443",
@@ -10602,13 +10609,6 @@
       "id": "eip-12384",
       "eipNo": "12384",
       "title": "Escalating gas for repeated calls",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
-      "id": "eip-12504",
-      "eipNo": "12504",
-      "title": "64-bit Opcodes for the EVM",
       "status": "Draft",
       "isERC": false
     },
@@ -18306,6 +18306,10 @@
     },
     {
       "source": "eip-8275",
+      "target": "eip-8294"
+    },
+    {
+      "source": "eip-8275",
       "target": "eip-8299"
     },
     {
@@ -19702,7 +19706,31 @@
     },
     {
       "source": "eip-8437",
+      "target": "eip-2124"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-2464"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-2481"
+    },
+    {
+      "source": "eip-8437",
       "target": "eip-2718"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-5793"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-7642"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-8070"
     },
     {
       "source": "eip-8437",
