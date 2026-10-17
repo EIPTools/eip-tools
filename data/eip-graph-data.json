@@ -9535,27 +9535,6 @@
       "isERC": true
     },
     {
-      "id": "eip-8281",
-      "eipNo": "8281",
-      "title": "Observation Commitment Protocol",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-8294",
-      "eipNo": "8294",
-      "title": "Validation Network for ERC-8004",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-8299",
-      "eipNo": "8299",
-      "title": "WYRIWE — Input Provenance for AI Inference",
-      "status": "Draft",
-      "isERC": true
-    },
-    {
       "id": "eip-8276",
       "eipNo": "8276",
       "title": "Non-Fungible Multi-Token ownerOf",
@@ -9580,6 +9559,13 @@
       "id": "eip-8280",
       "eipNo": "8280",
       "title": "Contract Runtime Apps",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8281",
+      "eipNo": "8281",
+      "title": "Observation Commitment Protocol",
       "status": "Draft",
       "isERC": true
     },
@@ -9661,6 +9647,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8294",
+      "eipNo": "8294",
+      "title": "Validation Network for ERC-8004",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8295",
       "eipNo": "8295",
       "title": "State Tiering by Periods",
@@ -9687,6 +9680,13 @@
       "title": "SETCODEFROM Code Reuse Instruction",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8299",
+      "eipNo": "8299",
+      "title": "WYRIWE — Input Provenance for AI Inference",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-8300",
@@ -18291,26 +18291,6 @@
     {
       "source": "eip-8275",
       "target": "eip-8004"
-    },
-    {
-      "source": "eip-8275",
-      "target": "eip-8263"
-    },
-    {
-      "source": "eip-8275",
-      "target": "eip-8274"
-    },
-    {
-      "source": "eip-8275",
-      "target": "eip-8281"
-    },
-    {
-      "source": "eip-8275",
-      "target": "eip-8294"
-    },
-    {
-      "source": "eip-8275",
-      "target": "eip-8299"
     },
     {
       "source": "eip-8276",
