@@ -10592,6 +10592,27 @@
       "isERC": true
     },
     {
+      "id": "eip-8445",
+      "eipNo": "8445",
+      "title": "Common Computational Gas Scaling Factor",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8447",
+      "eipNo": "8447",
+      "title": "Swarm AI Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8448",
+      "eipNo": "8448",
+      "title": "Agent Service Order Amendments",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -10601,9 +10622,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Swarm AI Framework",
+      "title": "Post-quantum-ready deposit contract",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-12384",
@@ -19761,28 +19782,76 @@
       "target": "eip-1271"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8447",
       "target": "eip-165"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8447",
       "target": "eip-712"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8447",
       "target": "eip-1271"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8447",
       "target": "eip-6372"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8447",
       "target": "eip-8004"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8447",
       "target": "eip-8436"
+    },
+    {
+      "source": "eip-8448",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8448",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8448",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8448",
+      "target": "eip-2098"
+    },
+    {
+      "source": "eip-8448",
+      "target": "eip-8001"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7916"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7997"
     },
     {
       "source": "eip-12384",
