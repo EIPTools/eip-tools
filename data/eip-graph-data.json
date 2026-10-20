@@ -7232,20 +7232,6 @@
       "isERC": true
     },
     {
-      "id": "eip-7903",
-      "eipNo": "7903",
-      "title": "Remove Initcode Size Limit",
-      "status": "Stagnant",
-      "isERC": false
-    },
-    {
-      "id": "eip-7904",
-      "eipNo": "7904",
-      "title": "Compute Gas Cost Analysis",
-      "status": "Last Call",
-      "isERC": false
-    },
-    {
       "id": "eip-7906",
       "eipNo": "7906",
       "title": "Transaction Assertions via State Diff Opcode",
@@ -7257,6 +7243,34 @@
       "eipNo": "8141",
       "title": "Frame Transaction",
       "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8250",
+      "eipNo": "8250",
+      "title": "Keyed Nonces for Frame Transactions",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8272",
+      "eipNo": "8272",
+      "title": "Recent Roots for Frame Transactions",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-7903",
+      "eipNo": "7903",
+      "title": "Remove Initcode Size Limit",
+      "status": "Stagnant",
+      "isERC": false
+    },
+    {
+      "id": "eip-7904",
+      "eipNo": "7904",
+      "title": "Compute Gas Cost Analysis",
+      "status": "Last Call",
       "isERC": false
     },
     {
@@ -9374,13 +9388,6 @@
       "isERC": true
     },
     {
-      "id": "eip-8250",
-      "eipNo": "8250",
-      "title": "Keyed Nonces for Frame Transactions",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-8252",
       "eipNo": "8252",
       "title": "Execution-Layer Reorg State Retention Window",
@@ -9505,13 +9512,6 @@
       "title": "Canonical Validator Wrapper",
       "status": "Draft",
       "isERC": true
-    },
-    {
-      "id": "eip-8272",
-      "eipNo": "8272",
-      "title": "Recent Roots for Frame Transactions",
-      "status": "Draft",
-      "isERC": false
     },
     {
       "id": "eip-8273",
@@ -10611,6 +10611,20 @@
       "title": "Agent Service Order Amendments",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8449",
+      "eipNo": "8449",
+      "title": "Engine API proposal lookahead",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8450",
+      "eipNo": "8450",
+      "title": "Post-Quantum Validator Key Registry",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-9000",
@@ -15114,6 +15128,10 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7732",
+      "target": "eip-7685"
+    },
+    {
       "source": "eip-7736",
       "target": "eip-6800"
     },
@@ -15724,6 +15742,22 @@
     {
       "source": "eip-7902",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-7902",
+      "target": "eip-7906"
+    },
+    {
+      "source": "eip-7902",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-7902",
+      "target": "eip-8250"
+    },
+    {
+      "source": "eip-7902",
+      "target": "eip-8272"
     },
     {
       "source": "eip-7903",
@@ -19824,6 +19858,22 @@
     {
       "source": "eip-8448",
       "target": "eip-8001"
+    },
+    {
+      "source": "eip-8449",
+      "target": "eip-7917"
+    },
+    {
+      "source": "eip-8450",
+      "target": "eip-7002"
+    },
+    {
+      "source": "eip-8450",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-8450",
+      "target": "eip-7916"
     },
     {
       "source": "eip-9999",
