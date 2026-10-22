@@ -10634,6 +10634,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8454",
+      "eipNo": "8454",
+      "title": "AIFi Unit Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -19901,6 +19908,18 @@
     {
       "source": "eip-8451",
       "target": "eip-6982"
+    },
+    {
+      "source": "eip-8454",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8454",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8454",
+      "target": "eip-1271"
     },
     {
       "source": "eip-9999",
