@@ -2229,7 +2229,7 @@
     {
       "id": "eip-2780",
       "eipNo": "2780",
-      "title": "Resource-based intrinsic transaction gas",
+      "title": "Resource-Based Intrinsic Transaction Gas",
       "status": "Last Call",
       "isERC": false
     },
@@ -2257,7 +2257,7 @@
     {
       "id": "eip-7708",
       "eipNo": "7708",
-      "title": "ETH transfers emit a log",
+      "title": "ETH Transfers Emit a Log",
       "status": "Last Call",
       "isERC": false
     },
@@ -2278,7 +2278,7 @@
     {
       "id": "eip-8038",
       "eipNo": "8038",
-      "title": "State-access gas cost update",
+      "title": "State-Access Gas Cost Update",
       "status": "Last Call",
       "isERC": false
     },
@@ -6009,7 +6009,7 @@
     {
       "id": "eip-7688",
       "eipNo": "7688",
-      "title": "Forward compatible consensus data structures",
+      "title": "Forward Compatible Consensus Data Structures",
       "status": "Review",
       "isERC": false
     },
@@ -6590,7 +6590,7 @@
     {
       "id": "eip-7843",
       "eipNo": "7843",
-      "title": "SLOTNUM opcode",
+      "title": "SLOTNUM Opcode",
       "status": "Last Call",
       "isERC": false
     },
@@ -7654,7 +7654,7 @@
     {
       "id": "eip-7975",
       "eipNo": "7975",
-      "title": "eth/70 - partial block receipt lists",
+      "title": "eth/70 - Partial Block Receipt Lists",
       "status": "Last Call",
       "isERC": false
     },
@@ -7976,7 +7976,7 @@
     {
       "id": "eip-8024",
       "eipNo": "8024",
-      "title": "Backward compatible SWAPN, DUPN, EXCHANGE",
+      "title": "Backward Compatible SWAPN, DUPN, EXCHANGE",
       "status": "Last Call",
       "isERC": false
     },
@@ -8095,7 +8095,7 @@
     {
       "id": "eip-8045",
       "eipNo": "8045",
-      "title": "Exclude slashed validators from proposing",
+      "title": "Exclude Slashed Validators from Proposing",
       "status": "Last Call",
       "isERC": false
     },
@@ -8179,7 +8179,7 @@
     {
       "id": "eip-8061",
       "eipNo": "8061",
-      "title": "Increase exit and consolidation churn",
+      "title": "Increase Exit and Consolidation Churn",
       "status": "Last Call",
       "isERC": false
     },
@@ -10632,6 +10632,20 @@
       "title": "Permanent Locks for Lockable Tokens",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8452",
+      "eipNo": "8452",
+      "title": "Jump and Call Tables for the EVM",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8453",
+      "eipNo": "8453",
+      "title": "Decoupled Consensus",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8454",
@@ -19908,6 +19922,14 @@
     {
       "source": "eip-8451",
       "target": "eip-6982"
+    },
+    {
+      "source": "eip-8452",
+      "target": "eip-7979"
+    },
+    {
+      "source": "eip-8452",
+      "target": "eip-8337"
     },
     {
       "source": "eip-8454",
