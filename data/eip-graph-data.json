@@ -10664,9 +10664,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Post-quantum-ready deposit contract",
+      "title": "Agent Safety Framework",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-12384",
@@ -19969,31 +19969,7 @@
     },
     {
       "source": "eip-9999",
-      "target": "eip-6110"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7251"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7495"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7685"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7688"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7916"
-    },
-    {
-      "source": "eip-9999",
-      "target": "eip-7997"
+      "target": "eip-165"
     },
     {
       "source": "eip-12384",
