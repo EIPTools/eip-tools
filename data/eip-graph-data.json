@@ -10599,6 +10599,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8446",
+      "eipNo": "8446",
+      "title": "Cross-Chain Client Gateway for CCIP-Read",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8447",
       "eipNo": "8447",
       "title": "Swarm AI Framework",
@@ -10664,7 +10671,7 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Agent Safety and Security Framework",
+      "title": "Agent Safety Framework (ASF)",
       "status": "Draft",
       "isERC": true
     },
@@ -16620,6 +16627,22 @@
       "target": "eip-7932"
     },
     {
+      "source": "eip-8053",
+      "target": "eip-150"
+    },
+    {
+      "source": "eip-8053",
+      "target": "eip-2200"
+    },
+    {
+      "source": "eip-8053",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8053",
+      "target": "eip-8037"
+    },
+    {
       "source": "eip-8054",
       "target": "eip-20"
     },
@@ -19813,11 +19836,15 @@
     },
     {
       "source": "eip-8437",
-      "target": "eip-5793"
+      "target": "eip-7843"
     },
     {
       "source": "eip-8437",
       "target": "eip-8070"
+    },
+    {
+      "source": "eip-8437",
+      "target": "eip-8141"
     },
     {
       "source": "eip-8437",
@@ -19870,6 +19897,14 @@
     {
       "source": "eip-8444",
       "target": "eip-1271"
+    },
+    {
+      "source": "eip-8446",
+      "target": "eip-3668"
+    },
+    {
+      "source": "eip-8446",
+      "target": "eip-7930"
     },
     {
       "source": "eip-8447",
