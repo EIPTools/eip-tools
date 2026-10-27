@@ -9902,7 +9902,7 @@
       "id": "eip-8330",
       "eipNo": "8330",
       "title": "Subject-Linked NAV Snapshot Oracle",
-      "status": "Last Call",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -10662,6 +10662,104 @@
       "isERC": true
     },
     {
+      "id": "eip-8456",
+      "eipNo": "8456",
+      "title": "CALLSTATUS instruction",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8457",
+      "eipNo": "8457",
+      "title": "Batched KZG Point Evaluation via EIP-2537",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8458",
+      "eipNo": "8458",
+      "title": "Agent Income Statements",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8459",
+      "eipNo": "8459",
+      "title": "Creator Fee Rights",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8460",
+      "eipNo": "8460",
+      "title": "Agent Credit Lines",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8461",
+      "eipNo": "8461",
+      "title": "Agent Default Registry",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8462",
+      "eipNo": "8462",
+      "title": "Token Launch Declarations",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8463",
+      "eipNo": "8463",
+      "title": "Pool Liquidity Locks",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8464",
+      "eipNo": "8464",
+      "title": "Agent Repay-First Payees",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8465",
+      "eipNo": "8465",
+      "title": "Credit-Matched Liquidity",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8466",
+      "eipNo": "8466",
+      "title": "Agent Credit History",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8467",
+      "eipNo": "8467",
+      "title": "Agent Credit Backers",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8468",
+      "eipNo": "8468",
+      "title": "Agent Safety Framework (ASF)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8469",
+      "eipNo": "8469",
+      "title": "Sealed-Bid Award Mechanism for Task Tenders",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -10671,9 +10769,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Agent Safety Framework (ASF)",
+      "title": "Post-quantum-ready deposit contract",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-12384",
@@ -19836,10 +19934,6 @@
     },
     {
       "source": "eip-8437",
-      "target": "eip-7843"
-    },
-    {
-      "source": "eip-8437",
       "target": "eip-8070"
     },
     {
@@ -20003,8 +20097,216 @@
       "target": "eip-1271"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8457",
+      "target": "eip-2537"
+    },
+    {
+      "source": "eip-8457",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8458",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8458",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8458",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8458",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8459",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8459",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8460",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8460",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8460",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8461",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8461",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8462",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8462",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8462",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8462",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8462",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8462",
+      "target": "eip-8376"
+    },
+    {
+      "source": "eip-8463",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8463",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8463",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8464",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8464",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8464",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8464",
+      "target": "eip-7254"
+    },
+    {
+      "source": "eip-8464",
+      "target": "eip-8183"
+    },
+    {
+      "source": "eip-8465",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8465",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8465",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-55"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-173"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-7930"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8466",
+      "target": "eip-8092"
+    },
+    {
+      "source": "eip-8467",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8467",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8467",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8467",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8467",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8468",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8469",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8469",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7916"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7997"
     },
     {
       "source": "eip-12384",
