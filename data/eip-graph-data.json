@@ -9454,7 +9454,7 @@
       "id": "eip-8262",
       "eipNo": "8262",
       "title": "Zero-Knowledge Compliance Oracle",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -10660,6 +10660,13 @@
       "title": "AIFi Unit Framework",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8455",
+      "eipNo": "8455",
+      "title": "RESERVOIR Opcode",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-8456",
@@ -20095,6 +20102,22 @@
     {
       "source": "eip-8454",
       "target": "eip-1271"
+    },
+    {
+      "source": "eip-8455",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8455",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8455",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-8455",
+      "target": "eip-8141"
     },
     {
       "source": "eip-8457",
