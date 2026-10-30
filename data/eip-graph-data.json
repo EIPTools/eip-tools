@@ -10629,7 +10629,7 @@
     {
       "id": "eip-8450",
       "eipNo": "8450",
-      "title": "Post-Quantum Validator Key Registry",
+      "title": "Post-Quantum Consensus Key Registry",
       "status": "Draft",
       "isERC": false
     },
@@ -10777,6 +10777,13 @@
       "id": "eip-8471",
       "eipNo": "8471",
       "title": "AI Dispute Resolution Framework (ADRF)",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8473",
+      "eipNo": "8473",
+      "title": "uRWA Policy",
       "status": "Draft",
       "isERC": true
     },
@@ -20075,11 +20082,11 @@
     },
     {
       "source": "eip-8450",
-      "target": "eip-7002"
+      "target": "eip-7495"
     },
     {
       "source": "eip-8450",
-      "target": "eip-7685"
+      "target": "eip-7732"
     },
     {
       "source": "eip-8450",
@@ -20348,6 +20355,14 @@
     {
       "source": "eip-8471",
       "target": "eip-8436"
+    },
+    {
+      "source": "eip-8473",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8473",
+      "target": "eip-7943"
     },
     {
       "source": "eip-9999",
