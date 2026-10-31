@@ -10788,6 +10788,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8477",
+      "eipNo": "8477",
+      "title": "Recent Block Bound Delegation Authorizations",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -20363,6 +20370,10 @@
     {
       "source": "eip-8473",
       "target": "eip-7943"
+    },
+    {
+      "source": "eip-8477",
+      "target": "eip-7702"
     },
     {
       "source": "eip-9999",
