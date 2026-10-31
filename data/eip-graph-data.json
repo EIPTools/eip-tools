@@ -3,8 +3,36 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "ZKMeta Metadata Interface",
+      "title": "Sovereign Multi-Issuer Cross-Chain Transfer",
       "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-2",
+      "eipNo": "2",
+      "title": "Homestead Hard-fork Changes",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-20",
+      "eipNo": "20",
+      "title": "Token Standard",
+      "status": "Final",
+      "isERC": true
+    },
+    {
+      "id": "eip-165",
+      "eipNo": "165",
+      "title": "Standard Interface Detection",
+      "status": "Final",
+      "isERC": true
+    },
+    {
+      "id": "eip-712",
+      "eipNo": "712",
+      "title": "Typed structured data hashing and signing",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -12,13 +40,6 @@
       "eipNo": "1",
       "title": "EIP Purpose and Guidelines",
       "status": "Living",
-      "isERC": false
-    },
-    {
-      "id": "eip-2",
-      "eipNo": "2",
-      "title": "Homestead Hard-fork Changes",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -62,13 +83,6 @@
       "title": "devp2p Forward Compatibility Requirements for Homestead",
       "status": "Final",
       "isERC": false
-    },
-    {
-      "id": "eip-20",
-      "eipNo": "20",
-      "title": "Token Standard",
-      "status": "Final",
-      "isERC": true
     },
     {
       "id": "eip-55",
@@ -186,13 +200,6 @@
       "id": "eip-162",
       "eipNo": "162",
       "title": "Initial ENS Hash Registrar",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-165",
-      "eipNo": "165",
-      "title": "Standard Interface Detection",
       "status": "Final",
       "isERC": true
     },
@@ -473,13 +480,6 @@
       "id": "eip-706",
       "eipNo": "706",
       "title": "DEVp2p snappy compression",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-712",
-      "eipNo": "712",
-      "title": "Typed structured data hashing and signing",
       "status": "Final",
       "isERC": false
     },
@@ -10788,11 +10788,25 @@
       "isERC": true
     },
     {
+      "id": "eip-8476",
+      "eipNo": "8476",
+      "title": "Permanent EOA Delegation Opt-Out",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8477",
       "eipNo": "8477",
       "title": "Recent Block Bound Delegation Authorizations",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8478",
+      "eipNo": "8478",
+      "title": "x402 Payee Verification for ERC-8004 Agents",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-9000",
@@ -10859,6 +10873,22 @@
     }
   ],
   "links": [
+    {
+      "source": "eip-0",
+      "target": "eip-2"
+    },
+    {
+      "source": "eip-0",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-0",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-0",
+      "target": "eip-712"
+    },
     {
       "source": "eip-165",
       "target": "eip-214"
@@ -20372,8 +20402,52 @@
       "target": "eip-7943"
     },
     {
+      "source": "eip-8476",
+      "target": "eip-161"
+    },
+    {
+      "source": "eip-8476",
+      "target": "eip-684"
+    },
+    {
+      "source": "eip-8476",
+      "target": "eip-1559"
+    },
+    {
+      "source": "eip-8476",
+      "target": "eip-2681"
+    },
+    {
+      "source": "eip-8476",
+      "target": "eip-3541"
+    },
+    {
+      "source": "eip-8476",
+      "target": "eip-3607"
+    },
+    {
+      "source": "eip-8476",
+      "target": "eip-7702"
+    },
+    {
       "source": "eip-8477",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-8478",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8478",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8478",
+      "target": "eip-3009"
+    },
+    {
+      "source": "eip-8478",
+      "target": "eip-8004"
     },
     {
       "source": "eip-9999",
