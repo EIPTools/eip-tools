@@ -10788,6 +10788,20 @@
       "isERC": true
     },
     {
+      "id": "eip-8474",
+      "eipNo": "8474",
+      "title": "ERC-20 Delayed Unlock",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8475",
+      "eipNo": "8475",
+      "title": "ERC-20 Outgoing Window Limits",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8476",
       "eipNo": "8476",
       "title": "Permanent EOA Delegation Opt-Out",
@@ -20400,6 +20414,14 @@
     {
       "source": "eip-8473",
       "target": "eip-7943"
+    },
+    {
+      "source": "eip-8474",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8475",
+      "target": "eip-20"
     },
     {
       "source": "eip-8476",
