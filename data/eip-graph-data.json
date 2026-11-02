@@ -3,36 +3,8 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "Sovereign Multi-Issuer Cross-Chain Transfer",
+      "title": "ZKMeta Metadata Interface",
       "status": "Draft",
-      "isERC": true
-    },
-    {
-      "id": "eip-2",
-      "eipNo": "2",
-      "title": "Homestead Hard-fork Changes",
-      "status": "Final",
-      "isERC": false
-    },
-    {
-      "id": "eip-20",
-      "eipNo": "20",
-      "title": "Token Standard",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-165",
-      "eipNo": "165",
-      "title": "Standard Interface Detection",
-      "status": "Final",
-      "isERC": true
-    },
-    {
-      "id": "eip-712",
-      "eipNo": "712",
-      "title": "Typed structured data hashing and signing",
-      "status": "Final",
       "isERC": false
     },
     {
@@ -40,6 +12,13 @@
       "eipNo": "1",
       "title": "EIP Purpose and Guidelines",
       "status": "Living",
+      "isERC": false
+    },
+    {
+      "id": "eip-2",
+      "eipNo": "2",
+      "title": "Homestead Hard-fork Changes",
+      "status": "Final",
       "isERC": false
     },
     {
@@ -83,6 +62,13 @@
       "title": "devp2p Forward Compatibility Requirements for Homestead",
       "status": "Final",
       "isERC": false
+    },
+    {
+      "id": "eip-20",
+      "eipNo": "20",
+      "title": "Token Standard",
+      "status": "Final",
+      "isERC": true
     },
     {
       "id": "eip-55",
@@ -200,6 +186,13 @@
       "id": "eip-162",
       "eipNo": "162",
       "title": "Initial ENS Hash Registrar",
+      "status": "Final",
+      "isERC": true
+    },
+    {
+      "id": "eip-165",
+      "eipNo": "165",
+      "title": "Standard Interface Detection",
       "status": "Final",
       "isERC": true
     },
@@ -480,6 +473,13 @@
       "id": "eip-706",
       "eipNo": "706",
       "title": "DEVp2p snappy compression",
+      "status": "Final",
+      "isERC": false
+    },
+    {
+      "id": "eip-712",
+      "eipNo": "712",
+      "title": "Typed structured data hashing and signing",
       "status": "Final",
       "isERC": false
     },
@@ -10781,6 +10781,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8472",
+      "eipNo": "8472",
+      "title": "Stock Locates",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8473",
       "eipNo": "8473",
       "title": "uRWA Policy",
@@ -10819,6 +10826,13 @@
       "id": "eip-8478",
       "eipNo": "8478",
       "title": "x402 Payee Verification for ERC-8004 Agents",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8480",
+      "eipNo": "8480",
+      "title": "Sovereign Multi-Issuer Cross-Chain Transfer",
       "status": "Draft",
       "isERC": true
     },
@@ -10887,22 +10901,6 @@
     }
   ],
   "links": [
-    {
-      "source": "eip-0",
-      "target": "eip-2"
-    },
-    {
-      "source": "eip-0",
-      "target": "eip-20"
-    },
-    {
-      "source": "eip-0",
-      "target": "eip-165"
-    },
-    {
-      "source": "eip-0",
-      "target": "eip-712"
-    },
     {
       "source": "eip-165",
       "target": "eip-214"
@@ -20408,6 +20406,14 @@
       "target": "eip-8436"
     },
     {
+      "source": "eip-8472",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8472",
+      "target": "eip-165"
+    },
+    {
       "source": "eip-8473",
       "target": "eip-165"
     },
@@ -20470,6 +20476,22 @@
     {
       "source": "eip-8478",
       "target": "eip-8004"
+    },
+    {
+      "source": "eip-8480",
+      "target": "eip-2"
+    },
+    {
+      "source": "eip-8480",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8480",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8480",
+      "target": "eip-712"
     },
     {
       "source": "eip-9999",
