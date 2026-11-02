@@ -10830,9 +10830,23 @@
       "isERC": true
     },
     {
+      "id": "eip-8479",
+      "eipNo": "8479",
+      "title": "Post-Quantum PeerDAS and Variable-Size Blobs",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8480",
       "eipNo": "8480",
       "title": "Sovereign Multi-Issuer Cross-Chain Transfer",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8481",
+      "eipNo": "8481",
+      "title": "Agent Pre-Sign Risk Report",
       "status": "Draft",
       "isERC": true
     },
@@ -20478,6 +20492,34 @@
       "target": "eip-8004"
     },
     {
+      "source": "eip-8479",
+      "target": "eip-4844"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-7594"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-7892"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-8070"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-8136"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-8288"
+    },
+    {
       "source": "eip-8480",
       "target": "eip-2"
     },
@@ -20492,6 +20534,22 @@
     {
       "source": "eip-8480",
       "target": "eip-712"
+    },
+    {
+      "source": "eip-8481",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8481",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8481",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8481",
+      "target": "eip-8004"
     },
     {
       "source": "eip-9999",
