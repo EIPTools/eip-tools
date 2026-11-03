@@ -9957,7 +9957,7 @@
     {
       "id": "eip-8339",
       "eipNo": "8339",
-      "title": "Two-Phase Asset Transfers",
+      "title": "Receiver-Attested Transfers",
       "status": "Draft",
       "isERC": true
     },
@@ -10849,6 +10849,13 @@
       "title": "Agent Pre-Sign Risk Report",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8483",
+      "eipNo": "8483",
+      "title": "Post-Quantum Material Registration",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-9000",
@@ -19065,11 +19072,23 @@
     },
     {
       "source": "eip-8339",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8339",
       "target": "eip-721"
     },
     {
       "source": "eip-8339",
       "target": "eip-1155"
+    },
+    {
+      "source": "eip-8339",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8339",
+      "target": "eip-8141"
     },
     {
       "source": "eip-8340",
@@ -20550,6 +20569,22 @@
     {
       "source": "eip-8481",
       "target": "eip-8004"
+    },
+    {
+      "source": "eip-8483",
+      "target": "eip-7002"
+    },
+    {
+      "source": "eip-8483",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-8483",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-8483",
+      "target": "eip-7732"
     },
     {
       "source": "eip-9999",
