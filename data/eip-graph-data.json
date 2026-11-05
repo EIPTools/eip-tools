@@ -10858,6 +10858,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8485",
+      "eipNo": "8485",
+      "title": "NFT Controlled Application Spaces",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -20597,6 +20604,14 @@
     {
       "source": "eip-8483",
       "target": "eip-7732"
+    },
+    {
+      "source": "eip-8485",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8485",
+      "target": "eip-721"
     },
     {
       "source": "eip-9999",
