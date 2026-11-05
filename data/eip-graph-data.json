@@ -3,9 +3,9 @@
     {
       "id": "eip-0",
       "eipNo": "0",
-      "title": "ZKMeta Metadata Interface",
+      "title": "Flash Loan Proxy",
       "status": "Draft",
-      "isERC": false
+      "isERC": true
     },
     {
       "id": "eip-1",
@@ -10144,6 +10144,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8433",
+      "eipNo": "8433",
+      "title": "Retire 0x00 Validators",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8368",
       "eipNo": "8368",
       "title": "CPSB Recalibration for New Gas Limit",
@@ -10508,13 +10515,6 @@
       "isERC": true
     },
     {
-      "id": "eip-8433",
-      "eipNo": "8433",
-      "title": "Retire 0x00 Validators",
-      "status": "Draft",
-      "isERC": false
-    },
-    {
       "id": "eip-8434",
       "eipNo": "8434",
       "title": "Agent Identity (AID)",
@@ -10854,6 +10854,13 @@
       "id": "eip-8483",
       "eipNo": "8483",
       "title": "Post-Quantum Material Registration",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8484",
+      "eipNo": "8484",
+      "title": "SLOTDURATION Opcode",
       "status": "Draft",
       "isERC": false
     },
@@ -19398,6 +19405,10 @@
       "target": "eip-8365"
     },
     {
+      "source": "eip-8367",
+      "target": "eip-8433"
+    },
+    {
       "source": "eip-8368",
       "target": "eip-8037"
     },
@@ -20182,6 +20193,10 @@
       "target": "eip-7916"
     },
     {
+      "source": "eip-8450",
+      "target": "eip-8282"
+    },
+    {
       "source": "eip-8451",
       "target": "eip-165"
     },
@@ -20604,6 +20619,10 @@
     {
       "source": "eip-8483",
       "target": "eip-7732"
+    },
+    {
+      "source": "eip-8484",
+      "target": "eip-7843"
     },
     {
       "source": "eip-8485",
