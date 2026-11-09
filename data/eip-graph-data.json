@@ -10872,6 +10872,20 @@
       "isERC": true
     },
     {
+      "id": "eip-8488",
+      "eipNo": "8488",
+      "title": "Versioned Opcodes for Gas Repricing",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8489",
+      "eipNo": "8489",
+      "title": "Agent Information Flow Paradigm",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -10881,7 +10895,7 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Agent Information Flow Paradigm",
+      "title": "Agent Meditation Mechanism",
       "status": "Draft",
       "isERC": true
     },
@@ -20631,6 +20645,22 @@
     {
       "source": "eip-8485",
       "target": "eip-721"
+    },
+    {
+      "source": "eip-8488",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-8488",
+      "target": "eip-8038"
+    },
+    {
+      "source": "eip-8489",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8489",
+      "target": "eip-6372"
     },
     {
       "source": "eip-9999",
