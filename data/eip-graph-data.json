@@ -9867,21 +9867,21 @@
       "id": "eip-8325",
       "eipNo": "8325",
       "title": "Asset Anchor Registry",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
       "id": "eip-8326",
       "eipNo": "8326",
       "title": "Canonical Document Bundle Anchor",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
       "id": "eip-8327",
       "eipNo": "8327",
       "title": "Directional Transfer Domain Registry",
-      "status": "Last Call",
+      "status": "Final",
       "isERC": true
     },
     {
@@ -20694,6 +20694,14 @@
     {
       "source": "eip-9999",
       "target": "eip-20"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7702"
     },
     {
       "source": "eip-12384",
