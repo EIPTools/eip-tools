@@ -10907,9 +10907,30 @@
       "isERC": true
     },
     {
+      "id": "eip-8491",
+      "eipNo": "8491",
+      "title": "LUCID Key Publisher Priority Lists",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8492",
       "eipNo": "8492",
       "title": "Settlement Deductions for Task Escrows",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8493",
+      "eipNo": "8493",
+      "title": "Onchain URI Scheme",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8495",
+      "eipNo": "8495",
+      "title": "Token Metadata JSON Schema",
       "status": "Draft",
       "isERC": true
     },
@@ -20699,6 +20720,26 @@
       "target": "eip-6372"
     },
     {
+      "source": "eip-8491",
+      "target": "eip-7002"
+    },
+    {
+      "source": "eip-8491",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-8491",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8491",
+      "target": "eip-8184"
+    },
+    {
+      "source": "eip-8491",
+      "target": "eip-8282"
+    },
+    {
       "source": "eip-8492",
       "target": "eip-20"
     },
@@ -20709,6 +20750,34 @@
     {
       "source": "eip-8492",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-8493",
+      "target": "eip-8048"
+    },
+    {
+      "source": "eip-8493",
+      "target": "eip-8049"
+    },
+    {
+      "source": "eip-8495",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8495",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8495",
+      "target": "eip-4804"
+    },
+    {
+      "source": "eip-8495",
+      "target": "eip-4906"
+    },
+    {
+      "source": "eip-8495",
+      "target": "eip-6909"
     },
     {
       "source": "eip-9999",
