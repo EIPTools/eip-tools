@@ -10928,6 +10928,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8494",
+      "eipNo": "8494",
+      "title": "Institution-Managed User Payment Ledger",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8495",
       "eipNo": "8495",
       "title": "Token Metadata JSON Schema",
@@ -18568,6 +18575,10 @@
       "target": "eip-165"
     },
     {
+      "source": "eip-8260",
+      "target": "eip-712"
+    },
+    {
       "source": "eip-8261",
       "target": "eip-1559"
     },
@@ -18770,6 +18781,10 @@
     {
       "source": "eip-8282",
       "target": "eip-7732"
+    },
+    {
+      "source": "eip-8282",
+      "target": "eip-7997"
     },
     {
       "source": "eip-8283",
@@ -20605,6 +20620,10 @@
     },
     {
       "source": "eip-8478",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8478",
       "target": "eip-8004"
     },
     {
@@ -20758,6 +20777,10 @@
     {
       "source": "eip-8493",
       "target": "eip-8049"
+    },
+    {
+      "source": "eip-8494",
+      "target": "eip-8439"
     },
     {
       "source": "eip-8495",
