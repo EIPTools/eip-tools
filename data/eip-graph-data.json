@@ -10942,6 +10942,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8500",
+      "eipNo": "8500",
+      "title": "FOCIL Omission Witnesses for Frame Txs",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -20801,6 +20808,38 @@
     {
       "source": "eip-8495",
       "target": "eip-6909"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-7805"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-7843"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-7928"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-8250"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-8272"
+    },
+    {
+      "source": "eip-8500",
+      "target": "eip-8369"
     },
     {
       "source": "eip-9999",
