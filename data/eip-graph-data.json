@@ -10942,11 +10942,25 @@
       "isERC": true
     },
     {
-      "id": "eip-8500",
-      "eipNo": "8500",
+      "id": "eip-8497",
+      "eipNo": "8497",
       "title": "FOCIL Omission Witnesses for Frame Txs",
       "status": "Draft",
       "isERC": false
+    },
+    {
+      "id": "eip-8498",
+      "eipNo": "8498",
+      "title": "Namespaced State Transitions for SBTs",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8499",
+      "eipNo": "8499",
+      "title": "Hash-Based Key Derivation from BIP-39",
+      "status": "Draft",
+      "isERC": true
     },
     {
       "id": "eip-9000",
@@ -20067,6 +20081,14 @@
     },
     {
       "source": "eip-8432",
+      "target": "eip-2"
+    },
+    {
+      "source": "eip-8432",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8432",
       "target": "eip-165"
     },
     {
@@ -20810,36 +20832,52 @@
       "target": "eip-6909"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-7732"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-7805"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-7843"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-7928"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-8141"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-8250"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-8272"
     },
     {
-      "source": "eip-8500",
+      "source": "eip-8497",
       "target": "eip-8369"
+    },
+    {
+      "source": "eip-8498",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8498",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8498",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8498",
+      "target": "eip-5192"
     },
     {
       "source": "eip-9999",
