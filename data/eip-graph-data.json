@@ -10203,7 +10203,7 @@
       "id": "eip-8376",
       "eipNo": "8376",
       "title": "Token Launch Abuse Detection and Remediation",
-      "status": "Draft",
+      "status": "Review",
       "isERC": true
     },
     {
@@ -10963,6 +10963,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8501",
+      "eipNo": "8501",
+      "title": "Generative Engine Optimization Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -10972,9 +10979,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "Generative Engine Optimization Framework",
+      "title": "Post-quantum-ready deposit contract",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-12384",
@@ -19608,6 +19615,10 @@
       "target": "eip-214"
     },
     {
+      "source": "eip-8376",
+      "target": "eip-7997"
+    },
+    {
       "source": "eip-8377",
       "target": "eip-165"
     },
@@ -20880,12 +20891,40 @@
       "target": "eip-5192"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8501",
       "target": "eip-165"
     },
     {
-      "source": "eip-9999",
+      "source": "eip-8501",
       "target": "eip-6372"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-6110"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7251"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7495"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7685"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7916"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7997"
     },
     {
       "source": "eip-12384",
