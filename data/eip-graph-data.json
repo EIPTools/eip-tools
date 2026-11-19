@@ -10970,6 +10970,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8502",
+      "eipNo": "8502",
+      "title": "Dynamic individual consolidation incentive",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8503",
       "eipNo": "8503",
       "title": "Onchain Announcements",
@@ -20904,6 +20911,10 @@
     {
       "source": "eip-8501",
       "target": "eip-6372"
+    },
+    {
+      "source": "eip-8502",
+      "target": "eip-7251"
     },
     {
       "source": "eip-8503",
