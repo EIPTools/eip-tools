@@ -10970,6 +10970,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8503",
+      "eipNo": "8503",
+      "title": "Onchain Announcements",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -20897,6 +20904,14 @@
     {
       "source": "eip-8501",
       "target": "eip-6372"
+    },
+    {
+      "source": "eip-8503",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8503",
+      "target": "eip-7930"
     },
     {
       "source": "eip-9999",
