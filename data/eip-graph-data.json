@@ -10942,6 +10942,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8496",
+      "eipNo": "8496",
+      "title": "Code Reads in Block-Level Access Lists",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8497",
       "eipNo": "8497",
       "title": "FOCIL Omission Witnesses for Frame Txs",
@@ -10980,6 +10987,13 @@
       "id": "eip-8503",
       "eipNo": "8503",
       "title": "Onchain Announcements",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8505",
+      "eipNo": "8505",
+      "title": "Evaluated Work Records",
       "status": "Draft",
       "isERC": true
     },
@@ -17442,6 +17456,14 @@
     },
     {
       "source": "eip-8131",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8131",
+      "target": "eip-2930"
+    },
+    {
+      "source": "eip-8131",
       "target": "eip-4844"
     },
     {
@@ -17451,6 +17473,10 @@
     {
       "source": "eip-8131",
       "target": "eip-7702"
+    },
+    {
+      "source": "eip-8131",
+      "target": "eip-7825"
     },
     {
       "source": "eip-8131",
@@ -18766,6 +18792,10 @@
     },
     {
       "source": "eip-8279",
+      "target": "eip-2780"
+    },
+    {
+      "source": "eip-8279",
       "target": "eip-7623"
     },
     {
@@ -18787,6 +18817,14 @@
     {
       "source": "eip-8279",
       "target": "eip-7981"
+    },
+    {
+      "source": "eip-8279",
+      "target": "eip-8037"
+    },
+    {
+      "source": "eip-8279",
+      "target": "eip-8038"
     },
     {
       "source": "eip-8279",
@@ -20857,6 +20895,18 @@
       "target": "eip-6909"
     },
     {
+      "source": "eip-8496",
+      "target": "eip-2929"
+    },
+    {
+      "source": "eip-8496",
+      "target": "eip-7702"
+    },
+    {
+      "source": "eip-8496",
+      "target": "eip-7928"
+    },
+    {
       "source": "eip-8497",
       "target": "eip-7732"
     },
@@ -20923,6 +20973,22 @@
     {
       "source": "eip-8503",
       "target": "eip-7930"
+    },
+    {
+      "source": "eip-8505",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8505",
+      "target": "eip-55"
+    },
+    {
+      "source": "eip-8505",
+      "target": "eip-8004"
+    },
+    {
+      "source": "eip-8505",
+      "target": "eip-8217"
     },
     {
       "source": "eip-9999",
