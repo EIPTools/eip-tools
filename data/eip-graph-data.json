@@ -10998,6 +10998,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8510",
+      "eipNo": "8510",
+      "title": "Inference Receipts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -20989,6 +20996,18 @@
     {
       "source": "eip-8505",
       "target": "eip-8217"
+    },
+    {
+      "source": "eip-8510",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8510",
+      "target": "eip-55"
+    },
+    {
+      "source": "eip-8510",
+      "target": "eip-191"
     },
     {
       "source": "eip-9999",
