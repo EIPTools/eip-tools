@@ -10998,6 +10998,27 @@
       "isERC": true
     },
     {
+      "id": "eip-8506",
+      "eipNo": "8506",
+      "title": "AI Inference Token Onchain",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8507",
+      "eipNo": "8507",
+      "title": "Agent Allowlist Framework",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8509",
+      "eipNo": "8509",
+      "title": "Agent Linkability Report",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8510",
       "eipNo": "8510",
       "title": "Inference Receipts",
@@ -11014,9 +11035,9 @@
     {
       "id": "eip-9999",
       "eipNo": "9999",
-      "title": "AI Inference Token Onchain",
+      "title": "Post-quantum-ready deposit contract",
       "status": "Draft",
-      "isERC": true
+      "isERC": false
     },
     {
       "id": "eip-12384",
@@ -20998,6 +21019,42 @@
       "target": "eip-8217"
     },
     {
+      "source": "eip-8506",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8506",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8506",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8506",
+      "target": "eip-1155"
+    },
+    {
+      "source": "eip-8506",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8507",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8509",
+      "target": "eip-5564"
+    },
+    {
+      "source": "eip-8509",
+      "target": "eip-6538"
+    },
+    {
+      "source": "eip-8509",
+      "target": "eip-8004"
+    },
+    {
       "source": "eip-8510",
       "target": "eip-20"
     },
@@ -21011,23 +21068,31 @@
     },
     {
       "source": "eip-9999",
-      "target": "eip-20"
+      "target": "eip-6110"
     },
     {
       "source": "eip-9999",
-      "target": "eip-165"
+      "target": "eip-7251"
     },
     {
       "source": "eip-9999",
-      "target": "eip-712"
+      "target": "eip-7495"
     },
     {
       "source": "eip-9999",
-      "target": "eip-1155"
+      "target": "eip-7685"
     },
     {
       "source": "eip-9999",
-      "target": "eip-1271"
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7916"
+    },
+    {
+      "source": "eip-9999",
+      "target": "eip-7997"
     },
     {
       "source": "eip-12384",
