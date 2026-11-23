@@ -10538,7 +10538,7 @@
     {
       "id": "eip-8437",
       "eipNo": "8437",
-      "title": "eth/74 - Proof wrapper propagation",
+      "title": "eth/75 - Proof Wrapper Propagation",
       "status": "Draft",
       "isERC": false
     },
@@ -10837,6 +10837,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8512",
+      "eipNo": "8512",
+      "title": "eth/74 - Dependency Proof Exchange",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8480",
       "eipNo": "8480",
       "title": "Sovereign Multi-Issuer Cross-Chain Transfer",
@@ -10991,6 +10998,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8504",
+      "eipNo": "8504",
+      "title": "Dependency frames for leanSPHINCS signatures",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
       "id": "eip-8505",
       "eipNo": "8505",
       "title": "Evaluated Work Records",
@@ -11022,6 +11036,20 @@
       "id": "eip-8510",
       "eipNo": "8510",
       "title": "Inference Receipts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8513",
+      "eipNo": "8513",
+      "title": "Pre-seeded Encrypted Execution Payloads",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8516",
+      "eipNo": "8516",
+      "title": "Sovereign ERC-20 Receive Protection",
       "status": "Draft",
       "isERC": true
     },
@@ -20268,6 +20296,10 @@
     },
     {
       "source": "eip-8437",
+      "target": "eip-8250"
+    },
+    {
+      "source": "eip-8437",
       "target": "eip-8288"
     },
     {
@@ -20756,6 +20788,18 @@
     },
     {
       "source": "eip-8479",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-7805"
+    },
+    {
+      "source": "eip-8479",
       "target": "eip-7892"
     },
     {
@@ -20773,6 +20817,14 @@
     {
       "source": "eip-8479",
       "target": "eip-8288"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-8408"
+    },
+    {
+      "source": "eip-8479",
+      "target": "eip-8512"
     },
     {
       "source": "eip-8480",
@@ -21003,6 +21055,10 @@
       "target": "eip-7930"
     },
     {
+      "source": "eip-8504",
+      "target": "eip-8141"
+    },
+    {
       "source": "eip-8505",
       "target": "eip-20"
     },
@@ -21065,6 +21121,30 @@
     {
       "source": "eip-8510",
       "target": "eip-191"
+    },
+    {
+      "source": "eip-8512",
+      "target": "eip-8288"
+    },
+    {
+      "source": "eip-8512",
+      "target": "eip-8408"
+    },
+    {
+      "source": "eip-8513",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8513",
+      "target": "eip-8411"
+    },
+    {
+      "source": "eip-8516",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8516",
+      "target": "eip-165"
     },
     {
       "source": "eip-9999",
