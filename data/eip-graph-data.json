@@ -11000,7 +11000,7 @@
     {
       "id": "eip-8504",
       "eipNo": "8504",
-      "title": "Dependency frames for leanSPHINCS signatures",
+      "title": "Proof frames for leanSPHINCS signatures",
       "status": "Draft",
       "isERC": false
     },
@@ -11036,6 +11036,13 @@
       "id": "eip-8510",
       "eipNo": "8510",
       "title": "Inference Receipts",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8511",
+      "eipNo": "8511",
+      "title": "Policy-Enforced Agent Accounts",
       "status": "Draft",
       "isERC": true
     },
@@ -21121,6 +21128,18 @@
     {
       "source": "eip-8510",
       "target": "eip-191"
+    },
+    {
+      "source": "eip-8511",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8511",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8511",
+      "target": "eip-1271"
     },
     {
       "source": "eip-8512",
