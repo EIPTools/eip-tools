@@ -11061,6 +11061,13 @@
       "isERC": true
     },
     {
+      "id": "eip-8517",
+      "eipNo": "8517",
+      "title": "Post-Quantum Validator Seed Derivation",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-9000",
       "eipNo": "9000",
       "title": "Grant CROPS Builders (Protocol Guild Members) Transfer Rights Over Milady Maker Tokens",
@@ -20258,6 +20265,10 @@
       "target": "eip-8004"
     },
     {
+      "source": "eip-8434",
+      "target": "eip-8419"
+    },
+    {
       "source": "eip-8435",
       "target": "eip-7954"
     },
@@ -21128,6 +21139,10 @@
     {
       "source": "eip-8510",
       "target": "eip-191"
+    },
+    {
+      "source": "eip-8510",
+      "target": "eip-8004"
     },
     {
       "source": "eip-8511",
