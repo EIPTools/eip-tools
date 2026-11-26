@@ -10832,7 +10832,7 @@
     {
       "id": "eip-8479",
       "eipNo": "8479",
-      "title": "Post-Quantum PeerDAS and Variable-Size Blobs",
+      "title": "Post-Quantum PeerDAS",
       "status": "Draft",
       "isERC": false
     },
@@ -11054,6 +11054,13 @@
       "isERC": false
     },
     {
+      "id": "eip-8515",
+      "eipNo": "8515",
+      "title": "GPU Collateral Evidence",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
       "id": "eip-8516",
       "eipNo": "8516",
       "title": "Sovereign ERC-20 Receive Protection",
@@ -11066,6 +11073,13 @@
       "title": "Post-Quantum Validator Seed Derivation",
       "status": "Draft",
       "isERC": true
+    },
+    {
+      "id": "eip-8518",
+      "eipNo": "8518",
+      "title": "eth/76 - Aggregated Proof Propagation",
+      "status": "Draft",
+      "isERC": false
     },
     {
       "id": "eip-9000",
@@ -20822,6 +20836,10 @@
     },
     {
       "source": "eip-8479",
+      "target": "eip-7918"
+    },
+    {
+      "source": "eip-8479",
       "target": "eip-8070"
     },
     {
@@ -21173,12 +21191,28 @@
       "target": "eip-8411"
     },
     {
+      "source": "eip-8515",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8515",
+      "target": "eip-1271"
+    },
+    {
       "source": "eip-8516",
       "target": "eip-20"
     },
     {
       "source": "eip-8516",
       "target": "eip-165"
+    },
+    {
+      "source": "eip-8518",
+      "target": "eip-8288"
+    },
+    {
+      "source": "eip-8518",
+      "target": "eip-8437"
     },
     {
       "source": "eip-9999",
