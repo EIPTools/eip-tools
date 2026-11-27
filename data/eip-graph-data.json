@@ -9523,7 +9523,7 @@
     {
       "id": "eip-8274",
       "eipNo": "8274",
-      "title": "AI Inference Proof Verification Interfaces",
+      "title": "AI Inference Proof Verification",
       "status": "Draft",
       "isERC": true
     },
@@ -11077,7 +11077,28 @@
     {
       "id": "eip-8518",
       "eipNo": "8518",
-      "title": "eth/76 - Aggregated Proof Propagation",
+      "title": "eth/76 - Mempool Aggregation Transport",
+      "status": "Draft",
+      "isERC": false
+    },
+    {
+      "id": "eip-8519",
+      "eipNo": "8519",
+      "title": "Post-Quantum Validator and Builder Keystore",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8520",
+      "eipNo": "8520",
+      "title": "ERC-721 Composition Extension",
+      "status": "Draft",
+      "isERC": true
+    },
+    {
+      "id": "eip-8521",
+      "eipNo": "8521",
+      "title": "Variable-Size Blobs",
       "status": "Draft",
       "isERC": false
     },
@@ -15855,6 +15876,14 @@
       "target": "eip-712"
     },
     {
+      "source": "eip-7805",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-7805",
+      "target": "eip-8037"
+    },
+    {
       "source": "eip-7806",
       "target": "eip-7702"
     },
@@ -18831,10 +18860,6 @@
       "target": "eip-165"
     },
     {
-      "source": "eip-8274",
-      "target": "eip-712"
-    },
-    {
       "source": "eip-8275",
       "target": "eip-712"
     },
@@ -20131,6 +20156,14 @@
       "target": "eip-7702"
     },
     {
+      "source": "eip-8425",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8425",
+      "target": "eip-8298"
+    },
+    {
       "source": "eip-8426",
       "target": "eip-165"
     },
@@ -20704,6 +20737,10 @@
     },
     {
       "source": "eip-8470",
+      "target": "eip-2935"
+    },
+    {
+      "source": "eip-8470",
       "target": "eip-8004"
     },
     {
@@ -20800,10 +20837,6 @@
     },
     {
       "source": "eip-8478",
-      "target": "eip-3009"
-    },
-    {
-      "source": "eip-8478",
       "target": "eip-7702"
     },
     {
@@ -20872,6 +20905,10 @@
     },
     {
       "source": "eip-8480",
+      "target": "eip-155"
+    },
+    {
+      "source": "eip-8480",
       "target": "eip-165"
     },
     {
@@ -20884,11 +20921,31 @@
     },
     {
       "source": "eip-8481",
+      "target": "eip-55"
+    },
+    {
+      "source": "eip-8481",
       "target": "eip-712"
     },
     {
       "source": "eip-8481",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8481",
       "target": "eip-1271"
+    },
+    {
+      "source": "eip-8481",
+      "target": "eip-2612"
+    },
+    {
+      "source": "eip-8481",
+      "target": "eip-3009"
+    },
+    {
+      "source": "eip-8481",
+      "target": "eip-7702"
     },
     {
       "source": "eip-8481",
@@ -21136,10 +21193,6 @@
     },
     {
       "source": "eip-8509",
-      "target": "eip-5564"
-    },
-    {
-      "source": "eip-8509",
       "target": "eip-6538"
     },
     {
@@ -21157,6 +21210,14 @@
     {
       "source": "eip-8510",
       "target": "eip-191"
+    },
+    {
+      "source": "eip-8510",
+      "target": "eip-712"
+    },
+    {
+      "source": "eip-8510",
+      "target": "eip-3009"
     },
     {
       "source": "eip-8510",
@@ -21208,11 +21269,115 @@
     },
     {
       "source": "eip-8518",
+      "target": "eip-2481"
+    },
+    {
+      "source": "eip-8518",
+      "target": "eip-8070"
+    },
+    {
+      "source": "eip-8518",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8518",
       "target": "eip-8288"
     },
     {
       "source": "eip-8518",
+      "target": "eip-8408"
+    },
+    {
+      "source": "eip-8518",
       "target": "eip-8437"
+    },
+    {
+      "source": "eip-8518",
+      "target": "eip-8504"
+    },
+    {
+      "source": "eip-8519",
+      "target": "eip-2335"
+    },
+    {
+      "source": "eip-8519",
+      "target": "eip-8517"
+    },
+    {
+      "source": "eip-8520",
+      "target": "eip-20"
+    },
+    {
+      "source": "eip-8520",
+      "target": "eip-165"
+    },
+    {
+      "source": "eip-8520",
+      "target": "eip-721"
+    },
+    {
+      "source": "eip-8520",
+      "target": "eip-1271"
+    },
+    {
+      "source": "eip-8520",
+      "target": "eip-6551"
+    },
+    {
+      "source": "eip-8520",
+      "target": "eip-7528"
+    },
+    {
+      "source": "eip-8520",
+      "target": "eip-8423"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-7688"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-7732"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-7805"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-7892"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-7918"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-8070"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-8136"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-8141"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-8288"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-8408"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-8479"
+    },
+    {
+      "source": "eip-8521",
+      "target": "eip-8512"
     },
     {
       "source": "eip-9999",
